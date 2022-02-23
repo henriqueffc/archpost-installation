@@ -1,12 +1,9 @@
 #!/bin/bash
 
-#Variável
-country=Brazil
-
 # Reflector
 sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
 sudo pacman -S --needed --noconfirm reflector rsync
-sudo reflector -c $country -a 12 -p --sort rate --save /etc/pacman.d/mirrorlist
+sudo reflector -c Brazil -a 12 -p --sort rate --save /etc/pacman.d/mirrorlist
 sudo pacman -Syyu
 
 # Video (Intel e Nvidia)
