@@ -23,15 +23,7 @@ sudo systemctl enable ufw.service
 sudo usermod -aG libvirt henriqueffc
 
 # Appimage e outros
-wget -P ~/Downloads https://github.com/linuxhw/hw-probe/releases/download/1.6/hw-probe-1.6-185-x86_64.AppImage
-wget -P ~/Downloads https://vulkan.gpuinfo.org/downloads/vulkancapsviewer_3.2_linux64_wayland.AppImage
-wget -P ~/Downloads https://opencl.gpuinfo.org/downloads/openclcapsviewer_1.00_linux64_x11.AppImage
-wget -P ~/Downloads http://opengl.gpuinfo.org/downloads/glcapsviewer_1_2_linux64.tar.gz
-wget -P ~/Downloads -O bitwarden.AppImage https://vault.bitwarden.com/download/\?app\=desktop\&platform\=linux
-wget -P ~/Downloads https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
-wget -P ~/Downloads https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
-wget -P ~/Downloads https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
-wget -P ~/Downloads https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
+wget -P ~/Downloads -i urls.txt 
 
 #Alias
 mv .bash_aliases ~/
