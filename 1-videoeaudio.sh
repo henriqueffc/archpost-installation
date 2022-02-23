@@ -4,9 +4,9 @@
 sudo rm -r /archpost-installation
 
 # Reflector
-sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
-sudo pacman -S --needed --noconfirm reflector rsync
-sudo reflector -c Brazil -a 12 -p --sort rate --save /etc/pacman.d/mirrorlist
+#sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
+#sudo pacman -S --needed --noconfirm reflector rsync
+#sudo reflector -c Brazil -a 12 -p --sort rate --save /etc/pacman.d/mirrorlist
 sudo pacman -Syyu
 
 # Video (Intel e Nvidia)
@@ -22,8 +22,8 @@ sudo pacman -S --needed pipewire pipewire-alsa pipewire-jack wireplumber pipewir
 sudo pacman -S --needed apparmor python-notify2 python-psutil 
 sudo systemctl enable apparmor.service
 sudo touch /var/log/syslog
-sudo mkdir ~/.config/autostart
-sudo mv apparmor-notify.desktop ~/.config/autostart
+mkdir ~/.config/autostart
+mv apparmor-notify.desktop ~/.config/autostart
 sudo sed -i '34s/#//' /etc/apparmor/parser.conf
 sudo chown henriqueffc:henriqueffc ~/.config/autostart
 
