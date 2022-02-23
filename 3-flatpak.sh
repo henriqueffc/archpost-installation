@@ -22,7 +22,6 @@ flatpak install flathub com.belmoussaoui.Obfuscate -y
 flatpak install flathub com.system76.Popsicle -y
 flatpak install flathub com.github.wwmm.easyeffects -y
 flatpak install flathub com.obsproject.Studio -y
-flatpak install flathub com.leinardi.gwe -y
 flatpak install flathub com.mattjakeman.ExtensionManager -y
 flatpak install flathub org.gtk.Gtk3theme.Adwaita-dark -y
 
