@@ -48,9 +48,6 @@ sudo systemctl enable offpowersave.service
 sudo mv intelparanoid.service /etc/systemd/system
 sudo systemctl enable intelparanoid.service 
 
-#Sensors
-sudo sensors-detect
-
 # Mlocate
 sudo pacman -S --needed mlocate
 sudo updatedb
@@ -60,5 +57,8 @@ git clone https://gitlab.com/torkel104/libstrangle.git
 cd libstrangle 
 make
 sudo make install
+
+#Sensors
+sudo sensors-detect
 
 printf "\e[1;32mFim! Reinicie o sistema.\e[0m"
