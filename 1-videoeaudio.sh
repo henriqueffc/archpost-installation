@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#Deletar a antiga pasta no /
+sudo rm -r /archpost-installation
+
 # Reflector
 sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
 sudo pacman -S --needed --noconfirm reflector rsync
@@ -22,5 +25,6 @@ sudo touch /var/log/syslog
 sudo mkdir ~/.config/autostart
 sudo mv apparmor-notify.desktop ~/.config/autostart
 sudo sed -i '34s/#//' /etc/apparmor/parser.conf
+sudo chown henriqueffc:henriqueffc ~/.config/autostart
 
 printf "\e[1;32mFim! Acrescente as instruções contidas em paBoot.txt nos parâmetros do boot. Reinicie o sistema.\e[0m"
