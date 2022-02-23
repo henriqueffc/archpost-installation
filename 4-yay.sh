@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# YAY (necessário alterar o proprietário da pasta
+# YAY 
 sudo pacman -S --needed git base-devel go wget
 git clone https://aur.archlinux.org/yay.git
 cd yay
