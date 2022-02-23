@@ -10,7 +10,7 @@ sudo reflector -c Brazil -a 12 -p --sort rate --save /etc/pacman.d/mirrorlist
 sudo pacman -Syyu
 
 # Video (Intel e Nvidia)
-sudo pacman -S --needed nvidia-dkms nvidia-utils lib32-nvidia-utils nvidia-settings opencl-nvidia vulkan-icd-loader lib32-vulkan-icd-loader libvdpau-va-gl libva-vdpau-driver libvdpau vulkan-tools libglvnd lib32-libglvnd lib32-opencl-nvidia lib32-libva-vdpau-driver ocl-icd lib32-ocl-icd mesa mesa-vdpau lib32-mesa-vdpau libva lib32-libva vdpauinfo libva-utils lib32-libvdpau intel-ucode intel-media-sdk lib32-mesa vulkan-intel lib32-vulkan-intel intel-media-driver intel-compute-runtime intel-graphics-compiler nvidia-prime clinfo nvtop
+sudo pacman -S --needed nvidia-dkms nvidia-utils lib32-nvidia-utils nvidia-settings opencl-nvidia vulkan-icd-loader libvdpau-va-gl libva-vdpau-driver libvdpau vulkan-tools ocl-icd mesa mesa-vdpau libva vdpauinfo libva-utils intel-ucode intel-media-sdk lib32-mesa vulkan-intel intel-media-driver intel-compute-runtime intel-graphics-compiler nvidia-prime clinfo nvtop
 
 # Audio
 sudo pacman -S --needed vlc ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer-vaapi gstreamer a52dec faac faad2 flac jasper lame libdca libdv libmad libmpeg2 libtheora libvorbis libxv wavpack x264 xvidcore
