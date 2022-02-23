@@ -28,6 +28,9 @@ wget -P ~/Downloads -i urls.txt
 #Alias
 mv .bash_aliases ~/
 
+#Modelos de arquivos para o Files
+mv arquivo.txt ~/Modelos
+
 # Variáveis
 echo "export QT_STYLE_OVERRIDE=kvantum" >> ~/.profile
 echo "source ~/.bash_aliases" >> ~/.bashrc
