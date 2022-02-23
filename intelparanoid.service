@@ -1,0 +1,10 @@
+[Unit]
+Description=Inicialização do comando para a Intel 
+
+[Service]
+Type=oneshot
+ExecStart=/sbin/sysctl -w dev.i915.perf_stream_paranoid=0
+
+
+[Install]
+WantedBy=multi-user.target 

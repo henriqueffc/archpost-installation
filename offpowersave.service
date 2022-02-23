@@ -1,0 +1,10 @@
+[Unit]
+Description=Desabilitar o powersave do iwconfig
+
+[Service]
+Type=oneshot
+ExecStart=/sbin/iwconfig wlan0 power off
+
+
+[Install]
+WantedBy=multi-user.target
