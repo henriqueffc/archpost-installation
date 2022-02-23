@@ -16,6 +16,7 @@ sudo pacman -S --needed tesseract tesseract-data-spa tesseract-data-frk tesserac
 sudo systemctl enable libvirtd
 sudo systemctl enable fstrim.timer
 sudo systemctl enable thermald
+sudo ufw enable
 sudo systemctl enable ufw.service
 
 # Grupos
@@ -27,6 +28,10 @@ wget -P ~/Downloads https://vulkan.gpuinfo.org/downloads/vulkancapsviewer_3.2_li
 wget -P ~/Downloads https://opencl.gpuinfo.org/downloads/openclcapsviewer_1.00_linux64_x11.AppImage
 wget -P ~/Downloads http://opengl.gpuinfo.org/downloads/glcapsviewer_1_2_linux64.tar.gz
 wget -P ~/Downloads -O bitwarden.AppImage https://vault.bitwarden.com/download/\?app\=desktop\&platform\=linux
+wget -P ~/Downloads https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
+wget -P ~/Downloads https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
+wget -P ~/Downloads https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
+wget -P ~/Downloads https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
 
 # Variáveis
 echo "export QT_STYLE_OVERRIDE=kvantum" >> ~/.profile 
