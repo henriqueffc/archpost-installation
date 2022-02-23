@@ -33,8 +33,12 @@ wget -P ~/Downloads https://github.com/romkatv/powerlevel10k-media/raw/master/Me
 wget -P ~/Downloads https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
 wget -P ~/Downloads https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
 
+#Alias
+mv .bash_aliases ~/
+
 # Variáveis
-echo "export QT_STYLE_OVERRIDE=kvantum" >> ~/.profile 
+echo "export QT_STYLE_OVERRIDE=kvantum" >> ~/.profile
+echo "source ~/.bash_aliases" >> ~/.bashrc
 
 # Offpowersave
 sudo mv offpowersave.service /etc/systemd/system  
