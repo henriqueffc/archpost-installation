@@ -16,6 +16,7 @@ sudo pacman -S --needed qemu libvirt iptables-nft virt-manager virt-viewer dmide
 sudo systemctl enable libvirtd
 sudo systemctl enable fstrim.timer
 sudo systemctl enable thermald
+sudo systemctl enable systemd-boot-update
 sudo systemctl enable bluetooth.service
 sudo ufw enable
 sudo systemctl enable ufw.service
