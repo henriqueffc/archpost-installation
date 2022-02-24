@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#Chrome (Wayland) 
+mv chrome-flags.conf ~/.config
+
 # YAY 
 sudo pacman -S --needed git base-devel go wget
 git clone https://aur.archlinux.org/yay.git
