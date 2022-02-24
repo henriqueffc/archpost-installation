@@ -46,7 +46,7 @@ sudo mv intelparanoid.service /etc/systemd/system
 sudo systemctl enable intelparanoid.service 
 
 #Steam (prime-run)
-rm ~/"Área de trabalho"/steam.desktop
+rm ~/Área\ de\ trabalho/steam.desktop
 cp /usr/share/applications/steam.desktop ~/.local/share/applications
 sed -i 's/steam-runtime/\prime-run steam-runtime/' ~/.local/share/applications/steam.desktop
 
