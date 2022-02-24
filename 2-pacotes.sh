@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Pacotes
-sudo pacman -S --needed flatpak zsh materia-gtk-theme ufw gufw aria2 bash-completion man-db man-pages texinfo reflector rsync curl cmatrix pacman-contrib dialog unrar zip unzip p7zip okular discount ebook-tools djvulibre unrar libzip kdegraphics-mobipocket libreoffice libreoffice-fresh-pt-br jre-openjdk kdenlive kvantum-qt5 qt6-wayland qt5-wayland xorg-xkill lutris wine wine-gecko wine-mono winetricks pandoc libappindicator-gtk3 transmission-gtk gparted exa bat alacarte fwupd gnome-firmware nvme-cli coreutils progress neofetch psensor ntfs-3g cpupower intel-gpu-tools i7z xorg-xdpyinfo libgtop lm_sensors glfw-x11 glew gnome-icon-theme-symbolic steam steam-fonts python-magic lib32-gnutls gamemode thermald papirus-icon-theme
+sudo pacman -S --needed flatpak zsh materia-gtk-theme ufw gufw aria2 bash-completion man-db man-pages texinfo reflector rsync curl cmatrix pacman-contrib dialog unrar zip unzip p7zip okular discount ebook-tools djvulibre unrar libzip kdegraphics-mobipocket libreoffice libreoffice-fresh-pt-br jre-openjdk kdenlive kvantum-qt5 qt6-wayland qt5-wayland xorg-xkill lutris wine wine-gecko wine-mono winetricks pandoc libappindicator-gtk3 transmission-gtk gparted exa bat alacarte fwupd gnome-firmware nvme-cli coreutils progress neofetch psensor ntfs-3g cpupower intel-gpu-tools i7z xorg-xdpyinfo libgtop lm_sensors glfw-x11 glew gnome-icon-theme-symbolic steam python-magic lib32-gnutls gamemode thermald papirus-icon-theme
 
 # Fontes
 sudo pacman -S --needed noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-dejavu ttf-liberation xorg-fonts-type1 xorg-fonts-misc ttf-bitstream-vera ttf-opensans terminus-font ttf-roboto ttf-roboto-mono xorg-fonts-100dpi 
