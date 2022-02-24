@@ -48,6 +48,7 @@ sudo systemctl enable intelparanoid.service
 #Steam (prime-run)
 rm ~/"Área de trabalho"/steam.desktop
 cp /usr/share/applications/steam.desktop ~/.local/share/applications
+sed -i 's/steam-runtime/\prime-run steam-runtime/' ~/.local/share/applications/steam.desktop
 
 # Mlocate
 sudo pacman -S --needed mlocate
