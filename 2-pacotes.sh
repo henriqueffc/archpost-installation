@@ -45,9 +45,9 @@ sudo systemctl enable offpowersave.service
 sudo mv intelparanoid.service /etc/systemd/system
 sudo systemctl enable intelparanoid.service 
 
-#Chrome (Wayland) e Steam (prime-run)
-mv chrome-flags.conf ~/.config
-mv steam.desktop ~/.local/share/applications
+#Steam (prime-run)
+rm ~/"Área de trabalho"/steam.desktop
+cp /usr/share/applications/steam.desktop ~/.local/share/applications
 
 # Mlocate
 sudo pacman -S --needed mlocate
