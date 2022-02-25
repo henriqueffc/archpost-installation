@@ -33,7 +33,7 @@ case "$resposta" in
       flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
      ;;
      n|N)
-         echo "Fim da instalaç"
+         echo "Fim da instalação"
      ;;
      *)
          echo "Opção inválida"
