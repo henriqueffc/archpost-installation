@@ -1,7 +1,17 @@
 ##Parâmetros do boot
 
-#Nvidia, Intel e Apparmor
-
 #Abra o arquivo desejdado em /boot/loader/entries e usando o nano digite ^R e depois o caminho do arquivo baixado ou ^T para pesquisar - ~/Programas/mypostarchinstall/opboot.txt. Insira as informações no final da linha options root= .
 
+#Nvidia, Intel e Apparmor
+
 nvidia-drm.modeset=1 nvidia.NVreg_EnablePCIeGen3=1 nvidia.NVreg_UsePageAttributeTable=1 i915.modeset=1 i915.enable_guc=2 i915.enable_fbc=1 nouveau.modeset=0 lsm=landlock,lockdown,yama,apparmor,bpf
+
+
+#Nvidia, Intel
+
+nvidia-drm.modeset=1 nvidia.NVreg_EnablePCIeGen3=1 nvidia.NVreg_UsePageAttributeTable=1 i915.modeset=1 i915.enable_guc=2 i915.enable_fbc=1 nouveau.modeset=0
+
+
+#Apparmor
+
+lsm=landlock,lockdown,yama,apparmor,bpf
