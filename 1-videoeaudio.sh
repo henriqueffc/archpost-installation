@@ -54,4 +54,4 @@ case "$resposta" in
      ;;
 esac
 
-printf "\e[1;32mFim! Caso tenha instalado o AppArmor acrescente as instruções do arquivo -paBoot.txt- nos parâmetros do boot e depois reinicie o sistema. Se você não instalou o Apparmor apenas proceda com a reinicialização do sistema\e[0m"
+printf "\e[1;32mFim! Caso tenha instalado o AppArmor acrescente as instruções do arquivo -paBoot.txt/linha 7- nos parâmetros do boot e depois reinicie o sistema. Se você não instalou o Apparmor acrescente somente as instruções da linha 12 do mesmo arquivo e proceda com a reinicialização do sistema\e[0m"
