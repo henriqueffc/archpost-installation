@@ -9,8 +9,22 @@ sudo pacman -S --needed noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-dejavu tt
 # Virt-Mananger
 sudo pacman -S --needed qemu libvirt iptables-nft virt-manager virt-viewer dmidecode bridge-utils openbsd-netcat dnsmasq
 
+
 # TESSERACT 
-#sudo pacman -S --needed tesseract tesseract-data-spa tesseract-data-frk tesseract-data-ita tesseract-data-equ tesseract-data-fra tesseract-data-deu tesseract-data-deu_frak tesseract-data-eng tesseract-data-por
+echo -n "Você quer instalar os pacotes para OCR-Tesseract (S) sim / (N) não "
+read resposta
+case "$resposta" in
+    s|S|"")
+        sudo pacman -S --needed tesseract tesseract-data-spa tesseract-data-frk tesseract-data-ita tesseract-data-equ tesseract-data-fra tesseract-data-deu tesseract-data-deu_frak tesseract-data-eng tesseract-data-por
+    ;;
+    n|N)
+        echo "Continuando a instalação."
+    ;;
+    *)
+        echo "Opção inválida"
+    ;;
+esac
+
 
 # Habilitar os serviços
 sudo systemctl enable libvirtd
@@ -55,10 +69,23 @@ sudo pacman -S --needed mlocate
 sudo updatedb
 
 # Limitador de FPS
-git clone https://gitlab.com/torkel104/libstrangle.git
-cd libstrangle 
-make
-sudo make install
+echo -n "Voc\u00ea quer instalar o limitador de FPS - Libstrangle? (S) sim / (N) n\u00e3o "
+read resposta
+case "$resposta" in
+     s|S|"")
+          git clone https://gitlab.com/torkel104/libstrangle.git
+          cd libstrangle 
+          make
+          sudo make install
+     ;;
+     n|N)
+         echo "Continuando a instala\u00e7\u00e3o"
+     ;;
+     *)
+         echo "Op\u00e7\u00e3o inv\u00e1lida"
+     ;;
+esac
+
 
 #Sensors
 sudo sensors-detect
