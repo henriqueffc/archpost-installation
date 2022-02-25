@@ -47,7 +47,7 @@ case "$resposta" in
         sudo chown henriqueffc:henriqueffc ~/.config/autostart
      ;;
      n|N)
-         echo "Continuando a instalação dos pacotes"
+         echo "Finalizando a instalaç"
      ;;
      *)
          echo "Opção inválida"
