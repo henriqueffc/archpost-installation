@@ -79,7 +79,7 @@ case "$resposta" in
           sudo make install
      ;;
      n|N)
-         echo "Continuando a instalação dos pacotes"
+         echo "Continuando a instalação"
      ;;
      *)
          echo "Opção inválida"
