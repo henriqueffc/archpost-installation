@@ -3,10 +3,13 @@
 #Deletar a antiga pasta no /
 sudo rm -r /archpost-installation
 
+#Refresh database
+sudo pacman -Syu
+
 # Reflector
-#sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
-#sudo pacman -S --needed --noconfirm reflector rsync
-#sudo reflector -c Brazil -a 12 -p --sort rate --save /etc/pacman.d/mirrorlist
+sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
+sudo pacman -S --needed --noconfirm reflector rsync
+sudo reflector -c Brazil -a 12 --sort rate --save /etc/pacman.d/mirrorlist
 sudo pacman -Syyu
 
 # Video (Intel e Nvidia)
