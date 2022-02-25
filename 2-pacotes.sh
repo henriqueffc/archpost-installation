@@ -69,7 +69,7 @@ sudo pacman -S --needed mlocate
 sudo updatedb
 
 # Limitador de FPS
-echo -n "Você quer instalar o limitador de FPS - Libstrangle? (S) sim / (N) n "
+echo -n "Você quer instalar o limitador de FPS - Libstrangle? (S) sim / (N) não "
 read resposta
 case "$resposta" in
      s|S|"")
