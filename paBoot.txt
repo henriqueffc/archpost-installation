@@ -1,6 +1,6 @@
 ##Parâmetros do boot
 
-#Abra o arquivo desejdado em /boot/loader/entries e usando o nano digite ^R e depois o caminho do arquivo baixado ou ^T para pesquisar - ~/Programas/mypostarchinstall/opboot.txt. Insira as informações no final da linha options root= .
+#Abra o arquivo desejdado em /boot/loader/entries e usando o nano digite ^R e depois o caminho do arquivo baixado ou ^T para pesquisar. Insira as informações no final da linha options root= .
 
 #Nvidia, Intel e Apparmor
 
