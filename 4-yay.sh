@@ -10,6 +10,6 @@ cd yay
 makepkg -si
 
 # Pacotes AUR
-yay -S google-chrome dropbox appimagelauncher visual-studio-code-bin heroic-games-launcher-bin ulauncher timeshift downgrade inxi ttf-ms-fonts mangohud lib32-mangohud qgnomeplatform
+yay -S google-chrome dropbox appimagelauncher visual-studio-code-bin heroic-games-launcher-bin ulauncher timeshift downgrade inxi ttf-ms-fonts mangohud lib32-mangohud qgnomeplatform goverlay-bin
 
 printf "\e[1;32mFim! Reinicie o sistema.\e[0m"
