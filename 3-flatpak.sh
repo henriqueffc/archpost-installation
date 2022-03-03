@@ -1,5 +1,11 @@
 #!/bin/bash
 
+echo -ne "
+-------------------------------------------------------------------------
+                   Instalando os aplicativos Flatpaks
+-------------------------------------------------------------------------
+"
+
 # Flatpak Aplicativos
 flatpak install flathub org.gimp.GIMP -y
 flatpak install flathub com.calibre_ebook.calibre -y

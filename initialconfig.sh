@@ -9,13 +9,13 @@ locale-gen
 
 # Idioma e Localhost
 echo 'LANG=pt_BR.UTF-8' > /etc/locale.conf
-#echo "archlinux" > /etc/hostname (já foi feito pelo Archinstall. Eu defini como archlinux)
+#echo "archlinux" > /etc/hostname (já foi feito pelo Archinstall)
+line=$(cat /etc/hostname)
 echo '127.0.0.1 localhost' >> /etc/hosts
 echo '::1       localhost' >> /etc/hosts
-echo '127.0.1.1 archlinux.localdomain archlinux' >> /etc/hosts
+echo "127.0.1.1 $line.localdomain $line" >> /etc/hosts
 
 # Visudo
-usermod -aG wheel henriqueffc
 sed -i '82s/..//' /etc/sudoers
 echo '# Defaults specification' >> /etc/sudoers
 echo 'Defaults editor=/usr/bin/nano' >> /etc/sudoers
@@ -32,15 +32,38 @@ sed -i 's/#ParallelDownloads = 5/\ParallelDownloads = 5/' /etc/pacman.conf
 sed -i 's/#CheckSpace/\CheckSpace/' /etc/pacman.conf
 sed -i '93s/#//' /etc/pacman.conf
 sed -i '94s/#//' /etc/pacman.conf
+#sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf (outra forma para habilitar o multilib)
 
-# NANO
+# NANO - Line number e syntax-highlighting
 sed -i 's/# set linenumbers/\set linenumbers/' /etc/nanorc
 sed -i '243s/..//' /etc/nanorc
 
-# Grupos
-usermod -aG brlapi henriqueffc
-
 # Swappiness
 mv 99-swappiness.conf /etc/sysctl.d/
+
+#Mirrorlist
+echo -ne "
+-------------------------------------------------------------------------
+                        Mirrorlist - Brasil
+-------------------------------------------------------------------------
+"
+cat mirrorlist
+echo -n "Você quer alterar o mirrorlist do sistema de acordo com o exposto acima? (S) sim / (N) não "
+read resposta
+case "$resposta" in
+     s|S|"")
+          mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
+          mv mirrorlist /etc/pacman.d/
+          echo "Fim da instalação"
+     ;;
+     n|N)
+          echo "Fim da instalação"
+     ;;
+     *)
+          echo "Opção inválida"
+     ;;
+esac
+
+pacman -Syy --noconfirm --needed
 
 printf "\e[1;32mFim! Escreva exit, pressione enter e reinicie com o comando reboot.\e[0m"

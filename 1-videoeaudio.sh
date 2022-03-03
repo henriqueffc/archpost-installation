@@ -3,26 +3,15 @@
 #Deletar a antiga pasta no /
 sudo rm -r /archpost-installation
 
-#Refresh database
-sudo pacman -Syu
+# Grupos
+sudo usermod -aG brlapi $USERNAME
+sudo usermod -aG wheel $USERNAME
 
-#Reflector
-echo -n "Você quer executar o reflector para atualizar o mirrorlist? (S) sim / (N) não "
-read resposta
-case "$resposta" in
-     s|S|"")
-         sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
-         sudo pacman -S --needed --noconfirm reflector rsync
-         sudo reflector -c Brazil -a 12 --sort rate --save /etc/pacman.d/mirrorlist
-         sudo pacman -Syyu
-     ;;
-     n|N)
-         echo "Continuando a instalação dos pacotes"
-     ;;
-     *)
-         echo "Opção inválida"
-     ;;
-esac
+echo -ne "
+-------------------------------------------------------------------------
+                    Instalando os pacotes
+-------------------------------------------------------------------------
+"
 
 # Video (Intel e Nvidia)
 sudo pacman -S --needed nvidia-dkms nvidia-utils lib32-nvidia-utils nvidia-settings opencl-nvidia vulkan-icd-loader libvdpau-va-gl libva-vdpau-driver libvdpau vulkan-tools ocl-icd mesa mesa-vdpau libva vdpauinfo libva-utils intel-ucode intel-media-sdk lib32-mesa vulkan-intel intel-media-driver intel-compute-runtime intel-graphics-compiler nvidia-prime clinfo nvtop
@@ -42,12 +31,37 @@ case "$resposta" in
         sudo systemctl enable apparmor.service
         sudo touch /var/log/syslog
         mkdir ~/.config/autostart
-        mv apparmor-notify.desktop ~/.config/autostart
+        mv $HOME/archpost-installation/apparmor/apparmor-notify.desktop ~/.config/autostart
         sudo sed -i '34s/#//' /etc/apparmor/parser.conf
-        sudo chown henriqueffc:henriqueffc ~/.config/autostart
+        sudo chown $USER:$USER ~/.config/autostart
      ;;
      n|N)
          echo "Finalizando a instalação"
+     ;;
+     *)
+         echo "Opção inválida"
+     ;;
+esac
+
+#Mirrorlist atual
+echo "Mirrorlist atual"
+cat /etc/pacman.d/mirrorlist
+
+#Reflector
+echo -n "
+Você quer executar o reflector para atualizar o mirrorlist?
+Caso não tenha acontecido problemas na instalação dos pacotes não recomendamos a execução.  (S) sim / (N) não 
+"
+read resposta
+case "$resposta" in
+     s|S|"")
+         sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak2
+         sudo pacman -S --needed --noconfirm reflector rsync
+         sudo reflector -c Brazil -a 12 --sort rate --save /etc/pacman.d/mirrorlist
+         sudo pacman -Syyu
+     ;;
+     n|N)
+         echo "Fim da instalação"
      ;;
      *)
          echo "Opção inválida"

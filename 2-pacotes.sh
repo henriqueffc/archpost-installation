@@ -1,5 +1,11 @@
 #!/bin/bash
 
+echo -ne "
+-------------------------------------------------------------------------
+                          Instalando os pacotes
+-------------------------------------------------------------------------
+"
+
 # Pacotes
 sudo pacman -S --needed flatpak zsh materia-gtk-theme openssh ufw gufw aria2 bash-completion man-db man-pages texinfo reflector rsync curl cmatrix pacman-contrib dialog unrar zip unzip p7zip okular discount ebook-tools djvulibre unrar libzip kdegraphics-mobipocket libreoffice libreoffice-fresh-pt-br jre-openjdk kdenlive kvantum-qt5 qt6-wayland qt5-wayland xorg-xkill lutris wine wine-gecko wine-mono winetricks pandoc libappindicator-gtk3 transmission-gtk gparted exa bat alacarte fwupd gnome-firmware nvme-cli coreutils progress neofetch psensor ntfs-3g cpupower intel-gpu-tools i7z xorg-xdpyinfo libgtop lm_sensors glfw-x11 glew gnome-icon-theme-symbolic steam python-magic lib32-gnutls gamemode thermald papirus-icon-theme
 
@@ -26,47 +32,73 @@ case "$resposta" in
 esac
 
 
+echo -ne "
+-------------------------------------------------------------------------
+                      Habilitando os serviços
+-------------------------------------------------------------------------
+"
+
 # Habilitar os serviços
 sudo systemctl enable libvirtd
+echo "  libvirt habilitado"
 sudo systemctl enable fstrim.timer
+echo "  fstrim.timer habilitado"
 sudo systemctl enable thermald
+echo "  thermald habilitado"
 sudo systemctl enable systemd-boot-update
+echo "  systemd-boot-update habilitado"
 sudo systemctl enable bluetooth.service
+echo "  bluetooth.service habilitado"
 sudo ufw enable
 sudo systemctl enable ufw.service
+echo "  ufw.service habilitado"
+
+# Offpowersave
+sudo mv $HOME/archpost-installation/service/offpowersave.service /etc/systemd/system  
+sudo systemctl enable offpowersave.service 
+echo "  WIFI - Powersave desabilitado"
+
+# Intelparanoid.service
+sudo mv $HOME/archpost-installation/service/intelparanoid.service /etc/systemd/system
+sudo systemctl enable intelparanoid.service 
+echo "  Intel-Paranoid habilitado"
+
+echo -ne "
+-------------------------------------------------------------------------
+                      Restante das configurações
+-------------------------------------------------------------------------
+"
 
 # Grupos
-sudo usermod -aG libvirt henriqueffc
+sudo usermod -aG libvirt $USERNAME
 
 # Appimage e outros
-wget -P ~/Downloads -i urls.txt 
+wget -P ~/Downloads -i $HOME/archpost-installation/urls/urls.txt 
+
+#Fontes
+sudo mv ~/Downloads/*.ttf /usr/share/fonts/TTF
+sudo fc-cache -fv
 
 #Alias
-mv .bash_aliases ~/
+mv $HOME/archpost-installation/aliases/.bash_aliases ~/
 
 #Modelos de arquivos para o Files
-mv arquivo.txt ~/Modelos
+mv $HOME/archpost-installation/modelo/arquivo.txt ~/Modelos
 
 # Variáveis
 echo "export QT_STYLE_OVERRIDE=kvantum" >> ~/.profile
 echo "source ~/.bash_aliases" >> ~/.bashrc
 
-# Offpowersave
-sudo mv offpowersave.service /etc/systemd/system  
-sudo systemctl enable offpowersave.service 
-
-# Intelparanoid.service
-sudo mv intelparanoid.service /etc/systemd/system
-sudo systemctl enable intelparanoid.service 
-
 #Steam (prime-run)
 rm ~/Área\ de\ trabalho/steam.desktop
 cp /usr/share/applications/steam.desktop ~/.local/share/applications
 sed -i 's/steam-runtime/\prime-run steam-runtime/' ~/.local/share/applications/steam.desktop
+echo "  steam.desktop modificado"
 
-# Mlocate
+# Mlocate - necessário para a busca no Ulauncher
 sudo pacman -S --needed mlocate
 sudo updatedb
+echo "  Mlocate habilitado"
 
 # Limitador de FPS
 echo -n "Você quer instalar o limitador de FPS - Libstrangle? (S) sim / (N) não "
