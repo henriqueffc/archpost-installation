@@ -47,7 +47,7 @@ nv=$(nproc --ignore=2)
 RAM=$(cat /proc/meminfo | grep -i 'memtotal' | grep -o '[[:digit:]]*')
 echo -ne "
 -------------------------------------------------------------------------
-		           MAKEFLAGS e compressão XZ e ZSTD
+		     MAKEFLAGS e compressão XZ e ZSTD
 	  O sistema possui o total de "$nc" cores e "$RAM" de ram
 
 -------------------------------------------------------------------------
