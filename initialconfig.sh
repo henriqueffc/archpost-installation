@@ -41,6 +41,41 @@ sed -i '243s/..//' /etc/nanorc
 # Swappiness
 mv 99-swappiness.conf /etc/sysctl.d/
 
+# Makeflags e compress
+nc=$(grep -c ^processor /proc/cpuinfo)
+nv=$(nproc --ignore=2) 
+RAM=$(cat /proc/meminfo | grep -i 'memtotal' | grep -o '[[:digit:]]*')
+echo -ne "
+-------------------------------------------------------------------------
+		           MAKEFLAGS e compressão XZ e ZSTD
+	  O sistema possui o total de "$nc" cores e "$RAM" de ram
+
+-------------------------------------------------------------------------
+"
+echo -n "Você quer estabelecer a MAKEFLAGS em /etc/makepkg.conf com o número total de cores do sistema ($nc) ou com dois cores a menos que o total do sistema ($nv)?
+Se o sistema possuir menos que 8G de ram ou menos que 4 cores pule essa etapa. (T) total / (M) menor / (P) Pular "
+read resposta
+case "$resposta" in
+    t|T|"")
+        sed -i "s/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j$nc\"/g" /etc/makepkg.conf
+        sed -i "s/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -z --threads=0 -)/g" /etc/makepkg.conf
+	sed -i "s/COMPRESSZST=(zstd -c -z -q -)/COMPRESSZST=(zstd -c -z -q --threads=0 -)/g" /etc/makepkg.conf
+        echo "Continuando a instalação."
+    ;;
+    m|M)
+    	sed -i "s/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j$nv\"/g" /etc/makepkg.conf
+    	sed -i "s/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -z --threads=0 -)/g" /etc/makepkg.conf
+	sed -i "s/COMPRESSZST=(zstd -c -z -q -)/COMPRESSZST=(zstd -c -z -q --threads=0 -)/g" /etc/makepkg.conf
+        echo "Continuando a instalação."
+    ;;
+    p|P)
+    	echo "Pulando essa etapa e continuando a instalação."
+    ;;
+    *)
+        echo "Opção inválida"
+    ;;
+esac
+
 #Mirrorlist
 echo -ne "
 -------------------------------------------------------------------------
