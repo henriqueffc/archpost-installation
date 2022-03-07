@@ -5,7 +5,9 @@
 AZUL='\e[1;34m'
 VERDE='\e[1;32m'
 RED='\e[1;31m'
+LVERDE='\e[0;92m'
 FIM='\e[0m'
+
 
 
 echo -e "${AZUL}
@@ -25,7 +27,7 @@ sudo pacman -S --needed qemu libvirt iptables-nft virt-manager virt-viewer dmide
 
 
 # TESSERACT 
-echo -ne "${VERDE}Você quer instalar os pacotes para OCR-Tesseract (S) sim / (N) não ${FIM}"
+echo -ne "${VERDE}Você quer instalar os pacotes para OCR-Tesseract?${FIM} ${LVERDE}(S) sim / (N) não ${FIM}"
 read resposta
 case "$resposta" in
     s|S|"")
@@ -109,7 +111,7 @@ sudo updatedb
 echo -e "  ${AZUL}Mlocate habilitado${FIM}"
 
 # Limitador de FPS
-echo -ne "${VERDE}Você quer instalar o limitador de FPS - Libstrangle? (S) sim / (N) não${FIM}"
+echo -ne "${VERDE}Você quer instalar o limitador de FPS - Libstrangle?${FIM} ${LVERDE}(S) sim / (N) não${FIM}"
 read resposta
 case "$resposta" in
      s|S|"")

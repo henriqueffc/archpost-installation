@@ -5,6 +5,7 @@
 AZUL='\e[1;34m'
 VERDE='\e[1;32m'
 RED='\e[1;31m'
+LVERDE='\e[0;92m'
 FIM='\e[0m'
 
 #Deletar a antiga pasta no /
@@ -30,7 +31,7 @@ sudo pacman -S --needed vlc ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins
 sudo pacman -S --needed pipewire pipewire-alsa pipewire-jack wireplumber pipewire-pulse gst-plugin-pipewire libpulse pipewire-x11-bell xdg-desktop-portal
 
 #Apparmor
-echo -ne "${VERDE}Você quer instalar o Apparmor? (S) sim / (N) não ${FIM}"
+echo -ne "${VERDE}Você quer instalar o Apparmor?${FIM} ${LVERDE}(S) sim / (N) não ${FIM}"
 read resposta
 case "$resposta" in
      s|S|"")
@@ -57,7 +58,7 @@ cat /etc/pacman.d/mirrorlist
 #Reflector
 echo -ne "${AZUL}
 Você quer executar o reflector para atualizar o mirrorlist?
-Caso não tenha acontecido problemas na instalação dos pacotes não recomendamos a execução.  (S) sim / (N) não 
+Caso não tenha acontecido problemas na instalação dos pacotes não recomendamos a execução.${FIM}  ${LVERDE}(S) sim / (N) não 
 ${FIM}"
 read resposta
 case "$resposta" in
