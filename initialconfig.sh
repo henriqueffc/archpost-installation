@@ -1,5 +1,13 @@
 #!/bin/bash
 
+#Cores dos avisos
+
+AZUL='\e[1;34m'
+VERDE='\e[1;32m'
+RED='\e[1;31m'
+LVERDE='\e[0;92m'
+FIM='\e[0m'
+
 # Locale.gen
 sed -i 's/#pt_BR.UTF-8 UTF-8/\pt_BR.UTF-8 UTF-8/' /etc/locale.gen
 locale-gen
