@@ -7,7 +7,7 @@ VERDE='\e[1;32m'
 RED='\e[1;31m'
 FIM='\e[0m'
 
-echo -ne "${AZUL}
+echo -e "${AZUL}
 -------------------------------------------------------------------------
                    Instalando os aplicativos Flatpaks
 -------------------------------------------------------------------------
@@ -39,7 +39,7 @@ flatpak install flathub com.mattjakeman.ExtensionManager -y
 flatpak install flathub org.gtk.Gtk3theme.Adwaita-dark -y
 
 # Flatpak Remote-Beta
-echo -n "${VERDE}Você quer adicionar o remote Flathub Beta? (S) sim / (N) não ${FIM}"
+echo -ne "${VERDE}Você quer adicionar o remote Flathub Beta? (S) sim / (N) não ${FIM}"
 read resposta
 case "$resposta" in
      s|S|"")
