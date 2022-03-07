@@ -46,4 +46,4 @@ case "$resposta" in
 esac
 
 
-printf "${VERDE}Fim! Reinicie o sistema.${FIM}"
+printf "${VERDE}Fim! Reinicie o sistema.${FIM}\n"
