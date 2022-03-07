@@ -8,7 +8,7 @@ RED='\e[1;31m'
 FIM='\e[0m'
 
 
-echo -ne "${AZUL}
+echo -e "${AZUL}
 -------------------------------------------------------------------------
                           Instalando os pacotes
 -------------------------------------------------------------------------
@@ -25,22 +25,22 @@ sudo pacman -S --needed qemu libvirt iptables-nft virt-manager virt-viewer dmide
 
 
 # TESSERACT 
-echo -n "${VERDE}Você quer instalar os pacotes para OCR-Tesseract (S) sim / (N) não ${FIM}"
+echo -ne "${VERDE}Você quer instalar os pacotes para OCR-Tesseract (S) sim / (N) não ${FIM}"
 read resposta
 case "$resposta" in
     s|S|"")
         sudo pacman -S --needed tesseract tesseract-data-spa tesseract-data-frk tesseract-data-ita tesseract-data-equ tesseract-data-fra tesseract-data-deu tesseract-data-deu_frak tesseract-data-eng tesseract-data-por
     ;;
     n|N)
-        echo "${AZUL}Continuando a instalação.${FIM}"
+        echo -e "${AZUL}Continuando a instalação.${FIM}"
     ;;
     *)
-        echo "${RED}Opção inválida${FIM}"
+        echo -e "${RED}Opção inválida${FIM}"
     ;;
 esac
 
 
-echo -ne "${AZUL}
+echo -e "${AZUL}
 -------------------------------------------------------------------------
                       Habilitando os serviços
 -------------------------------------------------------------------------
@@ -71,7 +71,7 @@ sudo mv $HOME/archpost-installation/service/intelparanoid.service /etc/systemd/s
 sudo systemctl enable intelparanoid.service 
 echo -e "  ${AZUL}Intel-Paranoid habilitado${FIM}"
 
-echo -ne "${AZUL}
+echo -e "${AZUL}
 -------------------------------------------------------------------------
                       Restante das configurações
 -------------------------------------------------------------------------
@@ -109,7 +109,7 @@ sudo updatedb
 echo -e "  ${AZUL}Mlocate habilitado${FIM}"
 
 # Limitador de FPS
-echo -e "${VERDE}Você quer instalar o limitador de FPS - Libstrangle? (S) sim / (N) não${FIM}"
+echo -ne "${VERDE}Você quer instalar o limitador de FPS - Libstrangle? (S) sim / (N) não${FIM}"
 read resposta
 case "$resposta" in
      s|S|"")
