@@ -14,7 +14,7 @@ sudo rm -r /archpost-installation
 sudo usermod -aG brlapi $USERNAME
 sudo usermod -aG wheel $USERNAME
 
-echo -ne "${AZUL}
+echo -e "${AZUL}
 -------------------------------------------------------------------------
                     Instalando os pacotes
 -------------------------------------------------------------------------
