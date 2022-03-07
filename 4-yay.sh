@@ -5,6 +5,7 @@
 AZUL='\e[1;34m'
 VERDE='\e[1;32m'
 RED='\e[1;31m'
+LVERDE='\e[0;92m'
 FIM='\e[0m'
 
 echo -e "${AZUL}
@@ -30,7 +31,7 @@ yay -S google-chrome dropbox appimagelauncher visual-studio-code-bin heroic-game
 
 
 #Chrome (Wayland) 
-echo -ne "${VERDE}Você quer criar o arquivo chrome-flags.conf para uso do Google Chrome no Wayland? (S) sim / (N) não ${FIM}"
+echo -ne "${VERDE}Você quer criar o arquivo chrome-flags.conf para uso do Google Chrome no Wayland?${FIM} ${LVERDE}(S) sim / (N) não ${FIM}"
 read resposta
 case "$resposta" in
      s|S|"")
