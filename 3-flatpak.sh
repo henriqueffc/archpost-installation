@@ -44,10 +44,10 @@ read resposta
 case "$resposta" in
      s|S|"")
       flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
-      echo -e "${AZUL}Fim da instalação${FIM}"
+      echo -e "${VERDE}Fim da instalação${FIM}"
      ;;
      n|N)
-      echo -e "${AZUL}Fim da instalação${FIM}"
+      echo -e "${VERDE}Fim da instalação${FIM}"
      ;;
      *)
       echo -e "${RED}Opção inválida${FIM}"
