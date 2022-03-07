@@ -1,10 +1,18 @@
 #!/bin/bash
 
-echo -ne "
+#Cores dos avisos
+
+AZUL='\e[1;34m'
+VERDE='\e[1;32m'
+RED='\e[1;31m'
+FIM='\e[0m'
+
+
+echo -ne "${AZUL}
 -------------------------------------------------------------------------
                           Instalando os pacotes
 -------------------------------------------------------------------------
-"
+${FIM}"
 
 # Pacotes
 sudo pacman -S --needed flatpak zsh materia-gtk-theme openssh ufw gufw aria2 bash-completion man-db man-pages texinfo reflector rsync curl cmatrix pacman-contrib dialog unrar zip unzip p7zip okular discount ebook-tools djvulibre unrar libzip kdegraphics-mobipocket libreoffice libreoffice-fresh-pt-br jre-openjdk kdenlive kvantum-qt5 qt6-wayland qt5-wayland xorg-xkill lutris wine wine-gecko wine-mono winetricks pandoc libappindicator-gtk3 transmission-gtk gparted exa bat alacarte fwupd gnome-firmware nvme-cli coreutils progress neofetch psensor ntfs-3g cpupower intel-gpu-tools i7z xorg-xdpyinfo libgtop lm_sensors glfw-x11 glew gnome-icon-theme-symbolic steam python-magic lib32-gnutls gamemode thermald papirus-icon-theme
@@ -17,57 +25,57 @@ sudo pacman -S --needed qemu libvirt iptables-nft virt-manager virt-viewer dmide
 
 
 # TESSERACT 
-echo -n "Você quer instalar os pacotes para OCR-Tesseract (S) sim / (N) não "
+echo -n "${VERDE}Você quer instalar os pacotes para OCR-Tesseract (S) sim / (N) não ${FIM}"
 read resposta
 case "$resposta" in
     s|S|"")
         sudo pacman -S --needed tesseract tesseract-data-spa tesseract-data-frk tesseract-data-ita tesseract-data-equ tesseract-data-fra tesseract-data-deu tesseract-data-deu_frak tesseract-data-eng tesseract-data-por
     ;;
     n|N)
-        echo "Continuando a instalação."
+        echo "${AZUL}Continuando a instalação.${FIM}"
     ;;
     *)
-        echo "Opção inválida"
+        echo "${RED}Opção inválida${FIM}"
     ;;
 esac
 
 
-echo -ne "
+echo -ne "${AZUL}
 -------------------------------------------------------------------------
                       Habilitando os serviços
 -------------------------------------------------------------------------
-"
+${FIM}"
 
 # Habilitar os serviços
 sudo systemctl enable libvirtd
-echo "  libvirt habilitado"
+echo -e "  ${AZUL}libvirt habilitado${FIM}"
 sudo systemctl enable fstrim.timer
-echo "  fstrim.timer habilitado"
+echo -e "  ${AZUL}fstrim.timer habilitado${FIM}"
 sudo systemctl enable thermald
-echo "  thermald habilitado"
+echo -e "  ${AZUL}thermald habilitado"
 sudo systemctl enable systemd-boot-update
-echo "  systemd-boot-update habilitado"
+echo -e "  ${AZUL}systemd-boot-update habilitado${FIM}"
 sudo systemctl enable bluetooth.service
-echo "  bluetooth.service habilitado"
+echo -e "  ${AZUL}bluetooth.service habilitado${FIM}"
 sudo ufw enable
 sudo systemctl enable ufw.service
-echo "  ufw.service habilitado"
+echo -e "  ${AZUL}ufw.service habilitado${FIM}"
 
 # Offpowersave
 sudo mv $HOME/archpost-installation/service/offpowersave.service /etc/systemd/system  
 sudo systemctl enable offpowersave.service 
-echo "  WIFI - Powersave desabilitado"
+echo -e "  ${AZUL}WIFI - Powersave desabilitado${FIM}"
 
 # Intelparanoid.service
 sudo mv $HOME/archpost-installation/service/intelparanoid.service /etc/systemd/system
 sudo systemctl enable intelparanoid.service 
-echo "  Intel-Paranoid habilitado"
+echo -e "  ${AZUL}Intel-Paranoid habilitado${FIM}"
 
-echo -ne "
+echo -ne "${AZUL}
 -------------------------------------------------------------------------
                       Restante das configurações
 -------------------------------------------------------------------------
-"
+${FIM}"
 
 # Grupos
 sudo usermod -aG libvirt $USERNAME
@@ -93,15 +101,15 @@ echo "source ~/.bash_aliases" >> ~/.bashrc
 rm ~/Área\ de\ trabalho/steam.desktop
 cp /usr/share/applications/steam.desktop ~/.local/share/applications
 sed -i 's/steam-runtime/\prime-run steam-runtime/' ~/.local/share/applications/steam.desktop
-echo "  steam.desktop modificado"
+echo -e "  ${AZUL}steam.desktop modificado${FIM}"
 
 # Mlocate - necessário para a busca no Ulauncher
 sudo pacman -S --needed mlocate
 sudo updatedb
-echo "  Mlocate habilitado"
+echo -e "  ${AZUL}Mlocate habilitado${FIM}"
 
 # Limitador de FPS
-echo -n "Você quer instalar o limitador de FPS - Libstrangle? (S) sim / (N) não "
+echo -e "${VERDE}Você quer instalar o limitador de FPS - Libstrangle? (S) sim / (N) não${FIM}"
 read resposta
 case "$resposta" in
      s|S|"")
@@ -111,10 +119,10 @@ case "$resposta" in
           sudo make install
      ;;
      n|N)
-         echo "Continuando a instalação"
+         echo -e "${AZUL}Continuando a instalação${FIM}"
      ;;
      *)
-         echo "Opção inválida"
+         echo -e "${RED}Opção inválida${FIM}"
      ;;
 esac
 
@@ -122,4 +130,4 @@ esac
 #Sensors
 sudo sensors-detect
 
-printf "\e[1;32mFim! Reinicie o sistema.\e[0m"
+printf "${VERDE}Fim! Reinicie o sistema.${FIM}\n"
