@@ -45,60 +45,56 @@ mv 99-swappiness.conf /etc/sysctl.d/
 nc=$(grep -c ^processor /proc/cpuinfo)
 nv=$(nproc --ignore=2) 
 RAM=$(cat /proc/meminfo | grep -i 'memtotal' | grep -o '[[:digit:]]*')
-echo -ne "
+echo -e "${AZUL}
 -------------------------------------------------------------------------
 		     MAKEFLAGS e compressão XZ e ZSTD
 	  O sistema possui o total de "$nc" cores e "$RAM" de ram
-
 -------------------------------------------------------------------------
-"
-echo -n "Você quer estabelecer a MAKEFLAGS em /etc/makepkg.conf com o número total de cores do sistema ($nc) ou com dois cores a menos que o total do sistema ($nv)?
-Se o sistema possuir menos que 8G de ram ou menos que 4 cores pule essa etapa. (T) total / (M) menor / (P) Pular "
+${FIM}"
+while :;  do
+echo -ne "${VERDE}Você quer estabelecer a MAKEFLAGS em /etc/makepkg.conf com o número total de cores do sistema ($nc) ou com dois cores a menos que o total do sistema ($nv)?
+Se o sistema possuir menos que 8G de ram ou menos que 4 cores pule essa etapa.${FIM} ${LVERDE}(T) total / (M) menor / (P) Pular ${FIM}"
 read resposta
 case "$resposta" in
     t|T|"")
         sed -i "s/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j$nc\"/g" /etc/makepkg.conf
         sed -i "s/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -z --threads=0 -)/g" /etc/makepkg.conf
 	sed -i "s/COMPRESSZST=(zstd -c -z -q -)/COMPRESSZST=(zstd -c -z -q --threads=0 -)/g" /etc/makepkg.conf
-        echo "Continuando a instalação."
-    ;;
+        echo -e "${AZUL}Continuando a instalação.${FIM}"; break;;
     m|M)
     	sed -i "s/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j$nv\"/g" /etc/makepkg.conf
     	sed -i "s/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -z --threads=0 -)/g" /etc/makepkg.conf
 	sed -i "s/COMPRESSZST=(zstd -c -z -q -)/COMPRESSZST=(zstd -c -z -q --threads=0 -)/g" /etc/makepkg.conf
-        echo "Continuando a instalação."
-    ;;
+        echo -e "${AZUL}Continuando a instalação.${FIM}"; break;;
     p|P)
-    	echo "Pulando essa etapa e continuando a instalação."
-    ;;
+    	echo -e "${AZUL}Pulando essa etapa e continuando a instalação.${FIM}"; break;;
     *)
-        echo "Opção inválida"
-    ;;
+        echo -e "${RED}Opção inválida.${FIM}";;
 esac
+done
 
 #Mirrorlist
-echo -ne "
+echo -e "${AZUL}
 -------------------------------------------------------------------------
                         Mirrorlist - Brasil
 -------------------------------------------------------------------------
-"
+${FIM}"
+while :;  do
 cat mirrorlist
-echo -n "Você quer alterar o mirrorlist do sistema de acordo com o exposto acima? (S) sim / (N) não "
+echo -ne "${VERDE}Você quer alterar o mirrorlist do sistema de acordo com o exposto acima? (S) sim / (N) não "
 read resposta
 case "$resposta" in
      s|S|"")
           mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
           mv mirrorlist /etc/pacman.d/
-          echo "Fim da instalação"
-     ;;
+          echo -e "${AZUL}Fim da instalação${FIM}"; break;;
      n|N)
-          echo "Fim da instalação"
-     ;;
+          echo -e "${AZUL}Fim da instalação${FIM}"; break;;
      *)
-          echo "Opção inválida"
-     ;;
+          echo -e "${RED}Opção inválida${FIM}";;
 esac
+done
 
 pacman -Syy --noconfirm --needed
 
-printf "\e[1;32mFim! Escreva exit, pressione enter e reinicie com o comando reboot.\e[0m"
+printf "${VERDE}Fim! Escreva exit, pressione enter e reinicie com o comando reboot.${FIM}\n"
