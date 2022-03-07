@@ -27,20 +27,18 @@ sudo pacman -S --needed qemu libvirt iptables-nft virt-manager virt-viewer dmide
 
 
 # TESSERACT 
+while :;  do
 echo -ne "${VERDE}Você quer instalar os pacotes para OCR-Tesseract?${FIM} ${LVERDE}(S) sim / (N) não ${FIM}"
 read resposta
 case "$resposta" in
     s|S|"")
-        sudo pacman -S --needed tesseract tesseract-data-spa tesseract-data-frk tesseract-data-ita tesseract-data-equ tesseract-data-fra tesseract-data-deu tesseract-data-deu_frak tesseract-data-eng tesseract-data-por
-    ;;
+        sudo pacman -S --needed tesseract tesseract-data-spa tesseract-data-frk tesseract-data-ita tesseract-data-equ tesseract-data-fra tesseract-data-deu tesseract-data-deu_frak tesseract-data-eng tesseract-data-por; break;;
     n|N)
-        echo -e "${AZUL}Continuando a instalação.${FIM}"
-    ;;
+        echo -e "${AZUL}Continuando a instalação.${FIM}"; break;;
     *)
-        echo -e "${RED}Opção inválida${FIM}"
-    ;;
+        echo -e "${RED}Opção inválida${FIM}";;
 esac
-
+done
 
 echo -e "${AZUL}
 -------------------------------------------------------------------------
@@ -54,7 +52,7 @@ echo -e "  ${AZUL}libvirt habilitado${FIM}"
 sudo systemctl enable fstrim.timer
 echo -e "  ${AZUL}fstrim.timer habilitado${FIM}"
 sudo systemctl enable thermald
-echo -e "  ${AZUL}thermald habilitado"
+echo -e "  ${AZUL}thermald habilitado${FIM}"
 sudo systemctl enable systemd-boot-update
 echo -e "  ${AZUL}systemd-boot-update habilitado${FIM}"
 sudo systemctl enable bluetooth.service
@@ -111,6 +109,7 @@ sudo updatedb
 echo -e "  ${AZUL}Mlocate habilitado${FIM}"
 
 # Limitador de FPS
+while :;  do
 echo -ne "${VERDE}Você quer instalar o limitador de FPS - Libstrangle?${FIM} ${LVERDE}(S) sim / (N) não${FIM}"
 read resposta
 case "$resposta" in
@@ -118,16 +117,13 @@ case "$resposta" in
           git clone https://gitlab.com/torkel104/libstrangle.git
           cd libstrangle 
           make
-          sudo make install
-     ;;
+          sudo make install; break;;
      n|N)
-         echo -e "${AZUL}Continuando a instalação${FIM}"
-     ;;
+         echo -e "${AZUL}Continuando a instalação${FIM}"; break;;
      *)
-         echo -e "${RED}Opção inválida${FIM}"
-     ;;
+         echo -e "${RED}Opção inválida. Responda a pergunta.${FIM}";;
 esac
-
+done
 
 #Sensors
 sudo sensors-detect

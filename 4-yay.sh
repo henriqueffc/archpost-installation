@@ -31,20 +31,18 @@ yay -S google-chrome dropbox appimagelauncher visual-studio-code-bin heroic-game
 
 
 #Chrome (Wayland) 
+while :;  do
 echo -ne "${VERDE}Você quer criar o arquivo chrome-flags.conf para uso do Google Chrome no Wayland?${FIM} ${LVERDE}(S) sim / (N) não ${FIM}"
 read resposta
 case "$resposta" in
      s|S|"")
       mv $HOME/archpost-installation/chrome/chrome-flags.conf ~/.config
-      echo -e "${AZUL}Arquivo criado${FIM}"
-     ;;
+      echo -e "${AZUL}Arquivo criado${FIM}"; break;;
      n|N)
-      echo -e "${AZUL}Fim da instalação${FIM}"
-     ;;
+      break;;
      *)
-      echo -e "${RED}Opção inválida${FIM}"
-     ;;
+      echo -e "${RED}Opção inválida. Responda a pergunta.${FIM}";;
 esac
-
+done
 
 printf "${VERDE}Fim! Reinicie o sistema.${FIM}\n"

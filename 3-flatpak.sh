@@ -40,17 +40,17 @@ flatpak install flathub com.mattjakeman.ExtensionManager -y
 flatpak install flathub org.gtk.Gtk3theme.Adwaita-dark -y
 
 # Flatpak Remote-Beta
+
+while :;  do
 echo -ne "${VERDE}Você quer adicionar o remote Flathub Beta?${FIM} ${LVERDE}(S) sim / (N) não ${FIM}"
 read resposta
 case "$resposta" in
      s|S|"")
       flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
-      echo -e "${VERDE}Fim da instalação${FIM}"
-     ;;
+      echo -e "${VERDE}Fim da instalação${FIM}"; break;;
      n|N)
-      echo -e "${VERDE}Fim da instalação${FIM}"
-     ;;
+      echo -e "${VERDE}Fim da instalação${FIM}"; break;;
      *)
-      echo -e "${RED}Opção inválida${FIM}"
-     ;;
+      echo -e "${RED}Opção inválida. Responda a pergunta.${FIM}";;
 esac
+done
