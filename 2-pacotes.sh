@@ -36,7 +36,7 @@ case "$resposta" in
     n|N)
         echo -e "${AZUL}Continuando a instalação.${FIM}"; break;;
     *)
-        echo -e "${RED}Opção inválida${FIM}";;
+        echo -e "${RED}Opção inválida. Responda a pergunta.${FIM}";;
 esac
 done
 
