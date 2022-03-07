@@ -1,10 +1,17 @@
 #!/bin/bash
 
-echo -ne "
+#Cores dos avisos
+
+AZUL='\e[1;34m'
+VERDE='\e[1;32m'
+RED='\e[1;31m'
+FIM='\e[0m'
+
+echo -ne "${AZUL}
 -------------------------------------------------------------------------
                     Instalando o YAY
 -------------------------------------------------------------------------
-"
+${FIM}"
 
 # YAY 
 sudo pacman -S --needed git base-devel go wget
@@ -12,31 +19,31 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 
-echo -ne "
+echo -ne "${AZUL}
 -------------------------------------------------------------------------
                     Instalando os pacotes AUR
 -------------------------------------------------------------------------
-"
+${FIM}"
 
 # Pacotes AUR
 yay -S google-chrome dropbox appimagelauncher visual-studio-code-bin heroic-games-launcher-bin ulauncher timeshift downgrade inxi ttf-ms-fonts mangohud lib32-mangohud qgnomeplatform goverlay-bin
 
 
 #Chrome (Wayland) 
-echo -n "Você quer criar o arquivo chrome-flags.conf para uso do Google Chrome no Wayland? (S) sim / (N) não "
+echo -n "${VERDE}Você quer criar o arquivo chrome-flags.conf para uso do Google Chrome no Wayland? (S) sim / (N) não ${FIM}"
 read resposta
 case "$resposta" in
      s|S|"")
       mv $HOME/archpost-installation/chrome/chrome-flags.conf ~/.config
-      echo "Arquivo criado"
+      echo -e "${AZUL}Arquivo criado${FIM}"
      ;;
      n|N)
-      echo "Fim da instalação"
+      echo -e "${AZUL}Fim da instalação${FIM}"
      ;;
      *)
-      echo "Opção inválida"
+      echo -e "${RED}Opção inválida${FIM}"
      ;;
 esac
 
 
-printf "\e[1;32mFim! Reinicie o sistema.\e[0m"
+printf "${VERDE}Fim! Reinicie o sistema.${FIM}"
