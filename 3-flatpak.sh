@@ -1,10 +1,17 @@
 #!/bin/bash
 
-echo -ne "
+#Cores dos avisos
+
+AZUL='\e[1;34m'
+VERDE='\e[1;32m'
+RED='\e[1;31m'
+FIM='\e[0m'
+
+echo -ne "${AZUL}
 -------------------------------------------------------------------------
                    Instalando os aplicativos Flatpaks
 -------------------------------------------------------------------------
-"
+${FIM}"
 
 # Flatpak Aplicativos
 flatpak install flathub org.gimp.GIMP -y
@@ -32,17 +39,17 @@ flatpak install flathub com.mattjakeman.ExtensionManager -y
 flatpak install flathub org.gtk.Gtk3theme.Adwaita-dark -y
 
 # Flatpak Remote-Beta
-echo -n "Você quer adicionar o remote Flathub Beta? (S) sim / (N) não "
+echo -n "${VERDE}Você quer adicionar o remote Flathub Beta? (S) sim / (N) não ${FIM}"
 read resposta
 case "$resposta" in
      s|S|"")
       flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
-      echo "Fim da instalação"
+      echo -e "${AZUL}Fim da instalação${FIM}"
      ;;
      n|N)
-      echo "Fim da instalação"
+      echo -e "${AZUL}Fim da instalação${FIM}"
      ;;
      *)
-      echo "Opção inválida"
+      echo -e "${RED}Opção inválida${FIM}"
      ;;
 esac
