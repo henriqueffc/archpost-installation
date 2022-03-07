@@ -1,5 +1,12 @@
 #!/bin/bash
 
+#Cores dos avisos
+
+AZUL='\e[1;34m'
+VERDE='\e[1;32m'
+RED='\e[1;31m'
+FIM='\e[0m'
+
 #Deletar a antiga pasta no /
 sudo rm -r /archpost-installation
 
@@ -7,11 +14,11 @@ sudo rm -r /archpost-installation
 sudo usermod -aG brlapi $USERNAME
 sudo usermod -aG wheel $USERNAME
 
-echo -ne "
+echo -ne "${AZUL}
 -------------------------------------------------------------------------
                     Instalando os pacotes
 -------------------------------------------------------------------------
-"
+${FIM}"
 
 # Video (Intel e Nvidia)
 sudo pacman -S --needed nvidia-dkms nvidia-utils lib32-nvidia-utils nvidia-settings opencl-nvidia vulkan-icd-loader libvdpau-va-gl libva-vdpau-driver libvdpau vulkan-tools ocl-icd mesa mesa-vdpau libva vdpauinfo libva-utils intel-ucode intel-media-sdk lib32-mesa vulkan-intel intel-media-driver intel-compute-runtime intel-graphics-compiler nvidia-prime clinfo nvtop
@@ -23,7 +30,7 @@ sudo pacman -S --needed vlc ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins
 sudo pacman -S --needed pipewire pipewire-alsa pipewire-jack wireplumber pipewire-pulse gst-plugin-pipewire libpulse pipewire-x11-bell xdg-desktop-portal
 
 #Apparmor
-echo -n "Você quer instalar o Apparmor? (S) sim / (N) não "
+echo -ne "${VERDE}Você quer instalar o Apparmor? (S) sim / (N) não ${FIM}"
 read resposta
 case "$resposta" in
      s|S|"")
@@ -36,22 +43,22 @@ case "$resposta" in
         sudo chown $USER:$USER ~/.config/autostart
      ;;
      n|N)
-         echo "Finalizando a instalação"
+         echo -e "${AZUL}Finalizando a instalação${FIM}"
      ;;
      *)
-         echo "Opção inválida"
+         echo -e "${RED}Opção inválida${FIM}"
      ;;
 esac
 
 #Mirrorlist atual
-echo "Mirrorlist atual"
+echo -e "${AZUL}Mirrorlist atual${FIM}"
 cat /etc/pacman.d/mirrorlist
 
 #Reflector
-echo -n "
+echo -ne "${AZUL}
 Você quer executar o reflector para atualizar o mirrorlist?
 Caso não tenha acontecido problemas na instalação dos pacotes não recomendamos a execução.  (S) sim / (N) não 
-"
+${FIM}"
 read resposta
 case "$resposta" in
      s|S|"")
@@ -61,11 +68,11 @@ case "$resposta" in
          sudo pacman -Syyu
      ;;
      n|N)
-         echo "Fim da instalação"
+         echo -e "${AZUL}Fim da instalação${FIM}"
      ;;
      *)
-         echo "Opção inválida"
+         echo -e "${RED}Opção inválida${FIM}"
      ;;
 esac
 
-printf "\e[1;32mFim! Caso tenha instalado o AppArmor acrescente as instruções do arquivo -paBoot.txt/linha 7- nos parâmetros do boot e depois reinicie o sistema. Se você não instalou o Apparmor acrescente somente as instruções da linha 12 do mesmo arquivo e proceda com a reinicialização do sistema\e[0m"
+printf "${VERDE}Fim! Caso tenha instalado o AppArmor acrescente as instruções do arquivo -paBoot.txt/linha 7- nos parâmetros do boot e depois reinicie o sistema. Se você não instalou o Apparmor acrescente somente as instruções da linha 12 do mesmo arquivo e proceda com a reinicialização do sistema.${FIM}"
