@@ -81,7 +81,7 @@ echo -e "${AZUL}
 ${FIM}"
 while :;  do
 cat mirrorlist
-echo -ne "${VERDE}Você quer alterar o mirrorlist do sistema de acordo com o exposto acima? (S) sim / (N) não "
+echo -ne "${VERDE}Você quer alterar o mirrorlist do sistema de acordo com o exposto acima? (S) sim / (N) não ${FIM}"
 read resposta
 case "$resposta" in
      s|S|"")
