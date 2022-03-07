@@ -7,7 +7,7 @@ VERDE='\e[1;32m'
 RED='\e[1;31m'
 FIM='\e[0m'
 
-echo -ne "${AZUL}
+echo -e "${AZUL}
 -------------------------------------------------------------------------
                     Instalando o YAY
 -------------------------------------------------------------------------
@@ -19,7 +19,7 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 
-echo -ne "${AZUL}
+echo -e "${AZUL}
 -------------------------------------------------------------------------
                     Instalando os pacotes AUR
 -------------------------------------------------------------------------
@@ -30,7 +30,7 @@ yay -S google-chrome dropbox appimagelauncher visual-studio-code-bin heroic-game
 
 
 #Chrome (Wayland) 
-echo -n "${VERDE}Você quer criar o arquivo chrome-flags.conf para uso do Google Chrome no Wayland? (S) sim / (N) não ${FIM}"
+echo -ne "${VERDE}Você quer criar o arquivo chrome-flags.conf para uso do Google Chrome no Wayland? (S) sim / (N) não ${FIM}"
 read resposta
 case "$resposta" in
      s|S|"")
