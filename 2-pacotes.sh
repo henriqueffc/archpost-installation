@@ -97,11 +97,11 @@ mv $HOME/archpost-installation/modelo/arquivo.txt ~/Modelos
 echo "export QT_STYLE_OVERRIDE=kvantum" >> ~/.profile
 echo "source ~/.bash_aliases" >> ~/.bashrc
 
-echo -e "${AZUL}Alterando o tema, os ícones e os atalhos do sistema em 1${FIM}"
+echo -e "${AZUL}Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 1${FIM}"
 sleep 1
-echo -e "${AZUL}Alterando o tema, os ícones e os sistema em 2${FIM}"
+echo -e "${AZUL}Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 2${FIM}"
 sleep 1
-echo -e "${AZUL}Alterando o tema, os ícones e os sistema em 3${FIM}"
+echo -e "${AZUL}Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 3${FIM}"
 sleep 1
 
 #Tema e ícones do Gnome
@@ -148,6 +148,10 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/ binding "<Super>backslash"
 
 gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/']" 
+
+#Wallpaper dinâmico
+sudo cp $HOME/archpost-installation/wallpapers/*.* /usr/share/backgrounds/gnome
+gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/gnome/dynamic_wallpaper.xml
 
 #Steam (prime-run)
 rm ~/Área\ de\ trabalho/steam.desktop
