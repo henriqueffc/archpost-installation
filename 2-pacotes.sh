@@ -97,6 +97,58 @@ mv $HOME/archpost-installation/modelo/arquivo.txt ~/Modelos
 echo "export QT_STYLE_OVERRIDE=kvantum" >> ~/.profile
 echo "source ~/.bash_aliases" >> ~/.bashrc
 
+echo -e "${AZUL}Alterando o tema, os ícones e os atalhos do sistema em 1${FIM}"
+sleep 1
+echo -e "${AZUL}Alterando o tema, os ícones e os sistema em 2${FIM}"
+sleep 1
+echo -e "${AZUL}Alterando o tema, os ícones e os sistema em 3${FIM}"
+sleep 1
+
+#Tema e ícones do Gnome
+gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
+gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
+
+
+#Atalhos do teclado (abnt2 com teclado numérico)
+# abaixar o volume - Ctrl + - teclado numérico
+gsettings set org.gnome.settings-daemon.plugins.media-keys volume-down "['<Primary>KP_Subtract']" 
+# aumentar o volume - Ctrl + + teclado numérico
+gsettings set org.gnome.settings-daemon.plugins.media-keys volume-up "['<Primary>KP_Add']" 
+#reproduzir ou pausar reprodução de mídia - Crtl + * teclado numérico
+gsettings set org.gnome.settings-daemon.plugins.media-keys play "['<Primary>KP_Multiply']" 
+#mudar para a próxima faixa - Ctrl + / teclado numérico
+gsettings set org.gnome.settings-daemon.plugins.media-keys next "['<Primary>KP_Divide']" 
+# abrir navegador - Super + B
+gsettings set org.gnome.settings-daemon.plugins.media-keys www "['<Super>b']" 
+#abrir o Files na home - Super + F
+gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>f']" 
+#fechar a janela - Super + Q
+gsettings set org.gnome.desktop.wm.keybindings close "['<Super>q']" 
+
+# Atalho personalizado para lançar o Terminal - Super + T
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name "Terminal"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command "gnome-terminal"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding "<Super>t"
+
+
+# Atalho personalizado para aumentar o brilho usando o teclado - Crtl + Para cima
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ name "Aumentar o brilho"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ command "gdbus call --session --dest org.gnome.SettingsDaemon.Power --object-path /org/gnome/SettingsDaemon/Power --method org.gnome.SettingsDaemon.Power.Screen.StepUp"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ binding "<Primary>Up"
+
+
+# Atalho personalizado para diminuir o brilho usando o teclado - Crtl + Para baixo
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/ name "Diminuir o brilho"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/ command "gdbus call --session --dest org.gnome.SettingsDaemon.Power --object-path /org/gnome/SettingsDaemon/Power --method org.gnome.SettingsDaemon.Power.Screen.StepDown"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/ binding "<Primary>Down"
+
+# Atalho personalizado para lançar o Ulauncher (Wayland) - Super + \
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/ name "Ulauncher"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/ command "ulauncher-toggle"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/ binding "<Super>backslash"
+
+gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/']" 
+
 #Steam (prime-run)
 rm ~/Área\ de\ trabalho/steam.desktop
 cp /usr/share/applications/steam.desktop ~/.local/share/applications

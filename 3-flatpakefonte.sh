@@ -15,6 +15,13 @@ echo -e "${AZUL}
 -------------------------------------------------------------------------
 ${FIM}"
 
+echo -e "${AZUL}Alterando a fonte do terminal em 1${FIM}"
+sleep 1
+echo -e "${AZUL}Alterando a fonte do terminal em 2${FIM}"
+sleep 1
+echo -e "${AZUL}Alterando a fonte do terminal em 3${FIM}"
+sleep 1
+
 #Fonte do terminal
 font=$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d "'")
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ use-system-font false
@@ -53,6 +60,7 @@ flatpak install flathub com.github.wwmm.easyeffects -y
 flatpak install flathub com.obsproject.Studio -y
 flatpak install flathub com.mattjakeman.ExtensionManager -y
 flatpak install flathub org.gtk.Gtk3theme.Adwaita-dark -y
+flatpak install flathub com.github.alexkdeveloper.dwxmlcreator -y
 
 # Flatpak Remote-Beta
 
