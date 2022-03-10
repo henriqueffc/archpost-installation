@@ -15,12 +15,10 @@ echo -e "${AZUL}
 -------------------------------------------------------------------------
 ${FIM}"
 
-echo -e "${AZUL}Alterando a fonte do terminal em 1${FIM}"
-sleep 1
-echo -e "${AZUL}Alterando a fonte do terminal em 2${FIM}"
-sleep 1
-echo -e "${AZUL}Alterando a fonte do terminal em 3${FIM}"
-sleep 1
+echo -e "${AZUL}Alterando a fonte do terminal em 1${FIM}" && sleep 1;
+echo -e "${AZUL}Alterando a fonte do terminal em 2${FIM}" && sleep 1;
+echo -e "${AZUL}Alterando a fonte do terminal em 3${FIM}" && sleep 1;
+
 
 #Fonte do terminal
 font=$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d "'")
