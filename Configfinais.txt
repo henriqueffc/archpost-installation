@@ -1,7 +1,0 @@
-# Coisas para fazer depois do reboot:
-1 - Habilitar o cache de escrita no programa Discos
-2 - BRILHO - Atalhos no teclado para o Brilho no Gnome
-3 - Variável de ambiente para configurar no Flatseal para os aplicativos flatpak com problemas de tema. GTK_THEME=Adwaita-dark ou GTK_THEME=Materia-dark / QT - QT_STYLE_OVERRIDE=kvantum, QT_STYLE_OVERRIDE=adwaita-dark ou QT_STYLE_OVERRIDE=materia-dark.
-4 - Configurar o ZSH.
-5 - Modifique o policy.xml do ImageMagick
-6 - Crie o symlink para o libGLEW. O programa glcapsviewer precisa dessa modificação

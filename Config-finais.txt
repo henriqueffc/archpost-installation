@@ -1,0 +1,5 @@
+# Coisas para fazer depois de concluida a instalação com os scripts:
+1 - Habilitar o cache de escrita no programa Discos;
+2 - Variável de ambiente para configurar no Flatseal para os aplicativos flatpak com problemas de tema. GTK_THEME=Adwaita-dark ou GTK_THEME=Materia-dark / QT - QT_STYLE_OVERRIDE=kvantum, QT_STYLE_OVERRIDE=adwaita-dark ou QT_STYLE_OVERRIDE=materia-dark;
+4 - Modifique o policy.xml do ImageMagick;
+5 - Crie o symlink para o libGLEW. O programa glcapsviewer precisa dessa modificação.
