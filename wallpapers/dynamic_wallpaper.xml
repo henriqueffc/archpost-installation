@@ -2,54 +2,198 @@
   <starttime>
     <year>2022</year>
     <month>03</month>
-    <day>08</day>
+    <day>10</day>
     <hour>00</hour>
     <minute>00</minute>
     <second>00</second>
   </starttime>
 <static>
-    <duration>1797.0</duration>
-    <file>/usr/share/backgrounds/gnome/wallhaven-q22x27.png</file>
+    <duration>3595.0</duration>
+    <file>/usr/share/backgrounds/gnome/1.png</file>
   </static>
   <transition>
-    <duration>3.0</duration>
-    <from>/usr/share/backgrounds/gnome/wallhaven-q22x27.png</from>
-<to>/usr/share/backgrounds/gnome/wallhaven-e78dl8.jpg</to>
+    <duration>5.0</duration>
+    <from>/usr/share/backgrounds/gnome/1.png</from>
+<to>/usr/share/backgrounds/gnome/2.png</to>
   </transition>
   <static>
-    <duration>1797.0</duration>
-    <file>/usr/share/backgrounds/gnome/wallhaven-e78dl8.jpg</file>
+    <duration>3595.0</duration>
+    <file>/usr/share/backgrounds/gnome/2.png</file>
   </static>
   <transition>
-    <duration>3.0</duration>
-    <from>/usr/share/backgrounds/gnome/wallhaven-e78dl8.jpg</from>
-<to>/usr/share/backgrounds/gnome/wallhaven-95j3gx.jpg</to>
+    <duration>5.0</duration>
+    <from>/usr/share/backgrounds/gnome/2.png</from>
+<to>/usr/share/backgrounds/gnome/3.png</to>
   </transition>
   <static>
-    <duration>1797.0</duration>
-    <file>/usr/share/backgrounds/gnome/wallhaven-95j3gx.jpg</file>
+    <duration>3595.0</duration>
+    <file>/usr/share/backgrounds/gnome/3.png</file>
   </static>
   <transition>
-    <duration>3.0</duration>
-    <from>/usr/share/backgrounds/gnome/wallhaven-95j3gx.jpg</from>
-<to>/usr/share/backgrounds/gnome/wallhaven-vg2e15.jpg</to>
+    <duration>5.0</duration>
+    <from>/usr/share/backgrounds/gnome/3.png</from>
+<to>/usr/share/backgrounds/gnome/4.jpg</to>
   </transition>
   <static>
-    <duration>1797.0</duration>
-    <file>/usr/share/backgrounds/gnome/wallhaven-vg2e15.jpg</file>
+    <duration>3595.0</duration>
+    <file>/usr/share/backgrounds/gnome/4.jpg</file>
   </static>
   <transition>
-    <duration>3.0</duration>
-    <from>/usr/share/backgrounds/gnome/wallhaven-vg2e15.jpg</from>
-<to>/usr/share/backgrounds/gnome/wallhaven-135pz9.jpg</to>
+    <duration>5.0</duration>
+    <from>/usr/share/backgrounds/gnome/4.jpg</from>
+<to>/usr/share/backgrounds/gnome/5.jpg</to>
   </transition>
   <static>
-    <duration>1797.0</duration>
-    <file>/usr/share/backgrounds/gnome/wallhaven-135pz9.jpg</file>
+    <duration>3595.0</duration>
+    <file>/usr/share/backgrounds/gnome/5.jpg</file>
   </static>
   <transition>
-    <duration>3.0</duration>
-    <from>/usr/share/backgrounds/gnome/wallhaven-135pz9.jpg</from>
-<to>/usr/share/backgrounds/gnome/wallhaven-q22x27.png</to>
+    <duration>5.0</duration>
+    <from>/usr/share/backgrounds/gnome/5.jpg</from>
+<to>/usr/share/backgrounds/gnome/6.jpg</to>
+  </transition>
+  <static>
+    <duration>3595.0</duration>
+    <file>/usr/share/backgrounds/gnome/6.jpg</file>
+  </static>
+  <transition>
+    <duration>5.0</duration>
+    <from>/usr/share/backgrounds/gnome/6.jpg</from>
+<to>/usr/share/backgrounds/gnome/7.jpg</to>
+  </transition>
+  <static>
+    <duration>3595.0</duration>
+    <file>/usr/share/backgrounds/gnome/7.jpg</file>
+  </static>
+  <transition>
+    <duration>5.0</duration>
+    <from>/usr/share/backgrounds/gnome/7.jpg</from>
+<to>/usr/share/backgrounds/gnome/8.jpg</to>
+  </transition>
+  <static>
+    <duration>3595.0</duration>
+    <file>/usr/share/backgrounds/gnome/8.jpg</file>
+  </static>
+  <transition>
+    <duration>5.0</duration>
+    <from>/usr/share/backgrounds/gnome/8.jpg</from>
+<to>/usr/share/backgrounds/gnome/9.jpg</to>
+  </transition>
+  <static>
+    <duration>3595.0</duration>
+    <file>/usr/share/backgrounds/gnome/9.jpg</file>
+  </static>
+  <transition>
+    <duration>5.0</duration>
+    <from>/usr/share/backgrounds/gnome/9.jpg</from>
+<to>/usr/share/backgrounds/gnome/10.jpg</to>
+  </transition>
+  <static>
+    <duration>3595.0</duration>
+    <file>/usr/share/backgrounds/gnome/10.jpg</file>
+  </static>
+  <transition>
+    <duration>5.0</duration>
+    <from>/usr/share/backgrounds/gnome/10.jpg</from>
+<to>/usr/share/backgrounds/gnome/11.jpg</to>
+  </transition>
+  <static>
+    <duration>3595.0</duration>
+    <file>/usr/share/backgrounds/gnome/11.jpg</file>
+  </static>
+  <transition>
+    <duration>5.0</duration>
+    <from>/usr/share/backgrounds/gnome/11.jpg</from>
+<to>/usr/share/backgrounds/gnome/12.jpg</to>
+  </transition>
+  <static>
+    <duration>3595.0</duration>
+    <file>/usr/share/backgrounds/gnome/12.jpg</file>
+  </static>
+  <transition>
+    <duration>5.0</duration>
+    <from>/usr/share/backgrounds/gnome/12.jpg</from>
+<to>/usr/share/backgrounds/gnome/13.jpg</to>
+  </transition>
+  <static>
+    <duration>3595.0</duration>
+    <file>/usr/share/backgrounds/gnome/13.jpg</file>
+  </static>
+  <transition>
+    <duration>5.0</duration>
+    <from>/usr/share/backgrounds/gnome/13.jpg</from>
+<to>/usr/share/backgrounds/gnome/14.jpg</to>
+  </transition>
+  <static>
+    <duration>3595.0</duration>
+    <file>/usr/share/backgrounds/gnome/14.jpg</file>
+  </static>
+  <transition>
+    <duration>5.0</duration>
+    <from>/usr/share/backgrounds/gnome/14.jpg</from>
+<to>/usr/share/backgrounds/gnome/15.jpg</to>
+  </transition>
+  <static>
+    <duration>3595.0</duration>
+    <file>/usr/share/backgrounds/gnome/15.jpg</file>
+  </static>
+  <transition>
+    <duration>5.0</duration>
+    <from>/usr/share/backgrounds/gnome/15.jpg</from>
+<to>/usr/share/backgrounds/gnome/16.jpg</to>
+  </transition>
+  <static>
+    <duration>3595.0</duration>
+    <file>/usr/share/backgrounds/gnome/16.jpg</file>
+  </static>
+  <transition>
+    <duration>5.0</duration>
+    <from>/usr/share/backgrounds/gnome/16.jpg</from>
+<to>/usr/share/backgrounds/gnome/17.jpg</to>
+  </transition>
+  <static>
+    <duration>3595.0</duration>
+    <file>/usr/share/backgrounds/gnome/17.jpg</file>
+  </static>
+  <transition>
+    <duration>5.0</duration>
+    <from>/usr/share/backgrounds/gnome/17.jpg</from>
+<to>/usr/share/backgrounds/gnome/18.jpg</to>
+  </transition>
+  <static>
+    <duration>3595.0</duration>
+    <file>/usr/share/backgrounds/gnome/18.jpg</file>
+  </static>
+  <transition>
+    <duration>5.0</duration>
+    <from>/usr/share/backgrounds/gnome/18.jpg</from>
+<to>/usr/share/backgrounds/gnome/19.jpg</to>
+  </transition>
+  <static>
+    <duration>3595.0</duration>
+    <file>/usr/share/backgrounds/gnome/19.jpg</file>
+  </static>
+  <transition>
+    <duration>5.0</duration>
+    <from>/usr/share/backgrounds/gnome/19.jpg</from>
+<to>/usr/share/backgrounds/gnome/20.png</to>
+  </transition>
+  <static>
+    <duration>3595.0</duration>
+    <file>/usr/share/backgrounds/gnome/20.png</file>
+  </static>
+  <transition>
+    <duration>5.0</duration>
+    <from>/usr/share/backgrounds/gnome/20.png</from>
+<to>/usr/share/backgrounds/gnome/21.jpg</to>
+  </transition>
+  <static>
+    <duration>3595.0</duration>
+    <file>/usr/share/backgrounds/gnome/21.jpg</file>
+  </static>
+  <transition>
+    <duration>5.0</duration>
+    <from>/usr/share/backgrounds/gnome/21.jpg</from>
+<to>/usr/share/backgrounds/gnome/1.png</to>
   </transition>
 </background>

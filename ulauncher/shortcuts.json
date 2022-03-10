@@ -1,0 +1,112 @@
+{
+    "52535163-2a78-4dec-be3d-052980bc48cf": {
+        "id": "52535163-2a78-4dec-be3d-052980bc48cf",
+        "name": "Google Search",
+        "keyword": "g",
+        "cmd": "https://google.com/search?q=%s",
+        "icon": "/usr/share/ulauncher/media/google-search-icon.png",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1645671925.0938797
+    },
+    "5809f342-262c-4e2e-91c6-4df3a10fb13a": {
+        "id": "5809f342-262c-4e2e-91c6-4df3a10fb13a",
+        "name": "Stack Overflow",
+        "keyword": "so",
+        "cmd": "https://stackoverflow.com/search?q=%s",
+        "icon": "/usr/share/ulauncher/media/stackoverflow-icon.svg",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1645671925.0939186
+    },
+    "6b08c5b1-4fa1-4380-b110-968ebc490efc": {
+        "id": "6b08c5b1-4fa1-4380-b110-968ebc490efc",
+        "name": "Wikipedia",
+        "keyword": "wiki",
+        "cmd": "https://en.wikipedia.org/wiki/%s",
+        "icon": "/usr/share/ulauncher/media/wikipedia-icon.png",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1645671925.0939436
+    },
+    "5bd49b14-dea6-4621-90e0-af2dac52710a": {
+        "id": "5bd49b14-dea6-4621-90e0-af2dac52710a",
+        "name": "Arch Linux",
+        "keyword": "arch",
+        "cmd": "https://archlinux.org/packages/?q=%s",
+        "icon": "~/Imagens/Logo Ulauncher/arch.png",
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1645679248.283524
+    },
+    "f243932a-0dda-410e-a448-de5607c2f75a": {
+        "id": "f243932a-0dda-410e-a448-de5607c2f75a",
+        "name": "AUR",
+        "keyword": "aur",
+        "cmd": "https://aur.archlinux.org/packages/?O=0&K=%s",
+        "icon": "~/Imagens/Logo Ulauncher/arch.png",
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1645679280.9176056
+    },
+    "d99ae642-0f49-49f0-9a34-28977a6a6e62": {
+        "id": "d99ae642-0f49-49f0-9a34-28977a6a6e62",
+        "name": "Flatpak",
+        "keyword": "flatpak",
+        "cmd": "https://flathub.org/apps/search/%s",
+        "icon": "~/Imagens/Logo Ulauncher/flathub-logo.png",
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1645679337.464787
+    },
+    "4ed6dc96-80b5-4f3a-9fe0-286c1b304c80": {
+        "id": "4ed6dc96-80b5-4f3a-9fe0-286c1b304c80",
+        "name": "Youtube",
+        "keyword": "yt",
+        "cmd": "https://www.youtube.com/results?search_query=%s",
+        "icon": "~/Imagens/Logo Ulauncher/youtube-logo.png",
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1645679385.7572062
+    },
+    "f7e0d2f1-188e-4444-8d35-7895982cbf73": {
+        "id": "f7e0d2f1-188e-4444-8d35-7895982cbf73",
+        "name": "Dicion\u00e1rio",
+        "keyword": "dic",
+        "cmd": "https://aulete.com.br/%s",
+        "icon": "~/Imagens/Logo Ulauncher/aulete1.png",
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1645679407.02901
+    },
+    "18068748-a3b4-4b8e-bf07-2bee39037b1c": {
+        "id": "18068748-a3b4-4b8e-bf07-2bee39037b1c",
+        "name": "Pkgs",
+        "keyword": "pkgs",
+        "cmd": "https://pkgs.org/search/?q=%s",
+        "icon": "~/Imagens/Logo Ulauncher/pkgs.png",
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1645679468.4719043
+    },
+    "a6e98a06-ad20-4ea8-9465-52822382c50c": {
+        "id": "a6e98a06-ad20-4ea8-9465-52822382c50c",
+        "name": "Sin\u00f4nimo",
+        "keyword": "sin",
+        "cmd": "https://www.sinonimos.com.br/%s ",
+        "icon": "~/Imagens/Logo Ulauncher/sinonimo.png",
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1645679530.5268652
+    },
+    "d76cc2e3-bb78-4c61-9d94-6ee92ec6bb43": {
+        "id": "d76cc2e3-bb78-4c61-9d94-6ee92ec6bb43",
+        "name": "Ant\u00f4nimo",
+        "keyword": "ant",
+        "cmd": "https://www.antonimos.com.br/%s",
+        "icon": "~/Imagens/Logo Ulauncher/antonimo.jpg",
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1645679561.5594053
+    }
+}

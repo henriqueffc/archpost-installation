@@ -1,0 +1,48 @@
+Incicialize o Ulauncher
+
+Marque a opção Launch at login
+
+Abra a opção de shortcuts e verifique se ela está funcionando.
+
+
+#Instalação do tema
+
+mkdir -p ~/.config/ulauncher/user-themes
+cd ~/.config/ulauncher/user-themes
+git clone https://github.com/tom-james-watson/ulauncher-popdark.git
+
+#Altere o tema nas opções do aplicativo.
+
+
+#Shortcuts e Logos
+
+mv ~/.config/ulauncher/shortcuts.json ~/.config/ulauncher/shortcuts.json.bak
+mv shortcuts.json ~/.config/ulauncher/
+tar -Jxxvf imagens.tar.xz -C ~/Imagens
+
+# A intrução acima copia as configurações dos shortcuts já salvas anteriormente e descompacta os logos desses shortcuts para a pasta Imagens na Home. Não altere o nome da pasta (Logo Ulauncher).
+
+
+
+#Extensões
+
+https://github.com/leinardi/ulauncher-exit-gnome
+
+https://github.com/dalanicolai/gnome-tracker-extension
+
+https://github.com/fisadev/ulauncher-better-file-browser
+
+https://github.com/Doekeb/ulauncher-gnome-calculator
+
+https://github.com/isacikgoz/ukill
+
+#copie o link do github da extensão, clique em "Extension" nas opções do aplicativo e depois clique em "add extension" e cole o link.
+
+
+
+# Página para pesquisar extensões: https://ext.ulauncher.io/
+
+# Página para pesquisar os temas: https://gist.github.com/gornostal/02a232e6e560da7946c053555ced6cce
+
+# Instruções para a instalação dos temas: https://docs.ulauncher.io/en/latest/themes/themes.html
+
