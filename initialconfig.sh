@@ -24,7 +24,7 @@ echo '::1       localhost' >> /etc/hosts
 echo "127.0.1.1 $line.localdomain $line" >> /etc/hosts
 
 # Visudo
-sed -i '82s/..//' /etc/sudoers
+sed -i '/# %wheel ALL=(ALL:ALL) ALL/c\%wheel ALL=(ALL:ALL) ALL' /etc/sudoers
 echo '# Defaults specification' >> /etc/sudoers
 echo 'Defaults editor=/usr/bin/nano' >> /etc/sudoers
 
@@ -33,14 +33,12 @@ echo 'Defaults editor=/usr/bin/nano' >> /etc/sudoers
 
 # Pacman.conf
 cp /etc/pacman.conf /etc/pacman.conf.bak
-sed -i '32s/#//' /etc/pacman.conf
+sed -i '/#UseSyslog/c\UseSyslog' /etc/pacman.conf
 sed -i 's/#Color/\Color/' /etc/pacman.conf
 sed -i 's/#VerbosePkgLists/\VerbosePkgLists/' /etc/pacman.conf
 sed -i 's/#ParallelDownloads = 5/\ParallelDownloads = 5/' /etc/pacman.conf
 sed -i 's/#CheckSpace/\CheckSpace/' /etc/pacman.conf
-sed -i '93s/#//' /etc/pacman.conf
-sed -i '94s/#//' /etc/pacman.conf
-#sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf (outra forma para habilitar o multilib)
+sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
 
 # NANO - Line number e syntax-highlighting
 sed -i 's/# set linenumbers/\set linenumbers/' /etc/nanorc
