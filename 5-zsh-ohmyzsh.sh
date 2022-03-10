@@ -12,7 +12,7 @@ if ls -lha ~ | grep -oq .zshrc;
 
 then
 
-		echo -e "${AZUL}Arquivo .zshrc encontrado. Continuando a instalação (Oh my Zsh)${FIM}" && sleep 2;
+		echo -e "${AZUL}Zsh habilitado. Continuando a instalação (Oh my Zsh)${FIM}" && sleep 2;
 	
 else
 
@@ -40,7 +40,7 @@ if ls -lha ~ | grep -oq .zshrc.pre-oh-my-zsh;
 
 then
 
-		echo -e "${AZUL}Arquivo .zshrc.pre-oh-my-zsh encontrado. Continuando a instalação (plugins e Powerlevel10K)${FIM}" && sleep 2;
+		echo -e "${AZUL}Oh my zsh está instalado. Continuando a instalação (plugins e Powerlevel10K)${FIM}" && sleep 2;
 
 else
 		while :;  do
@@ -68,7 +68,7 @@ if ls -lha ~ | grep -oq .p10k.zsh;
 
 then
 
-		echo -e "${AZUL}Arquivo .p10k.zsh encontrado. Plugins e Powerlevel10K já estão instalados. Fim da instalação.${FIM}" && sleep 2;
+		echo -e "${AZUL}Plugins e Powerlevel10K já estão instalados. Fim da instalação.${FIM}" && sleep 2;
 else
 
 		while :;  do
