@@ -25,17 +25,17 @@ else
 			echo -ne "${VERDE}Você quer habilitar o ZSH?${FIM} ${RED}Reiniciaremos a sessão após habilitar o ZSH.${FIM} ${VERDE}Depois que logar novamente abra o terminal e escolha a opção 0 para criar o arquivo .zshrc. Após isso execute o script novamente.${FIM} ${LVERDE}(S) sim / (N) não ${FIM}";
 			read resposta
 		case "$resposta" in
-    		s|S|"")
-        		chsh -s /bin/zsh 
-        		echo -e "${AZUL}Reiniciando a sessão em 3...${FIM}" && sleep 1;
-	      		echo -e "${AZUL}Reiniciando a sessão em 2...${FIM}" && sleep 1;
+    			s|S|"")
+        			chsh -s /bin/zsh 
+        			echo -e "${AZUL}Reiniciando a sessão em 3...${FIM}" && sleep 1;
+	      			echo -e "${AZUL}Reiniciando a sessão em 2...${FIM}" && sleep 1;
 				echo -e "${AZUL}Reiniciando a sessão em 1...${FIM}" && sleep 1;
-        		pkill -KILL -u $USER; break;;
-    		n|N)
-	      		echo -e "${AZUL}Fim da instalação.${FIM}";
-	       		exit; break;;
+        			pkill -KILL -u $USER; break;;
+    			n|N)
+	      			echo -e "${AZUL}Fim da instalação.${FIM}";
+	       			exit; break;;
 			*)
-	      		echo -e "${RED}Opção inválida. Responda a pergunta.${FIM}";;
+	      			echo -e "${RED}Opção inválida. Responda a pergunta.${FIM}";;
 	esac
 done
 
@@ -60,10 +60,10 @@ else
 				sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"; 
 				exit; break;;
 			n|N)
-	      		echo -e "${AZUL}Fim da instalação.${FIM}";
-	       		exit; break;;
-    		*)
-	       		echo -e "${RED}Opção inválida. Responda a pergunta.${FIM}";;
+	      			echo -e "${AZUL}Fim da instalação.${FIM}";
+	       			exit; break;;
+    			*)
+	       			echo -e "${RED}Opção inválida. Responda a pergunta.${FIM}";;
 	esac
 done
 
@@ -81,7 +81,7 @@ else
 			read resposta
 		case "$resposta" in
 			s|S|"")
-    			echo -e "${AZUL}Começando em 3...${FIM}" && sleep 1;
+    				echo -e "${AZUL}Começando em 3...${FIM}" && sleep 1;
 				echo -e "${AZUL}Começando em 2...${FIM}" && sleep 1;
 				echo -e "${AZUL}Começando em 1...${FIM}" && sleep 1;
 				git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting;
@@ -97,9 +97,9 @@ else
 				git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k;
 				echo -e "${AZUL}Instalação concluida. Reinicie o terminal para configurar o Powerlevel10K.${FIM}"; break;;
 			n|N)
-       			echo -e "${AZUL}Fim da instalção.${FIM}"; break;;
-    		*)
-     		 	echo -e "${RED}Opção inválida. Responda a pergunta.${FIM}";;
+       				echo -e "${AZUL}Fim da instalção.${FIM}"; break;;
+    			*)
+     		 		echo -e "${RED}Opção inválida. Responda a pergunta.${FIM}";;
 
 	esac
 done
