@@ -1,0 +1,9 @@
+bridge-utils
+dmidecode
+dnsmasq
+iptables-nft
+libvirt
+openbsd-netcat
+qemu
+virt-manager
+virt-viewer

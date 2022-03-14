@@ -1,0 +1,13 @@
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+terminus-font
+ttf-bitstream-vera
+ttf-dejavu
+ttf-liberation
+ttf-opensans
+ttf-roboto
+ttf-roboto-mono
+xorg-fonts-100dpi
+xorg-fonts-misc
+xorg-fonts-type1

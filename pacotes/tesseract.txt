@@ -1,0 +1,10 @@
+tesseract
+tesseract-data-spa
+tesseract-data-frk
+tesseract-data-ita
+tesseract-data-equ
+tesseract-data-fra
+tesseract-data-deu
+tesseract-data-deu_frak
+tesseract-data-eng
+tesseract-data-por

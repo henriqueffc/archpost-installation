@@ -20,7 +20,8 @@ mv ~/.config/ulauncher/shortcuts.json ~/.config/ulauncher/shortcuts.json.bak
 mv shortcuts.json ~/.config/ulauncher/
 tar -Jxxvf imagens.tar.xz -C ~/Imagens
 
-# A intrução acima copia as configurações dos shortcuts já salvas anteriormente e descompacta os logos desses shortcuts para a pasta Imagens na Home. Não altere o nome da pasta (Logo Ulauncher).
+# A instrução acima copia as configurações dos shortcuts já salvas anteriormente e descompacta os logos desses shortcuts na pasta Imagens na Home.
+# Não altere o nome da pasta (Logo Ulauncher).
 
 
 

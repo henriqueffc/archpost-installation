@@ -28,31 +28,31 @@ echo -e "${AZUL}
 ${FIM}"
 
 # Video (Intel e Nvidia)
-sudo pacman -S --needed nvidia-dkms nvidia-utils lib32-nvidia-utils nvidia-settings opencl-nvidia vulkan-icd-loader libvdpau-va-gl libva-vdpau-driver libvdpau vulkan-tools ocl-icd mesa mesa-vdpau libva vdpauinfo libva-utils intel-ucode intel-media-sdk lib32-mesa vulkan-intel intel-media-driver intel-compute-runtime intel-graphics-compiler nvidia-prime clinfo nvtop
+sudo pacman --needed -S - < ./pacotes/pkg-video.txt 
 
-# Audio
-sudo pacman -S --needed vlc ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer-vaapi gstreamer a52dec faac faad2 flac jasper lame libdca libdv libmad libmpeg2 libtheora libvorbis libxv wavpack x264 xvidcore
+# Áudio
+sudo pacman --needed -S - < ./pacotes/pkg-audio.txt 
 
 # Pipeware
-sudo pacman -S --needed pipewire pipewire-alsa pipewire-jack wireplumber pipewire-pulse gst-plugin-pipewire libpulse pipewire-x11-bell xdg-desktop-portal
+sudo pacman --needed -S - < ./pacotes/pipeware.txt 
 
 #Apparmor
 while :;  do
-echo -ne "${VERDE}Você quer instalar o Apparmor?${FIM} ${LVERDE}(S) sim / (N) não ${FIM}"
-read resposta
+        echo -ne "${VERDE}Você quer instalar o Apparmor?${FIM} ${LVERDE}(S) sim / (N) não ${FIM}"
+        read resposta
 case "$resposta" in
-     s|S|"")
+    s|S|"")
         sudo pacman -S --needed apparmor python-notify2 python-psutil 
         sudo systemctl enable apparmor.service
         sudo touch /var/log/syslog
         mkdir ~/.config/autostart
         mv ./apparmor/apparmor-notify.desktop ~/.config/autostart
-        sudo sed -i '34s/#//' /etc/apparmor/parser.conf
+        sudo sed -i '/#write-cache/c\write-cache' /etc/apparmor/parser.conf
         sudo chown $USER:$USER ~/.config/autostart; break;;
-     n|N)
-         echo -e "${AZUL}Finalizando a instalação${FIM}"; break;;
-     *)
-         echo -e "${RED}Opção inválida${FIM}";;
+    n|N)
+        echo -e "${AZUL}Finalizando a instalação${FIM}"; break;;
+    *)
+        echo -e "${RED}Opção inválida${FIM}";;
 esac
 done
 
@@ -62,21 +62,21 @@ cat /etc/pacman.d/mirrorlist
 
 #Reflector
 while :;  do
-echo -ne "${AZUL}
+        echo -ne "${AZUL}
 Você quer executar o reflector para atualizar o mirrorlist?
 Caso não tenha acontecido problemas na instalação dos pacotes não recomendamos a execução.${FIM}  ${LVERDE}(S) sim / (N) não 
 ${FIM}"
-read resposta
+        read resposta
 case "$resposta" in
-     s|S|"")
-         sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak2
-         sudo pacman -S --needed --noconfirm reflector rsync
-         sudo reflector -c Brazil -a 12 --sort rate --save /etc/pacman.d/mirrorlist
-         sudo pacman -Syyu; break;;
-     n|N)
-         echo -e "${AZUL}Fim da instalação${FIM}"; break;;
-     *)
-         echo -e "${RED}Opção inválida. Responda a pergunta.${FIM}";;
+    s|S|"")
+        sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak2
+        sudo pacman -S --needed --noconfirm reflector rsync
+        sudo reflector -c Brazil -a 12 --sort rate --save /etc/pacman.d/mirrorlist
+        sudo pacman -Syyu; break;;
+    n|N)
+        echo -e "${AZUL}Fim da instalação${FIM}"; break;;
+    *)
+        echo -e "${RED}Opção inválida. Responda a pergunta.${FIM}";;
 esac
 done
 

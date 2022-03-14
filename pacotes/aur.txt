@@ -1,0 +1,14 @@
+appimagelauncher
+downgrade
+dropbox
+google-chrome
+goverlay-bin
+heroic-games-launcher-bin
+inxi
+lib32-mangohud
+mangohud
+qgnomeplatform
+timeshift
+ttf-ms-fonts
+ulauncher
+visual-studio-code-bin
