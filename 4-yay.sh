@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Henrique Custódio
+# https://github.com/henriqueffc
+# 
+# AVISO: Execute o script por sua conta e risco.
+
 #Cores dos avisos
 
 AZUL='\e[1;34m'
@@ -36,7 +41,7 @@ echo -ne "${VERDE}Você quer criar o arquivo chrome-flags.conf para uso do Googl
 read resposta
 case "$resposta" in
      s|S|"")
-      mv $HOME/archpost-installation/chrome/chrome-flags.conf ~/.config
+      mv ./chrome/chrome-flags.conf ~/.config
       echo -e "${AZUL}Arquivo criado${FIM}"; break;;
      n|N)
       break;;

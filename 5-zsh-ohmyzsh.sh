@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Henrique Custódio
+# https://github.com/henriqueffc
+# 
+# AVISO: Execute o script por sua conta e risco.
+
 #Cores dos avisos
 
 AZUL='\e[1;34m'

@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Henrique Custódio
+# https://github.com/henriqueffc
+# 
+# AVISO: Execute o script por sua conta e risco.
+
 #Cores dos avisos
 
 AZUL='\e[1;34m'
@@ -62,12 +67,12 @@ sudo systemctl enable ufw.service
 echo -e "  ${AZUL}ufw.service habilitado${FIM}"
 
 # Offpowersave
-sudo mv $HOME/archpost-installation/service/offpowersave.service /etc/systemd/system  
+sudo mv ./service/offpowersave.service /etc/systemd/system  
 sudo systemctl enable offpowersave.service 
 echo -e "  ${AZUL}WIFI - Powersave desabilitado${FIM}"
 
 # Intelparanoid.service
-sudo mv $HOME/archpost-installation/service/intelparanoid.service /etc/systemd/system
+sudo mv ./service/intelparanoid.service /etc/systemd/system
 sudo systemctl enable intelparanoid.service 
 echo -e "  ${AZUL}Intel-Paranoid habilitado${FIM}"
 
@@ -81,17 +86,17 @@ ${FIM}"
 sudo usermod -aG libvirt $USERNAME
 
 # Appimage e outros
-wget -P ~/Downloads -i $HOME/archpost-installation/urls/urls.txt 
+wget -P ~/Downloads -i ./urls/urls.txt 
 
 #Fontes
 sudo mv ~/Downloads/*.ttf /usr/share/fonts/TTF
 sudo fc-cache -fv
 
 #Alias
-mv $HOME/archpost-installation/aliases/.bash_aliases ~/
+mv ./aliases/.bash_aliases ~/
 
 #Modelos de arquivos para o Files
-mv $HOME/archpost-installation/modelo/arquivo.txt ~/Modelos
+mv ./modelo/arquivo.txt ~/Modelos
 
 # Variáveis
 echo "export QT_STYLE_OVERRIDE=kvantum" >> ~/.profile
@@ -147,7 +152,7 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/']" 
 
 #Wallpaper dinâmico
-sudo cp $HOME/archpost-installation/wallpapers/*.* /usr/share/backgrounds/gnome
+sudo cp ./wallpapers/*.* /usr/share/backgrounds/gnome
 gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/gnome/dynamic_wallpaper.xml
 
 #Steam (prime-run)

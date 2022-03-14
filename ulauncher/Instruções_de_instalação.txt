@@ -1,4 +1,4 @@
-Incicialize o Ulauncher
+Inicialize o Ulauncher
 
 Marque a opção Launch at login
 

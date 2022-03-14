@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Henrique Custódio
+# https://github.com/henriqueffc
+# 
+# AVISO: Execute o script por sua conta e risco.
+
+
 #Cores dos avisos
 
 AZUL='\e[1;34m'
@@ -40,7 +46,7 @@ case "$resposta" in
         sudo systemctl enable apparmor.service
         sudo touch /var/log/syslog
         mkdir ~/.config/autostart
-        mv $HOME/archpost-installation/apparmor/apparmor-notify.desktop ~/.config/autostart
+        mv ./apparmor/apparmor-notify.desktop ~/.config/autostart
         sudo sed -i '34s/#//' /etc/apparmor/parser.conf
         sudo chown $USER:$USER ~/.config/autostart; break;;
      n|N)
