@@ -35,13 +35,13 @@ sudo pacman --needed -S - < ./pacotes/virt.txt
 while :;  do
         echo -ne "${VERDE}Você quer instalar os pacotes para OCR-Tesseract?${FIM} ${LVERDE}(S) sim / (N) não ${FIM}"
         read resposta
-case "$resposta" in
-    s|S|"")
-        sudo pacman --needed -S - < ./pacotes/tesseract.txt; break;;
-    n|N)
-        echo -e "${AZUL}Continuando a instalação.${FIM}"; break;;
-    *)
-        echo -e "${RED}Opção inválida. Responda a pergunta.${FIM}";;
+        case "$resposta" in
+        s|S|"")
+            sudo pacman --needed -S - < ./pacotes/tesseract.txt; break;;
+        n|N)
+            echo -e "${AZUL}Continuando a instalação.${FIM}"; break;;
+        *)
+            echo -e "${RED}Opção inválida. Responda a pergunta.${FIM}";;
 esac
 done
 
@@ -172,16 +172,16 @@ echo -e "  ${AZUL}Mlocate habilitado${FIM}"
 while :;  do
         echo -ne "${VERDE}Você quer instalar o limitador de FPS - Libstrangle?${FIM} ${LVERDE}(S) sim / (N) não${FIM}"
         read resposta
-case "$resposta" in
-     s|S|"")
-        git clone https://gitlab.com/torkel104/libstrangle.git
-        cd libstrangle 
-        make
-        sudo make install; break;;
-     n|N)
-        echo -e "${AZUL}Continuando a instalação${FIM}"; break;;
-     *)
-        echo -e "${RED}Opção inválida. Responda a pergunta.${FIM}";;
+        case "$resposta" in
+        s|S|"")
+            git clone https://gitlab.com/torkel104/libstrangle.git
+            cd libstrangle 
+            make
+            sudo make install; break;;
+        n|N)
+            echo -e "${AZUL}Continuando a instalação${FIM}"; break;;
+        *)
+            echo -e "${RED}Opção inválida. Responda a pergunta.${FIM}";;
 esac
 done
 
