@@ -22,22 +22,22 @@ echo -e "${AZUL}
 ${FIM}"
 
 # Pacotes
-sudo pacman -S --needed flatpak zsh materia-gtk-theme openssh ufw gufw aria2 bash-completion man-db man-pages texinfo reflector rsync curl cmatrix wmctrl pacman-contrib dialog unrar zip unzip p7zip okular discount ebook-tools djvulibre unrar libzip kdegraphics-mobipocket libreoffice libreoffice-fresh-pt-br jre-openjdk kdenlive kvantum-qt5 qt6-wayland qt5-wayland xorg-xkill lutris wine wine-gecko wine-mono winetricks pandoc libappindicator-gtk3 transmission-gtk gparted exa bat alacarte fwupd gnome-firmware nvme-cli coreutils progress neofetch psensor ntfs-3g cpupower intel-gpu-tools i7z xorg-xdpyinfo libgtop lm_sensors glfw-x11 glew gnome-icon-theme-symbolic steam python-magic lib32-gnutls gamemode thermald papirus-icon-theme
+sudo pacman --needed -S - < ./pacotes/pkg.txt 
 
 # Fontes
-sudo pacman -S --needed noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-dejavu ttf-liberation xorg-fonts-type1 xorg-fonts-misc ttf-bitstream-vera ttf-opensans terminus-font ttf-roboto ttf-roboto-mono xorg-fonts-100dpi 
+sudo pacman --needed -S - < ./pacotes/fontes.txt  
 
 # Virt-Mananger
-sudo pacman -S --needed qemu libvirt iptables-nft virt-manager virt-viewer dmidecode bridge-utils openbsd-netcat dnsmasq
+sudo pacman --needed -S - < ./pacotes/virt.txt
 
 
 # TESSERACT 
 while :;  do
-echo -ne "${VERDE}Você quer instalar os pacotes para OCR-Tesseract?${FIM} ${LVERDE}(S) sim / (N) não ${FIM}"
-read resposta
+        echo -ne "${VERDE}Você quer instalar os pacotes para OCR-Tesseract?${FIM} ${LVERDE}(S) sim / (N) não ${FIM}"
+        read resposta
 case "$resposta" in
     s|S|"")
-        sudo pacman -S --needed tesseract tesseract-data-spa tesseract-data-frk tesseract-data-ita tesseract-data-equ tesseract-data-fra tesseract-data-deu tesseract-data-deu_frak tesseract-data-eng tesseract-data-por; break;;
+        sudo pacman --needed -S - < ./pacotes/tesseract.txt; break;;
     n|N)
         echo -e "${AZUL}Continuando a instalação.${FIM}"; break;;
     *)
@@ -99,7 +99,6 @@ mv ./aliases/.bash_aliases ~/
 mv ./modelo/arquivo.txt ~/Modelos
 
 # Variáveis
-echo "export QT_STYLE_OVERRIDE=kvantum" >> ~/.profile
 echo "source ~/.bash_aliases" >> ~/.bashrc
 
 echo -e "${AZUL}Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 1${FIM}" && sleep 1;
@@ -152,8 +151,11 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/']" 
 
 #Wallpaper dinâmico
-sudo cp ./wallpapers/*.* /usr/share/backgrounds/gnome
-gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/gnome/dynamic_wallpaper.xml
+mkdir $HOME/Imagens/Wallpaper
+sudo cp ./wallpapers/*.* ~/Imagens/Wallpaper
+sed -i 's|/home/user1|'$HOME'|g' ~/Imagens/Wallpaper/dynamic_wallpaper.xml
+dir=$(echo $HOME)
+gsettings set org.gnome.desktop.background picture-uri file://$dir/Imagens/Wallpaper/dynamic_wallpaper.xml
 
 #Steam (prime-run)
 rm ~/Área\ de\ trabalho/steam.desktop
@@ -168,18 +170,18 @@ echo -e "  ${AZUL}Mlocate habilitado${FIM}"
 
 # Limitador de FPS
 while :;  do
-echo -ne "${VERDE}Você quer instalar o limitador de FPS - Libstrangle?${FIM} ${LVERDE}(S) sim / (N) não${FIM}"
-read resposta
+        echo -ne "${VERDE}Você quer instalar o limitador de FPS - Libstrangle?${FIM} ${LVERDE}(S) sim / (N) não${FIM}"
+        read resposta
 case "$resposta" in
      s|S|"")
-          git clone https://gitlab.com/torkel104/libstrangle.git
-          cd libstrangle 
-          make
-          sudo make install; break;;
+        git clone https://gitlab.com/torkel104/libstrangle.git
+        cd libstrangle 
+        make
+        sudo make install; break;;
      n|N)
-         echo -e "${AZUL}Continuando a instalação${FIM}"; break;;
+        echo -e "${AZUL}Continuando a instalação${FIM}"; break;;
      *)
-         echo -e "${RED}Opção inválida. Responda a pergunta.${FIM}";;
+        echo -e "${RED}Opção inválida. Responda a pergunta.${FIM}";;
 esac
 done
 

@@ -1,4 +1,4 @@
-# Coisas para fazer depois de concluida a instalação com os scripts:
+# Coisas para fazer depois de concluída a instalação com os scripts:
 
 1 - Habilitar o cache de escrita no programa Discos;
 

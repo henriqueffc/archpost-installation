@@ -24,6 +24,7 @@ sudo pacman -S --needed git base-devel go wget
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
+cd ..
 
 echo -e "${AZUL}
 -------------------------------------------------------------------------
@@ -32,13 +33,13 @@ echo -e "${AZUL}
 ${FIM}"
 
 # Pacotes AUR
-yay -S google-chrome dropbox appimagelauncher visual-studio-code-bin heroic-games-launcher-bin ulauncher timeshift downgrade inxi ttf-ms-fonts mangohud lib32-mangohud qgnomeplatform goverlay-bin
+yay --needed -S - < ./pacotes/aur.txt
 
 
 #Chrome (Wayland) 
 while :;  do
-echo -ne "${VERDE}Você quer criar o arquivo chrome-flags.conf para uso do Google Chrome no Wayland?${FIM} ${LVERDE}(S) sim / (N) não ${FIM}"
-read resposta
+      echo -ne "${VERDE}Você quer criar o arquivo chrome-flags.conf para uso do Google Chrome no Wayland?${FIM} ${LVERDE}(S) sim / (N) não ${FIM}"
+      read resposta
 case "$resposta" in
      s|S|"")
       mv ./chrome/chrome-flags.conf ~/.config

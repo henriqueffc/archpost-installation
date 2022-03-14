@@ -50,7 +50,7 @@ sed -i 's/# set linenumbers/\set linenumbers/' /etc/nanorc
 sed -i '243s/..//' /etc/nanorc
 
 # Swappiness
-mv 99-swappiness.conf /etc/sysctl.d/
+mv ./swappiness/99-swappiness.conf /etc/sysctl.d/
 
 # Makeflags e compress
 nc=$(grep -c ^processor /proc/cpuinfo)
@@ -63,24 +63,24 @@ echo -e "${AZUL}
 -------------------------------------------------------------------------
 ${FIM}"
 while :;  do
-echo -ne "${VERDE}Você quer estabelecer a MAKEFLAGS em /etc/makepkg.conf com o número total de cores do sistema ($nc) ou com dois cores a menos que o total do sistema ($nv)?
+     echo -ne "${VERDE}Você quer estabelecer a MAKEFLAGS em /etc/makepkg.conf com o número total de cores do sistema ($nc) ou com dois cores a menos que o total do sistema ($nv)?
 Se o sistema possuir menos que 8G de ram ou menos que 4 cores pule essa etapa.${FIM} ${LVERDE}(T) total / (M) menor / (P) Pular ${FIM}"
-read resposta
+     read resposta
 case "$resposta" in
     t|T|"")
-        sed -i "s/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j$nc\"/g" /etc/makepkg.conf
-        sed -i "s/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -z --threads=0 -)/g" /etc/makepkg.conf
-	sed -i "s/COMPRESSZST=(zstd -c -z -q -)/COMPRESSZST=(zstd -c -z -q --threads=0 -)/g" /etc/makepkg.conf
-        echo -e "${AZUL}Continuando a instalação.${FIM}"; break;;
+     sed -i "s/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j$nc\"/g" /etc/makepkg.conf
+     sed -i "s/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -z --threads=0 -)/g" /etc/makepkg.conf
+     sed -i "s/COMPRESSZST=(zstd -c -z -q -)/COMPRESSZST=(zstd -c -z -q --threads=0 -)/g" /etc/makepkg.conf
+     echo -e "${AZUL}Continuando a instalação.${FIM}"; break;;
     m|M)
     	sed -i "s/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j$nv\"/g" /etc/makepkg.conf
     	sed -i "s/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -z --threads=0 -)/g" /etc/makepkg.conf
 	sed -i "s/COMPRESSZST=(zstd -c -z -q -)/COMPRESSZST=(zstd -c -z -q --threads=0 -)/g" /etc/makepkg.conf
-        echo -e "${AZUL}Continuando a instalação.${FIM}"; break;;
+     echo -e "${AZUL}Continuando a instalação.${FIM}"; break;;
     p|P)
     	echo -e "${AZUL}Pulando essa etapa e continuando a instalação.${FIM}"; break;;
     *)
-        echo -e "${RED}Opção inválida.${FIM}";;
+     echo -e "${RED}Opção inválida.${FIM}";;
 esac
 done
 
@@ -91,18 +91,18 @@ echo -e "${AZUL}
 -------------------------------------------------------------------------
 ${FIM}"
 while :;  do
-cat mirrorlist
-echo -ne "${VERDE}Você quer alterar o mirrorlist do sistema de acordo com o exposto acima? (S) sim / (N) não ${FIM}"
-read resposta
+     cat mirrorlistbr/mirrorlist
+     echo -ne "${VERDE}Você quer alterar o mirrorlist do sistema de acordo com o exposto acima? (S) sim / (N) não ${FIM}"
+     read resposta
 case "$resposta" in
      s|S|"")
-          mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
-          mv mirrorlist /etc/pacman.d/
-          echo -e "${AZUL}Fim da instalação${FIM}"; break;;
+     mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
+     mv ./mirrorlistbr/mirrorlist /etc/pacman.d/
+     echo -e "${AZUL}Fim da instalação${FIM}"; break;;
      n|N)
-          echo -e "${AZUL}Fim da instalação${FIM}"; break;;
+     echo -e "${AZUL}Fim da instalação${FIM}"; break;;
      *)
-          echo -e "${RED}Opção inválida${FIM}";;
+     echo -e "${RED}Opção inválida${FIM}";;
 esac
 done
 
