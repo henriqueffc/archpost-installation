@@ -1,3 +1,4 @@
+vlc
 a52dec
 faac
 faad2
@@ -19,7 +20,6 @@ libmpeg2
 libtheora
 libvorbis
 libxv
-vlc
 wavpack
 x264
 xvidcore
