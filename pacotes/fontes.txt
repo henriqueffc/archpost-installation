@@ -8,6 +8,6 @@ ttf-liberation
 ttf-opensans
 ttf-roboto
 ttf-roboto-mono
-xorg-fonts-100dpi
 xorg-fonts-misc
 xorg-fonts-type1
+xorg-fonts-100dpi
