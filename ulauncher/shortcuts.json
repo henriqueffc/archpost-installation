@@ -108,5 +108,15 @@
         "is_default_search": false,
         "run_without_argument": false,
         "added": 1645679561.5594053
+    },
+    "d6ae0a19-9be3-4c6e-937b-b0a244ffd764": {
+        "id": "d6ae0a19-9be3-4c6e-937b-b0a244ffd764",
+        "name": "Programas",
+        "keyword": "p",
+        "cmd": "gnome-software --search=$@",
+        "icon": "~/Imagens/Logo Ulauncher/org.gnome.Software.png",
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1647354328.5814965
     }
 }

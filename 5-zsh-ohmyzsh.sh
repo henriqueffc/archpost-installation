@@ -97,7 +97,7 @@ else
 				git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k;
 				echo -e "${AZUL}Instalação concluida. Reinicie o terminal para configurar o Powerlevel10K.${FIM}"; break;;
 			n|N)
-       				echo -e "${AZUL}Fim da instalção.${FIM}"; break;;
+       				echo -e "${AZUL}Fim da instalação.${FIM}"; break;;
     			*)
      		 		echo -e "${RED}Opção inválida. Responda a pergunta.${FIM}";;
 
