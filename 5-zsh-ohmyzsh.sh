@@ -50,7 +50,7 @@ if ls -a "$HOME" | grep -oq .zshrc.pre-oh-my-zsh; then
 
 else
 	while :; do
-		echo -ne "${VERDE}Você quer instalar o Oh my Zsh? ${RED}Após a instalação do Oh my Zsh, digite exit e execute o script novamente.${FIM} ${LVERDE}(S) sim / (N) não ${FIM}"
+		echo -ne "${VERDE}Você quer instalar o Oh my Zsh? ${RED}Após a instalação do Oh my Zsh digite exit e execute o script novamente.${FIM} ${LVERDE}(S) sim / (N) não ${FIM}"
 		read -r resposta
 		case "$resposta" in
 		s | S | "")
