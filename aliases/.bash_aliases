@@ -6,3 +6,4 @@ alias reflector="sudo reflector -l 10 -c Brazil -a 12 -p https -p http --sort ra
 alias xls="exa -a --icons --color=always --group-directories-first"
 alias xll="exa -lag --icons --color=always --group-directories-first --octal-permissions"
 alias bat="bat --theme=Dracula"
+alias omz="git -C ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k pull && omz update"
