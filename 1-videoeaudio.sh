@@ -68,8 +68,7 @@ cat /etc/pacman.d/mirrorlist
 while :; do
     echo -ne "${AZUL}
 Você quer executar o reflector para atualizar o mirrorlist?
-Caso não tenha acontecido problemas na instalação dos pacotes não recomendamos a execução.${FIM}  ${LVERDE}(S) sim / (N) não 
-${FIM}"
+Caso não tenha acontecido problemas na instalação dos pacotes não recomendamos a execução.${FIM}  ${LVERDE}(S) sim / (N) não ${FIM}"
     read -r resposta
     case "$resposta" in
     s | S | "")
