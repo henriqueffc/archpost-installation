@@ -1,31 +1,34 @@
 Inicialize o Ulauncher
 
-Marque a opção Launch at login
+# Atalho criado para o Ulauncher no script de instalação (número 2) "Tecla Super + \"
 
-Abra a opção de shortcuts e verifique se ela está funcionando.
+# Marque a opção Launch at login
 
+# Para o ícone do Ulauncher aparecer na top bar é necessário instalar a extensão do Gnome "AppIndicator and KStatusNotifierItem Support". 
+# Recomendo utilizar o programa ExtensionManager - https://flathub.org/apps/details/com.mattjakeman.ExtensionManager (instalado pelo scrpit de instalação número 3) # para instalar a extensão. Caso você não queira que o ícone aparece na top bar desabilite essa opção nas configurações do Ulauncher.
 
-#Instalação do tema
+# Instalação do tema
 
 mkdir -p ~/.config/ulauncher/user-themes
 cd ~/.config/ulauncher/user-themes
 git clone https://github.com/tom-james-watson/ulauncher-popdark.git
 
-#Altere o tema nas opções do aplicativo.
+# Altere o tema nas opções do aplicativo.
 
 
-#Shortcuts e Logos
+# Shortcuts e Logos
 
 mv ~/.config/ulauncher/shortcuts.json ~/.config/ulauncher/shortcuts.json.bak
 mv shortcuts.json ~/.config/ulauncher/
 tar -Jxxvf imagens.tar.xz -C ~/Imagens
 
-# A instrução acima copia as configurações dos shortcuts já salvas anteriormente e descompacta os logos desses shortcuts na pasta Imagens na Home.
+# A instrução acima copia as configurações dos shortcuts salvas anteriormente e descompacta os logos desses shortcuts na pasta Imagens na Home.
 # Não altere o nome da pasta (Logo Ulauncher).
+# Reinicie o Ulauncher após essa configuração para habilitar os shortcuts.
 
 
 
-#Extensões
+# Extensões
 
 https://github.com/leinardi/ulauncher-exit-gnome
 
@@ -37,7 +40,7 @@ https://github.com/Doekeb/ulauncher-gnome-calculator
 
 https://github.com/isacikgoz/ukill
 
-#copie o link do github da extensão, clique em "Extension" nas opções do aplicativo e depois clique em "add extension" e cole o link.
+# copie o link do github da extensão, clique em "Extension" nas opções do aplicativo e depois clique em "add extension" e cole o link.
 
 
 
