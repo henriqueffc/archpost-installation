@@ -2,7 +2,7 @@
 
 # Henrique Custódio
 # https://github.com/henriqueffc
-# 
+#
 # AVISO: Execute o script por sua conta e risco.
 
 #Cores dos avisos
@@ -19,7 +19,7 @@ echo -e "${AZUL}
 -------------------------------------------------------------------------
 ${FIM}"
 
-# YAY 
+# YAY
 sudo pacman -S --needed git base-devel go wget
 git clone https://aur.archlinux.org/yay.git
 cd yay
@@ -33,22 +33,25 @@ echo -e "${AZUL}
 ${FIM}"
 
 # Pacotes AUR
-yay --needed -S - < ./pacotes/aur.txt
+yay --needed -S - <./pacotes/aur.txt
 
-
-#Chrome (Wayland) 
-while :;  do
-      echo -ne "${VERDE}Você quer criar o arquivo chrome-flags.conf para uso do Google Chrome no Wayland?${FIM} ${LVERDE}(S) sim / (N) não ${FIM}"
-      read resposta
-case "$resposta" in
-      s|S|"")
-        mv ./chrome/chrome-flags.conf ~/.config
-        echo -e "${AZUL}Arquivo criado${FIM}"; break;;
-     n|N)
-        break;;
-     *)
-        echo -e "${RED}Opção inválida. Responda a pergunta.${FIM}";;
-esac
+#Chrome (Wayland)
+while :; do
+   echo -ne "${VERDE}Você quer criar o arquivo chrome-flags.conf para uso do Google Chrome no Wayland?${FIM} ${LVERDE}(S) sim / (N) não ${FIM}"
+   read resposta
+   case "$resposta" in
+   s | S | "")
+      mv ./chrome/chrome-flags.conf ~/.config
+      echo -e "${AZUL}Arquivo criado${FIM}"
+      break
+      ;;
+   n | N)
+      break
+      ;;
+   *)
+      echo -e "${RED}Opção inválida. Responda a pergunta.${FIM}"
+      ;;
+   esac
 done
 
 printf "${VERDE}Fim! Reinicie o sistema.${FIM}\n"

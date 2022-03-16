@@ -2,7 +2,7 @@
 
 # Henrique Custódio
 # https://github.com/henriqueffc
-# 
+#
 # AVISO: Execute o script por sua conta e risco.
 
 #Cores dos avisos
@@ -13,8 +13,6 @@ RED='\e[1;31m'
 LVERDE='\e[0;92m'
 FIM='\e[0m'
 
-
-
 echo -e "${AZUL}
 -------------------------------------------------------------------------
                           Instalando os pacotes
@@ -22,27 +20,31 @@ echo -e "${AZUL}
 ${FIM}"
 
 # Pacotes
-sudo pacman --needed -S - < ./pacotes/pkg.txt 
+sudo pacman --needed -S - <./pacotes/pkg.txt
 
 # Fontes
-sudo pacman --needed -S - < ./pacotes/fontes.txt  
+sudo pacman --needed -S - <./pacotes/fontes.txt
 
 # Virt-Mananger
-sudo pacman --needed -S - < ./pacotes/virt.txt
+sudo pacman --needed -S - <./pacotes/virt.txt
 
-
-# TESSERACT 
-while :;  do
-        echo -ne "${VERDE}Você quer instalar os pacotes para OCR-Tesseract?${FIM} ${LVERDE}(S) sim / (N) não ${FIM}"
-        read resposta
-        case "$resposta" in
-        s|S|"")
-            sudo pacman --needed -S - < ./pacotes/tesseract.txt; break;;
-        n|N)
-            echo -e "${AZUL}Continuando a instalação.${FIM}"; break;;
-        *)
-            echo -e "${RED}Opção inválida. Responda a pergunta.${FIM}";;
-esac
+# TESSERACT
+while :; do
+    echo -ne "${VERDE}Você quer instalar os pacotes para OCR-Tesseract?${FIM} ${LVERDE}(S) sim / (N) não ${FIM}"
+    read resposta
+    case "$resposta" in
+    s | S | "")
+        sudo pacman --needed -S - <./pacotes/tesseract.txt
+        break
+        ;;
+    n | N)
+        echo -e "${AZUL}Continuando a instalação.${FIM}"
+        break
+        ;;
+    *)
+        echo -e "${RED}Opção inválida. Responda a pergunta.${FIM}"
+        ;;
+    esac
 done
 
 echo -e "${AZUL}
@@ -67,13 +69,13 @@ sudo systemctl enable ufw.service
 echo -e "  ${AZUL}ufw.service habilitado${FIM}"
 
 # Offpowersave
-sudo mv ./service/offpowersave.service /etc/systemd/system  
-sudo systemctl enable offpowersave.service 
+sudo mv ./service/offpowersave.service /etc/systemd/system
+sudo systemctl enable offpowersave.service
 echo -e "  ${AZUL}WIFI - Powersave desabilitado${FIM}"
 
 # Intelparanoid.service
 sudo mv ./service/intelparanoid.service /etc/systemd/system
-sudo systemctl enable intelparanoid.service 
+sudo systemctl enable intelparanoid.service
 echo -e "  ${AZUL}Intel-Paranoid habilitado${FIM}"
 
 echo -e "${AZUL}
@@ -86,7 +88,7 @@ ${FIM}"
 sudo usermod -aG libvirt $USERNAME
 
 # Appimage e outros
-wget -P ~/Downloads -i ./urls/urls.txt 
+wget -P ~/Downloads -i ./urls/urls.txt
 
 #Fontes
 sudo mv ~/Downloads/*.ttf /usr/share/fonts/TTF
@@ -99,44 +101,41 @@ mv ./aliases/.bash_aliases ~/
 mv ./modelo/arquivo.txt ~/Modelos
 
 # Variáveis
-echo "source ~/.bash_aliases" >> ~/.bashrc
+echo "source ~/.bash_aliases" >>~/.bashrc
 
-echo -e "${AZUL}Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 1${FIM}" && sleep 1;
-echo -e "${AZUL}Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 2${FIM}" && sleep 1;
-echo -e "${AZUL}Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 3${FIM}" && sleep 1;
+echo -e "${AZUL}Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 1${FIM}" && sleep 1
+echo -e "${AZUL}Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 2${FIM}" && sleep 1
+echo -e "${AZUL}Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 3${FIM}" && sleep 1
 
 #Tema e ícones do Gnome
 gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
 gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
 
-
 #Atalhos do teclado (abnt2 com teclado numérico)
 # abaixar o volume - Ctrl + - teclado numérico
-gsettings set org.gnome.settings-daemon.plugins.media-keys volume-down "['<Primary>KP_Subtract']" 
+gsettings set org.gnome.settings-daemon.plugins.media-keys volume-down "['<Primary>KP_Subtract']"
 # aumentar o volume - Ctrl + + teclado numérico
-gsettings set org.gnome.settings-daemon.plugins.media-keys volume-up "['<Primary>KP_Add']" 
+gsettings set org.gnome.settings-daemon.plugins.media-keys volume-up "['<Primary>KP_Add']"
 #reproduzir ou pausar reprodução de mídia - Crtl + * teclado numérico
-gsettings set org.gnome.settings-daemon.plugins.media-keys play "['<Primary>KP_Multiply']" 
+gsettings set org.gnome.settings-daemon.plugins.media-keys play "['<Primary>KP_Multiply']"
 #mudar para a próxima faixa - Ctrl + / teclado numérico
-gsettings set org.gnome.settings-daemon.plugins.media-keys next "['<Primary>KP_Divide']" 
+gsettings set org.gnome.settings-daemon.plugins.media-keys next "['<Primary>KP_Divide']"
 # abrir navegador - Super + B
-gsettings set org.gnome.settings-daemon.plugins.media-keys www "['<Super>b']" 
+gsettings set org.gnome.settings-daemon.plugins.media-keys www "['<Super>b']"
 #abrir o Files na home - Super + F
-gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>f']" 
+gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>f']"
 #fechar a janela - Super + Q
-gsettings set org.gnome.desktop.wm.keybindings close "['<Super>q']" 
+gsettings set org.gnome.desktop.wm.keybindings close "['<Super>q']"
 
 # Atalho personalizado para lançar o Terminal - Super + T
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name "Terminal"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command "gnome-terminal"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding "<Super>t"
 
-
 # Atalho personalizado para aumentar o brilho usando o teclado - Crtl + Para cima
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ name "Aumentar o brilho"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ command "gdbus call --session --dest org.gnome.SettingsDaemon.Power --object-path /org/gnome/SettingsDaemon/Power --method org.gnome.SettingsDaemon.Power.Screen.StepUp"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ binding "<Primary>Up"
-
 
 # Atalho personalizado para diminuir o brilho usando o teclado - Crtl + Para baixo
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/ name "Diminuir o brilho"
@@ -148,7 +147,7 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/ command "ulauncher-toggle"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/ binding "<Super>backslash"
 
-gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/']" 
+gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/']"
 
 #Wallpaper dinâmico
 mkdir $HOME/Imagens/Wallpaper
@@ -169,20 +168,25 @@ sudo updatedb
 echo -e "  ${AZUL}Mlocate habilitado${FIM}"
 
 # Limitador de FPS
-while :;  do
-        echo -ne "${VERDE}Você quer instalar o limitador de FPS - Libstrangle?${FIM} ${LVERDE}(S) sim / (N) não${FIM}"
-        read resposta
-        case "$resposta" in
-        s|S|"")
-            git clone https://gitlab.com/torkel104/libstrangle.git
-            cd libstrangle 
-            make
-            sudo make install; break;;
-        n|N)
-            echo -e "${AZUL}Continuando a instalação${FIM}"; break;;
-        *)
-            echo -e "${RED}Opção inválida. Responda a pergunta.${FIM}";;
-esac
+while :; do
+    echo -ne "${VERDE}Você quer instalar o limitador de FPS - Libstrangle?${FIM} ${LVERDE}(S) sim / (N) não${FIM}"
+    read resposta
+    case "$resposta" in
+    s | S | "")
+        git clone https://gitlab.com/torkel104/libstrangle.git
+        cd libstrangle
+        make
+        sudo make install
+        break
+        ;;
+    n | N)
+        echo -e "${AZUL}Continuando a instalação${FIM}"
+        break
+        ;;
+    *)
+        echo -e "${RED}Opção inválida. Responda a pergunta.${FIM}"
+        ;;
+    esac
 done
 
 #Sensors

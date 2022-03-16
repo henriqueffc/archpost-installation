@@ -2,7 +2,7 @@
 
 # Henrique Custódio
 # https://github.com/henriqueffc
-# 
+#
 # AVISO: Execute o script por sua conta e risco.
 
 #Cores dos avisos
@@ -21,17 +21,17 @@ locale-gen
 # echo "KEYMAP=br-abnt2" > /etc/vconsole.conf
 
 # Idioma e Localhost
-echo 'LANG=pt_BR.UTF-8' > /etc/locale.conf
+echo 'LANG=pt_BR.UTF-8' >/etc/locale.conf
 #echo "archlinux" > /etc/hostname (já foi feito pelo Archinstall)
 line=$(cat /etc/hostname)
-echo '127.0.0.1 localhost' >> /etc/hosts
-echo '::1       localhost' >> /etc/hosts
-echo "127.0.1.1 $line.localdomain $line" >> /etc/hosts
+echo '127.0.0.1 localhost' >>/etc/hosts
+echo '::1       localhost' >>/etc/hosts
+echo "127.0.1.1 $line.localdomain $line" >>/etc/hosts
 
 # Visudo
 sed -i '/# %wheel ALL=(ALL:ALL) ALL/c\%wheel ALL=(ALL:ALL) ALL' /etc/sudoers
-echo '# Defaults specification' >> /etc/sudoers
-echo 'Defaults editor=/usr/bin/nano' >> /etc/sudoers
+echo '# Defaults specification' >>/etc/sudoers
+echo 'Defaults editor=/usr/bin/nano' >>/etc/sudoers
 
 # Caso queira o vim ao invés do nano, comente (#) a linha acima e descomente a linha abaixo.
 # echo "Defaults editor=/usr/bin/vim" >> /etc/sudoers
@@ -55,7 +55,7 @@ mv ./swappiness/99-swappiness.conf /etc/sysctl.d/
 
 # Makeflags e compress
 nc=$(grep -c ^processor /proc/cpuinfo)
-nv=$(nproc --ignore=2) 
+nv=$(nproc --ignore=2)
 RAM=$(cat /proc/meminfo | grep -i 'memtotal' | grep -o '[[:digit:]]*')
 echo -e "${AZUL}
 -------------------------------------------------------------------------
@@ -63,26 +63,33 @@ echo -e "${AZUL}
 	  O sistema possui o total de "$nc" cores e "$RAM" de ram
 -------------------------------------------------------------------------
 ${FIM}"
-while :;  do
+while :; do
      echo -ne "${VERDE}Você quer estabelecer a MAKEFLAGS em /etc/makepkg.conf com o número total de cores do sistema ($nc) ou com dois cores a menos que o total do sistema ($nv)?
 Se o sistema possuir menos que 8G de ram ou menos que 4 cores pule essa etapa.${FIM} ${LVERDE}(T) total / (M) menor / (P) Pular ${FIM}"
      read resposta
-case "$resposta" in
-    t|T|"")
-     sed -i "s/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j$nc\"/g" /etc/makepkg.conf
-     sed -i "s/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -z --threads=0 -)/g" /etc/makepkg.conf
-     sed -i "s/COMPRESSZST=(zstd -c -z -q -)/COMPRESSZST=(zstd -c -z -q --threads=0 -)/g" /etc/makepkg.conf
-     echo -e "${AZUL}Continuando a instalação.${FIM}"; break;;
-    m|M)
-    	sed -i "s/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j$nv\"/g" /etc/makepkg.conf
-    	sed -i "s/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -z --threads=0 -)/g" /etc/makepkg.conf
-	sed -i "s/COMPRESSZST=(zstd -c -z -q -)/COMPRESSZST=(zstd -c -z -q --threads=0 -)/g" /etc/makepkg.conf
-     echo -e "${AZUL}Continuando a instalação.${FIM}"; break;;
-    p|P)
-    	echo -e "${AZUL}Pulando essa etapa e continuando a instalação.${FIM}"; break;;
-    *)
-     echo -e "${RED}Opção inválida.${FIM}";;
-esac
+     case "$resposta" in
+     t | T | "")
+          sed -i "s/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j$nc\"/g" /etc/makepkg.conf
+          sed -i "s/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -z --threads=0 -)/g" /etc/makepkg.conf
+          sed -i "s/COMPRESSZST=(zstd -c -z -q -)/COMPRESSZST=(zstd -c -z -q --threads=0 -)/g" /etc/makepkg.conf
+          echo -e "${AZUL}Continuando a instalação.${FIM}"
+          break
+          ;;
+     m | M)
+          sed -i "s/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j$nv\"/g" /etc/makepkg.conf
+          sed -i "s/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -z --threads=0 -)/g" /etc/makepkg.conf
+          sed -i "s/COMPRESSZST=(zstd -c -z -q -)/COMPRESSZST=(zstd -c -z -q --threads=0 -)/g" /etc/makepkg.conf
+          echo -e "${AZUL}Continuando a instalação.${FIM}"
+          break
+          ;;
+     p | P)
+          echo -e "${AZUL}Pulando essa etapa e continuando a instalação.${FIM}"
+          break
+          ;;
+     *)
+          echo -e "${RED}Opção inválida.${FIM}"
+          ;;
+     esac
 done
 
 #Mirrorlist
@@ -91,20 +98,25 @@ echo -e "${AZUL}
                         Mirrorlist - Brasil
 -------------------------------------------------------------------------
 ${FIM}"
-while :;  do
+while :; do
      cat mirrorlistbr/mirrorlist
      echo -ne "${VERDE}Você quer alterar o mirrorlist do sistema de acordo com o exposto acima? (S) sim / (N) não ${FIM}"
      read resposta
-case "$resposta" in
-     s|S|"")
-     mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
-     mv ./mirrorlistbr/mirrorlist /etc/pacman.d/
-     echo -e "${AZUL}Fim da instalação${FIM}"; break;;
-     n|N)
-     echo -e "${AZUL}Fim da instalação${FIM}"; break;;
+     case "$resposta" in
+     s | S | "")
+          mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
+          mv ./mirrorlistbr/mirrorlist /etc/pacman.d/
+          echo -e "${AZUL}Fim da instalação${FIM}"
+          break
+          ;;
+     n | N)
+          echo -e "${AZUL}Fim da instalação${FIM}"
+          break
+          ;;
      *)
-     echo -e "${RED}Opção inválida${FIM}";;
-esac
+          echo -e "${RED}Opção inválida${FIM}"
+          ;;
+     esac
 done
 
 pacman -Syy --noconfirm --needed
