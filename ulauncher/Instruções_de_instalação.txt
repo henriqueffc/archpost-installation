@@ -5,7 +5,7 @@ Inicialize o Ulauncher
 # Marque a opção Launch at login
 
 # Para o ícone do Ulauncher aparecer na top bar é necessário instalar a extensão do Gnome "AppIndicator and KStatusNotifierItem Support". 
-# Recomendo utilizar o programa ExtensionManager - https://flathub.org/apps/details/com.mattjakeman.ExtensionManager (instalado pelo scrpit de instalação número 3) para instalar a extensão. 
+# Recomendo utilizar o programa Extension Manager - https://flathub.org/apps/details/com.mattjakeman.ExtensionManager (instalado pelo scrpit de instalação número 3) para instalar a extensão. 
 # Caso você não queira que o ícone aparece na top bar desabilite essa opção nas configurações do Ulauncher.
 
 # Instalação do tema
