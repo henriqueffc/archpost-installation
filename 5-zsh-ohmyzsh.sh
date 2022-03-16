@@ -13,7 +13,7 @@ RED='\e[1;31m'
 LVERDE='\e[0;92m'
 FIM='\e[0m'
 
-if ls -lha ~ | grep -oq .zshrc; then
+if ls -a "$HOME" | grep -oq .zshrc; then
 
 	echo -e "${AZUL}Zsh está habilitado. Continuando a instalação (Oh my Zsh)${FIM}" && sleep 2
 
@@ -21,14 +21,14 @@ else
 
 	while :; do
 		echo -ne "${VERDE}Você quer habilitar o ZSH?${FIM} ${RED}Reiniciaremos a sessão após habilitar o ZSH.${FIM} ${VERDE}Depois que logar novamente abra o terminal e escolha a opção 0 para criar o arquivo .zshrc. Após isso execute o script novamente.${FIM} ${LVERDE}(S) sim / (N) não ${FIM}"
-		read resposta
+		read -r resposta
 		case "$resposta" in
 		s | S | "")
 			chsh -s /bin/zsh
 			echo -e "${AZUL}Reiniciando a sessão em 3...${FIM}" && sleep 1
 			echo -e "${AZUL}Reiniciando a sessão em 2...${FIM}" && sleep 1
 			echo -e "${AZUL}Reiniciando a sessão em 1...${FIM}" && sleep 1
-			pkill -KILL -u $USER
+			pkill -KILL -u "$USER"
 			break
 			;;
 		n | N)
@@ -44,14 +44,14 @@ else
 
 fi
 
-if ls -lha ~ | grep -oq .zshrc.pre-oh-my-zsh; then
+if ls -a "$HOME" | grep -oq .zshrc.pre-oh-my-zsh; then
 
 	echo -e "${AZUL}Oh my zsh já está instalado. Continuando a instalação (plugins e Powerlevel10K)${FIM}" && sleep 2
 
 else
 	while :; do
 		echo -ne "${VERDE}Você quer instalar o Oh my Zsh? ${RED}Após a instalação do Oh my Zsh, digite exit e execute o script novamente.${FIM} ${LVERDE}(S) sim / (N) não ${FIM}"
-		read resposta
+		read -r resposta
 		case "$resposta" in
 		s | S | "")
 			echo -e "${AZUL}Instalando o Oh my Zsh${FIM}"
@@ -75,14 +75,14 @@ else
 
 fi
 
-if ls -lha ~ | grep -oq .p10k.zsh; then
+if ls -a "$HOME" | grep -oq .p10k.zsh; then
 
 	echo -e "${AZUL}Os plugins e o Powerlevel10K já estão instalados. Fim da instalação.${FIM}" && sleep 2
 else
 
 	while :; do
 		echo -ne "${VERDE}Você quer instalar os plugins e o Powerlevel10k? Será habilitado também no .zshrc os aliases criados no arquivo ~/.bash_aliases. Plugins que serão instalados: zsh-autosuggestions, zsh-syntax-highlighting, colored-man-pages, history-substring-search e zsh-completions. Será instalado também o tema de cores para Zsh Drácula.${FIM} ${LVERDE}(S) sim / (N) não ${FIM}"
-		read resposta
+		read -r resposta
 		case "$resposta" in
 		s | S | "")
 			echo -e "${AZUL}Começando em 3...${FIM}" && sleep 1

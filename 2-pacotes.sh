@@ -31,7 +31,7 @@ sudo pacman --needed -S - <./pacotes/virt.txt
 # TESSERACT
 while :; do
     echo -ne "${VERDE}Você quer instalar os pacotes para OCR-Tesseract?${FIM} ${LVERDE}(S) sim / (N) não ${FIM}"
-    read resposta
+    read -r resposta
     case "$resposta" in
     s | S | "")
         sudo pacman --needed -S - <./pacotes/tesseract.txt
@@ -85,7 +85,7 @@ echo -e "${AZUL}
 ${FIM}"
 
 # Grupos
-sudo usermod -aG libvirt $USERNAME
+sudo usermod -aG libvirt "$USERNAME"
 
 # Appimage e outros
 wget -P ~/Downloads -i ./urls/urls.txt
@@ -150,10 +150,10 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/']"
 
 #Wallpaper dinâmico
-mkdir $HOME/Imagens/Wallpaper
+mkdir "$HOME"/Imagens/Wallpaper
 sudo cp ./wallpapers/*.* ~/Imagens/Wallpaper
 sed -i 's|/home/user1|'$HOME'|g' ~/Imagens/Wallpaper/dynamic_wallpaper.xml
-dir=$(echo $HOME)
+dir=$HOME
 gsettings set org.gnome.desktop.background picture-uri file://$dir/Imagens/Wallpaper/dynamic_wallpaper.xml
 
 #Steam (prime-run)
@@ -169,8 +169,8 @@ echo -e "  ${AZUL}Mlocate habilitado${FIM}"
 
 # Limitador de FPS
 while :; do
-    echo -ne "${VERDE}Você quer instalar o limitador de FPS - Libstrangle?${FIM} ${LVERDE}(S) sim / (N) não${FIM}"
-    read resposta
+    echo -ne "${VERDE}Você quer instalar o limitador de FPS - Libstrangle?${FIM} ${LVERDE}(S) sim / (N) não ${FIM}"
+    read -r resposta
     case "$resposta" in
     s | S | "")
         git clone https://gitlab.com/torkel104/libstrangle.git

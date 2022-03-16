@@ -17,8 +17,8 @@ FIM='\e[0m'
 sudo rm -r /archpost-installation
 
 # Grupos
-sudo usermod -aG brlapi $USERNAME
-sudo usermod -aG wheel $USERNAME
+sudo usermod -aG brlapi "$USERNAME"
+sudo usermod -aG wheel "$USERNAME"
 
 echo -e "${AZUL}
 -------------------------------------------------------------------------
@@ -38,7 +38,7 @@ sudo pacman --needed -S - <./pacotes/pipeware.txt
 #Apparmor
 while :; do
     echo -ne "${VERDE}Você quer instalar o Apparmor?${FIM} ${LVERDE}(S) sim / (N) não ${FIM}"
-    read resposta
+    read -r resposta
     case "$resposta" in
     s | S | "")
         sudo pacman -S --needed apparmor python-notify2 python-psutil
@@ -70,7 +70,7 @@ while :; do
 Você quer executar o reflector para atualizar o mirrorlist?
 Caso não tenha acontecido problemas na instalação dos pacotes não recomendamos a execução.${FIM}  ${LVERDE}(S) sim / (N) não 
 ${FIM}"
-    read resposta
+    read -r resposta
     case "$resposta" in
     s | S | "")
         sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak2

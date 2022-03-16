@@ -65,7 +65,7 @@ flatpak install flathub com.github.alexkdeveloper.dwxmlcreator -y
 
 while :; do
        echo -ne "${VERDE}Você quer adicionar o remote Flathub Beta?${FIM} ${LVERDE}(S) sim / (N) não ${FIM}"
-       read resposta
+       read -r resposta
        case "$resposta" in
        s | S | "")
               flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo

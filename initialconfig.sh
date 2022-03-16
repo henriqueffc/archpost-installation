@@ -60,13 +60,13 @@ RAM=$(cat /proc/meminfo | grep -i 'memtotal' | grep -o '[[:digit:]]*')
 echo -e "${AZUL}
 -------------------------------------------------------------------------
 		     MAKEFLAGS e compressão XZ e ZSTD
-	  O sistema possui o total de "$nc" cores e "$RAM" de ram
+	  O sistema possui o total de $nc cores e $RAM de ram
 -------------------------------------------------------------------------
 ${FIM}"
 while :; do
      echo -ne "${VERDE}Você quer estabelecer a MAKEFLAGS em /etc/makepkg.conf com o número total de cores do sistema ($nc) ou com dois cores a menos que o total do sistema ($nv)?
 Se o sistema possuir menos que 8G de ram ou menos que 4 cores pule essa etapa.${FIM} ${LVERDE}(T) total / (M) menor / (P) Pular ${FIM}"
-     read resposta
+     read -r resposta
      case "$resposta" in
      t | T | "")
           sed -i "s/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j$nc\"/g" /etc/makepkg.conf
@@ -100,8 +100,8 @@ echo -e "${AZUL}
 ${FIM}"
 while :; do
      cat mirrorlistbr/mirrorlist
-     echo -ne "${VERDE}Você quer alterar o mirrorlist do sistema de acordo com o exposto acima? (S) sim / (N) não ${FIM}"
-     read resposta
+     echo -ne "${VERDE}Você quer alterar o mirrorlist do sistema de acordo com o exposto acima?${FIM} ${LVERDE}(S) sim / (N) não ${FIM}"
+     read -r resposta
      case "$resposta" in
      s | S | "")
           mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
