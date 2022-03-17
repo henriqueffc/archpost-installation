@@ -111,6 +111,9 @@ echo -e "${AZUL}Alterando o tema, os ícones, o wallpaper e os atalhos do sistem
 gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
 gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
 
+#Porcentagem da bateria na top bar
+gsettings set org.gnome.desktop.interface show-battery-percentage true
+
 #Atalhos do teclado (abnt2 com teclado numérico)
 # abaixar o volume - Ctrl + - teclado numérico
 gsettings set org.gnome.settings-daemon.plugins.media-keys volume-down "['<Primary>KP_Subtract']"
