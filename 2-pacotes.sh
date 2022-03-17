@@ -108,7 +108,7 @@ sudo systemctl daemon-reload
 
 #Limite do tamanho do Journal
 
-sudo sed -i 's/#SystemMaxUse=/SystemMaxUse=300/' /etc/systemd/journald.conf
+sudo sed -i 's/#SystemMaxUse=/SystemMaxUse=300M/' /etc/systemd/journald.conf
 
 sudo systemctl restart systemd-journald.service
 
