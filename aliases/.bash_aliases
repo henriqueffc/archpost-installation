@@ -9,3 +9,4 @@ alias xll="exa -lag --icons --color=always --group-directories-first --octal-per
 alias bat="bat --theme=Dracula"
 alias cpu-performance="sudo cpupower frequency-set --governor performance"
 alias cpu-padrão="sudo cpupower frequency-set --governor schedutil"
+alias cpu-info="cpupower frequency-info"
