@@ -100,6 +100,21 @@ mv ./aliases/.bash_aliases ~/
 #Modelos de arquivos para o Files
 mv ./modelo/arquivo.txt ~/Modelos
 
+# Desabilitar o core dumps
+
+sudo sed -i 's/#Storage=external/Storage=none/' /etc/systemd/coredump.conf
+
+sudo systemctl daemon-reload
+
+#Limite do tamanho do Journal
+
+sudo sed -i 's/#SystemMaxUse=/SystemMaxUse=300/' /etc/systemd/journald.conf
+
+sudo systemctl restart systemd-journald.service
+
+sudo journalctl --vacuum-size=100M
+sudo journalctl --vacuum-time=2weeks
+
 # Variáveis
 echo "source ~/.bash_aliases" >>~/.bashrc
 
