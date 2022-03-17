@@ -1,0 +1,11 @@
+# Extensões do GNOME:
+
+Recomendo utilizar o programa Extension Manager - https://flathub.org/apps/details/com.mattjakeman.ExtensionManager (instalado pelo scrpit de instalação número 3) para instalar as extensões. 
+
+AppIndicator and KStatusNotifierItem Support - https://extensions.gnome.org/extension/615/appindicator-support/
+
+Clipboard Indicator - https://extensions.gnome.org//extension/779/clipboard-indicator/
+
+Sound Input & Output Device Chooser - https://extensions.gnome.org//extension/906/sound-output-device-chooser/
+
+Vitals - https://extensions.gnome.org//extension/1460/vitals/
