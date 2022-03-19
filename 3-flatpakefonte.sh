@@ -45,6 +45,7 @@ flatpak install flathub com.github.rajsolai.textsnatcher -y
 flatpak install flathub io.github.wereturtle.ghostwriter -y
 flatpak install flathub org.gnome.Solanum -y
 flatpak install flathub com.github.tchx84.Flatseal -y
+flatpak install flathub com.discordapp.Discord -y
 flatpak install flathub com.github.jeromerobert.pdfarranger -y
 flatpak install flathub com.skype.Client -y
 flatpak install flathub com.github.unrud.VideoDownloader -y
