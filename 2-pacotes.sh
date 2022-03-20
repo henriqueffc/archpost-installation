@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Henrique Custódio
 # https://github.com/henriqueffc
