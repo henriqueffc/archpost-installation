@@ -47,7 +47,7 @@ sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
 
 # NANO - Line number e syntax-highlighting
 sed -i 's/# set linenumbers/\set linenumbers/' /etc/nanorc
-linenumber=$(cat /etc/nanorc | grep -n "*.nanorc" | gawk '{print $1}' FS=":")
+linenumber=$(cat /etc/nanorc | grep -n '*.nanorc' | gawk '{print $1}' FS=":")
 sed -i "${linenumber}s/..//" /etc/nanorc
 
 # Swappiness
