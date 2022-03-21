@@ -11,7 +11,6 @@ AZUL='\e[1;34m'
 VERDE='\e[1;32m'
 RED='\e[1;31m'
 LVERDE='\e[0;92m'
-FIM='\e[0m'
 
 #Deletar a antiga pasta no /
 sudo rm -r /archpost-installation
@@ -20,11 +19,10 @@ sudo rm -r /archpost-installation
 sudo usermod -aG brlapi "$USERNAME"
 sudo usermod -aG wheel "$USERNAME"
 
-echo -e "${AZUL}
+echo -e "$AZUL
 -------------------------------------------------------------------------
                     Instalando os pacotes
--------------------------------------------------------------------------
-${FIM}"
+-------------------------------------------------------------------------"
 
 # Video (Intel e Nvidia)
 sudo pacman --needed -S - <./pacotes/pkg-video.txt
@@ -37,7 +35,7 @@ sudo pacman --needed -S - <./pacotes/pipeware.txt
 
 #Apparmor
 while :; do
-    echo -ne "${VERDE}Você quer instalar o Apparmor?${FIM} ${LVERDE}(S) sim / (N) não ${FIM}"
+    echo -ne "$VERDE Você quer instalar o Apparmor? $LVERDE (S) sim / (N) não "
     read -r resposta
     case "$resposta" in
     s | S | "")
@@ -51,24 +49,24 @@ while :; do
         break
         ;;
     n | N)
-        echo -e "${AZUL}Finalizando a instalação${FIM}"
+        echo -e "$AZUL Finalizando a instalação"
         break
         ;;
     *)
-        echo -e "${RED}Opção inválida${FIM}"
+        echo -e "$RED Opção inválida"
         ;;
     esac
 done
 
 #Mirrorlist atual
-echo -e "${AZUL}Mirrorlist atual${FIM}"
+echo -e "$AZUL Mirrorlist atual"
 cat /etc/pacman.d/mirrorlist
 
 #Reflector
 while :; do
-    echo -ne "${AZUL}
+    echo -ne "$AZUL 
 Você quer executar o reflector para atualizar o mirrorlist?
-Caso não tenha acontecido problemas na instalação dos pacotes não recomendamos a execução.${FIM}  ${LVERDE}(S) sim / (N) não ${FIM}"
+Caso não tenha acontecido problemas na instalação dos pacotes não recomendamos a execução.  $LVERDE (S) sim / (N) não "
     read -r resposta
     case "$resposta" in
     s | S | "")
@@ -79,13 +77,13 @@ Caso não tenha acontecido problemas na instalação dos pacotes não recomendam
         break
         ;;
     n | N)
-        echo -e "${AZUL}Fim da instalação${FIM}"
+        echo -e "$AZUL Fim da instalação"
         break
         ;;
     *)
-        echo -e "${RED}Opção inválida. Responda a pergunta.${FIM}"
+        echo -e "$RED Opção inválida. Responda a pergunta."
         ;;
     esac
 done
 
-printf "${VERDE}Fim! Caso tenha instalado o AppArmor acrescente as instruções do arquivo -paBoot.txt/linha 7- nos parâmetros do boot e depois reinicie o sistema. Se você não instalou o Apparmor acrescente somente as instruções da linha 12 do mesmo arquivo e proceda com a reinicialização do sistema.${FIM}\n"
+printf "%s $VERDE Fim! Caso tenha instalado o AppArmor acrescente as instruções do arquivo -paBoot.txt/linha 7- nos parâmetros do boot e depois reinicie o sistema. Se você não instalou o Apparmor acrescente somente as instruções da linha 12 do mesmo arquivo e proceda com a reinicialização do sistema.\n"

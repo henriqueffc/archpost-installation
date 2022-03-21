@@ -11,7 +11,6 @@ AZUL='\e[1;34m'
 VERDE='\e[1;32m'
 RED='\e[1;31m'
 LVERDE='\e[0;92m'
-FIM='\e[0m'
 
 # Locale.gen
 sed -i 's/#pt_BR.UTF-8 UTF-8/\pt_BR.UTF-8 UTF-8/' /etc/locale.gen
@@ -57,68 +56,66 @@ mv ./swappiness/99-swappiness.conf /etc/sysctl.d/
 nc=$(grep -c ^processor /proc/cpuinfo)
 nv=$(nproc --ignore=2)
 RAM=$(cat /proc/meminfo | grep -i 'memtotal' | grep -o '[[:digit:]]*')
-echo -e "${AZUL}
+echo -e "$AZUL
 -------------------------------------------------------------------------
 		     MAKEFLAGS e compressão XZ e ZSTD
 	  O sistema possui o total de $nc cores e $RAM de ram
--------------------------------------------------------------------------
-${FIM}"
+-------------------------------------------------------------------------"
 while :; do
-     echo -ne "${VERDE}Você quer estabelecer a MAKEFLAGS em /etc/makepkg.conf com o número total de cores do sistema ($nc) ou com dois cores a menos que o total do sistema ($nv)?
-Se o sistema possuir menos que 8G de ram ou menos que 4 cores pule essa etapa.${FIM} ${LVERDE}(T) total / (M) menor / (P) Pular ${FIM}"
+     echo -ne "$VERDE Você quer estabelecer a MAKEFLAGS em /etc/makepkg.conf com o número total de cores do sistema ($nc) ou com dois cores a menos que o total do sistema ($nv)?
+Se o sistema possuir menos que 8G de ram ou menos que 4 cores pule essa etapa. $LVERDE (T) total / (M) menor / (P) Pular "
      read -r resposta
      case "$resposta" in
      t | T | "")
           sed -i "s/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j$nc\"/g" /etc/makepkg.conf
           sed -i 's/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -z --threads=0 -)/g' /etc/makepkg.conf
           sed -i 's/COMPRESSZST=(zstd -c -z -q -)/COMPRESSZST=(zstd -c -z -q --threads=0 -)/g' /etc/makepkg.conf
-          echo -e "${AZUL}Continuando a instalação.${FIM}"
+          echo -e "$AZUL Continuando a instalação."
           break
           ;;
      m | M)
           sed -i "s/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j$nv\"/g" /etc/makepkg.conf
           sed -i 's/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -z --threads=0 -)/g' /etc/makepkg.conf
           sed -i 's/COMPRESSZST=(zstd -c -z -q -)/COMPRESSZST=(zstd -c -z -q --threads=0 -)/g' /etc/makepkg.conf
-          echo -e "${AZUL}Continuando a instalação.${FIM}"
+          echo -e "$AZUL Continuando a instalação."
           break
           ;;
      p | P)
-          echo -e "${AZUL}Pulando essa etapa e continuando a instalação.${FIM}"
+          echo -e "$AZUL Pulando essa etapa e continuando a instalação."
           break
           ;;
      *)
-          echo -e "${RED}Opção inválida.${FIM}"
+          echo -e "$RED Opção inválida."
           ;;
      esac
 done
 
 #Mirrorlist
-echo -e "${AZUL}
+echo -e "$AZUL
 -------------------------------------------------------------------------
                         Mirrorlist - Brasil
--------------------------------------------------------------------------
-${FIM}"
+-------------------------------------------------------------------------"
 while :; do
      cat mirrorlistbr/mirrorlist
-     echo -ne "${VERDE}Você quer alterar o mirrorlist do sistema de acordo com o exposto acima?${FIM} ${LVERDE}(S) sim / (N) não ${FIM}"
+     echo -ne "$VERDE Você quer alterar o mirrorlist do sistema de acordo com o exposto acima? $LVERDE (S) sim / (N) não "
      read -r resposta
      case "$resposta" in
      s | S | "")
           mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
           mv ./mirrorlistbr/mirrorlist /etc/pacman.d/
-          echo -e "${AZUL}Fim da instalação${FIM}"
+          echo -e "$AZUL Fim da instalação"
           break
           ;;
      n | N)
-          echo -e "${AZUL}Fim da instalação${FIM}"
+          echo -e "$AZUL Fim da instalação"
           break
           ;;
      *)
-          echo -e "${RED}Opção inválida${FIM}"
+          echo -e "$RED Opção inválida"
           ;;
      esac
 done
 
 pacman -Syy --noconfirm --needed
 
-printf "${VERDE}Fim! Escreva exit, pressione enter e reinicie com o comando reboot.${FIM}\n"
+printf "%s $VERDE Fim! Escreva exit, pressione enter e reinicie com o comando reboot.\n"

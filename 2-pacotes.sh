@@ -11,13 +11,12 @@ AZUL='\e[1;34m'
 VERDE='\e[1;32m'
 RED='\e[1;31m'
 LVERDE='\e[0;92m'
-FIM='\e[0m'
 
-echo -e "${AZUL}
+
+echo -e "$AZUL
 -------------------------------------------------------------------------
                           Instalando os pacotes
--------------------------------------------------------------------------
-${FIM}"
+-------------------------------------------------------------------------"
 
 # Pacotes
 sudo pacman --needed -S - <./pacotes/pkg.txt
@@ -30,7 +29,7 @@ sudo pacman --needed -S - <./pacotes/virt.txt
 
 # TESSERACT
 while :; do
-    echo -ne "${VERDE}Você quer instalar os pacotes para OCR-Tesseract?${FIM} ${LVERDE}(S) sim / (N) não ${FIM}"
+    echo -ne "$VERDE Você quer instalar os pacotes para OCR-Tesseract? $LVERDE (S) sim / (N) não "
     read -r resposta
     case "$resposta" in
     s | S | "")
@@ -38,51 +37,49 @@ while :; do
         break
         ;;
     n | N)
-        echo -e "${AZUL}Continuando a instalação.${FIM}"
+        echo -e "$AZUL Continuando a instalação."
         break
         ;;
     *)
-        echo -e "${RED}Opção inválida. Responda a pergunta.${FIM}"
+        echo -e "$RED Opção inválida. Responda a pergunta."
         ;;
     esac
 done
 
-echo -e "${AZUL}
+echo -e "$AZUL
 -------------------------------------------------------------------------
                       Habilitando os serviços
--------------------------------------------------------------------------
-${FIM}"
+-------------------------------------------------------------------------"
 
 # Habilitar os serviços
 sudo systemctl enable libvirtd
-echo -e "  ${AZUL}libvirt habilitado${FIM}"
+echo -e "  $AZUL libvirt habilitado"
 sudo systemctl enable fstrim.timer
-echo -e "  ${AZUL}fstrim.timer habilitado${FIM}"
+echo -e "  $AZUL fstrim.timer habilitado"
 sudo systemctl enable thermald
-echo -e "  ${AZUL}thermald habilitado${FIM}"
+echo -e "  $AZUL thermald habilitado"
 sudo systemctl enable systemd-boot-update
-echo -e "  ${AZUL}systemd-boot-update habilitado${FIM}"
+echo -e "  $AZUL systemd-boot-update habilitado"
 sudo systemctl enable bluetooth.service
-echo -e "  ${AZUL}bluetooth.service habilitado${FIM}"
+echo -e "  $AZUL bluetooth.service habilitado"
 sudo ufw enable
 sudo systemctl enable ufw.service
-echo -e "  ${AZUL}ufw.service habilitado${FIM}"
+echo -e "  $AZUL ufw.service habilitado"
 
 # Offpowersave
 sudo mv ./service/offpowersave.service /etc/systemd/system
 sudo systemctl enable offpowersave.service
-echo -e "  ${AZUL}WIFI - Powersave desabilitado${FIM}"
+echo -e "  $AZUL WIFI - Powersave desabilitado"
 
 # Intelparanoid.service
 sudo mv ./service/intelparanoid.service /etc/systemd/system
 sudo systemctl enable intelparanoid.service
-echo -e "  ${AZUL}Intel-Paranoid habilitado${FIM}"
+echo -e "  $AZUL Intel-Paranoid habilitado"
 
-echo -e "${AZUL}
+echo -e "$AZUL
 -------------------------------------------------------------------------
                       Restante das configurações
--------------------------------------------------------------------------
-${FIM}"
+-------------------------------------------------------------------------"
 
 # Grupos
 sudo usermod -aG libvirt "$USERNAME"
@@ -118,9 +115,9 @@ sudo journalctl --vacuum-time=2weeks
 # Variáveis
 echo 'source ~/.bash_aliases' >>~/.bashrc
 
-echo -e "${AZUL}Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 1${FIM}" && sleep 1
-echo -e "${AZUL}Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 2${FIM}" && sleep 1
-echo -e "${AZUL}Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 3${FIM}" && sleep 1
+echo -e "$AZUL Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 1" && sleep 1
+echo -e "$AZUL Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 2" && sleep 1
+echo -e "$AZUL Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 3" && sleep 1
 
 #Tema e ícones do Gnome
 gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
@@ -178,16 +175,16 @@ gsettings set org.gnome.desktop.background picture-uri file://$dir/Imagens/Wallp
 rm ~/Área\ de\ trabalho/steam.desktop
 cp /usr/share/applications/steam.desktop ~/.local/share/applications
 sed -i 's/steam-runtime/\prime-run steam-runtime/' ~/.local/share/applications/steam.desktop
-echo -e "  ${AZUL}steam.desktop modificado${FIM}"
+echo -e "  $AZUL steam.desktop modificado"
 
 # Mlocate - necessário para a busca no Ulauncher
 sudo pacman -S --needed mlocate
 sudo updatedb
-echo -e "  ${AZUL}Mlocate habilitado${FIM}"
+echo -e "  $AZUL Mlocate habilitado"
 
 # Limitador de FPS
 while :; do
-    echo -ne "${VERDE}Você quer instalar o limitador de FPS - Libstrangle?${FIM} ${LVERDE}(S) sim / (N) não ${FIM}"
+    echo -ne "$VERDE Você quer instalar o limitador de FPS - Libstrangle? $LVERDE (S) sim / (N) não "
     read -r resposta
     case "$resposta" in
     s | S | "")
@@ -198,11 +195,11 @@ while :; do
         break
         ;;
     n | N)
-        echo -e "${AZUL}Continuando a instalação${FIM}"
+        echo -e "$AZUL Continuando a instalação"
         break
         ;;
     *)
-        echo -e "${RED}Opção inválida. Responda a pergunta.${FIM}"
+        echo -e "$RED Opção inválida. Responda a pergunta."
         ;;
     esac
 done
@@ -210,4 +207,4 @@ done
 #Sensors
 sudo sensors-detect
 
-printf "${VERDE}Fim! Reinicie o sistema.${FIM}\n"
+printf "%s $VERDE Fim! Reinicie o sistema.\n"
