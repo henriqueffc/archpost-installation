@@ -116,7 +116,7 @@ sudo journalctl --vacuum-size=100M
 sudo journalctl --vacuum-time=2weeks
 
 # Variáveis
-echo "source ~/.bash_aliases" >>~/.bashrc
+echo 'source ~/.bash_aliases' >>~/.bashrc
 
 echo -e "${AZUL}Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 1${FIM}" && sleep 1
 echo -e "${AZUL}Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 2${FIM}" && sleep 1
