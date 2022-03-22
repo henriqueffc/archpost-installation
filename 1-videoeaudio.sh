@@ -11,6 +11,7 @@ AZUL='\e[1;34m'
 VERDE='\e[1;32m'
 RED='\e[1;31m'
 LVERDE='\e[0;92m'
+FIM='\e[0m'
 
 #Deletar a antiga pasta no /
 sudo rm -r /archpost-installation
@@ -22,7 +23,8 @@ sudo usermod -aG wheel "$USERNAME"
 echo -e "$AZUL
 -------------------------------------------------------------------------
                     Instalando os pacotes
--------------------------------------------------------------------------"
+-------------------------------------------------------------------------
+$FIM"
 
 # Video (Intel e Nvidia)
 sudo pacman --needed -S - <./pacotes/pkg-video.txt
@@ -35,7 +37,7 @@ sudo pacman --needed -S - <./pacotes/pipeware.txt
 
 #Apparmor
 while :; do
-    echo -ne "$VERDE Você quer instalar o Apparmor? $LVERDE (S) sim / (N) não "
+    echo -ne "$VERDE Você quer instalar o Apparmor? $FIM $LVERDE (S) sim / (N) não $FIM"
     read -r resposta
     case "$resposta" in
     s | S | "")
@@ -49,24 +51,24 @@ while :; do
         break
         ;;
     n | N)
-        echo -e "$AZUL Finalizando a instalação"
+        echo -e "$AZUL Finalizando a instalação. $FIM"
         break
         ;;
     *)
-        echo -e "$RED Opção inválida"
+        echo -e "$RED Opção inválida. $FIM"
         ;;
     esac
 done
 
 #Mirrorlist atual
-echo -e "$AZUL Mirrorlist atual"
+echo -e "$AZUL Mirrorlist atual $FIM"
 cat /etc/pacman.d/mirrorlist
 
 #Reflector
 while :; do
-    echo -ne "$AZUL 
+    echo -ne "$VERDE 
 Você quer executar o reflector para atualizar o mirrorlist?
-Caso não tenha acontecido problemas na instalação dos pacotes não recomendamos a execução.  $LVERDE (S) sim / (N) não "
+Caso não tenha acontecido problemas na instalação dos pacotes não recomendamos a execução. $FIM  $LVERDE (S) sim / (N) não $FIM"
     read -r resposta
     case "$resposta" in
     s | S | "")
@@ -77,13 +79,13 @@ Caso não tenha acontecido problemas na instalação dos pacotes não recomendam
         break
         ;;
     n | N)
-        echo -e "$AZUL Fim da instalação"
+        echo -e "$AZUL Fim da instalação. $FIM"
         break
         ;;
     *)
-        echo -e "$RED Opção inválida. Responda a pergunta."
+        echo -e "$RED Opção inválida. Responda a pergunta. $FIM"
         ;;
     esac
 done
 
-printf "%s $VERDE Fim! Caso tenha instalado o AppArmor acrescente as instruções do arquivo -paBoot.txt/linha 7- nos parâmetros do boot e depois reinicie o sistema. Se você não instalou o Apparmor acrescente somente as instruções da linha 12 do mesmo arquivo e proceda com a reinicialização do sistema.\n"
+printf "%s $VERDE Fim! Caso tenha instalado o AppArmor acrescente as instruções do arquivo -paBoot.txt/linha 7- nos parâmetros do boot e depois reinicie o sistema. Se você não instalou o Apparmor acrescente somente as instruções da linha 12 do mesmo arquivo e proceda com a reinicialização do sistema. $FIM \n"

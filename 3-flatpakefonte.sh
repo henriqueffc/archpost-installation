@@ -16,11 +16,12 @@ FIM='\e[0m'
 echo -e "$AZUL
 -------------------------------------------------------------------------
                    Fonte do Terminal - MesloLGS NF 14
--------------------------------------------------------------------------"
+-------------------------------------------------------------------------
+$FIM"
 
-echo -e "$AZUL Alterando a fonte do terminal em 1" && sleep 1
-echo -e "$AZUL Alterando a fonte do terminal em 2" && sleep 1
-echo -e "$AZUL Alterando a fonte do terminal em 3" && sleep 1
+echo -e "$AZUL Alterando a fonte do terminal em 1 $FIM" && sleep 1
+echo -e "$AZUL Alterando a fonte do terminal em 2 $FIM" && sleep 1
+echo -e "$AZUL Alterando a fonte do terminal em 3 $FIM" && sleep 1
 
 #Fonte do terminal
 font=$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d "'")
@@ -31,7 +32,8 @@ gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profi
 echo -e "$AZUL
 -------------------------------------------------------------------------
                    Instalando os aplicativos Flatpaks
--------------------------------------------------------------------------"
+-------------------------------------------------------------------------
+$FIM"
 
 # Flatpak Aplicativos
 flatpak install flathub org.gimp.GIMP -y
@@ -63,20 +65,20 @@ flatpak install flathub com.github.alexkdeveloper.dwxmlcreator -y
 # Flatpak Remote-Beta
 
 while :; do
-       echo -ne "$VERDE Você quer adicionar o remote Flathub Beta? $LVERDE (S) sim / (N) não "
+       echo -ne "$VERDE Você quer adicionar o remote Flathub Beta? $FIM $LVERDE (S) sim / (N) não $FIM"
        read -r resposta
        case "$resposta" in
        s | S | "")
               flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
-              echo -e "$VERDE Fim da instalação"
+              echo -e "$VERDE Fim da instalação. $FIM"
               break
               ;;
        n | N)
-              echo -e "$VERDE Fim da instalação"
+              echo -e "$VERDE Fim da instalação. $FIM"
               break
               ;;
        *)
-              echo -e "$RED Opção inválida. Responda a pergunta."
+              echo -e "$RED Opção inválida. Responda a pergunta. $FIM"
               ;;
        esac
 done
