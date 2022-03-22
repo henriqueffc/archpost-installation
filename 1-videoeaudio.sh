@@ -61,7 +61,7 @@ while :; do
 done
 
 #Mirrorlist atual
-echo -e "$AZUL Mirrorlist atual $FIM"
+echo -e "$VERDE Mirrorlist atual $FIM"
 cat /etc/pacman.d/mirrorlist
 
 #Reflector
