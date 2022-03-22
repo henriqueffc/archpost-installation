@@ -55,28 +55,28 @@ $FIM"
 
 # Habilitar os serviços
 sudo systemctl enable libvirtd
-echo -e "  $AZUL libvirt habilitado $FIM"
+echo -e "$AZUL \t libvirt habilitado $FIM"
 sudo systemctl enable fstrim.timer
-echo -e "  $AZUL fstrim.timer habilitado $FIM"
+echo -e "$AZUL \t fstrim.timer habilitado $FIM"
 sudo systemctl enable thermald
-echo -e "  $AZUL thermald habilitado $FIM"
+echo -e "$AZUL \t thermald habilitado $FIM"
 sudo systemctl enable systemd-boot-update
-echo -e "  $AZUL systemd-boot-update habilitado $FIM"
+echo -e "$AZUL \t systemd-boot-update habilitado $FIM"
 sudo systemctl enable bluetooth.service
-echo -e "  $AZUL bluetooth.service habilitado $FIM"
+echo -e "$AZUL \t bluetooth.service habilitado $FIM"
 sudo ufw enable
 sudo systemctl enable ufw.service
-echo -e "  $AZUL ufw.service habilitado $FIM"
+echo -e "$AZUL \t ufw.service habilitado $FIM"
 
 # Offpowersave
 sudo mv ./service/offpowersave.service /etc/systemd/system
 sudo systemctl enable offpowersave.service
-echo -e "  $AZUL WIFI - Powersave desabilitado $FIM"
+echo -e "$AZUL \t WIFI - Powersave desabilitado $FIM"
 
 # Intelparanoid.service
 sudo mv ./service/intelparanoid.service /etc/systemd/system
 sudo systemctl enable intelparanoid.service
-echo -e "  $AZUL Intel-Paranoid habilitado $FIM"
+echo -e "$AZUL \t Intel-Paranoid habilitado $FIM"
 
 echo -e "$AZUL
 -------------------------------------------------------------------------
@@ -178,12 +178,12 @@ gsettings set org.gnome.desktop.background picture-uri file://$dir/Imagens/Wallp
 rm ~/Área\ de\ trabalho/steam.desktop
 cp /usr/share/applications/steam.desktop ~/.local/share/applications
 sed -i 's/steam-runtime/\prime-run steam-runtime/' ~/.local/share/applications/steam.desktop
-echo -e "  $AZUL steam.desktop modificado $FIM"
+echo -e "$AZUL \t steam.desktop modificado $FIM"
 
 # Mlocate - necessário para a busca no Ulauncher
 sudo pacman -S --needed mlocate
 sudo updatedb
-echo -e "  $AZUL Mlocate habilitado $FIM"
+echo -e "$AZUL \t Mlocate habilitado $FIM"
 
 # Limitador de FPS
 while :; do
