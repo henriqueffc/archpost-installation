@@ -2,6 +2,7 @@ https://github.com/linuxhw/hw-probe/releases/download/1.6/hw-probe-1.6-185-x86_6
 https://vulkan.gpuinfo.org/downloads/vulkancapsviewer_3.2_linux64_wayland.AppImage
 https://opencl.gpuinfo.org/downloads/openclcapsviewer_1.00_linux64_x11.AppImage
 http://opengl.gpuinfo.org/downloads/glcapsviewer_1_2_linux64.tar.gz
+https://www.zotero.org/download/client/dl?channel=release&platform=linux-x86_64
 https://github.com/bitwarden/desktop/releases/download/v1.31.3/Bitwarden-1.31.3-x86_64.AppImage
 https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
 https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
