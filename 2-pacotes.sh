@@ -88,7 +88,7 @@ $FIM"
 sudo usermod -aG libvirt "$USERNAME"
 
 # Appimage e outros
-wget -P ~/Downloads -i ./urls/urls.txt
+aria2c -d ~/Downloads -i ./urls/urls.txt
 
 #Fontes
 sudo mv ~/Downloads/*.ttf /usr/share/fonts/TTF
