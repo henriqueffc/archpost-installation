@@ -64,8 +64,8 @@ sudo systemctl enable systemd-boot-update
 echo -e "$AZUL \t systemd-boot-update habilitado $FIM"
 sudo systemctl enable bluetooth.service
 echo -e "$AZUL \t bluetooth.service habilitado $FIM"
+sudo systemctl enable --now ufw.service
 sudo ufw enable
-sudo systemctl enable ufw.service
 echo -e "$AZUL \t ufw.service habilitado $FIM"
 
 # Offpowersave
