@@ -154,7 +154,7 @@ gsettings set org.gnome.desktop.peripherals.touchpad click-method areas
 #Numlock
 gsettings set org.gnome.desktop.peripherals.keyboard numlock-state true
 
-#Ao pesquisar, não serão exibidos os resultados de aplicativos contidos nesta lista.
+#Ao pesquisar no overview não serão exibidos os resultados da pesquisa realizada pelos aplicativos contidos nesta lista.
 gsettings set org.gnome.desktop.search-providers disabled "['org.gnome.Contacts.desktop', 'org.gnome.Boxes.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Characters.desktop', 'org.gnome.Photos.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Epiphany.desktop', 'org.gnome.Software.desktop']"
 
 #Tamanho da fonte do sistema
@@ -166,6 +166,9 @@ gsettings set org.gnome.desktop.wm.preferences titlebar-font "Cantarell Bold 12"
 #GNOME Software
 gsettings set org.gnome.software download-updates false
 gsettings set org.gnome.software first-run false
+
+#Desabilitar a suspensão do notebook quando a tela do dispositivo é fechada.
+mv ./autostart/ignore-lid-switch-tweak.desktop ~/.config/autostart
 
 #Tempo
 gsettings set org.gnome.Weather locations "[<(uint32 2, <('Uberlândia', 'SBUL', true, [(-0.3295763346004984, -0.84183047006083411)], [(-0.3301581226533582, -0.84299402871326112)])>)>]"
