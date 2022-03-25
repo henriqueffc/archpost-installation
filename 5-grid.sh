@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+# Henrique Custódio
+# https://github.com/henriqueffc
+#
+# AVISO: Execute o script por sua conta e risco.
+
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Office/ name "Office"
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Office/ apps "['libreoffice-math.desktop', 'libreoffice-writer.desktop', 'libreoffice-impress.desktop', 'libreoffice-draw.desktop', 'libreoffice-calc.desktop', 'org.kde.okular.desktop', 'libreoffice-startcenter.desktop', 'libreoffice-base.desktop', 'com.github.jeromerobert.pdfarranger.desktop', 'io.github.wereturtle.ghostwriter.desktop', 'com.calibre_ebook.calibre.desktop', 'com.calibre_ebook.calibre.ebook-edit.desktop', 'com.calibre_ebook.calibre.ebook-viewer.desktop', 'com.calibre_ebook.calibre.lrfviewer.desktop']"
 
