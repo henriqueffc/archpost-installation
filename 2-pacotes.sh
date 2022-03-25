@@ -167,8 +167,11 @@ gsettings set org.gnome.desktop.wm.preferences titlebar-font "Cantarell Bold 12"
 gsettings set org.gnome.software download-updates false
 gsettings set org.gnome.software first-run false
 
-#Desabilitar a suspensão do notebook quando a tela do dispositivo é fechada.
+#Desabilitar a suspensão do notebook quando a tela do dispositivo é fechada. 
+# primeira opção (habilitada) precisa do Gnome Tweaks instalado no sistema e desabilita somente para o usuário.
+# segunda (comentada) desabilita para todo o sistema e não precisa do Gnome Tweaks instalado.
 mv ./autostart/ignore-lid-switch-tweak.desktop ~/.config/autostart
+#sudo sed -i 's/#HandleLidSwitch=suspend/HandleLidSwitch=ignore/' /etc/systemd/logind.conf
 
 #Tempo
 gsettings set org.gnome.Weather locations "[<(uint32 2, <('Uberlândia', 'SBUL', true, [(-0.3295763346004984, -0.84183047006083411)], [(-0.3301581226533582, -0.84299402871326112)])>)>]"
