@@ -165,6 +165,7 @@ gsettings set org.gnome.desktop.wm.preferences titlebar-font "Cantarell Bold 12"
 
 #GNOME Software
 gsettings set org.gnome.software download-updates false
+gsettings set org.gnome.software first-run false
 
 #Tempo
 gsettings set org.gnome.Weather locations "[<(uint32 2, <('Uberlândia', 'SBUL', true, [(-0.3295763346004984, -0.84183047006083411)], [(-0.3301581226533582, -0.84299402871326112)])>)>]"
