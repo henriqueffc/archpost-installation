@@ -22,9 +22,11 @@ sudo usermod -aG wheel "$USERNAME"
 
 echo -e "$AZUL
 -------------------------------------------------------------------------
-                    Instalando os pacotes
+  Instalando os pacotes. Digite S (SIM) para todas as requisições 
+        feitas pelo sistema nas instalações dos pacotes.
+            (Intel, áudio e Pipeware/wireplumber)
 -------------------------------------------------------------------------
-$FIM"
+$FIM" && sleep 3
 
 # Video (Intel e Nvidia)
 sudo pacman --needed -S - <./pacotes/pkg-video.txt
