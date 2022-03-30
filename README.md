@@ -14,6 +14,6 @@ Ordem de uso dos scripts:
 - 5-grid.sh
 - 6-zsh-ohmyzsh.sh
 
-O script *initialconfig.sh* deve ser executado como chroot após o termino da execução do archinstall. No final da instalação é sugerido pelo script que se continue como chroot para que o usuário execute outras configurações desejadas para o sistema. 
+O script *initialconfig.sh* deve ser executado como chroot após o termino da execução do archinstall. No final da instalação é sugerido pelo script *archinstall* que se continue como chroot para que o usuário execute outras configurações desejadas para o sistema. 
 
 Os scripts restantes deverão ser executados após o reboot da máquina e com o sistema iniciado no ambiente gráfico.
