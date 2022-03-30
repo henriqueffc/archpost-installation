@@ -6,13 +6,13 @@ Os scripts foram concebidos especificamente para a configuração da minha máqu
 
 Ordem de uso dos scripts:
 
-initialconfig.sh
-1-videoeaudio.sh
-2-pacotes.sh
-3-flatpakefonte.sh
-4-yay.sh
-5-grid.sh
-6-zsh-ohmyzsh.sh
+- initialconfig.sh
+- 1-videoeaudio.sh
+- 2-pacotes.sh
+- 3-flatpakefonte.sh
+- 4-yay.sh
+- 5-grid.sh
+- 6-zsh-ohmyzsh.sh
 
 O script *initialconfig.sh* deve ser executado como chroot após o termino da execução do archinstall. No final da instalação é sugertido pelo script que se continue como chroot para que o usuário execute outras configurações desejadas para o sistema. 
 
