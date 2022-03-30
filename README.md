@@ -4,7 +4,7 @@ Eu uso os scripts desse repositório após instalar o Arch Linux usando o script
 
 Os scripts foram concebidos **especificamente** para a configuração da minha máquina. Notebook Lenovo S145, Intel Core i7-8565U, 12GB de RAM, SSD 240GB, SSD 512GB M.2 NVMe, NVIDIA GeForce MX110. 
 
-**Eu instalo o sistema em UEFI, com systemd-boot, ZRAM e com GNOME. As configurações dos scripts são concebidas nessa base.**
+**Eu instalo o sistema em UEFI, com systemd-boot, ZRAM, pipewire e com GNOME. As configurações dos scripts são concebidas nessa base.**
 
 Ordem de uso dos scripts:
 
