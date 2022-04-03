@@ -62,6 +62,7 @@ flatpak install flathub com.obsproject.Studio -y
 flatpak install flathub com.mattjakeman.ExtensionManager -y
 flatpak install flathub org.gtk.Gtk3theme.Adwaita-dark -y
 flatpak install flathub com.github.alexkdeveloper.dwxmlcreator -y
+flatpak install flathub com.github.huluti.Curtail -y
 
 # Flatpak Remote-Beta
 
