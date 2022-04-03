@@ -63,6 +63,7 @@ flatpak install flathub com.mattjakeman.ExtensionManager -y
 flatpak install flathub org.gtk.Gtk3theme.Adwaita-dark -y
 flatpak install flathub com.github.alexkdeveloper.dwxmlcreator -y
 flatpak install flathub com.github.huluti.Curtail -y
+flatpak install flathub de.haeckerfelix.Shortwave -y
 
 # Flatpak Remote-Beta
 
