@@ -122,7 +122,12 @@ echo -e "$AZUL Alterando o tema, os ícones, o wallpaper e os atalhos do sistema
 echo -e "$AZUL Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 2 $FIM" && sleep 1
 echo -e "$AZUL Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 3 $FIM" && sleep 1
 
-#Tema e ícones do Gnome
+#Tema do sistema GNOME 42
+#gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
+#Tema para os aplicativos legados GNOME 42
+#gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
+
+#Tema e ícones do Gnome 41
 gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
 gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
 
