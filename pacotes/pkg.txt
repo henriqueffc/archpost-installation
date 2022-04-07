@@ -22,7 +22,6 @@ git
 glew
 glfw-x11
 gnome-firmware
-gnome-icon-theme-symbolic
 gparted
 gufw
 i7z
