@@ -230,7 +230,7 @@ gsettings set org.gnome.desktop.background picture-uri file://$dir/Imagens/Wallp
 gsettings set org.gnome.desktop.background picture-uri-dark file://$dir/Imagens/Wallpaper/dynamic_wallpaper.xml
 
 #Steam (prime-run)
-rm ~/Área\ de\ trabalho/steam.desktop
+#rm ~/Área\ de\ trabalho/steam.desktop
 cp /usr/share/applications/steam.desktop ~/.local/share/applications
 sed -i 's/steam-runtime/\prime-run steam-runtime/' ~/.local/share/applications/steam.desktop
 echo -e "$AZUL \t steam.desktop modificado $FIM"
