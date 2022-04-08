@@ -1,9 +1,12 @@
 bridge-utils
 dmidecode
 dnsmasq
+edk2-ovmf
 iptables-nft
 libvirt
 openbsd-netcat
 qemu
+qemu-arch-extra
+vde2
 virt-manager
 virt-viewer
