@@ -9,6 +9,7 @@ cpupower
 curl
 dconf-editor
 gnome-sound-recorder
+gnome-themes-extra
 dialog
 discount
 djvulibre
@@ -40,7 +41,6 @@ lm_sensors
 lutris
 man-db
 man-pages
-materia-gtk-theme
 neofetch
 ntfs-3g
 nvme-cli
