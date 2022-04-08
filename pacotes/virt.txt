@@ -10,3 +10,4 @@ qemu-arch-extra
 vde2
 virt-manager
 virt-viewer
+spice-gtk
