@@ -47,6 +47,9 @@ sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
 
 #Firefox
 echo 'MOZ_ENABLE_WAYLAND=1' >>/etc/environment
+echo 'MOZ_DISABLE_RDD_SANDBOX=1' >>/etc/environment
+echo 'MOZ_WAYLAND_DRM_DEVICE=/dev/dri/renderD128' >>/etc/environment
+echo 'MOZ_WAYLAND_USE_VAAPI=1' >>/etc/environment
 
 # NANO - Line number e syntax-highlighting
 sed -i 's/# set linenumbers/\set linenumbers/' /etc/nanorc
