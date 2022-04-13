@@ -70,6 +70,7 @@ wine-gecko
 wine-mono
 winetricks
 wmctrl
+wireless-regdb
 xorg-xdpyinfo
 xorg-xkill
 zip
