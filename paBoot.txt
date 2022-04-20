@@ -1,7 +1,8 @@
 ##Parâmetros do boot
 
 #Abra o arquivo desejado em /boot/loader/entries e usando o nano digite ^R e depois o caminho do arquivo baixado ou ^T para pesquisar.
-Insira as informações no final da linha options root= . O acpi_osi corrigiu os erros do ACPI que estavam ocorrendo no sistema. A opção intel_pstate=no_hwp é criada na instalação do sistema, portanto não é necessário qualquer modificação em relação a essa opção.
+Insira as informações no final da linha options root= . O acpi_osi corrigiu os erros do ACPI que estavam ocorrendo no sistema. 
+A opção intel_pstate=no_hwp é criada na instalação do sistema, portanto não é necessário qualquer modificação em relação a essa opção.
 
 #Nvidia, Intel e Apparmor
 
