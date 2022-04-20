@@ -12,7 +12,8 @@ QT - QT_STYLE_OVERRIDE=kvantum (X11), QT_STYLE_OVERRIDE=adwaita-dark ou QT_STYLE
 
 5 - Coloque a opção noatime no lugar da relatime em / e /boot e na partição usada do nvme em /etc/fstab.
 
-6 - Você poderá alterar o modo como o KMS do driver Intel está configurado. Exclua a linha i915.modeset=1 nos parâmetros do Kernel e estabeleça o i915 como módulo no mkinitcpio.conf. De acordo com a Wiki coloque o intel_agp antes do i915.
+6 - Você poderá alterar o modo como o KMS do driver Intel está configurado. Exclua a linha i915.modeset=1 nos parâmetros do Kernel 
+e estabeleça o i915 como módulo no mkinitcpio.conf. De acordo com a Wiki coloque o intel_agp antes do i915.
 
 sudo nano /etc/mkinitcpio.conf 
 
