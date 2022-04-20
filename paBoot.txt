@@ -1,12 +1,12 @@
 ##Parâmetros do boot
 
-#Abra o arquivo desejdado em /boot/loader/entries e usando o nano digite ^R e depois o caminho do arquivo baixado ou ^T para pesquisar. Insira as informações no final da linha options root= .
+#Abra o arquivo desejdado em /boot/loader/entries e usando o nano digite ^R e depois o caminho do arquivo baixado ou ^T para pesquisar. Insira as informações no final da linha options root= . O acpi_osi corrigiu os erros do ACPI que estavam ocorrendo no sistema. A opção intel_pstate=no_hwp é criada na instalação do sistema, portanto não é necessário qualquer modificação em relação a essa opção.
 
 #Nvidia, Intel e Apparmor
 
-nvidia-drm.modeset=1 nvidia.NVreg_EnablePCIeGen3=1 nvidia.NVreg_UsePageAttributeTable=1 i915.modeset=1 i915.enable_guc=2 i915.enable_fbc=1 nouveau.modeset=0 lsm=landlock,lockdown,yama,apparmor,bpf
+acpi_osi=! acpi_osi=Linux nvidia-drm.modeset=1 nvidia.NVreg_EnablePCIeGen3=1 nvidia.NVreg_UsePageAttributeTable=1 i915.modeset=1 i915.enable_guc=2 i915.enable_fbc=1 nouveau.modeset=0 lsm=landlock,lockdown,yama,apparmor,bpf
 
 
 #Nvidia, Intel
 
-nvidia-drm.modeset=1 nvidia.NVreg_EnablePCIeGen3=1 nvidia.NVreg_UsePageAttributeTable=1 i915.modeset=1 i915.enable_guc=2 i915.enable_fbc=1 nouveau.modeset=0
+acpi_osi=! acpi_osi=Linux nvidia-drm.modeset=1 nvidia.NVreg_EnablePCIeGen3=1 nvidia.NVreg_UsePageAttributeTable=1 i915.modeset=1 i915.enable_guc=2 i915.enable_fbc=1 nouveau.modeset=0
