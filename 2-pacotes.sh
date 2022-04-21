@@ -172,6 +172,9 @@ gsettings set org.gnome.desktop.wm.preferences titlebar-font "Cantarell Bold 12"
 gsettings set org.gnome.software download-updates false
 gsettings set org.gnome.software first-run false
 
+#Mutter
+gsettings set org.gnome.mutter experimental-features '["kms-modifiers"]'
+
 #Desabilitar a suspensão do notebook quando a tela do dispositivo é fechada. 
 # primeira opção (habilitada) precisa do Gnome Tweaks instalado no sistema e desabilita somente para o usuário.
 # segunda (comentada) desabilita para todo o sistema e não precisa do Gnome Tweaks instalado.
