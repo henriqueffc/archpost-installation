@@ -66,6 +66,9 @@ done
 echo -e "$VERDE Mirrorlist atual $FIM"
 cat /etc/pacman.d/mirrorlist
 
+#Habilitar o Wayland com o drive proprietário da Nvidia
+sudo ln -s /dev/null /etc/udev/rules.d/61-gdm.rules
+
 #Reflector
 while :; do
     echo -ne "$VERDE 
