@@ -264,6 +264,10 @@ while :; do
     esac
 done
 
+# Pacman hooks
+sudo mkdir /etc/pacman.d/hooks
+sudo cp ./hooks/*.hook /etc/pacman.d/hooks/
+
 #Sensors
 sudo sensors-detect
 

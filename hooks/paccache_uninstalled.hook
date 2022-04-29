@@ -1,0 +1,12 @@
+[Trigger]
+Operation = Upgrade
+Operation = Install
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+Description = Cleaning pacman cache (uninstalled packages). . .
+When = PostTransaction
+Exec = /usr/bin/paccache -ruk0
+Depends = pacman-contrib
