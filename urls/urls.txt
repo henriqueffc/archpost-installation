@@ -2,7 +2,7 @@ https://vulkan.gpuinfo.org/downloads/vulkancapsviewer_3.21_linux64_wayland.AppIm
 https://opencl.gpuinfo.org/downloads/openclcapsviewer_1.00_linux64_x11.AppImage
 http://opengl.gpuinfo.org/downloads/glcapsviewer_1_2_linux64.tar.gz
 https://www.zotero.org/download/client/dl?channel=release&platform=linux-x86_64
-https://github.com/bitwarden/desktop/releases/download/v1.32.1/Bitwarden-1.32.1-x86_64.AppImage
+https://github.com/bitwarden/desktop/releases/download/v1.33.0/Bitwarden-1.33.0-x86_64.AppImage
 https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
 https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
 https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
