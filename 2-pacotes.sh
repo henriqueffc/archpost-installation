@@ -242,6 +242,10 @@ sudo pacman -S --needed mlocate
 sudo updatedb
 echo -e "$AZUL \t Mlocate habilitado $FIM"
 
+# Pacman hooks
+sudo mkdir /etc/pacman.d/hooks
+sudo cp ./hooks/*.hook /etc/pacman.d/hooks/
+
 # Limitador de FPS
 while :; do
     echo -ne "$VERDE Você quer instalar o limitador de FPS - Libstrangle? $FIM $LVERDE (S) sim / (N) não $FIM"
@@ -263,10 +267,6 @@ while :; do
         ;;
     esac
 done
-
-# Pacman hooks
-sudo mkdir /etc/pacman.d/hooks
-sudo cp ./hooks/*.hook /etc/pacman.d/hooks/
 
 #Sensors
 sudo sensors-detect
