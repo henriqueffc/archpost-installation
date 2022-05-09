@@ -46,16 +46,16 @@ sed -i 's/#CheckSpace/\CheckSpace/' /etc/pacman.conf
 
 #Multilib
 while :; do
-    echo -ne "$VERDE Você quer habilitar o repositório Multilib? Caso já o tenha habilitado pelo script Archinstall não será necessário uma nova permissão. $FIM $LVERDE (S) sim / (N) não $FIM"
+    echo -ne "$VERDE Você quer habilitar o repositório Multilib? Caso já o tenha habilitado pelo script Archinstall não será necessária uma nova permissão. $FIM $LVERDE (S) sim / (N) não $FIM"
     read -r resposta
     case "$resposta" in
     s | S | "")
         sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
-	break
+	     break
         ;;
     n | N)
         echo -e "$AZUL Continuando a instalação. $FIM"
-        break
+          break
         ;;
     *)
         echo -e "$RED Opção inválida. Responda a pergunta. $FIM"
@@ -148,5 +148,9 @@ while :; do
 done
 
 pacman -Syy --noconfirm --needed
+
+#Intel - i915 / mkinitcpio.conf
+sed -i 's/MODULES=.*/MODULES=(intel_agp i915)/g' /etc/mkinitcpio.conf
+mkinitcpio -P
 
 printf "%s $VERDE Fim! Escreva exit, pressione enter e reinicie com o comando reboot. $FIM \n"
