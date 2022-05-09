@@ -43,13 +43,33 @@ sed -i 's/#Color/\Color/' /etc/pacman.conf
 sed -i 's/#VerbosePkgLists/\VerbosePkgLists/' /etc/pacman.conf
 sed -i 's/#ParallelDownloads = 5/\ParallelDownloads = 5/' /etc/pacman.conf
 sed -i 's/#CheckSpace/\CheckSpace/' /etc/pacman.conf
-sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
+
+#Multilib
+while :; do
+    echo -ne "$VERDE Você quer habilitar o repositório Multilib? Caso já o tenha habilitado pelo script Archinstall não será necessário uma nova permissão. $FIM $LVERDE (S) sim / (N) não $FIM"
+    read -r resposta
+    case "$resposta" in
+    s | S | "")
+        sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
+	break
+        ;;
+    n | N)
+        echo -e "$AZUL Continuando a instalação. $FIM"
+        break
+        ;;
+    *)
+        echo -e "$RED Opção inválida. Responda a pergunta. $FIM"
+        ;;
+    esac
+done
 
 #Firefox
 echo 'MOZ_ENABLE_WAYLAND=1' >>/etc/environment
 echo 'MOZ_DISABLE_RDD_SANDBOX=1' >>/etc/environment
 echo 'MOZ_WAYLAND_DRM_DEVICE=/dev/dri/renderD128' >>/etc/environment
 echo 'MOZ_WAYLAND_USE_VAAPI=1' >>/etc/environment
+echo 'LIBVA_DRIVERS_PATH=/usr/lib/dri/' >>/etc/environment
+echo 'LIBVA_DRIVER_NAME=iHD' >>/etc/environment  
 
 # NANO - Line number e syntax-highlighting
 sed -i 's/# set linenumbers/\set linenumbers/' /etc/nanorc
