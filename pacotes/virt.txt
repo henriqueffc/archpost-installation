@@ -5,8 +5,8 @@ edk2-ovmf
 iptables-nft
 libvirt
 openbsd-netcat
-qemu
-qemu-arch-extra
+qemu-desktop
+qemu-emulators-full
 vde2
 virt-manager
 virt-viewer
