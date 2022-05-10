@@ -128,7 +128,7 @@ gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
 gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
 
 #Tema dos ícones 
-gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
+#gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
 
 #Mostrar porcentagem da bateria na top bar
 gsettings set org.gnome.desktop.interface show-battery-percentage true
@@ -162,10 +162,11 @@ gsettings set org.gnome.desktop.peripherals.keyboard numlock-state true
 gsettings set org.gnome.desktop.search-providers disabled "['org.gnome.Contacts.desktop', 'org.gnome.Boxes.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Characters.desktop', 'org.gnome.Photos.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Epiphany.desktop', 'org.gnome.Software.desktop']"
 
 #Tamanho da fonte do sistema
-gsettings set org.gnome.desktop.interface font-name "Cantarell 12"
-gsettings set org.gnome.desktop.interface document-font-name "Cantarell 12"
-gsettings set org.gnome.desktop.interface monospace-font-name "Source Code Pro 11"
-gsettings set org.gnome.desktop.wm.preferences titlebar-font "Cantarell Bold 12"
+gsettings set org.gnome.desktop.interface font-name "Noto Sans 12"
+gsettings set org.gnome.desktop.interface document-font-name "Noto Sans 12"
+gsettings set org.gnome.desktop.interface monospace-font-name "Noto Sans Mono 11"
+gsettings set org.gnome.desktop.wm.preferences titlebar-font "Noto Sans Bold 12"
+gsettings set org.gnome.desktop.interface font-antialiasing rgba
 
 #GNOME Software
 gsettings set org.gnome.software download-updates false
