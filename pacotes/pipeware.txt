@@ -1,8 +1,0 @@
-gst-plugin-pipewire
-libpulse
-pipewire
-pipewire-alsa
-pipewire-jack
-pipewire-pulse
-pipewire-x11-bell
-wireplumber
