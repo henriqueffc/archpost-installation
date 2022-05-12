@@ -118,5 +118,15 @@
         "is_default_search": false,
         "run_without_argument": false,
         "added": 1647354328.5814965
+    },
+    "9b56b8bd-02f2-4b2b-97f6-ca0942a406c4": {
+        "id": "9b56b8bd-02f2-4b2b-97f6-ca0942a406c4",
+        "name": "Spotify",
+        "keyword": "spot",
+        "cmd": "https://open.spotify.com/search/%s",
+        "icon": "~/Imagens/Logo Ulauncher/spotify.png",
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1652379230.7664602
     }
 }
