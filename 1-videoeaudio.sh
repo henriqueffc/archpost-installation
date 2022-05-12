@@ -22,7 +22,7 @@ sudo usermod -aG wheel "$USERNAME"
 
 echo -e "$AZUL
 -------------------------------------------------------------------------
-  Instalando os pacotes para Intel, áudio e pipeware/wireplumber. 
+  Instalando os pacotes para Intel, áudio e pipewire/wireplumber. 
   Digite S (SIM) para todas as requisições feitas pelo sistema 
   para as instalações desses pacotes.
 -------------------------------------------------------------------------
