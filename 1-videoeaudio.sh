@@ -31,11 +31,11 @@ $FIM" && sleep 3
 # Video (Intel e Nvidia)
 sudo pacman --needed -S - <./pacotes/pkg-video.txt
 
-# Áudio
-sudo pacman --needed -S - <./pacotes/pkg-audio.txt
+# Pipewire
+sudo pacman --needed -S - <./pacotes/pipewire.txt
 
-# Pipeware
-sudo pacman --needed -S - <./pacotes/pipeware.txt
+# Áudio - Codecs
+sudo pacman --needed -S - <./pacotes/pkg-audio.txt
 
 #Apparmor
 while :; do
