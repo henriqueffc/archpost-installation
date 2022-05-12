@@ -42,7 +42,6 @@ flatpak install flathub net.davidotek.pupgui2 -y
 flatpak install flathub org.flozz.yoga-image-optimizer -y
 flatpak install flathub org.gtkhash.gtkhash -y
 flatpak install flathub com.github.rajsolai.textsnatcher -y
-flatpak install flathub io.github.wereturtle.ghostwriter -y
 flatpak install flathub org.gnome.Solanum -y
 flatpak install flathub com.github.tchx84.Flatseal -y
 flatpak install flathub com.discordapp.Discord -y
