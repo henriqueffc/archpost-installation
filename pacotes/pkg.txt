@@ -71,6 +71,7 @@ wine-mono
 winetricks
 wmctrl
 wireless-regdb
+xdg-desktop-portal
 xorg-xdpyinfo
 xorg-xkill
 zip
