@@ -7,4 +7,5 @@ https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regula
 https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
 https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
 https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
+https://github.com/Automattic/simplenote-electron/releases/download/v2.21.0/Simplenote-linux-2.21.0-x86_64.AppImage
 #https://broth.itch.ovh/itch-setup/linux-amd64/1.26.0/unpacked/default
