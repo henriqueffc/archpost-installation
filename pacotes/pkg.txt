@@ -72,6 +72,8 @@ winetricks
 wmctrl
 wireless-regdb
 xdg-desktop-portal
+xdg-desktop-portal-gnome
+xdg-desktop-portal-gtk
 xorg-xdpyinfo
 xorg-xkill
 zip
