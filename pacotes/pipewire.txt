@@ -6,4 +6,3 @@ pipewire-jack
 pipewire-pulse
 pipewire-x11-bell
 wireplumber
-xdg-desktop-portal
