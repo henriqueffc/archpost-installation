@@ -3,6 +3,7 @@
 <p align="left">
     <a href="https://github.com/henriqueffc/archpost-installation/blob/main/LICENSE">
       <img src="https://img.shields.io/github/license/henriqueffc/archpost-installation?style=flat-square">
+      <img src="https://img.shields.io/github/last-commit/henriqueffc/archpost-installation?style=flat-square">
     </a>
 </p>
 
