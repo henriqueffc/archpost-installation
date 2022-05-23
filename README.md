@@ -1,4 +1,3 @@
-# archpost-installation
 <h1>archpost-installation <img src="https://cdn.jsdelivr.net/npm/simple-icons@6.23.0/icons/archlinux.svg" width="22px" alt="Arch Linux"> </h1>
 <p align="left">
       <a href="https://github.com/henriqueffc/archpost-installation/blob/main/LICENSE">
