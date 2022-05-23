@@ -71,6 +71,9 @@ echo 'MOZ_WAYLAND_USE_VAAPI=1' >>/etc/environment
 echo 'LIBVA_DRIVERS_PATH=/usr/lib/dri/' >>/etc/environment
 echo 'LIBVA_DRIVER_NAME=iHD' >>/etc/environment  
 
+#PC speaker - turn off beep shutdown
+echo 'blacklist pcspkr' > /etc/modprobe.d/nobeep.conf
+
 # NANO - Line number e syntax-highlighting
 sed -i 's/# set linenumbers/\set linenumbers/' /etc/nanorc
 linenumber=$(cat /etc/nanorc | grep -n '*.nanorc' | gawk '{print $1}' FS=":")
