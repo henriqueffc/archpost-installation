@@ -2,7 +2,7 @@
 
 Eu uso os scripts desse repositório **após** instalar o Arch Linux usando o script de instalação [*archinstall*](https://github.com/archlinux/archinstall) fornecido pela [ISO](https://archlinux.org/download/) oficial.
 
-**Último teste dos scripts: 07/04/22**
+**Último teste dos scripts: 07 de abril 22**
 
 Os scripts foram concebidos **especificamente** para a configuração da minha máquina. Notebook Lenovo S145, Intel Core i7-8565U, 12GB de RAM, SSD 240GB, SSD 512GB M.2 NVMe, NVIDIA GeForce MX110.
 
