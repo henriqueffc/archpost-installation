@@ -2,7 +2,7 @@
 
 <p align="left">
     <a href="https://opensource.org/licenses/MIT">
-      <img src="https://img.shields.io/github/license/henriqueffc/archpost-installation?style=flat-square" alt="License MIT">
+      <img src="https://img.shields.io/github/license/henriqueffc/archpost-installation?style=flat-square">
     </a>
   </p>
 
