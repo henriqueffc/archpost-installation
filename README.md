@@ -1,4 +1,4 @@
-# [<img align="left" alt="Arch Linux" width="42px" src="https://cdn.jsdelivr.net/npm/simple-icons@6.23.0/icons/archlinux.svg" />] archpost-installation
+# <img align="left" alt="Arch Linux" width="42px" src="https://cdn.jsdelivr.net/npm/simple-icons@6.23.0/icons/archlinux.svg" /> archpost-installation
 <h1> <img src="https://cdn.jsdelivr.net/npm/simple-icons@6.23.0/icons/archlinux.svg" width="42px" alt="Arch Linux"> archpost-installation </h1>
 <p align="left">
       <a href="https://github.com/henriqueffc/archpost-installation/blob/main/LICENSE">
