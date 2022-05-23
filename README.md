@@ -5,6 +5,7 @@
       <img src="https://img.shields.io/github/license/henriqueffc/archpost-installation?style=flat-square" alt="License MIT">
     </a>
       <img src="https://img.shields.io/github/last-commit/henriqueffc/archpost-installation?style=flat-square" alt="Last commit">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@6.23.0/icons/archlinux.svg" width="22px" alt="Arch Linux">
 </p>
 
 Eu uso os scripts desse repositório **após** instalar o Arch Linux usando o script de instalação [*archinstall*](https://github.com/archlinux/archinstall) fornecido pela [ISO](https://archlinux.org/download/) oficial.
