@@ -1,5 +1,11 @@
 # archpost-installation
 
+<p align="left">
+    <a href="https://opensource.org/licenses/MIT">
+      <img src="https://img.shields.io/github/license/henriqueffc/archpost-installation?style=flat-square" alt="License MIT">
+    </a>
+  </p>
+
 Eu uso os scripts desse repositório **após** instalar o Arch Linux usando o script de instalação [*archinstall*](https://github.com/archlinux/archinstall) fornecido pela [ISO](https://archlinux.org/download/) oficial.
 
 **Último teste dos scripts: 07 de abril 22**
