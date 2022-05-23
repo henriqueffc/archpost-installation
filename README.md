@@ -1,6 +1,6 @@
 # archpost-installation
 
-Eu uso os scripts desse repositório após instalar o Arch Linux usando o script de instalação *archinstall* fornecido pela [ISO](https://archlinux.org/download/) oficial.
+Eu uso os scripts desse repositório **após** instalar o Arch Linux usando o script de instalação *archinstall* fornecido pela [ISO](https://archlinux.org/download/) oficial.
 
 **Último teste dos scripts: 07/04/22**
 
