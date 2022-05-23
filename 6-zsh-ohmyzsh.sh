@@ -2,8 +2,8 @@
 
 # Henrique Custódio
 # https://github.com/henriqueffc
-#
 # AVISO: Execute o script por sua conta e risco.
+# License: MIT License
 
 #Cores dos avisos
 
