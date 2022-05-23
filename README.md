@@ -1,11 +1,7 @@
 # <img align="left" alt="Arch Linux" width="42px" src="https://cdn.jsdelivr.net/npm/simple-icons@6.23.0/icons/archlinux.svg" /> archpost-installation
-<h1> <img src="https://cdn.jsdelivr.net/npm/simple-icons@6.23.0/icons/archlinux.svg" width="42px" alt="Arch Linux"> archpost-installation </h1>
-<p align="left">
-      <a href="https://github.com/henriqueffc/archpost-installation/blob/main/LICENSE">
-      <img src="https://img.shields.io/github/license/henriqueffc/archpost-installation?style=flat-square" alt="License MIT">
-    </a>
-      <img src="https://img.shields.io/github/last-commit/henriqueffc/archpost-installation?style=flat-square" alt="Last commit">
-</p>
+[<img align="left" alt="License MIT" src="https://img.shields.io/github/license/henriqueffc/archpost-installation?style=flat-square" />][License]
+<img align="left" alt="Last commit" src="https://img.shields.io/github/last-commit/henriqueffc/archpost-installation?style=flat-square" />
+[License]: https://github.com/henriqueffc/archpost-installation/blob/main/LICENSE
 
 Eu uso os scripts desse repositório **após** instalar o Arch Linux usando o script de instalação [*archinstall*](https://github.com/archlinux/archinstall) fornecido pela [ISO](https://archlinux.org/download/) oficial.
 
