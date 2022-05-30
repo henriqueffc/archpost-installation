@@ -4,9 +4,9 @@ google-chrome
 goverlay-bin
 heroic-games-launcher-bin
 inxi
-lib32-mangohud-x11
-mangohud-x11
-mangohud-common-x11
+lib32-mangohud
+mangohud
+mangohud-common
 qgnomeplatform
 ttf-ms-fonts
 ulauncher
