@@ -42,6 +42,7 @@ lm_sensors
 lutris
 man-db
 man-pages
+mc
 neofetch
 ntfs-3g
 nvme-cli
