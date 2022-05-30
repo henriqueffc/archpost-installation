@@ -1,4 +1,3 @@
-appimagelauncher
 downgrade
 dropbox
 google-chrome
@@ -9,7 +8,6 @@ lib32-mangohud-x11
 mangohud-x11
 mangohud-common-x11
 qgnomeplatform
-timeshift
 ttf-ms-fonts
 ulauncher
 visual-studio-code-bin
