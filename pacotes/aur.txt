@@ -8,6 +8,7 @@ lib32-mangohud
 mangohud
 mangohud-common
 qgnomeplatform
+timeshift
 ttf-ms-fonts
 ulauncher
 visual-studio-code-bin
