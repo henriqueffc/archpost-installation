@@ -64,6 +64,7 @@ flatpak install flathub com.github.alexkdeveloper.dwxmlcreator -y
 flatpak install flathub com.github.huluti.Curtail -y
 flatpak install flathub de.haeckerfelix.Shortwave -y
 flatpak install flathub org.gnome.TextEditor -y
+flatpak run com.github.micahflee.torbrowser-launcher -y
 flatpak install flathub org.zotero.Zotero -y
 
 # Flatpak Remote-Beta
