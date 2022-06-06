@@ -42,6 +42,10 @@ https://github.com/Doekeb/ulauncher-gnome-calculator
 
 https://github.com/isacikgoz/ukill
 
+https://ext.ulauncher.io/-/github-friday-ulauncher-clipboard
+
+https://ext.ulauncher.io/-/github-kuenzelit-ulauncher-firefox-bookmarks
+
 # copie o link do github da extensão, clique em "Extension" nas opções do aplicativo e depois clique em "add extension" e cole o link.
 
 
