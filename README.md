@@ -19,7 +19,7 @@ Caso o git não esteja instalado no sistema, execute:
 
 Para usar os scripts clone o repositório e acesse a pasta:
 
-`git clone https://github.com/henriqueffc/archpost-installation`<br>
+`git clone http://github.com/henriqueffc/archpost-installation`<br>
 `cd archpost-installation`
 
 É necessário dar permissão de execução para os arquivos .sh 
