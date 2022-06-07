@@ -158,4 +158,4 @@ pacman -Syy --noconfirm
 sed -i 's/MODULES=.*/MODULES=(intel_agp i915)/g' /etc/mkinitcpio.conf
 mkinitcpio -P
 
-printf "%s $VERDE Fim! Escreva exit, pressione enter e reinicie com o comando reboot. $FIM \n"
+printf "%s $VERDE Fim! Reinicie com o comando reboot. $FIM \n"
