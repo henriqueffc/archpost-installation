@@ -31,8 +31,8 @@
     },
     "5bd49b14-dea6-4621-90e0-af2dac52710a": {
         "id": "5bd49b14-dea6-4621-90e0-af2dac52710a",
-        "name": "Arch Linux",
-        "keyword": "arch",
+        "name": "Arch Linux - Repo",
+        "keyword": "repo",
         "cmd": "https://archlinux.org/packages/?q=%s",
         "icon": "~/Imagens/Logo Ulauncher/arch.png",
         "is_default_search": false,
@@ -128,5 +128,75 @@
         "is_default_search": false,
         "run_without_argument": false,
         "added": 1652379230.7664602
+    },
+    "191f5484-85ad-40e8-ac1a-068428aeb87a": {
+        "id": "191f5484-85ad-40e8-ac1a-068428aeb87a",
+        "name": "TradutorEN",
+        "keyword": "traen",
+        "cmd": "https://translate.google.com.br/?hl=pt-BR&tab=oT&sl=en&tl=pt&text=%s",
+        "icon": "~/Imagens/Logo Ulauncher/tradutor2.png",
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1654550339.5879185
+    },
+    "4df34612-1de9-49a3-995a-b1d4e1696f44": {
+        "id": "4df34612-1de9-49a3-995a-b1d4e1696f44",
+        "name": "TradutorPT",
+        "keyword": "trapt",
+        "cmd": "https://translate.google.com.br/?hl=pt-BR&tab=oT&sl=pt&tl=en&text=%s",
+        "icon": "~/Imagens/Logo Ulauncher/tradutor2.png",
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1654550521.0825331
+    },
+    "8c55e5cb-6268-4578-9484-63371bf8f6aa": {
+        "id": "8c55e5cb-6268-4578-9484-63371bf8f6aa",
+        "name": "Telegram",
+        "keyword": "tele",
+        "cmd": "https://web.telegram.org/",
+        "icon": "~/Imagens/Logo Ulauncher/telegram.png",
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1654552690.7879727
+    },
+    "d5e47c47-43ac-40b1-a323-6d95d3727913": {
+        "id": "d5e47c47-43ac-40b1-a323-6d95d3727913",
+        "name": "Whatsapp",
+        "keyword": "wh",
+        "cmd": "https://web.whatsapp.com/",
+        "icon": "~/Imagens/Logo Ulauncher/whatsapp.png",
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1654554839.7876613
+    },
+    "80afd483-ec8e-4a9e-a428-176bf1e4d5a3": {
+        "id": "80afd483-ec8e-4a9e-a428-176bf1e4d5a3",
+        "name": "Simplenote",
+        "keyword": "simple",
+        "cmd": "https://app.simplenote.com/",
+        "icon": "~/Imagens/Logo Ulauncher/simplenote1.png",
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1654565470.51564
+    },
+    "2fa2ef04-218e-46cd-8472-b1afe5d0bdd4": {
+        "id": "2fa2ef04-218e-46cd-8472-b1afe5d0bdd4",
+        "name": "Bitwarden",
+        "keyword": "bit",
+        "cmd": "https://vault.bitwarden.com/#/login",
+        "icon": "~/Imagens/Logo Ulauncher/bitwarden2.png",
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1654566512.6429954
+    },
+    "1624fffa-53a4-4817-b370-3d5aa749665e": {
+        "id": "1624fffa-53a4-4817-b370-3d5aa749665e",
+        "name": "Arch Linux",
+        "keyword": "arch",
+        "cmd": "https://archlinux.org/",
+        "icon": "~/Imagens/Logo Ulauncher/arch.png",
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1654566687.0963862
     }
 }
