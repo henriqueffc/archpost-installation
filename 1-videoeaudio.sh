@@ -13,9 +13,6 @@ RED='\e[1;31m'
 LVERDE='\e[0;92m'
 FIM='\e[0m'
 
-#Deletar a antiga pasta no /
-sudo rm -r /archpost-installation
-
 # Grupos
 sudo usermod -aG brlapi "$USERNAME"
 sudo usermod -aG wheel "$USERNAME"
