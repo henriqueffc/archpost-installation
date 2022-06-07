@@ -18,7 +18,7 @@ FIM='\e[0m'
 #locale-gen
 
 # Vconsole.conf (configuração disponível no script Archinstall)
-# echo "KEYMAP=br-abnt2" > /etc/vconsole.conf
+# echo "KEYMAP=br-abnt2" >/etc/vconsole.conf
 
 # Idioma e hostname (configuração disponível no script Archinstall)
 #echo 'LANG=pt_BR.UTF-8' >/etc/locale.conf
@@ -74,7 +74,7 @@ echo 'LIBVA_DRIVERS_PATH=/usr/lib/dri/' >>/etc/environment
 echo 'LIBVA_DRIVER_NAME=iHD' >>/etc/environment  
 
 #PC speaker - turn off beep shutdown
-echo 'blacklist pcspkr' > /etc/modprobe.d/nobeep.conf
+echo 'blacklist pcspkr' >/etc/modprobe.d/nobeep.conf
 
 # NANO - Line number e syntax-highlighting
 sed -i 's/# set linenumbers/\set linenumbers/' /etc/nanorc
