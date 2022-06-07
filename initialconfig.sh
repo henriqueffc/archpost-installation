@@ -36,7 +36,7 @@ echo '# Defaults specification' >>/etc/sudoers
 echo 'Defaults editor=/usr/bin/nano' >>/etc/sudoers
 
 # Caso queira o vim ao invés do nano, comente (#) a linha acima e descomente a linha abaixo.
-# echo "Defaults editor=/usr/bin/vim" >> /etc/sudoers
+# echo 'Defaults editor=/usr/bin/vim' >>/etc/sudoers
 
 # Pacman.conf
 cp /etc/pacman.conf /etc/pacman.conf.bak
