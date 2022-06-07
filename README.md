@@ -3,7 +3,7 @@
 [<img align="left" alt="License MIT" src="https://img.shields.io/github/license/henriqueffc/archpost-installation?style=flat-square" />](https://github.com/henriqueffc/archpost-installation/blob/main/LICENSE)
 <img align="left" alt="Last commit" src="https://img.shields.io/github/last-commit/henriqueffc/archpost-installation?style=flat-square" /> <br>
 
-Eu uso os scripts desse repositório **após** instalar o Arch Linux usando o script de instalação [*archinstall*](https://github.com/archlinux/archinstall) fornecido pela [ISO](https://archlinux.org/download/) oficial.
+Eu uso os scripts desse repositório **somente após** instalar o Arch Linux usando o script de instalação [*archinstall*](https://github.com/archlinux/archinstall) fornecido pela [ISO](https://archlinux.org/download/) oficial.
 
 **Último teste dos scripts: 07 de abril 22**
 
@@ -11,9 +11,24 @@ Os scripts foram concebidos **especificamente** para a configuração da minha m
 
 **Eu instalo o sistema em UEFI, com systemd-boot, ZRAM, pipewire, wireplumber e GNOME 42. As configurações dos scripts são concebidas nessa base.**
 
+Os scripts deverão ser executados após a inicialização do sistema no ambiente gráfico. 
+
+Caso o git não esteja instalado no sistema, execute:
+
+`sudo pacman -S git --needed`
+
+Para usar os scripts clone o repositório e acesse a pasta:
+
+`git clone https://github.com/henriqueffc/archpost-installation.git`
+`cd archpost-installation`
+
+É necessário dar permissão de execução para os arquivos .sh 
+
+`chmod +x *.sh`
+
 Ordem de uso dos scripts:
 
-- initialconfig.sh
+- initialconfig.sh (esse script deve ser executado com o comando sudo - `sudo ./initialconfig.sh`) 
 - 1-videoeaudio.sh
 - 2-pacotes.sh
 - 3-flatpakefonte.sh
@@ -21,8 +36,5 @@ Ordem de uso dos scripts:
 - 5-grid.sh
 - 6-zsh-ohmyzsh.sh
 
-O script *initialconfig.sh* deve ser executado ainda como chroot após o termino da execução do archinstall. No final da instalação é sugerido pelo script *archinstall* que se continue como chroot para que o usuário execute outras configurações desejadas para o sistema.
+Recomendo reinicializar o sistema após a execução de cada script.
 
-Os scripts restantes deverão ser executados após o reboot da máquina e com o sistema iniciado no ambiente gráfico.
-
-É preciso clonar novamente o repositório, pois a pasta criada durante o chroot foi clonada na pasta raiz do sistema. Sugiro que a nova clonagem do repositório seja feita na pasta home do usuário. A pasta criada anteriormente na raiz do sistema será removida automaticamente pelo script 1-videoeaudio.sh.
