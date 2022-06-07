@@ -18,7 +18,7 @@ FIM='\e[0m'
 #locale-gen
 
 # Vconsole.conf (configuração disponível no script Archinstall)
-# echo "KEYMAP=br-abnt2" >/etc/vconsole.conf
+# echo 'KEYMAP=br-abnt2' >/etc/vconsole.conf
 
 # Idioma e hostname (configuração disponível no script Archinstall)
 #echo 'LANG=pt_BR.UTF-8' >/etc/locale.conf
