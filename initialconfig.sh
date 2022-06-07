@@ -22,7 +22,7 @@ FIM='\e[0m'
 
 # Idioma e hostname (configuração disponível no script Archinstall)
 #echo 'LANG=pt_BR.UTF-8' >/etc/locale.conf
-#echo "archlinux" > /etc/hostname 
+#echo 'archlinux' > /etc/hostname 
 
 # Localhost
 line=$(cat /etc/hostname)
