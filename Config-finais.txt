@@ -23,7 +23,7 @@ Para o ícone do Ulauncher aparecer na top bar é necessário instalar a extens�
 
 Recomendo utilizar o programa Extension Manager - https://flathub.org/apps/details/com.mattjakeman.ExtensionManager (instalado pelo scrpit de instalação número 4) para instalar a extensão. 
 
-Caso você não queira que o ícone apareça na top bar n essa opção nas configurações do Ulauncher.
+Caso você não queira que o ícone apareça na top bar não habilite essa opção nas configurações do Ulauncher.
 
 Página para pesquisar extensões: https://ext.ulauncher.io/
 
