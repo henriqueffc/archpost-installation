@@ -2,12 +2,31 @@
 
 1 - Habilitar o cache de escrita no programa Discos;
 
+
 2 - Configurar no Flatseal as variáveis de ambiente para os aplicativos que estejam com problemas de tema.
 GTK - GTK_THEME=Adwaita-dark ou GTK_THEME=Materia-dark 
 QT - QT_STYLE_OVERRIDE=kvantum (X11), QT_STYLE_OVERRIDE=adwaita-dark ou QT_STYLE_OVERRIDE=materia-dark;
 
+
 3 - Modifique o policy.xml do ImageMagick;
+
 
 4 - Crie o symlink para o libGLEW. O programa glcapsviewer precisa dessa modificação.
 
+
 5 - Coloque a opção noatime no lugar da relatime em / e /boot e na partição usada do nvme em /etc/fstab.
+
+
+6 - Atalho criado para o Ulauncher no script de instalação (número 2) "Tecla Super + \"
+
+Para o ícone do Ulauncher aparecer na top bar é necessário instalar a extensão do Gnome "AppIndicator and KStatusNotifierItem Support". 
+
+Recomendo utilizar o programa Extension Manager - https://flathub.org/apps/details/com.mattjakeman.ExtensionManager (instalado pelo scrpit de instalação número 3) para instalar a extensão. 
+
+Caso você não queira que o ícone apareça na top bar desabilite essa opção nas configurações do Ulauncher.
+
+Página para pesquisar extensões: https://ext.ulauncher.io/
+
+Página para pesquisar os temas: https://gist.github.com/gornostal/02a232e6e560da7946c053555ced6cce
+
+Instruções para a instalação dos temas: https://docs.ulauncher.io/en/latest/themes/themes.html

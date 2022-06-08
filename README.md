@@ -28,13 +28,13 @@ Para usar os scripts clone o repositório e acesse a pasta:
 
 Ordem de uso dos scripts:
 
-- initialconfig.sh (esse script deve ser executado com o comando sudo - `sudo ./initialconfig.sh`) 
-- 1-videoeaudio.sh
-- 2-pacotes.sh
-- 3-flatpakefonte.sh
-- 4-yay.sh
-- 5-grid.sh
-- 6-zsh-ohmyzsh.sh
+- 1-initialconfig.sh (esse script deve ser executado com o comando sudo - `sudo ./initialconfig.sh`) 
+- 2-videoeaudio.sh
+- 3-pacotes.sh
+- 4-flatpakefonte.sh
+- 5-yay.sh
+- 6-ulauncher.sh
+- 7-grid.sh
+- 8-zsh-ohmyzsh.sh
 
 Recomendo reinicializar o sistema após a execução de cada script.
-
