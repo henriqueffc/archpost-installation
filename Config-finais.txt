@@ -21,9 +21,9 @@ QT - QT_STYLE_OVERRIDE=kvantum (X11), QT_STYLE_OVERRIDE=adwaita-dark ou QT_STYLE
 
 Para o ícone do Ulauncher aparecer na top bar é necessário instalar a extensão do Gnome "AppIndicator and KStatusNotifierItem Support". 
 
-Recomendo utilizar o programa Extension Manager - https://flathub.org/apps/details/com.mattjakeman.ExtensionManager (instalado pelo scrpit de instalação número 3) para instalar a extensão. 
+Recomendo utilizar o programa Extension Manager - https://flathub.org/apps/details/com.mattjakeman.ExtensionManager (instalado pelo scrpit de instalação número 4) para instalar a extensão. 
 
-Caso você não queira que o ícone apareça na top bar desabilite essa opção nas configurações do Ulauncher.
+Caso você não queira que o ícone apareça na top bar n essa opção nas configurações do Ulauncher.
 
 Página para pesquisar extensões: https://ext.ulauncher.io/
 
