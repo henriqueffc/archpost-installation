@@ -56,4 +56,4 @@ cp -r src/* ~/.config/ulauncher/user-themes/
 #Substituindo o tema
 sed -i 's/light/\popdark/' ~/.config/ulauncher/settings.json
 
-printf "%s $VERDE Fim! O atalho para o Ulauncher foi defino no script 2-pacote.sh (Super + \). REINICIE o computador para que as mudanças sejam aplicadas no Ulauncher $FIM \n"
+printf "%s $VERDE Fim! O atalho para o Ulauncher foi defino no script 3-pacote.sh (Super + \). REINICIE o computador para que as mudanças sejam aplicadas no Ulauncher $FIM \n"
