@@ -35,29 +35,13 @@ sudo pacman --needed -S - <./pacotes/pipewire.txt
 sudo pacman --needed -S - <./pacotes/pkg-audio.txt
 
 #Apparmor
-while :; do
-    echo -ne "$VERDE Você quer instalar o Apparmor? $FIM $LVERDE (S) sim / (N) não $FIM"
-    read -r resposta
-    case "$resposta" in
-    s | S | "")
-        sudo pacman -S --needed apparmor python-notify2 python-psutil
-        sudo systemctl enable apparmor.service
-        sudo touch /var/log/syslog
-        mkdir ~/.config/autostart
-        mv ./apparmor/apparmor-notify.desktop ~/.config/autostart
-        sudo sed -i '/#write-cache/c\write-cache' /etc/apparmor/parser.conf
-        sudo chown $USER:$USER ~/.config/autostart
-        break
-        ;;
-    n | N)
-        echo -e "$AZUL Finalizando a instalação. $FIM"
-        break
-        ;;
-    *)
-        echo -e "$RED Opção inválida. $FIM"
-        ;;
-    esac
-done
+sudo pacman -S --needed apparmor python-notify2 python-psutil
+sudo systemctl enable apparmor.service
+sudo touch /var/log/syslog
+mkdir ~/.config/autostart
+mv ./apparmor/apparmor-notify.desktop ~/.config/autostart
+sudo sed -i '/#write-cache/c\write-cache' /etc/apparmor/parser.conf
+sudo chown $USER:$USER ~/.config/autostart
 
 #Mirrorlist atual
 echo -e "$VERDE Mirrorlist atual $FIM"
@@ -89,5 +73,9 @@ Caso não tenha acontecido problemas na instalação dos pacotes não recomendam
         ;;
     esac
 done
+
+#Par
+cp /boot/loader/entries/*.conf ~/
+sudo sed -i '$ { s/^.*$/& acpi_osi=! acpi_osi=Linux nvidia-drm.modeset=1 nvidia.NVreg_EnablePCIeGen3=1 nvidia.NVreg_UsePageAttributeTable=1 i915.enable_guc=2 i915.enable_fbc=1 nouveau.modeset=0 lsm=landlock,lockdown,yama,apparmor,bpf/ }' /boot/loader/entries/*.conf
 
 printf "%s $VERDE Fim! Caso tenha instalado o AppArmor acrescente as instruções do arquivo -paBoot.txt/linha 7- nos parâmetros do boot e depois reinicie o sistema. Se você não instalou o Apparmor acrescente somente as instruções da linha 12 do mesmo arquivo e proceda com a reinicialização do sistema. $FIM \n"
