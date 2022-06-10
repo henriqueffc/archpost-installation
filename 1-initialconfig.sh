@@ -158,4 +158,8 @@ pacman -Syy --noconfirm
 sed -i 's/MODULES=.*/MODULES=(intel_agp i915)/g' /etc/mkinitcpio.conf
 mkinitcpio -P
 
+#FSTAB
+cp /etc/fstab ~/
+sudo sed -i 's/relatime/noatime/' /etc/fstab
+
 printf "%s $VERDE Fim! Reinicie com o comando reboot. $FIM \n"
