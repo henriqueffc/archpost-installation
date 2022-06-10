@@ -34,7 +34,7 @@ cp ~/.config/ulauncher/settings.json ~/.config/ulauncher/settings.json.bak
 #Movendo o arquivo das configurações dos atalhos
 mv ./ulauncher/shortcuts.json ~/.config/ulauncher/
 
-#Mudando a tecla de atalho / não é necessário. o atalho já foi definido nas configurações de atalhos de teclado do GNOME pelo script 2-pacote.sh
+#Mudando a tecla de atalho / não é necessário. o atalho já foi definido nas configurações de atalhos de teclado do GNOME pelo script 3-pacote.sh
 #sed -i 's/<Primary>space/\<Super>backslash/' ~/.config/ulauncher/settings.json
 
 #Instalando as extenções
