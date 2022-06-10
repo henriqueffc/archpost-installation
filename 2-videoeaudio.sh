@@ -78,4 +78,4 @@ done
 cp /boot/loader/entries/*.conf ~/
 sudo sed -i '$ { s/^.*$/& acpi_osi=! acpi_osi=Linux nvidia-drm.modeset=1 nvidia.NVreg_EnablePCIeGen3=1 nvidia.NVreg_UsePageAttributeTable=1 i915.enable_guc=2 i915.enable_fbc=1 nouveau.modeset=0 lsm=landlock,lockdown,yama,apparmor,bpf/ }' /boot/loader/entries/*.conf
 
-printf "%s $VERDE Fim! Caso tenha instalado o AppArmor acrescente as instruções do arquivo -paBoot.txt/linha 7- nos parâmetros do boot e depois reinicie o sistema. Se você não instalou o Apparmor acrescente somente as instruções da linha 12 do mesmo arquivo e proceda com a reinicialização do sistema. $FIM \n"
+printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
