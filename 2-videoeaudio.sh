@@ -74,7 +74,7 @@ Caso não tenha acontecido problemas na instalação dos pacotes não recomendam
     esac
 done
 
-#Par
+#Parâmetros do boot
 cp /boot/loader/entries/*.conf ~/
 sudo sed -i '$ { s/^.*$/& acpi_osi=! acpi_osi=Linux nvidia-drm.modeset=1 nvidia.NVreg_EnablePCIeGen3=1 nvidia.NVreg_UsePageAttributeTable=1 i915.enable_guc=2 i915.enable_fbc=1 nouveau.modeset=0 lsm=landlock,lockdown,yama,apparmor,bpf/ }' /boot/loader/entries/*.conf
 
