@@ -31,7 +31,6 @@ intel-gpu-tools
 jre-openjdk
 kdegraphics-mobipocket
 kdenlive
-kvantum
 lib32-gnutls
 libappindicator-gtk3
 libgtop
@@ -53,7 +52,6 @@ pacman-contrib
 pandoc
 papirus-icon-theme
 progress
-psensor
 python-magic
 qt5-wayland
 qt6-wayland
