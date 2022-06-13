@@ -91,7 +91,10 @@ sudo usermod -aG libvirt "$USERNAME"
 aria2c -d ~/Downloads -i ./urls/urls.txt
 
 #Fontes
-sudo mv ~/Downloads/*.ttf /usr/share/fonts/TTF
+sudo mkdir -p /usr/local/share/fonts
+tar -xf ./pacotes/fonts.tar.xz -C ~/Downloads
+sudo mv ~/Downloads/*.ttf /usr/local/share/fonts
+sudo mv ~/Downloads/*.TTF /usr/local/share/fonts
 sudo fc-cache -fv
 
 #Alias
