@@ -6,6 +6,8 @@ AppIndicator and KStatusNotifierItem Support - https://extensions.gnome.org/exte
 
 Gnome Clipboard History - https://github.com/SUPERCILEX/gnome-clipboard-history
 
+No overview at start-up - https://extensions.gnome.org//extension/4099/no-overview/
+
 Sound Input & Output Device Chooser - https://extensions.gnome.org//extension/906/sound-output-device-chooser/
 
 Vitals - https://extensions.gnome.org//extension/1460/vitals/
