@@ -8,7 +8,7 @@ GTK - GTK_THEME=Adwaita-dark ou GTK_THEME=Materia-dark
 QT - QT_STYLE_OVERRIDE=kvantum (X11), QT_STYLE_OVERRIDE=adwaita-dark ou QT_STYLE_OVERRIDE=materia-dark;
 
 
-3 - Modifique o policy.xml do ImageMagick;
+3 - Verifique o policy.xml do ImageMagick;
 
 
 4 - Crie o symlink para o libGLEW. O programa glcapsviewer precisa dessa modificação.
