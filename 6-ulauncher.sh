@@ -9,8 +9,6 @@
 
 AZUL='\e[1;34m'
 VERDE='\e[1;32m'
-RED='\e[1;31m'
-LVERDE='\e[0;92m'
 FIM='\e[0m'
 
 #Pacotes
