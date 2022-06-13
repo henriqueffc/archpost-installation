@@ -1,0 +1,230 @@
+FIREFOX - Wayland
+
+
+sudo nano /etc/environment
+MOZ_ENABLE_WAYLAND=1
+MOZ_DISABLE_RDD_SANDBOX=1
+MOZ_WAYLAND_DRM_DEVICE=/dev/dri/renderD128
+MOZ_WAYLAND_USE_VAAPI=1
+LIBVA_DRIVERS_PATH=/usr/lib/dri/
+LIBVA_DRIVER_NAME=iHD 
+
+
+firefox -safe-mode (digite no terminal para entrar no modo de segurança. Usado para corrigir problemas)
+
+
+
+about:config
+
+
+
+services.sync.prefs.dangerously_allow_arbitrary  = true (permite a sincronização de todas as configurações entre os dispositivos conectados na conta Firefox. Para que outra instalação receba as configurações é preciso habilitar essa opção no dispositivo. Ela pode ser habilitada para a sincronização e depois desabilitada.)
+
+services.sync.engine.prefs.modified = true (ela sempre fica falsa, habilite para enviar as suas modificações. depois ela voltará a ficar false)
+
+gfx.webrender.all / gfx.webrender.enabled = true
+gfx.webrender.compositor = true
+Não habilite a force-enable, ela causa problemas de travamentos com o wayland. As janelas ficam congeladas.
+
+browser.startup.homepage.abouthome_cache.enabled = true (para a página inicial do Firefox)
+
+image.jxl.enabled = true (suporte a imagens jxl) 
+
+network.cookie.cookieBehavior = 5 (padrão anterior 4)
+
+media.peerconnection.video.vp9_preferred = true
+
+webgl.msaa-force / webgl.force-enabled = true
+
+gfx.webrender.precache-shaders = true
+
+gfx.webrender.quality.force-subpixel-aa-where-possible = false (não uso)
+
+webgl.disable-angle = true (não coloque true no Windows)
+
+webgl.all-angle-options = false
+
+webgl.enable-draft-extensions = true
+
+browser.tabs.insertRelatedAfterCurrent = true (false - as novas abas abrem no final e não após a aba aberta na tela. o padrão é true)
+
+widget.gtk.overlay-scrollbars.enabled = true (LINUX)
+
+widget.windows.overlay_scrollbars.enabled = true (Windows)
+
+
+browser.sessionstore.resume_from_crash = false. (eu desabilitei o sessionstore com esse comando. Se habilitar faça a mudançã abaixo.)
+browser.sessionstore.interval = 600000 (aumenta o intervalo de 15 segundos (default) para 15 minutos.
+
+Forçar o tema dark nas páginas da Web (padrão = false):
+
+widget.content.allow-gtk-dark-theme = true
+browser.display.use_system_colors = true
+
+
+widget.wayland-dmabuf-webgl.enabled = true
+widget.wayland-dmabuf-vaapi.enabled = true
+widget.wayland-dmabuf-textures.enabled = true
+
+
+Fonte Emoji do sistema
+gfx.font_rendering.opentype_svg.enabled false
+font.name-list.emoji emoji ( Usar a fonte emoji do sistema. Twemoji Mozilla é a padrão do Firefox. Se voltar a colocar a fonte do Firefox mude a opção acima para true)
+
+
+Usar o maior número de fontes do sistema (o padrão é 3)
+gfx.font_rendering.fontconfig.max_generic_substitutions 127
+
+
+media.hardware-video-decoding.force-enabled / media.hardware-video-decoding.enabled = true
+
+general.smoothScroll.mouseWheel.durationMaxMS  =  400 
+general.smoothScroll.mouseWheel.durationMinMS   =  200 (esse deve ser a metade do primeiro)
+
+mousewheel.default.delta_multiplier_y = 50
+
+mousewheel.acceleration.factor = 10
+
+nglayout.initialpaint.delay = 0
+
+nglayout.initialpaint.delay_in_oopif = 0
+
+network.http.max-persistent-connections-per-server = 10
+
+Network.predictor.enable-prefetch = true
+
+network.prefetch-next = true
+
+network.dns.disablePrefetch = false
+
+network.dns.disablePrefetchFromHTTPS = false
+
+network.predictor.enabled = true
+
+network.http.speculative-parallel-limit = 6 (6 é o padrão. 0 desabilita a função)
+
+accessibility.force_disabled = 1 (para desabilitar)
+
+
+Segurança do DNS (habilitar o DNS over HTTPS nas configurações de rede)
+
+network.dns.use_https_rr_as_altsvc =true
+network.dns.echconfig.fallback_to_origin_when_all_failed = true
+network.dns.echconfig.enabled = true
+
+
+browser.download.alwaysOpenPanel = false (desabilita o aparecimento do painel de download no final do download)
+
+
+
+Dark Mode: 
+
+Eu seleciono o tema escuro em Configurações - Temas. Páginas Web que possuem tema escuro ficam escuras automaticamente. 
+
+
+gfx.canvas.azure.accelerated = true (tem que fazer a configuração - Booleano. Veja o desempenho com ela. Pode ocasionar problemas)
+
+browser.preferences.defaultPerformanceSettings.enabled = false
+
+dom.ipc.processCount = 8
+
+
+
+Localização (caso esteja com problemas)
+
+geo.provider.network.url
+
+Padrão: https://www.googleapis.com/geolocation/v1/geolocate?key=%GOOGLE_LOCATION_SERVICE_API_KEY%
+
+Alternativa: https://location.services.mozilla.com/v1/geolocate?key=%MOZILLA_API_KEY%
+
+
+Vaapi: 
+just search for ‘vaapi’ and change the relevant values for both results from false to true.
+
+layers.acceleration.force-enabled = false (Legacy OpenGL compositor)
+
+
+gfx.webrender.compositor.force-enabled = false no wayland 
+
+gfx.prefer-x11-egl = false
+
+gfx.x11-egl.force-enabled = false
+
+gfx.x11-egl.force-disabled = true 
+
+media.ffmpeg.enabled / media.ffmpeg.vaapi-drm-display.enabled / media.ffmpeg.vaapi.enabled = true
+
+media.rdd-vpx.enabled / media.ffvpx.enabled / media.rdd-process.enabled / media.rdd-ffvpx.enabled= true 
+
+media.ffmpeg.customized-buffer-allocation = true
+
+media.rdd-ffmpeg.enabled = true
+
+media.av1.enabled = false (O meu processador i7 ou a nvdia mx110 não suportam aceleração de hardware por av1)
+
+gfx.canvas.remote = true
+
+media.gpu-process-decoder = true
+
+widget.dmabuf.force-enabled  = true
+
+gfx.color_management.enablev4 = true
+
+gfx.color_management.mode = 1
+
+gfx.color_management.rendering_intent = 0
+
+gfx.color_management.display_profile = Sem nada definido
+
+dom.webgpu.enabled = true
+
+
+media.navigator.mediadatadecoder_vpx_enabled = true to enable hardware VA-API decoding for WebRTC 
+
+dom.webnotifications.enabled = true (desabilita o pedido de notificações das páginas da Web. Deixei o padrão = true)
+
+media.videocontrols.picture-in-picture.video-toggle.enabled = false (desabilita o picture in picture do Firefox. Outra opção é desabilitar em Configurações - Navegação - Ativar controles de vídeo picture-in-picture)
+
+extensions.pocket.enabled = true (eu uso o pocket)
+
+browser.urlbar.suggest.searches = true (desabilita as sugestões de pesquisa do buscador na barra de endereços - não modifiquei)
+
+
+layout.frame_rate = 60 (Colocar o valor de 60 no Linux. No Windows o padrão é -1.)
+
+
+about:support
+
+Em Gráficos - Composição tem que aparecer Webrender
+
+
+
+Putting the Firefox network cache into the RAM
+
+browser.cache.disk.enable = false (disable "cache to disk" entirely)
+
+browser.cache.memory.enable = true
+
+browser.cache.memory.capacity = 1048576 (equals a maximum of 1 GB)
+
+Close Firefox and launch it again
+
+
+
+Extensões:
+
+Simple Translate 
+
+RSS Feed Reader
+
+LanguageTool
+
+I don't care about cookies (controlo os cookies nas configurações do navegador)
+
+uBlock Origin 
+
+Firefox Translations
+
+Bitwarden
+
