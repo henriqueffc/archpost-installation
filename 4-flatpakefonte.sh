@@ -68,6 +68,7 @@ flatpak install flathub de.haeckerfelix.Shortwave -y
 flatpak install flathub org.gnome.TextEditor -y
 flatpak install flathub com.github.micahflee.torbrowser-launcher -y
 flatpak install flathub org.zotero.Zotero -y
+flatpak install flathub com.usebottles.bottles -y
 
 # Flatpak Remote-Beta
 
