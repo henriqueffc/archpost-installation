@@ -184,6 +184,9 @@ gsettings set org.gnome.mutter experimental-features '["kms-modifiers"]'
 mv ./autostart/ignore-lid-switch-tweak.desktop ~/.config/autostart
 #sudo sed -i 's/#HandleLidSwitch=suspend/HandleLidSwitch=ignore/' /etc/systemd/logind.conf
 
+# RDP - remote desktop protocol
+gsettings set org.gnome.desktop.remote-desktop.rdp screen-share-mode extend
+
 #Tempo
 gsettings set org.gnome.Weather locations "[<(uint32 2, <('Uberlândia', 'SBUL', true, [(-0.3295763346004984, -0.84183047006083411)], [(-0.3301581226533582, -0.84299402871326112)])>)>]"
 
