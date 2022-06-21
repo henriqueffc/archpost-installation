@@ -13,7 +13,8 @@ RED='\e[1;31m'
 LVERDE='\e[0;92m'
 FIM='\e[0m'
 
-if ls -a "$HOME" | grep -oq .zshrc; then
+#if ls -a "$HOME" | grep -oq .zshrc; then
+if test -f "/home/$USER/.zshrc"; then
 
 	echo -e "$AZUL Zsh está habilitado. Continuando a instalação (Oh my Zsh). $FIM" && sleep 2
 
@@ -44,7 +45,7 @@ else
 
 fi
 
-if ls -a "$HOME" | grep -oq .zshrc.pre-oh-my-zsh; then
+if test -f "/home/$USER/.zshrc.pre-oh-my-zsh"; then
 
 	echo -e "$AZUL Oh my zsh já está instalado. Continuando a instalação (plugins e Powerlevel10K). $FIM" && sleep 2
 
@@ -75,9 +76,9 @@ else
 
 fi
 
-if ls -a "$HOME" | grep -oq .p10k.zsh; then
+if test -f "/home/$USER/.p10k.zsh"; then
 
-	echo -e "$AZUL Os plugins e o Powerlevel10K já estão instalados. Fim da instalação. $FIM" && sleep 2
+	echo -e "$AZUL Os plugins e o Powerlevel10K estão instalados. Fim da instalação. $FIM" && sleep 2
 else
 
 	while :; do
