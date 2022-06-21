@@ -23,5 +23,8 @@ gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folder
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Multimídia/ name "Multimídia"
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Multimídia/ apps "['org.gnome.gitlab.YaLTeR.VideoTrimmer.desktop', 'org.gnome.SoundRecorder.desktop', 'com.obsproject.Studio.desktop', 'com.github.weclaw1.ImageRoll.desktop', 'com.belmoussaoui.Obfuscate.desktop', 'fr.handbrake.ghb.desktop', 'com.github.unrud.VideoDownloader.desktop', 'fr.romainvigier.MetadataCleaner.desktop', 'de.haeckerfelix.Shortwave.desktop', 'com.github.wwmm.easyeffects.desktop', 'com.github.huluti.Curtail.desktop', 'org.flozz.yoga-image-optimizer.desktop', 'org.gimp.GIMP.desktop', 'org.kde.kdenlive.desktop']"
 
-
 gsettings set org.gnome.desktop.app-folders folder-children "['Utilities', 'YaST', 'Office', 'Programas', 'Jogos', 'GNOME', 'Internet', 'Multimídia']"
+
+# Atalhos no Nautilus (File)
+echo "file:///mnt/nvme0n1p1 🖴 NVME" >> .config/gtk-3.0/bookmarks
+echo "file:///home/$USER/Dropbox 🗃 Dropbox" >> .config/gtk-3.0/bookmarks
