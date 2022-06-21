@@ -89,6 +89,9 @@ sudo usermod -aG libvirt "$USERNAME"
 
 # Appimage e outros
 aria2c -d ~/Downloads -i ./urls/urls.txt
+mkdir /home/$USER/Applications
+mv ~/Downloads/*.AppImage /home/$USER/Applications
+mv ~/Downloads/*.tar.gz /home/$USER/Applications
 
 #Fontes
 sudo mkdir -p /usr/local/share/fonts
