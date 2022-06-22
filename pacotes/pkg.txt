@@ -8,6 +8,7 @@ coreutils
 cpupower
 curl
 dconf-editor
+gnome-appfolders-manager
 gnome-sound-recorder
 gnome-themes-extra
 dialog
