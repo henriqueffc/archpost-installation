@@ -198,5 +198,15 @@
         "is_default_search": false,
         "run_without_argument": true,
         "added": 1654566687.0963862
+    },
+    "32362c67-c153-47c4-92eb-aa10a49badc0": {
+        "id": "32362c67-c153-47c4-92eb-aa10a49badc0",
+        "name": "Standard Notes",
+        "keyword": "st",
+        "cmd": "https://app.standardnotes.com/",
+        "icon": "~/Imagens/Logo Ulauncher/standard.png",
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1656013478.2670753
     }
 }
