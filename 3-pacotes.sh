@@ -92,6 +92,7 @@ aria2c -d ~/Downloads -i ./urls/urls.txt
 mkdir /home/$USER/Applications
 mv ~/Downloads/*.AppImage /home/$USER/Applications
 mv ~/Downloads/*.tar.gz /home/$USER/Applications
+chmod +x /home/$USER/Applications/*.AppImage
 
 #Fontes
 sudo mkdir -p /usr/local/share/fonts
