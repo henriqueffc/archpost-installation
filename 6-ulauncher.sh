@@ -45,8 +45,8 @@ git clone https://github.com/friday/ulauncher-clipboard ~/.local/share/ulauncher
 git clone https://github.com/KuenzelIT/ulauncher-firefox-bookmarks ~/.local/share/ulauncher/extensions/github-kuenzelit-ulauncher-firefox-bookmarks
 
 #Atalhos Bitwarden e Standard Notes no Grid
-sed -i 's/user/\'$USER'/' .desktop/standard.desktop
-sed -i 's/user/\'$USER'/' .desktop/bitwarden.desktop
+sed -i 's/user/\'$USER'/' ./desktop/standard.desktop
+sed -i 's/user/\'$USER'/' ./desktop/bitwarden.desktop
 mv ./desktop/*.desktop ~/.local/share/applications
 
 #Instalando os temas
