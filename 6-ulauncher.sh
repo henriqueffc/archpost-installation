@@ -59,5 +59,4 @@ sed -i 's/user/\'$USER'/' .desktop/standard.desktop
 sed -i 's/user/\'$USER'/' .desktop/bitwarden.desktop
 mv ./desktop/*.desktop ~/.local/share/applications
 
-
 printf "%s $VERDE Fim! O atalho para o Ulauncher foi defino no script 3-pacote.sh (Super + \). REINICIE o computador para que as mudanças sejam aplicadas no Ulauncher $FIM \n"
