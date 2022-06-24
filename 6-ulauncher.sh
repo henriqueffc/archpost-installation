@@ -44,6 +44,11 @@ git clone https://github.com/isacikgoz/ukill ~/.local/share/ulauncher/extensions
 git clone https://github.com/friday/ulauncher-clipboard ~/.local/share/ulauncher/extensions/github-friday-ulauncher-clipboard
 git clone https://github.com/KuenzelIT/ulauncher-firefox-bookmarks ~/.local/share/ulauncher/extensions/github-kuenzelit-ulauncher-firefox-bookmarks
 
+#Atalhos Bitwarden e Standard Notes no Grid
+sed -i 's/user/\'$USER'/' .desktop/standard.desktop
+sed -i 's/user/\'$USER'/' .desktop/bitwarden.desktop
+mv ./desktop/*.desktop ~/.local/share/applications
+
 #Instalando os temas
 git clone https://github.com/dracula/ulauncher.git ~/.config/ulauncher/user-themes/dracula-ulauncher
 git clone https://github.com/tom-james-watson/ulauncher-popdark.git ~/.config/ulauncher/user-themes/ulauncher-popdark
@@ -53,10 +58,5 @@ cp -r src/* ~/.config/ulauncher/user-themes/
 
 #Substituindo o tema
 sed -i 's/light/\popdark/' ~/.config/ulauncher/settings.json
-
-#Atalhos Bitwarden e Standard Notes no Grid
-sed -i 's/user/\'$USER'/' .desktop/standard.desktop
-sed -i 's/user/\'$USER'/' .desktop/bitwarden.desktop
-mv ./desktop/*.desktop ~/.local/share/applications
 
 printf "%s $VERDE Fim! O atalho para o Ulauncher foi defino no script 3-pacote.sh (Super + \). REINICIE o computador para que as mudanças sejam aplicadas no Ulauncher $FIM \n"
