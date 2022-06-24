@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Bitwarden
+Exec=/home/user/Applications/Bitwarden-2022.5.1-x86_64.AppImage
+Comment=
+Terminal=false
+Icon=/home/user/Imagens/Logo Ulauncher/bitwarden2.png
+Type=Application
