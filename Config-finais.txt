@@ -14,10 +14,7 @@ QT - QT_STYLE_OVERRIDE=kvantum (X11), QT_STYLE_OVERRIDE=adwaita-dark ou QT_STYLE
 4 - Crie o symlink para o libGLEW. O programa glcapsviewer precisa dessa modificação.
 
 
-5 - Criar os atalhos com o Menu Libre do Bitwarden e do Standard Notes
-
-
-6 - Atalho criado para o Ulauncher no script de instalação (número 3) "Tecla Super + \"
+5 - Atalho criado para o Ulauncher no script de instalação (número 3) "Tecla Super + \"
 
 Para o ícone do Ulauncher aparecer na top bar é necessário instalar a extensão do Gnome "AppIndicator and KStatusNotifierItem Support". 
 
