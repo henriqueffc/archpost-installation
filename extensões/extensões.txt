@@ -1,5 +1,7 @@
 # Extensões do GNOME:
 
+#### Instaladas pelo script 8-extensions.sh
+
 Recomendo utilizar o programa Extension Manager - https://flathub.org/apps/details/com.mattjakeman.ExtensionManager (instalado pelo scrpit de instalação número 4) para instalar as extensões. 
 
 AppIndicator and KStatusNotifierItem Support - https://extensions.gnome.org/extension/615/appindicator-support/
