@@ -31,7 +31,7 @@ Instruções para a instalação dos temas: https://docs.ulauncher.io/en/latest/
 
 6- Remover o Powerprofilesctl (Gnome - Perfil de energia)
 
-Não alterou a velocidade do sistema no meu notebook - use o cpupower instalado pelo script 3-pacotes.sh para essa função)
+Não alterou a velocidade do sistema no meu notebook - use o cpupower instalado pelo script 3-pacotes.sh para essa função.
 
 sudo pacman -R power-profiles-daemon
 
