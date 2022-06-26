@@ -66,6 +66,7 @@ ufw
 unrar
 unrar
 unzip
+webp-pixbuf-loader
 wine
 wine-gecko
 wine-mono
