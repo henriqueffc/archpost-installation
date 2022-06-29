@@ -67,7 +67,7 @@ done
 
 #Firefox
 echo 'MOZ_ENABLE_WAYLAND=1' >>/etc/environment
-echo 'MOZ_DISABLE_RDD_SANDBOX=1' >>/etc/environment
+#echo 'MOZ_DISABLE_RDD_SANDBOX=1' >>/etc/environment
 echo 'MOZ_WAYLAND_DRM_DEVICE=/dev/dri/renderD128' >>/etc/environment
 echo 'MOZ_WAYLAND_USE_VAAPI=1' >>/etc/environment
 echo 'LIBVA_DRIVERS_PATH=/usr/lib/dri/' >>/etc/environment
