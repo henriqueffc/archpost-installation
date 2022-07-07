@@ -69,8 +69,7 @@ sudo ufw enable
 echo -e "$AZUL \t ufw.service habilitado $FIM"
 
 # Offpowersave
-sudo mv ./service/offpowersave.service /etc/systemd/system
-sudo systemctl enable offpowersave.service
+sudo mv ./powersave/default-wifi-powersave-on.conf /etc/NetworkManager/conf.d
 echo -e "$AZUL \t WIFI - Powersave desabilitado $FIM"
 
 # Intelparanoid.service
