@@ -64,7 +64,6 @@ thermald
 transmission-gtk
 ufw
 unrar
-unrar
 unzip
 webp-pixbuf-loader
 wine
