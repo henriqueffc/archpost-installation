@@ -1,4 +1,4 @@
-alias neo="neofetch"
+alias neo="neofetch --colors 4 3 5 7 1 2"
 alias atualizar="flatpak update && flatpak remove --unused && yay -Syu"
 alias omz="git -C ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k pull && omz update"
 alias limpar="sudo paccache -rk1 && yay -Yc"
