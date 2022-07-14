@@ -2,6 +2,7 @@ alacarte
 aria2
 asp
 bash-completion
+breeze
 bat
 cmatrix
 coreutils
