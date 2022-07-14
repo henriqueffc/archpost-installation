@@ -54,6 +54,8 @@ pandoc
 papirus-icon-theme
 progress
 python-magic
+qgnomeplatform-qt5
+qgnomeplatform-qt6
 qt5-wayland
 qt6-wayland
 reflector
