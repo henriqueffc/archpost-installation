@@ -7,7 +7,6 @@ inxi
 lib32-mangohud
 mangohud
 mangohud-common
-qgnomeplatform
 timeshift
 ulauncher
 visual-studio-code-bin
