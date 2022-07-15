@@ -40,8 +40,8 @@ git clone https://github.com/leinardi/ulauncher-exit-gnome ~/.local/share/ulaunc
 git clone https://github.com/dalanicolai/gnome-tracker-extension ~/.local/share/ulauncher/extensions/gnome-tracker-extension
 git clone https://github.com/fisadev/ulauncher-better-file-browser ~/.local/share/ulauncher/extensions/ulauncher-better-file-browser
 git clone https://github.com/Doekeb/ulauncher-gnome-calculator ~/.local/share/ulauncher/extensions/ulauncher-gnome-calculator
-git clone https://github.com/isacikgoz/ukill ~/.local/share/ulauncher/extensions/ukill
-git clone https://github.com/friday/ulauncher-clipboard ~/.local/share/ulauncher/extensions/github-friday-ulauncher-clipboard
+#git clone https://github.com/isacikgoz/ukill ~/.local/share/ulauncher/extensions/ukill
+#git clone https://github.com/friday/ulauncher-clipboard ~/.local/share/ulauncher/extensions/github-friday-ulauncher-clipboard
 git clone https://github.com/KuenzelIT/ulauncher-firefox-bookmarks ~/.local/share/ulauncher/extensions/github-kuenzelit-ulauncher-firefox-bookmarks
 
 #Atalhos Bitwarden e Standard Notes no Grid
