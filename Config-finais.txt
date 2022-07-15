@@ -40,3 +40,7 @@ systemctl disable power-profiles-daemon.service (desabilitou o serviço momentan
 https://wiki.archlinux.org/title/GNOME#Power_modes
 https://wiki.archlinux.org/title/CPU_frequency_scaling
 https://gitlab.freedesktop.org/hadess/power-profiles-daemon
+
+
+7 - GNOME
+Para inserir pastas no tracking insira as opções em Configurações - Pesquisa - Pesquisar localizações - Adicionar localização
