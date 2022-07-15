@@ -1,3 +1,5 @@
+alias ubuntu="distrobox enter ubuntu"
+alias stop-ubuntu="distrobox stop ubuntu"
 alias neo="neofetch --colors 4 3 5 7 1 2"
 alias atualizar="flatpak update && flatpak remove --unused && yay -Syu"
 alias omz="git -C ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k pull && omz update"
