@@ -8,6 +8,7 @@ cmatrix
 coreutils
 cpupower
 curl
+drawing
 dconf-editor
 gnome-appfolders-manager
 gnome-sound-recorder
