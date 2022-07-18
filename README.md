@@ -37,5 +37,6 @@ Ordem de uso dos scripts:
 - 7-grid-e-nautilus.sh
 - 8-extensions.sh
 - 9-zsh-ohmyzsh.sh
+- 10-distrobox-ubuntu.sh
 
 Recomendo reinicializar o sistema após a execução de cada script.

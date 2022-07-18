@@ -44,3 +44,19 @@ https://gitlab.freedesktop.org/hadess/power-profiles-daemon
 
 7 - GNOME
 Para inserir pastas no tracking insira as opções em Configurações - Pesquisa - Pesquisar localizações - Adicionar localização
+
+
+8 - Distrobox
+
+Atalho para o terminal
+
+No terminal acesse Preferências - Criar um novo perfil - Comando - na opção Comando personalizado (marque a opção Executar um comando personalizado ...) digite distrobox enter ubuntu  
+Mude as cores do perfil para especificar a diferença de uso do terminal (padrão ou distrobox).
+
+Em configurações - Teclado - Atalhos de teclado
+
+Crie um atalho personalizado.
+
+Nome : terminal ubuntu
+Comando : gnome-terminal --profile=ubuntu
+Atalho : Ctrl + U
