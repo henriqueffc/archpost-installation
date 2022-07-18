@@ -194,14 +194,14 @@ gsettings set org.gnome.desktop.remote-desktop.rdp screen-share-mode extend
 gsettings set org.gnome.Weather locations "[<(uint32 2, <('Uberlândia', 'SBUL', true, [(-0.3295763346004984, -0.84183047006083411)], [(-0.3301581226533582, -0.84299402871326112)])>)>]"
 
 #Atalhos do teclado (abnt2 com teclado numérico)
-# abaixar o volume - Ctrl + - teclado numérico
-gsettings set org.gnome.settings-daemon.plugins.media-keys volume-down "['<Primary>KP_Subtract']"
-# aumentar o volume - Ctrl + + teclado numérico
-gsettings set org.gnome.settings-daemon.plugins.media-keys volume-up "['<Primary>KP_Add']"
-#reproduzir ou pausar reprodução de mídia - Crtl + * teclado numérico
-gsettings set org.gnome.settings-daemon.plugins.media-keys play "['<Primary>KP_Multiply']"
-#mudar para a próxima faixa - Ctrl + / teclado numérico
-gsettings set org.gnome.settings-daemon.plugins.media-keys next "['<Primary>KP_Divide']"
+# abaixar o volume - Shift + - teclado numérico
+gsettings set org.gnome.settings-daemon.plugins.media-keys volume-down "['<Shift>KP_Subtract']"
+# aumentar o volume - Shift + + teclado numérico
+gsettings set org.gnome.settings-daemon.plugins.media-keys volume-up "['<Shift>KP_Add']"
+#reproduzir ou pausar reprodução de mídia - Shift + * teclado numérico
+gsettings set org.gnome.settings-daemon.plugins.media-keys play "['<Shift>KP_Multiply']"
+#mudar para a próxima faixa - Shift + / teclado numérico
+gsettings set org.gnome.settings-daemon.plugins.media-keys next "['<Shift>KP_Divide']"
 # abrir navegador - Super + B
 gsettings set org.gnome.settings-daemon.plugins.media-keys www "['<Super>b']"
 #abrir o Files na home - Super + F
