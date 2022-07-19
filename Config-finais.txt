@@ -59,4 +59,4 @@ Crie um atalho personalizado.
 
 Nome : terminal ubuntu
 Comando : gnome-terminal --profile=ubuntu
-Atalho : Ctrl + U
+Atalho : Super + U
