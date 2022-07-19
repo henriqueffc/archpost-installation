@@ -99,6 +99,7 @@ else
 			linenumber=$((linenumber - 1))
 			sed -i "${linenumber}i fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src" ~/.zshrc
 			echo 'source ~/.bash_aliases' >>~/.zshrc
+			echo "export EDITOR='nano'" >>~/.zshrc
 			git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 			echo -e "$AZUL Instalação concluida. Reinicie o terminal para configurar o Powerlevel10K. $FIM"
 			break
