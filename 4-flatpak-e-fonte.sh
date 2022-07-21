@@ -54,7 +54,6 @@ flatpak install flathub org.linux_hardware.hw-probe -y
 flatpak install flathub fr.handbrake.ghb -y
 flatpak install flathub fr.romainvigier.MetadataCleaner -y
 flatpak install flathub org.gnome.gitlab.YaLTeR.VideoTrimmer -y
-flatpak install flathub io.github.arunsivaramanneo.GPUViewer -y
 flatpak install flathub us.zoom.Zoom -y
 flatpak install flathub com.belmoussaoui.Obfuscate -y
 flatpak install flathub com.system76.Popsicle -y
@@ -70,9 +69,6 @@ flatpak install flathub com.github.micahflee.torbrowser-launcher -y
 flatpak install flathub org.zotero.Zotero -y
 flatpak install flathub com.usebottles.bottles -y
 flatpak install flathub com.github.weclaw1.ImageRoll -y
-flatpak install flathub org.gnome.Games -y
-flatpak install flathub org.zdoom.GZDoom -y
-flatpak install flathub com.retrodev.blastem -y
 
 # Flatpak Remote-Beta
 
