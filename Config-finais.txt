@@ -4,17 +4,13 @@
 
 
 2 - Configurar no Flatseal as variáveis de ambiente para os aplicativos que estejam com problemas de tema.
-GTK - GTK_THEME=Adwaita-dark ou GTK_THEME=Materia-dark 
-QT - QT_STYLE_OVERRIDE=kvantum (X11), QT_STYLE_OVERRIDE=adwaita-dark ou QT_STYLE_OVERRIDE=materia-dark;
+GTK - GTK_THEME=Adwaita-dark ou QT_STYLE_OVERRIDE=adwaita-dark 
 
 
 3 - Verifique o policy.xml do ImageMagick;
 
 
-4 - Crie o symlink para o libGLEW. O programa glcapsviewer precisa dessa modificação.
-
-
-5 - Atalho criado para o Ulauncher no script de instalação (número 3) "Tecla Super + \"
+4 - Atalho criado para o Ulauncher no script de instalação (número 3) "Tecla Super + \"
 
 Para o ícone do Ulauncher aparecer na top bar é necessário instalar a extensão do Gnome "AppIndicator and KStatusNotifierItem Support". 
 
@@ -29,7 +25,7 @@ Página para pesquisar os temas: https://gist.github.com/gornostal/02a232e6e560d
 Instruções para a instalação dos temas: https://docs.ulauncher.io/en/latest/themes/themes.html
 
 
-6- Remover o Powerprofilesctl (Gnome - Perfil de energia)
+5- Remover o Powerprofilesctl (Gnome - Perfil de energia)
 
 Não alterou a velocidade do sistema no meu notebook - use o cpupower instalado pelo script 3-pacotes.sh para essa função.
 
@@ -42,7 +38,7 @@ https://wiki.archlinux.org/title/CPU_frequency_scaling
 https://gitlab.freedesktop.org/hadess/power-profiles-daemon
 
 
-7 - GNOME
+6 - GNOME
 Para inserir pastas no tracking insira as opções em Configurações - Pesquisa - Pesquisar localizações - Adicionar localização
 
 
