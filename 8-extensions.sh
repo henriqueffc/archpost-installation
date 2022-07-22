@@ -38,11 +38,4 @@ echo -e "$AZUL Vitals  $FIM"
 aria2c https://github.com/corecoding/Vitals/releases/download/v54.0.4/vitals.zip
 gnome-extensions install --force 'vitals.zip'
 
-#Só funcionará depois de reinicializar o sistema. Melhor habilitar as extensões pelo programa Extensões do GNOME após a reinicialização do sistema.
-#gnome-extensions enable appindicatorsupport@rgcjonas.gmail.com
-#gnome-extensions enable no-overview@fthx
-#gnome-extensions enable clipboard-history@alexsaveau.dev
-#gnome-extensions enable sound-output-device-chooser@kgshank.net
-#gnome-extensions enable Vitals@CoreCoding.com
-
 printf "%s $VERDE Fim! Reinicie com o comando reboot e habilite as extensões usando o app Extensões após a reinicialização do sistema $FIM \n"
