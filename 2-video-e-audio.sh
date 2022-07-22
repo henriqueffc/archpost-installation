@@ -43,36 +43,8 @@ mv ./apparmor/apparmor-notify.desktop ~/.config/autostart
 sudo sed -i '/#write-cache/c\write-cache' /etc/apparmor/parser.conf
 sudo chown $USER:$USER ~/.config/autostart
 
-#Mirrorlist atual
-echo -e "$VERDE Mirrorlist atual $FIM"
-cat /etc/pacman.d/mirrorlist
-
 #Reabilitar o Wayland no GDM com o drive proprietário da Nvidia
 sudo ln -s /dev/null /etc/udev/rules.d/61-gdm.rules
-
-#Reflector
-while :; do
-    echo -ne "$VERDE 
-Você quer executar o reflector para atualizar o mirrorlist?
-Caso não tenha acontecido problemas na instalação dos pacotes não recomendamos a execução. $FIM  $LVERDE (S) sim / (N) não $FIM"
-    read -r resposta
-    case "$resposta" in
-    s | S | "")
-        sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak2
-        sudo pacman -S --needed --noconfirm reflector rsync
-        sudo reflector -c Brazil -a 12 --sort rate --save /etc/pacman.d/mirrorlist
-        sudo pacman -Syyu
-        break
-        ;;
-    n | N)
-        echo -e "$AZUL Fim da instalação. $FIM"
-        break
-        ;;
-    *)
-        echo -e "$RED Opção inválida. Responda a pergunta. $FIM"
-        ;;
-    esac
-done
 
 #Parâmetros do boot
 cp /boot/loader/entries/*.conf ~/
