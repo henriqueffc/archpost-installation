@@ -42,7 +42,7 @@ https://gitlab.freedesktop.org/hadess/power-profiles-daemon
 Para inserir pastas no tracking insira as opções em Configurações - Pesquisa - Pesquisar localizações - Adicionar localização
 
 
-8 - Distrobox
+7 - Distrobox
 
 Atalho para o terminal
 
