@@ -41,7 +41,6 @@ libreoffice
 libreoffice-fresh-pt-br
 libzip
 lm_sensors
-lutris
 man-db
 man-pages
 mc
