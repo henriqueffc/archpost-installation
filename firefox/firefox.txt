@@ -3,7 +3,6 @@ FIREFOX - Wayland
 
 sudo nano /etc/environment
 MOZ_ENABLE_WAYLAND=1
-MOZ_DISABLE_RDD_SANDBOX=1
 MOZ_WAYLAND_DRM_DEVICE=/dev/dri/renderD128
 MOZ_WAYLAND_USE_VAAPI=1
 LIBVA_DRIVERS_PATH=/usr/lib/dri/
