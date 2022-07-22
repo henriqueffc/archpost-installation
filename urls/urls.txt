@@ -1,12 +1,6 @@
-https://vulkan.gpuinfo.org/downloads/vulkancapsviewer_3.21_linux64_wayland.AppImage
-https://opencl.gpuinfo.org/downloads/openclcapsviewer_1.00_linux64_x11.AppImage
-http://opengl.gpuinfo.org/downloads/glcapsviewer_1_2_linux64.tar.gz
 https://github.com/bitwarden/clients/releases/download/desktop-v2022.6.2/Bitwarden-2022.6.2-x86_64.AppImage
 https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
 https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
 https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
 https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
 https://github.com/standardnotes/app/releases/download/%40standardnotes%2Fdesktop%403.23.61/standard-notes-3.23.61-linux-x86_64.AppImage
-#https://github.com/Automattic/simplenote-electron/releases/download/v2.21.0/Simplenote-linux-2.21.0-x86_64.AppImage
-#https://broth.itch.ovh/itch-setup/linux-amd64/1.26.0/unpacked/default
-#https://www.zotero.org/download/client/dl?channel=release&platform=linux-x86_64
