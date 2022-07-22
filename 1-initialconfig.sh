@@ -13,17 +13,6 @@ RED='\e[1;31m'
 LVERDE='\e[0;92m'
 FIM='\e[0m'
 
-# Locale.gen (configuração disponível no script Archinstall)
-#sed -i 's/#pt_BR.UTF-8 UTF-8/\pt_BR.UTF-8 UTF-8/' /etc/locale.gen
-#locale-gen
-
-# Vconsole.conf (configuração disponível no script Archinstall)
-# echo 'KEYMAP=br-abnt2' >/etc/vconsole.conf
-
-# Idioma e hostname (configuração disponível no script Archinstall)
-#echo 'LANG=pt_BR.UTF-8' >/etc/locale.conf
-#echo 'archlinux' >/etc/hostname 
-
 # Localhost
 line=$(cat /etc/hostname)
 echo '127.0.0.1 localhost' >>/etc/hosts
@@ -67,7 +56,6 @@ done
 
 #Firefox
 echo 'MOZ_ENABLE_WAYLAND=1' >>/etc/environment
-#echo 'MOZ_DISABLE_RDD_SANDBOX=1' >>/etc/environment
 echo 'MOZ_WAYLAND_DRM_DEVICE=/dev/dri/renderD128' >>/etc/environment
 echo 'MOZ_WAYLAND_USE_VAAPI=1' >>/etc/environment
 echo 'LIBVA_DRIVERS_PATH=/usr/lib/dri/' >>/etc/environment
@@ -95,34 +83,10 @@ echo -e "$AZUL
 -------------------------------------------------------------------------
 $FIM"
 
-while :; do
-     echo -ne "$VERDE Você quer estabelecer a MAKEFLAGS em /etc/makepkg.conf com o número total de cores do sistema ($nc) ou com dois cores a menos que o total do sistema ($nv)?
-Se o sistema possuir menos que 8G de ram ou menos que 4 cores pule essa etapa. $FIM $LVERDE (T) total / (M) menor / (P) Pular $FIM"
-     read -r resposta
-     case "$resposta" in
-     t | T | "")
-          sed -i "s/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j$nc\"/g" /etc/makepkg.conf
-          sed -i 's/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -z --threads=0 -)/g' /etc/makepkg.conf
-          sed -i 's/COMPRESSZST=(zstd -c -z -q -)/COMPRESSZST=(zstd -c -z -q --threads=0 -)/g' /etc/makepkg.conf
-          echo -e "$AZUL Continuando a instalação. $FIM"
-          break
-          ;;
-     m | M)
-          sed -i "s/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j$nv\"/g" /etc/makepkg.conf
-          sed -i 's/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -z --threads=0 -)/g' /etc/makepkg.conf
-          sed -i 's/COMPRESSZST=(zstd -c -z -q -)/COMPRESSZST=(zstd -c -z -q --threads=0 -)/g' /etc/makepkg.conf
-          echo -e "$AZUL Continuando a instalação. $FIM"
-          break
-          ;;
-     p | P)
-          echo -e "$AZUL Pulando essa etapa e continuando a instalação. $FIM"
-          break
-          ;;
-     *)
-          echo -e "$RED Opção inválida. $FIM"
-          ;;
-     esac
-done
+sed -i "s/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j$nv\"/g" /etc/makepkg.conf
+sed -i 's/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -z --threads=0 -)/g' /etc/makepkg.conf
+sed -i 's/COMPRESSZST=(zstd -c -z -q -)/COMPRESSZST=(zstd -c -z -q --threads=0 -)/g' /etc/makepkg.conf
+ 
 
 #Mirrorlist
 echo -e "$AZUL
