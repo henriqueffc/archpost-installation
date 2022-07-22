@@ -28,25 +28,6 @@ sudo pacman --needed -S - <./pacotes/fontes.txt
 # Virt-Mananger
 sudo pacman --needed -S - <./pacotes/virt.txt
 
-# TESSERACT
-while :; do
-    echo -ne "$VERDE Você quer instalar os pacotes para OCR-Tesseract? $FIM $LVERDE (S) sim / (N) não $FIM"
-    read -r resposta
-    case "$resposta" in
-    s | S | "")
-        sudo pacman --needed -S - <./pacotes/tesseract.txt
-        break
-        ;;
-    n | N)
-        echo -e "$AZUL Continuando a instalação. $FIM"
-        break
-        ;;
-    *)
-        echo -e "$RED Opção inválida. Responda a pergunta. $FIM"
-        ;;
-    esac
-done
-
 echo -e "$AZUL
 -------------------------------------------------------------------------
                       Habilitando os serviços
