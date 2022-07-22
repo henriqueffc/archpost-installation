@@ -231,22 +231,6 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 
 gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/']"
 
-#Wallpaper dinâmico
-mkdir "$HOME"/Imagens/Wallpaper
-sudo cp ./wallpapers/*.* ~/Imagens/Wallpaper
-sed -i 's|/home/user1|'$HOME'|g' ~/Imagens/Wallpaper/dynamic_wallpaper.xml
-dir=$HOME
-#Light
-gsettings set org.gnome.desktop.background picture-uri file://$dir/Imagens/Wallpaper/dynamic_wallpaper.xml
-#Dark
-gsettings set org.gnome.desktop.background picture-uri-dark file://$dir/Imagens/Wallpaper/dynamic_wallpaper.xml
-
-#Steam (prime-run)
-#rm ~/Área\ de\ trabalho/steam.desktop
-cp /usr/share/applications/steam.desktop ~/.local/share/applications
-sed -i 's/steam-runtime/\prime-run steam-runtime/' ~/.local/share/applications/steam.desktop
-echo -e "$AZUL \t steam.desktop modificado $FIM"
-
 # Mlocate - necessário para a busca no Ulauncher
 sudo pacman -S --needed mlocate
 sudo updatedb
@@ -255,28 +239,6 @@ echo -e "$AZUL \t Mlocate habilitado $FIM"
 # Pacman hooks
 sudo mkdir /etc/pacman.d/hooks
 sudo cp ./hooks/*.hook /etc/pacman.d/hooks/
-
-# Limitador de FPS
-while :; do
-    echo -ne "$VERDE Você quer instalar o limitador de FPS - Libstrangle? $FIM $LVERDE (S) sim / (N) não $FIM"
-    read -r resposta
-    case "$resposta" in
-    s | S | "")
-        git clone https://gitlab.com/torkel104/libstrangle.git
-        cd libstrangle
-        make
-        sudo make install
-        break
-        ;;
-    n | N)
-        echo -e "$AZUL Continuando a instalação. $FIM"
-        break
-        ;;
-    *)
-        echo -e "$RED Opção inválida. Responda a pergunta. $FIM"
-        ;;
-    esac
-done
 
 #Sensors
 sudo sensors-detect
