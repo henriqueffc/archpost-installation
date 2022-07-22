@@ -34,25 +34,7 @@ sed -i 's/#Color/\Color/' /etc/pacman.conf
 sed -i 's/#VerbosePkgLists/\VerbosePkgLists/' /etc/pacman.conf
 sed -i 's/#ParallelDownloads = 5/\ParallelDownloads = 5/' /etc/pacman.conf
 sed -i 's/#CheckSpace/\CheckSpace/' /etc/pacman.conf
-
-#Multilib
-while :; do
-    echo -ne "$VERDE Você quer habilitar o repositório Multilib? Caso já o tenha habilitado pelo script Archinstall não será necessária uma nova permissão. $FIM $LVERDE (S) sim / (N) não $FIM"
-    read -r resposta
-    case "$resposta" in
-    s | S | "")
-        sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
-	     break
-        ;;
-    n | N)
-        echo -e "$AZUL Continuando a instalação. $FIM"
-          break
-        ;;
-    *)
-        echo -e "$RED Opção inválida. Responda a pergunta. $FIM"
-        ;;
-    esac
-done
+sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
 
 #Firefox
 echo 'MOZ_ENABLE_WAYLAND=1' >>/etc/environment
@@ -73,16 +55,7 @@ sed -i "${linenumber}s/..//" /etc/nanorc
 mv ./swappiness/99-swappiness.conf /etc/sysctl.d/
 
 # Makeflags e compress
-nc=$(grep -c ^processor /proc/cpuinfo)
 nv=$(nproc --ignore=2)
-RAM=$(cat /proc/meminfo | grep -i 'memtotal' | grep -o '[[:digit:]]*')
-echo -e "$AZUL
--------------------------------------------------------------------------
-		     MAKEFLAGS e compressão XZ e ZSTD
-	  O sistema possui o total de $nc cores e $RAM de ram
--------------------------------------------------------------------------
-$FIM"
-
 sed -i "s/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j$nv\"/g" /etc/makepkg.conf
 sed -i 's/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -z --threads=0 -)/g' /etc/makepkg.conf
 sed -i 's/COMPRESSZST=(zstd -c -z -q -)/COMPRESSZST=(zstd -c -z -q --threads=0 -)/g' /etc/makepkg.conf
