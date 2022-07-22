@@ -32,16 +32,13 @@ cp ~/.config/ulauncher/settings.json ~/.config/ulauncher/settings.json.bak
 #Movendo o arquivo das configurações dos atalhos
 mv ./ulauncher/shortcuts.json ~/.config/ulauncher/
 
-#Mudando a tecla de atalho / não é necessário. o atalho já foi definido nas configurações de atalhos de teclado do GNOME pelo script 3-pacote.sh
-#sed -i 's/<Primary>space/\<Super>backslash/' ~/.config/ulauncher/settings.json
+#A tecla de atalho foi definido nas configurações de atalhos de teclado do GNOME pelo script 3-pacote.sh
 
 #Instalando as extenções
 git clone https://github.com/leinardi/ulauncher-exit-gnome ~/.local/share/ulauncher/extensions/ulauncher-exit-gnome
 git clone https://github.com/dalanicolai/gnome-tracker-extension ~/.local/share/ulauncher/extensions/gnome-tracker-extension
 git clone https://github.com/fisadev/ulauncher-better-file-browser ~/.local/share/ulauncher/extensions/ulauncher-better-file-browser
 git clone https://github.com/Doekeb/ulauncher-gnome-calculator ~/.local/share/ulauncher/extensions/ulauncher-gnome-calculator
-#git clone https://github.com/isacikgoz/ukill ~/.local/share/ulauncher/extensions/ukill
-#git clone https://github.com/friday/ulauncher-clipboard ~/.local/share/ulauncher/extensions/github-friday-ulauncher-clipboard
 git clone https://github.com/KuenzelIT/ulauncher-firefox-bookmarks ~/.local/share/ulauncher/extensions/github-kuenzelit-ulauncher-firefox-bookmarks
 
 #Atalhos Bitwarden e Standard Notes no Grid
