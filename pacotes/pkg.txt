@@ -44,6 +44,7 @@ man-db
 man-pages
 mc
 neofetch
+nethogs
 ntfs-3g
 nvme-cli
 okular
