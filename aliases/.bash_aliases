@@ -1,3 +1,4 @@
+alias rede="sudo nethogs -p"
 alias ubuntu="distrobox enter ubuntu"
 alias stop-ubuntu="distrobox stop ubuntu"
 alias neo="neofetch --colors 4 3 5 7 1 2"
