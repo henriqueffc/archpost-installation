@@ -11,6 +11,7 @@ curl
 drawing
 dconf-editor
 gnome-appfolders-manager
+gnome-info-collect
 gnome-sound-recorder
 gnome-themes-extra
 dialog
