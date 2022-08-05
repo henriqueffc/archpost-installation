@@ -29,6 +29,8 @@ browser.startup.homepage.abouthome_cache.enabled = true (para a página inicial 
 
 image.jxl.enabled = true (suporte a imagens jxl) 
 
+widget.disable-swipe-tracker = false
+
 network.cookie.cookieBehavior = 5 (padrão anterior 4)
 
 media.peerconnection.video.vp9_preferred = true
