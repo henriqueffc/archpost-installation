@@ -217,9 +217,15 @@ Extensões:
 
 Simple Translate 
 
+Enhancer for YouTube
+
 RSS Feed Reader
 
 LanguageTool
+
+Flatline
+
+Material Icons for GitHub
 
 I don't care about cookies (controlo os cookies nas configurações do navegador)
 
@@ -229,3 +235,8 @@ Firefox Translations
 
 Bitwarden
 
+Dark Reader
+
+Push to Kindle
+
+DownThemAll!
