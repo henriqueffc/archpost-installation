@@ -24,7 +24,7 @@ echo -e "$AZUL
 $FIM" && sleep 9
 
 #Copiando os ícones
-tar -Jxxvf ./ulauncher/imagens.tar.xz -C ~/Imagens
+tar -xvf ./ulauncher/imagens.tar.xz -C ~/Imagens
 
 #Backup das configurações 
 cp ~/.config/ulauncher/settings.json ~/.config/ulauncher/settings.json.bak
