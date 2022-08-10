@@ -35,9 +35,10 @@ sudo pacman --needed -S - <./pacotes/pipewire.txt
 sudo pacman --needed -S - <./pacotes/pkg-audio.txt
 
 #Apparmor
-sudo pacman -S --needed apparmor python-notify2 python-psutil
+sudo pacman -S --needed apparmor python-notify2 python-psutil audit
 sudo systemctl enable apparmor.service
-sudo touch /var/log/syslog
+sudo systemctl enable auditd.service
+sudo sed -i '$i log_group = wheel' /etc/audit/auditd.conf
 mkdir ~/.config/autostart
 mv ./apparmor/apparmor-notify.desktop ~/.config/autostart
 sudo sed -i '/#write-cache/c\write-cache' /etc/apparmor/parser.conf
