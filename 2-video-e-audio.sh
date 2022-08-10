@@ -47,6 +47,11 @@ sudo chown $USER:$USER ~/.config/autostart
 #Reabilitar o Wayland no GDM com o drive proprietário da Nvidia
 sudo ln -s /dev/null /etc/udev/rules.d/61-gdm.rules
 
+#Fail2ban
+sudo pacman -S fail2ban --needed
+sudo mv ./fail2ban/jail.local /etc/fail2ban
+sudo systemctl enable fail2ban.service
+
 #Parâmetros do boot
 cp /boot/loader/entries/*.conf ~/
 sudo sed -i '$ { s/^.*$/& nvidia-drm.modeset=1 nvidia.NVreg_EnablePCIeGen3=1 nvidia.NVreg_UsePageAttributeTable=1 i915.enable_guc=2 i915.enable_fbc=1 nouveau.modeset=0 audit=1 audit_backlog_limit=320 lsm=landlock,lockdown,yama,integrity,apparmor,bpf/ }' /boot/loader/entries/*.conf
