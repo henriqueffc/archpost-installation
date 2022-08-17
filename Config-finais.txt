@@ -56,3 +56,6 @@ Crie um atalho personalizado.
 Nome : terminal ubuntu
 Comando : gnome-terminal --profile=ubuntu
 Atalho : Super + U
+
+
+8 - Configurar rkhunter, Fail2ban - porta SSH, SSH e Lynis (https://github.com/CISOfy/Lynis)
