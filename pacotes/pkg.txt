@@ -1,5 +1,6 @@
 alacarte
 aria2
+arch-audit
 asp
 bash-completion
 breeze
@@ -60,6 +61,7 @@ qgnomeplatform-qt6
 qt5-wayland
 qt6-wayland
 reflector
+rkhunter
 rsync
 steam
 texinfo
