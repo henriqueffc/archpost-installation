@@ -3,4 +3,4 @@ https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regula
 https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
 https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
 https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
-https://github.com/standardnotes/app/releases/download/%40standardnotes%2Fdesktop%403.23.83/standard-notes-3.23.83-linux-x86_64.AppImage
+https://github.com/standardnotes/app/releases/download/%40standardnotes%2Fdesktop%403.23.83/standard-notes-3.23.96-linux-x86_64.AppImage
