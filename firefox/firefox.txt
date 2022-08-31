@@ -227,6 +227,8 @@ Flatline
 
 Material Icons for GitHub
 
+Side View
+
 I don't care about cookies (controlo os cookies nas configurações do navegador)
 
 uBlock Origin 
