@@ -11,6 +11,7 @@ cpupower
 curl
 drawing
 dconf-editor
+espeak-ng
 gnome-appfolders-manager
 gnome-info-collect
 gnome-sound-recorder
