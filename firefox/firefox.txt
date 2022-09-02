@@ -29,6 +29,8 @@ browser.startup.homepage.abouthome_cache.enabled = true (para a página inicial 
 
 image.jxl.enabled = true (suporte a imagens jxl) 
 
+dom.enable_web_task_scheduling=true
+
 widget.disable-swipe-tracker = false
 
 network.cookie.cookieBehavior = 5 (padrão anterior 4)
@@ -46,6 +48,8 @@ webgl.disable-angle = true (não coloque true no Windows)
 webgl.all-angle-options = false
 
 webgl.enable-draft-extensions = true
+
+extensions.unifiedExtensions.enabled = true
 
 browser.tabs.insertRelatedAfterCurrent = true (false - as novas abas abrem no final e não após a aba aberta na tela. o padrão é true)
 
@@ -95,6 +99,8 @@ network.http.max-persistent-connections-per-server = 10
 Network.predictor.enable-prefetch = true
 
 network.prefetch-next = true
+
+network.http.http3.enable = true
 
 network.dns.disablePrefetch = false
 
