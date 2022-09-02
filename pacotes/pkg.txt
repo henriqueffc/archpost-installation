@@ -1,4 +1,7 @@
 alacarte
+aspell
+aspell-en
+aspell-pt
 aria2
 arch-audit
 asp
