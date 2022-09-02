@@ -48,6 +48,7 @@ echo 'blacklist pcspkr' >/etc/modprobe.d/nobeep.conf
 
 # NANO - Line number e syntax-highlighting
 sed -i 's/# set linenumbers/\set linenumbers/' /etc/nanorc
+sed -i 's/# set speller "aspell -x -c"/\set speller "aspell -x -c"/' /etc/nanorc
 linenumber=$(cat /etc/nanorc | grep -n '*.nanorc' | gawk '{print $1}' FS=":")
 sed -i "${linenumber}s/..//" /etc/nanorc
 
