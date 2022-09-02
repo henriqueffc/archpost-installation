@@ -218,6 +218,10 @@ browser.cache.memory.capacity = 1048576 (equals a maximum of 1 GB)
 Close Firefox and launch it again
 
 
+Tema:
+
+YouTube Dark Mode
+
 
 Extensões:
 
