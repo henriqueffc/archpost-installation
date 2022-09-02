@@ -22,6 +22,8 @@ djvulibre
 ebook-tools
 exa
 firefox
+firejail
+firetools
 flatpak
 fwupd
 gamemode
