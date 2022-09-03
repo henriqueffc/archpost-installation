@@ -69,6 +69,8 @@ flatpak install flathub com.github.micahflee.torbrowser-launcher -y
 flatpak install flathub org.zotero.Zotero -y
 flatpak install flathub com.usebottles.bottles -y
 flatpak install flathub com.github.weclaw1.ImageRoll -y
+flatpak install flathub net.lutris.Lutris -y
+flatpak install flathub org.freedesktop.Platform.VulkanLayer.MangoHud -y
 
 # Flatpak Remote-Beta
 
