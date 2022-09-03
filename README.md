@@ -38,5 +38,7 @@ Ordem de uso dos scripts:
 - 8-extensions.sh
 - 9-zsh-ohmyzsh.sh
 - 10-distrobox-ubuntu.sh
+- 11-theme.sh (opcional)
+- 12-firefox-nightly.sh (opcional)
 
 Recomendo reinicializar o sistema após a execução de cada script.
