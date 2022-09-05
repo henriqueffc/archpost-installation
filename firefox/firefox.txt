@@ -31,6 +31,10 @@ image.jxl.enabled = true (suporte a imagens jxl)
 
 dom.enable_web_task_scheduling=true
 
+gfx.webrender.quality.force-subpixel-aa-where-possible = true
+
+gfx.text.subpixel-position.force-enabled = true
+
 widget.disable-swipe-tracker = false
 
 network.cookie.cookieBehavior = 5 (padrão anterior 4)
