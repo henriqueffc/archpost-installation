@@ -71,6 +71,7 @@ flatpak install flathub com.usebottles.bottles -y
 flatpak install flathub com.github.weclaw1.ImageRoll -y
 flatpak install flathub net.lutris.Lutris -y
 flatpak install flathub org.freedesktop.Platform.VulkanLayer.MangoHud -y
+flatpak install flathub org.standardnotes.standardnotes -y
 
 # Flatpak Remote-Beta
 
