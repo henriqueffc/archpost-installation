@@ -31,9 +31,19 @@ image.jxl.enabled = true (suporte a imagens jxl)
 
 dom.enable_web_task_scheduling=true
 
+browser.startup.preXulSkeletonUI = false (windows)
+
+browser.startup.blankWindow = false
+
 gfx.webrender.quality.force-subpixel-aa-where-possible = true
 
 gfx.text.subpixel-position.force-enabled = true
+
+extensions.unifiedExtensions.enabled = true (firefox nightly)
+
+browser.tabs.firefox-view = true (firefox nightly)
+
+browser.translation.neverForLanguages = en,pt (para a extensão Firefox translate. evita a pergunta sobre tradução a todo momento)
 
 widget.disable-swipe-tracker = false
 
@@ -71,9 +81,13 @@ widget.content.allow-gtk-dark-theme = true
 browser.display.use_system_colors = true
 
 
-widget.wayland-dmabuf-webgl.enabled = true
-widget.wayland-dmabuf-vaapi.enabled = true
-widget.wayland-dmabuf-textures.enabled = true
+gfx.canvas.accelerated = true
+
+widget.dmabuf.force-enabled  = true 
+
+widget.dmabuf-textures.enabled = true
+
+widget.dmabuf-webgl.enabled = true
 
 
 Fonte Emoji do sistema
@@ -133,8 +147,6 @@ Dark Mode:
 Eu seleciono o tema escuro em Configurações - Temas. Páginas Web que possuem tema escuro ficam escuras automaticamente. 
 
 
-gfx.canvas.azure.accelerated = true (tem que fazer a configuração - Booleano. Veja o desempenho com ela. Pode ocasionar problemas)
-
 browser.preferences.defaultPerformanceSettings.enabled = false
 
 dom.ipc.processCount = 8
@@ -177,8 +189,6 @@ media.av1.enabled = false (O meu processador i7 ou a nvdia mx110 não suportam a
 gfx.canvas.remote = true
 
 media.gpu-process-decoder = true
-
-widget.dmabuf.force-enabled  = true
 
 gfx.color_management.enablev4 = true
 
