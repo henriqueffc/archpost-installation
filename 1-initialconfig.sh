@@ -44,6 +44,8 @@ echo 'LIBVA_DRIVERS_PATH=/usr/lib/dri/' >>/etc/environment
 echo 'LIBVA_DRIVER_NAME=iHD' >>/etc/environment
 echo 'MUTTER_DEBUG_ENABLE_ATOMIC_KMS=0' >>/etc/environment
 echo 'CLUTTER_PAINT=disable-dynamic-max-render-time' >>/etc/environment
+echo 'EGL_PLATFORM=wayland' >>/etc/environment
+echo 'VDPAU_DRIVER=va_gl' >>/etc/environment
 
 #PC speaker - turn off beep shutdown
 echo 'blacklist pcspkr' >/etc/modprobe.d/nobeep.conf
