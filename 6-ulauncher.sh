@@ -42,7 +42,6 @@ git clone https://github.com/Doekeb/ulauncher-gnome-calculator ~/.local/share/ul
 git clone https://github.com/KuenzelIT/ulauncher-firefox-bookmarks ~/.local/share/ulauncher/extensions/github-kuenzelit-ulauncher-firefox-bookmarks
 
 #Atalhos Bitwarden e Standard Notes no Grid
-sed -i 's|user|'$USER'|g' ./desktop/standard.desktop
 sed -i 's|user|'$USER'|g' ./desktop/bitwarden.desktop
 mv ./desktop/*.desktop ~/.local/share/applications
 
