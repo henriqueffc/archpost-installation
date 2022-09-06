@@ -67,6 +67,7 @@ sudo usermod -aG libvirt "$USERNAME"
 
 # Appimage e outros
 aria2c -d ~/Downloads -i ./urls/urls.txt
+aria2c -d ~/Downloads https://vault.bitwarden.com/download/\?app\=desktop\&platform\=linux -o Bitwarden.AppImage
 mkdir /home/$USER/Applications
 mv ~/Downloads/*.AppImage /home/$USER/Applications
 chmod +x /home/$USER/Applications/*.AppImage
