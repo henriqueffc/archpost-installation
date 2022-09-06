@@ -9,11 +9,9 @@ lib32-mesa
 lib32-nvidia-utils
 libva
 libva-utils
-libva-vdpau-driver
 libvdpau
 libvdpau-va-gl
 mesa
-mesa-vdpau
 nvidia-dkms
 nvidia-prime
 nvidia-settings
