@@ -32,7 +32,6 @@ fwupd
 gamemode
 git
 glew
-glfw-x11
 gnome-firmware
 ghostwriter
 gparted
