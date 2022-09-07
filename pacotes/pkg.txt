@@ -31,7 +31,6 @@ flatpak
 fwupd
 gamemode
 git
-glew
 gnome-firmware
 ghostwriter
 gparted
