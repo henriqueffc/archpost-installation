@@ -63,6 +63,7 @@ papirus-icon-theme
 progress
 qgnomeplatform-qt5
 qgnomeplatform-qt6
+qt5-svg
 qt5-wayland
 qt6-wayland
 reflector
