@@ -74,6 +74,7 @@ steam
 texinfo
 thermald
 transmission-gtk
+trash-cli
 ufw
 unrar
 unzip
