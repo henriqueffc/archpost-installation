@@ -1,1 +1,0 @@
-Os atalhos serão configurados pelo script número 6-ulauncher.sh.

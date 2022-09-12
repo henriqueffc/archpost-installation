@@ -3,5 +3,5 @@ Name=Bitwarden
 Exec=/home/user/Applications/Bitwarden.AppImage
 Comment=Gerenciador de senhas
 Terminal=false
-Icon=/home/user/Imagens/Logo Ulauncher/bitwarden2.png
+Icon=/home/user/Imagens/Logo/bitwarden2.png
 Type=Application

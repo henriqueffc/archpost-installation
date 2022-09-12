@@ -33,12 +33,11 @@ Ordem de uso dos scripts:
 - 3-pacotes.sh
 - 4-flatpake-e-fonte.sh
 - 5-yay.sh
-- 6-ulauncher.sh
-- 7-grid-e-nautilus.sh
-- 8-extensions.sh
-- 9-zsh-ohmyzsh.sh
-- 10-distrobox-ubuntu.sh
-- 11-theme.sh (opcional)
-- 12-firefox-nightly.sh (opcional)
+- 6-grid-e-nautilus.sh
+- 7-extensions.sh
+- 8-zsh-ohmyzsh.sh
+- 9-distrobox-ubuntu.sh
+- 10-theme.sh (opcional)
+- 11-firefox-nightly.sh (opcional)
 
 Recomendo reinicializar o sistema após a execução de cada script.

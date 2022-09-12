@@ -3,29 +3,14 @@
 1 - Habilitar o cache de escrita no programa Discos;
 
 
-2 - Configurar no Flatseal as variáveis de ambiente para os aplicativos que estejam com problemas de tema.
-GTK - GTK_THEME=Adwaita-dark ou QT_STYLE_OVERRIDE=adwaita-dark 
+2 - Configurar no Flatseal as variáveis de ambiente para os aplicativos que estejam com problemas de tema. Exemplo:
+GTK_THEME=Adwaita-dark ou QT_STYLE_OVERRIDE=adwaita-dark 
 
 
 3 - Verifique o policy.xml do ImageMagick;
 
 
-4 - Atalho criado para o Ulauncher no script de instalação (número 3) "Tecla Super + \"
-
-Para o ícone do Ulauncher aparecer na top bar é necessário instalar a extensão do Gnome "AppIndicator and KStatusNotifierItem Support". 
-
-Recomendo utilizar o programa Extension Manager - https://flathub.org/apps/details/com.mattjakeman.ExtensionManager (instalado pelo scrpit de instalação número 4) para instalar a extensão. 
-
-Caso você não queira que o ícone apareça na top bar não habilite essa opção nas configurações do Ulauncher.
-
-Página para pesquisar extensões: https://ext.ulauncher.io/
-
-Página para pesquisar os temas: https://gist.github.com/gornostal/02a232e6e560da7946c053555ced6cce
-
-Instruções para a instalação dos temas: https://docs.ulauncher.io/en/latest/themes/themes.html
-
-
-5- Remover o Powerprofilesctl (Gnome - Perfil de energia)
+4- Remover o Powerprofilesctl (Gnome - Perfil de energia)
 
 Não alterou a velocidade do sistema no meu notebook - use o cpupower instalado pelo script 3-pacotes.sh para essa função.
 
@@ -38,24 +23,4 @@ https://wiki.archlinux.org/title/CPU_frequency_scaling
 https://gitlab.freedesktop.org/hadess/power-profiles-daemon
 
 
-6 - GNOME
-Para inserir pastas no tracking insira as opções em Configurações - Pesquisa - Pesquisar localizações - Adicionar localização
-
-
-7 - Distrobox
-
-Atalho para o terminal
-
-No terminal acesse Preferências - Criar um novo perfil - Comando - na opção Comando personalizado (marque a opção Executar um comando personalizado ...) digite distrobox enter ubuntu  
-Mude as cores do perfil para especificar a diferença de uso do terminal (padrão ou distrobox).
-
-Em configurações - Teclado - Atalhos de teclado
-
-Crie um atalho personalizado.
-
-Nome : terminal ubuntu
-Comando : gnome-terminal --profile=ubuntu
-Atalho : Super + U
-
-
-8 - Configurar rkhunter, Fail2ban - porta SSH, SSH e Lynis (https://github.com/CISOfy/Lynis)
+5 - Configurar rkhunter, Fail2ban - porta SSH, SSH e Lynis (https://github.com/CISOfy/Lynis)
