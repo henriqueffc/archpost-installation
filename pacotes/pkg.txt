@@ -12,6 +12,7 @@ cmatrix
 coreutils
 cpupower
 curl
+d-feet
 drawing
 dconf-editor
 dialog
@@ -29,10 +30,11 @@ gamemode
 git
 glew
 glfw-wayland
-gnome-firmware
 ghostwriter
+gnome-firmware
 gnome-appfolders-manager
 gnome-info-collect
+gnome-nettool
 gnome-sound-recorder
 gnome-themes-extra
 gparted
@@ -53,6 +55,8 @@ man-pages
 mc
 neofetch
 nethogs
+net-tools
+nmap
 ntfs-3g
 nvme-cli
 okular
