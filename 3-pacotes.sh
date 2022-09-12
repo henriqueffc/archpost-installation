@@ -79,6 +79,14 @@ sudo mv ~/Downloads/*.ttf /usr/local/share/fonts
 sudo mv ~/Downloads/*.TTF /usr/local/share/fonts
 sudo fc-cache -fv
 
+#Logo Bitwarden
+mkdir ~/Imagens/Logo
+mv ./desktop/bitwarden2.png ~/Imagens/Logo
+
+#Atalho Bitwarden no Grid
+sed -i 's|user|'$USER'|g' ./desktop/bitwarden.desktop
+mv ./desktop/*.desktop ~/.local/share/applications
+
 #Alias
 mv ./aliases/.bash_aliases ~/
 
