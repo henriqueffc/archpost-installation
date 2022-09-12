@@ -36,7 +36,7 @@ sed -i 's/#ParallelDownloads = 5/\ParallelDownloads = 5/' /etc/pacman.conf
 sed -i 's/#CheckSpace/\CheckSpace/' /etc/pacman.conf
 sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
 
-#Firefox
+#Environment
 echo 'MOZ_ENABLE_WAYLAND=1' >>/etc/environment
 echo 'MOZ_WAYLAND_DRM_DEVICE=/dev/dri/renderD128' >>/etc/environment
 echo 'MOZ_WAYLAND_USE_VAAPI=1' >>/etc/environment
