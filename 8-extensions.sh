@@ -30,12 +30,16 @@ mv sound-output-device-chooser@kgshank.net $HOME/.local/share/gnome-shell/extens
 rm -rf "gse-sound-output-device-chooser"
 
 echo -e "$AZUL Clipboard History $FIM" 
-aria2c https://github.com/SUPERCILEX/gnome-clipboard-history/archive/refs/tags/1.2.1.zip
-gnome-extensions install --force 'gnome-clipboard-history-1.2.1.zip'
+aria2c https://github.com/SUPERCILEX/gnome-clipboard-history/archive/refs/tags/1.2.3.zip
+gnome-extensions install --force 'gnome-clipboard-history-1.2.3.zip'
 make -C $HOME/.local/share/gnome-shell/extensions/clipboard-history@alexsaveau.dev
 
+echo -e "$AZUL Fuzzy App Search for GNOME $FIM"
+aria2c https://gitlab.com/Czarlie/gnome-fuzzy-app-search/-/archive/v5.0.14/gnome-fuzzy-app-search-v5.0.14.zip
+gnome-extensions install --force 'gnome-fuzzy-app-search-v5.0.14.zip'
+
 echo -e "$AZUL Vitals  $FIM" 
-aria2c https://github.com/corecoding/Vitals/releases/download/v54.0.4/vitals.zip
+aria2c https://github.com/corecoding/Vitals/releases/download/v57.0.0/vitals.zip
 gnome-extensions install --force 'vitals.zip'
 
 printf "%s $VERDE Fim! Reinicie com o comando reboot e habilite as extensões usando o app Extensões após a reinicialização do sistema $FIM \n"
