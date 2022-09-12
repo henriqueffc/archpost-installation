@@ -13,3 +13,5 @@ No overview at start-up - https://extensions.gnome.org//extension/4099/no-overvi
 Sound Input & Output Device Chooser - https://extensions.gnome.org//extension/906/sound-output-device-chooser/
 
 Vitals - https://extensions.gnome.org//extension/1460/vitals/
+
+GNOME Fuzzy App Search - https://extensions.gnome.org/extension/3956/gnome-fuzzy-app-search/
