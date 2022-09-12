@@ -8,5 +8,4 @@ lib32-mangohud
 mangohud
 mangohud-common
 timeshift
-ulauncher
 visual-studio-code-bin
