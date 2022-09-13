@@ -13,11 +13,12 @@ coreutils
 cpupower
 curl
 d-feet
-drawing
 dconf-editor
 dialog
 discount
 djvulibre
+drawing
+duf
 ebook-tools
 espeak-ng
 exa
