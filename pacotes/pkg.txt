@@ -39,6 +39,7 @@ gnome-nettool
 gnome-sound-recorder
 gnome-themes-extra
 gparted
+gsmartcontrol
 gufw
 i7z
 intel-gpu-tools
