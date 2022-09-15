@@ -47,6 +47,7 @@ intel-gpu-tools
 jre-openjdk
 kdegraphics-mobipocket
 kdenlive
+kdiskmark
 libappindicator-gtk3
 libgtop
 libreoffice
