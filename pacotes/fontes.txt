@@ -5,6 +5,7 @@ terminus-font
 ttf-bitstream-vera
 ttf-dejavu
 ttf-liberation
+ttf-nerd-fonts-symbols-2048-em
 ttf-opensans
 ttf-roboto
 ttf-roboto-mono
