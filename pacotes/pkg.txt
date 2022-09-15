@@ -28,6 +28,7 @@ firetools
 flatpak
 fwupd
 gamemode
+ghex
 git
 glew
 glfw-wayland
