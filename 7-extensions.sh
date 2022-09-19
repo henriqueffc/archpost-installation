@@ -30,8 +30,8 @@ mv sound-output-device-chooser@kgshank.net $HOME/.local/share/gnome-shell/extens
 rm -rf "gse-sound-output-device-chooser"
 
 echo -e "$AZUL Clipboard History $FIM" 
-aria2c https://github.com/SUPERCILEX/gnome-clipboard-history/archive/refs/tags/1.2.3.zip
-gnome-extensions install --force 'gnome-clipboard-history-1.2.3.zip'
+aria2c https://github.com/SUPERCILEX/gnome-clipboard-history/archive/refs/tags/1.2.5.zip
+gnome-extensions install --force 'gnome-clipboard-history-1.2.5.zip'
 make -C $HOME/.local/share/gnome-shell/extensions/clipboard-history@alexsaveau.dev
 
 echo -e "$AZUL Fuzzy App Search for GNOME $FIM"
