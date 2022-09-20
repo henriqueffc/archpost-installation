@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Upscayl
+Exec=/home/user/Applications/Upscayl.AppImage
+Comment=AI Image Upscaler
+Terminal=false
+Icon=/home/user/Imagens/Logo/upscayl.png
+Type=Application

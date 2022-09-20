@@ -59,6 +59,9 @@ sed -i "${linenumber}s/..//" /etc/nanorc
 # Swappiness
 mv ./swappiness/99-swappiness.conf /etc/sysctl.d/
 
+# udev.rules
+mv ./udev/60-ioschedulers.rules /etc/udev/rules.d/
+
 # Makeflags e compress
 nv=$(nproc --ignore=2)
 sed -i "s/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j$nv\"/g" /etc/makepkg.conf

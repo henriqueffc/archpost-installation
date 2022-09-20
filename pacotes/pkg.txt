@@ -93,6 +93,7 @@ wine-mono
 winetricks
 wmctrl
 wireless-regdb
+xsel
 xdg-desktop-portal
 xdg-desktop-portal-gnome
 xdg-desktop-portal-gtk

@@ -25,6 +25,7 @@ else
 		read -r resposta
 		case "$resposta" in
 		s | S | "")
+			sudo pacman -S zsh --needed
 			chsh -s /bin/zsh
 			echo -e "$AZUL Reiniciando a sessão em 3... $FIM" && sleep 1
 			echo -e "$AZUL Reiniciando a sessão em 2... $FIM" && sleep 1
@@ -92,7 +93,7 @@ else
 			git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 			git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 			git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
-			sed -i 's/plugins=(git)/\plugins=(git zsh-autosuggestions zsh-syntax-highlighting colored-man-pages history-substring-search)/' ~/.zshrc
+			sed -i 's/plugins=(git)/\plugins=(git zsh-autosuggestions zsh-syntax-highlighting colored-man-pages copyfile copybuffer dirhistory web-search copypath history-substring-search)/' ~/.zshrc
 			sed -i 's|robbyrussell|powerlevel10k/powerlevel10k|' ~/.zshrc
 			sed -i '2 r./zsh/dracula.txt' ~/.zshrc
 			linenumber=$(grep -nr 'source' ~/.zshrc | gawk '{print $1}' FS=":")

@@ -68,6 +68,7 @@ sudo usermod -aG libvirt "$USERNAME"
 # Appimage e outros
 aria2c -d ~/Downloads -i ./urls/urls.txt
 aria2c -d ~/Downloads https://vault.bitwarden.com/download/\?app\=desktop\&platform\=linux -o Bitwarden.AppImage
+aria2c -d ~/Downloads https://github.com/upscayl/upscayl/releases/download/v1.5.0/Upscayl-1.5.0.AppImage -o Upscayl.AppImage
 mkdir /home/$USER/Applications
 mv ~/Downloads/*.AppImage /home/$USER/Applications
 chmod +x /home/$USER/Applications/*.AppImage
@@ -79,13 +80,15 @@ sudo mv ~/Downloads/*.ttf /usr/local/share/fonts
 sudo mv ~/Downloads/*.TTF /usr/local/share/fonts
 sudo fc-cache -fv
 
-#Logo Bitwarden
+#Logos
 mkdir ~/Imagens/Logo
-mv ./desktop/bitwarden2.png ~/Imagens/Logo
+mv ./desktop/*.png ~/Imagens/Logo
 
-#Atalho Bitwarden no Grid
+#Atalhos no Grid
 sed -i 's|user|'$USER'|g' ./desktop/bitwarden.desktop
+sed -i 's|user|'$USER'|g' ./desktop/upscayl.desktop
 mv ./desktop/*.desktop ~/.local/share/applications
+
 
 #Alias
 mv ./aliases/.bash_aliases ~/
