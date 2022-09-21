@@ -97,7 +97,7 @@ while :; do
      esac
 done
 
-pacman -Syy --noconfirm
+pacman -Syu --noconfirm
 
 #Intel - i915 / mkinitcpio.conf
 sed -i 's/MODULES=.*/MODULES=(intel_agp i915)/g' /etc/mkinitcpio.conf
