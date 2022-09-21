@@ -29,4 +29,4 @@ gsettings set org.gnome.desktop.app-folders folder-children "['Utilities', 'YaST
 
 # Atalhos no Nautilus (File). A fonte que contém os símbolos foi instalada pelo script número 3.
 echo "file:///mnt/nvme0n1p1 🖴 NVME" >> ~/.config/gtk-3.0/bookmarks
-echo "file:///home/$USER/Dropbox 🗃 Dropbox" >> .config/gtk-3.0/bookmarks
+echo "file:///home/$USER/Dropbox 🗃 Dropbox" >> ~/.config/gtk-3.0/bookmarks
