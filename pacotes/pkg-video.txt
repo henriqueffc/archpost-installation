@@ -12,6 +12,7 @@ libva-utils
 libvdpau
 libvdpau-va-gl
 mesa
+mesa-utils
 nvidia-dkms
 nvidia-prime
 nvidia-settings
