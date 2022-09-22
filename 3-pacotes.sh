@@ -92,6 +92,7 @@ mv ./desktop/*.desktop ~/.local/share/applications
 
 #Alias
 mv ./aliases/.bash_aliases ~/
+mv ./aliases/.atalhos.txt ~/
 
 #Modelos de arquivos para o Files
 mv ./modelo/arquivo.txt ~/Modelos
