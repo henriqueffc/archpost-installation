@@ -1,0 +1,159 @@
+#### ZSH ####
+
+copyfile = copia o conteúdo do arquivo para o clipboard. 
+
+copybuffer = CRTL + O
+Copia o conteúdo da linha do terminal para o clipboard.
+
+dirhistory = navegue pelo histórico de diretórios acessados.
+
+Alt + Left 	Go to previous directory
+Alt + Right 	Go to next directory
+Alt + Up 	Move into the parent directory
+Alt + Down 	Move into the first child directory by alphabetical order
+
+web-search = google texto_da_pesquisa ou web_search bing oh-my-zsh 
+Abre o browser com a pesquisa do termo no site especificado. Lista com os mecanismos de busca: https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/web-search
+
+copypath = copia o pwd para o clipboard.
+
+
+
+
+
+
+#### ALIAS ####
+
+rede
+ubuntu
+stop-ubuntu
+neo
+atualizar
+omz
+limpar
+dados
+reflector
+xls
+xll
+bat
+nvme
+nvme2
+cpu-performance
+cpu-padrão
+cpu-info
+intel-freq
+intel-video
+erro
+boot
+fail2ban
+report-audit
+ram
+dic-pt
+dic-en
+atalhos
+
+
+
+
+
+
+#### TERMINAL ####
+
+
+tab+tab (ex.: escreva update tab+tab) Abre as opções para o comando e você poderá escolher qual deseja. Tab mostra as opções e outro tb no ZSH permite escolher na lista.
+
+
+Ctrl + Shift + T (nova aba)
+
+
+Ctrl + Shift + + W (fecha a aba)
+
+
+Crtl + PageUp ou PageDown (navega entre as abas)
+
+
+Ctrl + D (o mesmo que escrever exit para sair de uma sessão ou para fechar o terminal)
+
+
+Ctrl + A (ir para o começo da linha)
+
+
+Ctrl + E (ir para o fim da linha)
+
+
+Ctrl + X + E (transfere o digitado para o editor de texto padrão)
+
+
+Ctrl + U (apaga o digitado anterior ao atalho)
+
+
+Ctrl + Y (undo)
+
+
+Ctrl + K (apaga tudo depois do cursor)
+
+
+Ctrl + C (cancela a operação que está em execução)
+
+
+Ctrl + R (busca comandos dados - pesquisa - zsh)
+
+
+Ctrl + L (clear)
+
+
+SHIFT+CTRL+C (copia no terminal)
+
+
+SHIFT+CTRL+V (cola no terminal)
+
+
+CTRL + + (zoom in)
+
+
+CTRL + - (zoom out)
+
+
+
+
+
+
+
+
+#### NANO ####
+
+
+Alt + N = mostra a numeração das linhas
+
+
+Ctrl + O = Salva o0 arquivo
+
+
+Alt + U = desfazer
+
+
+Alt +E = refazer
+
+
+Ctrl + W = pesquisa de texto
+
+
+Ctrl + X = sair
+
+
+Ctrl + K = recortar
+
+
+Ctrl + U = colar
+
+
+Ctrl + R e depois Ctrl + T = buscar arquivo para inserir no texto.
+
+
+Ctrl +\ = substituir
+
+
+Ctrl + / = ir para a linha
+
+
+nano +número_da_linha nome_do_arquivo (nano +25 arch.txt) abre o arquivo na linha desejada
