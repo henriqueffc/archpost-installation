@@ -35,3 +35,11 @@ Crie um atalho personalizado.
 Nome : terminal ubuntu
 Comando : gnome-terminal --profile=ubuntu
 Atalho : Super + U
+
+
+## 7 - Altere a identificação do ponto de montagem das partições do NVME no aplicativo discos.
+
+
+## 8 - Atalhos no Nautilus (File). A fonte que contém os símbolos foi instalada pelo script número 3.
+echo "file:///mnt/nvme0n1p1 🖴 NVME" >> ~/.config/gtk-3.0/bookmarks
+echo "file:///home/$USER/Dropbox 🗃 Dropbox" >> ~/.config/gtk-3.0/bookmarks
