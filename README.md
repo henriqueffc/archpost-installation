@@ -33,7 +33,7 @@ Ordem de uso dos scripts:
 - 3-pacotes.sh
 - 4-flatpake-e-fonte.sh
 - 5-yay.sh
-- 6-grid-e-nautilus.sh
+- 6-grid.sh
 - 7-extensions.sh
 - 8-zsh-ohmyzsh.sh
 - 9-distrobox-ubuntu.sh
