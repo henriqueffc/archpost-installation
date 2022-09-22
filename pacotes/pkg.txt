@@ -87,7 +87,7 @@ ufw
 unrar
 unzip
 webp-pixbuf-loader
-wine
+wine-staging
 wine-gecko
 wine-mono
 winetricks
