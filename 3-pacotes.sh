@@ -56,6 +56,11 @@ sudo mv ./service/intelparanoid.service /etc/systemd/system
 sudo systemctl enable intelparanoid.service
 echo -e "$AZUL \t Intel-Paranoid habilitado $FIM"
 
+# CPU Power Service
+sudo mv ./service/cpupowerperf.* /etc/systemd/system
+sudo systemctl enable cpupowerperf.timer
+echo -e "$AZUL \t CPU Power Performance.timer habilitado $FIM"
+
 echo -e "$AZUL
 -------------------------------------------------------------------------
                       Restante das configurações
