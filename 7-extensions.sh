@@ -20,8 +20,8 @@ aria2c https://github.com/fthx/no-overview/archive/refs/tags/v11.zip
 gnome-extensions install --force 'no-overview-11.zip'
 
 echo -e "$AZUL AppIndicator and KStatusNotifierItem Support $FIM" 
-aria2c https://github.com/ubuntu/gnome-shell-extension-appindicator/archive/refs/tags/v44.zip
-gnome-extensions install --force 'gnome-shell-extension-appindicator-44.zip'
+aria2c https://github.com/ubuntu/gnome-shell-extension-appindicator/archive/refs/tags/v46.zip
+gnome-extensions install --force 'gnome-shell-extension-appindicator-46.zip'
 
 echo -e "$AZUL Sound Input & Output Device Chooser $FIM"
 git clone https://github.com/kgshank/gse-sound-output-device-chooser.git
