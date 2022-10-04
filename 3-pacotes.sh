@@ -103,17 +103,12 @@ mv ./aliases/.atalhos.txt ~/
 touch $HOME/Modelos/novo.txt
 
 # Desabilitar o core dumps
-
 sudo sed -i 's/#Storage=external/Storage=none/' /etc/systemd/coredump.conf
-
 sudo systemctl daemon-reload
 
 #Limite do tamanho do Journal
-
 sudo sed -i 's/#SystemMaxUse=/SystemMaxUse=300M/' /etc/systemd/journald.conf
-
 sudo systemctl restart systemd-journald.service
-
 sudo journalctl --vacuum-size=100M
 sudo journalctl --vacuum-time=2weeks
 
