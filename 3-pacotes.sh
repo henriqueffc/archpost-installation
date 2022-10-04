@@ -73,7 +73,7 @@ sudo usermod -aG libvirt "$USERNAME"
 # Appimage e outros
 aria2c -d ~/Downloads -i ./urls/urls.txt
 aria2c -d ~/Downloads https://vault.bitwarden.com/download/\?app\=desktop\&platform\=linux -o Bitwarden.AppImage
-aria2c -d ~/Downloads https://github.com/upscayl/upscayl/releases/download/v1.5.0/Upscayl-1.5.0.AppImage -o Upscayl.AppImage
+aria2c -d ~/Downloads https://github.com/upscayl/upscayl/releases/download/v1.5.5/Upscayl-1.5.5.AppImage -o Upscayl.AppImage
 mkdir /home/$USER/Applications
 mv ~/Downloads/*.AppImage /home/$USER/Applications
 chmod +x /home/$USER/Applications/*.AppImage
