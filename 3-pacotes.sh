@@ -100,7 +100,7 @@ mv ./aliases/.bash_aliases ~/
 mv ./aliases/.atalhos.txt ~/
 
 #Modelos de arquivos para o Files
-mv ./modelo/arquivo.txt ~/Modelos
+touch $HOME/Modelos/novo.txt
 
 # Desabilitar o core dumps
 
