@@ -57,6 +57,7 @@ lm_sensors
 man-db
 man-pages
 mc
+meld
 neofetch
 nethogs
 net-tools
