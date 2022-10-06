@@ -78,6 +78,9 @@ mkdir /home/$USER/Applications
 mv ~/Downloads/*.AppImage /home/$USER/Applications
 chmod +x /home/$USER/Applications/*.AppImage
 
+# Joplin
+wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash
+
 #Fontes
 sudo mkdir -p /usr/local/share/fonts
 tar -xf ./pacotes/fonts.tar.xz -C ~/Downloads
