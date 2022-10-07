@@ -11,7 +11,6 @@ GTK_THEME=Adwaita-dark ou QT_STYLE_OVERRIDE=adwaita-dark
 
 
 ## 4- Remover o Powerprofilesctl (Gnome - Perfil de energia)
-
 Não alterou a velocidade do sistema no meu notebook - use o cpupower instalado pelo script 3-pacotes.sh para essa função.
 sudo pacman -R power-profiles-daemon
 systemctl disable power-profiles-daemon.service (desabilitou o serviço momentaneamente. foi preciso desinstalar do sistema)
