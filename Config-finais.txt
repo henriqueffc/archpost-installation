@@ -42,3 +42,7 @@ echo "file:///home/$USER/Dropbox 🗃 Dropbox" >> ~/.config/gtk-3.0/bookmarks
 
 
 ## 9 - Acrescente nos parâmetros da partição raiz no fstab as especificações commit=60 e barrier=0.
+
+
+## 10 - Para o controle Multilaser JS091 (Shanwan Controler) funcionar instale a atualização para o Xpad disponível no site abaixo.
+https://github.com/paroj/xpad
