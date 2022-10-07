@@ -5,7 +5,7 @@
 # AVISO: Execute o script por sua conta e risco.
 # License: MIT License
 
-#Cores dos avisos
+# Cores dos avisos
 
 AZUL='\e[1;34m'
 VERDE='\e[1;32m'
@@ -96,7 +96,7 @@ echo -e "$AZUL Alterando a fonte e o tamanho do terminal em 1 $FIM" && sleep 1
 echo -e "$AZUL Alterando a fonte e o tamanho do terminal em 2 $FIM" && sleep 1
 echo -e "$AZUL Alterando a fonte e o tamanho do terminal em 3 $FIM" && sleep 1
 
-#Fonte do terminal
+# Fonte do terminal
 font=$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d "'")
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ use-system-font false
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ font 'MesloLGS NF 14'

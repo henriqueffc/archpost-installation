@@ -5,7 +5,7 @@
 # AVISO: Execute o script por sua conta e risco.
 # License: MIT License
 
-#Cores dos avisos
+# Cores dos avisos
 
 AZUL='\e[1;34m'
 VERDE='\e[1;32m'

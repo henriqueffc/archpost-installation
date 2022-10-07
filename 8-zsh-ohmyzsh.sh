@@ -5,7 +5,7 @@
 # AVISO: Execute o script por sua conta e risco.
 # License: MIT License
 
-#Cores dos avisos
+# Cores dos avisos
 
 AZUL='\e[1;34m'
 VERDE='\e[1;32m'
@@ -13,7 +13,7 @@ RED='\e[1;31m'
 LVERDE='\e[0;92m'
 FIM='\e[0m'
 
-#if ls -a "$HOME" | grep -oq .zshrc; then
+# if ls -a "$HOME" | grep -oq .zshrc; then
 if test -f "/home/$USER/.zshrc"; then
 
 	echo -e "$AZUL Zsh está habilitado. Continuando a instalação (Oh my Zsh). $FIM" && sleep 2

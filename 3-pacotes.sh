@@ -5,7 +5,7 @@
 # AVISO: Execute o script por sua conta e risco.
 # License: MIT License
 
-#Cores dos avisos
+# Cores dos avisos
 
 AZUL='\e[1;34m'
 VERDE='\e[1;32m'
@@ -81,35 +81,37 @@ chmod +x /home/$USER/Applications/*.AppImage
 # Joplin
 wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash
 
-#Fontes
+# Fontes
 sudo mkdir -p /usr/local/share/fonts
 tar -xf ./pacotes/fonts.tar.xz -C ~/Downloads
 sudo mv ~/Downloads/*.ttf /usr/local/share/fonts
 sudo mv ~/Downloads/*.TTF /usr/local/share/fonts
 sudo fc-cache -fv
 
-#Logos
+# Logos
 mkdir ~/Imagens/Logo
 mv ./desktop/*.png ~/Imagens/Logo
 
-#Atalhos no Grid
+# Atalhos no Grid
 sed -i 's|user|'$USER'|g' ./desktop/bitwarden.desktop
 sed -i 's|user|'$USER'|g' ./desktop/upscayl.desktop
 mv ./desktop/*.desktop ~/.local/share/applications
 
-
-#Alias
+# Alias
 mv ./aliases/.bash_aliases ~/
 mv ./aliases/.atalhos.txt ~/
 
-#Modelos de arquivos para o Files
+# Chromium
+mv ./chromium/chromium-flags.conf ~/.config
+
+# Modelos de arquivos para o Files
 touch $HOME/Modelos/novo.txt
 
 # Desabilitar o core dumps
 sudo sed -i 's/#Storage=external/Storage=none/' /etc/systemd/coredump.conf
 sudo systemctl daemon-reload
 
-#Limite do tamanho do Journal
+# Limite do tamanho do Journal
 sudo sed -i 's/#SystemMaxUse=/SystemMaxUse=300M/' /etc/systemd/journald.conf
 sudo systemctl restart systemd-journald.service
 sudo journalctl --vacuum-size=100M
@@ -122,60 +124,60 @@ echo -e "$AZUL Alterando o tema, os ícones, o wallpaper e os atalhos do sistema
 echo -e "$AZUL Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 2 $FIM" && sleep 1
 echo -e "$AZUL Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 3 $FIM" && sleep 1
 
-#Tema do sistema GNOME 42
+# Tema do sistema GNOME 42
 gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
-#Tema para os aplicativos legados GNOME 42
+# Tema para os aplicativos legados GNOME 42
 gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
 
-#Tema dos ícones 
+# Tema dos ícones 
 gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
 
-#Mostrar porcentagem da bateria na top bar
+# Mostrar porcentagem da bateria na top bar
 gsettings set org.gnome.desktop.interface show-battery-percentage true
 
-#Comportamento do botão de energia - Desligar
+# Comportamento do botão de energia - Desligar
 gsettings set org.gnome.settings-daemon.plugins.power power-button-action interactive
 
-#Desabilitar a redução do brilho da tela quando o computador está inativo
+# Desabilitar a redução do brilho da tela quando o computador está inativo
 gsettings set org.gnome.settings-daemon.plugins.power idle-dim false
 
-#Suspensão automática - Desabilitada quando conectado a energia e na bateria
+# Suspensão automática - Desabilitada quando conectado a energia e na bateria
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type nothing
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-type nothing
 
-#Desabilitar o tempo antes da sessão ser considerada ociosa
+# Desabilitar o tempo antes da sessão ser considerada ociosa
 gsettings set org.gnome.desktop.session idle-delay "0"
 
-#Abrir os aplicativos centralizados na tela
+# Abrir os aplicativos centralizados na tela
 gsettings set org.gnome.mutter center-new-windows true
 
-#Desabilitar os cantos ativos
+# Desabilitar os cantos ativos
 gsettings set org.gnome.desktop.interface enable-hot-corners false
 
-#Touchpad
+# Touchpad
 gsettings set org.gnome.desktop.peripherals.touchpad click-method areas
 
-#Numlock
+# Numlock
 gsettings set org.gnome.desktop.peripherals.keyboard numlock-state true
 
-#Ao pesquisar no overview não serão exibidos os resultados da pesquisa realizada pelos aplicativos contidos nesta lista.
+# Ao pesquisar no overview não serão exibidos os resultados da pesquisa realizada pelos aplicativos contidos nesta lista.
 gsettings set org.gnome.desktop.search-providers disabled "['org.gnome.Contacts.desktop', 'org.gnome.Boxes.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Characters.desktop', 'org.gnome.Photos.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Epiphany.desktop', 'org.gnome.Software.desktop']"
 
-#Tamanho da fonte do sistema
+# Tamanho da fonte do sistema
 gsettings set org.gnome.desktop.interface font-name "Noto Sans 12"
 gsettings set org.gnome.desktop.interface document-font-name "Noto Sans 12"
 gsettings set org.gnome.desktop.interface monospace-font-name "Noto Sans Mono 11"
 gsettings set org.gnome.desktop.wm.preferences titlebar-font "Noto Sans Bold 12"
 gsettings set org.gnome.desktop.interface font-antialiasing rgba
 
-#GNOME Software
+# GNOME Software
 gsettings set org.gnome.software download-updates false
 gsettings set org.gnome.software first-run false
 
-#Mutter
+# Mutter
 gsettings set org.gnome.mutter experimental-features '["kms-modifiers"]'
 
-#Desabilitar a suspensão do notebook quando a tela do dispositivo é fechada. 
+# Desabilitar a suspensão do notebook quando a tela do dispositivo é fechada. 
 # primeira opção (habilitada) precisa do Gnome Tweaks instalado no sistema e desabilita somente para o usuário.
 # segunda (comentada) desabilita para todo o sistema e não precisa do Gnome Tweaks instalado.
 mv ./autostart/ignore-lid-switch-tweak.desktop ~/.config/autostart
@@ -184,23 +186,23 @@ mv ./autostart/ignore-lid-switch-tweak.desktop ~/.config/autostart
 # RDP - remote desktop protocol
 gsettings set org.gnome.desktop.remote-desktop.rdp screen-share-mode extend
 
-#Tempo
+# Tempo
 gsettings set org.gnome.Weather locations "[<(uint32 2, <('Uberlândia', 'SBUL', true, [(-0.3295763346004984, -0.84183047006083411)], [(-0.3301581226533582, -0.84299402871326112)])>)>]"
 
-#Atalhos do teclado (abnt2 com teclado numérico)
+# Atalhos do teclado (abnt2 com teclado numérico)
 # abaixar o volume - Shift + - teclado numérico
 gsettings set org.gnome.settings-daemon.plugins.media-keys volume-down "['<Shift>KP_Subtract']"
 # aumentar o volume - Shift + + teclado numérico
 gsettings set org.gnome.settings-daemon.plugins.media-keys volume-up "['<Shift>KP_Add']"
-#reproduzir ou pausar reprodução de mídia - Shift + * teclado numérico
+# reproduzir ou pausar reprodução de mídia - Shift + * teclado numérico
 gsettings set org.gnome.settings-daemon.plugins.media-keys play "['<Shift>KP_Multiply']"
-#mudar para a próxima faixa - Shift + / teclado numérico
+# mudar para a próxima faixa - Shift + / teclado numérico
 gsettings set org.gnome.settings-daemon.plugins.media-keys next "['<Shift>KP_Divide']"
 # abrir navegador - Super + B
 gsettings set org.gnome.settings-daemon.plugins.media-keys www "['<Super>b']"
-#abrir o Files na home - Super + F
+# abrir o Files na home - Super + F
 gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>f']"
-#fechar a janela - Super + Q
+# fechar a janela - Super + Q
 gsettings set org.gnome.desktop.wm.keybindings close "['<Super>q']"
 
 # Atalho personalizado para lançar o Terminal - Super + T
@@ -229,7 +231,7 @@ echo -e "$AZUL \t Mlocate habilitado $FIM"
 sudo mkdir /etc/pacman.d/hooks
 sudo cp ./hooks/*.hook /etc/pacman.d/hooks/
 
-#Sensors
+# Sensors
 sudo sensors-detect
 
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"

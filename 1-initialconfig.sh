@@ -5,7 +5,7 @@
 # AVISO: Execute o script por sua conta e risco.
 # License: MIT License
 
-#Cores dos avisos
+# Cores dos avisos
 
 AZUL='\e[1;34m'
 VERDE='\e[1;32m'
@@ -36,7 +36,7 @@ sed -i 's/#ParallelDownloads = 5/\ParallelDownloads = 5/' /etc/pacman.conf
 sed -i 's/#CheckSpace/\CheckSpace/' /etc/pacman.conf
 sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
 
-#Environment
+# Environment
 echo 'MOZ_ENABLE_WAYLAND=1' >>/etc/environment
 echo 'MOZ_WAYLAND_DRM_DEVICE=/dev/dri/renderD128' >>/etc/environment
 echo 'MOZ_WAYLAND_USE_VAAPI=1' >>/etc/environment
@@ -47,7 +47,7 @@ echo 'CLUTTER_PAINT=disable-dynamic-max-render-time' >>/etc/environment
 echo 'EGL_PLATFORM=wayland' >>/etc/environment
 echo 'VDPAU_DRIVER=va_gl' >>/etc/environment
 
-#PC speaker - turn off beep shutdown
+# PC speaker - turn off beep shutdown
 echo 'blacklist pcspkr' >/etc/modprobe.d/nobeep.conf
 
 # NANO - Line number e syntax-highlighting
@@ -69,7 +69,7 @@ sed -i 's/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -z --threads=0 -)/g' /etc/ma
 sed -i 's/COMPRESSZST=(zstd -c -z -q -)/COMPRESSZST=(zstd -c -z -q --threads=0 -)/g' /etc/makepkg.conf
  
 
-#Mirrorlist
+# Mirrorlist
 echo -e "$AZUL
 -------------------------------------------------------------------------
                         Mirrorlist - Brasil
@@ -99,11 +99,11 @@ done
 
 pacman -Syu --noconfirm
 
-#Intel - i915 / mkinitcpio.conf
+# Intel - i915 / mkinitcpio.conf
 sed -i 's/MODULES=.*/MODULES=(intel_agp i915)/g' /etc/mkinitcpio.conf
 mkinitcpio -P
 
-#FSTAB
+# FSTAB
 sudo cp /etc/fstab ~/
 sudo sed -i 's/relatime/noatime/' /etc/fstab
 
