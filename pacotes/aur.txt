@@ -1,6 +1,5 @@
 downgrade
 dropbox
-google-chrome
 goverlay-bin
 heroic-games-launcher-bin
 inxi
