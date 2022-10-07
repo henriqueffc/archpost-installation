@@ -8,6 +8,7 @@ aspell-pt
 bash-completion
 breeze
 bat
+chromium
 cmatrix
 coreutils
 cpupower
