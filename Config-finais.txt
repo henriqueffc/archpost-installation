@@ -1,6 +1,6 @@
 # Coisas para fazer depois de concluída a instalação com os scripts:
 
-## 1 - Habilitar o cache de escrita no programa Discos;
+## 1 - Habilitar o cache de escrita e o APM com o valor de 254 no programa Discos;
 
 
 ## 2 - Configurar no Flatseal as variáveis de ambiente para os aplicativos que estejam com problemas de tema. Exemplo:
@@ -13,11 +13,8 @@ GTK_THEME=Adwaita-dark ou QT_STYLE_OVERRIDE=adwaita-dark
 ## 4- Remover o Powerprofilesctl (Gnome - Perfil de energia)
 
 Não alterou a velocidade do sistema no meu notebook - use o cpupower instalado pelo script 3-pacotes.sh para essa função.
-
 sudo pacman -R power-profiles-daemon
-
 systemctl disable power-profiles-daemon.service (desabilitou o serviço momentaneamente. foi preciso desinstalar do sistema)
-
 https://wiki.archlinux.org/title/GNOME#Power_modes
 https://wiki.archlinux.org/title/CPU_frequency_scaling
 https://gitlab.freedesktop.org/hadess/power-profiles-daemon
@@ -43,3 +40,6 @@ Atalho : Super + U
 ## 8 - Atalhos no Nautilus (File). A fonte que contém os símbolos foi instalada pelo script número 3.
 echo "file:///mnt/nvme0n1p1 🖴 NVME" >> ~/.config/gtk-3.0/bookmarks
 echo "file:///home/$USER/Dropbox 🗃 Dropbox" >> ~/.config/gtk-3.0/bookmarks
+
+
+## 9 - Acrescente nos parâmetros da partição raiz no fstab as especificações commit=60 e barrier=0.
