@@ -1,3 +1,4 @@
+authy
 downgrade
 dropbox
 goverlay-bin
