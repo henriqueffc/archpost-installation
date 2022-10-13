@@ -71,6 +71,7 @@ p7zip
 pacman-contrib
 pandoc
 papirus-icon-theme
+pkgstats
 progress
 qgnomeplatform-qt5
 qgnomeplatform-qt6
