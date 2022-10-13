@@ -46,8 +46,6 @@ echo -e "$AZUL \t bluetooth.service habilitado $FIM"
 sudo systemctl enable --now ufw.service
 sudo ufw enable
 echo -e "$AZUL \t ufw.service habilitado $FIM"
-sudo systemctl start pkgstats.timer
-echo -e "$AZUL \t pkgstats.timer habilitado $FIM"
 
 # Offpowersave
 sudo mv ./powersave/default-wifi-powersave-on.conf /etc/NetworkManager/conf.d
