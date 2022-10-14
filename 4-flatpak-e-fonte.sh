@@ -26,7 +26,6 @@ flatpak install flathub net.davidotek.pupgui2 -y
 flatpak install flathub org.flozz.yoga-image-optimizer -y
 flatpak install flathub org.gtkhash.gtkhash -y
 flatpak install flathub com.github.rajsolai.textsnatcher -y
-flatpak install flathub org.gnome.Solanum -y
 flatpak install flathub com.github.tchx84.Flatseal -y
 flatpak install flathub com.discordapp.Discord -y
 flatpak install flathub com.github.jeromerobert.pdfarranger -y
@@ -38,19 +37,16 @@ flatpak install flathub fr.romainvigier.MetadataCleaner -y
 flatpak install flathub org.gnome.gitlab.YaLTeR.VideoTrimmer -y
 flatpak install flathub us.zoom.Zoom -y
 flatpak install flathub com.belmoussaoui.Obfuscate -y
-flatpak install flathub com.system76.Popsicle -y
 flatpak install flathub com.github.wwmm.easyeffects -y
 flatpak install flathub com.obsproject.Studio -y
 flatpak install flathub com.mattjakeman.ExtensionManager -y
 flatpak install flathub org.gtk.Gtk3theme.Adwaita-dark -y
-flatpak install flathub com.github.alexkdeveloper.dwxmlcreator -y
 flatpak install flathub com.github.huluti.Curtail -y
 flatpak install flathub de.haeckerfelix.Shortwave -y
 flatpak install flathub org.gnome.TextEditor -y
 flatpak install flathub com.github.micahflee.torbrowser-launcher -y
 flatpak install flathub org.zotero.Zotero -y
 flatpak install flathub com.usebottles.bottles -y
-flatpak install flathub com.github.weclaw1.ImageRoll -y
 flatpak install flathub net.lutris.Lutris -y
 flatpak install flathub org.freedesktop.Platform.VulkanLayer.MangoHud -y
 
