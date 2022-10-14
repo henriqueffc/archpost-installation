@@ -7,5 +7,4 @@ inxi
 lib32-mangohud
 mangohud
 mangohud-common
-timeshift
 visual-studio-code-bin
