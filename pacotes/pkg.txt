@@ -57,6 +57,7 @@ libzip
 lm_sensors
 man-db
 man-pages
+man-pages-pt_br
 mc
 meld
 neofetch
