@@ -51,6 +51,7 @@ ram
 dic-pt
 dic-en
 atalhos
+pacman.log
 
 
 
