@@ -83,6 +83,7 @@ qt6-wayland
 rebuild-detector
 reflector
 rkhunter
+rmlint
 rsync
 steam
 texinfo
