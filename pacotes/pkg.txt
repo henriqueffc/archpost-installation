@@ -80,8 +80,10 @@ qgnomeplatform-qt6
 qt5-svg
 qt5-wayland
 qt6-wayland
+rebuild-detector
 reflector
 rkhunter
+rmlint
 rsync
 steam
 texinfo
