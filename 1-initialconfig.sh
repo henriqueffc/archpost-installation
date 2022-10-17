@@ -72,32 +72,12 @@ sed -i 's/COMPRESSZST=(zstd -c -z -q -)/COMPRESSZST=(zstd -c -z -q --threads=0 -
 # Mirrorlist
 echo -e "$AZUL
 -------------------------------------------------------------------------
-                        Mirrorlist - Brasil
+                        Alterando o mirrorlist
 -------------------------------------------------------------------------
 $FIM"
-
-while :; do
-     cat mirrorlistbr/mirrorlist
-     echo -ne "$VERDE Você quer alterar o mirrorlist do sistema de acordo com o exposto acima? $FIM $LVERDE (S) sim / (N) não $FIM"
-     read -r resposta
-     case "$resposta" in
-     s | S | "")
-          mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
-          mv ./mirrorlistbr/mirrorlist /etc/pacman.d/
-          echo -e "$AZUL Fim da instalação. $FIM"
-          break
-          ;;
-     n | N)
-          echo -e "$AZUL Fim da instalação. $FIM"
-          break
-          ;;
-     *)
-          echo -e "$RED Opção inválida. $FIM"
-          ;;
-     esac
-done
-
-pacman -Syu --noconfirm
+mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
+mv ./mirrorlistbr/mirrorlist /etc/pacman.d/
+pacman -Syu
 
 # Intel - i915 / mkinitcpio.conf
 sed -i 's/MODULES=.*/MODULES=(intel_agp i915)/g' /etc/mkinitcpio.conf
