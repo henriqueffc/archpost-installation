@@ -24,6 +24,7 @@ ebook-tools
 espeak-ng
 exa
 firefox
+firefox-i18n-pt-br
 firejail
 firetools
 flatpak
