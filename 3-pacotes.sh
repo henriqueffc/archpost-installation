@@ -72,7 +72,6 @@ sudo usermod -aG libvirt "$USERNAME"
 
 # Appimage e outros
 aria2c -d ~/Downloads -i ./urls/urls.txt
-aria2c -d ~/Downloads https://vault.bitwarden.com/download/\?app\=desktop\&platform\=linux -o Bitwarden.AppImage
 aria2c -d ~/Downloads https://github.com/upscayl/upscayl/releases/download/v1.5.5/Upscayl-1.5.5.AppImage -o Upscayl.AppImage
 mkdir /home/$USER/Applications
 mv ~/Downloads/*.AppImage /home/$USER/Applications
@@ -93,7 +92,6 @@ mkdir ~/Imagens/Logo
 mv ./desktop/*.png ~/Imagens/Logo
 
 # Atalhos no Grid
-sed -i 's|user|'$USER'|g' ./desktop/bitwarden.desktop
 sed -i 's|user|'$USER'|g' ./desktop/upscayl.desktop
 mv ./desktop/*.desktop ~/.local/share/applications
 
