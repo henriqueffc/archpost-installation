@@ -1,11 +1,10 @@
 ## Sweden
 Server = https://mirror.osbeck.com/archlinux/$repo/os/$arch
-## Brazil
-Server = http://archlinux-br.com.br/archlinux/$repo/os/$arch
-Server = https://archlinux-br.com.br/archlinux/$repo/os/$arch
 ## Germany
 Server = http://phinau.de/arch/$repo/os/$arch
 Server = https://phinau.de/arch/$repo/os/$arch
 ## Brazil
+Server = http://archlinux-br.com.br/archlinux/$repo/os/$arch
+Server = https://archlinux-br.com.br/archlinux/$repo/os/$arch
 Server = http://archlinux.c3sl.ufpr.br/$repo/os/$arch
 Server = http://mirror.ufscar.br/archlinux/$repo/os/$arch
