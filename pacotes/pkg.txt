@@ -6,6 +6,7 @@ aspell
 aspell-en
 aspell-pt
 bash-completion
+bitwarden
 breeze
 bat
 chromium
