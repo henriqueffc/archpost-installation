@@ -51,5 +51,6 @@ echo -e "$AZUL NVIDIA GPU Stats Tool $FIM"
 git clone https://github.com/ethanwharris/gnome-nvidia-extension.git 
 make -C gnome-nvidia-extension
 cp -r gnome-nvidia-extension/src/nvidiautil@ethanwharris $HOME/.local/share/gnome-shell/extensions
+rm -rf "gnome-nvidia-extension"
 
 printf "%s $VERDE Fim! Reinicie com o comando reboot e habilite as extensões usando o app Extensões após a reinicialização do sistema $FIM \n"
