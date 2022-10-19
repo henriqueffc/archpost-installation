@@ -38,6 +38,11 @@ echo -e "$AZUL Fuzzy App Search for GNOME $FIM"
 aria2c https://gitlab.com/Czarlie/gnome-fuzzy-app-search/-/archive/v5.0.14/gnome-fuzzy-app-search-v5.0.14.zip
 gnome-extensions install --force 'gnome-fuzzy-app-search-v5.0.14.zip'
 
+echo -e "$AZUL Bluetooth Quick Connect $FIM"
+aria2c https://github.com/bjarosze/gnome-bluetooth-quick-connect/archive/refs/tags/v30.zip
+gnome-extensions install --force 'gnome-bluetooth-quick-connect-30.zip'
+make -C $HOME/.local/share/gnome-shell/extensions/bluetooth-quick-connect@bjarosze.gmail.com
+
 echo -e "$AZUL Vitals  $FIM" 
 aria2c https://github.com/corecoding/Vitals/releases/download/v57.0.0/vitals.zip
 gnome-extensions install --force 'vitals.zip'
