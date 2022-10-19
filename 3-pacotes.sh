@@ -149,6 +149,9 @@ gsettings set org.gnome.desktop.session idle-delay "0"
 # Abrir os aplicativos centralizados na tela
 gsettings set org.gnome.mutter center-new-windows true
 
+# Bluetooth no menu, mesmo desligado
+gsettings set org.gnome.shell had-bluetooth-devices-setup true
+
 # Desabilitar os cantos ativos
 gsettings set org.gnome.desktop.interface enable-hot-corners false
 
