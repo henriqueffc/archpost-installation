@@ -11,7 +11,7 @@ AZUL='\e[1;34m'
 VERDE='\e[1;32m'
 FIM='\e[0m'
 
-sudo pacman -S aria2 libgtop lm_sensors git --needed
+sudo pacman -S aria2 libgtop lm_sensors git bluez-utils --needed
 
 # Instalação das extensões
 
