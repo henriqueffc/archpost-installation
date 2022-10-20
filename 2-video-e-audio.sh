@@ -36,8 +36,10 @@ sudo pacman --needed -S - <./pacotes/pkg-audio.txt
 sudo pacman -S --needed apparmor python-notify2 python-psutil audit
 sudo systemctl enable apparmor.service
 sudo systemctl enable auditd.service
+sudo cp /etc/audit/auditd.conf /etc/audit/auditd.conf.bak
 sudo sed -i '$i log_group = wheel' /etc/audit/auditd.conf
 install -Dvm644 ./apparmor/apparmor-notify.desktop -t ~/.config/autostart/
+sudo cp /etc/apparmor/parser.conf /etc/apparmor/parser.conf.bak
 sudo sed -i '/#write-cache/c\write-cache' /etc/apparmor/parser.conf
 
 # Reabilitar o Wayland no GDM com o drive proprietário da Nvidia
