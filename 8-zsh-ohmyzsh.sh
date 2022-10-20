@@ -93,6 +93,7 @@ else
 			git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 			git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 			git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
+			cp ~/.zshrc ~/.zshrc.bak
 			sed -i 's/plugins=(git)/\plugins=(git zsh-autosuggestions zsh-syntax-highlighting colored-man-pages copyfile copybuffer dirhistory web-search copypath history-substring-search)/' ~/.zshrc
 			sed -i 's|robbyrussell|powerlevel10k/powerlevel10k|' ~/.zshrc
 			sed -i '2 r./zsh/dracula.txt' ~/.zshrc
