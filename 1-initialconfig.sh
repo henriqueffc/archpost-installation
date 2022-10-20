@@ -12,12 +12,14 @@ VERDE='\e[1;32m'
 FIM='\e[0m'
 
 # Localhost
+cp /etc/hosts /etc/hosts.bak
 line=$(cat /etc/hostname)
 echo '127.0.0.1 localhost' >>/etc/hosts
 echo '::1       localhost' >>/etc/hosts
 echo "127.0.1.1 $line.localdomain $line" >>/etc/hosts
 
 # Visudo
+cp /etc/sudoers /etc/sudoers.bak
 sed -i '/# %wheel ALL=(ALL:ALL) ALL/c\%wheel ALL=(ALL:ALL) ALL' /etc/sudoers
 echo '# Defaults specification' >>/etc/sudoers
 echo 'Defaults editor=/usr/bin/nano' >>/etc/sudoers
@@ -35,6 +37,7 @@ sed -i 's/#CheckSpace/\CheckSpace/' /etc/pacman.conf
 sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
 
 # Environment
+cp /etc/environment /etc/environment.bak
 echo 'MOZ_ENABLE_WAYLAND=1' >>/etc/environment
 echo 'MOZ_WAYLAND_DRM_DEVICE=/dev/dri/renderD128' >>/etc/environment
 echo 'MOZ_WAYLAND_USE_VAAPI=1' >>/etc/environment
@@ -49,6 +52,7 @@ echo 'VDPAU_DRIVER=va_gl' >>/etc/environment
 echo 'blacklist pcspkr' >/etc/modprobe.d/nobeep.conf
 
 # NANO - Line number e syntax-highlighting
+cp /etc/nanorc /etc/nanorc.bak
 sed -i 's/# set linenumbers/\set linenumbers/' /etc/nanorc
 sed -i 's/# set speller "aspell -x -c"/\set speller "aspell -x -c"/' /etc/nanorc
 linenumber=$(cat /etc/nanorc | grep -n '*.nanorc' | gawk '{print $1}' FS=":")
@@ -61,6 +65,7 @@ mv ./swappiness/99-swappiness.conf /etc/sysctl.d/
 mv ./udev/60-ioschedulers.rules /etc/udev/rules.d/
 
 # Makeflags e compress
+cp /etc/makepkg.conf /etc/makepkg.conf.bak
 nv=$(nproc --ignore=2)
 sed -i "s/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j$nv\"/g" /etc/makepkg.conf
 sed -i 's/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -z --threads=0 -)/g' /etc/makepkg.conf
@@ -78,11 +83,12 @@ mv ./mirrorlistbr/mirrorlist /etc/pacman.d/
 pacman -Syu
 
 # Intel - i915 / mkinitcpio.conf
+cp /etc/mkinitcpio.conf /etc/mkinitcpio.conf.bak
 sed -i 's/MODULES=.*/MODULES=(intel_agp i915)/g' /etc/mkinitcpio.conf
 mkinitcpio -P
 
 # FSTAB
-sudo cp /etc/fstab ~/
-sudo sed -i 's/relatime/noatime/' /etc/fstab
+cp /etc/fstab /etc/fstab.bak
+sed -i 's/relatime/noatime/' /etc/fstab
 
 printf "%s $VERDE Fim! Reinicie com o comando reboot. $FIM \n"
