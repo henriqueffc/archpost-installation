@@ -15,10 +15,6 @@ sudo pacman -S aria2 libgtop lm_sensors git bluez-utils --needed
 
 # Instalação das extensões
 
-echo -e "$AZUL No overview at start-up $FIM"
-aria2c https://github.com/fthx/no-overview/archive/refs/tags/v11.zip
-gnome-extensions install --force 'no-overview-11.zip'
-
 echo -e "$AZUL AppIndicator and KStatusNotifierItem Support $FIM" 
 aria2c https://github.com/ubuntu/gnome-shell-extension-appindicator/archive/refs/tags/v46.zip
 gnome-extensions install --force 'gnome-shell-extension-appindicator-46.zip'
