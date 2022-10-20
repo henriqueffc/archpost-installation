@@ -106,16 +106,19 @@ mv ./chromium/chromium-flags.conf ~/.config
 touch $HOME/Modelos/novo.txt
 
 # Desabilitar o core dumps
+sudo cp /etc/systemd/coredump.conf /etc/systemd/coredump.conf.bak
 sudo sed -i 's/#Storage=external/Storage=none/' /etc/systemd/coredump.conf
 sudo systemctl daemon-reload
 
 # Limite do tamanho do Journal
+sudo cp /etc/systemd/journald.conf /etc/systemd/journald.conf.bak
 sudo sed -i 's/#SystemMaxUse=/SystemMaxUse=300M/' /etc/systemd/journald.conf
 sudo systemctl restart systemd-journald.service
 sudo journalctl --vacuum-size=100M
 sudo journalctl --vacuum-time=2weeks
 
 # Variáveis
+cp ~/.bashrc ~/.bashrc.bak
 echo 'source ~/.bash_aliases' >>~/.bashrc
 
 echo -e "$AZUL Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 1 $FIM" && sleep 1
