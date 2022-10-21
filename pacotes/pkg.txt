@@ -102,6 +102,7 @@ wine-mono
 winetricks
 wmctrl
 wireless-regdb
+x86_energy_perf_policy
 xsel
 xdg-desktop-portal
 xdg-desktop-portal-gnome
