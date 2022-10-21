@@ -39,7 +39,7 @@ bat
 nvme
 nvme2
 cpu-performance
-cpu-padrão
+cpu-powersave
 cpu-info
 intel-freq
 intel-video
