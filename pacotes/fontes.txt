@@ -4,6 +4,8 @@ noto-fonts-emoji
 terminus-font
 ttf-bitstream-vera
 ttf-dejavu
+ttf-fira-code
+ttf-jetbrains-mono
 ttf-liberation
 ttf-nerd-fonts-symbols-2048-em
 ttf-opensans
