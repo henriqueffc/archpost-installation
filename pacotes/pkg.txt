@@ -89,6 +89,8 @@ reflector
 rkhunter
 rmlint
 rsync
+seahorse
+seahorse-nautilus
 steam
 texinfo
 thermald
