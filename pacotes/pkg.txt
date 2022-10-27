@@ -37,6 +37,7 @@ git
 glew
 glfw-wayland
 ghostwriter
+gnome-epub-thumbnailer
 gnome-firmware
 gnome-appfolders-manager
 gnome-info-collect
@@ -76,6 +77,7 @@ pacman-contrib
 pandoc
 papirus-icon-theme
 pkgstats
+polari
 progress
 qgnomeplatform-qt5
 qgnomeplatform-qt6
