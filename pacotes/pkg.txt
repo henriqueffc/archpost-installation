@@ -47,6 +47,7 @@ gnome-sound-recorder
 gnome-themes-extra
 gparted
 gsmartcontrol
+gst-plugin-libcamera
 gufw
 i7z
 intel-gpu-tools
@@ -55,6 +56,7 @@ kdegraphics-mobipocket
 kdenlive
 kdiskmark
 libappindicator-gtk3
+libcamera-tools
 libgtop
 libreoffice
 libreoffice-fresh-pt-br
