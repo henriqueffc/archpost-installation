@@ -125,9 +125,9 @@ echo -e "$AZUL Alterando o tema, os ícones, o wallpaper e os atalhos do sistema
 echo -e "$AZUL Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 2 $FIM" && sleep 1
 echo -e "$AZUL Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 3 $FIM" && sleep 1
 
-# Tema do sistema GNOME 42
+# Tema do sistema GNOME 43
 gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
-# Tema para os aplicativos legados GNOME 42
+# Tema para os aplicativos legados GNOME 43
 gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
 
 # Tema dos ícones 
@@ -211,7 +211,7 @@ gsettings set org.gnome.desktop.wm.keybindings close "['<Super>q']"
 
 # Atalho personalizado para lançar o Terminal - Super + T
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name "Terminal"
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command "gnome-terminal"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command "kgx"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding "<Super>t"
 
 # Atalho personalizado para aumentar o brilho usando o teclado - Crtl + Para cima
