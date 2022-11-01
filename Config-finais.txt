@@ -22,27 +22,16 @@ https://gitlab.freedesktop.org/hadess/power-profiles-daemon
 ## 5 - Configurar rkhunter, Fail2ban - porta SSH, SSH e Lynis (https://github.com/CISOfy/Lynis)
 
 
-## 6 - Distrobox
-Atalho para o terminal (gnome-terminal)
-No terminal acesse Preferências - Criar um novo perfil - Comando - na opção Comando personalizado (marque a opção Executar um comando personalizado ...) digite distrobox enter ubuntu  
-Mude as cores do perfil para especificar a diferença de uso do terminal (padrão ou distrobox).
-Em configurações - Teclado - Atalhos de teclado
-Crie um atalho personalizado.
-Nome : terminal ubuntu
-Comando : gnome-terminal --profile=ubuntu
-Atalho : Super + U
+## 6 - Altere a identificação do ponto de montagem das partições do NVME no aplicativo discos.
 
 
-## 7 - Altere a identificação do ponto de montagem das partições do NVME no aplicativo discos.
-
-
-## 8 - Atalhos no Nautilus (File). A fonte que contém os símbolos foi instalada pelo script número 3.
+## 7 - Atalhos no Nautilus (File). A fonte que contém os símbolos foi instalada pelo script número 3.
 echo "file:///mnt/nvme0n1p1 🖴 NVME" >> ~/.config/gtk-3.0/bookmarks
 echo "file:///home/$USER/Dropbox 🗃 Dropbox" >> ~/.config/gtk-3.0/bookmarks
 
 
-## 9 - Acrescente nos parâmetros da partição raiz no fstab as especificações commit=60 e barrier=0.
+## 8 - Acrescente nos parâmetros da partição raiz no fstab as especificações commit=60 e barrier=0.
 
 
-## 10 - Para o controle Multilaser JS091 (Shanwan Controler) funcionar instale a atualização para o Xpad disponível no site abaixo.
+## 9 - Para o controle Multilaser JS091 (Shanwan Controler) funcionar instale a atualização para o Xpad disponível no site abaixo.
 https://github.com/paroj/xpad
