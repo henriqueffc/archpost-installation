@@ -38,15 +38,14 @@ git
 glew
 glfw-wayland
 ghostwriter
-gnome-console
 gnome-epub-thumbnailer
 gnome-firmware
 gnome-appfolders-manager
 gnome-info-collect
 gnome-nettool
 gnome-sound-recorder
-gnome-text-editor
 gnome-themes-extra
+gnome-tweaks
 gparted
 gsmartcontrol
 gst-plugin-libcamera
