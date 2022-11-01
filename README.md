@@ -31,7 +31,7 @@ Ordem de uso dos scripts:
 - 1-initialconfig.sh (esse script deve ser executado com o comando sudo - `sudo ./initialconfig.sh`) 
 - 2-video-e-audio.sh
 - 3-pacotes.sh
-- 4-flatpake-e-fonte.sh
+- 4-flatpak-e-mc.sh
 - 5-yay.sh
 - 6-grid.sh
 - 7-extensions.sh
