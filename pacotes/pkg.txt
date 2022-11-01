@@ -68,6 +68,7 @@ man-pages
 man-pages-pt_br
 mc
 meld
+nautilus-image-converter
 neofetch
 nethogs
 net-tools
