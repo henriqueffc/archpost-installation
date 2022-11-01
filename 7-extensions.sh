@@ -19,12 +19,6 @@ echo -e "$AZUL AppIndicator and KStatusNotifierItem Support $FIM"
 aria2c https://github.com/ubuntu/gnome-shell-extension-appindicator/archive/refs/tags/v46.zip
 gnome-extensions install --force 'gnome-shell-extension-appindicator-46.zip'
 
-echo -e "$AZUL Sound Input & Output Device Chooser $FIM"
-git clone https://github.com/kgshank/gse-sound-output-device-chooser.git
-cp -r gse-sound-output-device-chooser/sound-output-device-chooser@kgshank.net .
-mv sound-output-device-chooser@kgshank.net $HOME/.local/share/gnome-shell/extensions
-rm -rf "gse-sound-output-device-chooser"
-
 echo -e "$AZUL Clipboard History $FIM" 
 aria2c https://github.com/SUPERCILEX/gnome-clipboard-history/archive/refs/tags/1.2.6.zip
 gnome-extensions install --force 'gnome-clipboard-history-1.2.6.zip'
