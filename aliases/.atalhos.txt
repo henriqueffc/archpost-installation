@@ -53,7 +53,7 @@ dic-en
 atalhos
 pacman.log
 search
-
+dirty
 
 
 
