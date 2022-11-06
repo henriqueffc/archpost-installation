@@ -54,7 +54,7 @@ atalhos
 pacman.log
 search
 dirty
-
+progress
 
 
 
