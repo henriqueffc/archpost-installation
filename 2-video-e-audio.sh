@@ -53,6 +53,6 @@ sudo systemctl enable fail2ban.service
 # Parâmetros do boot
 cp /boot/loader/entries/*.conf ~/
 sudo sed -i 's/intel_pstate=no_hwp/intel_pstate=active/g' /boot/loader/entries/*.conf
-sudo sed -i '$ { s/^.*$/& nowatchdog nvidia-drm.modeset=1 nvidia.NVreg_EnablePCIeGen3=1 nvidia.NVreg_UsePageAttributeTable=1 i915.enable_guc=2 i915.enable_fbc=1 nouveau.modeset=0 audit=1 audit_backlog_limit=320 lsm=landlock,lockdown,yama,integrity,apparmor,bpf/ }' /boot/loader/entries/*.conf
+sudo sed -i '$ { s/^.*$/& nowatchdog nvme_core.default_ps_max_latency_us=0 nvidia-drm.modeset=1 nvidia.NVreg_EnablePCIeGen3=1 nvidia.NVreg_UsePageAttributeTable=1 i915.enable_guc=2 i915.enable_fbc=1 nouveau.modeset=0 audit=1 audit_backlog_limit=320 lsm=landlock,lockdown,yama,integrity,apparmor,bpf/ }' /boot/loader/entries/*.conf
 
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
