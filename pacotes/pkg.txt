@@ -44,6 +44,7 @@ gnome-appfolders-manager
 gnome-info-collect
 gnome-nettool
 gnome-sound-recorder
+gnome-terminal
 gnome-themes-extra
 gnome-tweaks
 gparted
