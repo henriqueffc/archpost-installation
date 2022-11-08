@@ -102,6 +102,7 @@ thermald
 transmission-gtk
 trash-cli
 ufw
+veracrypt
 unrar
 unzip
 webp-pixbuf-loader
