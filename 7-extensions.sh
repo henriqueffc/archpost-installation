@@ -20,8 +20,8 @@ aria2c https://github.com/ubuntu/gnome-shell-extension-appindicator/archive/refs
 gnome-extensions install --force 'gnome-shell-extension-appindicator-46.zip'
 
 echo -e "$AZUL Clipboard History $FIM" 
-aria2c https://github.com/SUPERCILEX/gnome-clipboard-history/archive/refs/tags/1.2.6.zip
-gnome-extensions install --force 'gnome-clipboard-history-1.2.6.zip'
+aria2c https://github.com/SUPERCILEX/gnome-clipboard-history/archive/refs/tags/1.3.0.zip
+gnome-extensions install --force 'gnome-clipboard-history-1.3.0.zip'
 make -C $HOME/.local/share/gnome-shell/extensions/clipboard-history@alexsaveau.dev
 
 echo -e "$AZUL Fuzzy App Search for GNOME $FIM"
