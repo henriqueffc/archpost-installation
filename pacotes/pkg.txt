@@ -64,6 +64,7 @@ libreoffice
 libreoffice-fresh-pt-br
 libzip
 lm_sensors
+lshw
 man-db
 man-pages
 man-pages-pt_br
