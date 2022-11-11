@@ -26,3 +26,9 @@ gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folder
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Utilities/ apps "['org.gnome.Logs.desktop', 'gtk-lshw.desktop', 'org.gnome.baobab.desktop', 'org.gnome.DiskUtility.desktop', 'gsmartcontrol.desktop', 'kdiskmark.desktop', 'org.gnome.eog.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'htop.desktop', 'bssh.desktop', 'bvnc.desktop', 'avahi-discover.desktop', 'qvidcap.desktop', 'vim.desktop', 'qv4l2.desktop', 'remote-viewer.desktop', 'assistant.desktop', 'designer.desktop', 'qdbusviewer.desktop', 'electron19.desktop', 'linguist.desktop']"
 
 gsettings set org.gnome.desktop.app-folders folder-children "['Utilities', 'YaST', 'Office', 'Programas', 'Jogos', 'GNOME', 'Internet', 'Multimídia']"
+
+# Nautilus Bookmarks
+mkdir ~/ToDo/
+mkdir ~/Documentos/Projetos
+echo "file:///home/$USER/Documentos/Projetos 🎒 Projetos" >> ~/.config/gtk-3.0/bookmarks
+echo "file:///home/$USER/ToDo 🗒<fe0f> ToDo" >> ~/.config/gtk-3.0/bookmarks
