@@ -35,6 +35,7 @@ dados
 reflector
 xls
 xll
+xltree
 bat
 nvme
 nvme2
