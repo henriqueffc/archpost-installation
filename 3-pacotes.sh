@@ -61,6 +61,9 @@ sudo mv ./service/cpupowerperf.* /etc/systemd/system
 sudo systemctl enable cpupowerperf.timer
 echo -e "$AZUL \t CPU Power Performance.timer habilitado $FIM"
 
+# Remover o Powerprofilesctl 
+sudo pacman -R power-profiles-daemon
+
 echo -e "$AZUL
 -------------------------------------------------------------------------
                       Restante das configurações
