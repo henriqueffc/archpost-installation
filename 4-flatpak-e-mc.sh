@@ -48,6 +48,7 @@ flatpak install flathub org.zotero.Zotero -y
 flatpak install flathub com.usebottles.bottles -y
 flatpak install flathub net.lutris.Lutris -y
 flatpak install flathub org.freedesktop.Platform.VulkanLayer.MangoHud -y
+flatpak install flathub org.gnome.Games -y
 
 # Flatpak Remote-Beta
 
