@@ -6,7 +6,7 @@ alias atualizar="flatpak update && flatpak remove --unused && sudo pacman -Syu &
 alias omz="git -C ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k pull && omz update"
 alias limpar="sudo paccache -rk1 && yay -Yc"
 alias dados="yay -Ps"
-alias reflector="sudo reflector -l 10 -c Brazil -a 12 -p https -p http --sort rate --save /etc/pacman.d/mirrorlist && sudo pacman -Syy"
+alias reflector="sudo reflector -l 10 -c Brazil -a 12 -p https -p http --sort rate --save /etc/pacman.d/mirrorlist && sudo pacman -Syu"
 alias xls="exa -a --icons --color=always --group-directories-first"
 alias xll="exa -lag --icons --color=always --group-directories-first --octal-permissions"
 alias xltree="exa -la --icons --color=always --group-directories-first --octal-permissions --header --tree"
