@@ -43,7 +43,6 @@ flatpak install flathub com.mattjakeman.ExtensionManager -y
 flatpak install flathub org.gtk.Gtk3theme.Adwaita-dark -y
 flatpak install flathub com.github.huluti.Curtail -y
 flatpak install flathub de.haeckerfelix.Shortwave -y
-flatpak install flathub com.github.micahflee.torbrowser-launcher -y
 flatpak install flathub org.zotero.Zotero -y
 flatpak install flathub com.usebottles.bottles -y
 flatpak install flathub net.lutris.Lutris -y
