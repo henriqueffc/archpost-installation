@@ -101,6 +101,7 @@ seahorse
 steam
 texinfo
 thermald
+torbrowser-launcher
 transmission-gtk
 trash-cli
 ufw
