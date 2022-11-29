@@ -24,8 +24,8 @@ copypath = copia o pwd para o clipboard.
 
 #### ALIAS ####
 
-install
-remove
+instalar
+remover
 rede
 ubuntu
 stop-ubuntu
