@@ -4,4 +4,5 @@ pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
+pipewire-v4l2
 wireplumber
