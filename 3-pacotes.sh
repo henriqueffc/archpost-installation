@@ -73,6 +73,15 @@ $FIM"
 # Grupos
 sudo usermod -aG libvirt "$USERNAME"
 
+#Virt-manager
+sudo cp /etc/libvirt/qemu.conf /etc/libvirt/qemu.conf.bak
+sudo sed -i 's|#user = "libvirt-qemu"|user = "'$USER'"|g' /etc/libvirt/qemu.conf
+sudo sed -i 's|#group = "libvirt-qemu"|group = "'$USER'"|g' /etc/libvirt/qemu.conf
+sudo cp /etc/libvirt/libvirtd.conf /etc/libvirt/libvirtd.conf.bak
+sudo sed -i 's|#unix_sock_ro_perms = "0777"|unix_sock_ro_perms = "0777"|g' /etc/libvirt/libvirtd.conf
+sudo sed -i 's|#unix_sock_rw_perms = "0770"|unix_sock_rw_perms = "0770"|g' /etc/libvirt/libvirtd.conf
+sudo sed -i 's|#unix_sock_group = "libvirt"|unix_sock_group = "libvirt"|g' /etc/libvirt/libvirtd.conf
+
 # Appimage e outros
 aria2c -d ~/Downloads -i ./urls/urls.txt
 aria2c -d ~/Downloads https://github.com/upscayl/upscayl/releases/download/v1.5.5/Upscayl-1.5.5.AppImage -o Upscayl.AppImage
