@@ -14,15 +14,12 @@ FIM='\e[0m'
 # Localhost
 cp /etc/hosts /etc/hosts.bak
 line=$(cat /etc/hostname)
-echo '127.0.0.1 localhost' >>/etc/hosts
-echo '::1       localhost' >>/etc/hosts
-echo "127.0.1.1 $line.localdomain $line" >>/etc/hosts
+echo -e "127.0.0.1\tlocalhost\n::1\t\t\tlocalhost\n127.0.1.1\t$line.localdomain\t$line" >>/etc/hosts 
 
 # Visudo
 cp /etc/sudoers /etc/sudoers.bak
 sed -i '/# %wheel ALL=(ALL:ALL) ALL/c\%wheel ALL=(ALL:ALL) ALL' /etc/sudoers
-echo '# Defaults specification' >>/etc/sudoers
-echo 'Defaults editor=/usr/bin/nano' >>/etc/sudoers
+echo -e "# Defaults specification\nDefaults editor=/usr/bin/nano" >>/etc/sudoers
 
 # Caso queira o vim ao invés do nano, comente (#) a linha acima e descomente a linha abaixo.
 # echo 'Defaults editor=/usr/bin/vim' >>/etc/sudoers
