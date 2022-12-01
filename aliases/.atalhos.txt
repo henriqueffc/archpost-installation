@@ -59,7 +59,7 @@ pacman.log
 search
 dirty
 progress
-
+extract
 
 
 #### TERMINAL ####
