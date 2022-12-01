@@ -103,6 +103,7 @@ else
 			echo 'source ~/.bash_aliases' >>~/.zshrc
 			echo "export EDITOR='nano'" >>~/.zshrc
 			git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+			cat ./zsh/extract.txt >>~/.zshrc
 			echo -e "$AZUL Instalação concluida. Reinicie o terminal para configurar o Powerlevel10K. $FIM"
 			break
 			;;
