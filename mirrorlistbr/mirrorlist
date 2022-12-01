@@ -5,3 +5,4 @@ Server = https://mirror.cmt.de/archlinux/$repo/os/$arch
 Server = http://mirrors.rit.edu/archlinux/$repo/os/$arch
 ## Brazil
 Server = http://archlinux.c3sl.ufpr.br/$repo/os/$arch
+Server = http://mirror.ufscar.br/archlinux/$repo/os/$arch
