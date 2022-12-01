@@ -11,9 +11,11 @@ bitwarden
 bluez-utils
 breeze
 bat
+cabextract
 chromium
 cmatrix
 coreutils
+cpio
 cpupower
 curl
 d-feet
@@ -106,6 +108,7 @@ transmission-gtk
 trash-cli
 ufw
 veracrypt
+unace
 unrar
 unzip
 webp-pixbuf-loader
@@ -123,5 +126,6 @@ xdg-desktop-portal-gtk
 xdg-utils
 xorg-xdpyinfo
 xorg-xkill
+zenity
 zip
 zsh
