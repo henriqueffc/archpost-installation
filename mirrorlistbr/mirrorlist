@@ -1,10 +1,7 @@
-## Sweden
-Server = https://mirror.osbeck.com/archlinux/$repo/os/$arch
 ## Germany
-Server = http://phinau.de/arch/$repo/os/$arch
-Server = https://phinau.de/arch/$repo/os/$arch
+Server = http://ftp.halifax.rwth-aachen.de/archlinux/$repo/os/$arch
+Server = https://mirror.cmt.de/archlinux/$repo/os/$arch
+## United States
+Server = http://mirrors.rit.edu/archlinux/$repo/os/$arch
 ## Brazil
-Server = http://archlinux-br.com.br/archlinux/$repo/os/$arch
-Server = https://archlinux-br.com.br/archlinux/$repo/os/$arch
 Server = http://archlinux.c3sl.ufpr.br/$repo/os/$arch
-Server = http://mirror.ufscar.br/archlinux/$repo/os/$arch
