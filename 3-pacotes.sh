@@ -61,7 +61,7 @@ sudo mv ./service/cpupowerperf.* /etc/systemd/system
 sudo systemctl enable cpupowerperf.timer
 echo -e "$AZUL \t CPU Power Performance.timer habilitado $FIM"
 
-# Remover o Powerprofilesctl 
+# Remover o Powerprofilesctl
 sudo pacman -R power-profiles-daemon
 
 echo -e "$AZUL
@@ -142,7 +142,7 @@ gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
 # Tema para os aplicativos legados GNOME 43
 gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
 
-# Tema dos ícones 
+# Tema dos ícones
 gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
 
 # Mostrar porcentagem da bateria na top bar
@@ -193,7 +193,7 @@ gsettings set org.gnome.software first-run false
 # Mutter
 gsettings set org.gnome.mutter experimental-features '["kms-modifiers"]'
 
-# Desabilitar a suspensão do notebook quando a tela do dispositivo é fechada. 
+# Desabilitar a suspensão do notebook quando a tela do dispositivo é fechada.
 # primeira opção (habilitada) precisa do Gnome Tweaks instalado no sistema e desabilita somente para o usuário.
 # segunda (comentada) desabilita para todo o sistema e não precisa do Gnome Tweaks instalado.
 mv ./autostart/ignore-lid-switch-tweak.desktop ~/.config/autostart

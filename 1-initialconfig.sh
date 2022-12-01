@@ -14,7 +14,7 @@ FIM='\e[0m'
 # Localhost
 cp /etc/hosts /etc/hosts.bak
 line=$(cat /etc/hostname)
-echo -e "127.0.0.1\tlocalhost\n::1\t\t\tlocalhost\n127.0.1.1\t$line.localdomain\t$line" >>/etc/hosts 
+echo -e "127.0.0.1\tlocalhost\n::1\t\t\tlocalhost\n127.0.1.1\t$line.localdomain\t$line" >>/etc/hosts
 
 # Visudo
 cp /etc/sudoers /etc/sudoers.bak
@@ -68,7 +68,6 @@ nv=$(nproc --ignore=2)
 sed -i "s/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j$nv\"/g" /etc/makepkg.conf
 sed -i 's/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -z --threads=0 -)/g' /etc/makepkg.conf
 sed -i 's/COMPRESSZST=(zstd -c -z -q -)/COMPRESSZST=(zstd -c -z -q --threads=0 -)/g' /etc/makepkg.conf
- 
 
 # Mirrorlist
 echo -e "$AZUL

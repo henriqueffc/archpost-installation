@@ -30,5 +30,5 @@ gsettings set org.gnome.desktop.app-folders folder-children "['Utilities', 'YaST
 # Nautilus Bookmarks
 mkdir ~/ToDo/
 mkdir ~/Documentos/Projetos
-echo "file:///home/$USER/Documentos/Projetos 🎒 Projetos" >> ~/.config/gtk-3.0/bookmarks
-echo "file:///home/$USER/ToDo 🗒<fe0f> ToDo" >> ~/.config/gtk-3.0/bookmarks
+echo "file:///home/$USER/Documentos/Projetos 🎒 Projetos" >>~/.config/gtk-3.0/bookmarks
+echo "file:///home/$USER/ToDo 🗒<fe0f> ToDo" >>~/.config/gtk-3.0/bookmarks
