@@ -64,6 +64,12 @@ echo -e "$AZUL \t CPU Power Performance.timer habilitado $FIM"
 # Remover o Powerprofilesctl
 sudo pacman -R power-profiles-daemon
 
+### tealdeer (implementação do tldr)
+tldr --update
+tldr --seed-config
+cp ~/.config/tealdeer/config.toml ~/.config/tealdeer/config.toml.bak
+sed -i 's|auto_update = false|auto_update = true|g' ~/.config/tealdeer/config.toml
+
 echo -e "$AZUL
 -------------------------------------------------------------------------
                       Restante das configurações
