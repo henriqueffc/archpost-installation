@@ -102,6 +102,7 @@ rsync
 seahorse
 soundconverter
 steam
+tealdeer
 texinfo
 thermald
 torbrowser-launcher
