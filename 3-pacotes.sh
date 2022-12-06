@@ -196,6 +196,10 @@ gsettings set org.gnome.desktop.interface font-antialiasing rgba
 gsettings set org.gnome.software download-updates false
 gsettings set org.gnome.software first-run false
 
+#Privacy
+gsettings set org.gnome.desktop.privacy remove-old-trash-files true
+gsettings set org.gnome.desktop.privacy old-files-age "3"
+
 # Mutter
 gsettings set org.gnome.mutter experimental-features '["kms-modifiers"]'
 
