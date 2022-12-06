@@ -64,7 +64,7 @@ echo -e "$AZUL \t CPU Power Performance.timer habilitado $FIM"
 # Remover o Powerprofilesctl
 sudo pacman -R power-profiles-daemon
 
-### tealdeer (implementação do tldr)
+# tealdeer (implementação do tldr)
 tldr --update
 tldr --seed-config
 cp ~/.config/tealdeer/config.toml ~/.config/tealdeer/config.toml.bak
@@ -79,7 +79,7 @@ $FIM"
 # Grupos
 sudo usermod -aG libvirt "$USERNAME"
 
-#Virt-manager
+# Virt-manager
 sudo cp /etc/libvirt/qemu.conf /etc/libvirt/qemu.conf.bak
 sudo sed -i 's|#user = "libvirt-qemu"|user = "'$USER'"|g' /etc/libvirt/qemu.conf
 sudo sed -i 's|#group = "libvirt-qemu"|group = "'$USER'"|g' /etc/libvirt/qemu.conf
@@ -196,7 +196,7 @@ gsettings set org.gnome.desktop.interface font-antialiasing rgba
 gsettings set org.gnome.software download-updates false
 gsettings set org.gnome.software first-run false
 
-#Privacy
+# Privacy
 gsettings set org.gnome.desktop.privacy remove-old-trash-files true
 gsettings set org.gnome.desktop.privacy old-files-age "3"
 
