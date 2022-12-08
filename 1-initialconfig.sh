@@ -75,8 +75,8 @@ echo -e "$AZUL
                         Alterando o mirrorlist
 -------------------------------------------------------------------------
 $FIM"
-mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
-mv ./mirrorlistbr/mirrorlist /etc/pacman.d/
+cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
+cat ./mirrorlistbr/mirrorlist >/etc/pacman.d/mirrorlist
 pacman -Syu
 
 # Intel - i915 / mkinitcpio.conf
