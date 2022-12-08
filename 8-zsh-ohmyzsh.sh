@@ -25,7 +25,7 @@ else
 		read -r resposta
 		case "$resposta" in
 		s | S | "")
-			sudo pacman -S zsh --needed
+			sudo pacman -S zsh --needed --noconfirm
 			chsh -s /bin/zsh
 			echo -e "$AZUL Reiniciando a sessão em 3... $FIM" && sleep 1
 			echo -e "$AZUL Reiniciando a sessão em 2... $FIM" && sleep 1
@@ -60,7 +60,7 @@ else
 			echo -e "$AZUL Começando em 3... $FIM" && sleep 1
 			echo -e "$AZUL Começando em 2... $FIM" && sleep 1
 			echo -e "$AZUL Começando em 1... $FIM" && sleep 1
-			sudo pacman -S ttf-nerd-fonts-symbols-2048-em ttf-fira-code ttf-jetbrains-mono --needed
+			sudo pacman -S ttf-nerd-fonts-symbols-2048-em ttf-fira-code ttf-jetbrains-mono --needed --noconfirm
 			sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 			exit
 			break
@@ -91,7 +91,7 @@ else
 			echo -e "$AZUL Começando em 3... $FIM" && sleep 1
 			echo -e "$AZUL Começando em 2... $FIM" && sleep 1
 			echo -e "$AZUL Começando em 1... $FIM" && sleep 1
-			sudo pacman -S gawk --needed
+			sudo pacman -S gawk --needed --noconfirm
 			git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 			git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 			git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
