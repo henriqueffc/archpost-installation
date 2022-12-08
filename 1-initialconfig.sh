@@ -14,7 +14,7 @@ FIM='\e[0m'
 # Localhost
 cp /etc/hosts /etc/hosts.bak
 line=$(cat /etc/hostname)
-echo -e "127.0.0.1\tlocalhost\n::1\t\t\tlocalhost\n127.0.1.1\t$line.localdomain\t$line" >>/etc/hosts
+echo -e "127.0.0.1\tlocalhost\n::1\t\tlocalhost\n127.0.1.1\t$line.localdomain\t$line" >>/etc/hosts
 
 # Visudo
 cp /etc/sudoers /etc/sudoers.bak
