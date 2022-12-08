@@ -249,7 +249,7 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/']"
 
 # Mlocate
-sudo pacman -S --needed mlocate
+sudo pacman -S mlocate --needed --noconfirm
 sudo updatedb
 echo -e "$AZUL \t Mlocate habilitado $FIM"
 
