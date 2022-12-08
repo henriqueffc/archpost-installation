@@ -33,7 +33,7 @@ sudo pacman --needed -S - <./pacotes/pipewire.txt
 sudo pacman --needed -S - <./pacotes/pkg-audio.txt
 
 # Apparmor
-sudo pacman -S --needed apparmor python-notify2 python-psutil audit
+sudo pacman -S apparmor python-notify2 python-psutil audit --needed --noconfirm
 sudo systemctl enable apparmor.service
 sudo systemctl enable auditd.service
 sudo cp /etc/audit/auditd.conf /etc/audit/auditd.conf.bak
@@ -46,7 +46,7 @@ sudo sed -i '/#write-cache/c\write-cache' /etc/apparmor/parser.conf
 sudo ln -s /dev/null /etc/udev/rules.d/61-gdm.rules
 
 # Fail2ban
-sudo pacman -S fail2ban --needed
+sudo pacman -S fail2ban --needed --noconfirm
 sudo mv ./fail2ban/jail.local /etc/fail2ban
 sudo systemctl enable fail2ban.service
 
