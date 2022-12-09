@@ -25,7 +25,7 @@ sudo pacman -S flatpak --needed --noconfirm
 flatpak install flathub org.gimp.GIMP -y
 flatpak install flathub com.calibre_ebook.calibre -y
 flatpak install flathub net.davidotek.pupgui2 -y
-flatpak install flathub org.flozz.yoga-image-optimizer -y
+flatpak install flathub io.gitlab.adhami3310.Converter -y
 flatpak install flathub org.gtkhash.gtkhash -y
 flatpak install flathub com.github.rajsolai.textsnatcher -y
 flatpak install flathub com.github.tchx84.Flatseal -y
