@@ -50,6 +50,7 @@ flatpak install flathub com.usebottles.bottles -y
 flatpak install flathub net.lutris.Lutris -y
 flatpak install flathub org.freedesktop.Platform.VulkanLayer.MangoHud -y
 flatpak install flathub org.gnome.Games -y
+flatpak install flathub io.github.Foldex.AdwSteamGtk -y
 
 # Flatpak Remote-Beta
 
