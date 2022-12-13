@@ -103,7 +103,6 @@ else
 			linenumber=$((linenumber - 1))
 			sed -i "${linenumber}i fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src" ~/.zshrc
 			echo 'source ~/.bash_aliases' >>~/.zshrc
-			echo 'source ~/.profile' >>~/.zshrc
 			echo "export EDITOR='nano'" >>~/.zshrc
 			git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 			cat ./zsh/extract.txt >>~/.zshrc
