@@ -135,9 +135,13 @@ sudo systemctl restart systemd-journald.service
 sudo journalctl --vacuum-size=100M
 sudo journalctl --vacuum-time=2weeks
 
+# Pasta ~/bin para o $PATH
+mkdir $HOME/bin
+
 # Variáveis
 cp ~/.bashrc ~/.bashrc.bak
-echo 'source ~/.bash_aliases' >>~/.bashrc
+echo '\nsource ~/.bash_aliases' >>~/.bashrc
+echo '\nif [ -d "$HOME/bin" ] ; then\nPATH="$HOME/bin:$PATH"\nfi' >>~/.bashrc
 
 echo -e "$AZUL Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 1 $FIM" && sleep 1
 echo -e "$AZUL Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 2 $FIM" && sleep 1
