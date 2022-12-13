@@ -106,6 +106,7 @@ else
 			echo "export EDITOR='nano'" >>~/.zshrc
 			git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 			cat ./zsh/extract.txt >>~/.zshrc
+			sed -i 's|# export PATH=$HOME/bin:/usr/local/bin:$PATH|export PATH=$HOME/bin:$PATH|g' ~/.zshrc
 			echo -e "$AZUL Instalação concluida. Caso considere necessário para uma melhor vizualização dos caracteres substitua a fonte do terminal pela fonte JetBrains Mono NL. Reinicie o terminal para configurar o Powerlevel10K. $FIM"
 			break
 			;;
