@@ -56,6 +56,7 @@ gst-plugin-libcamera
 gufw
 i7z
 intel-gpu-tools
+inxi
 jre-openjdk
 kdegraphics-mobipocket
 kdenlive
