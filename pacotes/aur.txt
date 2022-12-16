@@ -3,7 +3,6 @@ downgrade
 dropbox
 goverlay-bin
 heroic-games-launcher-bin
-inxi
 lib32-mangohud
 mangohud
 mangohud-common
