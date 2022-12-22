@@ -1,0 +1,13 @@
+[Trigger]
+Operation = Upgrade
+Operation = Install
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+Description = Find .pacnews and .pacsaves 
+When = PostTransaction
+Exec = /usr/bin/locate --existing --regex "\.pac(new|save)$"
+Depends = mlocate
+
