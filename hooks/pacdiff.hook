@@ -1,13 +1,11 @@
 [Trigger]
-Operation = Upgrade
-Operation = Install
-Operation = Remove
-Type = Package
-Target = *
+Operation=Upgrade
+Operation=Install
+Operation=Remove
+Type=Package
+Target=*
 
 [Action]
-Description = Find .pacnews and .pacsaves 
-When = PostTransaction
-Exec = /usr/bin/locate --existing --regex "\.pac(new|save)$"
-Depends = mlocate
-
+Description=Searching for pacnew and pacsave files
+When=PostTransaction
+Exec=/usr/bin/bash -c "/usr/bin/find /etc -regextype posix-extended -regex '.+\.pac(new|save)' 2> /dev/null"
