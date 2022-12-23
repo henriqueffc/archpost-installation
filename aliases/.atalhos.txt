@@ -24,6 +24,8 @@ copypath = copia o pwd para o clipboard.
 
 #### ALIAS ####
 
+archnews
+yaycache
 mirror
 instalar
 remover
