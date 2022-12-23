@@ -1,5 +1,5 @@
 alias archnews="yay -Pw"
-alias yaycache="paccache -rk1 -c ~/.cache/yay/*/ && paccache -ruk0 ~/.cache/yay/*/"
+alias yaycache="paccache -rk1 -c ~/.cache/yay/*/ && paccache -ruk0 -c ~/.cache/yay/*/"
 alias rede="sudo nethogs -p"
 alias ubuntu="distrobox enter ubuntu"
 alias stop-ubuntu="distrobox stop ubuntu"
