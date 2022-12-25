@@ -90,7 +90,7 @@ sudo sed -i 's|#unix_sock_group = "libvirt"|unix_sock_group = "libvirt"|g' /etc/
 
 # Appimage e outros
 aria2c -d ~/Downloads -i ./urls/urls.txt
-aria2c -d ~/Downloads https://github.com/upscayl/upscayl/releases/download/v1.5.5/Upscayl-1.5.5.AppImage -o Upscayl.AppImage
+aria2c -d ~/Downloads https://github.com/upscayl/upscayl/releases/download/v2.0.0/upscayl-2.0.0-linux.AppImage -o Upscayl.AppImage
 mkdir /home/$USER/Applications
 mv ~/Downloads/*.AppImage /home/$USER/Applications
 chmod +x /home/$USER/Applications/*.AppImage
