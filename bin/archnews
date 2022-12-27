@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+AZUL='\e[1;34m'
+FIM='\e[0m'
+
+echo -e "$AZUL
+-------------------------------------------------------------------------
+                       Verificando notícias
+-------------------------------------------------------------------------
+$FIM"
+
+output="$(yay -Pw)"
+
+if [[ -n $output ]]; then
+    printf "%s\n" "$output"
+else
+    printf "Não há novas notícias\n"
+fi

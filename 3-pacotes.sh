@@ -143,6 +143,10 @@ cp ~/.bashrc ~/.bashrc.bak
 echo '\nsource ~/.bash_aliases' >>~/.bashrc
 echo '\nif [ -d "$HOME/bin" ] ; then\nPATH="$HOME/bin:$PATH"\nfi' >>~/.bashrc
 
+## Copiar o script archnews para a pasta ~/bin
+mv ./bin/archnews ~/bin
+chmod +x ~/bin/archnews
+
 echo -e "$AZUL Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 1 $FIM" && sleep 1
 echo -e "$AZUL Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 2 $FIM" && sleep 1
 echo -e "$AZUL Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 3 $FIM" && sleep 1
