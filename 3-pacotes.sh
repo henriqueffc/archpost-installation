@@ -147,6 +147,11 @@ echo '\nif [ -d "$HOME/bin" ] ; then\nPATH="$HOME/bin:$PATH"\nfi' >>~/.bashrc
 mv ./bin/archnews ~/bin
 chmod +x ~/bin/archnews
 
+## Tema dos ícones Kora
+git clone https://github.com/bikass/kora.git
+sudo cp -r ./kora/kora /usr/share/icons/
+rm -rf kora
+
 echo -e "$AZUL Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 1 $FIM" && sleep 1
 echo -e "$AZUL Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 2 $FIM" && sleep 1
 echo -e "$AZUL Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 3 $FIM" && sleep 1
@@ -157,7 +162,7 @@ gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
 gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
 
 # Tema dos ícones
-gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
+gsettings set org.gnome.desktop.interface icon-theme "kora"
 
 # Mostrar porcentagem da bateria na top bar
 gsettings set org.gnome.desktop.interface show-battery-percentage true
