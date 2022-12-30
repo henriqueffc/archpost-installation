@@ -54,6 +54,7 @@ gparted
 gsmartcontrol
 gst-plugin-libcamera
 gufw
+hwloc
 i7z
 intel-gpu-tools
 inxi
