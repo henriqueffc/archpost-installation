@@ -170,6 +170,13 @@ gsettings set org.gnome.desktop.interface show-battery-percentage true
 # Comportamento do botão de energia - Desligar
 gsettings set org.gnome.settings-daemon.plugins.power power-button-action interactive
 
+# Nautilus
+gsettings set org.gnome.nautilus.icon-view captions "['size', 'permissions', 'detailed_type']"
+gsettings set org.gtk.gtk4.Settings.FileChooser sort-directories-first true
+
+# File-chooser gtk3
+gsettings set org.gtk.Settings.FileChooser sort-directories-first true
+
 # Desabilitar a redução do brilho da tela quando o computador está inativo
 gsettings set org.gnome.settings-daemon.plugins.power idle-dim false
 
