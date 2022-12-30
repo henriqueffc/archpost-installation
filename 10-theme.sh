@@ -23,8 +23,8 @@ if test -f "/usr/bin/flatpak"; then
 	sudo flatpak override --filesystem=xdg-config/gtk-4.0
 
 	# adw-gtk3
-	wget https://github.com/lassekongo83/adw-gtk3/releases/download/v4.1/adw-gtk3v4-1.tar.xz
-	sudo tar -xf adw-gtk3v4-1.tar.xz -C /usr/share/themes
+	wget https://github.com/lassekongo83/adw-gtk3/releases/download/v4.2/adw-gtk3v4-2.tar.xz
+	sudo tar -xf adw-gtk3v4-2.tar.xz -C /usr/share/themes
 	gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark'
 	flatpak install org.gtk.Gtk3theme.adw-gtk3 org.gtk.Gtk3theme.adw-gtk3-dark -y
 	sudo flatpak override --filesystem=xdg-config/gtk-3.0
