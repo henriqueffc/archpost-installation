@@ -143,9 +143,11 @@ cp ~/.bashrc ~/.bashrc.bak
 echo '\nsource ~/.bash_aliases' >>~/.bashrc
 echo '\nif [ -d "$HOME/bin" ] ; then\nPATH="$HOME/bin:$PATH"\nfi' >>~/.bashrc
 
-## Copiar o script archnews para a pasta ~/bin
+## Copiar scripts para a pasta ~/bin
 mv ./bin/archnews ~/bin
+mv ./bin/iommu ~/bin
 chmod +x ~/bin/archnews
+chmod +x ~/bin/iommu
 
 ## Tema dos ícones Kora
 git clone https://github.com/bikass/kora.git
