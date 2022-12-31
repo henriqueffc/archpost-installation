@@ -29,3 +29,12 @@ echo "file:///home/$USER/Dropbox 🗃 Dropbox" >> ~/.config/gtk-3.0/bookmarks
 
 ## 8 - Para o controle Multilaser JS091 (Shanwan Controler) funcionar instale a atualização para o Xpad disponível no site abaixo.
 https://github.com/paroj/xpad
+
+
+## 9 - Distrobox - Atalho para o terminal (gnome-terminal)
+No terminal acesse Preferências - Criar um novo perfil - Comando - na opção Comando personalizado (marque a opção Executar um comando personalizado ...) digite: distrobox enter ubuntu  
+Mude as cores do perfil para especificar a diferença de uso do terminal.
+Crie um atalho personalizado em configurações - Teclado - Atalhos de teclado
+Nome : terminal ubuntu
+Comando : gnome-terminal --profile=ubuntu
+Atalho : Super + U
