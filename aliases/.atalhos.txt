@@ -31,6 +31,7 @@ remover
 rede
 ubuntu
 stop-ubuntu
+update-ubuntu
 neo
 atualizar
 omz
