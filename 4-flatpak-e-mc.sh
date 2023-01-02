@@ -51,6 +51,7 @@ flatpak install flathub net.lutris.Lutris -y
 flatpak install flathub org.freedesktop.Platform.VulkanLayer.MangoHud -y
 flatpak install flathub org.gnome.Games -y
 flatpak install flathub io.github.Foldex.AdwSteamGtk -y
+flatpak install flathub io.podman_desktop.PodmanDesktop -y
 
 # Flatpak Remote-Beta
 
