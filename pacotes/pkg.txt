@@ -29,6 +29,7 @@ ebook-tools
 eog-plugins
 espeak-ng
 exa
+fd
 firefox
 firefox-i18n-pt-br
 firejail
