@@ -8,4 +8,4 @@ Target=*
 [Action]
 Description=Searching for pacnew and pacsave files
 When=PostTransaction
-Exec=/usr/bin/bash -c "/usr/bin/find /etc -regextype posix-extended -regex '.+\.pac(new|save)' 2> /dev/null"
+Exec=/usr/bin/bash -c "/usr/bin/fd --regex '.+\.pac(new|save)' /etc 2> /dev/null"
