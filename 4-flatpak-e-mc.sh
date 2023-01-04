@@ -52,6 +52,7 @@ flatpak install flathub org.freedesktop.Platform.VulkanLayer.MangoHud -y
 flatpak install flathub org.gnome.Games -y
 flatpak install flathub io.github.Foldex.AdwSteamGtk -y
 flatpak install flathub io.podman_desktop.PodmanDesktop -y
+flatpak install flathub com.github.PintaProject.Pinta -y
 
 # Flatpak Remote-Beta
 
