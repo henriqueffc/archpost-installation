@@ -23,7 +23,6 @@ dconf-editor
 dialog
 discount
 djvulibre
-drawing
 duf
 ebook-tools
 eog-plugins
