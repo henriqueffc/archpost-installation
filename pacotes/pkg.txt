@@ -11,6 +11,7 @@ bitwarden
 bluez-utils
 breeze
 bat
+bat-extras
 cabextract
 chromium
 cmatrix
@@ -98,6 +99,7 @@ qt5-wayland
 qt6-wayland
 rebuild-detector
 reflector
+ripgrep
 rkhunter
 rmlint
 rsync
