@@ -7,6 +7,7 @@ intel-media-sdk
 intel-ucode
 lib32-mesa
 lib32-nvidia-utils
+lib32-opencl-nvidia
 libva
 libva-utils
 libvdpau
