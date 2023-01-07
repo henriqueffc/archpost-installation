@@ -76,6 +76,7 @@ man-pages
 man-pages-pt_br
 mc
 meld
+mpv
 nautilus-image-converter
 neofetch
 nethogs
@@ -133,6 +134,7 @@ xdg-desktop-portal-gtk
 xdg-utils
 xorg-xdpyinfo
 xorg-xkill
+yt-dlp
 zenity
 zip
 zsh
