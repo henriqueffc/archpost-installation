@@ -24,6 +24,9 @@ copypath = copia o pwd para o clipboard.
 
 #### ALIAS ####
 
+mpv
+mpvnvidia
+mpvnovideo
 yaycache
 mirror
 instalar
