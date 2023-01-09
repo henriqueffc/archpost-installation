@@ -1,3 +1,6 @@
+alias mpv="mpv --hwdec=auto --hwdec-codecs=all --vo=gpu --ytdl-format='((bestvideo[height<=?1080][vcodec^=vp9]/bestvideo)+(bestaudio[acodec=opus]/bestaudio[acodec=vorbis]/bestaudio[acodec=aac]/bestaudio))/best' --autofit-larger=60%x60% --save-position-on-quit"
+alias mpvnvidia="prime-run mpv --hwdec=auto --hwdec-codecs=all --vo=gpu --ytdl-format='((bestvideo[height<=?1080][vcodec^=h264]/bestvideo)+(bestaudio[acodec=opus]/bestaudio[acodec=vorbis]/bestaudio[acodec=aac]/bestaudio))/best' --autofit-larger=60%x60% --save-position-on-quit"
+alias mpvnovideo="mpv --vid=no --ytdl-format='(bestaudio[acodec=opus]/bestaudio[acodec=vorbis]/bestaudio[acodec=aac]/bestaudio)/best' --save-position-on-quit"
 alias yaycache="paccache -rk1 -c ~/.cache/yay/*/ && paccache -ruk0 -c ~/.cache/yay/*/"
 alias rede="sudo nethogs -p"
 alias ubuntu="distrobox enter ubuntu"
