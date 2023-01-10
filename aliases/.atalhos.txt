@@ -25,7 +25,8 @@ copypath = copia o pwd para o clipboard.
 #### ALIAS ####
 
 mpv
-mpvnvidia
+mpv-yt
+mpv-yt-nv
 mpvnovideo
 yaycache
 mirror
