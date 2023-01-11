@@ -50,6 +50,7 @@ echo 'PROTON_ENABLE_NGX_UPDATER=1' >>/etc/environment
 echo 'blacklist pcspkr' >/etc/modprobe.d/nobeep.conf
 
 # NANO - Line number e syntax-highlighting
+pacman -Syu nano --needed --noconfirm
 cp /etc/nanorc /etc/nanorc.bak
 sed -i 's/# set linenumbers/\set linenumbers/' /etc/nanorc
 sed -i 's/# set speller "aspell -x -c"/\set speller "aspell -x -c"/' /etc/nanorc
