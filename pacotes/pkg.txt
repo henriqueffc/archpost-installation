@@ -92,6 +92,7 @@ p7zip
 pacman-contrib
 pandoc
 papirus-icon-theme
+pkgfile
 pkgstats
 polari
 progress
