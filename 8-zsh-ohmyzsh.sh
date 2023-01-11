@@ -91,7 +91,7 @@ else
 			echo -e "$AZUL Começando em 3... $FIM" && sleep 1
 			echo -e "$AZUL Começando em 2... $FIM" && sleep 1
 			echo -e "$AZUL Começando em 1... $FIM" && sleep 1
-			sudo pacman -Syu gawk thefuck pkgfile git nano man-db man-pages man-pages-pt_br --needed --noconfirm
+			sudo pacman -Syu gawk thefuck pkgfile git nano xsel man-db man-pages man-pages-pt_br --needed --noconfirm
 			sudo pkgfile --update
 			sudo systemctl enable pkgfile-update.timer
 			git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
