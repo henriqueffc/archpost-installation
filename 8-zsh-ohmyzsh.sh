@@ -91,12 +91,14 @@ else
 			echo -e "$AZUL Começando em 3... $FIM" && sleep 1
 			echo -e "$AZUL Começando em 2... $FIM" && sleep 1
 			echo -e "$AZUL Começando em 1... $FIM" && sleep 1
-			sudo pacman -Syu gawk thefuck git nano man-db man-pages man-pages-pt_br --needed --noconfirm
+			sudo pacman -Syu gawk thefuck pkgfile git nano man-db man-pages man-pages-pt_br --needed --noconfirm
+			sudo pkgfile --update
+			sudo systemctl enable pkgfile-update.timer
 			git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 			git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 			git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
 			cp ~/.zshrc ~/.zshrc.bak
-			sed -i 's/plugins=(git)/\plugins=(git zsh-autosuggestions zsh-syntax-highlighting colored-man-pages thefuck copyfile copybuffer dirhistory web-search copypath history-substring-search)/' ~/.zshrc
+			sed -i 's/plugins=(git)/\plugins=(git zsh-autosuggestions zsh-syntax-highlighting colored-man-pages command-not-found thefuck copyfile copybuffer dirhistory web-search copypath history-substring-search)/' ~/.zshrc
 			sed -i 's|robbyrussell|powerlevel10k/powerlevel10k|' ~/.zshrc
 			sed -i '2 r./zsh/dracula.txt' ~/.zshrc
 			linenumber=$(grep -nr 'source' ~/.zshrc | gawk '{print $1}' FS=":")
