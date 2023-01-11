@@ -17,6 +17,7 @@ Abre o browser com a pesquisa do termo no site especificado. Lista com os mecani
 
 copypath = copia o pwd para o clipboard.
 
+thefuck = esc + esc - corrige o comando que foi digitado erroneamente
 
 
 
