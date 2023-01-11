@@ -143,8 +143,9 @@ mkdir $HOME/bin
 
 # Variáveis
 cp ~/.bashrc ~/.bashrc.bak
-echo '\nsource ~/.bash_aliases' >>~/.bashrc
-echo '\nif [ -d "$HOME/bin" ] ; then\nPATH="$HOME/bin:$PATH"\nfi' >>~/.bashrc
+echo -e '\nsource ~/.bash_aliases' >>~/.bashrc
+echo -e '\nif [ -d "$HOME/bin" ] ; then\nPATH="$HOME/bin:$PATH"\nfi' >>~/.bashrc
+echo -e '\nsource /usr/share/doc/pkgfile/command-not-found.bash' >>~/.bashrc
 
 # Copiar scripts para a pasta ~/bin
 mv ./bin/archnews ~/bin
