@@ -48,7 +48,7 @@ sudo ufw enable
 echo -e "$AZUL \t ufw.service habilitado $FIM"
 sudo pkgfile --update
 sudo systemctl enable pkgfile-update.timer
-echo -e "$AZUL \t pkgfile.service habilitado $FIM"
+echo -e "$AZUL \t pkgfile-update.timer habilitado $FIM"
 
 # Offpowersave
 sudo mv ./powersave/default-wifi-powersave-on.conf /etc/NetworkManager/conf.d
