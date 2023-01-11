@@ -37,6 +37,7 @@ firetools
 flatpak
 fwupd
 gamemode
+gawk
 ghex
 git
 glew
@@ -78,6 +79,7 @@ mc
 meld
 mpv
 nautilus-image-converter
+nano
 neofetch
 nethogs
 net-tools
@@ -110,6 +112,7 @@ soundconverter
 steam
 tealdeer
 texinfo
+thefuck
 thermald
 torbrowser-launcher
 transmission-gtk
