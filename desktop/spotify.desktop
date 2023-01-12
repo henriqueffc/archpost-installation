@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=Spotify distrobox
+Name=Spotify
+Exec=/usr/local/bin/distrobox-enter  -n ubuntu --   spotify  %U
+Terminal=false
+Type=Application
+Icon=spotify
