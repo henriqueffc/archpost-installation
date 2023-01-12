@@ -114,7 +114,7 @@ mv ./desktop/*.png ~/Imagens/Logo
 
 # Atalhos no Grid
 sed -i 's|user|'$USER'|g' ./desktop/upscayl.desktop
-mv ./desktop/*.desktop ~/.local/share/applications
+mv ./desktop/upscayl.desktop ~/.local/share/applications
 
 # Alias
 mv ./aliases/.bash_aliases ~/
