@@ -84,7 +84,7 @@ if test -f "/home/$USER/.p10k.zsh"; then
 else
 
 	while :; do
-		echo -ne "$VERDE Você quer instalar os plugins e o Powerlevel10k? Será habilitado também no .zshrc os aliases criados no arquivo ~/.bash_aliases. Plugins que serão instalados: zsh-autosuggestions, zsh-syntax-highlighting, colored-man-pages, command-not-found, universalarchive, thefuck, copyfile, copybuffer, dirhistory, web-search e copypath. Será instalado também o tema de cores para Zsh Drácula. $FIM $LVERDE (S) sim / (N) não $FIM"
+		echo -ne "$VERDE Você quer instalar os plugins e o Powerlevel10k? Será habilitado também no .zshrc os aliases criados no arquivo ~/.bash_aliases. Plugins que serão instalados: zsh-autosuggestions, zsh-syntax-highlighting, zsh-completions, colored-man-pages, command-not-found, universalarchive, thefuck, copyfile, copybuffer, dirhistory, web-search e copypath. Será instalado também o tema de cores para Zsh Drácula. $FIM $LVERDE (S) sim / (N) não $FIM"
 		read -r resposta
 		case "$resposta" in
 		s | S | "")
