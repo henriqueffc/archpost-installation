@@ -4,7 +4,7 @@ alias mpv-yt-nv="prime-run mpv --vo=gpu --hwdec=cuda --ytdl-format='((bestvideo[
 alias mpvnovideo="mpv --vid=no --save-position-on-quit"
 alias yaycache="paccache -rk1 -c ~/.cache/yay/*/ && paccache -ruk0 -c ~/.cache/yay/*/"
 alias rede="sudo nethogs -p"
-alias ubuntu="distrobox enter ubuntu"
+alias ubuntu="distrobox enter --name ubuntu -- bash -l"
 alias stop-ubuntu="distrobox stop ubuntu"
 alias update-ubuntu="distrobox-upgrade ubuntu"
 alias neo="neofetch --colors 4 3 5 7 1 2"
