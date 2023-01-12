@@ -45,5 +45,18 @@ $FIM"
 curl -s https://raw.githubusercontent.com/89luca89/distrobox/main/install | sudo sh
 distrobox-create --name ubuntu --image ubuntu:22.04
 sed -i 's/distrobox enter ubuntu/\distrobox enter --name ubuntu -- bash -l/' ~/.local/share/applications/ubuntu.desktop
+distrobox-enter ubuntu -- sudo apt update
+distrobox-enter ubuntu -- sudo apt -y upgrade
+distrobox-enter ubuntu -- sudo apt -y install neofetch nano exa bat ripgrep git thefuck tzdata curl wget
+distrobox-enter ubuntu -- wget https://github.com/wimpysworld/deb-get/releases/download/0.3.6/deb-get_0.3.6-1_all.deb
+distrobox-enter ubuntu -- sudo apt-get install ./deb-get_0.3.6-1_all.deb
+distrobox-enter ubuntu -- deb-get install spotify-client
+
+# Copiar script para a pasta ~/bin
+mv ./bin/update-ubuntu ~/bin
+chmod +x ~/bin/update-ubuntu
+
+# Atalho no Grid
+mv ./desktop/spotify.desktop ~/.local/share/applications
 
 printf "%s $VERDE Fim! Digite $FIM $LVERDE distrobox enter ubuntu $FIM $VERDE para completar a instalação. $FIM \n"
