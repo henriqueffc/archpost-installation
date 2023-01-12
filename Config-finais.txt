@@ -32,7 +32,7 @@ https://github.com/paroj/xpad
 
 
 ## 9 - Distrobox - Atalho para o terminal (gnome-terminal)
-No terminal acesse Preferências - Criar um novo perfil - Comando - na opção Comando personalizado (marque a opção Executar um comando personalizado ...) digite: distrobox enter ubuntu  
+No terminal acesse Preferências - Criar um novo perfil - Comando - na opção Comando personalizado (marque a opção Executar um comando personalizado ...) digite: distrobox-enter --name ubuntu -- bash -l  
 Mude as cores do perfil para especificar a diferença de uso do terminal.
 Crie um atalho personalizado em configurações - Teclado - Atalhos de teclado
 Nome : terminal ubuntu
