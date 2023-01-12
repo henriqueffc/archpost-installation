@@ -43,7 +43,7 @@ echo -e "$AZUL
 $FIM"
 
 curl -s https://raw.githubusercontent.com/89luca89/distrobox/main/install | sudo sh
-
 distrobox-create --name ubuntu --image ubuntu:22.04
+sed -i 's/distrobox enter ubuntu/\distrobox enter --name ubuntu -- bash -l/' ~/.local/share/applications/ubuntu.desktop
 
 printf "%s $VERDE Fim! Digite $FIM $LVERDE distrobox enter ubuntu $FIM $VERDE para completar a instalação. $FIM \n"
