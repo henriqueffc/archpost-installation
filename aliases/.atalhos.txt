@@ -19,7 +19,25 @@ copypath = copia o pwd para o clipboard.
 
 thefuck = esc + esc - corrige o comando que foi digitado erroneamente
 
-
+universalarchive = ua extensão arquivos_para_compactar. Ex.: ua 7z *.png
+ 
+Extension       Description
+7z              7zip file
+bz2             Bzip2 file
+gz              Gzip file
+lzma            LZMA archive
+lzo             LZO archive
+rar             WinRAR archive
+tar             Tarball
+tbz/tar.bz2     Tarball with bzip2 compression
+tgz/tar.gz      Tarball with gzip compression
+tlz/tar.lzma    Tarball with lzma compression
+txz/tar.xz      Tarball with lzma2 compression
+tZ/tar.Z        Tarball with LZW compression
+xz              LZMA2 archive
+Z               Z archive (LZW)
+zip             Zip archive
+zst             Zstd archive
 
 
 
@@ -67,6 +85,8 @@ search
 dirty
 progress
 extract
+
+
 
 
 #### TERMINAL ####
@@ -124,8 +144,6 @@ CTRL + + (zoom in)
 
 
 CTRL + - (zoom out)
-
-
 
 
 
