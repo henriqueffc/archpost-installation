@@ -6,7 +6,6 @@ alias yaycache="paccache -rk1 -c ~/.cache/yay/*/ && paccache -ruk0 -c ~/.cache/y
 alias rede="sudo nethogs -p"
 alias ubuntu="distrobox enter --name ubuntu -- bash -l"
 alias stop-ubuntu="distrobox stop ubuntu"
-alias update-ubuntu="distrobox-upgrade ubuntu"
 alias neo="neofetch --colors 4 3 5 7 1 2"
 alias atualizar="flatpak update && flatpak remove --unused && archnews && sudo pacman -Syu && yay -Sua"
 alias omz="git -C ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k pull && omz update"
