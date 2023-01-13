@@ -183,6 +183,9 @@ gsettings set org.gtk.gtk4.Settings.FileChooser sort-directories-first true
 # File-chooser gtk3
 gsettings set org.gtk.Settings.FileChooser sort-directories-first true
 
+# Desabilitar as animações do Gnome
+gsettings set org.gnome.desktop.interface enable-animations false
+
 # Desabilitar a redução do brilho da tela quando o computador está inativo
 gsettings set org.gnome.settings-daemon.plugins.power idle-dim false
 
