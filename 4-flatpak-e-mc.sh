@@ -53,6 +53,7 @@ flatpak install flathub org.gnome.Games -y
 flatpak install flathub io.github.Foldex.AdwSteamGtk -y
 flatpak install flathub io.podman_desktop.PodmanDesktop -y
 flatpak install flathub com.github.PintaProject.Pinta -y
+flatpak install flathub io.github.realmazharhussain.GdmSettings -y
 
 # Flatpak Remote-Beta
 
