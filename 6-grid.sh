@@ -33,6 +33,9 @@ gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folder
 
 gsettings set org.gnome.desktop.app-folders folder-children "['Utilities', 'YaST', 'Office', 'Programas', 'Jogos', 'Nvidia', 'Podman', 'GNOME', 'Internet', 'Multimídia']"
 
+# Dock
+gsettings set org.gnome.shell favorite-apps "['firefox.desktop', 'org.gnome.Console.desktop', 'org.gnome.Nautilus.desktop', 'code.desktop']"
+
 # Nautilus Bookmarks
 mkdir ~/ToDo/
 mkdir ~/Documentos/Projetos
