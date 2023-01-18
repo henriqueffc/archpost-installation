@@ -41,6 +41,18 @@ zst             Zstd archive
 
 
 
+
+
+#### Scripts ####
+
+archnews
+erros
+iommu
+update-ubuntu
+
+
+
+
 #### ALIAS ####
 
 mpv
@@ -54,7 +66,6 @@ remover
 rede
 ubuntu
 stop-ubuntu
-update-ubuntu
 neo
 atualizar
 omz
@@ -72,7 +83,6 @@ cpu-powersave
 cpu-info
 intel-freq
 intel-video
-erro
 boot
 fail2ban
 report-audit
