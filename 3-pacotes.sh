@@ -148,10 +148,8 @@ echo -e '\nif [ -d "$HOME/bin" ] ; then\nPATH="$HOME/bin:$PATH"\nfi' >>~/.bashrc
 echo -e '\nsource /usr/share/doc/pkgfile/command-not-found.bash' >>~/.bashrc
 
 # Copiar scripts para a pasta ~/bin
-mv ./bin/archnews ~/bin
-mv ./bin/iommu ~/bin
-chmod +x ~/bin/archnews
-chmod +x ~/bin/iommu
+mv ./bin/* ~/bin
+chmod +x ~/bin/*
 
 # Tema dos ícones Kora
 git clone https://github.com/bikass/kora.git
