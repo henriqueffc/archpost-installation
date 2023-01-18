@@ -13,6 +13,7 @@ breeze
 bat
 bat-extras
 cabextract
+ccze
 chromium
 cmatrix
 coreutils
