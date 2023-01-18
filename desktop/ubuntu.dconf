@@ -1,0 +1,11 @@
+[/]
+background-color='rgb(23,20,33)'
+custom-command='distrobox-enter --name ubuntu -- bash -l'
+default-size-columns=106
+default-size-rows=26
+font='JetBrains Mono NL 14'
+foreground-color='rgb(208,207,204)'
+use-custom-command=true
+use-system-font=false
+use-theme-colors=false
+visible-name='ubuntu'

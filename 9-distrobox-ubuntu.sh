@@ -59,4 +59,9 @@ chmod +x ~/bin/update-ubuntu
 # Atalho no Grid
 mv ./desktop/spotify.desktop ~/.local/share/applications
 
-printf "%s $VERDE Fim! Digite $FIM $LVERDE distrobox enter ubuntu $FIM $VERDE para completar a instalação. $FIM \n"
+# Criando o perfil no Gnome Terminal
+dconf load /org/gnome/terminal/legacy/profiles:/:0e137972-e494-484f-bcb9-7d629397a19f/ < ./desktop/ubuntu.dconf
+font=$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d "'")
+gsettings set org.gnome.Terminal.ProfilesList list "['$font', '0e137972-e494-484f-bcb9-7d629397a19f']"
+
+printf "%s $VERDE Fim! Super + U abre o terminal do GNOME com o Ubuntu$FIM \n"
