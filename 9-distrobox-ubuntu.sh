@@ -59,7 +59,7 @@ chmod +x ~/bin/update-ubuntu
 # Atalho no Grid
 mv ./desktop/spotify.desktop ~/.local/share/applications
 
-# Criando o perfil no Gnome Terminal
+# Criando o perfil no Gnome Terminal (atalho do teclado criado no script número 3)
 dconf load /org/gnome/terminal/legacy/profiles:/:0e137972-e494-484f-bcb9-7d629397a19f/ < ./desktop/ubuntu.dconf
 font=$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d "'")
 gsettings set org.gnome.Terminal.ProfilesList list "['$font', '0e137972-e494-484f-bcb9-7d629397a19f']"
