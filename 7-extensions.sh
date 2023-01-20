@@ -34,7 +34,7 @@ gnome-extensions install --force 'gnome-bluetooth-quick-connect-30.zip'
 make -C $HOME/.local/share/gnome-shell/extensions/bluetooth-quick-connect@bjarosze.gmail.com
 
 echo -e "$AZUL Vitals $FIM" 
-aria2c https://github.com/corecoding/Vitals/releases/download/v59.0.0/vitals.zip
+aria2c https://github.com/corecoding/Vitals/releases/download/v59.0.1/vitals.zip
 gnome-extensions install --force 'vitals.zip'
 
 printf "%s $VERDE Fim! Reinicie com o comando reboot e habilite as extensões usando o app Extensões após a reinicialização do sistema $FIM \n"
