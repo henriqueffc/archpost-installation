@@ -19,7 +19,7 @@ echo -e "$AZUL
 -------------------------------------------------------------------------
 $FIM"
 
-sudo pacman -S podman fuse-overlayfs slirp4netns xorg-xhost --needed
+sudo pacman -S podman podman-compose fuse-overlayfs slirp4netns xorg-xhost --needed
 
 UNPRIVILEGED=$(sysctl kernel.unprivileged_userns_clone | grep -o '[[:digit:]]*')
 if [[ $UNPRIVILEGED == 1 ]]; then
