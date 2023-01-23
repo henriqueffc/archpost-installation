@@ -5,3 +5,4 @@ Exec=/usr/local/bin/distrobox-enter  -n ubuntu --   spotify  %U
 Terminal=false
 Type=Application
 Icon=spotify
+StartupWMClass=spotify
