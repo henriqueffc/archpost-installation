@@ -50,6 +50,7 @@ distrobox-enter ubuntu -- sudo apt -y upgrade
 distrobox-enter ubuntu -- sudo apt -y install neofetch nano exa bat ripgrep git thefuck tzdata curl wget
 distrobox-enter ubuntu -- wget https://github.com/wimpysworld/deb-get/releases/download/0.3.6/deb-get_0.3.6-1_all.deb
 distrobox-enter ubuntu -- sudo apt-get install ./deb-get_0.3.6-1_all.deb
+# Preferi instalar o Spotify usando o distrobox para testes. O repositório oficial do Arch Linux possui o pacote "spotify-launcher" para a instalação do Spotify. 
 distrobox-enter ubuntu -- deb-get install spotify-client
 
 # Copiar script para a pasta ~/bin
