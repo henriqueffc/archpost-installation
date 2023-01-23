@@ -111,6 +111,7 @@ rmlint
 rsync
 seahorse
 soundconverter
+spotify-launcher
 steam
 tealdeer
 texinfo
