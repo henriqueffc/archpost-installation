@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-distrobox-enter ubuntu -- sudo apt update
-distrobox-enter ubuntu -- sudo apt upgrade
-distrobox-enter ubuntu -- deb-get update
-distrobox-enter ubuntu -- deb-get upgrade
-distrobox-enter ubuntu -- sudo apt autoremove
