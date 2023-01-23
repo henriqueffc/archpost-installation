@@ -156,9 +156,9 @@ git clone https://github.com/bikass/kora.git
 sudo cp -r ./kora/kora /usr/share/icons/
 rm -rf kora
 
-echo -e "$AZUL Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 1 $FIM" && sleep 1
-echo -e "$AZUL Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 2 $FIM" && sleep 1
-echo -e "$AZUL Alterando o tema, os ícones, o wallpaper e os atalhos do sistema em 3 $FIM" && sleep 1
+echo -e "$AZUL Alterando o tema, os ícones e os atalhos do sistema em 1 $FIM" && sleep 1
+echo -e "$AZUL Alterando o tema, os ícones e os atalhos do sistema em 2 $FIM" && sleep 1
+echo -e "$AZUL Alterando o tema, os ícones e os atalhos do sistema em 3 $FIM" && sleep 1
 
 # Tema do sistema GNOME 43
 gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
