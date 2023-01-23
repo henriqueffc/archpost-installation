@@ -56,7 +56,7 @@ distrobox-enter ubuntu -- deb-get install spotify-client
 mv ./bin/update-ubuntu ~/bin
 chmod +x ~/bin/update-ubuntu
 
-# Atalho no Grid
+# Atalho no Grid. O comando "distrobox-export --app spotify" não funcionou na instalação do Spotify.
 mv ./desktop/spotify.desktop ~/.local/share/applications
 
 # Criando o perfil no Gnome Terminal (atalho do teclado criado no script número 3)
