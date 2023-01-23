@@ -36,7 +36,7 @@ Ordem de uso dos scripts:
 - 6-grid.sh
 - 7-extensions.sh
 - 8-zsh-ohmyzsh.sh
-- 9-distrobox-ubuntu.sh
+- 9-podman-distrobox.sh
 - 10-theme.sh (opcional)
 - 11-firefox-nightly.sh (opcional)
 
