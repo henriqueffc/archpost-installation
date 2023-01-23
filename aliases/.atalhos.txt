@@ -48,7 +48,6 @@ zst             Zstd archive
 archnews
 erros
 iommu
-update-ubuntu
 
 
 
@@ -64,8 +63,6 @@ mirror
 instalar
 remover
 rede
-ubuntu
-stop-ubuntu
 neo
 atualizar
 omz
