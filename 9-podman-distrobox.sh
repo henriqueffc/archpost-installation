@@ -43,4 +43,4 @@ $FIM"
 
 curl -s https://raw.githubusercontent.com/89luca89/distrobox/main/install | sudo sh
 
-printf "%s $VERDE Fim! Super + U abre o terminal do GNOME com o Ubuntu$FIM \n"
+printf "%s $VERDE Fim da instalação! $FIM \n"
