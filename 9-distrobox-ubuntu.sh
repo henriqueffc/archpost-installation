@@ -38,7 +38,7 @@ fi
 
 echo -e "$AZUL
 -------------------------------------------------------------------------
-	     Instalando o Distrobox e a imagem do Ubuntu
+	 Instalando o Distrobox, a imagem do Ubuntu e o Spotify
 -------------------------------------------------------------------------
 $FIM"
 
