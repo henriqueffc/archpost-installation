@@ -6,6 +6,7 @@ aspell
 aspell-en
 aspell-pt
 bash-completion
+bandwhich
 bind
 bitwarden
 bluez-utils
@@ -44,6 +45,7 @@ ghex
 git
 glew
 glfw-wayland
+glow
 ghostwriter
 gnome-epub-thumbnailer
 gnome-firmware
@@ -58,6 +60,7 @@ gparted
 gsmartcontrol
 gst-plugin-libcamera
 gufw
+hexyl
 hwloc
 i7z
 intel-gpu-tools
@@ -66,6 +69,7 @@ jre-openjdk
 kdegraphics-mobipocket
 kdenlive
 kdiskmark
+lnav
 libappindicator-gtk3
 libcamera-tools
 libgtop
