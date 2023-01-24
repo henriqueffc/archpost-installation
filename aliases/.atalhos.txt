@@ -52,6 +52,30 @@ iommu
 
 
 
+
+#### Comandos ####
+
+procs = ps
+bat = cat
+rg = grep
+fd = find/locate
+exa (alias xll/xls/xltree) = ls
+duf = df
+dust = du
+sd = sed
+tldr = cheat
+mc = file manager
+aria2c = curl/wget
+pkgfile = pacman -F
+fuck = corrects your previous console command
+trash = envie arquivos para a lixeira / trash-list = lista dos arquivos na lixeira / trash-restore = restaura arquivo da lixeira
+arch-audit = A utility like pkg-audit for Arch Linux
+pkgstats = pkgstats search nome / pkgstats show nome / pkgstats show nome nome
+ccze = Robust and modular log colorizer with many plugins ( $ comando | ccze -m ansi )
+
+
+
+
 #### ALIAS ####
 
 mpv
