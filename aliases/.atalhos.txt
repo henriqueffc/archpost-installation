@@ -73,7 +73,7 @@ arch-audit = A utility like pkg-audit for Arch Linux
 pkgstats = pkgstats search nome / pkgstats show nome / pkgstats show nome nome
 ccze = Robust and modular log colorizer with many plugins ( $ comando | ccze -m ansi )
 hexyl = hexdump
-bandwidth = nethogs (alias rede)
+bandwhich = nethogs (alias rede)
 lnav = Log file navigator
 glow = visualizador de markdown (glow -p)
 
