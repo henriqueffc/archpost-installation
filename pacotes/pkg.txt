@@ -26,6 +26,7 @@ dialog
 discount
 djvulibre
 duf
+dust
 ebook-tools
 eog-plugins
 espeak-ng
@@ -110,6 +111,7 @@ ripgrep-all
 rkhunter
 rmlint
 rsync
+sd
 seahorse
 soundconverter
 spotify-launcher
