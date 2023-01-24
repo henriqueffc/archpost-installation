@@ -96,6 +96,7 @@ papirus-icon-theme
 pkgfile
 pkgstats
 polari
+procs
 progress
 qgnomeplatform-qt5
 qgnomeplatform-qt6
