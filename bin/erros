@@ -5,15 +5,17 @@ systemctlerrors() {
 	systemctl --failed
 }
 
+# usando ripgrep (rg) e não o grep.
+
 booterrors() {
 	printf "\nEmergency level:\n"
-	journalctl -b -p emerg | grep -v "Journal begins" | ccze -m ansi
+	journalctl -b -p emerg | rg -v "Journal begins" | ccze -m ansi
 	printf "\n\nAlert level:\n"
-	journalctl -b -p alert | grep -v "Journal begins" | ccze -m ansi
+	journalctl -b -p alert | rg -v "Journal begins" | ccze -m ansi
 	printf "\n\nCritical level:\n"
-	journalctl -b -p crit | grep -v "Journal begins" | ccze -m ansi
+	journalctl -b -p crit | rg -v "Journal begins" | ccze -m ansi
 	printf "\nError level:\n"
-	journalctl -b -p err | grep -v "Journal begins" | ccze -m ansi
+	journalctl -b -p err | rg -v "Journal begins" | ccze -m ansi
 }
 
 systemctlerrors
