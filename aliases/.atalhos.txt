@@ -43,7 +43,7 @@ zst             Zstd archive
 
 
 
-#### Scripts ####
+#### SCRIPTS ####
 
 archnews
 erros
@@ -52,8 +52,41 @@ iommu
 
 
 
+#### ALACRITTY ####
 
-#### Comandos ####
+Mouse:
+Botão da direita copia o texto selecionado
+Botão do meio cola o conteúdo do clipboard
+Super + Clicar e segurar o clique = mover a janela do terminal
+
+Teclado:
+Super + Shift + Enter (Return) = Abre novo terminal no pwd em que estava o terminal anterior.
+Ctrl + Shift + V = colar
+Crtl + Shift + C = copiar
+Ctrl + Shift + F = Search Forward
+Ctrl + Shift + B = Search Backward
+PageUp + Shift =  ScrollPageUp
+PageDown + Shift = ScrollPageDown
+Home + Shift = ScrollToTop
+End + Shift = ScrollToBottom
+Ctrl + + = zoom in
+Ctrl + - = zoom out
+Ctrl + 0 = zoom default
+Ctrl + D = o mesmo que escrever exit para sair de uma sessão ou para fechar o terminal
+Ctrl + A = ir para o começo da linha
+Ctrl + E = ir para o fim da linha
+Ctrl + X + E = transfere o digitado para o editor de texto padrão
+Ctrl + U = apaga o digitado anterior ao atalho
+Ctrl + Y = undo
+Ctrl + K = apaga tudo depois do cursor
+Ctrl + C = cancela a operação que está em execução
+Ctrl + R = busca comandos dados - pesquisa - zsh
+Ctrl + L = clear
+
+
+
+
+#### COMANDOS ####
 
 procs = ps
 bat = cat
@@ -124,60 +157,26 @@ extract
 
 
 
-#### TERMINAL ####
+#### TERMINAL GNOME ####
 
 
 tab+tab (ex.: escreva update tab+tab) Abre as opções para o comando e você poderá escolher qual deseja. Tab mostra as opções e outro tb no ZSH permite escolher na lista.
-
-
 Ctrl + Shift + T (nova aba)
-
-
 Ctrl + Shift + + W (fecha a aba)
-
-
 Crtl + PageUp ou PageDown (navega entre as abas)
-
-
 Ctrl + D (o mesmo que escrever exit para sair de uma sessão ou para fechar o terminal)
-
-
 Ctrl + A (ir para o começo da linha)
-
-
 Ctrl + E (ir para o fim da linha)
-
-
 Ctrl + X + E (transfere o digitado para o editor de texto padrão)
-
-
 Ctrl + U (apaga o digitado anterior ao atalho)
-
-
 Ctrl + Y (undo)
-
-
 Ctrl + K (apaga tudo depois do cursor)
-
-
 Ctrl + C (cancela a operação que está em execução)
-
-
 Ctrl + R (busca comandos dados - pesquisa - zsh)
-
-
 Ctrl + L (clear)
-
-
 SHIFT+CTRL+C (copia no terminal)
-
-
 SHIFT+CTRL+V (cola no terminal)
-
-
 CTRL + + (zoom in)
-
-
 CTRL + - (zoom out)
 
 
@@ -189,36 +188,14 @@ CTRL + - (zoom out)
 
 
 Alt + N = mostra a numeração das linhas
-
-
 Ctrl + O = Salva o0 arquivo
-
-
 Alt + U = desfazer
-
-
 Alt +E = refazer
-
-
 Ctrl + W = pesquisa de texto
-
-
 Ctrl + X = sair
-
-
 Ctrl + K = recortar
-
-
 Ctrl + U = colar
-
-
 Ctrl + R e depois Ctrl + T = buscar arquivo para inserir no texto.
-
-
 Ctrl +\ = substituir
-
-
 Ctrl + / = ir para a linha
-
-
 nano +número_da_linha nome_do_arquivo (nano +25 arch.txt) abre o arquivo na linha desejada
