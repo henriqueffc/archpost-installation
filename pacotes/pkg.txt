@@ -1,4 +1,5 @@
 alacarte
+alacritty
 aria2
 arch-audit
 asp
