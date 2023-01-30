@@ -6,5 +6,4 @@ heroic-games-launcher-bin
 lib32-mangohud
 mangohud
 mangohud-common
-switcheroo-control
 visual-studio-code-bin
