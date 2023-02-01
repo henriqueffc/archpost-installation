@@ -33,7 +33,4 @@ $FIM"
 # Pacotes AUR
 yay -S - <./pacotes/aur.txt
 
-# habilitar o switcheroo-control
-sudo systemctl enable switcheroo-control.service
-
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
