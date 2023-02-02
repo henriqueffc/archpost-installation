@@ -264,7 +264,7 @@ gsettings set org.gnome.desktop.wm.keybindings close "['<Super>q']"
 
 # Atalho personalizado para lançar o Terminal - Super + T
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name "Terminal"
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command "alacritty"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command "prime-run alacritty"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding "<Super>t"
 
 # Atalho personalizado para aumentar o brilho usando o teclado - Crtl + Para cima
@@ -282,6 +282,7 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "[
 # Alacritty
 mkdir $HOME/.config/alacritty
 mv ./alacritty/alacritty.yml $HOME/.config/alacritty/
+sudo sed -i 's/\<Exec=alacritty\>/Exec=prime-run alacritty/g' /usr/share/applications/Alacritty.desktop
 
 # Mlocate
 sudo pacman -S mlocate --needed --noconfirm
