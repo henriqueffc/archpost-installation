@@ -121,6 +121,7 @@ seahorse
 soundconverter
 spotify-launcher
 steam
+scrcpy
 switcheroo-control
 tealdeer
 texinfo
