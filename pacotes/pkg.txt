@@ -97,7 +97,7 @@ okular
 openssh
 p7zip
 pacman-contrib
-pandoc
+pandoc-cli
 papirus-icon-theme
 pkgfile
 pkgstats
