@@ -71,6 +71,7 @@ kdegraphics-mobipocket
 kdenlive
 kdiskmark
 lnav
+lib32-gamemode
 libappindicator-gtk3
 libcamera-tools
 libgtop
