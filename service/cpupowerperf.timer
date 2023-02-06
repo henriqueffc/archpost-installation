@@ -1,5 +1,5 @@
 [Unit]
-Description=CPU Power Performance
+Description=CPU Power
 
 [Timer]
 OnBootSec=1min
