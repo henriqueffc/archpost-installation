@@ -1,5 +1,5 @@
 [Unit]
-Description=CPU Power Performance
+Description=CPU Power 
 
 [Service]
 Type=oneshot
