@@ -66,7 +66,7 @@ echo -e "$AZUL \t Intel-Paranoid habilitado $FIM"
 # CPU Power Service
 sudo mv ./service/cpupowerperf.* /etc/systemd/system
 sudo systemctl enable cpupowerperf.timer
-echo -e "$AZUL \t CPU Power Performance.timer habilitado $FIM"
+echo -e "$AZUL \t CPU Power timer habilitado $FIM"
 
 # Remover o Powerprofilesctl
 sudo pacman -R power-profiles-daemon
