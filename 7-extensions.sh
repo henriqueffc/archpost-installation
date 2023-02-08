@@ -29,8 +29,8 @@ aria2c https://gitlab.com/Czarlie/gnome-fuzzy-app-search/-/archive/v5.0.14/gnome
 gnome-extensions install --force 'gnome-fuzzy-app-search-v5.0.14.zip'
 
 echo -e "$AZUL Bluetooth Quick Connect $FIM"
-aria2c https://github.com/bjarosze/gnome-bluetooth-quick-connect/archive/refs/tags/v31.zip
-gnome-extensions install --force 'gnome-bluetooth-quick-connect-31.zip'
+aria2c https://github.com/bjarosze/gnome-bluetooth-quick-connect/archive/refs/tags/v32.zip
+gnome-extensions install --force 'gnome-bluetooth-quick-connect-32.zip'
 make -C $HOME/.local/share/gnome-shell/extensions/bluetooth-quick-connect@bjarosze.gmail.com
 
 echo -e "$AZUL Vitals $FIM" 
