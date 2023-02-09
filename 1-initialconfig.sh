@@ -82,7 +82,7 @@ pacman -Syu
 
 # Intel - i915 / mkinitcpio.conf
 cp /etc/mkinitcpio.conf /etc/mkinitcpio.conf.bak
-sed -i 's/MODULES=.*/MODULES=(intel_agp i915)/g' /etc/mkinitcpio.conf
+sed -i 's/MODULES=.*/MODULES=(i915)/g' /etc/mkinitcpio.conf
 mkinitcpio -P
 
 # FSTAB
