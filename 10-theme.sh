@@ -29,6 +29,10 @@ if test -f "/usr/bin/flatpak"; then
 	flatpak install org.gtk.Gtk3theme.adw-gtk3 org.gtk.Gtk3theme.adw-gtk3-dark -y
 	sudo flatpak override --filesystem=xdg-config/gtk-3.0
 	echo -e "$AZUL Fim da instalação. $FIM"
+	
+	# Aplicando o tema Classic Dark
+	flatpak run --command=gradience-cli com.github.GradienceTeam.Gradience download -n "Classic Dark"
+	flatpak run --command=gradience-cli com.github.GradienceTeam.Gradience apply -n "Classic Dark" --gtk both
 
 else
 
