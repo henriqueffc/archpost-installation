@@ -6,6 +6,7 @@ asp
 aspell
 aspell-en
 aspell-pt
+base-devel
 bash-completion
 bandwhich
 bind
