@@ -115,6 +115,7 @@ sudo fc-cache -fv
 # Logos
 mkdir ~/Imagens/Logo
 mv ./desktop/*.png ~/Imagens/Logo
+mv ./desktop/*.svg ~/Imagens/Logo
 
 # Atalhos no Grid
 sed -i 's|user|'$USER'|g' ./desktop/upscayl.desktop

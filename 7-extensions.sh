@@ -49,6 +49,11 @@ echo -e "$AZUL Blur My Shell $FIM"
 wget https://github.com/aunetx/blur-my-shell/releases/download/v44/blur-my-shell@aunetx.shell-extension.zip
 gnome-extensions install --force 'blur-my-shell@aunetx.shell-extension.zip'
 
+echo -e "$AZUL App Icons Taskbar $FIM"
+aria2c https://gitlab.com/AndrewZaech/aztaskbar/-/archive/v14/aztaskbar-v14.zip
+unzip aztaskbar-v14.zip
+make install -C ./aztaskbar-v14
+
 sudo pacman -R ninja meson jq eslint
 
 printf "%s $VERDE Fim! Reinicie com o comando reboot e habilite as extensões usando o app Extensões após a reinicialização do sistema $FIM \n"
