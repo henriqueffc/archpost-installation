@@ -7,10 +7,10 @@ Copia o conteúdo da linha do terminal para o clipboard.
 
 dirhistory = navegue pelo histórico de diretórios acessados.
 
-Alt + Left 	Go to previous directory
-Alt + Right 	Go to next directory
-Alt + Up 	Move into the parent directory
-Alt + Down 	Move into the first child directory by alphabetical order
+Alt + Left	Go to previous directory
+Alt + Right	Go to next directory
+Alt + Up	Move into the parent directory
+Alt + Down	Move into the first child directory by alphabetical order
 
 web-search = google texto_da_pesquisa ou web_search bing oh-my-zsh 
 Abre o browser com a pesquisa do termo no site especificado. Lista com os mecanismos de busca: https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/web-search
@@ -20,24 +20,24 @@ copypath = copia o pwd para o clipboard.
 thefuck = esc + esc - corrige o comando que foi digitado erroneamente
 
 universalarchive = ua extensão arquivos_para_compactar. Ex.: ua 7z *.png
- 
-Extension       Description
-7z              7zip file
-bz2             Bzip2 file
-gz              Gzip file
-lzma            LZMA archive
-lzo             LZO archive
-rar             WinRAR archive
-tar             Tarball
-tbz/tar.bz2     Tarball with bzip2 compression
-tgz/tar.gz      Tarball with gzip compression
-tlz/tar.lzma    Tarball with lzma compression
-txz/tar.xz      Tarball with lzma2 compression
-tZ/tar.Z        Tarball with LZW compression
-xz              LZMA2 archive
-Z               Z archive (LZW)
-zip             Zip archive
-zst             Zstd archive
+
+Extension	Description
+7z		7zip file
+bz2		Bzip2 file
+gz		Gzip file
+lzma		LZMA archive
+lzo		LZO archive
+rar		WinRAR archive
+tar		Tarball
+tbz/tar.bz2	Tarball with bzip2 compression
+tgz/tar.gz	Tarball with gzip compression
+tlz/tar.lzma	Tarball with lzma compression
+txz/tar.xz	Tarball with lzma2 compression
+tZ/tar.Z	Tarball with LZW compression
+xz		LZMA2 archive
+Z		Z archive (LZW)
+zip		Zip archive
+zst		Zstd archive
 
 
 
@@ -48,6 +48,78 @@ zst             Zstd archive
 archnews
 erros
 iommu
+
+
+
+
+#### COMANDOS ####
+
+procs = ps
+bat = cat
+rg = grep
+fd = find/locate
+exa (alias xll/xls/xltree) = ls
+duf = df
+dust = du
+sd = sed
+tldr = cheat
+mc = file manager
+aria2c = curl/wget
+pkgfile = pacman -F
+fuck = corrects your previous console command
+trash = envie arquivos para a lixeira / trash-list = lista dos arquivos na lixeira / trash-restore = restaura arquivo da lixeira
+arch-audit = A utility like pkg-audit for Arch Linux
+pkgstats = pkgstats search nome / pkgstats show nome / pkgstats show nome nome
+ccze = Robust and modular log colorizer with many plugins ( $ comando | ccze -m ansi )
+hexyl = hexdump
+bandwhich = nethogs (alias rede)
+lnav = Log file navigator
+glow = visualizador de markdown (glow -p)
+
+
+
+
+#### ALIAS ####
+
+mpv
+mpv-yt
+mpv-yt-nv
+mpvnovideo
+mirror
+yaycache
+instalar
+remover
+rede
+neo
+atualizar
+omz
+limpar
+dados
+reflector
+xls
+xll
+xltree
+bat
+nvme
+nvme2
+cpu-performance
+cpu-powersave
+cpu-info
+intel-freq
+intel-video
+erro
+boot
+fail2ban
+report-audit
+ram
+dic-pt
+dic-en
+atalhos
+pacman.log
+search
+dirty
+progress
+extract
 
 
 
@@ -86,79 +158,60 @@ Ctrl + L = clear
 
 
 
-#### COMANDOS ####
 
-procs = ps
-bat = cat
-rg = grep
-fd = find/locate
-exa (alias xll/xls/xltree) = ls
-duf = df
-dust = du
-sd = sed
-tldr = cheat
-mc = file manager
-aria2c = curl/wget
-pkgfile = pacman -F
-fuck = corrects your previous console command
-trash = envie arquivos para a lixeira / trash-list = lista dos arquivos na lixeira / trash-restore = restaura arquivo da lixeira
-arch-audit = A utility like pkg-audit for Arch Linux
-pkgstats = pkgstats search nome / pkgstats show nome / pkgstats show nome nome
-ccze = Robust and modular log colorizer with many plugins ( $ comando | ccze -m ansi )
-hexyl = hexdump
-bandwhich = nethogs (alias rede)
-lnav = Log file navigator
-glow = visualizador de markdown (glow -p)
+#### GNOME ####
+
+Super + Alt + 8 = Amplificador (acessibilidade)
+Super + Setas do teclado = altera o posicionamento da janela selecionada na tela.
+Super + T lança terminal
+Super + B lança navegador
+Super + F lança files
+Super + A= Abre o grid
+Super + Q = Fecha a janela
+Super + Seta para cima = maximizar
+Super + Seta para baixo = volta a janela ao estado original
+Super + Page Up ou Page Down = muda de workspace
+Super + End = ir para a última área de trabalho
+Super + Home = muda para a primeira área de trabalho
+Super + clique do mouse sobre a janela = move a janela.
+Alt + Tab = alterna entre os aplicativos. Se tiver mais de uma janela aberta por aplicativo, fixe a seleção sobre o ícone do programa para mostrar as janelas abertas.
+Alt + ' = alterna entre as janelas abertas de um mesmo aplicativo que está em foco.
+Super + M = abre o painel de notificação
+Super + rolagem com o botão do meio do mouse = alterna entre os workspaces
+Shift + Super + End move a janela do programa para a última ou para a primeira área de trabalho disponível
+Shift + Super + Home move para a primeira área de trabalho
+Shift + Super + Page Up move a janela do programa para o espaço de trabalho a direita
+Shift + Super + Page Down move a janela do programa para o espaço de trabalho a esquerda
+ALT+F2 reinicia o Shell. Na janela de execução que se abrir, digite a letra R e tecle Enter.
+Scroll do mouse = quando clicado em uma palavra selecionada no terminal, ele automaticamente a copia para a linha de comando.
 
 
 
 
-#### ALIAS ####
+#### BRILHO ####
 
-mpv
-mpv-yt
-mpv-yt-nv
-mpvnovideo
-yaycache
-mirror
-instalar
-remover
-rede
-neo
-atualizar
-omz
-limpar
-dados
-reflector
-xls
-xll
-xltree
-bat
-nvme
-nvme2
-cpu-performance
-cpu-powersave
-cpu-info
-intel-freq
-intel-video
-boot
-fail2ban
-report-audit
-ram
-dic-pt
-dic-en
-atalhos
-pacman.log
-search
-dirty
-progress
-extract
+Aumentar o Brilho = Crtl + para cima
+Diminuir o Brilho = Crtl + para baixo
+
+
+
+
+#### Extensão Enhancer for YouTube ####
+
+Crtl+Shift+f = modo cinema
+f = full screen
+
+
+
+
+#### CLIPBOARD ####
+
+Shift + Super + V = abre o painel do Clipboard history. 
 
 
 
 
 #### TERMINAL GNOME ####
-
 
 tab+tab (ex.: escreva update tab+tab) Abre as opções para o comando e você poderá escolher qual deseja. Tab mostra as opções e outro tb no ZSH permite escolher na lista.
 Ctrl + Shift + T (nova aba)
@@ -183,9 +236,7 @@ CTRL + - (zoom out)
 
 
 
-
 #### NANO ####
-
 
 Alt + N = mostra a numeração das linhas
 Ctrl + O = Salva o0 arquivo
@@ -199,3 +250,75 @@ Ctrl + R e depois Ctrl + T = buscar arquivo para inserir no texto.
 Ctrl +\ = substituir
 Ctrl + / = ir para a linha
 nano +número_da_linha nome_do_arquivo (nano +25 arch.txt) abre o arquivo na linha desejada
+
+
+
+
+
+#### NAUTILUS ####
+
+Atl ao clicar e arrastar um arquivo para outro local no Nautilus dá a opção de escolher a operação (copiar, mover ou criar link)
+ALT + cima = volta ao diretório acima
+Ctrl + H = mostrar / esconder arquivos ocultos
+Ctrl + L = mostra o caminho da pasta (pwd)
+
+
+
+
+
+#### SOM ####
+
+Shift + + = aumenta o volume
+Shift + - = diminui o voluma
+Shift + * = Pausa ou reinicia a reprodução do som
+Shift + / = Pula para a próxima faixa
+
+
+
+
+
+#### PRINT ####
+
+Print = abre o menu para gravação de tela, captura de janela e captura de tela.
+
+Shift + Print = Salva a captura da tela na pasta Imagens e disponibiliza na área de transferência.
+
+Alt + Print = Faz a captura de uma janela salvando na parta imagens e disponibiliza na área de transferência.
+
+
+
+
+#### FIREFOX E CHROME ####
+
+Ctrl + Shift + U = abre a extensão Bitwarden no Firefox.
+Ctrl + Shit + 1 ou 2 ou 3 = abrir diferentes containers
+
+Pode-se configurar atalhos para as páginas salvas nos Favoritos do Firefox.
+
+É possível configurar também a pesquisa em páginas (%s) com atalhos. Salva a página como favorita, substitui o final do endereço do resultado da pesquisa com %s e cria um atalho para a página. Ao digitar o atalho na barra de endereço concatenasse com o termo de pesquisa.
+
+* + espaço = pesquisa os favoritos na barra de endereços do Firefox
+Ctrl + Alt + R (Toggle Reader Mode)  
+Botão do meio do mouse clicando no link = abre o link em nova aba
+Ctrl + B (Bookmarks sidebar)  
+Ctrl + L = foco na barra de ferramentas
+Alt + seta direita (volta na página anterior)
+Alt + seta esquerda (volta para a página posterior)
+Ctrl + T (nova aba)
+Ctrl + N (nova janela)
+Ctrl + Shift + P (nova janela privativa)
+Ctrl + W (fecha a aba)
+Ctrl + Q (fecha o aplicativo)
+CRTL + Page Up ou Page Down = muda de aba
+Ctrl + Tab = muda para a próxima aba
+Ctrl + Shift + T (Undo fechar aba)
+Ctrl + Shift + N (Undo fechar janela)
+Mute/ Unmute (Ctrl + M)
+CTRL + Scroll do mouse = zoom in / zoom out
+Ctrl + Shift + Y (Downloads)
+Ctrl + Shift + A (Add-ons)
+F11 (tela cheia)
+F12 (Console de depuração)
+CTRL + = (zoom in)
+CTRL + - (zoom out - não é o sinal de menos, é o sinal que está junto do _)
+CTRL + Shift + V = colar sem formatação.
