@@ -152,8 +152,8 @@ echo -e '\nif [ -d "$HOME/bin" ] ; then\nPATH="$HOME/bin:$PATH"\nfi' >>~/.bashrc
 echo -e '\nsource /usr/share/doc/pkgfile/command-not-found.bash' >>~/.bashrc
 
 # Copiar scripts para a pasta ~/bin
-mv ./bin/* ~/bin
-chmod +x ~/bin/*
+mv ./bin/* $HOME/bin
+chmod +x $HOME/bin/*
 
 # Tema dos ícones Kora
 git clone https://github.com/bikass/kora.git
@@ -283,6 +283,10 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "[
 mkdir $HOME/.config/alacritty
 mv ./alacritty/alacritty.yml $HOME/.config/alacritty/
 sudo sed -i 's/\<Exec=alacritty\>/Exec=prime-run alacritty/g' /usr/share/applications/Alacritty.desktop
+
+# Alacritty - Nautilus
+mv ./alacritty/open-in-alacritty $HOME/.local/share/nautilus/scripts
+chmod +x $HOME/.local/share/nautilus/scripts/open-in-alacritty
 
 # Mlocate
 sudo pacman -S mlocate --needed --noconfirm
