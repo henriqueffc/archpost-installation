@@ -292,6 +292,7 @@ sudo sed -i 's/\<Exec=alacritty\>/Exec=prime-run alacritty/g' /usr/share/applica
 # Alacritty - Nautilus
 mv ./alacritty/open-in-alacritty $HOME/.local/share/nautilus/scripts
 chmod +x $HOME/.local/share/nautilus/scripts/open-in-alacritty
+nautilus -q
 
 # Mlocate
 sudo pacman -S mlocate --needed --noconfirm
