@@ -223,6 +223,10 @@ gsettings set org.gnome.desktop.interface monospace-font-name "Noto Sans Mono 11
 gsettings set org.gnome.desktop.wm.preferences titlebar-font "Noto Sans Bold 12"
 gsettings set org.gnome.desktop.interface font-antialiasing rgba
 
+# Acessibilidade
+gsettings set org.gnome.desktop.a11y.magnifier mag-factor "1.25"
+gsettings set org.gnome.desktop.a11y.magnifier mouse-tracking push
+
 # GNOME Software
 gsettings set org.gnome.software download-updates false
 gsettings set org.gnome.software first-run false
