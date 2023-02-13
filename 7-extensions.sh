@@ -54,6 +54,6 @@ aria2c https://gitlab.com/AndrewZaech/aztaskbar/-/archive/v14/aztaskbar-v14.zip
 unzip aztaskbar-v14.zip
 make install -C ./aztaskbar-v14
 
-sudo pacman -R ninja meson jq eslint
+sudo pacman -Rn ninja meson jq eslint
 
 printf "%s $VERDE Fim! Reinicie com o comando reboot e habilite as extensões usando o app Extensões após a reinicialização do sistema $FIM \n"
