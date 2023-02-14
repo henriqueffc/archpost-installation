@@ -44,6 +44,7 @@ fwupd
 gamemode
 gawk
 ghex
+gimagereader-gtk
 git
 glew
 glfw-wayland
@@ -126,6 +127,9 @@ steam
 scrcpy
 switcheroo-control
 tealdeer
+tesseract
+tesseract-data-eng
+tesseract-data-por
 texinfo
 thefuck
 thermald
