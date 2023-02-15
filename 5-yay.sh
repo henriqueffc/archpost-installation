@@ -31,6 +31,7 @@ echo -e "$AZUL
 $FIM"
 
 # Pacotes AUR
+yay -Y --gendb
 yay -S - <./pacotes/aur.txt
 
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
