@@ -133,14 +133,16 @@ tesseract-data-por
 texinfo
 thefuck
 thermald
+thunderbird
+thunderbird-i18n-pt-br
 torbrowser-launcher
 transmission-gtk
 trash-cli
 ufw
-veracrypt
 unace
 unrar
 unzip
+veracrypt
 webp-pixbuf-loader
 wine-staging
 wine-gecko
