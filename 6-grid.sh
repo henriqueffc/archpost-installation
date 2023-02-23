@@ -18,7 +18,7 @@ gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folder
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/GNOME/ apps "['org.gnome.Contacts.desktop', 'org.gnome.Maps.desktop', 'org.gnome.Console.desktop', 'org.gnome.Photos.desktop', 'org.gnome.Weather.desktop', 'org.gnome.Totem.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Polari.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Extensions.desktop', 'yelp.desktop', 'org.gnome.Cheese.desktop', 'simple-scan.desktop', 'org.gnome.Epiphany.desktop', 'org.gnome.Music.desktop', 'org.gnome.dfeet.desktop', 'gnome-nettool.desktop', 'org.gnome.Meld.desktop', 'org.gnome.GHex.desktop', 'org.gnome.Characters.desktop', 'org.gnome.font-viewer.desktop']"
 
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Internet/ name "Internet"
-gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Internet/ apps "['firefox.desktop', 'us.zoom.Zoom.desktop', 'com.skype.Client.desktop', 'torbrowser.desktop', 'torbrowser-settings.desktop', 'chromium.desktop']"
+gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Internet/ apps "['us.zoom.Zoom.desktop', 'com.skype.Client.desktop', 'torbrowser.desktop', 'torbrowser-settings.desktop', 'chromium.desktop']"
 
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Podman/ name "Podman"
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Podman/ apps "['io.podman_desktop.PodmanDesktop.desktop']"
@@ -34,7 +34,7 @@ gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folder
 gsettings set org.gnome.desktop.app-folders folder-children "['Utilities', 'YaST', 'Office', 'Programas', 'Jogos', 'Nvidia', 'Podman', 'GNOME', 'Internet', 'Multimídia']"
 
 # Dock
-gsettings set org.gnome.shell favorite-apps "['firefox.desktop', 'Alacritty.desktop', 'org.gnome.Nautilus.desktop', 'code.desktop']"
+gsettings set org.gnome.shell favorite-apps "['firefox.desktop', 'thunderbird.desktop', 'Alacritty.desktop', 'org.gnome.Nautilus.desktop', 'code.desktop']"
 
 # Nautilus Bookmarks
 mkdir ~/ToDo/
