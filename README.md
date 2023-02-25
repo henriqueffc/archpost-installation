@@ -7,7 +7,7 @@ Eu uso os scripts desse repositório **somente após** instalar o Arch Linux usa
 
 **Último teste dos scripts: 07 de abril 22** / Os scripts foram alterados após essa data.
 
-Os scripts foram concebidos **especificamente** para a configuração da minha máquina. Notebook Lenovo S145, Intel Core i7-8565U, 12GB de RAM, SSD 240GB, SSD 512GB M.2 NVMe, NVIDIA GeForce MX110.
+Os scripts foram concebidos **especificamente** para a configuração da minha máquina. Notebook Lenovo S145, Intel Core i7-8565U, 20GB de RAM, SSD 240GB, SSD 512GB M.2 NVMe, NVIDIA GeForce MX110.
 
 **Eu instalo o sistema em UEFI, com systemd-boot, sistema de arquivos EXT4, ZRAM, pipewire, wireplumber, repositório multilib habilitado (Steam), Nvidia com driver proprietário (versão dkms) e GNOME 43. Uso o GNOME com Wayland. As configurações dos scripts são concebidas nessa base.**
 
