@@ -16,9 +16,9 @@ sudo pacman -S aria2 libgtop lm_sensors git bluez-utils gettext unzip ninja meso
 # Instalação das extensões
 
 echo -e "$AZUL AppIndicator and KStatusNotifierItem Support $FIM" 
-aria2c https://github.com/ubuntu/gnome-shell-extension-appindicator/archive/refs/tags/v47.zip
-unzip gnome-shell-extension-appindicator-47.zip
-meson setup ./gnome-shell-extension-appindicator-47 /tmp/g-s-appindicators-build
+aria2c https://github.com/ubuntu/gnome-shell-extension-appindicator/archive/refs/tags/v48.zip
+unzip gnome-shell-extension-appindicator-48.zip
+meson setup ./gnome-shell-extension-appindicator-48 /tmp/g-s-appindicators-build
 ninja -C /tmp/g-s-appindicators-build install
 
 echo -e "$AZUL Clipboard History $FIM" 
