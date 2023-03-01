@@ -40,10 +40,10 @@ aria2c https://github.com/corecoding/Vitals/releases/download/v59.0.6/vitals.zip
 gnome-extensions install --force 'vitals.zip'
 
 echo -e "$AZUL Just Perfection $FIM"
-aria2c https://gitlab.gnome.org/jrahmatzadeh/just-perfection/-/archive/23.0/just-perfection-23.0.zip
-unzip just-perfection-23.0.zip
-./just-perfection-23.0/scripts/build.sh
-gnome-extensions install --force './just-perfection-23.0/just-perfection-desktop@just-perfection.shell-extension.zip'
+aria2c https://gitlab.gnome.org/jrahmatzadeh/just-perfection/-/archive/24.0/just-perfection-24.0.zip
+unzip just-perfection-24.0.zip
+./just-perfection-24.0/scripts/build.sh
+gnome-extensions install --force './just-perfection-24.0/just-perfection-desktop@just-perfection.shell-extension.zip'
 
 echo -e "$AZUL Blur My Shell $FIM"
 wget https://github.com/aunetx/blur-my-shell/releases/download/v44/blur-my-shell@aunetx.shell-extension.zip
