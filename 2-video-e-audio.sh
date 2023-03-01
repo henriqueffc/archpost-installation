@@ -52,7 +52,7 @@ sudo systemctl enable fail2ban.service
 
 # Parâmetros do boot
 cp /boot/loader/entries/*.conf ~/
-sudo sed -i '$ { s/^.*$/& quiet loglevel=3 systemd.show_status=auto rd.udev.log_level=3 nowatchdog intel_pstate=hwp_only intel_iommu=on iommu=pt pci=realloc ahci.mobile_lpm_policy=1 nvme_core.default_ps_max_latency_us=0 nvidia_drm.modeset=1 nvidia.NVreg_EnablePCIeGen3=1 nvidia.NVreg_UsePageAttributeTable=1 i915.modeset=1 i915.enable_guc=2 i915.enable_fbc=0 i915.enable_psr=0 nouveau.modeset=0 audit=1 audit_backlog_limit=500 lsm=landlock,lockdown,yama,integrity,apparmor,bpf/ }' /boot/loader/entries/*.conf
+sudo sed -i '$ { s/^.*$/& quiet loglevel=3 systemd.show_status=auto rd.udev.log_level=3 nowatchdog intel_pstate=hwp_only intel_iommu=on iommu=pt pci=realloc ahci.mobile_lpm_policy=1 nvme_core.default_ps_max_latency_us=0 nvidia_drm.modeset=1 nvidia.NVreg_EnablePCIeGen3=1 nvidia.NVreg_UsePageAttributeTable=1 i915.modeset=1 i915.enable_guc=2 i915.enable_fbc=0 i915.enable_psr=0 nouveau.modeset=0 transparent_hugepage=madvise audit=1 audit_backlog_limit=500 lsm=landlock,lockdown,yama,integrity,apparmor,bpf/ }' /boot/loader/entries/*.conf
 
 # Não seria necessário o i915.modeset=1, pois já habilitei o early KMS no mkinitcpio.conf (script 1). Mas optei por deixar como parâmetro do kernel também. O zswap.enabled=0 é configurado pelo archinstall, por isso não está definido nas opções acima. 
 
