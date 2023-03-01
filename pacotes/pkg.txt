@@ -34,6 +34,7 @@ ebook-tools
 eog-plugins
 espeak-ng
 exa
+exfatprogs
 fd
 firefox
 firefox-i18n-pt-br
