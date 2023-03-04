@@ -41,6 +41,6 @@ echo -e "$AZUL
 -------------------------------------------------------------------------
 $FIM"
 
-sudo pacman -Syu distrobox
+sudo pacman -S distrobox
 
 printf "%s $VERDE Fim da instalação! $FIM \n"
