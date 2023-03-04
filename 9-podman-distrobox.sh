@@ -41,6 +41,6 @@ echo -e "$AZUL
 -------------------------------------------------------------------------
 $FIM"
 
-curl -s https://raw.githubusercontent.com/89luca89/distrobox/main/install | sudo sh
+sudo pacman -Syu distrobox
 
 printf "%s $VERDE Fim da instalação! $FIM \n"
