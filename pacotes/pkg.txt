@@ -17,6 +17,7 @@ bat
 bat-extras
 cabextract
 ccze
+celluloid
 chromium
 cmatrix
 coreutils
