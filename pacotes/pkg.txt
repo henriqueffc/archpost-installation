@@ -160,6 +160,7 @@ xdg-desktop-portal-gtk
 xdg-utils
 xorg-xdpyinfo
 xorg-xkill
+xorg-xwininfo
 yt-dlp
 zenity
 zip
