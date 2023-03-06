@@ -75,6 +75,7 @@ hexyl = hexdump
 bandwhich = nethogs (alias rede)
 lnav = Log file navigator
 glow = visualizador de markdown (glow -p)
+xwininfo = pode ser usado para verificar se o aplicativo está rodando em Wayland ou XWayland
 
 
 
