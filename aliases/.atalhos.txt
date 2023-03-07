@@ -125,6 +125,19 @@ extract
 
 
 
+#### Wl-clipboard ####
+
+copy a simple text message = wl-copy Hello world!
+copy the list of files in Downloads =  ls ~/Downloads | wl-copy
+copy an image file = wl-copy < ~/Pictures/photo.png
+paste to a file = wl-paste > clipboard.txt
+grep each pasted word in file source.c = for word in $(wl-paste); do grep $word source.c; done
+copy the previous command = wl-copy "!!"
+replace the current selection with the list of types it's offered in = wl-paste --list-types | wl-copy
+
+
+
+
 #### ALACRITTY ####
 
 Mouse:
@@ -179,7 +192,7 @@ Mudar para a aba anterior = ^B + p
 Mudar para a aba (número) = ^B + número da aba (informação na barra do tmux)
 Aba horizontal = ^B + " (^B + shift + '')
 Aba vertical = ^B + % (^B + shift + %)
-Mudar entre as abas (horizontal e vertical) = ^B + direcional do teclado
+Mudar entre as abas (horizontal e vertical) = Shift + teclas direcionais ou ^B + direcional do teclado
 Renomear uma sessão = ^B + $
 Renomear uma janela = ^B + ,
 Entrar e sair do foco na janela = ^B + z
