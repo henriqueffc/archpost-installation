@@ -151,6 +151,7 @@ wine-staging
 wine-gecko
 wine-mono
 winetricks
+wl-clipboard
 wmctrl
 wireless-regdb
 x86_energy_perf_policy
