@@ -2,6 +2,7 @@
 
 AZUL='\e[1;34m'
 FIM='\e[0m'
+RED='\e[0;31m'
 
 echo -e "$AZUL
 -------------------------------------------------------------------------
@@ -14,5 +15,5 @@ output="$(yay -Pw)"
 if [[ -n $output ]]; then
     printf "%s\n" "$output"
 else
-    printf "Não há novas notícias\n"
+    printf "$RED Não há novas notícias\n$FIM"
 fi

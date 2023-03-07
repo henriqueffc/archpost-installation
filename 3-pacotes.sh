@@ -302,6 +302,11 @@ mv ./alacritty/open-in-alacritty $HOME/.local/share/nautilus/scripts
 chmod +x $HOME/.local/share/nautilus/scripts/open-in-alacritty
 nautilus -q
 
+# Tmux
+mv ./tmux/.tmux.conf $HOME
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+tmux source-file ~/.tmux.conf
+
 # Mlocate
 sudo pacman -S mlocate --needed --noconfirm
 sudo updatedb

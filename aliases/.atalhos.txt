@@ -160,6 +160,40 @@ Ctrl + L = clear
 
 
 
+#### TMUX ####
+
+Prefixo = Ctrl + b (^B)
+Pode selecionar o texto com o o botão da esquerda do mouse e clicar com o botão do meio do mouse para colar na linha de comando. Essa seleção copia também o texto para o clipboard. Outra opção é selecionar o texto segurando a tecla Shift pressionada e usar Shift (pressionado) + Ctrl + C para copiar ou clicar com o botão da esquerda do mouse para copiar para o clipboard (opção do Alacritty). Com o texto selecionado (shift), o botão do meio copia a seleção diretamente para a linha de comando.
+O scroll do mouse (mouse habilitado pelo .tmux.conf) rola a página do terminal.
+Você pode usar o mouse para mudar entre janelas e abas.
+Clicar com o botão direito sobre a tela do terminal abre um painel de opções.
+Abrir URL = Segure Shift e clique no link.
+Rolar a página do terminal = ^B + PageUp ou PageDown
+Abrir nova aba = ^B + c
+Fechar a aba = Crtl + d
+Listar todas as janelas = ^B + W
+Kill em um painel = ^B + X
+Mostrar o número do painel = ^B + q
+Mudar para aba seguinte = ^B + n
+Mudar para a aba anterior = ^B + p
+Mudar para a aba (número) = ^B + número da aba (informação na barra do tmux)
+Aba horizontal = ^B + " (^B + shift + '')
+Aba vertical = ^B + % (^B + shift + %)
+Mudar entre as abas (horizontal e vertical) = ^B + direcional do teclado
+Renomear uma sessão = ^B + $
+Renomear uma janela = ^B + ,
+Reload tmux.conf (bind r source-file ~/.tmux.conf no tmux.conf) = ^B + r
+Detached (sair da sessão, mas sem fechá-la) = ^B + d
+Para listar todas as sessões abertas = tmux ls
+Para voltar para a sessão = tmux a -t número_da_sessão (0, p.ex.)
+Execute dentro do Tmux para instalar os plugins (tpm) = ^B + Shift + I (i maiúsculo)
+Updates plugin = ^B + U
+Uninstalling plugins = ^B + alt + u
+
+
+
+
+
 #### GNOME ####
 
 Super + Alt + 8 = Amplificador (acessibilidade)

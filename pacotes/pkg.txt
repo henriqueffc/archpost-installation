@@ -137,6 +137,7 @@ thefuck
 thermald
 thunderbird
 thunderbird-i18n-pt-br
+tmux
 torbrowser-launcher
 transmission-gtk
 trash-cli
