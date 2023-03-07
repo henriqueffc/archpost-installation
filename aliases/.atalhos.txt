@@ -189,6 +189,9 @@ Para voltar para a sessão = tmux a -t número_da_sessão (0, p.ex.)
 Execute dentro do Tmux para instalar os plugins (tpm) = ^B + Shift + I (i maiúsculo)
 Updates plugin = ^B + U
 Uninstalling plugins = ^B + alt + u
+Start monitoring a pane and notify when it finishes = ^B + m
+Start monitoring a pane, return it in focus and notify when it finishes = ^B + Alt + m
+Cancel monitoring of a pane = ^B + M
 
 
 
