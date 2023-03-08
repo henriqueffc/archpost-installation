@@ -178,11 +178,11 @@ gfx.x11-egl.force-disabled = true
 
 media.ffmpeg.enabled / media.ffmpeg.vaapi-drm-display.enabled / media.ffmpeg.vaapi.enabled = true
 
-media.rdd-vpx.enabled / media.ffvpx.enabled / media.rdd-process.enabled / media.rdd-ffvpx.enabled= true 
+media.ffvpx.enabled = false
+
+media.rdd-vpx.enabled = false
 
 media.ffmpeg.customized-buffer-allocation = true
-
-media.rdd-ffmpeg.enabled = true
 
 media.av1.enabled = false (O meu processador i7 ou a nvdia mx110 não suportam aceleração de hardware por av1)
 
@@ -200,6 +200,13 @@ gfx.color_management.display_profile = Sem nada definido
 
 dom.webgpu.enabled = true
 
+media.peerconnection.video.enabled = true
+
+media.peerconnection.video.vp9_enabled = true
+
+media.webrtc.platformencoder = true
+
+media.webrtc.hw.h264.enabled = true
 
 media.navigator.mediadatadecoder_vpx_enabled = true to enable hardware VA-API decoding for WebRTC 
 
@@ -243,26 +250,20 @@ Simple Translate
 
 Enhancer for YouTube
 
-RSS Feed Reader
-
 LanguageTool
 
 Flatline
 
 Material Icons for GitHub
 
-Side View
-
 I don't care about cookies (controlo os cookies nas configurações do navegador)
 
 uBlock Origin 
-
-Firefox Translations
 
 Bitwarden
 
 Dark Reader
 
-Push to Kindle
+Firefox Relay
 
-DownThemAll!
+Firefox Multi-Account Containers
