@@ -34,3 +34,9 @@ https://github.com/paroj/xpad
 ## 9 - Heroic Game Launcher - Wayland.
 sudo nano /usr/share/applications/heroic.desktop
 Exec=/opt/Heroic/heroic --ozone-platform=wayland --enable-features=WaylandWindowDecorations %U
+
+
+## 10 - Gradience - Aplicando o tema Classic Dark (script 10)
+Aplique o tema Classic Dark. É preciso abrir o aplicativo antes de executar os comandos abaixo.
+flatpak run --command=gradience-cli com.github.GradienceTeam.Gradience download -n "Classic Dark"
+flatpak run --command=gradience-cli com.github.GradienceTeam.Gradience apply -n "Classic Dark" --gtk both
