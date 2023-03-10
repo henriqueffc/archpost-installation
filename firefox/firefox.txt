@@ -55,8 +55,6 @@ webgl.msaa-force / webgl.force-enabled = true
 
 gfx.webrender.precache-shaders = true
 
-gfx.webrender.quality.force-subpixel-aa-where-possible = false (não uso)
-
 webgl.disable-angle = true (não coloque true no Windows)
 
 webgl.all-angle-options = false
@@ -84,8 +82,6 @@ browser.display.use_system_colors = true
 gfx.canvas.accelerated = true
 
 widget.dmabuf.force-enabled  = true 
-
-widget.dmabuf-textures.enabled = true
 
 widget.dmabuf-webgl.enabled = true
 
@@ -170,13 +166,11 @@ layers.acceleration.force-enabled = false (Legacy OpenGL compositor)
 
 gfx.webrender.compositor.force-enabled = false no wayland 
 
-gfx.prefer-x11-egl = false
-
 gfx.x11-egl.force-enabled = false
 
 gfx.x11-egl.force-disabled = true 
 
-media.ffmpeg.enabled / media.ffmpeg.vaapi-drm-display.enabled / media.ffmpeg.vaapi.enabled = true
+media.ffmpeg.enabled / media.ffmpeg.vaapi.enabled = true
 
 media.ffvpx.enabled = false
 
