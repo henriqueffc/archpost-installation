@@ -30,10 +30,6 @@ if test -f "/usr/bin/flatpak"; then
 	sudo flatpak override --filesystem=xdg-config/gtk-3.0
 	echo -e "$AZUL Fim da instalação. $FIM"
 	
-	# Aplicando o tema Classic Dark
-	flatpak run --command=gradience-cli com.github.GradienceTeam.Gradience download -n "Classic Dark"
-	flatpak run --command=gradience-cli com.github.GradienceTeam.Gradience apply -n "Classic Dark" --gtk both
-
 else
 
 	echo -e "$AZUL Flatpak não instalado. Faça a instalação do Flatpak para continuar. $FIM $RED sudo pacman -S flatpak && reboot $FIM"
