@@ -42,7 +42,7 @@ gnome-extensions install --force 'vitals.zip'
 
 vjust="24.0"
 echo -e "$AZUL Just Perfection $FIM"
-aria2c https://gitlab.gnome.org/jrahmatzadeh/just-perfection/-/archive/24.0/just-perfection-$vjust.zip
+aria2c https://gitlab.gnome.org/jrahmatzadeh/just-perfection/-/archive/$vjust/just-perfection-$vjust.zip
 unzip just-perfection-$vjust.zip
 mv just-perfection-$vjust just-perfection
 ./just-perfection/scripts/build.sh
