@@ -70,9 +70,6 @@ sudo mv ./service/cpupowerperf.* /etc/systemd/system
 sudo systemctl enable cpupowerperf.timer
 echo -e "$AZUL \t CPU Power timer habilitado $FIM"
 
-# Remover o Powerprofilesctl
-sudo pacman -R power-profiles-daemon
-
 # tealdeer (implementação do tldr)
 tldr --update
 tldr --seed-config
@@ -326,5 +323,8 @@ gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profi
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ visible-name 'Padrão'
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ default-size-columns '106'
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ default-size-rows '26'
+
+# Remover o Powerprofilesctl
+# sudo pacman -R power-profiles-daemon
 
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
