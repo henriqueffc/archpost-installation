@@ -15,48 +15,58 @@ sudo pacman -S aria2 libgtop lm_sensors git bluez-utils gettext unzip ninja meso
 
 # Instalação das extensões
 
-echo -e "$AZUL AppIndicator and KStatusNotifierItem Support $FIM" 
-aria2c https://github.com/ubuntu/gnome-shell-extension-appindicator/archive/refs/tags/v49.zip
-unzip gnome-shell-extension-appindicator-49.zip
-meson setup ./gnome-shell-extension-appindicator-49 /tmp/g-s-appindicators-build
+vap="52"
+echo -e "$AZUL AppIndicator and KStatusNotifierItem Support $FIM"
+aria2c https://github.com/ubuntu/gnome-shell-extension-appindicator/archive/refs/tags/v$vap.zip
+unzip gnome-shell-extension-appindicator-$vap.zip
+meson setup ./gnome-shell-extension-appindicator-$vap /tmp/g-s-appindicators-build
 ninja -C /tmp/g-s-appindicators-build install
 
-echo -e "$AZUL Clipboard History $FIM" 
-aria2c https://github.com/SUPERCILEX/gnome-clipboard-history/archive/refs/tags/1.3.0.zip
+vclip="1.3.0"
+# Em caso de update altere a versão na linha 29 também.
+echo -e "$AZUL Clipboard History $FIM"
+aria2c https://github.com/SUPERCILEX/gnome-clipboard-history/archive/refs/tags/$vclip.zip
 gnome-extensions install --force 'gnome-clipboard-history-1.3.0.zip'
 make -C $HOME/.local/share/gnome-shell/extensions/clipboard-history@alexsaveau.dev
 
+vfuz="5.0.14"
+# Em caso de update altere a versão na linha 36 também.
 echo -e "$AZUL Fuzzy App Search for GNOME $FIM"
-aria2c https://gitlab.com/Czarlie/gnome-fuzzy-app-search/-/archive/v5.0.14/gnome-fuzzy-app-search-v5.0.14.zip
+aria2c https://gitlab.com/Czarlie/gnome-fuzzy-app-search/-/archive/v$vfuz/gnome-fuzzy-app-search-v$vfuz.zip
 gnome-extensions install --force 'gnome-fuzzy-app-search-v5.0.14.zip'
 
-echo -e "$AZUL Bluetooth Quick Connect $FIM"
-aria2c https://github.com/bjarosze/gnome-bluetooth-quick-connect/archive/refs/tags/v33.zip
-gnome-extensions install --force 'gnome-bluetooth-quick-connect-33.zip'
-make -C $HOME/.local/share/gnome-shell/extensions/bluetooth-quick-connect@bjarosze.gmail.com
-
+vvit="59.0.6"
 echo -e "$AZUL Vitals $FIM" 
-aria2c https://github.com/corecoding/Vitals/releases/download/v59.0.6/vitals.zip
+aria2c https://github.com/corecoding/Vitals/releases/download/v$vvit/vitals.zip
 gnome-extensions install --force 'vitals.zip'
 
+vjust="24.0"
 echo -e "$AZUL Just Perfection $FIM"
-aria2c https://gitlab.gnome.org/jrahmatzadeh/just-perfection/-/archive/24.0/just-perfection-24.0.zip
-unzip just-perfection-24.0.zip
-./just-perfection-24.0/scripts/build.sh
-gnome-extensions install --force './just-perfection-24.0/just-perfection-desktop@just-perfection.shell-extension.zip'
+aria2c https://gitlab.gnome.org/jrahmatzadeh/just-perfection/-/archive/24.0/just-perfection-$vjust.zip
+unzip just-perfection-$vjust.zip
+mv just-perfection-$vjust just-perfection
+./just-perfection/scripts/build.sh
+gnome-extensions install --force './just-perfection/just-perfection-desktop@just-perfection.shell-extension.zip'
 
+vblur="44"
 echo -e "$AZUL Blur My Shell $FIM"
-wget https://github.com/aunetx/blur-my-shell/releases/download/v44/blur-my-shell@aunetx.shell-extension.zip
+wget https://github.com/aunetx/blur-my-shell/releases/download/v$vblur/blur-my-shell@aunetx.shell-extension.zip
 gnome-extensions install --force 'blur-my-shell@aunetx.shell-extension.zip'
 
+vappi="14"
 echo -e "$AZUL App Icons Taskbar $FIM"
-aria2c https://gitlab.com/AndrewZaech/aztaskbar/-/archive/v14/aztaskbar-v14.zip
-unzip aztaskbar-v14.zip
-make install -C ./aztaskbar-v14
-
-sudo pacman -Rn ninja meson jq eslint
+aria2c https://gitlab.com/AndrewZaech/aztaskbar/-/archive/v$vappi/aztaskbar-v$vappi.zip
+unzip aztaskbar-v$vappi.zip
+make install -C ./aztaskbar-v$vappi
 
 echo -e "$AZUL Workspace indicator $FIM"
 gnome-extensions enable workspace-indicator@gnome-shell-extensions.gcampax.github.com
+
+echo -e "$AZUL Bluetooth Quick Connect $FIM"
+git clone https://github.com/bjarosze/gnome-bluetooth-quick-connect
+cd gnome-bluetooth-quick-connect
+make install
+
+sudo pacman -Rn ninja meson eslint
 
 printf "%s $VERDE Fim! Reinicie com o comando reboot e habilite as extensões usando o app Extensões após a reinicialização do sistema $FIM \n"
