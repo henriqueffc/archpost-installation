@@ -109,6 +109,7 @@ pkgstats
 polari
 procs
 progress
+qbittorrent
 qgnomeplatform-qt5
 qgnomeplatform-qt6
 qt5-svg
@@ -139,7 +140,6 @@ thunderbird
 thunderbird-i18n-pt-br
 tmux
 torbrowser-launcher
-transmission-gtk
 trash-cli
 ufw
 unace
