@@ -202,6 +202,8 @@ Detached (sair da sessão, mas sem fechá-la) = ^B + d
 Aumentar ou diminuir o tamanho das janelas = ^B + Ctrl-h/j/k/l
 Trocar as abas (com as janelas) de posição = ^B + Shift + < ou >
 Tornar uma janela uma nova aba = ^B + Shift + ! 
+Alterna a posição das janelas = ^B + Ctrl + O (sentido horário) / ^B + Alt + O (sentido anti-horário)
+Mudar o layout da tela = ^B + Space / ^B + Alt + número 1 a 5
 Para listar todas as sessões abertas = tmux ls
 Nova sessão = tmux new -s nome_da_sessão
 Nova sessão detached = tmux new -s nome_da_sessão -d
@@ -225,16 +227,18 @@ Cancel monitoring of a pane = ^B + M
 
 Super + Alt + 8 = Amplificador (acessibilidade)
 Super + Setas do teclado = altera o posicionamento da janela selecionada na tela.
-Super + T lança terminal
-Super + B lança navegador
-Super + F lança files
-Super + A= Abre o grid
+Super + T = lança terminal
+Alt + Z = Abre as opções do Crow Translate (o programa Crow Translate deve estar aberto em segundo plano)
+Super + B = lança navegador
+Super + F = lança files
+Super + A = Abre o grid
 Super + Q = Fecha a janela
 Super + Seta para cima = maximizar
 Super + Seta para baixo = volta a janela ao estado original
 Super + Page Up ou Page Down = muda de workspace
 Super + End = ir para a última área de trabalho
 Super + Home = muda para a primeira área de trabalho
+Super + Shift + número de 2 a 6 = muda para o workspace desejado.
 Super + clique do mouse sobre a janela = move a janela.
 Alt + Tab = alterna entre os aplicativos. Se tiver mais de uma janela aberta por aplicativo, fixe a seleção sobre o ícone do programa para mostrar as janelas abertas.
 Alt + ' = alterna entre as janelas abertas de um mesmo aplicativo que está em foco.
