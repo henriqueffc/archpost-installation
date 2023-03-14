@@ -4,7 +4,7 @@ alias mpv-yt-nv="prime-run mpv --vo=gpu --hwdec=cuda --hwdec-codecs=h264 --gpu-a
 alias mpvnovideo="mpv --vid=no --save-position-on-quit"
 alias yaycache="yay -Sc --aur"
 alias rede="sudo nethogs -p"
-alias neo="neofetch --colors 4 3 5 7 1 2"
+alias neo="neofetch"
 alias atualizar="flatpak update && flatpak remove --unused && archnews && sudo pacman -Syu && yay -Sua --devel"
 alias omz="echo -e '\e[0;34mzsh-syntax-highlighting\e[0m' && git -C $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting pull && echo -e '\e[0;34mzsh-autosuggestions\e[0m' && git -C $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions pull && echo -e '\e[0;34mzsh-completions\e[0m' && git -C $HOME/.oh-my-zsh/custom/plugins/zsh-completions pull && echo -e '\e[0;34mpowerlevel10k\e[0m' && git -C ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k pull && omz update"
 alias limpar="sudo paccache -rk1 && yay -Yc"
