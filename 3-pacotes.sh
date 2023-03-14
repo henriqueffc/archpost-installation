@@ -330,4 +330,7 @@ gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profi
 # Remover o Powerprofilesctl
 # sudo pacman -R power-profiles-daemon
 
+# Neofetch
+cp ./neofetch/config.conf $HOME/.config/neofetch/
+
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
