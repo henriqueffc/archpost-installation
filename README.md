@@ -41,3 +41,9 @@ Ordem de uso dos scripts:
 - 11-firefox-nightly.sh (opcional)
 
 Recomendo reinicializar o sistema após a execução de cada script.
+
+#### Screenshots
+
+![Tela 1](.github/screenshots/1.png)
+
+![Tela 2 - Alacritty/Tmux](.github/screenshots/2.png)
