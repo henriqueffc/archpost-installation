@@ -109,6 +109,7 @@ pkgstats
 polari
 procs
 progress
+python-nautilus
 qbittorrent
 qgnomeplatform-qt5
 qgnomeplatform-qt6

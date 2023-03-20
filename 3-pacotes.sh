@@ -297,9 +297,9 @@ mkdir $HOME/.config/alacritty
 mv ./alacritty/alacritty.yml $HOME/.config/alacritty/
 sudo sed -i 's/\<Exec=alacritty\>/Exec=prime-run alacritty/g' /usr/share/applications/Alacritty.desktop
 
-# Alacritty - Nautilus
-mv ./alacritty/open-in-alacritty $HOME/.local/share/nautilus/scripts
-chmod +x $HOME/.local/share/nautilus/scripts/open-in-alacritty
+# Alacritty - Tmux - Nautilus
+mkdir -p ~/.local/share/nautilus-python/extensions
+mv ./alacritty/alacritty-tmux-nautilus.py $HOME/.local/share/nautilus-python/extensions/
 nautilus -q
 
 # Tmux
