@@ -40,3 +40,6 @@ Exec=/opt/Heroic/heroic --ozone-platform=wayland --enable-features=WaylandWindow
 Aplique o tema Classic Dark. É preciso abrir o aplicativo antes de executar os comandos abaixo.
 flatpak run --command=gradience-cli com.github.GradienceTeam.Gradience download -n "Classic Dark"
 flatpak run --command=gradience-cli com.github.GradienceTeam.Gradience apply -n "Classic Dark" --gtk both
+
+## 11 - Instale os plugins no Tmux
+^B + Shift + I (i maiúsculo)
