@@ -1,7 +1,6 @@
 authy
 crow-translate
 downgrade
-dropbox
 goverlay-bin
 heroic-games-launcher-bin
 lib32-mangohud
