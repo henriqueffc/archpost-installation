@@ -327,6 +327,12 @@ gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profi
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ default-size-columns '106'
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ default-size-rows '26'
 
+# Clamav
+sudo freshclam
+sudo cp /etc/clamav/freshclam.conf /etc/clamav/freshclam.conf.bak
+sudo sed -i '/#Checks 24/c\Checks 4' /etc/clamav/freshclam.conf
+sudo systemctl enable --now clamav-freshclam.service
+
 # Remover o Powerprofilesctl
 # sudo pacman -R power-profiles-daemon
 
