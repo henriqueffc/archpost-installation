@@ -19,6 +19,7 @@ cabextract
 ccze
 celluloid
 chromium
+clamav
 cmatrix
 coreutils
 cpio
