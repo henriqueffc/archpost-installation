@@ -11,7 +11,7 @@ AZUL='\e[1;34m'
 VERDE='\e[1;32m'
 FIM='\e[0m'
 
-sudo pacman -S aria2 libgtop lm_sensors git bluez-utils gettext unzip ninja meson jq eslint --needed --noconfirm
+sudo pacman -S aria2 libgtop lm_sensors git gettext unzip ninja meson jq eslint --needed --noconfirm
 
 # Instalação das extensões
 
@@ -61,11 +61,6 @@ make install -C ./aztaskbar-v$vappi
 
 echo -e "$AZUL Workspace indicator $FIM"
 gnome-extensions enable workspace-indicator@gnome-shell-extensions.gcampax.github.com
-
-echo -e "$AZUL Bluetooth Quick Connect $FIM"
-git clone https://github.com/bjarosze/gnome-bluetooth-quick-connect
-cd gnome-bluetooth-quick-connect
-make install
 
 sudo pacman -Rn ninja meson eslint
 
