@@ -128,6 +128,9 @@ mv ./aliases/.atalhos.txt ~/
 # Chromium
 mv ./chromium/chromium-flags.conf ~/.config
 
+# VSCode
+mv ./vscode/code-flags.conf ~/.config
+
 # Modelos de arquivos para o Files
 touch $HOME/Modelos/novo.txt
 
