@@ -33,7 +33,7 @@ https://github.com/paroj/xpad
 
 ## 9 - Heroic Game Launcher - Wayland.
 sudo nano /usr/share/applications/heroic.desktop
-Exec=/opt/Heroic/heroic --ozone-platform=wayland --enable-features=WaylandWindowDecorations %U
+Exec=/opt/Heroic/heroic --ozone-platform=wayland %U
 
 
 ## 10 - Gradience - Aplicando o tema Classic Dark (script 10)
@@ -41,5 +41,12 @@ Aplique o tema Classic Dark. É preciso abrir o aplicativo antes de executar os 
 flatpak run --command=gradience-cli com.github.GradienceTeam.Gradience download -n "Classic Dark"
 flatpak run --command=gradience-cli com.github.GradienceTeam.Gradience apply -n "Classic Dark" --gtk both
 
+
 ## 11 - Instale os plugins no Tmux
 ^B + Shift + I (i maiúsculo)
+
+
+## 12 - Configuração do Joplin e das extensões
+Configure o Joplin (Wayland + Plugins / Backup Dropbox) e as extensões do GNOME (backup do Appicon está no Dropbox e a imagem svg do Arch - Just Perfection - está na pasta ~/Imagens/Logo)
+nano .local/share/applications/appimagekit-joplin.desktop 
+Exec=/home/henriqueffc/.joplin/Joplin.AppImage --ozone-platform=wayland %U
