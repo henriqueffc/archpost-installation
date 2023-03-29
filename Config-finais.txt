@@ -46,14 +46,18 @@ flatpak run --command=gradience-cli com.github.GradienceTeam.Gradience apply -n 
 ^B + Shift + I (i maiúsculo)
 
 
-## 12 - Configuração do Joplin e das extensões do GNOME
-Configure o Joplin (Wayland + Plugins / Backup Dropbox) e as extensões do GNOME (backup do Appicon está no Dropbox e a imagem svg do Arch - Just Perfection - está na pasta ~/Imagens/Logo)
+## 12 - Configuração do Joplin  
+Configure o Joplin (Wayland + Plugins / Backup Dropbox)
 nano .local/share/applications/appimagekit-joplin.desktop 
 Exec=/home/henriqueffc/.joplin/Joplin.AppImage --ozone-platform=wayland %U
 
 
-## Spotify-launcher
+## 13 - Spotify-launcher
 Inicie o Spotify-launcher para completar a instalação do Spotify.
 Depois execute os comandos abaixo para o Spotify funcionar no Wayland e não no Xwayland.
 sudo cp /etc/spotify-launcher.conf /etc/spotify-launcher.conf.bak
 sudo sed -i '$a extra_arguments = ["--enable-features=UseOzonePlatform", "--ozone-platform=wayland"]' /etc/spotify-launcher.conf
+
+
+## 14 - Extensões do GNOME
+Configure as extensões instaladas no GNOME (backup do App Icons Taskbar está no Dropbox e a imagem svg do Arch usada na Just Perfection está na pasta ~/Imagens/Logo)
