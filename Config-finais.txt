@@ -33,7 +33,7 @@ https://github.com/paroj/xpad
 
 ## 9 - Heroic Game Launcher - Wayland.
 sudo nano /usr/share/applications/heroic.desktop
-Exec=/opt/Heroic/heroic --ozone-platform=wayland %U
+Exec=/opt/Heroic/heroic --ozone-platform-hint=auto %U
 
 
 ## 10 - Gradience - Aplicando o tema Classic Dark (script 10)
@@ -49,7 +49,7 @@ flatpak run --command=gradience-cli com.github.GradienceTeam.Gradience apply -n 
 ## 12 - Configuração do Joplin  
 Configure o Joplin (Wayland + Plugins / Backup Dropbox)
 nano .local/share/applications/appimagekit-joplin.desktop 
-Exec=/home/henriqueffc/.joplin/Joplin.AppImage --ozone-platform=wayland %U
+Exec=/home/henriqueffc/.joplin/Joplin.AppImage --enable-features=UseOzonePlatform --ozone-platform=wayland %u
 
 
 ## 13 - Spotify-launcher
