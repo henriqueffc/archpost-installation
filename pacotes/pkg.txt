@@ -73,7 +73,6 @@ intel-gpu-tools
 inxi
 jre-openjdk
 kdegraphics-mobipocket
-kdenlive
 kdiskmark
 lnav
 lib32-gamemode
