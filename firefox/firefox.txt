@@ -49,6 +49,18 @@ widget.disable-swipe-tracker = false
 
 network.cookie.cookieBehavior = 5 (padrão anterior 4)
 
+network.trr.mode = 2
+
+network.trr.uri = 	https://mozilla.cloudflare-dns.com/dns-query
+
+dom.security.https_only_mode = true
+
+dom.security.https_only_mode_ever_enabled = true
+
+services.sync.prefs.sync-seen.dom.security.https_only_mode = true
+
+services.sync.prefs.sync-seen.dom.security.https_only_mode_ever_enabled = true
+
 media.peerconnection.video.vp9_preferred = true
 
 webgl.msaa-force / webgl.force-enabled = true
