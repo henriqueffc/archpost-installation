@@ -27,7 +27,6 @@ flatpak install flathub com.calibre_ebook.calibre -y
 flatpak install flathub net.davidotek.pupgui2 -y
 flatpak install flathub io.gitlab.adhami3310.Converter -y
 flatpak install flathub org.gtkhash.gtkhash -y
-flatpak install flathub com.github.rajsolai.textsnatcher -y
 flatpak install flathub com.github.tchx84.Flatseal -y
 flatpak install flathub com.discordapp.Discord -y
 flatpak install flathub com.github.jeromerobert.pdfarranger -y
@@ -47,14 +46,11 @@ flatpak install flathub com.github.huluti.Curtail -y
 flatpak install flathub de.haeckerfelix.Shortwave -y
 flatpak install flathub org.zotero.Zotero -y
 flatpak install flathub com.usebottles.bottles -y
-flatpak install flathub net.lutris.Lutris -y
-flatpak install flathub org.freedesktop.Platform.VulkanLayer.MangoHud -y
 flatpak install flathub org.gnome.Games -y
 flatpak install flathub io.github.Foldex.AdwSteamGtk -y
 flatpak install flathub io.podman_desktop.PodmanDesktop -y
 flatpak install flathub com.github.PintaProject.Pinta -y
 flatpak install flathub io.github.realmazharhussain.GdmSettings -y
-flatpak install flathub io.gitlab.zehkira.Monophony -y
 flatpak install flathub com.dropbox.Client -y
 
 # Flatpak Remote-Beta
