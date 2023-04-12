@@ -161,6 +161,7 @@ dom.ipc.processCount = 8
 
 
 
+
 Localização (caso esteja com problemas)
 
 geo.provider.network.url
@@ -168,6 +169,14 @@ geo.provider.network.url
 Padrão: https://www.googleapis.com/geolocation/v1/geolocate?key=%GOOGLE_LOCATION_SERVICE_API_KEY%
 
 Alternativa: https://location.services.mozilla.com/v1/geolocate?key=%MOZILLA_API_KEY%
+
+Desabilite o geoclue:
+
+geo.provider.geoclue.always_high_accuracy = false
+
+geo.provider.use_geoclue = false
+
+
 
 
 Vaapi: 
