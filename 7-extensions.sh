@@ -22,11 +22,11 @@ unzip gnome-shell-extension-appindicator-$vap.zip
 meson setup ./gnome-shell-extension-appindicator-$vap /tmp/g-s-appindicators-build
 ninja -C /tmp/g-s-appindicators-build install
 
-vclip="1.3.2"
+vclip="1.3.3"
 # Em caso de update altere a versão na linha 29 também.
 echo -e "$AZUL Clipboard History $FIM"
 aria2c https://github.com/SUPERCILEX/gnome-clipboard-history/archive/refs/tags/$vclip.zip
-gnome-extensions install --force 'gnome-clipboard-history-1.3.2.zip'
+gnome-extensions install --force 'gnome-clipboard-history-1.3.3.zip'
 make -C $HOME/.local/share/gnome-shell/extensions/clipboard-history@alexsaveau.dev
 
 vfuz="5.0.14"
