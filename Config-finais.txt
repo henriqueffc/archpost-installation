@@ -46,10 +46,9 @@ flatpak run --command=gradience-cli com.github.GradienceTeam.Gradience apply -n 
 ^B + Shift + I (i maiúsculo)
 
 
-## 12 - Configuração do Joplin  
-Configure o Joplin (Wayland + Plugins / Backup Dropbox)
-nano .local/share/applications/appimagekit-joplin.desktop 
-Exec=/home/henriqueffc/.joplin/Joplin.AppImage --enable-features=UseOzonePlatform --ozone-platform=wayland %u
+## 12 - Configuração do Obsidian - Wayland  
+sudo nano /usr/share/applications/obsidian.desktop 
+Exec=/usr/bin/obsidian --ozone-platform-hint=auto %U
 
 
 ## 13 - Spotify-launcher
