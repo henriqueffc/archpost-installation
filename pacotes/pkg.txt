@@ -98,6 +98,7 @@ net-tools
 nmap
 ntfs-3g
 nvme-cli
+obsidian
 okular
 openssh
 p7zip
