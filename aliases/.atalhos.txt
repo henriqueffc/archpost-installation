@@ -99,6 +99,7 @@ dados
 reflector
 xls
 xll
+xla
 xltree
 bat
 nvme
