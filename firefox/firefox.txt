@@ -275,6 +275,8 @@ I don't care about cookies (controlo os cookies nas configurações do navegador
 
 uBlock Origin 
 
+Read Aloud: A Text to Speech Voice Reader
+
 Bitwarden
 
 Dark Reader
