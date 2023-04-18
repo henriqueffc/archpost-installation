@@ -60,3 +60,5 @@ sudo sed -i '$a extra_arguments = ["--enable-features=UseOzonePlatform", "--ozon
 
 ## 14 - Extensões do GNOME
 Configure as extensões instaladas no GNOME (backup do App Icons Taskbar está no Dropbox e a imagem svg do Arch usada na Just Perfection está na pasta ~/Imagens/Logo)
+
+### 15 - Copie o arquivo user.js da pasta firefox para o seu profile do navegador em /.mozilla/firefox
