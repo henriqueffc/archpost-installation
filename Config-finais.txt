@@ -27,8 +27,13 @@ echo "file:///home/$USER/Dropbox 🗃 Dropbox" >> ~/.config/gtk-3.0/bookmarks
 ## 7 - Acrescente nos parâmetros da partição raiz no fstab as especificações commit=60 e barrier=0.
 
 
-## 8 - Para o controle Multilaser JS091 (Shanwan Controler) funcionar instale a atualização para o Xpad disponível no site abaixo.
-https://github.com/paroj/xpad
+## 8 - tune2fs
+Habilite o fast commit para todas as partições ext4 do sistema.
+sudo tune2fs -O fast_commit /dev/nome_da_partição
+Habilite a checagem do filesystem pelo tune2fs/e2fsck no boot para todas as partições ext4 do sistema (no comando abaixo a verificação está definida para ser efetuada depois de 20 montagens da partição)
+sudo tune2fs -c 20 /dev/nome_da_partição
+Verifique as informações das partições ext4
+sudo dumpe2fs -h /dev/nome_da_partição
 
 
 ## 9 - Heroic Game Launcher - Wayland.
@@ -61,4 +66,9 @@ sudo sed -i '$a extra_arguments = ["--enable-features=UseOzonePlatform", "--ozon
 ## 14 - Extensões do GNOME
 Configure as extensões instaladas no GNOME (backup do App Icons Taskbar está no Dropbox e a imagem svg do Arch usada na Just Perfection está na pasta ~/Imagens/Logo)
 
-### 15 - Copie o arquivo user.js da pasta firefox para o seu profile do navegador em /.mozilla/firefox
+
+## 15 - Copie o arquivo user.js da pasta firefox para o seu profile do navegador em /.mozilla/firefox
+
+
+## 16 - Para o controle Multilaser JS091 (Shanwan Controler) funcionar instale a atualização para o Xpad disponível no site abaixo.
+https://github.com/paroj/xpad
