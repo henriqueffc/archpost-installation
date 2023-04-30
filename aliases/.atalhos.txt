@@ -56,6 +56,12 @@ iommu
 
 procs = ps
 bat = cat
+batgrep = ripgrep usando o formato do bat
+batman = visualizar a documentação usando o bat
+batwatch = acompanhar mudanças nos arquivos usando o bat
+batpipe = a less (and soon bat) preprocessor for viewing more types of files in the terminal
+batdiff = Diff a file against the current git index, or display the diff between two files
+prettybat = Pretty-print source code and highlight it with bat
 rg = grep
 fd = find/locate
 exa (alias xll/xls/xltree) = ls
