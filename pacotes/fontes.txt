@@ -7,7 +7,8 @@ ttf-dejavu
 ttf-fira-code
 ttf-jetbrains-mono
 ttf-liberation
-ttf-nerd-fonts-symbols-2048-em
+ttf-nerd-fonts-symbols
+ttf-nerd-fonts-symbols-mono
 ttf-opensans
 ttf-roboto
 ttf-roboto-mono
