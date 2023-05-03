@@ -103,6 +103,7 @@ okular
 openssh
 p7zip
 pacman-contrib
+pacmanlogviewer
 pandoc-cli
 papirus-icon-theme
 pkgfile
