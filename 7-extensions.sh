@@ -48,7 +48,7 @@ mv just-perfection-$vjust just-perfection
 ./just-perfection/scripts/build.sh
 gnome-extensions install --force './just-perfection/just-perfection-desktop@just-perfection.shell-extension.zip'
 
-vblur="45"
+vblur="46"
 echo -e "$AZUL Blur My Shell $FIM"
 wget https://github.com/aunetx/blur-my-shell/releases/download/v$vblur/blur-my-shell@aunetx.shell-extension.zip
 gnome-extensions install --force 'blur-my-shell@aunetx.shell-extension.zip'
