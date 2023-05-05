@@ -39,6 +39,7 @@ Ordem de uso dos scripts:
 - 9-podman-distrobox.sh
 - 10-theme.sh (opcional)
 - 11-firefox-nightly.sh (opcional)
+- 12-espanso-wayland.sh (opcional)
 
 Recomendo reinicializar o sistema após a execução de cada script.
 
