@@ -1,2 +1,0 @@
- keyboard_layout:
-  { layout: br }
