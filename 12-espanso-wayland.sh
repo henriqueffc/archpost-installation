@@ -13,6 +13,10 @@ yay espanso-wayland
 
 espanso service register
 
+# Inicializando o Espanso
+
+espanso start
+
 # Mudança do laytout do teclado para br
 
 echo -e "\n keyboard_layout:" >>$HOME/.config/espanso/config/default.yml
