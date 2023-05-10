@@ -1,4 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=espanso
-Exec=bash -c "sleep 20 && /usr/bin/espanso service start --unmanaged"
