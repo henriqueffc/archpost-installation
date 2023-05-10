@@ -23,3 +23,7 @@ echo -e "\n keyboard_layout:" >>$HOME/.config/espanso/config/default.yml
 echo "  { layout: br }" >>$HOME/.config/espanso/config/default.yml
 echo " search_shortcut: ALT+SHIFT+SPACE" >>$HOME/.config/espanso/config/default.yml
 echo " show_notifications: false" >>$HOME/.config/espanso/config/default.yml
+
+# Atalhos personalizados
+
+mv ./espanso/*.yml $HOME/.config/espanso/match/packages

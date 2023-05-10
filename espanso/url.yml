@@ -1,0 +1,15 @@
+name: url-shortcuts
+parent: default
+
+matches:
+  - trigger: ";mastodon;"
+    replace: "https://fosstodon.org/@henriqueffc"
+
+  - trigger: ";youtube;"
+    replace: "https://www.youtube.com/@henriquecustodio"
+
+  - trigger: ";academia;"
+    replace: "https://independent.academia.edu/HenriqueFlorentinoFariaCust%C3%B3dio"
+
+  - trigger: ";linkme;"
+    replace: "https://linkme.bio/henriqueffcustodio"

@@ -1,0 +1,12 @@
+name: codes-shortcuts
+parent: default
+
+matches:
+  - trigger: ";github;"
+    replace: "https://github.com/henriqueffc"
+
+  - trigger: ";bash;"
+    replace: "#!/usr/bin/env bash"
+
+  - trigger: ";gitarch;"
+    replace: "https://github.com/henriqueffc/archpost-installation"
