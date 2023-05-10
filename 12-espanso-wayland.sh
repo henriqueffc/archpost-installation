@@ -27,3 +27,10 @@ echo " show_notifications: false" >>$HOME/.config/espanso/config/default.yml
 # Atalhos personalizados
 
 mv ./espanso/*.yml $HOME/.config/espanso/match/packages
+
+# Alterações no arquivo base.yml
+
+sed -i 's|%m/%d/%Y|%d/%m/%Y|g' $HOME/.config/espanso/match/base.yml
+sed -i 's|:date|;date;|g' $HOME/.config/espanso/match/base.yml
+sed -i 's|:espanso|;espanso;|g' $HOME/.config/espanso/match/base.yml
+sed -i 's|:shell|;shell;|g' $HOME/.config/espanso/match/base.yml
