@@ -115,6 +115,7 @@ python-nautilus
 qbittorrent
 qgnomeplatform-qt5
 qgnomeplatform-qt6
+qqc2-desktop-style
 qt5-svg
 qt5-wayland
 qt6-wayland
