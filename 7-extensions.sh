@@ -53,7 +53,7 @@ echo -e "$AZUL Blur My Shell $FIM"
 wget https://github.com/aunetx/blur-my-shell/releases/download/v$vblur/blur-my-shell@aunetx.shell-extension.zip
 gnome-extensions install --force 'blur-my-shell@aunetx.shell-extension.zip'
 
-vappi="15"
+vappi="16"
 echo -e "$AZUL App Icons Taskbar $FIM"
 aria2c https://gitlab.com/AndrewZaech/aztaskbar/-/archive/v$vappi/aztaskbar-v$vappi.zip
 unzip aztaskbar-v$vappi.zip
