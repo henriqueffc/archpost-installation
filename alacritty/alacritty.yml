@@ -790,6 +790,7 @@ mouse_bindings:
 # in the order they were defined in.
 key_bindings:
   - { key: Return, mods: Super|Shift, action: SpawnNewInstance }
+  - { key: F11, action: ToggleFullscreen }
   #- { key: Paste,                                       action: Paste          }
   #- { key: Copy,                                        action: Copy           }
   #- { key: L,         mods: Control,                    action: ClearLogNotice }
