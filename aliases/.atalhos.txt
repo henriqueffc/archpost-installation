@@ -153,6 +153,7 @@ Botão do meio cola o conteúdo do clipboard
 Super + Clicar e segurar o clique = mover a janela do terminal
 
 Teclado:
+F11 = Full screen
 Super + Shift + Enter (Return) = Abre novo terminal no pwd em que estava o terminal anterior.
 Ctrl + Shift + V = colar
 Crtl + Shift + C = copiar
