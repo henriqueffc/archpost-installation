@@ -7,6 +7,7 @@ libvirt
 openbsd-netcat
 qemu-full
 qemu-emulators-full
+swtpm
 vde2
 virt-manager
 virt-viewer
