@@ -34,6 +34,8 @@ Habilite a checagem do filesystem pelo tune2fs/e2fsck no boot para todas as part
 sudo tune2fs -c 20 /dev/nome_da_partição
 Verifique as informações das partições ext4
 sudo dumpe2fs -h /dev/nome_da_partição
+Faça a configuração disponíveis no link abaixo no fstab para as partições não root ext4
+https://wiki.archlinux.org/title/Fsck#fstab_options
 
 
 ## 9 - Heroic Game Launcher - Wayland.
