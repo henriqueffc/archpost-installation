@@ -15,7 +15,7 @@ if test -f "/usr/bin/flatpak"; then
 
 	echo -e "$AZUL Flatpak instalado. Continuando a instalação. $FIM"
 
-	# Tema do sistema GNOME 43
+	# Tema do sistema GNOME
 	gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
 
 	# Gradience
