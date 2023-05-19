@@ -165,9 +165,9 @@ echo -e "$AZUL Alterando o tema, os ícones e os atalhos do sistema em 1 $FIM" &
 echo -e "$AZUL Alterando o tema, os ícones e os atalhos do sistema em 2 $FIM" && sleep 1
 echo -e "$AZUL Alterando o tema, os ícones e os atalhos do sistema em 3 $FIM" && sleep 1
 
-# Tema do sistema GNOME 43
+# Tema do sistema
 gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
-# Tema para os aplicativos legados GNOME 43
+# Tema para os aplicativos legados 
 gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
 
 # Tema dos ícones
@@ -180,7 +180,7 @@ gsettings set org.gnome.desktop.interface show-battery-percentage true
 gsettings set org.gnome.settings-daemon.plugins.power power-button-action interactive
 
 # Nautilus
-gsettings set org.gnome.nautilus.icon-view captions "['size', 'permissions', 'detailed_type']"
+gsettings set org.gnome.nautilus.icon-view captions "['size', 'detailed_type', 'none']"
 gsettings set org.gtk.gtk4.Settings.FileChooser sort-directories-first true
 
 # File-chooser gtk3
