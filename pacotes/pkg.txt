@@ -2,7 +2,6 @@ alacarte
 alacritty
 aria2
 arch-audit
-asp
 aspell
 aspell-en
 aspell-pt
