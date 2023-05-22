@@ -2,6 +2,7 @@ alacarte
 alacritty
 aria2
 arch-audit
+archlinux-wallpaper
 aspell
 aspell-en
 aspell-pt
