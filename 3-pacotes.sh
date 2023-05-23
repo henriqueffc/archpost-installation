@@ -282,7 +282,7 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-6 "['<Shift><
 
 # atalho personalizado para lançar o Terminal - Super + T
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name "Terminal"
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command "prime-run alacritty"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command "alacritty"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding "<Super>t"
 
 # atalho personalizado para lançar o Crow Translate (tradução do trecho de texto selecionado) - Alt + Z
@@ -295,7 +295,7 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "[
 # Alacritty
 mkdir $HOME/.config/alacritty
 mv ./alacritty/alacritty.yml $HOME/.config/alacritty/
-sudo sed -i 's/\<Exec=alacritty\>/Exec=prime-run alacritty/g' /usr/share/applications/Alacritty.desktop
+# sudo sed -i 's/\<Exec=alacritty\>/Exec=prime-run alacritty/g' /usr/share/applications/Alacritty.desktop
 
 # Alacritty - Tmux - Nautilus
 mkdir -p ~/.local/share/nautilus-python/extensions
