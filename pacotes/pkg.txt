@@ -70,6 +70,7 @@ hexyl
 hwloc
 i7z
 intel-gpu-tools
+intel-ucode
 inxi
 jre-openjdk
 kdegraphics-mobipocket
