@@ -3,9 +3,11 @@ intel-compute-runtime
 intel-gmmlib
 intel-graphics-compiler
 intel-media-driver
-intel-ucode
+lib32-libva
+lib32-libvdpau
 lib32-mesa
 lib32-nvidia-utils
+lib32-ocl-icd
 lib32-opencl-nvidia
 lib32-vulkan-icd-loader
 lib32-vulkan-intel
