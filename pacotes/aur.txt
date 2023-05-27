@@ -3,7 +3,4 @@ crow-translate
 downgrade
 goverlay-bin
 heroic-games-launcher-bin
-lib32-mangohud
-mangohud
-mangohud-common
 visual-studio-code-bin
