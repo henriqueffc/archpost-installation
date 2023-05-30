@@ -43,4 +43,15 @@ $FIM"
 
 sudo pacman -S distrobox
 
+echo -e "$AZUL
+-------------------------------------------------------------------------
+	                 Instalando o Pods
+-------------------------------------------------------------------------
+$FIM"
+
+flatpak install flathub com.github.marhkb.Pods -y
+
+# É necessário habilitar o podman.service para o funcionamento do Pods
+sudo systemctl --user enable --now podman.service
+
 printf "%s $VERDE Fim da instalação! $FIM \n"
