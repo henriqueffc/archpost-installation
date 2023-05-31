@@ -1,4 +1,5 @@
 gst-plugin-pipewire
+helvum
 libpulse
 pipewire
 pipewire-alsa
