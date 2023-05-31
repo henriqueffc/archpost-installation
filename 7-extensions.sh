@@ -62,6 +62,12 @@ make install -C ./aztaskbar-v$vappi
 echo -e "$AZUL Workspace indicator $FIM"
 gnome-extensions enable workspace-indicator@gnome-shell-extensions.gcampax.github.com
 
+echo -e "$AZUL IdeaPad $FIM"
+mkdir $HOME/.local/share/gnome-shell/extensions/ideapad@laurento.frittella
+git -C $HOME/.local/share/gnome-shell/extensions/ideapad@laurento.frittella clone https://github.com/laurento/gnome-shell-extension-ideapad.git
+make -C $HOME/.local/share/gnome-shell/extensions/ideapad@laurento.frittella/gnome-shell-extension-ideapad
+sudo echo "%wheel ALL=(ALL) NOPASSWD: /usr/bin/tee /sys/bus/platform/drivers/ideapad_acpi/VPC????\:??/conservation_mode" | sudo tee /etc/sudoers.d/ideapad
+
 sudo pacman -Rn ninja meson eslint
 
 printf "%s $VERDE Fim! Reinicie com o comando reboot e habilite as extensões usando o app Extensões após a reinicialização do sistema $FIM \n"
