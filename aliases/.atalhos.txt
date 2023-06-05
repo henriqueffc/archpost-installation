@@ -86,6 +86,12 @@ xwininfo = pode ser usado para verificar se o aplicativo está rodando em Waylan
 
 
 
+#### Browser ####
+lynx
+
+
+
+
 #### ALIAS ####
 
 mpv
