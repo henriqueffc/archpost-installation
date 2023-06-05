@@ -85,6 +85,7 @@ libreoffice-fresh-pt-br
 libzip
 lm_sensors
 lshw
+lynx
 man-db
 mangohud
 man-pages
