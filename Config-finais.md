@@ -139,4 +139,4 @@ Nome : terminal ubuntu
 
 Comando : `gnome-terminal --profile=ubuntu`
 
-Atalho : Ctrl + D
+Atalho : Shift + Ctrl + D
