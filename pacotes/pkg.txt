@@ -85,6 +85,7 @@ libreoffice-fresh-pt-br
 libzip
 lm_sensors
 lshw
+lurk
 lynx
 man-db
 mangohud
@@ -134,6 +135,7 @@ seahorse
 soundconverter
 spotify-launcher
 steam
+strace
 scrcpy
 switcheroo-control
 tealdeer
