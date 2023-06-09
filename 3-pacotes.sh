@@ -131,9 +131,9 @@ mv ./vscode/code-flags.conf ~/.config
 # Modelos de arquivos para o Files
 touch $HOME/Modelos/novo.txt
 
-# Desabilitar o core dumps
-sudo cp /etc/systemd/coredump.conf /etc/systemd/coredump.conf.bak
-sudo sed -i 's/#Storage=external/Storage=none/' /etc/systemd/coredump.conf
+# Desabilitar o coredump
+sudo mkdir /etc/systemd/coredump.conf.d/
+sudo mv ./coredump/custom.conf /etc/systemd/coredump.conf.d/
 sudo systemctl daemon-reload
 
 # Limite do tamanho do Journal
