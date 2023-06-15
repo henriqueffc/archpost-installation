@@ -3,6 +3,7 @@ intel-compute-runtime
 intel-gmmlib
 intel-graphics-compiler
 intel-media-driver
+intel-media-sdk
 lib32-libva
 lib32-libvdpau
 lib32-mesa
@@ -23,8 +24,6 @@ nvidia-settings
 nvidia-utils
 nvtop
 ocl-icd
-onevpl
-onevpl-cpu
 opencl-nvidia
 vdpauinfo
 vulkan-icd-loader
