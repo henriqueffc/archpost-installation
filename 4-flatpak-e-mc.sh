@@ -52,6 +52,7 @@ flatpak install flathub com.github.PintaProject.Pinta -y
 flatpak install flathub com.dropbox.Client -y
 flatpak install flathub org.freefilesync.FreeFileSync -y
 flatpak install flathub com.github.dynobo.normcap -y
+flatpak install flathub it.mijorus.gearlever -y
 
 # Flatpak Remote-Beta
 
