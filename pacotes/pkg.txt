@@ -11,6 +11,8 @@ bash-completion
 bandwhich
 bind
 bitwarden
+blas-openblas
+blas64-openblas
 bluez-utils
 breeze
 bat
