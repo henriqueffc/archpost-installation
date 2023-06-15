@@ -46,7 +46,7 @@ flatpak install flathub com.github.huluti.Curtail -y
 flatpak install flathub de.haeckerfelix.Shortwave -y
 flatpak install flathub org.zotero.Zotero -y
 flatpak install flathub com.usebottles.bottles -y
-flatpak install flathub io.github.Foldex.AdwSteamGtk -y
+flatpak install flathub io.github.nokse22.teleprompter -y
 flatpak install flathub io.podman_desktop.PodmanDesktop -y
 flatpak install flathub com.github.PintaProject.Pinta -y
 flatpak install flathub com.dropbox.Client -y
