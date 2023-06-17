@@ -60,7 +60,7 @@ else
 			echo -e "$AZUL Começando em 3... $FIM" && sleep 1
 			echo -e "$AZUL Começando em 2... $FIM" && sleep 1
 			echo -e "$AZUL Começando em 1... $FIM" && sleep 1
-			sudo pacman -Syu curl ttf-nerd-fonts-symbols-2048-em ttf-fira-code ttf-jetbrains-mono --needed --noconfirm
+			sudo pacman -Syu curl ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono ttf-fira-code ttf-jetbrains-mono --needed --noconfirm
 			sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 			exit
 			break
