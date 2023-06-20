@@ -1,11 +1,10 @@
-noto-fonts
+ttf-noto-nerd
 noto-fonts-cjk
 noto-fonts-emoji
 terminus-font
 ttf-bitstream-vera
 ttf-dejavu
-ttf-fira-code
-ttf-jetbrains-mono
+ttf-jetbrains-mono-nerd
 ttf-liberation
 ttf-nerd-fonts-symbols
 ttf-nerd-fonts-symbols-mono
