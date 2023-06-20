@@ -182,7 +182,7 @@ Ctrl + K = apaga tudo depois do cursor
 Ctrl + C = cancela a operação que está em execução
 Ctrl + R = busca comandos dados - pesquisa - zsh
 Ctrl + L = clear
-
+Ctrl + Z coloca em segundo plano alguma tarefa ou programa que você está usando no terminal. Para voltar ao programa digite "fg".
 
 
 
