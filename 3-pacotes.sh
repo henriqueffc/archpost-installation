@@ -218,10 +218,10 @@ gsettings set org.gnome.desktop.peripherals.keyboard numlock-state true
 gsettings set org.gnome.desktop.search-providers disabled "['org.gnome.Contacts.desktop', 'org.gnome.Boxes.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Characters.desktop', 'org.gnome.Photos.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Epiphany.desktop', 'org.gnome.Software.desktop']"
 
 # Tamanho da fonte do sistema
-gsettings set org.gnome.desktop.interface font-name "Noto Sans 12"
-gsettings set org.gnome.desktop.interface document-font-name "Noto Sans 12"
-gsettings set org.gnome.desktop.interface monospace-font-name "Noto Sans Mono 11"
-gsettings set org.gnome.desktop.wm.preferences titlebar-font "Noto Sans Bold 12"
+gsettings set org.gnome.desktop.interface font-name "NotoSans Nerd Font 12"
+gsettings set org.gnome.desktop.interface document-font-name "NotoSans Nerd Font 12"
+gsettings set org.gnome.desktop.interface monospace-font-name "NotoSansM Nerd Font Mono 11"
+gsettings set org.gnome.desktop.wm.preferences titlebar-font "NotoSansM Nerd Font Bold 12"
 gsettings set org.gnome.desktop.interface font-antialiasing rgba
 
 # Acessibilidade
@@ -322,7 +322,7 @@ sudo sensors-detect
 # Fonte do GNOME terminal 
 font=$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d "'")
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ use-system-font false
-gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ font 'JetBrains Mono NL 14'
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ font 'JetBrainsMonoNL Nerd Font 14'
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ visible-name 'Padrão'
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ default-size-columns '106'
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ default-size-rows '26'
