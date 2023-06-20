@@ -120,16 +120,16 @@ https://github.com/paroj/xpad
 
 ### 17 - Distrobox
 
-Caso use alguma distro pelo distrobox não se esqueça de configurar o atalho do desktop (executar usando o bash. pelo zsh ocorrem alguns problemas)
+Caso use alguma distro pelo Distrobox não se esqueça de configurar o atalho do desktop (executar usando o bash. pelo zsh ocorrem alguns problemas)
 Exemplo com o Ubuntu:
 
 `nano .local/share/applications/ubuntu.desktop`
 
 `Exec=/usr/local/bin/distrobox enter --name ubuntu -- bash -l`
 
-Caso queira criar um atalho de teclado para lançar o distrobox usando o terminal do Gnome, faça o seguinte:
+Caso queira criar um atalho de teclado para lançar o Distrobox usando o terminal do Gnome (se for o Alacritty só é preciso configurar o comando para o atalho de teclado - veja após a descrição para o terminal do Gnome), faça o seguinte:
 
-Acesse o menu de Preferências do terminal do Gnome e crie um novo perfil com o nome ubuntu (p.ex) e, na opção Comando personalizado (marque a opção Executar um comando personalizado ...), coloque `distrobox enter --name ubuntu -- bash -l` . O restante fica no padrão. Mude as cores do perfil para especificar a diferença de uso do terminal (padrão ou distrobox).
+Acesse o menu de Preferências do terminal do Gnome e crie um novo perfil com o nome ubuntu (p.ex) e, na opção Comando personalizado (marque a opção Executar um comando personalizado ...), coloque `distrobox enter --name ubuntu -- bash -l` . O restante fica no padrão. Mude as cores do perfil para especificar a diferença de uso do terminal (padrão ou Distrobox).
 
 Nas configurações do sistema acesse Teclado - Atalhos de teclado.
 
@@ -138,5 +138,8 @@ Crie um atalho personalizado.
 Nome : terminal ubuntu
 
 Comando : `gnome-terminal --profile=ubuntu`
+
+Caso queira inicializar usando o Alacritty o comando é o seguinte:
+`alacritty -o window.title=distrobox -o "colors.primary.background='#1d2b35'" --command distrobox-enter -n ubuntu`
 
 Atalho : Shift + Ctrl + D
