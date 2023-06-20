@@ -20,8 +20,8 @@ gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folder
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Internet/ name "Internet"
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Internet/ apps "['us.zoom.Zoom.desktop', 'com.skype.Client.desktop', 'torbrowser.desktop', 'torbrowser-settings.desktop', 'chromium.desktop']"
 
-gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Podman/ name "Podman"
-gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Podman/ apps "['io.podman_desktop.PodmanDesktop.desktop', 'com.github.marhkb.Pods.desktop']"
+gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Development/ name "Development"
+gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Development/ apps "['io.podman_desktop.PodmanDesktop.desktop', 'me.iepure.devtoolbox.desktop', 'nvim.desktop', 'com.github.marhkb.Pods.desktop']"
 
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Nvidia/ name "Nvidia"
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Nvidia/ apps "['nvidia-settings.desktop', 'nvtop.desktop']"
@@ -31,10 +31,10 @@ gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folder
 
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Utilities/ apps "['org.gnome.Logs.desktop', 'gtk-lshw.desktop', 'org.gnome.baobab.desktop', 'org.gnome.DiskUtility.desktop', 'gsmartcontrol.desktop', 'kdiskmark.desktop', 'org.gnome.eog.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'htop.desktop', 'bssh.desktop', 'bvnc.desktop', 'avahi-discover.desktop', 'qvidcap.desktop', 'vim.desktop', 'qv4l2.desktop', 'remote-viewer.desktop', 'assistant.desktop', 'designer.desktop', 'lstopo.desktop', 'qdbusviewer.desktop', 'electron21.desktop', 'linguist.desktop']"
 
-gsettings set org.gnome.desktop.app-folders folder-children "['Utilities', 'YaST', 'Office', 'Programas', 'Jogos', 'Nvidia', 'Podman', 'GNOME', 'Internet', 'Multimídia']"
+gsettings set org.gnome.desktop.app-folders folder-children "['Utilities', 'YaST', 'Office', 'Programas', 'Jogos', 'Nvidia', 'Development', 'GNOME', 'Internet', 'Multimídia']"
 
 # Dock
-gsettings set org.gnome.shell favorite-apps "['firefox.desktop', 'thunderbird.desktop', 'Alacritty.desktop', 'obsidian.desktop', 'code.desktop', 'org.gnome.Nautilus.desktop']"
+gsettings set org.gnome.shell favorite-apps "['Alacritty.desktop', 'thunderbird.desktop', 'firefox.desktop', 'obsidian.desktop', 'code.desktop', 'org.gnome.Nautilus.desktop']"
 
 # Nautilus Bookmarks
 mkdir ~/ToDo/
