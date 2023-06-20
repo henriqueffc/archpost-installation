@@ -60,7 +60,7 @@ else
 			echo -e "$AZUL Começando em 3... $FIM" && sleep 1
 			echo -e "$AZUL Começando em 2... $FIM" && sleep 1
 			echo -e "$AZUL Começando em 1... $FIM" && sleep 1
-			sudo pacman -Syu curl ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono ttf-fira-code ttf-jetbrains-mono --needed --noconfirm
+			sudo pacman -Syu curl ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono ttf-jetbrains-mono-nerd --needed --noconfirm
 			sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 			exit
 			break
@@ -110,7 +110,7 @@ else
 			git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 			cat ./zsh/extract.txt >>~/.zshrc
 			sed -i 's|# export PATH=$HOME/bin:/usr/local/bin:$PATH|export PATH=$HOME/bin:$PATH|g' ~/.zshrc
-			echo -e "$AZUL Instalação concluida. Caso considere necessário para uma melhor vizualização dos caracteres substitua a fonte do terminal pela fonte JetBrains Mono NL. Reinicie o terminal para configurar o Powerlevel10K. $FIM"
+			echo -e "$AZUL Instalação concluída. Caso considere necessário para uma melhor visualização dos caracteres substitua a fonte do terminal pela fonte JetBrains Mono NL. Reinicie o terminal para configurar o Powerlevel10K. $FIM"
 			break
 			;;
 		n | N)
