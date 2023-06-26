@@ -45,7 +45,7 @@ Ordem de uso dos scripts:
 
 Recomendo reinicializar o sistema após a execução de cada script.
 
-Concluída a etapa de execução dos scripts verifique o arquivo [config-finais.md](https://github.com/henriqueffc/archpost-installation/blob/main/Config-finais.md) para encerrar a configuração do sistema.
+Concluída a etapa de execução dos scripts verifique o arquivo [config-finais.md](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md) para encerrar a configuração do sistema.
 
 #### Screenshots
 
