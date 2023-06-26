@@ -3,7 +3,7 @@ Description=CPU Power
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/x86_energy_perf_policy -a performance
+ExecStart=/usr/bin/x86_energy_perf_policy -a balance-performance
 ExecStart=/usr/bin/bash -c '/usr/bin/echo 1 > /sys/devices/system/cpu/intel_pstate/hwp_dynamic_boost'
 
 [Install]
