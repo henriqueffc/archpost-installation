@@ -9,7 +9,7 @@ Eu uso os scripts desse repositório **somente após** instalar o Arch Linux usa
 
 Os scripts foram concebidos **especificamente** para a configuração da minha máquina. Notebook Lenovo S145, Intel Core i7-8565U, 20GB de RAM, SSD 240GB, SSD 512GB M.2 NVMe, NVIDIA GeForce MX110.
 
-**Eu instalo o sistema em UEFI, com systemd-boot, sistema de arquivos EXT4, ZRAM, pipewire, wireplumber, repositório multilib habilitado (Steam), Nvidia com driver proprietário (versão dkms) e GNOME. Uso o GNOME com Wayland. As configurações dos scripts são concebidas nessa base.**
+**Eu instalo o sistema em UEFI, com systemd-boot, sistema de arquivos EXT4, ZRAM, pipewire, wireplumber, repositório multilib habilitado (Steam), Nvidia com driver proprietário (versão dkms), shell Zsh com Oh My Zsh, Tmux, terminal Alacritty, AUR helper Yay, Flatpak, Podman, Apparmor, Firewall UFW, Lunarvim e GNOME (Wayland). As configurações dos scripts são concebidas nessa base.**
 
 Os scripts deverão ser executados após a inicialização do sistema no ambiente gráfico. 
 
@@ -38,13 +38,14 @@ Ordem de uso dos scripts:
 - 7-extensions.sh
 - 8-zsh-ohmyzsh.sh
 - 9-podman-distrobox.sh
-- 10-theme.sh (opcional)
-- 11-firefox-nightly.sh (opcional)
-- 12-espanso-wayland.sh (opcional)
+- 10-lunarvim.sh
+- 11-theme.sh (opcional)
+- 12-firefox-nightly.sh (opcional)
+- 13-espanso-wayland.sh (opcional)
 
 Recomendo reinicializar o sistema após a execução de cada script.
 
-Concluída a etapa de execução dos scripts verifique o arquivo [Config-finais.md](https://github.com/henriqueffc/archpost-installation/blob/main/Config-finais.md) para encerrar a configuração do sistema.
+Concluída a etapa de execução dos scripts verifique o arquivo [config-finais.md](https://github.com/henriqueffc/archpost-installation/blob/main/Config-finais.md) para encerrar a configuração do sistema.
 
 #### Screenshots
 
