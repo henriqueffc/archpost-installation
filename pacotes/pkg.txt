@@ -72,6 +72,7 @@ hwloc
 i7z
 intel-gpu-tools
 intel-ucode
+intel-metee
 inxi
 jre-openjdk
 kdegraphics-mobipocket
@@ -132,6 +133,7 @@ ripgrep-all
 rkhunter
 rmlint
 rsync
+s-tui
 sd
 seahorse
 soundconverter

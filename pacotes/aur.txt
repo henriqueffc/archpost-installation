@@ -3,4 +3,3 @@ crow-translate
 downgrade
 goverlay-bin
 heroic-games-launcher-bin
-visual-studio-code-bin
