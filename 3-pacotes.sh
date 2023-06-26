@@ -66,9 +66,12 @@ sudo systemctl enable intelparanoid.service
 echo -e "$AZUL \t Intel-Paranoid habilitado $FIM"
 
 # CPU Power Service
-sudo mv ./service/cpupowerperf.* /etc/systemd/system
-sudo systemctl enable cpupowerperf.timer
-echo -e "$AZUL \t CPU Power timer habilitado $FIM"
+sudo mv ./service/cpupowerperf.service /etc/systemd/system
+sudo systemctl enable cpupowerperf.service
+sudo cp /etc/default/cpupower /etc/default/cpupower.bak
+sudo sed -i "s|#governor='ondemand'|governor='powersave'|g" /etc/default/cpupower
+sudo systemctl enable cpupower.service
+echo -e "$AZUL \t CPU Power e x86_energy_perf_policy habilitados $FIM"
 
 # tealdeer (implementação do tldr)
 tldr --update
@@ -124,9 +127,6 @@ mv ./aliases/.atalhos.txt ~/
 
 # Chromium
 mv ./chromium/chromium-flags.conf ~/.config
-
-# VSCode
-mv ./vscode/code-flags.conf ~/.config
 
 # Modelos de arquivos para o Files
 touch $HOME/Modelos/novo.txt
