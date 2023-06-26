@@ -3,8 +3,7 @@ Description=CPU Power
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/cpupower -c all frequency-set -g powersave
-ExecStart=/usr/bin/x86_energy_perf_policy 0
+ExecStart=/usr/bin/x86_energy_perf_policy -a performance
 ExecStart=/usr/bin/bash -c '/usr/bin/echo 1 > /sys/devices/system/cpu/intel_pstate/hwp_dynamic_boost'
 
 [Install]

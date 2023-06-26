@@ -1,8 +1,0 @@
-[Unit]
-Description=CPU Power
-
-[Timer]
-OnBootSec=1min
-
-[Install]
-WantedBy=timers.target
