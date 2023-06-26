@@ -48,10 +48,13 @@ mv just-perfection-$vjust just-perfection
 ./just-perfection/scripts/build.sh
 gnome-extensions install --force './just-perfection/just-perfection-desktop@just-perfection.shell-extension.zip'
 
-vblur="46"
+vblur="47"
 echo -e "$AZUL Blur My Shell $FIM"
-wget https://github.com/aunetx/blur-my-shell/releases/download/v$vblur/blur-my-shell@aunetx.shell-extension.zip
-gnome-extensions install --force 'blur-my-shell@aunetx.shell-extension.zip'
+wget https://github.com/aunetx/blur-my-shell/archive/refs/tags/v$vblur.zip
+unzip v$vblur.zip
+make install -C ./blur-my-shell-$vblur
+rm v$vblur.zip
+rm -rf ./blur-my-shell-$vblur
 
 vappi="17"
 echo -e "$AZUL App Icons Taskbar $FIM"
