@@ -69,7 +69,9 @@ echo -e "$AZUL \t Intel-Paranoid habilitado $FIM"
 sudo mv ./service/cpupowerperf.service /etc/systemd/system
 sudo systemctl enable cpupowerperf.service
 sudo cp /etc/default/cpupower /etc/default/cpupower.bak
-sudo sed -i "s|#governor='ondemand'|governor='powersave'|g" /etc/default/cpupower
+sudo sed -i "$ a governor='powersave'" /etc/default/cpupower
+sudo sed -i '$ a min_freq="1800MHz"' /etc/default/cpupower
+sudo sed -i '$ a max_freq="4600MHz"' /etc/default/cpupower
 sudo systemctl enable cpupower.service
 echo -e "$AZUL \t CPU Power e x86_energy_perf_policy habilitados $FIM"
 
