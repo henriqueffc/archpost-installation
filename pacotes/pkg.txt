@@ -83,7 +83,7 @@ lib32-mangohud
 libappindicator-gtk3
 libcamera-tools
 libgtop
-libreoffice
+libreoffice-fresh
 libreoffice-fresh-pt-br
 libzip
 lm_sensors
