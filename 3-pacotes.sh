@@ -158,6 +158,9 @@ echo -e '\nif [ -d "$HOME/bin" ] ; then\nPATH="$HOME/bin:$PATH"\nfi' >>~/.bashrc
 mv ./bin/* $HOME/bin
 chmod +x $HOME/bin/*
 
+# Firefox search provider
+sudo mv ./firefox/firefox-search-provider.ini /usr/share/gnome-shell/search-providers
+
 # Tema dos ícones Kora
 git clone https://github.com/bikass/kora.git
 sudo cp -r ./kora/kora /usr/share/icons/
@@ -216,8 +219,11 @@ gsettings set org.gnome.desktop.peripherals.touchpad click-method areas
 # Numlock
 gsettings set org.gnome.desktop.peripherals.keyboard numlock-state true
 
-# Ao pesquisar no overview não serão exibidos os resultados da pesquisa realizada pelos aplicativos contidos nesta lista.
-gsettings set org.gnome.desktop.search-providers disabled "['org.gnome.Contacts.desktop', 'org.gnome.Boxes.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Characters.desktop', 'org.gnome.Photos.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Epiphany.desktop', 'org.gnome.Software.desktop']"
+# Ao pesquisar no overview não serão exibidos os resultados da pesquisa realizada pelos aplicativos contidos nesta lista
+gsettings set org.gnome.desktop.search-providers disabled "['org.gnome.Contacts.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Boxes.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Characters.desktop', 'org.gnome.Weather.desktop', 'org.gnome.Photos.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Epiphany.desktop', 'org.gnome.Software.desktop']"
+
+# Ordem dos resultados da pesquisa realizada no overview
+gsettings set org.gnome.desktop.search-providers sort-order "['org.gnome.Calculator.desktop', 'firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Settings.desktop']" 
 
 # Tamanho da fonte do sistema
 gsettings set org.gnome.desktop.interface font-name "NotoSans Nerd Font 12"
