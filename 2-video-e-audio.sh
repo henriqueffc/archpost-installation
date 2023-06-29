@@ -52,9 +52,10 @@ sudo systemctl enable fail2ban.service
 
 # Parâmetros do boot
 cp /boot/loader/entries/*.conf ~/
-sudo sed -i '$ { s/^.*$/& quiet loglevel=3 systemd.show_status=auto rd.udev.log_level=3 nowatchdog intel_pstate=active intel_iommu=on iommu=pt pci=realloc ahci.mobile_lpm_policy=1 nvme_core.default_ps_max_latency_us=0 nvidia_drm.modeset=1 nvidia.NVreg_EnablePCIeGen3=1 nvidia.NVreg_UsePageAttributeTable=1 i915.enable_guc=2 i915.enable_fbc=0 i915.enable_psr=0 nouveau.modeset=0 transparent_hugepage=madvise audit=1 audit_backlog_limit=500 lsm=landlock,lockdown,yama,integrity,apparmor,bpf/ }' /boot/loader/entries/*.conf
+sudo sed -i '$ { s/^.*$/& quiet loglevel=3 systemd.show_status=auto rd.udev.log_level=3 nowatchdog intel_pstate=active intel_iommu=on iommu=pt pci=realloc ahci.mobile_lpm_policy=1 nvme_core.default_ps_max_latency_us=0 nvidia_drm.modeset=1 nvidia.NVreg_EnablePCIeGen3=1 nvidia.NVreg_UsePageAttributeTable=1 i915.enable_guc=2 i915.enable_fbc=0 i915.enable_psr=0 nouveau.modeset=0 snd_intel_dspcfg.dsp_driver=3 transparent_hugepage=madvise audit=1 audit_backlog_limit=500 lsm=landlock,lockdown,yama,integrity,apparmor,bpf/ }' /boot/loader/entries/*.conf
 
 # O zswap.enabled=0 é configurado pelo archinstall, por isso não está definido nas opções acima. 
-# O i7-8565U suporta o scaling driver intel_pstate, por isso ele está definido como ativo. https://www.kernel.org/doc/html/latest/admin-guide/pm/intel_pstate.html / https://wiki.archlinux.org/title/CPU_frequency_scaling
+# O i7-8565U suporta o scaling driver intel_pstate, por essa razão ele está definido como ativo. https://www.kernel.org/doc/html/latest/admin-guide/pm/intel_pstate.html / https://wiki.archlinux.org/title/CPU_frequency_scaling
+# O meu notebook suporta o Sound Open Firmware, em razão disso o parâmetro snd_intel_dspcfg.dsp_driver=3 foi definido para o kernel. O pacote necessário para o firmware (sof-firmware) está na lista de pacotes para o Pipewire.
 
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
