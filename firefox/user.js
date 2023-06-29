@@ -13,6 +13,7 @@ user_pref("apz.overscroll.enabled", true);
 user_pref("browser.cache.disk.enable", false);
 user_pref("browser.cache.memory.capacity", 1048576);
 user_pref("browser.download.alwaysOpenPanel", false);
+user_pref("browser.gnome-search-provider.enabled", true);
 user_pref("browser.preferences.defaultPerformanceSettings.enabled", false);
 user_pref("browser.sessionstore.resume_from_crash", false);
 user_pref("browser.startup.homepage.abouthome_cache.enabled", true);
