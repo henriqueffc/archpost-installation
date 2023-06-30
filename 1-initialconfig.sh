@@ -50,6 +50,9 @@ echo 'QT_QPA_PLATFORM=wayland' >>/etc/environment
 # PC speaker - turn off beep shutdown
 echo 'blacklist pcspkr' >/etc/modprobe.d/nobeep.conf
 
+# Linux-firmware
+pacman -S linux-firmware linux-firmware-whence --needed
+
 # NANO - Line number e syntax-highlighting
 pacman -Syu nano --needed --noconfirm
 cp /etc/nanorc /etc/nanorc.bak
