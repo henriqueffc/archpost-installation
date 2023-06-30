@@ -133,6 +133,10 @@ mv ./chromium/chromium-flags.conf ~/.config
 # Modelos de arquivos para o Files
 touch $HOME/Modelos/novo.txt
 
+# Equalização paramétrica para o Headset HyperX Cloud Stinger
+mkdir -p ~/.config/pipewire/pipewire.conf.d
+mv ./hyperx/sink-eq6.conf ~/.config/pipewire/pipewire.conf.d/ 
+
 # Desabilitar o coredump
 sudo mkdir /etc/systemd/coredump.conf.d/
 sudo mv ./coredump/custom.conf /etc/systemd/coredump.conf.d/
