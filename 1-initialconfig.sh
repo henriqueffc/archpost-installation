@@ -51,10 +51,10 @@ echo 'QT_QPA_PLATFORM=wayland' >>/etc/environment
 echo 'blacklist pcspkr' >/etc/modprobe.d/nobeep.conf
 
 # Linux-firmware
-pacman -S linux-firmware linux-firmware-whence --needed
+pacman -Syu linux-firmware linux-firmware-whence --needed --noconfirm
 
 # NANO - Line number e syntax-highlighting
-pacman -Syu nano --needed --noconfirm
+pacman -S nano --needed --noconfirm
 cp /etc/nanorc /etc/nanorc.bak
 sed -i 's/# set linenumbers/\set linenumbers/' /etc/nanorc
 sed -i 's/# set speller "aspell -x -c"/\set speller "aspell -x -c"/' /etc/nanorc
