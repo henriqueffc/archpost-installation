@@ -349,6 +349,7 @@ sudo systemctl enable --now clamav-freshclam.service
 # sudo pacman -R power-profiles-daemon
 
 # Neofetch
+mkdir -p $HOME/.config/neofetch/
 cp ./neofetch/config.conf $HOME/.config/neofetch/
 
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
