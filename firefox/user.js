@@ -72,3 +72,4 @@ user_pref("webgl.force-enabled", true);
 user_pref("webgl.msaa-force", true);
 user_pref("widget.content.allow-gtk-dark-theme", true);
 user_pref("widget.dmabuf.force-enabled", true);
+user_pref("widget.use-xdg-desktop-portal.file-picker", 1);
