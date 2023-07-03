@@ -141,6 +141,8 @@ mv ./hyperx/sink-eq6.conf ~/.config/pipewire/pipewire.conf.d/
 sudo mkdir /etc/systemd/coredump.conf.d/
 sudo mv ./coredump/custom.conf /etc/systemd/coredump.conf.d/
 sudo systemctl daemon-reload
+echo "kernel.core_pattern=/dev/null" >50-coredump.conf
+sudo mv 50-coredump.conf /etc/sysctl.d/
 
 # Limite do tamanho do Journal
 sudo cp /etc/systemd/journald.conf /etc/systemd/journald.conf.bak
