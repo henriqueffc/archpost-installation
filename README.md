@@ -9,7 +9,7 @@ Eu uso os scripts desse repositório **somente após** instalar o Arch Linux usa
 
 Os scripts foram concebidos **especificamente** para a configuração da minha máquina. Notebook Lenovo S145, Intel Core i7-8565U, 20GB de RAM, SSD 240GB, SSD 512GB M.2 NVMe, NVIDIA GeForce MX110.
 
-**Eu instalo o sistema em UEFI, com systemd-boot, sistema de arquivos EXT4, ZRAM, pipewire, wireplumber, repositório multilib habilitado (ativado usando o archinstall), Nvidia com driver proprietário (versão dkms), shell Zsh com Oh My Zsh, Tmux, terminal Alacritty, AUR helper Yay, Flatpak, Podman, Apparmor, Firewall UFW, intel_pstate scaling driver, cpupower e x86_energy_perf_policy para gerenciamento de frequências da CPU e do perfil de energia, firmware para o áudio da Sound Open Firmware, equalização paramétrica para o Headset HyperX Cloud Stinger, Lunarvim e GNOME (Wayland). As configurações dos scripts são concebidas nessa base.**
+**Eu instalo o sistema em UEFI, com systemd-boot, sistema de arquivos EXT4, ZRAM, pipewire, wireplumber, repositório multilib habilitado (ativado por intermédio do archinstall), Nvidia com driver proprietário (versão dkms), shell Zsh com Oh My Zsh, Tmux, terminal Alacritty, AUR helper Yay, Flatpak, Podman, Apparmor, Firewall UFW, intel_pstate scaling driver, cpupower e x86_energy_perf_policy para gerenciamento de frequências da CPU e do perfil de energia, firmware para o áudio da Sound Open Firmware, equalização paramétrica para o Headset HyperX Cloud Stinger, Lunarvim e GNOME (Wayland). As configurações dos scripts são concebidas nessa base.**
 
 Os scripts deverão ser executados após a inicialização do sistema no ambiente gráfico. 
 
