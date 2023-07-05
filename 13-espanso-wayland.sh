@@ -5,9 +5,16 @@
 # AVISO: Execute o script por sua conta e risco.
 # License: MIT License
 
+AZUL='\e[1;34m'
+FIM='\e[0m'
+
+echo -e "$AZUL Selecione o número do pacote AUR com o nome espanso-wayland $FIM" && sleep 3
+
 # Instalação do Espanso
 
 yay espanso-wayland
+
+echo -e "$AZUL Ao aparecer a janela de instalação do Espanso clique em Start. Não demore em clicar, senão a instalação será interrompida $FIM" && sleep 7
 
 # Inicialização do Espanso
 
