@@ -145,3 +145,7 @@ Caso queira inicializar usando o Alacritty o comando é o seguinte:
 `alacritty -o window.title=distrobox -o "colors.primary.background='#1d2b35'" --command distrobox-enter -n ubuntu`
 
 Atalho : Shift + Ctrl + D
+<br><br>
+
+### 18 - Espanso
+Para eliminar o pequeno quadro (inicialização do Espanso) mostrado quando o GNOME Shell é inicializado pela primeira vez modifique a opção "Status de inicialização" para Área de Trabalho na extensão Just Perfection.
