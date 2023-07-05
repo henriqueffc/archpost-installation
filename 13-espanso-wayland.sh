@@ -41,3 +41,5 @@ sed -i 's|%m/%d/%Y|%d/%m/%Y|g' $HOME/.config/espanso/match/base.yml
 sed -i 's|:date|;date;|g' $HOME/.config/espanso/match/base.yml
 sed -i 's|:espanso|;espanso;|g' $HOME/.config/espanso/match/base.yml
 sed -i 's|:shell|;shell;|g' $HOME/.config/espanso/match/base.yml
+
+printf "%s $AZUL Fim! Verifique o item 18 no arquivo config-finais.md $FIM \n"
