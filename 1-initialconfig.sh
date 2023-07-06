@@ -45,7 +45,7 @@ echo 'MUTTER_DEBUG_FORCE_KMS_MODE=simple' >>/etc/environment
 echo 'CLUTTER_PAINT=disable-dynamic-max-render-time' >>/etc/environment
 echo 'EGL_PLATFORM=wayland' >>/etc/environment
 echo 'VDPAU_DRIVER=va_gl' >>/etc/environment
-echo 'QT_QPA_PLATFORM=wayland' >>/etc/environment
+echo 'QT_QPA_PLATFORM=wayland;xcb' >>/etc/environment
 
 # PC speaker - turn off beep shutdown
 echo 'blacklist pcspkr' >/etc/modprobe.d/nobeep.conf
