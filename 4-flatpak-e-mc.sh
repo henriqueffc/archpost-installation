@@ -54,6 +54,7 @@ flatpak install flathub org.freefilesync.FreeFileSync -y
 flatpak install flathub com.github.dynobo.normcap -y
 flatpak install flathub it.mijorus.gearlever -y
 flatpak install flathub me.iepure.devtoolbox -y
+flatpak install flathub com.github.ADBeveridge.Raider -y
 
 # Flatpak Remote-Beta
 
