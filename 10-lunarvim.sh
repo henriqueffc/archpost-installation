@@ -39,3 +39,6 @@ while :; do
               ;;
        esac
 done
+
+# config.lua
+mv ./lunarvim/config.lua $HOME/.config/lvim 
