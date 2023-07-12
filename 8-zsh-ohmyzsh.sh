@@ -91,25 +91,23 @@ else
 			echo -e "$AZUL Começando em 3... $FIM" && sleep 1
 			echo -e "$AZUL Começando em 2... $FIM" && sleep 1
 			echo -e "$AZUL Começando em 1... $FIM" && sleep 1
-			sudo pacman -Syu gawk thefuck pkgfile git nano xsel man-db man-pages man-pages-pt_br --needed --noconfirm
-			sudo pkgfile --update
-			sudo systemctl enable pkgfile-update.timer
+			sudo pacman -Syu gawk thefuck git nano xsel man-db man-pages man-pages-pt_br --needed --noconfirm
 			git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 			git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 			git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
 			cp ~/.zshrc ~/.zshrc.bak
-			sed -i 's/plugins=(git)/\plugins=(git zsh-autosuggestions zsh-syntax-highlighting colored-man-pages command-not-found universalarchive thefuck copyfile copybuffer dirhistory web-search copypath)/' ~/.zshrc
+			sed -i 's/plugins=(git)/\plugins=(git zsh-autosuggestions zsh-syntax-highlighting colored-man-pages universalarchive thefuck copyfile copybuffer dirhistory web-search copypath)/' ~/.zshrc
 			sed -i 's|robbyrussell|powerlevel10k/powerlevel10k|' ~/.zshrc
 			sed -i '2 r./zsh/dracula.txt' ~/.zshrc
 			linenumber=$(grep -nr 'source' ~/.zshrc | gawk '{print $1}' FS=":")
 			linenumber=$((linenumber - 1))
 			sed -i "${linenumber}i fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src" ~/.zshrc
 			echo 'source ~/.bash_aliases' >>~/.zshrc
-			echo 'source /usr/share/doc/pkgfile/command-not-found.zsh' >>~/.zshrc
 			echo "export EDITOR='nano'" >>~/.zshrc
 			git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 			cat ./zsh/extract.txt >>~/.zshrc
-			sed -i 's|# export PATH=$HOME/bin:/usr/local/bin:$PATH|export PATH=$HOME/bin:$PATH|g' ~/.zshrc
+			cat ./zsh/command-not-found.txt >>~/.zshrc
+      			sed -i 's|# export PATH=$HOME/bin:/usr/local/bin:$PATH|export PATH=$HOME/bin:$PATH|g' ~/.zshrc
 			echo -e "$AZUL Instalação concluída. Caso considere necessário para uma melhor visualização dos caracteres substitua a fonte do terminal pela fonte JetBrainsMonoNL Nerd Font. Reinicie o terminal para configurar o Powerlevel10K. $FIM"
 			break
 			;;
