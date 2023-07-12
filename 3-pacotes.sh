@@ -46,9 +46,6 @@ echo -e "$AZUL \t bluetooth.service habilitado $FIM"
 sudo systemctl enable --now ufw.service
 sudo ufw enable
 echo -e "$AZUL \t ufw.service habilitado $FIM"
-sudo pkgfile --update
-sudo systemctl enable pkgfile-update.timer
-echo -e "$AZUL \t pkgfile-update.timer habilitado $FIM"
 sudo systemctl start pkgstats.timer
 echo -e "$AZUL \t pkgstats.timer habilitado $FIM"
 sudo systemctl enable switcheroo-control.service
@@ -158,7 +155,6 @@ mkdir $HOME/bin
 cp ~/.bashrc ~/.bashrc.bak
 echo -e '\nsource ~/.bash_aliases' >>~/.bashrc
 echo -e '\nif [ -d "$HOME/bin" ] ; then\nPATH="$HOME/bin:$PATH"\nfi' >>~/.bashrc
-# echo -e '\nsource /usr/share/doc/pkgfile/command-not-found.bash' >>~/.bashrc (usando a específica para o .zshrc, script 8)
 
 # Copiar scripts para a pasta ~/bin
 mv ./bin/* $HOME/bin
