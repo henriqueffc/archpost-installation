@@ -57,7 +57,6 @@ ghostwriter
 gnome-epub-thumbnailer
 gnome-firmware
 gnome-appfolders-manager
-gnome-info-collect
 gnome-nettool
 gnome-sound-recorder
 gnome-terminal
