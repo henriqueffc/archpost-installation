@@ -39,7 +39,7 @@ Z		Z archive (LZW)
 zip		Zip archive
 zst		Zstd archive
 
-
+extract = extrair arquivos compactados. Ex.: extract nome_do_arquivo.zip 
 
 
 
@@ -71,7 +71,6 @@ sd = sed
 tldr = cheat
 mc = file manager
 aria2c = curl/wget
-pkgfile = pacman -F
 fuck = corrects your previous console command
 trash = envie arquivos para a lixeira / trash-list = lista dos arquivos na lixeira / trash-restore = restaura arquivo da lixeira
 arch-audit = A utility like pkg-audit for Arch Linux
@@ -140,8 +139,7 @@ pacman.log
 search
 dirty
 progress
-extract
-
+scanports
 
 
 
