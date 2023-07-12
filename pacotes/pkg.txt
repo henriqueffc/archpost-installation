@@ -100,7 +100,6 @@ nautilus-image-converter
 nano
 neofetch
 nethogs
-net-tools
 nmap
 ntfs-3g
 nvme-cli
@@ -112,7 +111,6 @@ pacman-contrib
 pacmanlogviewer
 pandoc-cli
 papirus-icon-theme
-pkgfile
 pkgstats
 polari
 procs
@@ -132,6 +130,7 @@ ripgrep-all
 rkhunter
 rmlint
 rsync
+rustscan
 s-tui
 sd
 seahorse
