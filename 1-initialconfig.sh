@@ -50,8 +50,8 @@ echo 'QT_QPA_PLATFORM=wayland;xcb' >>/etc/environment
 # PC speaker - turn off beep shutdown
 echo 'blacklist pcspkr' >/etc/modprobe.d/nobeep.conf
 
-# Linux-firmware
-pacman -Syu linux-firmware linux-firmware-whence --needed --noconfirm
+# Linux-firmware e plymouth
+pacman -Syu linux-firmware linux-firmware-whence plymouth --needed --noconfirm
 
 # NANO - Line number e syntax-highlighting
 pacman -S nano --needed --noconfirm
@@ -89,7 +89,7 @@ pacman -Syu
 # Intel - i915 / HOOKS / mkinitcpio.conf
 cp /etc/mkinitcpio.conf /etc/mkinitcpio.conf.bak
 sed -i 's/MODULES=.*/MODULES=(i915)/g' /etc/mkinitcpio.conf
-sed -i 's/HOOKS=.*/HOOKS=(base systemd autodetect keyboard modconf kms sd-vconsole block filesystems fsck)/g' /etc/mkinitcpio.conf
+sed -i 's/HOOKS=.*/HOOKS=(base systemd autodetect keyboard plymouth modconf kms sd-vconsole block filesystems fsck)/g' /etc/mkinitcpio.conf
 mkinitcpio -P
 
 # FSTAB
