@@ -190,8 +190,11 @@ gsettings set org.gnome.settings-daemon.plugins.power power-button-action intera
 gsettings set org.gnome.nautilus.icon-view captions "['size', 'detailed_type', 'none']"
 gsettings set org.gtk.gtk4.Settings.FileChooser sort-directories-first true
 
-# File-chooser gtk3
+# File-chooser 
 gsettings set org.gtk.Settings.FileChooser sort-directories-first true
+
+# Tecla de composição para caracteres especiais (Print Screen - https://en.wikipedia.org/wiki/Compose_key#Common_compose_combinations)
+gsettings set org.gnome.desktop.input-sources xkb-options "['terminate:ctrl_alt_bksp', 'lv3:ralt_switch', 'compose:prsc']"
 
 # Desabilitar as animações do Gnome
 gsettings set org.gnome.desktop.interface enable-animations false
