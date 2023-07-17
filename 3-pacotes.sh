@@ -353,4 +353,7 @@ sudo systemctl enable --now clamav-freshclam.service
 mkdir -p $HOME/.config/neofetch/
 cp ./neofetch/config.conf $HOME/.config/neofetch/
 
+# Tema para o Plymouth - Spinner
+sudo plymouth-set-default-theme -R spinner
+
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
