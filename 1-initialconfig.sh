@@ -89,7 +89,7 @@ pacman -Syu
 # Intel - i915 / HOOKS / mkinitcpio.conf
 cp /etc/mkinitcpio.conf /etc/mkinitcpio.conf.bak
 sed -i 's/MODULES=.*/MODULES=(i915)/g' /etc/mkinitcpio.conf
-sed -i 's/HOOKS=.*/HOOKS=(base systemd autodetect keyboard plymouth modconf kms sd-vconsole block filesystems fsck)/g' /etc/mkinitcpio.conf
+sed -i 's/HOOKS=.*/HOOKS=(base systemd keyboard autodetect plymouth sd-vconsole modconf kms block filesystems fsck)/g' /etc/mkinitcpio.conf
 mkinitcpio -P
 
 # FSTAB
