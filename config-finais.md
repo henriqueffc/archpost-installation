@@ -42,20 +42,40 @@ Acrescente nos parâmetros das partições ext4 e montadas pelo sistema no boot 
 `sudo nano /etc/fstab`
 <br><br>
 
-### 8 - tune2fs
-Habilite o fast commit para todas as partições ext4 do sistema.
+### 8 - Ext4
+Habilite o fast commit para todas as partições Ext4 do sistema.
 
 `sudo tune2fs -O fast_commit /dev/nome_da_partição`
 
-Habilite a checagem do filesystem pelo tune2fs/e2fsck no boot para todas as partições ext4 do sistema (no comando abaixo a verificação está definida para ser efetuada depois de 20 montagens da partição)
+Habilite a checagem do filesystem pelo tune2fs/e2fsck no boot para todas as partições Ext4 do sistema (no comando abaixo a verificação está definida para ser efetuada depois de 20 montagens da partição)
 
 `sudo tune2fs -c 20 /dev/nome_da_partição`
 
-Verifique as informações das partições ext4
+Verifique as informações das partições Ext4
 
 `sudo dumpe2fs -h /dev/nome_da_partição`
 
-Faça as configurações no fstab disponíveis no link https://wiki.archlinux.org/title/Fsck#fstab_options para as partições do sistema que são montadas no boot e que não sejam a partição root (ext4) e a partição boot. Lembrando que as partições devem ser ext4. Sem essa configuração (0 2) essas partições não serão verificadas pelo tune2fs na inicialização.
+Faça as configurações no fstab disponíveis no link https://wiki.archlinux.org/title/Fsck#fstab_options para as partições do sistema que são montadas no boot e que não sejam a partição root (Ext4) e a partição boot. Lembrando que as partições devem ser Ext4. Sem essa configuração (0 2) essas partições não serão verificadas pelo tune2fs na inicialização.
+
+Verifique se as partições Ext4 estão em 64-bit e com o metadata checksums habilitado.
+
+`sudo dumpe2fs -h /dev/nome_da_partição | grep features`
+
+Exemplo com 64bit e metadata_csum habilitados:
+```
+Filesystem features:      has_journal ext_attr resize_inode dir_index fast_commit filetype needs_recovery extent 64bit flex_bg sparse_super large_file huge_file dir_nlink extra_isize metadata_csum
+```
+Caso alguma das duas opções destacadas no exemplo acima não constar na saída do comando, faça o seguinte:
+
+A partição objeto do procedimento não pode estar montada para a execução dos comandos abaixo.
+
+`sudo e2fsck -Df /dev/nome_da_partição` (otimização da partição - obrigatório)
+
+`sudo resize2fs -b /dev/nome_da_partição` (conversão para 64-bit - somente se o 64bit não estiver disponível na lista)
+
+`sudo tune2fs -O metadata_csum /dev/nome_da_partição` (habilitando o metadata checksums - somente se o metadata_csum não estiver disponível na lista)
+
+Verifique a lista novamente usando `sudo dumpe2fs -h /dev/nome_da_partição | grep features`
 <br><br>
 
 ### 9 - Heroic Game Launcher - Wayland.
