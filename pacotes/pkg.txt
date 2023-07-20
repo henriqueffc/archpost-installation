@@ -152,6 +152,7 @@ thunderbird-i18n-pt-br
 tmux
 torbrowser-launcher
 trash-cli
+translate-shell
 ufw
 unace
 unrar
