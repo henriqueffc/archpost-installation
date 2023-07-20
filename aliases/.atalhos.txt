@@ -328,6 +328,15 @@ CTRL + - (zoom out)
 
 
 
+#### translate-shell ####
+trans palavra_para_tradução (ex.: trans home)
+trans "frase_para_tradução" (ex.:trans "Creeps in this petty pace from day to day")
+trans :abreviação_do_idioma palavra_ou_"frase" (traduz para um idioma específico. Ex.: trans :it home)
+
+
+
+
+
 #### NANO ####
 
 Alt + N = mostra a numeração das linhas
