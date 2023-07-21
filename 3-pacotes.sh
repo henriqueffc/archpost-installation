@@ -193,8 +193,8 @@ gsettings set org.gtk.gtk4.Settings.FileChooser sort-directories-first true
 # File-chooser 
 gsettings set org.gtk.Settings.FileChooser sort-directories-first true
 
-# Tecla de composição para caracteres especiais (Print Screen - https://en.wikipedia.org/wiki/Compose_key#Common_compose_combinations)
-gsettings set org.gnome.desktop.input-sources xkb-options "['terminate:ctrl_alt_bksp', 'lv3:ralt_switch', 'compose:prsc']"
+# Tecla de composição para caracteres especiais (Scroll Lock - https://en.wikipedia.org/wiki/Compose_key#Common_compose_combinations)
+gsettings set org.gnome.desktop.input-sources xkb-options "['terminate:ctrl_alt_bksp', 'lv3:ralt_switch', 'compose:sclk']"
 
 # Desabilitar as animações do Gnome
 gsettings set org.gnome.desktop.interface enable-animations false
