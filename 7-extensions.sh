@@ -56,7 +56,7 @@ make install -C ./blur-my-shell-$vblur
 rm v$vblur.zip
 rm -rf ./blur-my-shell-$vblur
 
-vappi="17"
+vappi="18"
 echo -e "$AZUL App Icons Taskbar $FIM"
 aria2c https://gitlab.com/AndrewZaech/aztaskbar/-/archive/v$vappi/aztaskbar-v$vappi.zip
 unzip aztaskbar-v$vappi.zip
