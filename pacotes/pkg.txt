@@ -1,5 +1,7 @@
 alacarte
 alacritty
+alsa-plugins
+alsa-utils
 aria2
 arch-audit
 archlinux-wallpaper
