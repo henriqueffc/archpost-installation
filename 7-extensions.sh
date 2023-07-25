@@ -35,7 +35,7 @@ echo -e "$AZUL Fuzzy App Search for GNOME $FIM"
 aria2c https://gitlab.com/Czarlie/gnome-fuzzy-app-search/-/archive/v$vfuz/gnome-fuzzy-app-search-v$vfuz.zip
 gnome-extensions install --force 'gnome-fuzzy-app-search-v5.0.14.zip'
 
-vvit="61.0.0"
+vvit="61.0.1"
 echo -e "$AZUL Vitals $FIM" 
 aria2c https://github.com/corecoding/Vitals/releases/download/v$vvit/vitals.zip
 gnome-extensions install --force 'vitals.zip'
