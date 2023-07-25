@@ -71,6 +71,7 @@ gufw
 hexyl
 hwloc
 i7z
+iptables-nft
 intel-gpu-tools
 intel-ucode
 intel-metee
@@ -157,6 +158,7 @@ torbrowser-launcher
 trash-cli
 translate-shell
 ufw
+ufw-extras
 unace
 unrar
 unzip
