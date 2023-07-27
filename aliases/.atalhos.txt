@@ -260,6 +260,8 @@ Super + B = lança navegador
 Super + F = lança files
 Super + A = Abre o grid
 Super + Q = Fecha a janela
+Super + C = abre o configurações do GNOME
+Super + E = abre o cliente de email
 Super + Seta para cima = maximizar
 Super + Seta para baixo = volta a janela ao estado original
 Super + Page Up ou Page Down = muda de workspace
@@ -269,7 +271,8 @@ Super + Shift + número de 2 a 6 = muda para o workspace desejado.
 Super + clique do mouse sobre a janela = move a janela.
 Alt + Tab = alterna entre os aplicativos. Se tiver mais de uma janela aberta por aplicativo, fixe a seleção sobre o ícone do programa para mostrar as janelas abertas.
 Alt + ' = alterna entre as janelas abertas de um mesmo aplicativo que está em foco.
-Super + M = abre o painel de notificação
+Super + V ou Super + M = abre o painel de notificação
+Super + N = foco na notificação
 Super + rolagem com o botão do meio do mouse = alterna entre os workspaces
 Shift + Super + End move a janela do programa para a última ou para a primeira área de trabalho disponível
 Shift + Super + Home move para a primeira área de trabalho
