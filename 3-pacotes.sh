@@ -273,18 +273,26 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys volume-up "['<Shift>K
 gsettings set org.gnome.settings-daemon.plugins.media-keys play "['<Shift>KP_Multiply']"
 # mudar para a próxima faixa - Shift + / teclado numérico
 gsettings set org.gnome.settings-daemon.plugins.media-keys next "['<Shift>KP_Divide']"
+
 # abrir navegador - Super + B
 gsettings set org.gnome.settings-daemon.plugins.media-keys www "['<Super>b']"
+
 # abrir o Files na home - Super + F
 gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>f']"
+
 # fechar a janela - Super + Q
 gsettings set org.gnome.desktop.wm.keybindings close "['<Super>q']"
 
 # aumentar o brilho da tela usando o teclado - Crtl + Para cima
 gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-up "['<Primary>Up']"
-
 # diminuir o brilho da tela usando o teclado - Crtl + Para baixo
 gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-down "['<Primary>Down']"
+
+# abrir o configurações do GNOME
+gsettings set org.gnome.settings-daemon.plugins.media-keys control-center "['<Super>c']"
+
+# abrir o cliente de email
+gsettings set org.gnome.settings-daemon.plugins.media-keys email "['<Super>e']"
 
 # mudar diretamente para o workspace desejado (Super + Shift + número de 2 a 6). Para ir para o primeiro workspace use Super + Home e para ir para o último Super + End.
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Shift><Super>2']"
