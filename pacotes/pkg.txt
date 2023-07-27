@@ -157,6 +157,7 @@ tmux
 torbrowser-launcher
 trash-cli
 translate-shell
+usbutils
 ufw
 ufw-extras
 unace
