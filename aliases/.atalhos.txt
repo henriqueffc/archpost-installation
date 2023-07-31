@@ -206,6 +206,7 @@ Abrir nova aba = ^B + c
 Fechar a aba = Crtl + d
 Listar todas as janelas e sessões = ^B + w (para encerrar um painel ou uma sessão use a tecla x ao selecioná-lo)
 Kill em um painel = ^B + x
+Kill na janela = ^B + &
 Mostrar o número do painel = ^B + q
 Modo tree = ^B + t
 Mudar para aba seguinte = ^B + n
