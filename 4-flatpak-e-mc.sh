@@ -56,6 +56,7 @@ flatpak install flathub it.mijorus.gearlever -y
 flatpak install flathub me.iepure.devtoolbox -y
 flatpak install flathub com.github.ADBeveridge.Raider -y
 flatpak install flathub org.gnome.World.PikaBackup -y
+flatpak install flathub io.bassi.Amberol -y
 
 # Flatpak Remote-Beta
 
