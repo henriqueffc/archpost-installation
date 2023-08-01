@@ -116,6 +116,7 @@ omz
 limpar
 dados
 reflector
+size
 xls
 xll
 xla
