@@ -102,6 +102,7 @@ meld
 mpv
 nautilus-image-converter
 nano
+ncdu
 neofetch
 nethogs
 nmap
