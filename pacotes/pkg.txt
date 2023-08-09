@@ -182,6 +182,7 @@ xdg-utils
 xorg-xdpyinfo
 xorg-xkill
 xorg-xwininfo
+xournalpp
 yt-dlp
 zenity
 zip
