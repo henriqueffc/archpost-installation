@@ -15,7 +15,7 @@ sudo pacman -S aria2 libgtop lm_sensors git gettext unzip ninja meson jq eslint 
 
 # Instalação das extensões
 
-vap="53"
+vap="56"
 echo -e "$AZUL AppIndicator and KStatusNotifierItem Support $FIM"
 aria2c https://github.com/ubuntu/gnome-shell-extension-appindicator/archive/refs/tags/v$vap.zip
 unzip gnome-shell-extension-appindicator-$vap.zip
