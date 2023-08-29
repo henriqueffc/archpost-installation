@@ -5,9 +5,9 @@ Habilite o cache de escrita e o APM com o valor de 254 no programa Discos.
 <br><br>
 
 ### 2 - Tema
-Configurar no Flatseal as variáveis de ambiente para os aplicativos que estejam com problemas de tema. Se usar o script nº10 não será necessária essa configuração. Veja o item 10 dessa lista. Exemplo:
+Configurar no Flatseal as variáveis de ambiente para os aplicativos que estejam com problemas de tema. Se usar o script nº11 não será necessária essa configuração. Veja o item 10 dessa lista. Exemplo:
 
-`GTK_THEME=Adwaita-dark` ou `QT_STYLE_OVERRIDE=adwaita-dark` 
+`GTK_THEME=Adwaita-dark`; `QT_STYLE_OVERRIDE=adwaita-dark` ou `QT_STYLE_OVERRIDE=kvantum`
 <br><br>
 
 ### 3 - ImageMagick
@@ -86,7 +86,7 @@ Verifique a lista novamente usando `sudo dumpe2fs -h /dev/nome_da_partição | g
 <br><br>
 
 ### 10 - Gradience
-Gradience - Aplicando o tema Classic Dark (script 10)
+Gradience - Aplicando o tema Classic Dark (script 11)
 
 Aplique o tema Classic Dark. É preciso abrir o aplicativo antes de executar os comandos abaixo.
 
