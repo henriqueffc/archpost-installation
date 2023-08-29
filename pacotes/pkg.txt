@@ -79,6 +79,8 @@ inxi
 jre-openjdk
 kdegraphics-mobipocket
 kdiskmark
+kvantum
+kvantum-theme-materia
 lnav
 lib32-gamemode
 lib32-mangohud
