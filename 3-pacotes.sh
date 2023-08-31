@@ -175,7 +175,7 @@ echo -e "$AZUL Alterando o tema, os ícones e os atalhos do sistema em 3 $FIM" &
 # Tema do sistema
 gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
 # Tema para os aplicativos legados 
-gsettings set org.gnome.desktop.interface gtk-theme "Adwaita"
+gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
 
 # Tema dos ícones
 gsettings set org.gnome.desktop.interface icon-theme "kora"
