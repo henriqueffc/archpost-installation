@@ -9,7 +9,7 @@ AZUL='\e[1;34m'
 RED='\e[1;31m'
 FIM='\e[0m'
 
-# Dark Theme
+# Dark Theme, tema dos ícones Kora e tema adw-gtk3 para os aplicativos gtk3
 
 if test -f "/usr/bin/flatpak"; then
 
@@ -18,9 +18,17 @@ if test -f "/usr/bin/flatpak"; then
 	# Tema do sistema GNOME
 	gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
 
+ 	# Tema dos ícones Kora
+	git clone https://github.com/bikass/kora.git
+	sudo cp -r ./kora/kora /usr/share/icons/
+	rm -rf kora
+
 	# Gradience
 	flatpak install flathub com.github.GradienceTeam.Gradience -y
 	sudo flatpak override --filesystem=xdg-config/gtk-4.0
+
+ 	# Tema dos ícones
+	gsettings set org.gnome.desktop.interface icon-theme "kora"
 
 	# adw-gtk3
 	wget https://github.com/lassekongo83/adw-gtk3/releases/download/v4.9/adw-gtk3v4-9.tar.xz
@@ -35,3 +43,5 @@ else
 	echo -e "$AZUL Flatpak não instalado. Faça a instalação do Flatpak para continuar. $FIM $RED sudo pacman -S flatpak && reboot $FIM"
 
 fi
+
+printf "%s $AZUL Fim! Verifique o item 10 do arquivo config-finais.md $FIM \n"
