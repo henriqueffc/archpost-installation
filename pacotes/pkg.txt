@@ -144,7 +144,6 @@ spotify-launcher
 steam
 strace
 scrcpy
-switcheroo-control
 tealdeer
 tesseract
 tesseract-data-eng
