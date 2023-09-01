@@ -163,11 +163,6 @@ chmod +x $HOME/bin/*
 # Firefox search provider
 sudo mv ./firefox/firefox-search-provider.ini /usr/share/gnome-shell/search-providers
 
-# Tema dos ícones Kora
-git clone https://github.com/bikass/kora.git
-sudo cp -r ./kora/kora /usr/share/icons/
-rm -rf kora
-
 echo -e "$AZUL Alterando o tema, os ícones e os atalhos do sistema em 1 $FIM" && sleep 1
 echo -e "$AZUL Alterando o tema, os ícones e os atalhos do sistema em 2 $FIM" && sleep 1
 echo -e "$AZUL Alterando o tema, os ícones e os atalhos do sistema em 3 $FIM" && sleep 1
@@ -176,9 +171,6 @@ echo -e "$AZUL Alterando o tema, os ícones e os atalhos do sistema em 3 $FIM" &
 gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
 # Tema para os aplicativos legados 
 gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
-
-# Tema dos ícones
-gsettings set org.gnome.desktop.interface icon-theme "kora"
 
 # Mostrar porcentagem da bateria na top bar
 gsettings set org.gnome.desktop.interface show-battery-percentage true
