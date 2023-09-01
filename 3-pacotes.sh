@@ -348,9 +348,6 @@ sudo cp /etc/clamav/freshclam.conf /etc/clamav/freshclam.conf.bak
 sudo sed -i '/#Checks 24/c\Checks 4' /etc/clamav/freshclam.conf
 sudo systemctl enable --now clamav-freshclam.service
 
-# Remover o Powerprofilesctl
-# sudo pacman -R power-profiles-daemon
-
 # Neofetch
 mkdir -p $HOME/.config/neofetch/
 cp ./neofetch/config.conf $HOME/.config/neofetch/
