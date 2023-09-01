@@ -48,8 +48,6 @@ sudo ufw enable
 echo -e "$AZUL \t ufw.service habilitado $FIM"
 sudo systemctl start pkgstats.timer
 echo -e "$AZUL \t pkgstats.timer habilitado $FIM"
-sudo systemctl enable switcheroo-control.service
-echo -e "$AZUL \t switcheroo-control habilitado $FIM"
 sudo systemctl enable pacman-filesdb-refresh.timer
 echo -e "$AZUL \t pacman-filesdb-refresh habilitado $FIM"
 
