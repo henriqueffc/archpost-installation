@@ -306,7 +306,6 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "[
 # Alacritty
 mkdir $HOME/.config/alacritty
 mv ./alacritty/alacritty.yml $HOME/.config/alacritty/
-# sudo sed -i 's/\<Exec=alacritty\>/Exec=prime-run alacritty/g' /usr/share/applications/Alacritty.desktop
 
 # Alacritty - Tmux - Nautilus
 mkdir -p ~/.local/share/nautilus-python/extensions
