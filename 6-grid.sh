@@ -40,4 +40,4 @@ gsettings set org.gnome.shell favorite-apps "['Alacritty.desktop', 'thunderbird.
 mkdir ~/ToDo/
 mkdir ~/Documentos/Projetos
 echo "file:///home/$USER/Documentos/Projetos 🎒 Projetos" >>~/.config/gtk-3.0/bookmarks
-echo "file:///home/$USER/ToDo 🗒<fe0f> ToDo" >>~/.config/gtk-3.0/bookmarks
+echo "file:///home/$USER/ToDo 🗒 ToDo" >>~/.config/gtk-3.0/bookmarks
