@@ -39,7 +39,7 @@ dust
 ebook-tools
 eog-plugins
 espeak-ng
-exa
+eza
 exfatprogs
 fd
 firefox
