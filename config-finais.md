@@ -83,6 +83,8 @@ Verifique a lista novamente usando `sudo dumpe2fs -h /dev/nome_da_partição | g
 `sudo nano /usr/share/applications/heroic.desktop`
 
 `Exec=/opt/Heroic/heroic --ozone-platform-hint=auto %U`
+
+`cp /usr/share/applications/heroic.desktop ~/.local/share/applications`
 <br><br>
 
 ### 10 - Gradience
@@ -109,6 +111,8 @@ Configuração do Obsidian - Wayland
 `sudo nano /usr/share/applications/obsidian.desktop `
 
 `Exec=/usr/bin/obsidian --ozone-platform-hint=auto %U`
+
+`cp /usr/share/applications/obsidian.desktop ~/.local/share/applications`
 <br><br>
 
 ### 13 - Spotify-launcher
