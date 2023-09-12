@@ -39,7 +39,6 @@ flatpak install flathub org.gnome.gitlab.YaLTeR.VideoTrimmer -y
 flatpak install flathub us.zoom.Zoom -y
 flatpak install flathub com.belmoussaoui.Obfuscate -y
 flatpak install flathub com.github.wwmm.easyeffects -y
-flatpak install flathub com.obsproject.Studio -y
 flatpak install flathub com.mattjakeman.ExtensionManager -y
 flatpak install flathub org.gtk.Gtk3theme.Adwaita-dark -y
 flatpak install flathub com.github.huluti.Curtail -y
