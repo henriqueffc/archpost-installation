@@ -111,6 +111,7 @@ nmap
 ntfs-3g
 nvme-cli
 obsidian
+obs-studio
 okular
 openssh
 p7zip
