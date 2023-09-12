@@ -78,6 +78,7 @@ intel-metee
 inxi
 jre-openjdk
 kdegraphics-mobipocket
+kdenlive
 kdiskmark
 kvantum
 kvantum-theme-materia
