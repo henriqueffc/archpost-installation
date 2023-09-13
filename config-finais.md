@@ -173,3 +173,7 @@ Atalho : Shift + Ctrl + D
 
 ### 18 - Espanso
 Para eliminar o pequeno quadro (inicialização do Espanso) mostrado quando o GNOME Shell é inicializado pela primeira vez modifique a opção "Status de inicialização" para Área de Trabalho na extensão Just Perfection.
+<br><br>
+
+### 19 - Rclone
+Configurar o remote no rclone e fazer o scprit de sincronização.
