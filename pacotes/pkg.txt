@@ -130,6 +130,7 @@ qqc2-desktop-style
 qt5-svg
 qt5-wayland
 qt6-wayland
+rclone
 rebuild-detector
 reflector
 ripgrep
