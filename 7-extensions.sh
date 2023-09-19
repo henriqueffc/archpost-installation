@@ -22,19 +22,6 @@ unzip gnome-shell-extension-appindicator-$vap.zip
 meson setup ./gnome-shell-extension-appindicator-$vap /tmp/g-s-appindicators-build
 ninja -C /tmp/g-s-appindicators-build install
 
-vclip="1.3.4"
-# Em caso de update altere a versão na linha 29 também.
-echo -e "$AZUL Clipboard History $FIM"
-aria2c https://github.com/SUPERCILEX/gnome-clipboard-history/archive/refs/tags/$vclip.zip
-gnome-extensions install --force 'gnome-clipboard-history-1.3.4.zip'
-make -C $HOME/.local/share/gnome-shell/extensions/clipboard-history@alexsaveau.dev
-
-vfuz="5.0.14"
-# Em caso de update altere a versão na linha 36 também.
-echo -e "$AZUL Fuzzy App Search for GNOME $FIM"
-aria2c https://gitlab.com/Czarlie/gnome-fuzzy-app-search/-/archive/v$vfuz/gnome-fuzzy-app-search-v$vfuz.zip
-gnome-extensions install --force 'gnome-fuzzy-app-search-v5.0.14.zip'
-
 vvit="61.0.1"
 echo -e "$AZUL Vitals $FIM" 
 aria2c https://github.com/corecoding/Vitals/releases/download/v$vvit/vitals.zip
@@ -62,14 +49,14 @@ aria2c https://gitlab.com/AndrewZaech/aztaskbar/-/archive/v$vappi/aztaskbar-v$va
 unzip aztaskbar-v$vappi.zip
 make install -C ./aztaskbar-v$vappi
 
-echo -e "$AZUL Workspace indicator $FIM"
-gnome-extensions enable workspace-indicator@gnome-shell-extensions.gcampax.github.com
-
 echo -e "$AZUL IdeaPad $FIM"
 mkdir $HOME/.local/share/gnome-shell/extensions/ideapad@laurento.frittella
 git -C $HOME/.local/share/gnome-shell/extensions/ideapad@laurento.frittella clone https://github.com/laurento/gnome-shell-extension-ideapad.git
 make -C $HOME/.local/share/gnome-shell/extensions/ideapad@laurento.frittella/gnome-shell-extension-ideapad
 sudo echo "%wheel ALL=(ALL) NOPASSWD: /usr/bin/tee /sys/bus/platform/drivers/ideapad_acpi/VPC????\:??/conservation_mode" | sudo tee /etc/sudoers.d/ideapad
+
+echo -e "$AZUL Clipboard Indicator $FIM"
+git clone https://github.com/Tudmotu/gnome-shell-extension-clipboard-indicator.git ~/.local/share/gnome-shell/extensions/clipboard-indicator@tudmotu.com
 
 sudo pacman -Rn ninja meson eslint
 
