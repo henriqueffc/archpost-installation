@@ -128,7 +128,7 @@ Depois execute os comandos abaixo para o Spotify funcionar no Wayland e não no 
 
 ### 14 - Extensões do GNOME
 
-Configure as extensões instaladas no GNOME (backup do App Icons Taskbar está no Dropbox e a imagem svg do Arch usada na Just Perfection está na pasta `~/Imagens/Logo`
+Configure as extensões instaladas no GNOME (backup do App Icons Taskbar está no Dropbox)
 <br><br>
 
 ### 15 - Firefox
