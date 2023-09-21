@@ -43,9 +43,8 @@ sudo systemctl enable systemd-boot-update
 echo -e "$AZUL \t systemd-boot-update habilitado $FIM"
 sudo systemctl enable bluetooth.service
 echo -e "$AZUL \t bluetooth.service habilitado $FIM"
-sudo systemctl enable --now ufw.service
-sudo ufw enable
-echo -e "$AZUL \t ufw.service habilitado $FIM"
+sudo systemctl enable --now firewalld.service
+echo -e "$AZUL \t firewalld.service habilitado $FIM"
 sudo systemctl start pkgstats.timer
 echo -e "$AZUL \t pkgstats.timer habilitado $FIM"
 sudo systemctl enable pacman-filesdb-refresh.timer
@@ -54,6 +53,10 @@ echo -e "$AZUL \t pacman-filesdb-refresh habilitado $FIM"
 # Offpowersave
 sudo mv ./powersave/default-wifi-powersave-on.conf /etc/NetworkManager/conf.d
 echo -e "$AZUL \t WIFI - Powersave desabilitado $FIM"
+
+# FirewallD - Applet
+cp /etc/xdg/autostart/firewall-applet.desktop ~/.config/autostart
+sed -i '$a Hidden=true' ~/.config/autostart/firewall-applet.desktop
 
 # Intelparanoid.service
 sudo mv ./service/intelparanoid.service /etc/systemd/system
