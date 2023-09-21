@@ -46,6 +46,7 @@ firefox
 firefox-i18n-pt-br
 firejail
 firetools
+firewalld
 flatpak
 fwupd
 gamemode
@@ -67,7 +68,6 @@ gnome-tweaks
 gparted
 gsmartcontrol
 gst-plugin-libcamera
-gufw
 handbrake
 hexyl
 hwloc
@@ -162,8 +162,6 @@ torbrowser-launcher
 trash-cli
 translate-shell
 usbutils
-ufw
-ufw-extras
 unace
 unrar
 unzip
