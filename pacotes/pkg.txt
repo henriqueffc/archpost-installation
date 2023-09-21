@@ -68,6 +68,7 @@ gparted
 gsmartcontrol
 gst-plugin-libcamera
 gufw
+handbrake
 hexyl
 hwloc
 i7z
