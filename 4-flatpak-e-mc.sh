@@ -32,8 +32,6 @@ flatpak install flathub com.discordapp.Discord -y
 flatpak install flathub com.github.jeromerobert.pdfarranger -y
 flatpak install flathub com.skype.Client -y
 flatpak install flathub com.github.unrud.VideoDownloader -y
-flatpak install flathub org.linux_hardware.hw-probe -y
-flatpak install flathub fr.handbrake.ghb -y
 flatpak install flathub fr.romainvigier.MetadataCleaner -y
 flatpak install flathub org.gnome.gitlab.YaLTeR.VideoTrimmer -y
 flatpak install flathub us.zoom.Zoom -y
