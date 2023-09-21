@@ -177,3 +177,24 @@ Para eliminar o pequeno quadro (inicialização do Espanso) mostrado quando o GN
 
 ### 19 - Rclone
 Configurar o remote no rclone e fazer o scprit de sincronização.
+<br><br>
+
+### 20 - Conservation mode - Ideapad S145
+Modo de conservação da bateria. Se for habilitado manterá a carga máxima da bateria em 60%.
+Verifique se o módulo do kernel ideapad_laptop está carregado com o comando  `lsmod | grep ideapad`. Se não estiver os comandos indicados a seguir não irão funcionar.
+Apure o valor presente no sistema com o seguinte comando:
+
+`cat /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode`
+
+Pode acontecer da pasta VPC2004:00 ter outra nomenclatura. Averigue no sistema.
+
+Se o módulo estiver carregado no sistema e a pasta VPC2004:00 for a correta execute como root os comandos abaixo:
+
+Para Habilitar
+
+`echo 1 > /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode`
+
+Para desabilitar
+
+`echo 0 > /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode`
+
