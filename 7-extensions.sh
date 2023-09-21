@@ -49,12 +49,6 @@ aria2c https://gitlab.com/AndrewZaech/aztaskbar/-/archive/v$vappi/aztaskbar-v$va
 unzip aztaskbar-v$vappi.zip
 make install -C ./aztaskbar-v$vappi
 
-echo -e "$AZUL IdeaPad $FIM"
-mkdir $HOME/.local/share/gnome-shell/extensions/ideapad@laurento.frittella
-git -C $HOME/.local/share/gnome-shell/extensions/ideapad@laurento.frittella clone https://github.com/laurento/gnome-shell-extension-ideapad.git
-make -C $HOME/.local/share/gnome-shell/extensions/ideapad@laurento.frittella/gnome-shell-extension-ideapad
-sudo echo "%wheel ALL=(ALL) NOPASSWD: /usr/bin/tee /sys/bus/platform/drivers/ideapad_acpi/VPC????\:??/conservation_mode" | sudo tee /etc/sudoers.d/ideapad
-
 echo -e "$AZUL Clipboard Indicator $FIM"
 git clone https://github.com/Tudmotu/gnome-shell-extension-clipboard-indicator.git ~/.local/share/gnome-shell/extensions/clipboard-indicator@tudmotu.com
 
