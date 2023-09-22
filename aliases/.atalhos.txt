@@ -99,9 +99,6 @@ s-tui
 
 #### ALIAS ####
 
-mpv
-mpv-yt
-mpv-yt-nv
 mpvnovideo
 mirror
 tmux.lvim
