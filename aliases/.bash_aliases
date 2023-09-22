@@ -1,6 +1,3 @@
-alias mpv="mpv --vo=gpu --hwdec=auto --hwdec-codecs=all --gpu-api=auto --autofit-larger=60%x60% --save-position-on-quit"
-alias mpv-yt="mpv --vo=gpu --hwdec=auto --hwdec-codecs=all --gpu-api=auto --ytdl-format='((bestvideo[fps<=?60][height<=?1080][vcodec^=vp9]/bestvideo)+(bestaudio[acodec=opus]/bestaudio))/best' --autofit-larger=60%x60% --save-position-on-quit"
-alias mpv-yt-nv="prime-run mpv --vo=gpu --hwdec=cuda --hwdec-codecs=h264 --gpu-api=auto --ytdl-format='((bestvideo[fps<=?60][height<=?1080][vcodec^=h264]/bestvideo)+(bestaudio[acodec=opus]/bestaudio))/best' --autofit-larger=60%x60% --save-position-on-quit"
 alias tmux.lvim="tmux new -s lvim -d"
 alias mpvnovideo="mpv --vid=no --save-position-on-quit"
 alias yaycache="yay -Sc --aur"
