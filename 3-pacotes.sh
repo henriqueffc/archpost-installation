@@ -99,7 +99,7 @@ sudo sed -i 's|#unix_sock_group = "libvirt"|unix_sock_group = "libvirt"|g' /etc/
 
 # Appimage e outros
 aria2c -d ~/Downloads -i ./urls/urls.txt
-aria2c -d ~/Downloads https://github.com/upscayl/upscayl/releases/download/v2.8.1/upscayl-2.8.1-linux.AppImage -o Upscayl.AppImage
+aria2c -d ~/Downloads https://github.com/upscayl/upscayl/releases/download/v2.8.6/upscayl-2.8.6-linux.AppImage -o Upscayl.AppImage
 aria2c -d ~/Downloads https://github.com/pop-os/popsicle/releases/download/1.3.1/Popsicle_USB_Flasher-1.3.1-x86_64.AppImage
 mkdir /home/$USER/Applications
 mv ~/Downloads/*.AppImage /home/$USER/Applications
