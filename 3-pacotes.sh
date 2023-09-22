@@ -350,6 +350,10 @@ sudo cp /etc/clamav/freshclam.conf /etc/clamav/freshclam.conf.bak
 sudo sed -i '/#Checks 24/c\Checks 4' /etc/clamav/freshclam.conf
 sudo systemctl enable --now clamav-freshclam.service
 
+# mpv
+mkdir -p $HOME/.config/mpv/
+cp ./mpv/mpv.conf $HOME/.config/mpv/
+
 # Neofetch
 mkdir -p $HOME/.config/neofetch/
 cp ./neofetch/config.conf $HOME/.config/neofetch/
