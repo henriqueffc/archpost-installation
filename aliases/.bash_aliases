@@ -9,7 +9,7 @@ alias omz="echo -e '\e[0;34mzsh-syntax-highlighting\e[0m' && git -C $HOME/.oh-my
 alias limpar="find ~/.cache/ -type f -atime +365 -delete && sudo paccache -rk1 && yay -Yc"
 alias scanports="rustscan -a 127.0.0.1 --ulimit 5000"
 alias dados="yay -Ps"
-alias reflector="sudo reflector -l 10 -c Brazil -a 12 -p https -p http --sort rate --save /etc/pacman.d/mirrorlist && sudo pacman -Syu"
+alias reflector="sudo reflector --score 5 --country 'United States,Germany' -a 1 -p https --sort rate --save /etc/pacman.d/mirrorlist"
 alias size="du -ch --max-depth=1 . | sort -h"
 alias xls="eza -a --icons --color=always --group-directories-first"
 alias xll="eza -lag --icons --color=always --header --group-directories-first --octal-permissions"
