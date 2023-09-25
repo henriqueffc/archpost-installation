@@ -35,7 +35,6 @@ dialog
 discount
 djvulibre
 duf
-dust
 ebook-tools
 eog-plugins
 espeak-ng
@@ -51,6 +50,7 @@ flatpak
 fwupd
 gamemode
 gawk
+gdu
 ghex
 gimagereader-gtk
 git
