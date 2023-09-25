@@ -77,16 +77,6 @@ sed -i 's/#RUSTFLAGS=.*/RUSTFLAGS="-C opt-level=2 -C target-cpu=native"/g' /etc/
 sed -i 's/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -z --threads=0 -)/g' /etc/makepkg.conf
 sed -i 's/COMPRESSZST=(zstd -c -z -q -)/COMPRESSZST=(zstd -c -z -q --threads=0 -)/g' /etc/makepkg.conf
 
-# Mirrorlist
-echo -e "$AZUL
--------------------------------------------------------------------------
-                        Alterando o mirrorlist
--------------------------------------------------------------------------
-$FIM"
-cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
-cat ./mirrorlistbr/mirrorlist >/etc/pacman.d/mirrorlist
-pacman -Syu
-
 # Intel - i915 / HOOKS / mkinitcpio.conf
 cp /etc/mkinitcpio.conf /etc/mkinitcpio.conf.bak
 sed -i 's/MODULES=.*/MODULES=(i915)/g' /etc/mkinitcpio.conf
