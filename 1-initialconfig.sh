@@ -47,6 +47,8 @@ echo 'EGL_PLATFORM=wayland' >>/etc/environment
 echo 'VDPAU_DRIVER=va_gl' >>/etc/environment
 echo 'QT_QPA_PLATFORM=wayland;xcb' >>/etc/environment
 echo 'QT_STYLE_OVERRIDE=kvantum' >>/etc/environment
+echo '__GLX_VENDOR_LIBRARY_NAME=mesa'  >>/etc/environment
+echo '__EGL_VENDOR_LIBRARY_FILENAMES=/usr/share/glvnd/egl_vendor.d/50_mesa.json'  >>/etc/environment
 
 # PC speaker - turn off beep shutdown
 echo 'blacklist pcspkr' >/etc/modprobe.d/nobeep.conf
