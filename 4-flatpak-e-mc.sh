@@ -54,6 +54,7 @@ flatpak install flathub com.github.ADBeveridge.Raider -y
 flatpak install flathub org.gnome.World.PikaBackup -y
 flatpak install flathub io.bassi.Amberol -y
 flatpak install flathub io.github.giantpinkrobots.flatsweep -y
+flatpak install flathub io.github.lainsce.Colorway -y
 
 # Flatpak Remote-Beta
 
