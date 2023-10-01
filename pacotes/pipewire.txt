@@ -7,4 +7,5 @@ pipewire-jack
 pipewire-pulse
 pipewire-v4l2
 sof-firmware
+sof-tools
 wireplumber
