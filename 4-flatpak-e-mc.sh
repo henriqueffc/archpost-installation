@@ -53,8 +53,8 @@ flatpak install flathub me.iepure.devtoolbox -y
 flatpak install flathub com.github.ADBeveridge.Raider -y
 flatpak install flathub org.gnome.World.PikaBackup -y
 flatpak install flathub io.bassi.Amberol -y
-flatpak install flathub io.github.giantpinkrobots.flatsweep -y
-flatpak install flathub io.github.lainsce.Colorway -y
+flatpak install flathub io.github.flattool.Warehouse -y
+flatpak install flathub com.github.finefindus.eyedropper -y
 
 # Flatpak Remote-Beta
 
