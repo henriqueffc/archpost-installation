@@ -3,3 +3,4 @@ crow-translate
 downgrade
 goverlay-bin
 heroic-games-launcher-bin
+koreader-bin
