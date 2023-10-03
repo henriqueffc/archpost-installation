@@ -80,11 +80,11 @@ Verifique a lista novamente usando `sudo dumpe2fs -h /dev/nome_da_partição | g
 
 ### 9 - Heroic Game Launcher - Wayland.
 
-`sudo nano /usr/share/applications/heroic.desktop`
+`cp /usr/share/applications/heroic.desktop ~/.local/share/applications`
+
+`nano ~/.local/share/applications/heroic.desktop`
 
 `Exec=/opt/Heroic/heroic --ozone-platform-hint=auto %U`
-
-`cp /usr/share/applications/heroic.desktop ~/.local/share/applications`
 <br><br>
 
 ### 10 - Gradience
@@ -98,25 +98,20 @@ Aplique o tema Classic Dark. É preciso abrir o aplicativo antes de executar os 
 <br><br>
 
 ### 11 - Tmux
-
 Instale os plugins no Tmux
 
 ^B + Shift + I (i maiúsculo)
 <br><br>
 
-### 12 - Obsidian
+### 12 - Obsidian - Wayland
+`cp /usr/share/applications/obsidian.desktop ~/.local/share/applications`
 
-Configuração do Obsidian - Wayland  
-
-`sudo nano /usr/share/applications/obsidian.desktop `
+`nano  ~/.local/share/applications/obsidian.desktop`
 
 `Exec=/usr/bin/obsidian --ozone-platform-hint=auto %U`
-
-`cp /usr/share/applications/obsidian.desktop ~/.local/share/applications`
 <br><br>
 
 ### 13 - Spotify-launcher
-
 Inicie o Spotify-launcher para completar a instalação do Spotify.
 
 Depois execute os comandos abaixo para o Spotify funcionar no Wayland e não no Xwayland.
@@ -127,7 +122,6 @@ Depois execute os comandos abaixo para o Spotify funcionar no Wayland e não no 
 <br><br>
 
 ### 14 - Extensões do GNOME
-
 Configure as extensões instaladas no GNOME (backup do App Icons Taskbar está no Dropbox)
 <br><br>
 
@@ -138,14 +132,12 @@ Esse parâmetro é necessário para habilitar a pesquisa pelo navegador (o Firef
 <br><br>
 
 ### 16 - Xpad
-
 Para o controle Multilaser JS091 (Shanwan Controler) funcionar instale a atualização para o Xpad disponível no site abaixo.
 
 https://github.com/paroj/xpad
 <br><br>
 
 ### 17 - Distrobox
-
 Caso use alguma distro pelo Distrobox não se esqueça de configurar o atalho do desktop (executar usando o bash. pelo zsh ocorrem alguns problemas)
 Exemplo com o Ubuntu:
 
@@ -197,4 +189,11 @@ Para Habilitar
 Para desabilitar
 
 `echo 0 > /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode`
+<br><br>
 
+### 21 - Koreader - Wayland
+`cp /usr/share/applications/koreader.desktop ~/.local/share/applications`
+
+`nano ~/.local/share/applications/koreader.desktop`
+
+`Exec=env SDL_VIDEODRIVER=wayland koreader %u`
