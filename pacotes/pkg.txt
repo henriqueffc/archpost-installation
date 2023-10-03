@@ -166,6 +166,7 @@ unrar
 unzip
 veracrypt
 webp-pixbuf-loader
+weechat
 wine-staging
 wine-gecko
 wine-mono
