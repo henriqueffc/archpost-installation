@@ -5,9 +5,13 @@ Habilite o cache de escrita e o APM com o valor de 254 no programa Discos.
 <br><br>
 
 ### 2 - Tema
-Configurar no Flatseal as variáveis de ambiente para os aplicativos que estejam com problemas de tema. Se usar o script nº11 não será necessária essa configuração. Veja o item 10 dessa lista. Exemplo:
-
-`GTK_THEME=Adwaita-dark`; `QT_STYLE_OVERRIDE=adwaita-dark` ou `QT_STYLE_OVERRIDE=kvantum`
+Configure o tema dos programas que usam QT através dos aplicativos *Qt5 Settings* e *Qt6 Settings*
+Escolha o estilo kvantum e tema de ícones breeze dark.
+Nos programas que usam QT e permitem configurar a aparência (kdenlive, okular, vlc, etc.) escolha o tema kvantum.
+Execute os seguintes comandos para unificar os temas dos flatpaks instalados no sistema. 
+O sufixo :ro (ex.: xdg-config/gtk-4:ro) indica read-only. Ele é opcional e preferi não usá-lo.
+`sudo flatpak override --filesystem=xdg-config/gtk-4.0`
+`sudo flatpak override --filesystem=xdg-config/gtk-3.0`
 <br><br>
 
 ### 3 - ImageMagick
@@ -21,7 +25,7 @@ Comente as linhas `<policy domain= com <!-- (início) e --> (final da linha)`. E
 <br><br>
 
 ### 4 - SSH
-Configurar rkhunter, Fail2ban - porta SSH, SSH e Lynis (https://github.com/CISOfy/Lynis)
+Configurar rkhunter, Fail2ban - porta SSH e o SSH.
 <br><br>
 
 ### 5 - NVMe
@@ -31,7 +35,7 @@ Altere a identificação do ponto de montagem das partições do NVMe no aplicat
 ### 6 - Nautilus
 Atalhos no Nautilus (File). A fonte que contém os símbolos foi instalada pelo script número 3.
 
-`echo "file:///mnt/nvme0n1p1 🖴 NVME" >> ~/.config/gtk-3.0/bookmarks`
+`echo "file:///mnt/nvme0n1p1 🖴  NVME" >> ~/.config/gtk-3.0/bookmarks`
 
 `echo "file:///home/$USER/Dropbox 🗃 Dropbox" >> ~/.config/gtk-3.0/bookmarks`
 <br><br>
@@ -63,7 +67,9 @@ Verifique se as partições Ext4 estão em 64-bit e com o metadata checksums hab
 
 Exemplo com 64bit e metadata_csum habilitados:
 ```
-Filesystem features:      has_journal ext_attr resize_inode dir_index fast_commit filetype needs_recovery extent 64bit flex_bg sparse_super large_file huge_file dir_nlink extra_isize metadata_csum
+Filesystem features: has_journal ext_attr resize_inode dir_index fast_commit
+filetype needs_recovery extent 64bit flex_bg sparse_super large_file huge_file
+dir_nlink extra_isize metadata_csum
 ```
 Caso alguma das duas opções destacadas no exemplo acima não constar na saída do comando, faça o seguinte:
 

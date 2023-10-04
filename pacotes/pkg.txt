@@ -127,7 +127,8 @@ procs
 progress
 python-nautilus
 qbittorrent
-qt5-svg
+qt5ct
+qt6ct
 qt5-wayland
 qt6-wayland
 rclone
