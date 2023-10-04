@@ -125,9 +125,6 @@ mv ./desktop/upscayl.desktop ~/.local/share/applications
 mv ./aliases/.bash_aliases ~/
 mv ./aliases/.atalhos.txt ~/
 
-# Chromium
-mv ./chromium/chromium-flags.conf ~/.config
-
 # Modelos de arquivos para o Files
 touch $HOME/Modelos/novo.txt
 
