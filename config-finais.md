@@ -6,11 +6,17 @@ Habilite o cache de escrita e o APM com o valor de 254 no programa Discos.
 
 ### 2 - Tema
 Configure o tema dos programas que usam QT através dos aplicativos *Qt5 Settings* e *Qt6 Settings*
+
 Escolha o estilo kvantum e tema de ícones breeze dark.
+
 Nos programas que usam QT e permitem configurar a aparência (kdenlive, okular, vlc, etc.) escolha o tema kvantum.
+
 Execute os seguintes comandos para unificar os temas dos flatpaks instalados no sistema. 
+
 O sufixo :ro (ex.: xdg-config/gtk-4:ro) indica read-only. Ele é opcional e preferi não usá-lo.
+
 `sudo flatpak override --filesystem=xdg-config/gtk-4.0`
+
 `sudo flatpak override --filesystem=xdg-config/gtk-3.0`
 <br><br>
 
