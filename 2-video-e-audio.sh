@@ -42,9 +42,6 @@ install -Dvm644 ./apparmor/apparmor-notify.desktop -t ~/.config/autostart/
 sudo cp /etc/apparmor/parser.conf /etc/apparmor/parser.conf.bak
 sudo sed -i '/#write-cache/c\write-cache' /etc/apparmor/parser.conf
 
-# Reabilitar o Wayland no GDM com o drive proprietário da Nvidia
-sudo ln -s /dev/null /etc/udev/rules.d/61-gdm.rules
-
 # Fail2ban
 sudo pacman -S fail2ban --needed --noconfirm
 sudo mv ./fail2ban/jail.local /etc/fail2ban

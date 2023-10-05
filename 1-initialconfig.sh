@@ -47,8 +47,6 @@ echo 'EGL_PLATFORM=wayland' >>/etc/environment
 echo 'VDPAU_DRIVER=va_gl' >>/etc/environment
 echo 'QT_QPA_PLATFORM=wayland;xcb' >>/etc/environment
 echo 'QT_QPA_PLATFORMTHEME=qt5ct' >>/etc/environment
-echo '__GLX_VENDOR_LIBRARY_NAME=mesa'  >>/etc/environment
-echo '__EGL_VENDOR_LIBRARY_FILENAMES=/usr/share/glvnd/egl_vendor.d/50_mesa.json'  >>/etc/environment
 
 # PC speaker - turn off beep shutdown
 echo 'blacklist pcspkr' >/etc/modprobe.d/nobeep.conf
@@ -68,7 +66,9 @@ sed -i "${linenumber}s/..//" /etc/nanorc
 mv ./swappiness/99-swappiness.conf /etc/sysctl.d/
 
 # udev.rules
-mv ./udev/60-ioschedulers.rules /etc/udev/rules.d/
+## Ioschedulers
+## Reabilitar o Wayland no GDM com o drive proprietário da Nvidia
+mv ./udev/*.rules /etc/udev/rules.d/
 
 # Makeflags e compress
 cp /etc/makepkg.conf /etc/makepkg.conf.bak
@@ -81,7 +81,7 @@ sed -i 's/COMPRESSZST=(zstd -c -z -q -)/COMPRESSZST=(zstd -c -z -q --threads=0 -
 
 # Intel - i915 / HOOKS / mkinitcpio.conf
 cp /etc/mkinitcpio.conf /etc/mkinitcpio.conf.bak
-sed -i 's/MODULES=.*/MODULES=(i915)/g' /etc/mkinitcpio.conf
+sed -i 's/MODULES=.*/MODULES=(i915 nvidia nvidia_modeset nvidia_uvm nvidia_drm)/g' /etc/mkinitcpio.conf
 sed -i 's/HOOKS=.*/HOOKS=(base systemd keyboard autodetect plymouth sd-vconsole modconf kms block filesystems fsck)/g' /etc/mkinitcpio.conf
 mkinitcpio -P
 
