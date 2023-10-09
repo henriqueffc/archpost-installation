@@ -134,7 +134,7 @@ Depois execute os comandos abaixo para o Spotify funcionar no Wayland e não no 
 <br><br>
 
 ### 14 - Extensões do GNOME
-Configure as extensões instaladas no GNOME (backup do App Icons Taskbar está no Dropbox)
+Configure as extensões instaladas no GNOME.
 <br><br>
 
 ### 15 - Firefox
