@@ -37,10 +37,6 @@ sed -i 's/#ParallelDownloads = 5/\ParallelDownloads = 5/' /etc/pacman.conf
 # Environment
 cp /etc/environment /etc/environment.bak
 echo 'MOZ_ENABLE_WAYLAND=1' >>/etc/environment
-echo 'MOZ_WAYLAND_DRM_DEVICE=/dev/dri/renderD128' >>/etc/environment
-echo 'MOZ_WAYLAND_USE_VAAPI=1' >>/etc/environment
-echo 'LIBVA_DRIVERS_PATH=/usr/lib/dri/' >>/etc/environment
-echo 'LIBVA_DRIVER_NAME=iHD' >>/etc/environment
 echo 'EGL_PLATFORM=wayland' >>/etc/environment
 echo 'VDPAU_DRIVER=va_gl' >>/etc/environment
 echo 'QT_QPA_PLATFORM=wayland;xcb' >>/etc/environment
