@@ -209,3 +209,21 @@ Para desabilitar
 `nano ~/.local/share/applications/koreader.desktop`
 
 `Exec=env SDL_VIDEODRIVER=wayland koreader %u`
+<br><br>
+
+### 22 - Steam
+Adicione o seguinte parâmetro para executar jogos OpenGL e o mangohud na placa dedicada:
+`__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia mangohud %command%`
+
+Para os outros jogos o parâmetro para executar somente o mangohud é o seguinte:
+`mangohud %command%`
+
+Para executar o gamemode o parâmetro é `gamemoderun %command%`
+
+Aumente a quantidade de cores para pré-compilar os shaders.
+`nano ~/.steam/steam/steam_dev.cfg`
+
+```
+unShaderBackgroundProcessingThreads 6
+```
+
