@@ -143,6 +143,8 @@ rustscan
 s-tui
 sd
 seahorse
+sysfsutils
+sysprof
 soundconverter
 spotify-launcher
 steam
