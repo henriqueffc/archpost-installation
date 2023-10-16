@@ -27,13 +27,10 @@ echo -e "$AZUL Vitals $FIM"
 aria2c https://github.com/corecoding/Vitals/releases/download/v$vvit/vitals.zip
 gnome-extensions install --force 'vitals.zip'
 
-vjust="27.0"
-echo -e "$AZUL Just Perfection $FIM"
-aria2c https://gitlab.gnome.org/jrahmatzadeh/just-perfection/-/archive/$vjust/just-perfection-$vjust.zip
-unzip just-perfection-$vjust.zip
-mv just-perfection-$vjust just-perfection
-./just-perfection/scripts/build.sh
-gnome-extensions install --force './just-perfection/just-perfection-desktop@just-perfection.shell-extension.zip'
+vow="45"
+echo -e "$AZUL No overview at start-up $FIM"
+aria2c https://github.com/fthx/no-overview/archive/refs/tags/v$vow.zip -o no-overview.zip
+gnome-extensions install --force 'no-overview.zip'
 
 echo -e "$AZUL Clipboard Indicator $FIM"
 git clone https://github.com/Tudmotu/gnome-shell-extension-clipboard-indicator.git ~/.local/share/gnome-shell/extensions/clipboard-indicator@tudmotu.com
