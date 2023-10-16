@@ -123,6 +123,7 @@ pacmanlogviewer
 pandoc-cli
 papirus-icon-theme
 pkgstats
+python-pipx
 polari
 procs
 progress
