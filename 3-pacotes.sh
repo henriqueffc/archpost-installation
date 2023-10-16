@@ -147,13 +147,15 @@ sudo systemctl restart systemd-journald.service
 sudo journalctl --vacuum-size=100M
 sudo journalctl --vacuum-time=2weeks
 
-# Pasta ~/bin para o $PATH
+# Pasta ~/bin e ~/.local/bin (para o pipx) para o $PATH do bash
 mkdir $HOME/bin
+mkdir -p $HOME/.local/bin
 
 # Variáveis
 cp ~/.bashrc ~/.bashrc.bak
 echo -e '\nsource ~/.bash_aliases' >>~/.bashrc
 echo -e '\nif [ -d "$HOME/bin" ] ; then\nPATH="$HOME/bin:$PATH"\nfi' >>~/.bashrc
+echo -e '\nif [ -d "$HOME/.local/bin" ] ; then\nPATH="$HOME/.local/bin:$PATH"\nfi' >>~/.bashrc
 
 # Copiar scripts para a pasta ~/bin
 mv ./bin/* $HOME/bin
