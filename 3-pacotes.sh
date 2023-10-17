@@ -246,10 +246,7 @@ gsettings set org.gnome.desktop.privacy old-files-age "3"
 gsettings set org.gnome.mutter experimental-features '["kms-modifiers"]'
 
 # Desabilitar a suspensão do notebook quando a tela do dispositivo é fechada.
-# primeira opção (habilitada) precisa do Gnome Tweaks instalado no sistema e desabilita somente para o usuário.
-# segunda (comentada) desabilita para todo o sistema e não precisa do Gnome Tweaks instalado.
-mv ./autostart/ignore-lid-switch-tweak.desktop ~/.config/autostart
-#sudo sed -i 's/#HandleLidSwitch=suspend/HandleLidSwitch=ignore/' /etc/systemd/logind.conf
+sudo sed -i 's/#HandleLidSwitch=suspend/HandleLidSwitch=ignore/' /etc/systemd/logind.conf
 
 # RDP - remote desktop protocol
 gsettings set org.gnome.desktop.remote-desktop.rdp screen-share-mode extend
