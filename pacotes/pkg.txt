@@ -19,6 +19,7 @@ bluez-utils
 breeze
 bat
 bat-extras
+btop
 cabextract
 ccze
 celluloid
