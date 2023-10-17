@@ -85,6 +85,12 @@ xwininfo = pode ser usado para verificar se o aplicativo está rodando em Waylan
 
 
 
+#### Monitoramento ####
+btop
+
+
+
+
 #### Browser ####
 lynx
 
