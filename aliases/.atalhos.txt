@@ -107,7 +107,6 @@ s-tui
 
 mpvnovideo
 mirror
-tmux.lvim
 yaycache
 instalar
 remover
@@ -126,7 +125,6 @@ xla
 xltree
 bat
 nvme
-nvme2
 cpu-performance
 cpu-powersave
 cpu-info
