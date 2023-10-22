@@ -50,6 +50,7 @@ flatpak
 fwupd
 gamemode
 gawk
+gdb
 gdu
 ghex
 gimagereader-gtk
