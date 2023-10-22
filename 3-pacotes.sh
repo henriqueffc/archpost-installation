@@ -49,6 +49,8 @@ sudo systemctl start pkgstats.timer
 echo -e "$AZUL \t pkgstats.timer habilitado $FIM"
 sudo systemctl enable pacman-filesdb-refresh.timer
 echo -e "$AZUL \t pacman-filesdb-refresh habilitado $FIM"
+systemctl enable --user syncthing.service
+echo -e "$AZUL \t syncthing habilitado $FIM"
 
 # Offpowersave
 sudo mv ./powersave/default-wifi-powersave-on.conf /etc/NetworkManager/conf.d
@@ -131,7 +133,7 @@ touch $HOME/Modelos/novo.txt
 # Equalização paramétrica para o Headset HyperX Cloud Stinger e
 # noise-suppression-for-voice
 mkdir -p ~/.config/pipewire/pipewire.conf.d
-mv ./pipewire/*.conf ~/.config/pipewire/pipewire.conf.d/ 
+mv ./pipewire/*.conf ~/.config/pipewire/pipewire.conf.d/
 
 # Desabilitar o coredump
 sudo mkdir /etc/systemd/coredump.conf.d/
@@ -170,7 +172,7 @@ echo -e "$AZUL Alterando o tema, os ícones e os atalhos do sistema em 3 $FIM" &
 
 # Tema do sistema
 gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
-# Tema para os aplicativos legados 
+# Tema para os aplicativos legados
 gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
 
 # Mostrar porcentagem da bateria na top bar
@@ -183,7 +185,7 @@ gsettings set org.gnome.settings-daemon.plugins.power power-button-action intera
 gsettings set org.gnome.nautilus.icon-view captions "['size', 'detailed_type', 'none']"
 gsettings set org.gtk.gtk4.Settings.FileChooser sort-directories-first true
 
-# File-chooser 
+# File-chooser
 gsettings set org.gtk.Settings.FileChooser sort-directories-first true
 
 # Tecla de composição para caracteres especiais (Scroll Lock - https://en.wikipedia.org/wiki/Compose_key#Common_compose_combinations)
@@ -221,7 +223,7 @@ gsettings set org.gnome.desktop.peripherals.keyboard numlock-state true
 gsettings set org.gnome.desktop.search-providers disabled "['org.gnome.Contacts.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Boxes.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Characters.desktop', 'org.gnome.Weather.desktop', 'org.gnome.Photos.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Epiphany.desktop', 'org.gnome.Software.desktop']"
 
 # Ordem dos resultados da pesquisa realizada no overview
-gsettings set org.gnome.desktop.search-providers sort-order "['org.gnome.Calculator.desktop', 'firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Settings.desktop']" 
+gsettings set org.gnome.desktop.search-providers sort-order "['org.gnome.Calculator.desktop', 'firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Settings.desktop']"
 
 # Tamanho da fonte do sistema
 gsettings set org.gnome.desktop.interface font-name "NotoSans Nerd Font 12"
@@ -328,12 +330,12 @@ sudo cp ./hooks/*.hook /etc/pacman.d/hooks/
 
 # Kvantum
 mkdir -p ~/.config/Kvantum
-mv ./kvantum/kvantum.kvconfig ~/.config/Kvantum/ 
+mv ./kvantum/kvantum.kvconfig ~/.config/Kvantum/
 
 # Sensors
 sudo sensors-detect
 
-# Fonte do GNOME terminal 
+# Fonte do GNOME terminal
 font=$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d "'")
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ use-system-font false
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ font 'JetBrainsMonoNL Nerd Font 14'
