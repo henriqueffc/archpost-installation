@@ -6,8 +6,6 @@
 # License: MIT License
 
 # Cores dos avisos
-
-AZUL='\e[1;34m'
 VERDE='\e[1;32m'
 FIM='\e[0m'
 
