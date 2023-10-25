@@ -39,6 +39,7 @@ echo 'EGL_PLATFORM=wayland' >>/etc/environment
 echo 'VDPAU_DRIVER=va_gl' >>/etc/environment
 echo 'QT_QPA_PLATFORM=wayland;xcb' >>/etc/environment
 echo 'QT_QPA_PLATFORMTHEME=qt5ct' >>/etc/environment
+echo 'VAGRANT_DEFAULT_PROVIDER=libvirt' >>/etc/environment
 
 # PC speaker - turn off beep shutdown
 echo 'blacklist pcspkr' >/etc/modprobe.d/nobeep.conf

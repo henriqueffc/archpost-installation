@@ -319,6 +319,9 @@ mv ./tmux/.tmux.conf $HOME
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 tmux source-file ~/.tmux.conf
 
+# Vagrant
+vagrant plugin install vagrant-libvirt
+
 # Mlocate
 sudo pacman -S mlocate --needed --noconfirm
 sudo updatedb

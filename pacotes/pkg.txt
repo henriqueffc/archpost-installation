@@ -172,6 +172,7 @@ usbutils
 unace
 unrar
 unzip
+vagrant
 veracrypt
 webp-pixbuf-loader
 weechat
