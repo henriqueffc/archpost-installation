@@ -38,7 +38,7 @@ Ordem de uso dos scripts:
 - 7-extensions.sh
 - 8-zsh-ohmyzsh.sh
 - 9-podman-distrobox.sh
-- 10-lunarvim.sh
+- 10-astronvim.sh
 - 11-theme.sh (opcional)
 - 12-firefox-nightly.sh (opcional)
 - 13-espanso-wayland.sh (opcional)
