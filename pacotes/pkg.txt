@@ -161,7 +161,6 @@ tesseract-data-eng
 tesseract-data-por
 texinfo
 thefuck
-thermald
 thunderbird
 thunderbird-i18n-pt-br
 tmux

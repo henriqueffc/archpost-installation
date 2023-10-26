@@ -37,8 +37,6 @@ sudo systemctl enable libvirtd
 echo -e "$AZUL \t libvirt habilitado $FIM"
 sudo systemctl enable fstrim.timer
 echo -e "$AZUL \t fstrim.timer habilitado $FIM"
-sudo systemctl enable thermald
-echo -e "$AZUL \t thermald habilitado $FIM"
 sudo systemctl enable systemd-boot-update
 echo -e "$AZUL \t systemd-boot-update habilitado $FIM"
 sudo systemctl enable bluetooth.service
