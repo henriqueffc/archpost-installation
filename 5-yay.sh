@@ -32,6 +32,10 @@ $FIM"
 
 # Pacotes AUR
 yay -Y --gendb
+yay -Y --devel --save
 yay -S - <./pacotes/aur.txt
+
+# asdf-vm
+echo 'source /opt/asdf-vm/asdf.sh' >>$HOME/.bashrc
 
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"

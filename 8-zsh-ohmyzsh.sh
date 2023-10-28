@@ -103,11 +103,12 @@ else
 			linenumber=$((linenumber - 1))
 			sed -i "${linenumber}i fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src" ~/.zshrc
 			echo 'source ~/.bash_aliases' >>~/.zshrc
+			echo 'source /opt/asdf-vm/asdf.sh' >>~/.zshrc
 			echo "export EDITOR='nano'" >>~/.zshrc
 			git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 			cat ./zsh/extract.txt >>~/.zshrc
 			cat ./zsh/command-not-found.txt >>~/.zshrc
-      			sed -i 's|# export PATH=$HOME/bin:/usr/local/bin:$PATH|export PATH=$HOME/bin:$HOME/.local/bin:$PATH|g' ~/.zshrc
+			sed -i 's|# export PATH=$HOME/bin:/usr/local/bin:$PATH|export PATH=$HOME/bin:$HOME/.local/bin:$PATH|g' ~/.zshrc
 			echo -e "$AZUL Instalação concluída. Caso considere necessário para uma melhor visualização dos caracteres substitua a fonte do terminal pela fonte JetBrainsMonoNL Nerd Font. Reinicie o terminal para configurar o Powerlevel10K. $FIM"
 			break
 			;;
