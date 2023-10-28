@@ -48,6 +48,7 @@ firetools
 firewalld
 flatpak
 fwupd
+fzf
 gamemode
 gawk
 gdb
