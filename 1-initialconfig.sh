@@ -75,7 +75,7 @@ sed -i 's/COMPRESSZST=(zstd -c -z -q -)/COMPRESSZST=(zstd -c -z -q --threads=0 -
 # Intel - i915 / HOOKS / mkinitcpio.conf
 cp /etc/mkinitcpio.conf /etc/mkinitcpio.conf.bak
 sed -i 's/MODULES=.*/MODULES=(i915 nvidia nvidia_modeset nvidia_uvm nvidia_drm)/g' /etc/mkinitcpio.conf
-sed -i 's/HOOKS=.*/HOOKS=(base systemd keyboard autodetect plymouth sd-vconsole modconf kms block filesystems fsck)/g' /etc/mkinitcpio.conf
+sed -i 's/HOOKS=.*/HOOKS=(base systemd keyboard autodetect plymouth sd-vconsole modconf block filesystems fsck)/g' /etc/mkinitcpio.conf
 mkinitcpio -P
 
 # FSTAB
