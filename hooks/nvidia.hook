@@ -3,8 +3,8 @@ Operation=Install
 Operation=Upgrade
 Operation=Remove
 Type=Package
-Target=nvidia
-Target=linux
+Target=nvidia-dkms
+Target=usr/lib/modules/*/vmlinuz
 
 [Action]
 Description=Update NVIDIA module in initcpio
