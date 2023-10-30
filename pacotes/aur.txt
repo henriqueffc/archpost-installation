@@ -1,7 +1,6 @@
 asdf-vm
 crow-translate
 downgrade
-goverlay-bin
 gpu-screen-recorder-git
 heroic-games-launcher-bin
 koreader-bin

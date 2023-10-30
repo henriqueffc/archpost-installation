@@ -11,6 +11,7 @@ ttf-nerd-fonts-symbols-mono
 ttf-opensans
 ttf-roboto
 ttf-roboto-mono
+ttf-ubuntu-font-family
 xorg-fonts-misc
 xorg-fonts-type1
 xorg-fonts-100dpi

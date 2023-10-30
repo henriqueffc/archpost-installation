@@ -67,6 +67,7 @@ gnome-sound-recorder
 gnome-terminal
 gnome-themes-extra
 gnome-tweaks
+goverlay
 gparted
 gsmartcontrol
 gst-plugin-libcamera
