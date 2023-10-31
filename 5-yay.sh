@@ -37,5 +37,6 @@ yay -S - <./pacotes/aur.txt
 
 # asdf-vm
 echo 'source /opt/asdf-vm/asdf.sh' >>$HOME/.bashrc
+echo -e 'python system\njava system\nnodejs system\nrust system' >>$HOME/.tool-versions
 
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
