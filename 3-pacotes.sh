@@ -50,6 +50,10 @@ echo -e "$AZUL \t pacman-filesdb-refresh habilitado $FIM"
 systemctl enable --user syncthing.service
 echo -e "$AZUL \t syncthing habilitado $FIM"
 
+# Bluetooth
+sudo sed -i 's/#Experimental =.*/Experimental = true/g' /etc/bluetooth/main.conf
+sudo sed -i 's/#KernelExperimental =.*/KernelExperimental = true/g' /etc/bluetooth/main.conf
+
 # Offpowersave
 sudo mv ./powersave/default-wifi-powersave-on.conf /etc/NetworkManager/conf.d
 echo -e "$AZUL \t WIFI - Powersave desabilitado $FIM"
