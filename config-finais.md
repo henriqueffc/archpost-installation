@@ -238,7 +238,7 @@ Para os outros jogos (Vulkan, por exemplo) o parâmetro para executar o mangohud
 
 `mangohud %command%`
 
-Para executar o gamemode o parâmetro é `gamemoderun %command%`
+Para executar o Gamemode o parâmetro é `gamemoderun %command%`
 
 Jogos que usam OpenGl, são mais antigos e estão com problemas na execução podem funcionar melhor com os seguintes parâmetros:
 
