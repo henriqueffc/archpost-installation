@@ -37,9 +37,16 @@ cp /etc/environment /etc/environment.bak
 echo 'MOZ_ENABLE_WAYLAND=1' >>/etc/environment
 echo 'EGL_PLATFORM=wayland' >>/etc/environment
 echo 'VDPAU_DRIVER=va_gl' >>/etc/environment
-echo 'QT_QPA_PLATFORM=wayland;xcb' >>/etc/environment
+echo 'QT_QPA_PLATFORM="wayland;xcb"' >>/etc/environment
 echo 'QT_QPA_PLATFORMTHEME=qt5ct' >>/etc/environment
 echo 'VAGRANT_DEFAULT_PROVIDER=libvirt' >>/etc/environment
+echo 'SDL_VIDEODRIVER="wayland,x11"' >>/etc/environment
+echo 'SDL_AUDIODRIVER=pipewire' >>/etc/environment
+echo 'CLUTTER_BACKEND=wayland' >>/etc/environment
+echo 'PROTON_ENABLE_NVAPI=1' >>/etc/environment
+echo '__GL_SHADER_DISK_CACHE=1' >>/etc/environment
+echo '__GL_SHADER_DISK_CACHE_SKIP_CLEANUP=1' >>/etc/environment
+echo '__GL_ExperimentalPerfStrategy=1' >>/etc/environment
 
 # PC speaker - turn off beep shutdown
 echo 'blacklist pcspkr' >/etc/modprobe.d/nobeep.conf
