@@ -230,11 +230,23 @@ Adicione o seguinte parâmetro para executar jogos OpenGL e o mangohud na placa 
 
 `__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia mangohud %command%`
 
-Para os outros jogos o parâmetro para executar somente o mangohud é o seguinte:
+ou
+
+`prime-run nvidia mangohud %command%`
+
+Para os outros jogos (Vulkan, por exemplo) o parâmetro para executar o mangohud é o seguinte:
 
 `mangohud %command%`
 
 Para executar o gamemode o parâmetro é `gamemoderun %command%`
+
+Jogos que usam OpenGl, são mais antigos e estão com problemas na execução podem funcionar melhor com os seguintes parâmetros:
+
+`SDL_VIDEODRIVER=x11 prime-run mangohud %command%`
+
+ou
+
+`SDL_DYNAMIC_API=/usr/lib64/libSDL2-2.0.so prime-run %command%`
 
 Aumente a quantidade de cores para pré-compilar os shaders.
 
