@@ -226,27 +226,29 @@ Para desabilitar
 
 ### 21 - Steam
 
-Adicione o seguinte parâmetro para executar jogos OpenGL e o mangohud na placa dedicada:
+Opções de inicialização para os jogos na Steam.
 
-`__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia mangohud %command%`
+**OpenGL + Nvidia**
 
-ou
+`__GL_SYNC_TO_VBLANK=0 __GL_MaxFramesAllowed=1 SDL_DYNAMIC_API=/usr/lib64/libSDL2-2.0.so prime-run mangohud --dlsym %command%`
 
-`prime-run nvidia mangohud %command%`
+É possível utilizar o parâmetro `__GL_THREADED_OPTIMIZATIONS=1`, mas é preciso efetuar testes. Tem jogos que não funcionam com ele.
 
-Para os outros jogos (Vulkan, por exemplo) o parâmetro para executar o mangohud é o seguinte:
+Caso o `SDL_DYNAMIC_API=/usr/lib64/libSDL2-2.0.so` não funcione, substitua por `SDL_VIDEODRIVER=X11`
 
-`mangohud %command%`
+O prime-run no Arch Linux faz o mesmo que `__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia`
 
-Para executar o Gamemode o parâmetro é `gamemoderun %command%`
+**DXVK - Vulkan**
 
-Jogos que usam OpenGl, são mais antigos e estão com problemas na execução podem funcionar melhor com os seguintes parâmetros:
+`STAGING_WRITECOPY=1 STAGING_SHARED_MEMORY=1 __GL_MaxFramesAllowed=1 PROTON_NO_ESYNC=1 PROTON_NO_FSYNC=1 mangohud %command%`
 
-`SDL_VIDEODRIVER=x11 prime-run mangohud %command%`
+Para executar o Gamemode acrescente `gamemoderun` nas opções de inicialização dos jogos na Steam.
 
-ou
+**FPS**
 
-`SDL_DYNAMIC_API=/usr/lib64/libSDL2-2.0.so prime-run %command%`
+Uso o Mangohud para controlar o fps. Faço a configuração desse recurso pelo Goverlay. Se possível, desabilito o VSync nas configurações dos jogos.
+
+**Shaders**
 
 Aumente a quantidade de cores para pré-compilar os shaders.
 
