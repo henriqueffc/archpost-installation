@@ -242,6 +242,8 @@ O prime-run no Arch Linux faz o mesmo que `__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VEN
 
 `STAGING_WRITECOPY=1 STAGING_SHARED_MEMORY=1 __GL_MaxFramesAllowed=1 PROTON_NO_ESYNC=1 PROTON_NO_FSYNC=1 mangohud %command%`
 
+**Gamemode**
+
 Para executar o Gamemode acrescente `gamemoderun` nas opções de inicialização dos jogos na Steam.
 
 **FPS**
