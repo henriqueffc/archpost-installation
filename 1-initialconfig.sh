@@ -51,8 +51,8 @@ echo '__GL_ExperimentalPerfStrategy=1' >>/etc/environment
 # PC speaker - turn off beep shutdown
 echo 'blacklist pcspkr' >/etc/modprobe.d/nobeep.conf
 
-# Linux-firmware e plymouth
-pacman -Syu linux-firmware linux-firmware-whence plymouth --needed --noconfirm
+# Linux-firmware
+pacman -Syu linux-firmware linux-firmware-whence --needed --noconfirm
 
 # NANO - Line number e syntax-highlighting
 pacman -S nano --needed --noconfirm
@@ -82,7 +82,7 @@ sed -i 's/COMPRESSZST=(zstd -c -z -q -)/COMPRESSZST=(zstd -c -z -q --threads=0 -
 # Intel - i915 / HOOKS / mkinitcpio.conf
 cp /etc/mkinitcpio.conf /etc/mkinitcpio.conf.bak
 sed -i 's/MODULES=.*/MODULES=(i915 nvidia nvidia_modeset nvidia_uvm nvidia_drm)/g' /etc/mkinitcpio.conf
-sed -i 's/HOOKS=.*/HOOKS=(base systemd keyboard autodetect plymouth sd-vconsole modconf block filesystems fsck)/g' /etc/mkinitcpio.conf
+sed -i 's/HOOKS=.*/HOOKS=(base systemd keyboard autodetect sd-vconsole modconf block filesystems fsck)/g' /etc/mkinitcpio.conf
 mkinitcpio -P
 
 # FSTAB
