@@ -20,6 +20,7 @@ bat
 bat-extras
 btop
 cabextract
+calibre
 ccze
 celluloid
 chromium
