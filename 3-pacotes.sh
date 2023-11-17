@@ -103,7 +103,6 @@ sudo sed -i 's|#unix_sock_group = "libvirt"|unix_sock_group = "libvirt"|g' /etc/
 
 # Appimage e outros
 aria2c -d ~/Downloads -i ./urls/urls.txt
-aria2c -d ~/Downloads https://github.com/upscayl/upscayl/releases/download/v2.9.1/upscayl-2.9.1-linux.AppImage -o Upscayl.AppImage
 aria2c -d ~/Downloads https://github.com/pop-os/popsicle/releases/download/1.3.1/Popsicle_USB_Flasher-1.3.1-x86_64.AppImage
 mkdir /home/$USER/Applications
 mv ~/Downloads/*.AppImage /home/$USER/Applications
@@ -115,15 +114,6 @@ tar -xf ./pacotes/fonts.tar.xz -C ~/Downloads
 sudo mv ~/Downloads/*.ttf /usr/local/share/fonts
 sudo mv ~/Downloads/*.TTF /usr/local/share/fonts
 sudo fc-cache -fv
-
-# Logos
-mkdir ~/Imagens/Logo
-mv ./desktop/*.png ~/Imagens/Logo
-mv ./desktop/*.svg ~/Imagens/Logo
-
-# Atalhos no Grid
-sed -i 's|user|'$USER'|g' ./desktop/upscayl.desktop
-mv ./desktop/upscayl.desktop ~/.local/share/applications
 
 # Alias
 mv ./aliases/.bash_aliases ~/
