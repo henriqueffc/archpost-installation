@@ -109,25 +109,14 @@ Verifique a lista novamente usando `sudo dumpe2fs -h /dev/nome_da_partição | g
 `Exec=/opt/Heroic/heroic --ozone-platform-hint=auto %U`
 <br><br>
 
-### 10 - Gradience
-
-Gradience - Aplicando o tema Classic Dark (script 11)
-
-Aplique o tema Classic Dark. É preciso abrir o aplicativo antes de executar os comandos abaixo.
-
-`flatpak run --command=gradience-cli com.github.GradienceTeam.Gradience download -n "Classic Dark"`
-
-`flatpak run --command=gradience-cli com.github.GradienceTeam.Gradience apply -n "Classic Dark" --gtk both`
-<br><br>
-
-### 11 - Tmux
+### 10 - Tmux
 
 Instale os plugins no Tmux
 
 ^B + Shift + I (i maiúsculo)
 <br><br>
 
-### 12 - Obsidian - Wayland
+### 11 - Obsidian - Wayland
 
 `cp /usr/share/applications/obsidian.desktop ~/.local/share/applications`
 
@@ -136,7 +125,7 @@ Instale os plugins no Tmux
 `Exec=/usr/bin/obsidian --ozone-platform-hint=auto %U`
 <br><br>
 
-### 13 - Spotify-launcher
+### 12 - Spotify-launcher
 
 Inicie o Spotify-launcher para completar a instalação do Spotify.
 
@@ -147,26 +136,26 @@ Depois execute os comandos abaixo para o Spotify funcionar no Wayland e não no 
 `sudo sed -i '$a extra_arguments = ["--enable-features=UseOzonePlatform", "--ozone-platform=wayland"]' /etc/spotify-launcher.conf`
 <br><br>
 
-### 14 - Extensões do GNOME
+### 13 - Extensões do GNOME
 
 Configure as extensões instaladas no GNOME.
 <br><br>
 
-### 15 - Firefox
+### 14 - Firefox
 
 Copie o arquivo `user.js` da pasta firefox para o seu profile do navegador em `~/.mozilla/firefox/pasta_do_profile`
 Caso não queira copiar o arquivo, configure o parâmetro `browser.gnome-search-provider.enabled` como `true` (booleano) em `about:config`
 Esse parâmetro é necessário para habilitar a pesquisa pelo navegador (o Firefox deve estar em execução) no overview do Gnome. A configuração para o serviço de pesquisa foi realizada no script 3-pacotes.sh.
 <br><br>
 
-### 16 - Xpad
+### 15 - Xpad
 
 Para o controle Multilaser JS091 (Shanwan Controler) funcionar instale a atualização para o Xpad disponível no site abaixo.
 
 <https://github.com/paroj/xpad>
 <br><br>
 
-### 17 - Distrobox
+### 16 - Distrobox
 
 Caso use alguma distro pelo Distrobox não se esqueça de configurar o atalho do desktop (executar usando o bash. pelo zsh ocorrem alguns problemas)
 Exemplo com o Ubuntu:
@@ -193,17 +182,17 @@ Caso queira inicializar usando o Alacritty o comando é o seguinte:
 Atalho : Shift + Ctrl + D
 <br><br>
 
-### 18 - Espanso
+### 17 - Espanso
 
 Para eliminar o pequeno quadro (inicialização do Espanso) mostrado quando o GNOME Shell é inicializado pela primeira vez habilite a extensão "No overview at start-up".
 <br><br>
 
-### 19 - Rclone
+### 18 - Rclone
 
 Configurar o remote no rclone e fazer o scprit de sincronização.
 <br><br>
 
-### 20 - Conservation mode - Ideapad S145
+### 19 - Conservation mode - Ideapad S145
 
 Modo de conservação da bateria. Se for habilitado manterá a carga máxima da bateria em 60%.
 Verifique se o módulo do kernel ideapad_laptop está carregado com o comando `lsmod | grep ideapad`. Se não estiver os comandos indicados a seguir não irão funcionar.
@@ -224,7 +213,7 @@ Para desabilitar
 `echo 0 > /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode`
 <br><br>
 
-### 21 - Steam
+### 20 - Steam
 
 Opções de inicialização para os jogos na Steam.
 
