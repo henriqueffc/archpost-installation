@@ -101,9 +101,8 @@ sudo sed -i 's|#unix_sock_ro_perms = "0777"|unix_sock_ro_perms = "0777"|g' /etc/
 sudo sed -i 's|#unix_sock_rw_perms = "0770"|unix_sock_rw_perms = "0770"|g' /etc/libvirt/libvirtd.conf
 sudo sed -i 's|#unix_sock_group = "libvirt"|unix_sock_group = "libvirt"|g' /etc/libvirt/libvirtd.conf
 
-# Appimage e outros
+# Appimage
 aria2c -d ~/Downloads -i ./urls/urls.txt
-aria2c -d ~/Downloads https://github.com/pop-os/popsicle/releases/download/1.3.1/Popsicle_USB_Flasher-1.3.1-x86_64.AppImage
 mkdir /home/$USER/Applications
 mv ~/Downloads/*.AppImage /home/$USER/Applications
 chmod +x /home/$USER/Applications/*.AppImage
@@ -218,10 +217,10 @@ gsettings set org.gnome.desktop.search-providers disabled "['org.gnome.Contacts.
 gsettings set org.gnome.desktop.search-providers sort-order "['org.gnome.Calculator.desktop', 'firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Settings.desktop']"
 
 # Tamanho da fonte do sistema
-gsettings set org.gnome.desktop.interface font-name "NotoSans Nerd Font 12"
-gsettings set org.gnome.desktop.interface document-font-name "NotoSans Nerd Font 12"
-gsettings set org.gnome.desktop.interface monospace-font-name "NotoSansM Nerd Font Mono 11"
-gsettings set org.gnome.desktop.wm.preferences titlebar-font "NotoSansM Nerd Font Bold 12"
+gsettings set org.gnome.desktop.interface font-name "NotoSans NF 12"
+gsettings set org.gnome.desktop.interface document-font-name "NotoSans NF 12"
+gsettings set org.gnome.desktop.interface monospace-font-name "NotoSansM NF 11"
+gsettings set org.gnome.desktop.wm.preferences titlebar-font "NotoSansM NF Bold 12"
 gsettings set org.gnome.desktop.interface font-antialiasing rgba
 
 # Acessibilidade
@@ -333,7 +332,7 @@ sudo sensors-detect
 # Fonte do GNOME terminal
 font=$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d "'")
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ use-system-font false
-gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ font 'JetBrainsMonoNL Nerd Font 14'
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ font 'JetBrainsMonoNL NF 14'
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ visible-name 'Padrão'
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ default-size-columns '106'
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ default-size-rows '26'

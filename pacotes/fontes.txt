@@ -6,6 +6,7 @@ ttf-bitstream-vera
 ttf-dejavu
 ttf-jetbrains-mono-nerd
 ttf-liberation
+ttf-meslo-nerd
 ttf-nerd-fonts-symbols
 ttf-nerd-fonts-symbols-mono
 ttf-opensans
