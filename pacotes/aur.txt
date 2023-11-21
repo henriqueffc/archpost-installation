@@ -1,5 +1,4 @@
 asdf-vm
-crow-translate
 downgrade
 gpu-screen-recorder-git
 heroic-games-launcher-bin
