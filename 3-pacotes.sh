@@ -277,6 +277,15 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys control-center "['<Su
 # abrir o cliente de email
 gsettings set org.gnome.settings-daemon.plugins.media-keys email "['<Super>e']"
 
+# Configurações para o Text editor
+gsettings set org.gnome.TextEditor highlight-current-line true
+gsettings set org.gnome.TextEditor restore-session false
+gsettings set org.gnome.TextEditor show-line-numbers true
+gsettings set org.gnome.TextEditor use-system-font false
+gsettings set org.gnome.TextEditor custom-font "JetBrainsMonoNL NF 14"
+gsettings set org.gnome.TextEditor style-scheme "classic-dark"
+gsettings set org.gnome.TextEditor style-variant "dark"
+
 # mudar diretamente para o workspace desejado (Super + Shift + número de 2 a 6). Para ir para o primeiro workspace use Super + Home e para ir para o último Super + End.
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Shift><Super>2']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 "['<Shift><Super>3']"
