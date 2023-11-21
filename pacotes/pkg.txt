@@ -72,7 +72,6 @@ goverlay
 gparted
 gsmartcontrol
 gst-plugin-libcamera
-handbrake
 hexyl
 hwloc
 i7z

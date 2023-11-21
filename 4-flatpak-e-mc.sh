@@ -53,6 +53,8 @@ flatpak install flathub io.github.flattool.Warehouse -y
 flatpak install flathub com.github.finefindus.eyedropper -y
 flatpak install flathub com.github.johnfactotum.Foliate -y
 flatpak install flathub org.upscayl.Upscayl -y
+flatpak install flathub fr.handbrake.ghb -y
+flatpak install flathub fr.handbrake.ghb.Plugin.IntelMediaSDK -y
 
 # Flatpak Remote-Beta
 
