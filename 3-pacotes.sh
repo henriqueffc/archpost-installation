@@ -350,8 +350,8 @@ sudo systemctl enable --now clamav-freshclam.service
 mkdir -p $HOME/.config/mpv/
 cp ./mpv/mpv.conf $HOME/.config/mpv/
 
-# Neofetch
-mkdir -p $HOME/.config/neofetch/
-cp ./neofetch/config.conf $HOME/.config/neofetch/
+# Fastfetch
+mkdir -p $HOME/.config/fastfetch/
+cp ./fastfetch/config.jsonc $HOME/.config/fastfetch/
 
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"

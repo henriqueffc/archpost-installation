@@ -32,6 +32,7 @@ cpupower
 curl
 d-feet
 dconf-editor
+devtools
 dialog
 discount
 djvulibre
@@ -41,6 +42,7 @@ eog-plugins
 espeak-ng
 eza
 exfatprogs
+fastfetch
 fd
 firefox
 firefox-i18n-pt-br
@@ -111,7 +113,6 @@ mpv
 nautilus-image-converter
 nano
 ncdu
-neofetch
 nethogs
 nmap
 noise-suppression-for-voice

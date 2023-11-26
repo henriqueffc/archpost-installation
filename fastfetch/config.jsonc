@@ -1,0 +1,104 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "color": {
+      "1": "34"
+    },
+    "color": {
+      "2": "34"
+    }
+  },
+  "display": {
+    "separator": "  "
+  },
+  "modules": [
+    {
+      "type": "os",
+      "key": "╭─",
+      "keyColor": "green"
+    },
+    {
+      "type": "host",
+      "key": "├─󰌢",
+      "keyColor": "green"
+    },
+    {
+      "type": "kernel",
+      "key": "├─",
+      "keyColor": "green"
+    },
+    {
+      "type": "packages",
+      "key": "├─",
+      "keyColor": "green"
+    },
+    {
+      "type": "shell",
+      "key": "├─",
+      "keyColor": "green"
+    },
+    {
+      "type": "display",
+      "key": "╰─󰍹",
+      "keyColor": "green"
+    },
+    "break",
+    {
+      "type": "de",
+      "key": "╭─ ",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "wmtheme",
+      "key": "├─󰉼",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "icons",
+      "key": "├─󰀻",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "font",
+      "key": "├─",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "terminal",
+      "key": "╰─",
+      "keyColor": "yellow"
+    },
+    "break",
+    {
+      "type": "cpu",
+      "temp": true,
+      "key": "╭─"
+    },
+    {
+      "type": "gpu",
+      "key": "├─󰾲"
+    },
+    {
+      "type": "memory",
+      "key": "├─󰑭"
+    },
+    {
+      "type": "swap",
+      "key": "├─󰿡"
+    },
+    {
+      "type": "disk",
+      "key": "├─󰋊"
+    },
+    {
+      "type": "sound",
+      "key": "╰─"
+    },
+    "break",
+    {
+      "type": "colors",
+      "paddingLeft": 16,
+      "symbol": "circle"
+    }
+  ]
+}
