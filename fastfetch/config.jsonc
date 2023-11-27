@@ -49,7 +49,7 @@
     "break",
     {
       "type": "de",
-      "key": "╭─ ",
+      "key": "╭─",
       "keyColor": "yellow"
     },
     {
