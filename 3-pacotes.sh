@@ -217,10 +217,10 @@ gsettings set org.gnome.desktop.search-providers disabled "['org.gnome.Contacts.
 gsettings set org.gnome.desktop.search-providers sort-order "['org.gnome.Calculator.desktop', 'firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Settings.desktop']"
 
 # Tamanho da fonte do sistema
-gsettings set org.gnome.desktop.interface font-name "NotoSans NF 12"
-gsettings set org.gnome.desktop.interface document-font-name "NotoSans NF 12"
-gsettings set org.gnome.desktop.interface monospace-font-name "NotoSansM NF 11"
-gsettings set org.gnome.desktop.wm.preferences titlebar-font "NotoSansM NF Bold 12"
+gsettings set org.gnome.desktop.interface font-name "NotoSans Nerd Font 12"
+gsettings set org.gnome.desktop.interface document-font-name "NotoSans Nerd Font 12"
+gsettings set org.gnome.desktop.interface monospace-font-name "NotoSansM Nerd Font 11"
+gsettings set org.gnome.desktop.wm.preferences titlebar-font "NotoSansM Nerd Font Bold 12"
 gsettings set org.gnome.desktop.interface font-antialiasing rgba
 
 # Acessibilidade
@@ -282,7 +282,7 @@ gsettings set org.gnome.TextEditor highlight-current-line true
 gsettings set org.gnome.TextEditor restore-session false
 gsettings set org.gnome.TextEditor show-line-numbers true
 gsettings set org.gnome.TextEditor use-system-font false
-gsettings set org.gnome.TextEditor custom-font "JetBrainsMonoNL NF 14"
+gsettings set org.gnome.TextEditor custom-font "JetBrainsMonoNL Nerd Font 14"
 gsettings set org.gnome.TextEditor style-scheme "classic-dark"
 gsettings set org.gnome.TextEditor style-variant "dark"
 
@@ -335,7 +335,7 @@ sudo sensors-detect
 # Fonte do GNOME terminal
 font=$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d "'")
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ use-system-font false
-gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ font 'JetBrainsMonoNL NF 14'
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ font 'JetBrainsMonoNL Nerd Font 14'
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ visible-name 'Padrão'
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ default-size-columns '106'
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ default-size-rows '26'
