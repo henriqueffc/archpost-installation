@@ -63,8 +63,8 @@ sed -i 's/# set speller "aspell -x -c"/\set speller "aspell -x -c"/' /etc/nanorc
 linenumber=$(cat /etc/nanorc | grep -n '*.nanorc' | gawk '{print $1}' FS=":")
 sed -i "${linenumber}s/..//" /etc/nanorc
 
-# Swappiness
-mv ./swappiness/99-swappiness.conf /etc/sysctl.d/
+# Configurações para o kernel
+mv ./sysctl/99-sysctl.conf /etc/sysctl.d/
 
 # udev.rules
 ## Ioschedulers
