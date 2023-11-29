@@ -48,6 +48,8 @@ echo '__GL_SHADER_DISK_CACHE=1' >>/etc/environment
 echo '__GL_SHADER_DISK_CACHE_SKIP_CLEANUP=1' >>/etc/environment
 echo '__GL_ExperimentalPerfStrategy=1' >>/etc/environment
 echo 'mesa_glthread=true' >>/etc/environment
+echo 'FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border"' >>/etc/environment
+echo 'FZF_DEFAULT_COMMAND="fd --type f --strip-cwd-prefix --hidden --follow --exclude .git"' >>/etc/environment
 
 # PC speaker - turn off beep shutdown
 echo 'blacklist pcspkr' >/etc/modprobe.d/nobeep.conf

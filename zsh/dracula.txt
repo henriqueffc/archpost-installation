@@ -1,4 +1,5 @@
-# Dracula Theme (for zsh-syntax-highlighting)
+###
+### Dracula Theme (for zsh-syntax-highlighting)
 #
 # https://github.com/zenorocha/dracula-theme
 #
@@ -88,3 +89,5 @@ ZSH_HIGHLIGHT_STYLES[redirection]='fg=#F8F8F2'
 ZSH_HIGHLIGHT_STYLES[arg0]='fg=#F8F8F2'
 ZSH_HIGHLIGHT_STYLES[default]='fg=#F8F8F2'
 ZSH_HIGHLIGHT_STYLES[cursor]='standout'
+###
+###

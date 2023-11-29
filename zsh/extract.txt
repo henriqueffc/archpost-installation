@@ -1,3 +1,4 @@
+###
 ### Function extract for common file formats ###
 ### Source - dotfile .zshrc by Derek Taylor on GitLab
 SAVEIFS=$IFS
@@ -41,3 +42,5 @@ fi
 }
 
 IFS=$SAVEIFS
+###
+###
