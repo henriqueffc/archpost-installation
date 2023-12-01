@@ -39,10 +39,12 @@ echo 'EGL_PLATFORM=wayland' >>/etc/environment
 echo 'VDPAU_DRIVER=va_gl' >>/etc/environment
 echo 'QT_QPA_PLATFORM="wayland;xcb"' >>/etc/environment
 echo 'QT_QPA_PLATFORMTHEME=qt5ct' >>/etc/environment
+echo 'GDK_BACKEND="wayland,x11"' >>/etc/environment
 echo 'VAGRANT_DEFAULT_PROVIDER=libvirt' >>/etc/environment
 echo 'SDL_VIDEODRIVER="wayland,x11"' >>/etc/environment
 echo 'SDL_AUDIODRIVER=pipewire' >>/etc/environment
 echo 'CLUTTER_BACKEND=wayland' >>/etc/environment
+echo 'CLUTTER_DEFAULT_FPS=60' >>/etc/environment
 echo 'PROTON_ENABLE_NVAPI=1' >>/etc/environment
 echo '__GL_SHADER_DISK_CACHE=1' >>/etc/environment
 echo '__GL_SHADER_DISK_CACHE_SKIP_CLEANUP=1' >>/etc/environment
@@ -50,6 +52,7 @@ echo '__GL_ExperimentalPerfStrategy=1' >>/etc/environment
 echo 'mesa_glthread=true' >>/etc/environment
 echo 'FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border"' >>/etc/environment
 echo 'FZF_DEFAULT_COMMAND="fd --type f --strip-cwd-prefix --hidden --follow --exclude .git"' >>/etc/environment
+echo 'GST_PLUGIN_FEATURE_RANK=qsvvp9dec:MAX,qsvh264dec:MAX,qsvh265dec:MAX,qsvjpegdec:MAX,vavp9dec:MAX,vavp8dec:MAX,vah264dec:MAX,vah265dec:MAX,vampeg2dec:MAX,vajpegdec:MAX' >>/etc/environment
 
 # PC speaker - turn off beep shutdown
 echo 'blacklist pcspkr' >/etc/modprobe.d/nobeep.conf
