@@ -184,7 +184,7 @@ Atalho : Shift + Ctrl + D
 
 ### 17 - Espanso
 
-Caso queiro eliminar o pequeno quadro (inicialização do Espanso) mostrado quando o GNOME Shell é inicializado pela primeira vez use a extensão "No overview at start-up".
+Caso queira eliminar o pequeno quadro (inicialização do Espanso) mostrado quando o GNOME Shell é inicializado pela primeira vez use a extensão "No overview at start-up".
 <br><br>
 
 ### 18 - Rclone
