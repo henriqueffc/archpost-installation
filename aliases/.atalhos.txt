@@ -204,6 +204,7 @@ Você pode usar o mouse para mudar entre janelas e abas.
 Clicar com o botão direito sobre a tela do terminal abre um painel de opções.
 Abrir URL = Segure Shift e clique no link.
 Rolar a página do terminal = ^B + PageUp ou PageDown
+Pesquisar = ^B + [, Ctrl + r digite o termo, "n" pesquisa para cima e Shift + n volta para a palavra anterior
 Abrir nova aba = ^B + c
 Fechar a aba = Crtl + d
 Listar todas as janelas e sessões = ^B + w (para encerrar um painel ou uma sessão use a tecla x ao selecioná-lo)
