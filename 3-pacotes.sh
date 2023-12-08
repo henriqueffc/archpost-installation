@@ -91,6 +91,7 @@ $FIM"
 
 # Grupos
 sudo usermod -aG libvirt "$USERNAME"
+sudo usermod -aG kvm "$USERNAME"
 
 # Virt-manager
 sudo cp /etc/libvirt/qemu.conf /etc/libvirt/qemu.conf.bak
