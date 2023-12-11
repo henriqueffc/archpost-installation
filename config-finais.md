@@ -125,37 +125,26 @@ Instale os plugins no Tmux
 `Exec=/usr/bin/obsidian --ozone-platform-hint=auto %U`
 <br><br>
 
-### 12 - Spotify-launcher
-
-Inicie o Spotify-launcher para completar a instalação do Spotify.
-
-Depois execute os comandos abaixo para o Spotify funcionar no Wayland e não no Xwayland.
-
-`sudo cp /etc/spotify-launcher.conf /etc/spotify-launcher.conf.bak`
-
-`sudo sed -i '$a extra_arguments = ["--enable-features=UseOzonePlatform", "--ozone-platform=wayland"]' /etc/spotify-launcher.conf`
-<br><br>
-
-### 13 - Extensões do GNOME
+### 12 - Extensões do GNOME
 
 Configure as extensões instaladas no GNOME.
 <br><br>
 
-### 14 - Firefox
+### 13 - Firefox
 
 Copie o arquivo `user.js` da pasta firefox para o seu profile do navegador em `~/.mozilla/firefox/pasta_do_profile`
 Caso não queira copiar o arquivo, configure o parâmetro `browser.gnome-search-provider.enabled` como `true` (booleano) em `about:config`
 Esse parâmetro é necessário para habilitar a pesquisa pelo navegador (o Firefox deve estar em execução) no overview do Gnome. A configuração para o serviço de pesquisa foi realizada no script 3-pacotes.sh.
 <br><br>
 
-### 15 - Xpad
+### 14 - Xpad
 
 Para o controle Multilaser JS091 (Shanwan Controler) funcionar instale a atualização para o Xpad disponível no site abaixo.
 
 <https://github.com/paroj/xpad>
 <br><br>
 
-### 16 - Distrobox
+### 15 - Distrobox
 
 Caso use alguma distro pelo Distrobox não se esqueça de configurar o atalho do desktop (executar usando o bash. pelo zsh ocorrem alguns problemas)
 Exemplo com o Ubuntu:
@@ -182,17 +171,17 @@ Caso queira inicializar usando o Alacritty o comando é o seguinte:
 Atalho : Shift + Ctrl + D
 <br><br>
 
-### 17 - Espanso
+### 16 - Espanso
 
 Caso queira eliminar o pequeno quadro (inicialização do Espanso) mostrado quando o GNOME Shell é inicializado pela primeira vez use a extensão "No overview at start-up".
 <br><br>
 
-### 18 - Rclone
+### 17 - Rclone
 
 Configurar o remote no rclone e fazer o scprit de sincronização.
 <br><br>
 
-### 19 - Conservation mode - Ideapad S145
+### 18 - Conservation mode - Ideapad S145
 
 Modo de conservação da bateria. Se for habilitado manterá a carga máxima da bateria em 60%.
 Verifique se o módulo do kernel ideapad_laptop está carregado com o comando `lsmod | grep ideapad`. Se não estiver os comandos indicados a seguir não irão funcionar.
@@ -213,7 +202,7 @@ Para desabilitar
 `echo 0 > /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode`
 <br><br>
 
-### 20 - Steam
+### 19 - Steam
 
 Opções de inicialização para os jogos na Steam.
 
