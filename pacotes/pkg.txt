@@ -154,7 +154,6 @@ syncthing
 sysfsutils
 sysprof
 soundconverter
-spotify-launcher
 steam
 strace
 scrcpy
