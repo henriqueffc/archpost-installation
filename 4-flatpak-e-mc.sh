@@ -56,6 +56,7 @@ flatpak install flathub org.upscayl.Upscayl -y
 flatpak install flathub fr.handbrake.ghb -y
 flatpak install flathub fr.handbrake.ghb.Plugin.IntelMediaSDK -y
 flatpak install flathub app.drey.Dialect -y
+flatpak install flathub org.gnome.Podcasts -y
 
 # Flatpak Remote-Beta
 
