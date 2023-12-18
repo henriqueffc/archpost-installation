@@ -23,7 +23,7 @@ sudo pacman -S flatpak --needed --noconfirm
 
 # Flatpak Aplicativos
 flatpak install flathub org.gimp.GIMP -y
-flatpak install flathub net.davidotek.pupgui2 -y
+flatpak install flathub com.vysp3r.ProtonPlus -y
 flatpak install flathub io.gitlab.adhami3310.Converter -y
 flatpak install flathub org.gtkhash.gtkhash -y
 flatpak install flathub com.github.tchx84.Flatseal -y
