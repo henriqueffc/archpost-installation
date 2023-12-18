@@ -20,11 +20,6 @@ echo -e "$AZUL Vitals $FIM"
 aria2c https://github.com/corecoding/Vitals/releases/download/v$vvit/vitals.zip
 gnome-extensions install --force 'vitals.zip'
 
-vow="45"
-echo -e "$AZUL No overview at start-up $FIM"
-aria2c https://github.com/fthx/no-overview/archive/refs/tags/v$vow.zip -o no-overview.zip
-gnome-extensions install --force 'no-overview.zip'
-
 echo -e "$AZUL Clipboard Indicator $FIM"
 git clone https://github.com/Tudmotu/gnome-shell-extension-clipboard-indicator.git ~/.local/share/gnome-shell/extensions/clipboard-indicator@tudmotu.com
 
