@@ -1,5 +1,4 @@
 alacarte
-alacritty
 alsa-plugins
 alsa-utils
 aria2
@@ -166,7 +165,6 @@ texinfo
 thefuck
 thunderbird
 thunderbird-i18n-pt-br
-tmux
 torbrowser-launcher
 trash-cli
 translate-shell
