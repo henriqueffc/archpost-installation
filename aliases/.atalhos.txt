@@ -159,98 +159,13 @@ replace the current selection with the list of types it's offered in = wl-paste 
 
 
 
-#### ALACRITTY ####
-
-Mouse:
-Botão da direita copia o texto selecionado
-Botão do meio cola o conteúdo do clipboard
-Super + Clicar e segurar o clique = mover a janela do terminal
-
-Teclado:
-F11 = Full screen
-Super + Shift + Enter (Return) = Abre novo terminal no pwd em que estava o terminal anterior.
-Ctrl + Shift + V = colar
-Crtl + Shift + C = copiar
-Ctrl + Shift + F = Search Forward
-Ctrl + Shift + B = Search Backward
-PageUp + Shift =  ScrollPageUp
-PageDown + Shift = ScrollPageDown
-Home + Shift = ScrollToTop
-End + Shift = ScrollToBottom
-Ctrl + + = zoom in
-Ctrl + - = zoom out
-Ctrl + 0 = zoom default
-Ctrl + D = o mesmo que escrever exit para sair de uma sessão ou para fechar o terminal
-Ctrl + A = ir para o começo da linha
-Ctrl + E = ir para o fim da linha
-Ctrl + X + E = transfere o digitado para o editor de texto padrão
-Ctrl + U = apaga o digitado anterior ao atalho
-Ctrl + Y = undo
-Ctrl + K = apaga tudo depois do cursor
-Ctrl + C = cancela a operação que está em execução
-Ctrl + R = busca comandos dados - pesquisa - zsh
-Ctrl + L = clear
+#### Rio ####
 Ctrl + Z coloca em segundo plano alguma tarefa ou programa que você está usando no terminal. Para voltar ao programa digite "fg".
 
 
 
 
-#### TMUX ####
-
-Prefixo = Ctrl + b (^B)
-Pode selecionar o texto com o o botão da esquerda do mouse e clicar com o botão do meio do mouse para colar na linha de comando. Essa seleção copia também o texto para o clipboard. Outra opção é selecionar o texto segurando a tecla Shift pressionada e usar Shift (pressionado) + Ctrl + C para copiar ou clicar com o botão da esquerda do mouse para copiar para o clipboard (opção do Alacritty). Com o texto selecionado (shift), o botão do meio copia a seleção diretamente para a linha de comando.
-O scroll do mouse (mouse habilitado pelo .tmux.conf) rola a página do terminal.
-Você pode usar o mouse para mudar entre janelas e abas.
-Clicar com o botão direito sobre a tela do terminal abre um painel de opções.
-Abrir URL = Segure Shift e clique no link.
-Rolar a página do terminal = ^B + PageUp ou PageDown
-Pesquisar = ^B + [, Ctrl + r digite o termo, "n" pesquisa para cima e Shift + n volta para a palavra anterior
-Abrir nova aba = ^B + c
-Fechar a aba = Crtl + d
-Listar todas as janelas e sessões = ^B + w (para encerrar um painel ou uma sessão use a tecla x ao selecioná-lo)
-Kill em um painel = ^B + x
-Kill na janela = ^B + &
-Mostrar o número do painel = ^B + q
-Modo tree = ^B + t
-Mudar para aba seguinte = ^B + n
-Mudar para a aba anterior = ^B + p
-Mudar para a aba (número) = ^B + número da aba (informação na barra do tmux)
-Aba horizontal = ^B + " (^B + shift + '')
-Aba vertical = ^B + % (^B + shift + %)
-Mudar entre as abas (horizontal e vertical) = Shift + teclas direcionais ou ^B + direcional do teclado
-Renomear uma sessão = ^B + $
-Renomear uma janela = ^B + ,
-Entrar e sair do foco na janela = ^B + z
-Relógio (sair Ctrl +c) = ^B + T
-Reload tmux.conf (bind r source-file ~/.tmux.conf no tmux.conf) = ^B + r
-Detached (sair da sessão, mas sem fechá-la) = ^B + d
-Aumentar ou diminuir o tamanho das janelas = ^B + Ctrl-h/j/k/l
-Trocar as abas (com as janelas) de posição = ^B + Shift + < ou >
-Tornar uma janela uma nova aba = ^B + Shift + ! 
-Alterna a posição das janelas = ^B + Ctrl + O (sentido horário) / ^B + Alt + O (sentido anti-horário)
-Mudar o layout da tela = ^B + Space / ^B + Alt + número 1 a 5
-Copy mode = ^B + [ para entrar no copy mode, Ctrl + Space para selecionar o texto e Ctrl + w para copiar para a área de transferência.
-Colar = Ctrl + Shift + V ou ^B + ]
-Ver os itens que estão no buffer = tmux list-buffers
-Selecionar os itens que estão no buffer e colar = tmux choose-buffer
-Deletar um item específico que está no buffer = tmux delete-buffer -b nome_do_item_no_buffer
-Deletar itens do buffer (do mais recente da lista para o mais antigo) = tmux delete-buffer
-Para listar todas as sessões abertas = tmux ls
-Nova sessão = tmux new -s nome_da_sessão
-Nova sessão detached = tmux new -s nome_da_sessão -d
-Para voltar para a sessão = tmux a -t nome_ou_número_da_sessão (0, p.ex.)
-Encerrar uma sessão = tmux kill-session -t nome_ou_número_da_sessão
-Encerrar todas as sessões = tmux kill-server
-Plugins
-Execute dentro do Tmux para instalar os plugins (tpm) = ^B + Shift + I (i maiúsculo)
-Updates plugin = ^B + U
-Uninstalling plugins = ^B + alt + u
-Notify monitoring plugin
-Start monitoring a pane and notify when it finishes = ^B + m
-Start monitoring a pane, return it in focus and notify when it finishes = ^B + Alt + m
-Cancel monitoring of a pane = ^B + M
-
-
+#### Zellij ####
 
 
 

@@ -296,23 +296,20 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-6 "['<Shift><
 
 # atalho personalizado para lançar o Terminal - Super + T
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name "Terminal"
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command "alacritty"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command "rio"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding "<Super>t"
 gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']"
 
-# Alacritty
-mkdir $HOME/.config/alacritty
-mv ./alacritty/alacritty.yml $HOME/.config/alacritty/
+# Rio
+mkdir -p $HOME/.config/rio/themes
+curl -L "https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/rio/Dark%2B.toml" -o ~/.config/rio/themes/Dark+.toml
+mv ./rio/config.toml ~/.config/rio/
+sudo sed -i 's|Icon=.*|Icon=/usr/share/icons/hicolor/scalable/apps/rio.svg/rio-logo.svg|g' /usr/share/applications/rio.desktop
 
-# Alacritty - Tmux - Nautilus
-mkdir -p ~/.local/share/nautilus-python/extensions
-mv ./alacritty/alacritty-tmux-nautilus.py $HOME/.local/share/nautilus-python/extensions/
-nautilus -q
-
-# Tmux
-mv ./tmux/.tmux.conf $HOME
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-tmux source-file ~/.tmux.conf
+# Zellij
+mkdir -p ~/.config/zellij/plugins
+mv ./zellij/config.kdl ~/.config/zellij/
+curl -L "https://github.com/rvcas/room/releases/latest/download/room.wasm" -o ~/.config/zellij/plugins/room.wasm
 
 # Vagrant
 vagrant plugin install vagrant-libvirt

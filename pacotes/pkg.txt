@@ -141,6 +141,7 @@ qt6-wayland
 rclone
 rebuild-detector
 reflector
+rio
 ripgrep
 ripgrep-all
 rkhunter
@@ -195,6 +196,7 @@ xorg-xkill
 xorg-xwininfo
 xournalpp
 yt-dlp
+zellij
 zenity
 zip
 zsh
