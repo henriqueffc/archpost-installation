@@ -11,13 +11,13 @@
 # Default cursor is Block
 # Other available options are: '_' and '|'
 #
-cursor = '|'
+cursor = '▇'
 
 # Blinking Cursor
 #
 # Default is false
 #
-blinking-cursor = false
+blinking-cursor = true
 
 # Ignore theme selection foreground color
 #
@@ -33,7 +33,7 @@ blinking-cursor = false
 # (windows: C:\Users\USER\AppData\Local\rio\themes\dracula.toml)
 #
 # Example:
- theme = "Dark+"
+ theme = "GitHub Dark"
 
 # Padding-x
 #
@@ -79,24 +79,24 @@ blinking-cursor = false
 
 # Window configuration
 #
-# \u2022 width - define the intial window width.
+#  width - define the intial window width.
 #   Default: 600
 #
-# \u2022 height - define the inital window height.
+#  height - define the inital window height.
 #   Default: 400
 #
-# \u2022 mode - define how the window will be created
+#  mode - define how the window will be created
 #     - "Windowed" (default) is based on width and height
 #     - "Maximized" window is created with maximized
 #     - "Fullscreen" window is created with fullscreen
 #
-# \u2022 background-opacity - Set background opacity
+#  background-opacity - Set background opacity
 #
-# \u2022 foreground-opacity - Set foreground opacity
+#  foreground-opacity - Set foreground opacity
 #
-# \u2022 blur - Set blur on the window background. Changing this config requires restarting Rio to take effect.
+#  blur - Set blur on the window background. Changing this config requires restarting Rio to take effect.
 #
-# \u2022 decorations - Set window decorations, options: "Enabled", "Disabled", "Transparent", "Buttonless"
+#  decorations - Set window decorations, options: "Enabled", "Disabled", "Transparent", "Buttonless"
 #
 # Example:
  [window]
@@ -110,11 +110,11 @@ blinking-cursor = false
 
 # Renderer
 #
-# \u2022 Performance: Set WGPU rendering performance
+#  Performance: Set WGPU rendering performance
 #   - High: Adapter that has the highest performance. This is often a discrete GPU.
 #   - Low: Adapter that uses the least possible power. This is often an integrated GPU.
 #
-# \u2022 Backend: Set WGPU rendering backend
+#  Backend: Set WGPU rendering backend
 #   - Automatic: Leave Sugarloaf/WGPU to decide
 #   - GL: Supported on Linux/Android, and Windows and macOS/iOS via ANGLE
 #   - Vulkan: Supported on Windows, Linux/Android
@@ -122,12 +122,12 @@ blinking-cursor = false
 #   - DX11: Supported on Windows 7+
 #   - Metal: Supported on macOS/iOS
 #
-# \u2022 disable-renderer-when-unfocused: This property disable renderer processes while Rio is unfocused.
+#  disable-renderer-when-unfocused: This property disable renderer processes while Rio is unfocused.
 #
 # Example:
  [renderer]
- performance = "Low"
- backend = "Automatic"
+ performance = "High"
+ backend = "GL"
  disable-renderer-when-unfocused = false
 
 # Keyboard
@@ -201,12 +201,12 @@ blinking-cursor = false
 # Navigation
 #
 # "mode" - Define navigation mode
-#   \u2022 NativeTab (MacOs only)
-#   \u2022 CollapsedTab
-#   \u2022 BottomTab
-#   \u2022 TopTab
-#   \u2022 Breadcrumb
-#   \u2022 Plain
+#    NativeTab (MacOs only)
+#    CollapsedTab
+#    BottomTab
+#    TopTab
+#    Breadcrumb
+#    Plain
 #
 # "clickable" - Enable click on tabs to switch.
 # "use-current-path" - Use same path whenever a new tab is created.

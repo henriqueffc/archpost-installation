@@ -302,7 +302,7 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "[
 
 # Rio
 mkdir -p $HOME/.config/rio/themes
-curl -L "https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/rio/Dark%2B.toml" -o ~/.config/rio/themes/Dark+.toml
+aria2c -d ~/.config/rio/themes https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/rio/GitHub%20Dark.toml
 mv ./rio/config.toml ~/.config/rio/
 sudo sed -i 's|Icon=.*|Icon=/usr/share/icons/hicolor/scalable/apps/rio.svg/rio-logo.svg|g' /usr/share/applications/rio.desktop
 
