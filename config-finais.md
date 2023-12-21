@@ -7,15 +7,19 @@ Habilite o cache de escrita e o APM com o valor de 254 no programa Discos.
 
 ### 2 - Tema
 
-Configure o tema dos programas que usam QT através dos aplicativos _Qt5 Settings_ e _Qt6 Settings_
+Configure o tema dos programas que usam QT através dos aplicativos _Qt5
+Settings_ e _Qt6 Settings_
 
 Escolha o estilo kvantum e tema de ícones breeze dark.
 
-Nos programas que usam QT e permitem configurar a aparência (kdenlive, okular, vlc, etc.) escolha o tema kvantum.
+Nos programas que usam QT e permitem configurar a aparência (kdenlive, okular,
+vlc, etc.) escolha o tema kvantum.
 
-Execute os seguintes comandos para unificar os temas dos flatpaks instalados no sistema.
+Execute os seguintes comandos para unificar os temas dos flatpaks instalados no
+sistema.
 
-O sufixo :ro (ex.: xdg-config/gtk-4:ro) indica read-only. Ele é opcional e preferi não usá-lo.
+O sufixo :ro (ex.: xdg-config/gtk-4:ro) indica read-only. Ele é opcional e
+preferi não usá-lo.
 
 `sudo flatpak override --filesystem=xdg-config/gtk-4.0`
 
@@ -28,7 +32,8 @@ Verifique o policy.xml do ImageMagick.
 
 `sudo nano /etc/ImageMagick-7/policy.xml`
 
-Comente as linhas `<policy domain= com <!-- (início) e --> (final da linha)`. Ex.:
+Comente as linhas `<policy domain= com <!-- (início) e --> (final da linha)`.
+Ex.:
 
 `<!-- <policy domain="module" rights="none" pattern="{PS,PDF,XPS}" /> -->`
 <br><br>
@@ -40,12 +45,14 @@ Configurar rkhunter, Fail2ban - porta SSH e o SSH.
 
 ### 5 - NVMe
 
-Altere a identificação do ponto de montagem das partições do NVMe no aplicativo discos.
+Altere a identificação do ponto de montagem das partições do NVMe no aplicativo
+discos.
 <br><br>
 
 ### 6 - Nautilus
 
-Atalhos no Nautilus (File). A fonte que contém os símbolos foi instalada pelo script número 3.
+Atalhos no Nautilus (File). A fonte que contém os símbolos foi instalada pelo
+script número 3.
 
 `echo "file:///mnt/nvme0n1p1 🖴  NVME" >> ~/.config/gtk-3.0/bookmarks`
 
@@ -54,7 +61,8 @@ Atalhos no Nautilus (File). A fonte que contém os símbolos foi instalada pelo 
 
 ### 7 - Fstab
 
-Acrescente nos parâmetros das partições ext4 e montadas pelo sistema no boot as seguintes especificações `commit=60` e `barrier=0`.
+Acrescente nos parâmetros das partições ext4 e montadas pelo sistema no boot as
+seguintes especificações `commit=60` e `barrier=0`.
 
 `sudo nano /etc/fstab`
 <br><br>
@@ -65,7 +73,9 @@ Habilite o fast commit para todas as partições Ext4 do sistema.
 
 `sudo tune2fs -O fast_commit /dev/nome_da_partição`
 
-Habilite a checagem do filesystem pelo tune2fs/e2fsck no boot para todas as partições Ext4 do sistema (no comando abaixo a verificação está definida para ser efetuada depois de 20 montagens da partição)
+Habilite a checagem do filesystem pelo tune2fs/e2fsck no boot para todas as
+partições Ext4 do sistema (no comando abaixo a verificação está definida para
+ser efetuada depois de 20 montagens da partição)
 
 `sudo tune2fs -c 20 /dev/nome_da_partição`
 
@@ -73,9 +83,14 @@ Verifique as informações das partições Ext4
 
 `sudo dumpe2fs -h /dev/nome_da_partição`
 
-Faça as configurações no fstab disponíveis no link <https://wiki.archlinux.org/title/Fsck#fstab_options> para as partições do sistema que são montadas no boot e que não sejam a partição root (Ext4) e a partição boot. Lembrando que as partições devem ser Ext4. Sem essa configuração (0 2) essas partições não serão verificadas pelo tune2fs na inicialização.
+Faça as configurações no fstab disponíveis no link
+<https://wiki.archlinux.org/title/Fsck#fstab_options> para as partições do
+sistema que são montadas no boot e que não sejam a partição root (Ext4) e a
+partição boot. Lembrando que as partições devem ser Ext4. Sem essa configuração
+(0 2) essas partições não serão verificadas pelo tune2fs na inicialização.
 
-Verifique se as partições Ext4 estão em 64-bit e com o metadata checksums habilitado.
+Verifique se as partições Ext4 estão em 64-bit e com o metadata checksums
+habilitado.
 
 `sudo dumpe2fs -h /dev/nome_da_partição | grep features`
 
@@ -87,17 +102,22 @@ filetype needs_recovery extent 64bit flex_bg sparse_super large_file huge_file
 dir_nlink extra_isize metadata_csum
 ```
 
-Caso alguma das duas opções destacadas no exemplo acima não constar na saída do comando, faça o seguinte:
+Caso alguma das duas opções destacadas no exemplo acima não constar na saída do
+comando, faça o seguinte:
 
-A partição objeto do procedimento não pode estar montada para a execução dos comandos abaixo.
+A partição objeto do procedimento não pode estar montada para a execução dos
+comandos abaixo.
 
 `sudo e2fsck -Df /dev/nome_da_partição` (otimização da partição - obrigatório)
 
-`sudo resize2fs -b /dev/nome_da_partição` (conversão para 64-bit - somente se o 64bit não estiver disponível na lista)
+`sudo resize2fs -b /dev/nome_da_partição` (conversão para 64-bit - somente se o
+64bit não estiver disponível na lista)
 
-`sudo tune2fs -O metadata_csum /dev/nome_da_partição` (habilitando o metadata checksums - somente se o metadata_csum não estiver disponível na lista)
+`sudo tune2fs -O metadata_csum /dev/nome_da_partição` (habilitando o metadata
+checksums - somente se o metadata_csum não estiver disponível na lista)
 
-Verifique a lista novamente usando `sudo dumpe2fs -h /dev/nome_da_partição | grep features`
+Verifique a lista novamente usando
+`sudo dumpe2fs -h /dev/nome_da_partição | grep features`
 <br><br>
 
 ### 9 - Heroic Game Launcher - Wayland
@@ -125,30 +145,41 @@ Configure as extensões instaladas no GNOME.
 
 ### 12 - Firefox
 
-Copie o arquivo `user.js` da pasta firefox para o seu profile do navegador em `~/.mozilla/firefox/pasta_do_profile`
-Caso não queira copiar o arquivo, configure o parâmetro `browser.gnome-search-provider.enabled` como `true` (booleano) em `about:config`
-Esse parâmetro é necessário para habilitar a pesquisa pelo navegador (o Firefox deve estar em execução) no overview do Gnome. A configuração para o serviço de pesquisa foi realizada no script 3-pacotes.sh.
+Copie o arquivo `user.js` da pasta firefox para o seu profile do navegador em
+`~/.mozilla/firefox/pasta_do_profile` Caso não queira copiar o arquivo,
+configure o parâmetro `browser.gnome-search-provider.enabled` como `true`
+(booleano) em `about:config` Esse parâmetro é necessário para habilitar a
+pesquisa pelo navegador (o Firefox deve estar em execução) no overview do Gnome.
+A configuração para o serviço de pesquisa foi realizada no script 3-pacotes.sh.
 <br><br>
 
 ### 13 - Xpad
 
-Para o controle Multilaser JS091 (Shanwan Controler) funcionar instale a atualização para o Xpad disponível no site abaixo.
+Para o controle Multilaser JS091 (Shanwan Controler) funcionar instale a
+atualização para o Xpad disponível no site abaixo.
 
 <https://github.com/paroj/xpad>
 <br><br>
 
 ### 14 - Distrobox
 
-Caso use alguma distro pelo Distrobox não se esqueça de configurar o atalho do desktop (executar usando o bash. pelo zsh ocorrem alguns problemas)
-Exemplo com o Ubuntu:
+Caso use alguma distro pelo Distrobox não se esqueça de configurar o atalho do
+desktop (executar usando o bash. pelo zsh ocorrem alguns problemas) Exemplo com
+o Ubuntu:
 
 `nano .local/share/applications/ubuntu.desktop`
 
 `Exec=/usr/local/bin/distrobox enter --name ubuntu -- bash -l`
 
-Caso queira criar um atalho de teclado para lançar o Distrobox usando o terminal do Gnome (se for o Alacritty só é preciso configurar o comando para o atalho de teclado - veja após a descrição para o terminal do Gnome), faça o seguinte:
+Caso queira criar um atalho de teclado para lançar o Distrobox usando o terminal
+do Gnome (se for o Alacritty só é preciso configurar o comando para o atalho de
+teclado - veja após a descrição para o terminal do Gnome), faça o seguinte:
 
-Acesse o menu de Preferências do terminal do Gnome e crie um novo perfil com o nome ubuntu (p.ex) e, na opção Comando personalizado (marque a opção Executar um comando personalizado ...), coloque `distrobox enter --name ubuntu -- bash -l` . O restante fica no padrão. Mude as cores do perfil para especificar a diferença de uso do terminal (padrão ou Distrobox).
+Acesse o menu de Preferências do terminal do Gnome e crie um novo perfil com o
+nome ubuntu (p.ex) e, na opção Comando personalizado (marque a opção Executar um
+comando personalizado ...), coloque `distrobox enter --name ubuntu -- bash -l` .
+O restante fica no padrão. Mude as cores do perfil para especificar a diferença
+de uso do terminal (padrão ou Distrobox).
 
 Nas configurações do sistema acesse Teclado - Atalhos de teclado.
 
@@ -166,7 +197,9 @@ Atalho : Shift + Ctrl + D
 
 ### 15 - Espanso
 
-Caso queira eliminar o pequeno quadro (inicialização do Espanso) mostrado quando o GNOME Shell é inicializado pela primeira vez use a extensão "No overview at start-up".
+Caso queira eliminar o pequeno quadro (inicialização do Espanso) mostrado quando
+o GNOME Shell é inicializado pela primeira vez use a extensão "No overview at
+start-up".
 <br><br>
 
 ### 16 - Rclone
@@ -176,15 +209,18 @@ Configurar o remote no rclone e fazer o scprit de sincronização.
 
 ### 17 - Conservation mode - Ideapad S145
 
-Modo de conservação da bateria. Se for habilitado manterá a carga máxima da bateria em 60%.
-Verifique se o módulo do kernel ideapad_laptop está carregado com o comando `lsmod | grep ideapad`. Se não estiver os comandos indicados a seguir não irão funcionar.
-Apure o valor presente no sistema com o seguinte comando:
+Modo de conservação da bateria. Se for habilitado manterá a carga máxima da
+bateria em 60%. Verifique se o módulo do kernel ideapad_laptop está carregado
+com o comando `lsmod | grep ideapad`. Se não estiver os comandos indicados a
+seguir não irão funcionar. Apure o valor presente no sistema com o seguinte
+comando:
 
 `cat /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode`
 
 Pode acontecer da pasta VPC2004:00 ter outra nomenclatura. Averigue no sistema.
 
-Se o módulo estiver carregado no sistema e a pasta VPC2004:00 for a correta execute como root os comandos abaixo:
+Se o módulo estiver carregado no sistema e a pasta VPC2004:00 for a correta
+execute como root os comandos abaixo:
 
 Para Habilitar
 
@@ -203,11 +239,14 @@ Opções de inicialização para os jogos na Steam.
 
 `__GL_SYNC_TO_VBLANK=0 __GL_MaxFramesAllowed=1 SDL_DYNAMIC_API=/usr/lib64/libSDL2-2.0.so prime-run mangohud --dlsym %command%`
 
-É possível utilizar o parâmetro `__GL_THREADED_OPTIMIZATIONS=1`, mas é preciso efetuar testes. Tem jogos que não funcionam com ele.
+É possível utilizar o parâmetro `__GL_THREADED_OPTIMIZATIONS=1`, mas é preciso
+efetuar testes. Tem jogos que não funcionam com ele.
 
-Caso o `SDL_DYNAMIC_API=/usr/lib64/libSDL2-2.0.so` não funcione, substitua por `SDL_VIDEODRIVER=X11`
+Caso o `SDL_DYNAMIC_API=/usr/lib64/libSDL2-2.0.so` não funcione, substitua por
+`SDL_VIDEODRIVER=X11`
 
-O prime-run no Arch Linux faz o mesmo que `__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia`
+O prime-run no Arch Linux faz o mesmo que
+`__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia`
 
 **DXVK - Vulkan**
 
@@ -215,11 +254,13 @@ O prime-run no Arch Linux faz o mesmo que `__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VEN
 
 **Gamemode**
 
-Para executar o Gamemode acrescente `gamemoderun` nas opções de inicialização dos jogos na Steam.
+Para executar o Gamemode acrescente `gamemoderun` nas opções de inicialização
+dos jogos na Steam.
 
 **FPS**
 
-Uso o Mangohud para controlar o fps. Faço a configuração desse recurso pelo Goverlay. Se possível, desabilito o VSync nas configurações dos jogos.
+Uso o Mangohud para controlar o fps. Faço a configuração desse recurso pelo
+Goverlay. Se possível, desabilito o VSync nas configurações dos jogos.
 
 **Shaders**
 

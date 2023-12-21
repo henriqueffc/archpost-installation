@@ -1,0 +1,68 @@
+# https://docs.helix-editor.com/languages.html
+# https://github.com/helix-editor/helix/wiki/External-formatter-configuration
+# https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-servers
+#
+[[language]]
+name = "bash"
+indent = { tab-width = 4, unit = "    " }
+formatter = { command = 'shfmt', args = ["-i", "4"] }
+auto-format = true
+
+[[languages]]
+name = "go"
+auto-format = true
+formatter = { command = "goimports" }
+
+[[language]]
+name = "toml"
+formatter = { command = "taplo", args = ["format", "-"] }
+auto-format = true
+
+[[language]]
+name = "yaml"
+formatter = { command = "prettier", args = ["--parser", "yaml"] }
+auto-format = true
+
+[[language]]
+name = "python"
+formatter = { command = "black", args = ["--quiet", "-"] }
+language-servers = [ "pyright" ]
+auto-format = true
+
+[[language]]
+name = "html"
+formatter = { command = 'prettier', args = ["--parser", "html"] }
+
+[[language]]
+name = "css"
+formatter = { command = 'prettier', args = ["--parser", "css"] }
+
+[[language]]
+name = "javascript"
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "js" ] }
+auto-format = true
+
+[[language]]
+name = "json"
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "json" ] }
+auto-format = true
+
+[[language]]
+name = "markdown"
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "md" ] }
+auto-format = true
+
+[[language]]
+name = "typescript"
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "ts" ] }
+auto-format = true
+
+[[language]]
+name = "jsx"
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "jsx" ] }
+auto-format = true
+
+[[language]]
+name = "tsx"
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "tsx" ] }
+auto-format = true

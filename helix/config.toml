@@ -1,0 +1,25 @@
+# https://docs.helix-editor.com/configuration.html
+#
+theme = "darcula-solid"
+
+[editor]
+line-number = "absolute"
+mouse = true
+auto-pairs = true
+bufferline = "multiple"
+cursorline = true
+
+[editor.lsp]
+display-messages = true
+
+[editor.indent-guides]
+render = true
+character = "╎" 
+skip-levels = 1
+
+[editor.file-picker]
+hidden = false
+
+[editor.statusline]
+left = ["mode", "spinner"]
+right = ["diagnostics", "position", "position-percentage", "file-encoding"]
