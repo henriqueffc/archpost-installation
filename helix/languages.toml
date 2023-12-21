@@ -8,7 +8,7 @@ indent = { tab-width = 4, unit = "    " }
 formatter = { command = 'shfmt', args = ["-i", "4"] }
 auto-format = true
 
-[[languages]]
+[[language]]
 name = "go"
 auto-format = true
 formatter = { command = "goimports" }
@@ -26,7 +26,7 @@ auto-format = true
 [[language]]
 name = "python"
 formatter = { command = "black", args = ["--quiet", "-"] }
-language-servers = [ "pyright" ]
+language-servers = ["pyright"]
 auto-format = true
 
 [[language]]
@@ -39,30 +39,30 @@ formatter = { command = 'prettier', args = ["--parser", "css"] }
 
 [[language]]
 name = "javascript"
-formatter = { command = 'deno', args = ["fmt", "-", "--ext", "js" ] }
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "js"] }
 auto-format = true
 
 [[language]]
 name = "json"
-formatter = { command = 'deno', args = ["fmt", "-", "--ext", "json" ] }
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "json"] }
 auto-format = true
 
 [[language]]
 name = "markdown"
-formatter = { command = 'deno', args = ["fmt", "-", "--ext", "md" ] }
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "md"] }
 auto-format = true
 
 [[language]]
 name = "typescript"
-formatter = { command = 'deno', args = ["fmt", "-", "--ext", "ts" ] }
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "ts"] }
 auto-format = true
 
 [[language]]
 name = "jsx"
-formatter = { command = 'deno', args = ["fmt", "-", "--ext", "jsx" ] }
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "jsx"] }
 auto-format = true
 
 [[language]]
 name = "tsx"
-formatter = { command = 'deno', args = ["fmt", "-", "--ext", "tsx" ] }
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "tsx"] }
 auto-format = true
