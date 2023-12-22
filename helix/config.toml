@@ -1,6 +1,6 @@
 # https://docs.helix-editor.com/configuration.html
 #
-theme = "darcula-solid"
+theme = "ayu_dark"
 
 [editor]
 line-number = "absolute"
