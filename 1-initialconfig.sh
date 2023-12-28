@@ -57,8 +57,8 @@ echo 'GST_PLUGIN_FEATURE_RANK=qsvvp9dec:MAX,qsvh264dec:MAX,qsvh265dec:MAX,qsvjpe
 # PC speaker - turn off beep shutdown
 echo 'blacklist pcspkr' >/etc/modprobe.d/nobeep.conf
 
-# Linux-firmware
-pacman -Syu linux-firmware linux-firmware-whence --needed --noconfirm
+# Linux-firmware e wireless-regdb
+pacman -Syu linux-firmware linux-firmware-whence wireless-regdb --needed --noconfirm
 
 # NANO - Line number e syntax-highlighting
 pacman -S nano --needed --noconfirm

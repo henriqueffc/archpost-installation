@@ -352,4 +352,7 @@ cp ./mpv/mpv.conf $HOME/.config/mpv/
 mkdir -p $HOME/.config/fastfetch/
 cp ./fastfetch/config.jsonc $HOME/.config/fastfetch/
 
+# wireless-regdb - instalado pelo script 1.
+sudo sed -i '$a WIRELESS_REGDOM="BR"' /etc/conf.d/wireless-regdom
+
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
