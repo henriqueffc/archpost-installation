@@ -155,10 +155,11 @@ A configuração para o serviço de pesquisa foi realizada no script 3-pacotes.s
 
 ### 13 - Xpad
 
-Para o controle Multilaser JS091 (Shanwan Controler) funcionar instale a
-atualização para o Xpad disponível no site abaixo.
-
-<https://github.com/paroj/xpad>
+O controle Multilaser JS091 (Shanwan Controler) está funcionando corretamente
+como Microsoft Corp. Xbox360 Controller (verifique com `lsusb`). Caso não
+funcione instale a atualização para o Xpad disponível no site
+<https://github.com/paroj/xpad> ou utilize o pacote disponível no AUR
+`game-devices-udev` <https://codeberg.org/fabiscafe/game-devices-udev>
 <br><br>
 
 ### 14 - Distrobox
