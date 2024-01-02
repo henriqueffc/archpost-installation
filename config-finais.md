@@ -146,11 +146,7 @@ Configure as extensões instaladas no GNOME.
 ### 12 - Firefox
 
 Copie o arquivo `user.js` da pasta firefox para o seu profile do navegador em
-`~/.mozilla/firefox/pasta_do_profile` Caso não queira copiar o arquivo,
-configure o parâmetro `browser.gnome-search-provider.enabled` como `true`
-(booleano) em `about:config` Esse parâmetro é necessário para habilitar a
-pesquisa pelo navegador (o Firefox deve estar em execução) no overview do Gnome.
-A configuração para o serviço de pesquisa foi realizada no script 3-pacotes.sh.
+`~/.mozilla/firefox/pasta_do_profile`.
 <br><br>
 
 ### 13 - Xpad
