@@ -79,7 +79,6 @@ i7z
 iptables-nft
 intel-gpu-tools
 intel-ucode
-intel-metee
 inxi
 jre-openjdk
 kdegraphics-mobipocket
@@ -169,6 +168,7 @@ thunderbird-i18n-pt-br
 torbrowser-launcher
 trash-cli
 translate-shell
+turbostat
 usbutils
 unace
 unrar
