@@ -22,10 +22,10 @@ pipewire, wireplumber, repositório multilib habilitado (ativado por intermédio
 do archinstall), Nvidia com driver proprietário (versão dkms), shell Zsh com Oh
 My Zsh, Zellij, Rio terminal, AUR helper Yay, Flatpak, Podman, Distrobox,
 Apparmor, firewalld, libvirt, Vagrant, asdf, intel_pstate scaling driver,
-cpupower e x86_energy_perf_policy para gerenciamento de frequências da CPU e do
-perfil de energia (uso o notebook ligado na tomada), firmware para o áudio da
-Sound Open Firmware, equalização paramétrica para o Headset HyperX Cloud
-Stinger, Real-time Noise Suppression Plugin, Espanso, Helix Editor e GNOME
+cpupower, throttled e x86_energy_perf_policy para gerenciamento de frequências
+da CPU e do perfil de energia (uso o notebook ligado na tomada), firmware para o
+áudio da Sound Open Firmware, equalização paramétrica para o Headset HyperX
+Cloud Stinger, Real-time Noise Suppression Plugin, Helix Editor e GNOME
 (Wayland). As configurações dos scripts são concebidas nessa base.
 
 Os scripts deverão ser executados após a inicialização do sistema no ambiente
@@ -58,7 +58,6 @@ Ordem de uso dos scripts:
 - 8-zsh-ohmyzsh.sh
 - 9-podman-distrobox.sh
 - 10-helix.sh
-- 11-espanso-wayland.sh
 
 Recomendo reinicializar o sistema após a execução de cada script.
 
