@@ -163,6 +163,7 @@ tesseract-data-eng
 tesseract-data-por
 texinfo
 thefuck
+throttled
 thunderbird
 thunderbird-i18n-pt-br
 torbrowser-launcher

@@ -77,6 +77,11 @@ sudo sed -i '$ a max_freq="4600MHz"' /etc/default/cpupower
 sudo systemctl enable cpupower.service
 echo -e "$AZUL \t CPU Power e x86_energy_perf_policy habilitados $FIM"
 
+# throttled
+sudo sed -i 's|Sysfs_Power_Path.*|Sysfs_Power_Path: /sys/class/power_supply/AD*/online|g' /etc/throttled.conf
+sudo systemctl enable throttled.service
+echo -e "$AZUL \t CPU throttled habilitado $FIM"
+
 # tealdeer (implementação do tldr)
 tldr --update
 tldr --seed-config
