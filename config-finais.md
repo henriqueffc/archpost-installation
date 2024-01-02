@@ -196,19 +196,12 @@ Caso queira inicializar usando o Alacritty o comando é o seguinte:
 Atalho : Shift + Ctrl + D
 <br><br>
 
-### 15 - Espanso
-
-Caso queira eliminar o pequeno quadro (inicialização do Espanso) mostrado quando
-o GNOME Shell é inicializado pela primeira vez use a extensão "No overview at
-start-up".
-<br><br>
-
-### 16 - Rclone
+### 15 - Rclone
 
 Configurar o remote no rclone e fazer o scprit de sincronização.
 <br><br>
 
-### 17 - Conservation mode - Ideapad S145
+### 16 - Conservation mode - Ideapad S145
 
 Modo de conservação da bateria. Se for habilitado manterá a carga máxima da
 bateria em 60%. Verifique se o módulo do kernel ideapad_laptop está carregado
@@ -232,7 +225,7 @@ Para desabilitar
 `echo 0 > /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode`
 <br><br>
 
-### 18 - Steam
+### 17 - Steam
 
 Opções de inicialização para os jogos na Steam.
 
