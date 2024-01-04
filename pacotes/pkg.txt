@@ -165,6 +165,7 @@ thefuck
 throttled
 thunderbird
 thunderbird-i18n-pt-br
+thunderbird-dark-reader
 torbrowser-launcher
 trash-cli
 translate-shell

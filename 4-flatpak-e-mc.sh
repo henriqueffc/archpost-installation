@@ -57,26 +57,27 @@ flatpak install flathub fr.handbrake.ghb -y
 flatpak install flathub fr.handbrake.ghb.Plugin.IntelMediaSDK -y
 flatpak install flathub app.drey.Dialect -y
 flatpak install flathub org.gnome.Podcasts -y
+flatpak install flathub org.cryptomator.Cryptomator -y
 
 # Flatpak Remote-Beta
 
 while :; do
-	echo -ne "$VERDE Você quer adicionar o remote Flathub Beta? $FIM $LVERDE (S) sim / (N) não $FIM"
-	read -r resposta
-	case "$resposta" in
-	s | S | "")
-		flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
-		echo -e "$VERDE Fim da instalação. $FIM"
-		break
-		;;
-	n | N)
-		echo -e "$VERDE Fim da instalação. $FIM"
-		break
-		;;
-	*)
-		echo -e "$RED Opção inválida. Responda a pergunta. $FIM"
-		;;
-	esac
+    echo -ne "$VERDE Você quer adicionar o remote Flathub Beta? $FIM $LVERDE (S) sim / (N) não $FIM"
+    read -r resposta
+    case "$resposta" in
+    s | S | "")
+        flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
+        echo -e "$VERDE Fim da instalação. $FIM"
+        break
+        ;;
+    n | N)
+        echo -e "$VERDE Fim da instalação. $FIM"
+        break
+        ;;
+    *)
+        echo -e "$RED Opção inválida. Responda a pergunta. $FIM"
+        ;;
+    esac
 done
 
 echo -e "$AZUL
