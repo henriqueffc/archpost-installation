@@ -196,7 +196,6 @@ xorg-xkill
 xorg-xwininfo
 xournalpp
 yt-dlp
-zellij
 zenity
 zip
 zsh

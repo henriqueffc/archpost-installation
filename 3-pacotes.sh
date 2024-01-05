@@ -303,15 +303,9 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']"
 
 # Rio
-mkdir -p $HOME/.config/rio/themes
-aria2c -d ~/.config/rio/themes https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/rio/GitHub%20Dark.toml
+mkdir -p $HOME/.config/rio
 mv ./rio/config.toml ~/.config/rio/
 sudo sed -i 's|Icon=.*|Icon=/usr/share/icons/hicolor/scalable/apps/rio.svg/rio-logo.svg|g' /usr/share/applications/rio.desktop
-
-# Zellij
-mkdir -p ~/.config/zellij/plugins
-mv ./zellij/config.kdl ~/.config/zellij/
-curl -L "https://github.com/rvcas/room/releases/latest/download/room.wasm" -o ~/.config/zellij/plugins/room.wasm
 
 # Vagrant
 vagrant plugin install vagrant-libvirt

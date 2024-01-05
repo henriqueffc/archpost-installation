@@ -20,13 +20,13 @@ joystick Multilaser Js091 e headset HyperX Cloud Stinger.
 Eu instalo o sistema em UEFI, com systemd-boot, sistema de arquivos EXT4, ZRAM,
 pipewire, wireplumber, repositório multilib habilitado (ativado por intermédio
 do archinstall), Nvidia com driver proprietário (versão dkms), shell Zsh com Oh
-My Zsh, Zellij, Rio terminal, AUR helper Yay, Flatpak, Podman, Distrobox,
-Apparmor, firewalld, libvirt, Vagrant, asdf, intel_pstate scaling driver,
-cpupower, throttled e x86_energy_perf_policy para gerenciamento de frequências
-da CPU e do perfil de energia (uso o notebook ligado na tomada), firmware para o
-áudio da Sound Open Firmware, equalização paramétrica para o Headset HyperX
-Cloud Stinger, Real-time Noise Suppression Plugin, Helix Editor e GNOME
-(Wayland). As configurações dos scripts são concebidas nessa base.
+My Zsh, Rio terminal, AUR helper Yay, Flatpak, Podman, Distrobox, Apparmor,
+firewalld, libvirt, Vagrant, asdf, intel_pstate scaling driver, cpupower,
+throttled e x86_energy_perf_policy para gerenciamento de frequências da CPU e do
+perfil de energia (uso o notebook ligado na tomada), firmware para o áudio da
+Sound Open Firmware, equalização paramétrica para o Headset HyperX Cloud
+Stinger, Real-time Noise Suppression Plugin, Helix Editor e GNOME (Wayland). As
+configurações dos scripts são concebidas nessa base.
 
 Os scripts deverão ser executados após a inicialização do sistema no ambiente
 gráfico.
