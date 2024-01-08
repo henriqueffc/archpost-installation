@@ -156,6 +156,7 @@ soundconverter
 steam
 strace
 scrcpy
+tailspin
 tealdeer
 tesseract
 tesseract-data-eng
