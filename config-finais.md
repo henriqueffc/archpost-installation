@@ -120,36 +120,18 @@ Verifique a lista novamente usando
 `sudo dumpe2fs -h /dev/nome_da_partição | grep features`
 <br><br>
 
-### 9 - Heroic Game Launcher - Wayland
-
-`cp /usr/share/applications/heroic.desktop ~/.local/share/applications`
-
-`nano ~/.local/share/applications/heroic.desktop`
-
-`Exec=/opt/Heroic/heroic --ozone-platform-hint=auto %U`
-<br><br>
-
-### 10 - Obsidian - Wayland
-
-`cp /usr/share/applications/obsidian.desktop ~/.local/share/applications`
-
-`nano  ~/.local/share/applications/obsidian.desktop`
-
-`Exec=/usr/bin/obsidian --ozone-platform-hint=auto %U`
-<br><br>
-
-### 11 - Extensões do GNOME
+### 9 - Extensões do GNOME
 
 Configure as extensões instaladas no GNOME.
 <br><br>
 
-### 12 - Firefox
+### 10 - Firefox
 
 Copie o arquivo `user.js` da pasta firefox para o seu profile do navegador em
 `~/.mozilla/firefox/pasta_do_profile`.
 <br><br>
 
-### 13 - Xpad
+### 11 - Xpad
 
 O controle Multilaser JS091 (Shanwan Controler) está funcionando corretamente
 como Microsoft Corp. Xbox360 Controller (verifique com `lsusb`). Caso não
@@ -158,7 +140,7 @@ funcione instale a atualização para o Xpad disponível no site
 `game-devices-udev` <https://codeberg.org/fabiscafe/game-devices-udev>
 <br><br>
 
-### 14 - Distrobox
+### 12 - Distrobox
 
 Caso use alguma distro pelo Distrobox não se esqueça de configurar o atalho do
 desktop (executar usando o bash. pelo zsh ocorrem alguns problemas) Exemplo com
@@ -192,12 +174,12 @@ Caso queira inicializar usando o Alacritty o comando é o seguinte:
 Atalho : Shift + Ctrl + D
 <br><br>
 
-### 15 - Rclone
+### 13 - Rclone
 
 Configurar o remote no rclone e fazer o scprit de sincronização.
 <br><br>
 
-### 16 - Conservation mode - Ideapad S145
+### 14 - Conservation mode - Ideapad S145
 
 Modo de conservação da bateria. Se for habilitado manterá a carga máxima da
 bateria em 60%. Verifique se o módulo do kernel ideapad_laptop está carregado
@@ -221,7 +203,7 @@ Para desabilitar
 `echo 0 > /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode`
 <br><br>
 
-### 17 - Steam
+### 15 - Steam
 
 Opções de inicialização para os jogos na Steam.
 
@@ -256,8 +238,4 @@ Goverlay. Se possível, desabilito o VSync nas configurações dos jogos.
 
 Aumente a quantidade de cores para pré-compilar os shaders.
 
-`nano ~/.steam/steam/steam_dev.cfg`
-
-```
-unShaderBackgroundProcessingThreads 6
-```
+`echo "unShaderBackgroundProcessingThreads 6" >> ~/.steam/steam/steam_dev.cfg`

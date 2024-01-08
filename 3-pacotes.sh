@@ -305,7 +305,8 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "[
 # Rio
 mkdir -p $HOME/.config/rio
 mv ./rio/config.toml ~/.config/rio/
-sudo sed -i 's|Icon=.*|Icon=/usr/share/icons/hicolor/scalable/apps/rio.svg/rio-logo.svg|g' /usr/share/applications/rio.desktop
+cp /usr/share/applications/rio.desktop ~/.local/share/applications/
+sed -i 's|Icon=.*|Icon=/usr/share/icons/hicolor/scalable/apps/rio.svg/rio-logo.svg|g' ~/.local/share/applications/rio.desktop
 
 # Vagrant
 vagrant plugin install vagrant-libvirt
@@ -343,6 +344,14 @@ sudo systemctl enable --now clamav-freshclam.service
 # mpv
 mkdir -p $HOME/.config/mpv/
 cp ./mpv/mpv.conf $HOME/.config/mpv/
+
+# Obsidian - Wayland
+cp /usr/share/applications/obsidian.desktop ~/.local/share/applications/
+sed -i 's|Exec=.*|Exec=/usr/bin/obsidian --ozone-platform-hint=auto %U|g' ~/.local/share/applications/obsidian.desktop
+
+# Heroic Games Launcher - Wayland
+cp /usr/share/applications/heroic.desktop ~/.local/share/applications/
+sed -i 's|Exec=.*|Exec=/opt/Heroic/heroic --ozone-platform-hint=auto %U|g' ~/.local/share/applications/heroic.desktop
 
 # Fastfetch
 mkdir -p $HOME/.config/fastfetch/
