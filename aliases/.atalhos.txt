@@ -161,21 +161,20 @@ replace the current selection with the list of types it's offered in = wl-paste 
 
 
 
-#### Rio terminal ####
+#### Wezterm ####
 
-Open configuration: Control + Shift + Comma (,)
-Toggle VI Mode: Alt + Shift + Space
-Copy: Control + Shift + C
-Paste: Control + Shift + V
-Create new window: Control + Shift + N
-Create new tab: Control + Shift + T
-Move to next tab: Control + Shift + RightBracket (])
-Move to previous tab: Control + Shift + LeftBracket ([)
-Switch tabs by created order: Control + Tab
-Increase font size: Control + Plus (+)
-Decrease font size: Control + Minus (-)
-Reset font size: Control + 0
-Close tab or quit: Control + Shift + W
+CTRL + SHIFT + P = ativa o menu de comandos
+CTRL + SHIFT + T = cria uma nova aba
+CTRL + TAB = alterna entre as abas
+CTRL + SHIFT + Page Down ou Page Up = alterna entre as abas
+CTRL + SHIFT + número da aba = muda para a aba que possui o número selecionado
+CTRL + SHIFT + ALT + % = abre um painel na horizontal
+CTRL + SHIFT + ALT + " = abre um painel na vertical
+CTRL + SHIFT + Setas do teclado = alterna o foco entre os painéis
+CTRL + SHIFT + F = search case-sensitive
+SHIFT +  Page Down ou Page Up = rolagem pela tela do terminal
+CTRL + D = fecha painel e aba
+CTRL + SHIFT + L = debug mode
 Ctrl + Z coloca em segundo plano alguma tarefa ou programa que você está usando no terminal. Para voltar ao programa digite "fg".
 
 
