@@ -205,11 +205,11 @@ Para desabilitar
 
 ### 15 - Steam
 
-Opções de inicialização para os jogos na Steam.
+Opções de inicialização para os jogos na Steam usando a placa dedicada Nvidia.
 
 **OpenGL + Nvidia**
 
-`__GL_SYNC_TO_VBLANK=0 __GL_MaxFramesAllowed=1 SDL_DYNAMIC_API=/usr/lib64/libSDL2-2.0.so prime-run mangohud --dlsym %command%`
+`__GL_SYNC_TO_VBLANK=0 __GL_MaxFramesAllowed=1 SDL_DYNAMIC_API=/usr/lib64/libSDL2-2.0.so mangohud --dlsym prime-run %command%`
 
 É possível utilizar o parâmetro `__GL_THREADED_OPTIMIZATIONS=1`, mas é preciso
 efetuar testes. Tem jogos que não funcionam com ele.
@@ -220,9 +220,9 @@ Caso o `SDL_DYNAMIC_API=/usr/lib64/libSDL2-2.0.so` não funcione, substitua por
 O prime-run no Arch Linux faz o mesmo que
 `__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia`
 
-**DXVK - Vulkan**
+**DXVK - Vulkan - Nvidia**
 
-`STAGING_WRITECOPY=1 STAGING_SHARED_MEMORY=1 __GL_MaxFramesAllowed=1 PROTON_NO_ESYNC=1 PROTON_NO_FSYNC=1 mangohud %command%`
+`VK_DRIVER_FILES=/usr/share/vulkan/icd.d/nvidia_icd.json STAGING_WRITECOPY=1 STAGING_SHARED_MEMORY=1 __GL_MaxFramesAllowed=1 PROTON_NO_ESYNC=1 PROTON_NO_FSYNC=1 mangohud prime-run %command%`
 
 **Gamemode**
 
@@ -239,3 +239,19 @@ Goverlay. Se possível, desabilito o VSync nas configurações dos jogos.
 Aumente a quantidade de cores para pré-compilar os shaders.
 
 `echo "unShaderBackgroundProcessingThreads 6" >> ~/.steam/steam/steam_dev.cfg`
+<br><br>
+
+### 16 - Heroic Games Launcher
+
+Nas configurações do jogo, na opção "outros", habilite o MangoHud e o uso da
+placa dedicada.
+
+**Vulkan**
+
+Na opção "avançado", configure a variável de ambiente para o Vulkan. Nome da
+variável `VK_DRIVER_FILES` - Valor `/usr/share/vulkan/icd.d/nvidia_icd.json`
+
+**OpenGL**
+
+Para jogos os OpenGL o nome da variável é `SDL_DYNAMIC_API` e o valor é
+`/usr/lib64/libSDL2-2.0.so`
