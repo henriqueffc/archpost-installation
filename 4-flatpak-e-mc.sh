@@ -58,6 +58,7 @@ flatpak install flathub fr.handbrake.ghb.Plugin.IntelMediaSDK -y
 flatpak install flathub app.drey.Dialect -y
 flatpak install flathub org.gnome.Podcasts -y
 flatpak install flathub org.cryptomator.Cryptomator -y
+flatpak install flathub io.github.fabrialberio.pinapp -y
 
 # Flatpak Remote-Beta
 
