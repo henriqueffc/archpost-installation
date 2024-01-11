@@ -298,15 +298,12 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-6 "['<Shift><
 
 # atalho personalizado para lançar o Terminal - Super + T
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name "Terminal"
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command "rio"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command "wezterm"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding "<Super>t"
 gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']"
 
-# Rio
-mkdir -p $HOME/.config/rio
-mv ./rio/config.toml ~/.config/rio/
-cp /usr/share/applications/rio.desktop ~/.local/share/applications/
-sed -i 's|Icon=.*|Icon=/usr/share/icons/hicolor/scalable/apps/rio.svg/rio-logo.svg|g' ~/.local/share/applications/rio.desktop
+# wezterm
+mv ./wezterm/.wezterm.lua $HOME
 
 # Vagrant
 vagrant plugin install vagrant-libvirt

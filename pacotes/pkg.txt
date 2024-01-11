@@ -139,7 +139,6 @@ qt6-wayland
 rclone
 rebuild-detector
 reflector
-rio
 ripgrep
 ripgrep-all
 rkhunter
@@ -179,6 +178,7 @@ vagrant
 veracrypt
 webp-pixbuf-loader
 weechat
+wezterm
 wine-staging
 wine-gecko
 wine-mono
