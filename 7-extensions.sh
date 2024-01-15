@@ -15,8 +15,8 @@ sudo pacman -S aria2 libgtop lm_sensors git --needed --noconfirm
 
 # Instalação das extensões
 
-vvit="63.0.0"
-echo -e "$AZUL Vitals $FIM" 
+vvit="63.0.1"
+echo -e "$AZUL Vitals $FIM"
 aria2c https://github.com/corecoding/Vitals/releases/download/v$vvit/vitals.zip
 gnome-extensions install --force 'vitals.zip'
 
