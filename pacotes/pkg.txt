@@ -13,6 +13,7 @@ bandwhich
 bind
 blas-openblas
 blas64-openblas
+bluez-obex
 bluez-utils
 breeze
 bat

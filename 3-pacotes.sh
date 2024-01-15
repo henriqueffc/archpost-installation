@@ -40,7 +40,8 @@ echo -e "$AZUL \t fstrim.timer habilitado $FIM"
 sudo systemctl enable systemd-boot-update
 echo -e "$AZUL \t systemd-boot-update habilitado $FIM"
 sudo systemctl enable bluetooth.service
-echo -e "$AZUL \t bluetooth.service habilitado $FIM"
+systemctl enable --user obex.service
+echo -e "$AZUL \t bluetooth.service e obex.service habilitados $FIM"
 sudo systemctl enable --now firewalld.service
 echo -e "$AZUL \t firewalld.service habilitado $FIM"
 sudo systemctl start pkgstats.timer
