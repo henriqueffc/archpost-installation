@@ -58,10 +58,10 @@ flatpak install flathub org.gnome.Podcasts -y
 flatpak install flathub org.cryptomator.Cryptomator -y
 flatpak install flathub io.github.fabrialberio.pinapp -y
 
-# Flatpak Remote-Beta
+# Flathub Remote-Beta
 echo -e "$AZUL
 -------------------------------------------------------------------------
-                 Adiconando o remote flathub-beta
+                 Adicionando o remote flathub-beta
 -------------------------------------------------------------------------
 $FIM"
 
