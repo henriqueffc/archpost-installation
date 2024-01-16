@@ -8,11 +8,9 @@
 # Cores dos avisos
 
 AZUL='\e[1;34m'
-VERDE='\e[1;32m'
-RED='\e[1;31m'
-LVERDE='\e[0;92m'
 FIM='\e[0m'
 
+# Instalação dos aplicativos flatpaks
 echo -e "$AZUL
 -------------------------------------------------------------------------
                    Instalando os aplicativos Flatpaks
@@ -61,26 +59,24 @@ flatpak install flathub org.cryptomator.Cryptomator -y
 flatpak install flathub io.github.fabrialberio.pinapp -y
 
 # Flatpak Remote-Beta
+echo -e "$AZUL
+-------------------------------------------------------------------------
+                 Adiconando o remote flathub-beta
+-------------------------------------------------------------------------
+$FIM"
 
-while :; do
-    echo -ne "$VERDE Você quer adicionar o remote Flathub Beta? $FIM $LVERDE (S) sim / (N) não $FIM"
-    read -r resposta
-    case "$resposta" in
-    s | S | "")
-        flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
-        echo -e "$VERDE Fim da instalação. $FIM"
-        break
-        ;;
-    n | N)
-        echo -e "$VERDE Fim da instalação. $FIM"
-        break
-        ;;
-    *)
-        echo -e "$RED Opção inválida. Responda a pergunta. $FIM"
-        ;;
-    esac
-done
+flatpak remote-add --if-not-exists flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
 
+# GNOME Nightly remote
+echo -e "$AZUL
+-------------------------------------------------------------------------
+                 Adicionando o remote gnome-nightly
+-------------------------------------------------------------------------
+$FIM"
+
+flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
+
+# Configurações para o Midnight Commander
 echo -e "$AZUL
 -------------------------------------------------------------------------
                  Instalando o tema do Midnight Commander
