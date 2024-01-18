@@ -114,7 +114,6 @@ nano
 ncdu
 nethogs
 nmap
-noise-suppression-for-voice
 ntfs-3g
 nvme-cli
 obsidian

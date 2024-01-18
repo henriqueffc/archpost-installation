@@ -128,8 +128,7 @@ mv ./aliases/.atalhos.txt ~/
 # Modelos de arquivos para o Files
 touch $HOME/Modelos/novo.txt
 
-# Equalização paramétrica para o Headset HyperX Cloud Stinger e
-# noise-suppression-for-voice
+# Equalização paramétrica para o Headset HyperX Cloud Stinger
 mkdir -p ~/.config/pipewire/pipewire.conf.d
 mv ./pipewire/*.conf ~/.config/pipewire/pipewire.conf.d/
 
