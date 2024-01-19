@@ -10,7 +10,8 @@ Habilite o cache de escrita e o APM com o valor de 254 no programa Discos.
 Configure o tema dos programas que usam QT através dos aplicativos _Qt5
 Settings_ e _Qt6 Settings_
 
-Escolha o estilo kvantum e tema de ícones breeze dark.
+Escolha o estilo kvantum (configurado pelo script nº 3) e tema de ícones breeze
+dark.
 
 Nos programas que usam QT e permitem configurar a aparência (kdenlive, okular,
 vlc, etc.) escolha o tema kvantum.
@@ -255,3 +256,63 @@ variável `VK_DRIVER_FILES` - Valor `/usr/share/vulkan/icd.d/nvidia_icd.json`
 
 Para jogos os OpenGL o nome da variável é `SDL_DYNAMIC_API` e o valor é
 `/usr/lib64/libSDL2-2.0.so`
+<br><br>
+
+### 17 - Intel SSD 660p - [Solidigm™ Storage Tool (SST)](https://www.solidigm.com/content/solidigm/us/en/support-page/drivers-downloads/ka-00085.html)
+
+Para liberar o cache do disco NVMe instale o programa
+[solidigm-sst-storage-tool-cli](https://aur.archlinux.org/packages/solidigm-sst-storage-tool-cli)
+(AUR).
+
+O ID do disco é apresentado com o comando `sudo sst show -ssd`
+
+Ex.:
+
+```
+- PHNH************ -
+
+Capacity : 512.11 GB (512,110,190,592 bytes)
+DevicePath : /dev/nvme0n1
+DeviceStatus : Healthy
+Firmware : L02C
+FirmwareUpdateAvailable : No known update for SSD. 
+If an update is expected, please contact your SSD Vendor 
+representative about firmware update for this drive.
+Index : 0
+MaximumLBA : 1000215215
+ModelNumber : INTEL SSDPEKNW512G8L
+ProductFamily : Intel SSD 660p Series
+SMARTEnabled : True
+SectorDataSize : 512
+SerialNumber : PHNH************
+```
+
+As informações sobre o uso do cache são mostradas com o comando
+`sudo sst show -ssd PHNH************ -performancebooster`
+
+Ex.:
+
+```
+- Force Flush Info PHNH************ -
+
+Percent SLC Buffer Available : 32
+Percent Completion of SLC Buffer Eviction : 0
+Time elapsed to complete SLC Buffer Flush (milliseconds) : 0
+Total Number of Host Initialize : 37
+Total Number of Host Cancel : 0
+Total Number of Drive Initialize/Cancel : 0
+```
+
+No exemplo acima o NVMe está com 32% do cache disponível. Para liberar o cache
+execute o comando `sudo sst start -ssd PHNH************ -performancebooster` Não
+é mostrado o comando em execução. Depois de alguns minutos verifique o fim do
+processo com o comando
+`sudo sst show -ssd PHNH************ -performancebooster`. A linha
+`Percent Completion of SLC Buffer Eviction` apresentará o valor de 100% quando a
+execução do processo acabar. Infelizmente, por problemas com esse NVMe, tenho
+que fazer esse procedimento semanalmente e não posso usar o disco até a sua
+capacidade máxima. Se o disco ficar com a capacidade máxima preenchida ou
+próximo a isso, ele irá travar em algum momento e corromper os dados. Se não
+liberar o cache o desempenho degrada com o passar do tempo. Uso o disco NVMe
+para jogos, VMs e outros dados não cruciais. Caso queira ver todas as
+propriedades do disco o comando é `sudo sst show -all -ssd PHNH************`.
