@@ -143,16 +143,24 @@ funcione instale a atualização para o Xpad disponível no site
 
 ### 12 - Distrobox
 
-Caso use alguma distro pelo Distrobox não se esqueça de configurar o atalho do
-desktop (executar usando o bash. pelo zsh ocorrem alguns problemas) Exemplo com
-o Ubuntu:
+Caso use alguma distro pelo Distrobox e a instalação não configure o atalho do
+desktop (executar usando o bash, com zsh ocorrem alguns problemas), faça o
+seguinte:
 
-`nano .local/share/applications/ubuntu.desktop`
+Exemplo com o Ubuntu:
 
-`Exec=/usr/local/bin/distrobox enter --name ubuntu -- bash -l`
+`nano ~/.local/share/applications/ubuntu.desktop`
+
+`Exec=/usr/bin/distrobox enter --name ubuntu -- bash -l` ou se quiser lançar com
+o Wezterm:
+
+`Exec=/usr/bin/wezterm start -e distrobox-enter -n ubuntu -- bash -l`
+
+Se usar o Wezterm para lançar a partir do .desktop modifique a opção Terminal no
+arquivo .desktop para false - `Terminal=false`
 
 Caso queira criar um atalho de teclado para lançar o Distrobox usando o terminal
-do Gnome (se for o Alacritty só é preciso configurar o comando para o atalho de
+do Gnome (se for o Wezterm é preciso configurar o comando para o atalho de
 teclado - veja após a descrição para o terminal do Gnome), faça o seguinte:
 
 Acesse o menu de Preferências do terminal do Gnome e crie um novo perfil com o
@@ -169,8 +177,8 @@ Nome : terminal ubuntu
 
 Comando : `gnome-terminal --profile=ubuntu`
 
-Caso queira inicializar usando o Alacritty o comando é o seguinte:
-`alacritty -o window.title=distrobox -o "colors.primary.background='#1d2b35'" --command distrobox-enter -n ubuntu`
+Caso queira inicializar usando o Wezterm o comando é o seguinte:
+`wezterm start -e distrobox-enter -n ubuntu -- bash -l`
 
 Atalho : Shift + Ctrl + D
 <br><br>
