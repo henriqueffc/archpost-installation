@@ -143,9 +143,8 @@ funcione instale a atualização para o Xpad disponível no site
 
 ### 12 - Distrobox
 
-Caso use alguma distro pelo Distrobox e a instalação não configure o atalho do
-desktop (executar usando o bash, com zsh ocorrem alguns problemas), faça o
-seguinte:
+Caso use alguma distro pelo Distrobox configure o atalho do
+desktop. Executar usando o bash, com zsh ocorrem alguns problemas.
 
 Exemplo com o Ubuntu:
 
