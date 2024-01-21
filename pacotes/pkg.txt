@@ -46,8 +46,6 @@ fastfetch
 fd
 firefox
 firefox-i18n-pt-br
-firejail
-firetools
 firewalld
 flatpak
 fwupd
