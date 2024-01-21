@@ -121,18 +121,13 @@ Verifique a lista novamente usando
 `sudo dumpe2fs -h /dev/nome_da_partição | grep features`
 <br><br>
 
-### 9 - Extensões do GNOME
-
-Configure as extensões instaladas no GNOME.
-<br><br>
-
-### 10 - Firefox
+### 9 - Firefox
 
 Copie o arquivo `user.js` da pasta firefox para o seu profile do navegador em
 `~/.mozilla/firefox/pasta_do_profile`.
 <br><br>
 
-### 11 - Xpad
+### 10 - Xpad
 
 O controle Multilaser JS091 (Shanwan Controler) está funcionando corretamente
 como Microsoft Corp. Xbox360 Controller (verifique com `lsusb`). Caso não
@@ -141,10 +136,10 @@ funcione instale a atualização para o Xpad disponível no site
 `game-devices-udev` <https://codeberg.org/fabiscafe/game-devices-udev>
 <br><br>
 
-### 12 - Distrobox
+### 11 - Distrobox
 
-Caso use alguma distro pelo Distrobox configure o atalho do
-desktop. Executar usando o bash, com zsh ocorrem alguns problemas.
+Caso use alguma distro pelo Distrobox configure o atalho do desktop. Executar
+usando o bash, com zsh ocorrem alguns problemas.
 
 Exemplo com o Ubuntu:
 
@@ -182,12 +177,12 @@ Caso queira inicializar usando o Wezterm o comando é o seguinte:
 Atalho : Shift + Ctrl + D
 <br><br>
 
-### 13 - Rclone
+### 12 - Rclone
 
 Configurar o remote no rclone e fazer o scprit de sincronização.
 <br><br>
 
-### 14 - Conservation mode - Ideapad S145
+### 13 - Conservation mode - Ideapad S145
 
 Modo de conservação da bateria. Se for habilitado manterá a carga máxima da
 bateria em 60%. Verifique se o módulo do kernel ideapad_laptop está carregado
@@ -211,7 +206,7 @@ Para desabilitar
 `echo 0 > /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode`
 <br><br>
 
-### 15 - Steam
+### 14 - Steam
 
 Opções de inicialização para os jogos na Steam usando a placa dedicada Nvidia.
 
@@ -249,7 +244,7 @@ Aumente a quantidade de cores para pré-compilar os shaders.
 `echo "unShaderBackgroundProcessingThreads 6" >> ~/.steam/steam/steam_dev.cfg`
 <br><br>
 
-### 16 - Heroic Games Launcher
+### 15 - Heroic Games Launcher
 
 Nas configurações do jogo, na opção "outros", habilite o MangoHud e o uso da
 placa dedicada.
@@ -265,7 +260,7 @@ Para jogos os OpenGL o nome da variável é `SDL_DYNAMIC_API` e o valor é
 `/usr/lib64/libSDL2-2.0.so`
 <br><br>
 
-### 17 - Intel SSD 660p - [Solidigm™ Storage Tool (SST)](https://www.solidigm.com/content/solidigm/us/en/support-page/drivers-downloads/ka-00085.html)
+### 16 - Intel SSD 660p - [Solidigm™ Storage Tool (SST)](https://www.solidigm.com/content/solidigm/us/en/support-page/drivers-downloads/ka-00085.html)
 
 Para liberar o cache do disco NVMe instale o programa
 [solidigm-sst-storage-tool-cli](https://aur.archlinux.org/packages/solidigm-sst-storage-tool-cli)

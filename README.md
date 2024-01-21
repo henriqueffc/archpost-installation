@@ -54,10 +54,9 @@ Ordem de uso dos scripts:
 - 4-flatpak-e-mc.sh
 - 5-yay.sh
 - 6-grid.sh
-- 7-extensions.sh
-- 8-zsh-ohmyzsh.sh
-- 9-podman-distrobox.sh
-- 10-helix.sh
+- 7-zsh-ohmyzsh.sh
+- 8-podman-distrobox.sh
+- 9-helix.sh
 
 Recomendo reinicializar o sistema após a execução de cada script.
 
