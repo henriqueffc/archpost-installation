@@ -57,6 +57,8 @@ flatpak install flathub app.drey.Dialect -y
 flatpak install flathub org.gnome.Podcasts -y
 flatpak install flathub org.cryptomator.Cryptomator -y
 flatpak install flathub io.github.fabrialberio.pinapp -y
+flatpak install flathub it.mijorus.smile -y
+flatpak install flathub it.mijorus.collector -y
 
 # Flathub Remote-Beta
 echo -e "$AZUL
