@@ -37,6 +37,7 @@ dialog
 discount
 djvulibre
 duf
+e2fsprogs
 ebook-tools
 eog-plugins
 espeak-ng
