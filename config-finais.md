@@ -70,19 +70,21 @@ seguintes especificações `commit=60` e `barrier=0`.
 
 ### 8 - Ext4
 
-Habilite o fast commit para todas as partições Ext4 do sistema.
+Habilite o
+[fast commit](https://wiki.archlinux.org/title/Ext4#Enabling_fast_commit_in_existing_filesystems)
+para todas as partições Ext4 do sistema.
 
-`sudo tune2fs -O fast_commit /dev/nome_da_partição`
+`sudo tune2fs -O fast_commit /dev/caminho_da_partição`
 
 Habilite a checagem do filesystem pelo tune2fs/e2fsck no boot para todas as
 partições Ext4 do sistema (no comando abaixo a verificação está definida para
 ser efetuada depois de 20 montagens da partição)
 
-`sudo tune2fs -c 20 /dev/nome_da_partição`
+`sudo tune2fs -c 20 /dev/caminho_da_partição`
 
 Verifique as informações das partições Ext4
 
-`sudo dumpe2fs -h /dev/nome_da_partição`
+`sudo dumpe2fs -h /dev/caminho_da_partição`
 
 Faça as configurações no fstab disponíveis no link
 <https://wiki.archlinux.org/title/Fsck#fstab_options> para as partições do
@@ -90,35 +92,50 @@ sistema que são montadas no boot e que não sejam a partição root (Ext4) e a
 partição boot. Lembrando que as partições devem ser Ext4. Sem essa configuração
 (0 2) essas partições não serão verificadas pelo tune2fs na inicialização.
 
-Verifique se as partições Ext4 estão em 64-bit e com o metadata checksums
-habilitado.
+Verifique se as partições Ext4 estão em 64-bit e com o
+[metadata checksums](https://wiki.archlinux.org/title/Ext4#Enabling_metadata_checksums_in_existing_filesystems),
+metadata_csum_seed e orphan_file habilitados.
 
-`sudo dumpe2fs -h /dev/nome_da_partição | grep features`
+`sudo dumpe2fs -h /dev/caminho_da_partição | grep features`
 
-Exemplo com 64bit e metadata_csum habilitados:
+Exemplo com as flags habilitadas:
 
 ```
 Filesystem features: has_journal ext_attr resize_inode dir_index fast_commit
-filetype needs_recovery extent 64bit flex_bg sparse_super large_file huge_file
+orphan_file filetype needs_recovery extent 64bit flex_bg metadata_csum_seed sparse_super large_file huge_file
 dir_nlink extra_isize metadata_csum
 ```
 
-Caso alguma das duas opções destacadas no exemplo acima não constar na saída do
-comando, faça o seguinte:
+Caso alguma das flags mencionadas acima não estejam na saída do comando, faça o
+seguinte:
+
+Verifique se o [módulo](https://wiki.archlinux.org/title/Kernel_module)
+crc32c_intel está ativo (o i7-8565U possui a flag SSE 4.2 e pode operar com esse
+módulo):
+
+`lsmod | grep crc32c`
+
+Se o módulo não estiver habilitado inclua-o nos
+[módulos do mkinitcpio](https://wiki.archlinux.org/title/Mkinitcpio#MODULES).
 
 A partição objeto do procedimento não pode estar montada para a execução dos
 comandos abaixo.
 
-`sudo e2fsck -Df /dev/nome_da_partição` (otimização da partição - obrigatório)
+`sudo e2fsck -Df /dev/caminho_da_partição` (otimização da partição -
+obrigatório)
 
-`sudo resize2fs -b /dev/nome_da_partição` (conversão para 64-bit - somente se o
-64bit não estiver disponível na lista)
+`sudo resize2fs -b /dev/caminho_da_partição` (conversão para 64-bit - somente se
+o 64bit não estiver disponível na lista)
 
-`sudo tune2fs -O metadata_csum /dev/nome_da_partição` (habilitando o metadata
+`sudo tune2fs -O metadata_csum /dev/caminho_da_partição` (habilitando o metadata
 checksums - somente se o metadata_csum não estiver disponível na lista)
 
+`sudo tune2fs -O metadata_csum_seed /dev/caminho_da_partição`
+
+`sudo tune2fs -O orphan_file /dev/caminho_da_partição`
+
 Verifique a lista novamente usando
-`sudo dumpe2fs -h /dev/nome_da_partição | grep features`
+`sudo dumpe2fs -h /dev/camimho_da_partição | grep features`
 <br><br>
 
 ### 9 - Firefox
@@ -318,3 +335,29 @@ próximo a isso, ele irá travar em algum momento e corromper os dados. Se não
 liberar o cache o desempenho degrada com o passar do tempo. Uso o disco NVMe
 para jogos, VMs e outros dados não cruciais. Caso queira ver todas as
 propriedades do disco o comando é `sudo sst show -all -ssd PHNH************`.
+<br><br>
+
+#### 17 - Fallback
+
+Caso a imagem para o kernel fallback esteja sendo gerada pelo mkinitcpio, faça o
+seguinte:
+
+`sudo nano /etc/mkinitcpio.d/linux.preset`
+
+Mude a linha `PRESETS=('default' 'fallback')` para
+
+`PRESETS=('default')`
+
+Se o sistema possui outros kernels instalados, eles estarão na mesma pasta. Ex.:
+o kernel lts estará com o preset `linux-lts.preset`
+
+É preciso deletar as entradas para o loader do systemd-boot e as imagens do
+fallback. Os arquivos possuem fallback no nome. Fique atento a esse detalhe.
+
+`sudo rm /boot/loader/entries/linux-fallback.conf`
+
+`sudo rm /boot/initramfs-linux-fallback.img`
+
+Regenere o initramfs:
+
+`sudo mkinitcpio -P`
