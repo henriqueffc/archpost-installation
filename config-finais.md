@@ -140,6 +140,19 @@ checksums - somente se o metadata_csum não estiver disponível na lista)
 
 Verifique a lista novamente usando
 `sudo dumpe2fs -h /dev/camimho_da_partição | grep features`
+
+É possível habilitar o
+[casefold](https://wiki.archlinux.org/title/Ext4#Enabling_case-insensitive_mode)
+para case-insensitive mode. Lembrando que essa configuração não é aplicada
+globalmente, necessitando que seja habilitada localmente na pasta desejada. Use
+se tiver erros com jogos que precisem do wine e essa configuração seja indicada
+em tutoriais para a solução do problema.
+
+`sudo  tune2fs -O casefold /dev/caminho_da_partição`
+
+Para habilitar em uma pasta específica:
+
+`chattr +F /caminho/para/a/pasta`
 <br><br>
 
 ### 9 - Firefox
