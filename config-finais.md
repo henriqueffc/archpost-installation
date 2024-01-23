@@ -148,11 +148,32 @@ globalmente, necessitando que seja habilitada localmente na pasta desejada. Use
 se tiver erros com jogos que precisem do wine e essa configuração seja indicada
 em tutoriais para a solução do problema.
 
-`sudo  tune2fs -O casefold /dev/caminho_da_partição`
+Verifique se o kernel possui o suporte para o casefold:
 
-Para habilitar em uma pasta específica:
+`cat /sys/fs/ext4/features/casefold`
+
+Se suportar, habilite a flag com o comando abaixo:
+
+`sudo tune2fs -O casefold /dev/caminho_da_partição`
+
+Para habilitar o casefold em uma pasta, ela precisa estar vazia:
 
 `chattr +F /caminho/para/a/pasta`
+
+Para verificar se funcionou execute:
+
+`lsattr /caminho/para/a/pasta`
+
+```
+----------------F--- /pasta
+```
+
+A letra F indica que a pasta está com o casefold habilitado.
+
+Para retirar o casefold da pasta é preciso que o diretório esteja vazio. O
+comando é o seguinte:
+
+`chattr -F /caminho/para/a/pasta`
 <br><br>
 
 ### 9 - Firefox
