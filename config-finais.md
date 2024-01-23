@@ -82,9 +82,13 @@ ser efetuada depois de 20 montagens da partição)
 
 `sudo tune2fs -c 20 /dev/caminho_da_partição`
 
-Verifique as informações das partições Ext4
+Para verificar se a configuração foi habilitada, execute:
 
 `sudo dumpe2fs -h /dev/caminho_da_partição`
+
+```
+Maximum mount count:      20
+```
 
 Faça as configurações no fstab disponíveis no link
 <https://wiki.archlinux.org/title/Fsck#fstab_options> para as partições do
@@ -92,9 +96,9 @@ sistema que são montadas no boot e que não sejam a partição root (Ext4) e a
 partição boot. Lembrando que as partições devem ser Ext4. Sem essa configuração
 (0 2) essas partições não serão verificadas pelo tune2fs na inicialização.
 
-Verifique se as partições Ext4 estão em 64-bit e com o
+Verifique se as partições Ext4 estão em 64-bit, com o
 [metadata checksums](https://wiki.archlinux.org/title/Ext4#Enabling_metadata_checksums_in_existing_filesystems),
-metadata_csum_seed e orphan_file habilitados.
+o metadata_csum_seed e o orphan_file habilitados.
 
 `sudo dumpe2fs -h /dev/caminho_da_partição | grep features`
 
