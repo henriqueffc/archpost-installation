@@ -222,9 +222,12 @@ Diminuir o Brilho = Crtl + para baixo
 
 
 
-#### CLIPBOARD ####
+#### fzf - exemplos ####
 
-Ctrl + F9 = abre o painel do Clipboard Indicator. 
+fd  --type f --hidden --exclude .git | fzf (pesquisa com o fd. padrão para o fzf configurado no /etc/environment. basta digitar fzf no promt)
+find * -type f | fzf (pesquisa com o find)
+cat nome_do_arquivo | fzf (pesquisa no conteúdo do arquivo)
+rga-fzf argumento (pesquisa pela string em vários formatos de arquivo na pasta e nas subpastas)
 
 
 

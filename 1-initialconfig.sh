@@ -51,7 +51,7 @@ echo '__GL_SHADER_DISK_CACHE_SKIP_CLEANUP=1' >>/etc/environment
 echo '__GL_ExperimentalPerfStrategy=1' >>/etc/environment
 echo 'mesa_glthread=true' >>/etc/environment
 echo 'FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border"' >>/etc/environment
-echo 'FZF_DEFAULT_COMMAND="fd --type f --strip-cwd-prefix --hidden --follow --exclude .git"' >>/etc/environment
+echo 'FZF_DEFAULT_COMMAND="fd --type f --hidden --exclude .git"' >>/etc/environment
 echo 'GST_PLUGIN_FEATURE_RANK=qsvvp9dec:MAX,qsvh264dec:MAX,qsvh265dec:MAX,qsvjpegdec:MAX,vavp9dec:MAX,vavp8dec:MAX,vah264dec:MAX,vah265dec:MAX,vampeg2dec:MAX,vajpegdec:MAX' >>/etc/environment
 echo 'ANV_VIDEO_DECODE=1' >>/etc/environment
 echo 'VK_DRIVER_FILES=/usr/share/vulkan/icd.d/intel_icd.x86_64.json' >>/etc/environment
