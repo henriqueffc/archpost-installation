@@ -334,9 +334,7 @@ gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profi
 
 # Clamav
 sudo freshclam
-sudo cp /etc/clamav/freshclam.conf /etc/clamav/freshclam.conf.bak
-sudo sed -i '/#Checks 24/c\Checks 4' /etc/clamav/freshclam.conf
-sudo systemctl enable --now clamav-freshclam.service
+sudo systemctl enable clamav-freshclam-once.timer
 
 # mpv
 mkdir -p $HOME/.config/mpv/
