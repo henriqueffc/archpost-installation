@@ -203,7 +203,7 @@ Exemplo com o Ubuntu:
 `Exec=/usr/bin/distrobox enter --name ubuntu -- bash -l` ou se quiser lançar com
 o Wezterm:
 
-`Exec=/usr/bin/wezterm start -e distrobox-enter -n ubuntu -- bash -l`
+`Exec=/usr/bin/wezterm -e --always-new-process distrobox-enter -n ubuntu -- bash -l`
 
 Se usar o Wezterm para lançar a partir do .desktop modifique a opção Terminal no
 arquivo .desktop para false - `Terminal=false`
@@ -227,7 +227,7 @@ Nome : terminal ubuntu
 Comando : `gnome-terminal --profile=ubuntu`
 
 Caso queira inicializar usando o Wezterm o comando é o seguinte:
-`wezterm start -e distrobox-enter -n ubuntu -- bash -l`
+`wezterm -e --always-new-process distrobox-enter -n ubuntu -- bash -l`
 
 Atalho : Shift + Ctrl + D
 <br><br>
