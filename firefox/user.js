@@ -76,6 +76,7 @@ user_pref("media.memory_cache_max_size", 65536);
 user_pref("media.peerconnection.video.vp9_preferred", true);
 user_pref("media.rdd-vpx.enabled", false);
 user_pref("media.videocontrols.picture-in-picture.video-toggle.has-used", true);
+user_pref("media.webrtc.camera.allow-pipewire", true);
 user_pref("media.webrtc.hw.h264.enabled", true);
 user_pref("media.webrtc.platformencoder", true);
 user_pref("mousewheel.default.delta_multiplier_y", 50);
