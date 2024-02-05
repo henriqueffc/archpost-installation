@@ -267,10 +267,13 @@ Opções de inicialização para os jogos na Steam usando a placa dedicada Nvidi
 
 **OpenGL + Nvidia**
 
-`__GL_SYNC_TO_VBLANK=0 __GL_MaxFramesAllowed=1 SDL_DYNAMIC_API=/usr/lib64/libSDL2-2.0.so mangohud --dlsym prime-run %command%`
+`__EGL_VENDOR_LIBRARY_FILENAMES=/usr/share/glvnd/egl_vendor.d/10_nvidia.json __GL_MaxFramesAllowed=1 SDL_DYNAMIC_API=/usr/lib64/libSDL2-2.0.so mangohud --dlsym prime-run %command%`
 
 É possível utilizar o parâmetro `__GL_THREADED_OPTIMIZATIONS=1`, mas é preciso
 efetuar testes. Tem jogos que não funcionam com ele.
+
+O parâmetro `__GL_SYNC_TO_VBLANK=0` pode ajudar em jogos que estejam muito
+lentos, mas o uso da GPU sobe consideravelmente.
 
 Caso o `SDL_DYNAMIC_API=/usr/lib64/libSDL2-2.0.so` não funcione, substitua por
 `SDL_VIDEODRIVER=X11`
@@ -311,8 +314,10 @@ variável `VK_DRIVER_FILES` - Valor `/usr/share/vulkan/icd.d/nvidia_icd.json`
 
 **OpenGL**
 
-Para jogos os OpenGL o nome da variável é `SDL_DYNAMIC_API` e o valor é
-`/usr/lib64/libSDL2-2.0.so`
+Para jogos OpenGL use as seguintes variáveis: 1ª nome da variável
+`SDL_DYNAMIC_API` valor `/usr/lib64/libSDL2-2.0.so` 2ª nome da variável
+`__EGL_VENDOR_LIBRARY_FILENAMES` valor
+`/usr/share/glvnd/egl_vendor.d/10_nvidia.json`
 <br><br>
 
 ### 16 - Intel SSD 660p - [Solidigm™ Storage Tool (SST)](https://www.solidigm.com/content/solidigm/us/en/support-page/drivers-downloads/ka-00085.html)
