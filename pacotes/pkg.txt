@@ -43,6 +43,7 @@ eog-plugins
 espeak-ng
 eza
 exfatprogs
+expac
 fastfetch
 fd
 firefox
@@ -178,7 +179,7 @@ veracrypt
 webp-pixbuf-loader
 weechat
 wezterm
-wine-staging
+wine
 wine-gecko
 wine-mono
 winetricks
