@@ -148,6 +148,7 @@ turbo
 
 
 
+
 #### Wl-clipboard ####
 
 copy a simple text message = wl-copy Hello world!
@@ -176,6 +177,7 @@ SHIFT +  Page Down ou Page Up = rolagem pela tela do terminal
 CTRL + D = fecha painel e aba
 CTRL + SHIFT + L = debug mode
 Ctrl + Z coloca em segundo plano alguma tarefa ou programa que você está usando no terminal. Para voltar ao programa digite "fg".
+wezterm imgcat /path/to/image.png = Para vizualizar imagens.
 
 
 
@@ -208,7 +210,9 @@ Shift + Super + End move a janela do programa para a última ou para a primeira 
 Shift + Super + Home move para a primeira área de trabalho
 Shift + Super + Page Up move a janela do programa para o espaço de trabalho a direita
 Shift + Super + Page Down move a janela do programa para o espaço de trabalho a esquerda
-ALT+F2 reinicia o Shell. Na janela de execução que se abrir, digite a letra R e tecle Enter.
+ALT+ F2 reinicia o Shell. Na janela de execução que se abrir, digite a letra R e tecle Enter.
+ALT + F2 + lg = debugger / Looking Glass
+Ctrl + Shift + D = GTK Inspector tool (faça sobre um aplicativo GTK)
 Scroll do mouse = quando clicado em uma palavra selecionada no terminal, ele automaticamente a copia para a linha de comando.
 
 
@@ -291,7 +295,7 @@ Atl ao clicar e arrastar um arquivo para outro local no Nautilus dá a opção d
 ALT + cima = volta ao diretório acima
 Ctrl + H = mostrar / esconder arquivos ocultos
 Ctrl + L = mostra o caminho da pasta (pwd)
-
+Ctrl + L + admin:// = modo administrador do Nautilus
 
 
 
@@ -352,3 +356,65 @@ F12 (Console de depuração)
 CTRL + = (zoom in)
 CTRL + - (zoom out - não é o sinal de menos, é o sinal que está junto do _)
 CTRL + Shift + V = colar sem formatação.
+
+
+
+
+#### Pacman ####
+
+pacman -Ss pacote = pesquisa por pacote (alias search, mas com -Si e fzf)
+pacman -Ss '^string-' ou somente ^string = pesquisa mais precisa
+pacman -F arquivos_do_pacote_ou_/caminho/do/arquivo = mostra a qual pacote pertence o arquivo
+pacman -Qo /caminho/para/o/arquivo = mostra a qual pacote pertence o arquivo presente no sistema
+pacman -Si pacote = mostra informações sobre o pacote
+pacman -Qi pacote = mostra informações do pacote instalado no sistema
+pacman -Qii pacote = mostra as informações do pacote e os arquivos de configuração com ou sem modificação
+pacman -Ql pacote = lista os arquivos instalados pelo pacote
+pacman -Fl pacote = lista os arquivos que serão instalados no sistema por um pacote
+pacman -Qk pacote = mostra se todos os arquivos do pacote foram instalados (mais um k apresenta mais informações)
+pacman -Sw pacote = faz o download do pacote sem instalar
+pacman -U pacote.pkg.tar.zst = instala o pacote
+
+Usando o expac
+
+expac -S '%D' package = lista as dependências de um pacote
+expac -S '%o' package = lista as dependências opcionais de um pacote
+
+Opções:
+%a    architecture
+%B    backup files
+%b    build date
+%C    conflicts with (no version strings)
+%D    depends on
+%d    description
+%E    depends on (no version strings)
+%e    package base
+%f    filename (only with -S)
+%F    files (only with -Q)
+%g    base64 encoded PGP signature (only with -S)
+%G    groups
+%H    conflicts with
+%h    sha256sum
+%i    has install scriptlet (only with -Q)
+%k    download size (only with -S)
+%l    install date (only with -Q)
+%L    licenses
+%m    install size
+%M    modified backup files (only with -Q)
+%n    package name
+%N    required by
+%O    optional deps
+%o    optional deps (no descriptions)
+%p    packager name
+%P    provides
+%R    replaces (no version strings)
+%r    repo
+%s    md5sum
+%S    provides (no version strings)
+%T    replaces
+%u    project URL
+%V    package validation method
+%v    version
+%w    install reason (only with -Q)
+%!    result number (auto-incremented counter, starts at 0)
+%%    literal %
