@@ -51,7 +51,7 @@ Ordem de uso dos scripts:
   `sudo ./initialconfig.sh`)
 - 2-video-e-audio.sh
 - 3-pacotes.sh
-- 4-flatpak-e-mc.sh
+- 4-flatpak.sh
 - 5-yay.sh
 - 6-grid.sh
 - 7-zsh-ohmyzsh.sh
