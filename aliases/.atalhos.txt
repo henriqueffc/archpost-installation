@@ -146,6 +146,7 @@ dirty
 progress
 scanports
 turbo
+z
 
 
 
