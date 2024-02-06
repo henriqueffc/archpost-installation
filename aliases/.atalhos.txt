@@ -70,7 +70,6 @@ duf = df
 gdu = ncdu / du
 sd = sed
 tldr = cheat
-mc = file manager
 aria2c = curl/wget
 fuck = corrects your previous console command
 trash = envie arquivos para a lixeira / trash-list = lista dos arquivos na lixeira / trash-restore = restaura arquivo da lixeira
@@ -81,6 +80,8 @@ hexyl = hexdump
 bandwhich = nethogs (alias rede)
 lnav = Log file navigator
 glow = visualizador de markdown (glow -p)
+zoxide = A smarter cd command (z /caminho/da/pasta - z pasta)
+yazi = file manager
 xwininfo = pode ser usado para verificar se o aplicativo está rodando em Wayland ou XWayland
 
 

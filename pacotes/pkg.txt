@@ -46,6 +46,7 @@ exfatprogs
 expac
 fastfetch
 fd
+ffmpegthumbnailer
 firefox
 firefox-i18n-pt-br
 firewalld
@@ -106,7 +107,6 @@ mangohud
 magic-wormhole
 man-pages
 man-pages-pt_br
-mc
 meld
 mpv
 nautilus-image-converter
@@ -172,6 +172,7 @@ translate-shell
 turbostat
 usbutils
 unace
+unarchiver
 unrar
 unzip
 vagrant
@@ -196,7 +197,9 @@ xorg-xdpyinfo
 xorg-xkill
 xorg-xwininfo
 xournalpp
+yazi
 yt-dlp
 zenity
 zip
+zoxide
 zsh
