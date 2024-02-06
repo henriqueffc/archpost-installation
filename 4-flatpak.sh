@@ -58,6 +58,7 @@ flatpak install flathub org.cryptomator.Cryptomator -y
 flatpak install flathub io.github.fabrialberio.pinapp -y
 flatpak install flathub it.mijorus.smile -y
 flatpak install flathub it.mijorus.collector -y
+flatpak install flathub info.febvre.Komikku -y
 
 # Flathub Remote-Beta
 echo -e "$AZUL
@@ -76,15 +77,3 @@ echo -e "$AZUL
 $FIM"
 
 flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
-
-# Configurações para o Midnight Commander
-echo -e "$AZUL
--------------------------------------------------------------------------
-                 Instalando o tema do Midnight Commander
--------------------------------------------------------------------------
-$FIM"
-
-aria2c https://raw.githubusercontent.com/dracula/midnight-commander/master/skins/dracula256.ini
-mkdir -p ~/.local/share/mc/skins
-mv dracula256.ini ~/.local/share/mc/skins
-sed -i 's/marked = rgb253;color0/\marked = color0;rgb253/' ~/.local/share/mc/skins/dracula256.ini
