@@ -46,14 +46,12 @@ flatpak install flathub it.mijorus.gearlever -y
 flatpak install flathub me.iepure.devtoolbox -y
 flatpak install flathub com.github.ADBeveridge.Raider -y
 flatpak install flathub org.gnome.World.PikaBackup -y
-flatpak install flathub io.bassi.Amberol -y
 flatpak install flathub io.github.flattool.Warehouse -y
 flatpak install flathub com.github.finefindus.eyedropper -y
 flatpak install flathub com.github.johnfactotum.Foliate -y
 flatpak install flathub fr.handbrake.ghb -y
 flatpak install flathub fr.handbrake.ghb.Plugin.IntelMediaSDK -y
 flatpak install flathub app.drey.Dialect -y
-flatpak install flathub org.gnome.Podcasts -y
 flatpak install flathub org.cryptomator.Cryptomator -y
 flatpak install flathub io.github.fabrialberio.pinapp -y
 flatpak install flathub it.mijorus.smile -y
