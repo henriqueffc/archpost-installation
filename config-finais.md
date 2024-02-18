@@ -279,7 +279,7 @@ Caso o `SDL_DYNAMIC_API=/usr/lib64/libSDL2-2.0.so` não funcione, substitua por
 `SDL_VIDEODRIVER=X11`
 
 O prime-run no Arch Linux faz o mesmo que
-`__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia`
+`__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRARY_NAME=nvidia`
 
 **DXVK - Vulkan - Nvidia**
 
