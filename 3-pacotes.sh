@@ -348,6 +348,9 @@ sed -i 's|Exec=.*|Exec=/usr/bin/obsidian --ozone-platform-hint=auto %U|g' ~/.loc
 cp /usr/share/applications/heroic.desktop ~/.local/share/applications/
 sed -i 's|Exec=.*|Exec=/opt/Heroic/heroic --ozone-platform-hint=auto %U|g' ~/.local/share/applications/heroic.desktop
 
+# Chromium
+cp ./chromium/chromium-flags.conf $HOME/.config/
+
 # Fastfetch
 mkdir -p $HOME/.config/fastfetch/
 cp ./fastfetch/config.jsonc $HOME/.config/fastfetch/

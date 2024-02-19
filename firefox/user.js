@@ -57,7 +57,7 @@ user_pref("gfx.webrender.enabled", true);
 user_pref("gfx.webrender.precache-shaders", true);
 user_pref("gfx.webrender.quality.force-subpixel-aa-where-possible", true);
 user_pref("gfx.x11-egl.force-disabled", true);
-user_pref("image.jxl.enabled", true);
+//user_pref("image.jxl.enabled", true);
 user_pref("image.mem.decode_bytes_at_a_time", 32768);
 user_pref("intl.accept_languages", "pt-br,en-us,en");
 user_pref("intl.locale.requested", "pt-BR,en-US");
