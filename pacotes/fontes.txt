@@ -3,11 +3,13 @@ noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
 terminus-font
+ttf-arphic-uming
 ttf-bitstream-vera
 ttf-croscore
 ttf-dejavu
 ttf-droid
 ttf-ibm-plex
+ttf-indic-otf
 ttf-jetbrains-mono-nerd
 ttf-liberation
 ttf-meslo-nerd
