@@ -13,7 +13,6 @@ gst-plugin-qsv
 gst-plugin-va
 gst-plugin-msdk
 gstreamer
-gstreamer-vaapi
 jasper
 lame
 libdca
