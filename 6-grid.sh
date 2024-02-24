@@ -18,7 +18,7 @@ gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folder
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/GNOME/ apps "['org.gnome.Contacts.desktop', 'org.gnome.Polari.desktop', 'org.gnome.Maps.desktop', 'org.gnome.Photos.desktop', 'org.gnome.Weather.desktop', 'org.gnome.Totem.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Extensions.desktop', 'simple-scan.desktop', 'org.gnome.Snapshot.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.Epiphany.desktop', 'org.gnome.Music.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Characters.desktop', 'org.gnome.GHex.desktop', 'org.gnome.Meld.desktop', 'org.gnome.dfeet.desktop', 'gnome-nettool.desktop', 'org.gnome.font-viewer.desktop', 'yelp.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Console.desktop', 'org.gnome.Loupe.desktop', 'org.gnome.eog.desktop', 'org.gnome.Logs.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Connections.desktop', 'org.gnome.Cheese.desktop', 'org.gnome.Tour.desktop', 'org.gnome.baobab.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.Sysprof.desktop', 'ca.desrt.dconf-editor.desktop']"
 
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Internet/ name "Internet"
-gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Internet/ apps "['weechat.desktop', 'com.skype.Client.desktop', 'torbrowser.desktop', 'torbrowser-settings.desktop', 'chromium.desktop']"
+gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Internet/ apps "['weechat.desktop', 'firefox.desktop', 'com.skype.Client.desktop', 'torbrowser.desktop', 'torbrowser-settings.desktop', 'chromium.desktop']"
 
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Development/ name "Development"
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Development/ apps "['io.podman_desktop.PodmanDesktop.desktop', 'me.iepure.devtoolbox.desktop', 'nvim.desktop', 'com.github.marhkb.Pods.desktop']"
@@ -29,12 +29,12 @@ gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folder
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Multimídia/ name "Multimídia"
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Multimídia/ apps "['org.gnome.gitlab.YaLTeR.VideoTrimmer.desktop', 'io.github.celluloid_player.Celluloid.desktop', 'com.github.PintaProject.Pinta.desktop', 'org.kde.kdenlive.desktop', 'org.gnome.SoundRecorder.desktop', 'com.obsproject.Studio.desktop', 'com.belmoussaoui.Obfuscate.desktop', 'fr.handbrake.ghb.desktop', 'com.github.unrud.VideoDownloader.desktop', 'fr.romainvigier.MetadataCleaner.desktop', 'com.github.wwmm.easyeffects.desktop', 'com.github.huluti.Curtail.desktop', 'mpv.desktop', 'org.pipewire.Helvum.desktop', 'vlc.desktop', 'io.gitlab.adhami3310.Converter.desktop', 'org.gimp.GIMP.desktop', 'soundconverter.desktop']"
 
-gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Utilities/ apps "['gtk-lshw.desktop', 'yazi.desktop', 'gsmartcontrol.desktop', 'kdiskmark.desktop', 'btop.desktop', 'htop.desktop', 'bssh.desktop', 'bvnc.desktop', 'avahi-discover.desktop', 'qvidcap.desktop', 'vim.desktop', 'qv4l2.desktop', 'remote-viewer.desktop', 'assistant.desktop', 'designer.desktop', 'lstopo.desktop', 'qdbusviewer.desktop', 'electron25.desktop', 'linguist.desktop']"
+gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Utilities/ apps "['gtk-lshw.desktop', 'yazi.desktop', 'gsmartcontrol.desktop', 'kdiskmark.desktop', 'btop.desktop', 'htop.desktop', 'bssh.desktop', 'bvnc.desktop', 'avahi-discover.desktop', 'qvidcap.desktop', 'vim.desktop', 'qv4l2.desktop', 'remote-viewer.desktop', 'assistant.desktop', 'designer.desktop', 'lstopo.desktop', 'qdbusviewer.desktop', 'electron28.desktop', 'linguist.desktop']"
 
 gsettings set org.gnome.desktop.app-folders folder-children "['Utilities', 'YaST', 'Office', 'Programas', 'Jogos', 'Nvidia', 'Development', 'GNOME', 'Internet', 'Multimídia']"
 
 # Dock
-gsettings set org.gnome.shell favorite-apps "['org.wezfurlong.wezterm.desktop', 'org.mozilla.Thunderbird.desktop', 'firefox.desktop', 'obsidian.desktop', 'org.gnome.Rhythmbox3.desktop', 'org.gnome.Nautilus.desktop']"
+gsettings set org.gnome.shell favorite-apps "['org.wezfurlong.wezterm.desktop', 'org.mozilla.Thunderbird.desktop', 'microsoft-edge.desktop', 'obsidian.desktop', 'org.gnome.Rhythmbox3.desktop', 'org.gnome.Nautilus.desktop']"
 
 # Nautilus Bookmarks
 mkdir ~/ToDo/
