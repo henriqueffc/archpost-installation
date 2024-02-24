@@ -71,4 +71,4 @@ Histórico dos resultados de desempenho do processador usando o Arch Linux -
 
 ![Tela 1](.github/screenshots/1.png)
 
-![Tela 2 - Alacritty/Tmux](.github/screenshots/2.png)
+![Tela 2](.github/screenshots/2.png)
