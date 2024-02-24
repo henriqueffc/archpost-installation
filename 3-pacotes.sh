@@ -340,16 +340,12 @@ sudo systemctl enable clamav-freshclam-once.timer
 mkdir -p $HOME/.config/mpv/
 cp ./mpv/mpv.conf $HOME/.config/mpv/
 
-# Obsidian - Wayland
-cp /usr/share/applications/obsidian.desktop ~/.local/share/applications/
-sed -i 's|Exec=.*|Exec=/usr/bin/obsidian --ozone-platform-hint=auto %U|g' ~/.local/share/applications/obsidian.desktop
-
 # Heroic Games Launcher - Wayland
 cp /usr/share/applications/heroic.desktop ~/.local/share/applications/
 sed -i 's|Exec=.*|Exec=/opt/Heroic/heroic --ozone-platform-hint=auto %U|g' ~/.local/share/applications/heroic.desktop
 
-# Chromium
-cp ./chromium/chromium-flags.conf $HOME/.config/
+# Arquivos com as flags para o Chromium e para o Microsoft Edge
+cp ./chromium/*.conf $HOME/.config/
 
 # Fastfetch
 mkdir -p $HOME/.config/fastfetch/
