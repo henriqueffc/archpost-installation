@@ -324,7 +324,66 @@ Alt + Print = Faz a captura de uma janela salvando na parta imagens e disponibil
 
 
 
-#### FIREFOX E CHROME ####
+#### Microsoft Edge ####
+
+Ctrl + A = selecionar tudo
+
+Ctrl + K = abrir uma consulta de pesquisa na barra de endereços
+
+Ctrl + O = abrir arquivo do computador no Edge (texto e imagens)
+
+Ctrl + W = fecha a aba atual
+
+Ctrl + Shift + W = Feche a janela atual
+
+Ctrl + l ou somente F4 = acessa a barra de endereços
+
+Ctrl + t = nova aba
+
+Ctrl + N = nova janela
+
+Ctrl + Shift + N = Abrir uma nova janela InPrivate
+
+Ctrl + tab = muda para a próxima aba
+
+Ctrl + Shift + Tab = Mudar para a guia anterior
+
+Ctrl + Page Up = muda para aba da esquerda
+
+Ctrl + Page Down = muda para aba da direita
+
+Ctrl + D = salvar a guia como favorita
+
+Ctrl + F ou somente F3 = localizar na página
+
+Alt + F = abrir o menu de configurações
+
+Ctrl + H = abrir o histórico
+
+Ctrl + Shift + O = Abrir Favoritos 
+
+Ctrl + Shift + Y = Abrir Coleções
+
+Ctrl + Shift + I = Abrir Ferramentas de Desenvolvedor
+
+Ctrl + Shift + T = Reabrir a última guia fechada e alternar para ela
+
+Alt + Seta para a esquerda = Voltar
+
+Alt + Seta para a direita = Avançar
+
+Alt + Home = Abrir a home page na guia atual
+
+F5 = Recarregar a página atual
+
+Shift + F5 = Recarregar a guia atual, ignorando o conteúdo em cache
+
+F9 = Entrar ou sair da Leitura Avançada
+
+
+
+
+#### FIREFOX ####
 
 Ctrl + Shift + U = abre a extensão Bitwarden no Firefox.
 Ctrl + Shit + 1 ou 2 ou 3 = abrir diferentes containers
