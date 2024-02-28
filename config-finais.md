@@ -10,11 +10,11 @@ Habilite o cache de escrita e o APM com o valor de 254 no programa Discos.
 Configure o tema dos programas que usam QT através dos aplicativos _Qt5
 Settings_ e _Qt6 Settings_
 
-Escolha o estilo kvantum (configurado pelo script nº 3) e tema de ícones breeze
+Escolha o estilo breeze, paleta personalizada darker e tema de ícones breeze
 dark.
 
 Nos programas que usam QT e permitem configurar a aparência (kdenlive, okular,
-vlc, etc.) escolha o tema kvantum.
+vlc, keepassxc, etc.) escolha o tema breeze dark ou escuro.
 
 Execute os seguintes comandos para unificar os temas dos flatpaks instalados no
 sistema.
