@@ -57,6 +57,7 @@ flatpak install flathub io.github.fabrialberio.pinapp -y
 flatpak install flathub it.mijorus.smile -y
 flatpak install flathub it.mijorus.collector -y
 flatpak install flathub info.febvre.Komikku -y
+flatpak install flathub de.haeckerfelix.Fragments -y
 
 # Flathub Remote-Beta
 echo -e "$AZUL
