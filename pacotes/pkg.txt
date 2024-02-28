@@ -87,8 +87,6 @@ kdegraphics-mobipocket
 kdenlive
 kdiskmark
 keepassxc
-kvantum
-kvantum-theme-materia
 lnav
 lib32-gamemode
 lib32-mangohud
@@ -131,7 +129,6 @@ polari
 procs
 progress
 python-nautilus
-qbittorrent
 qt5ct
 qt6ct
 qt5-wayland
