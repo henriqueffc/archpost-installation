@@ -317,10 +317,6 @@ echo -e "$AZUL \t Mlocate habilitado $FIM"
 sudo mkdir /etc/pacman.d/hooks
 sudo cp ./hooks/*.hook /etc/pacman.d/hooks/
 
-# Kvantum
-mkdir -p ~/.config/Kvantum
-mv ./kvantum/kvantum.kvconfig ~/.config/Kvantum/
-
 # Sensors
 sudo sensors-detect
 
