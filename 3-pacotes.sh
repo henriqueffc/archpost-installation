@@ -340,14 +340,18 @@ cp ./mpv/mpv.conf $HOME/.config/mpv/
 cp /usr/share/applications/heroic.desktop ~/.local/share/applications/
 sed -i 's|Exec=.*|Exec=/opt/Heroic/heroic --ozone-platform-hint=auto %U|g' ~/.local/share/applications/heroic.desktop
 
-# Arquivos com as flags para o Chromium e para o Microsoft Edge
-cp ./chromium/*.conf $HOME/.config/
-
 # Fastfetch
 mkdir -p $HOME/.config/fastfetch/
 cp ./fastfetch/config.jsonc $HOME/.config/fastfetch/
 
 # wireless-regdb - instalado pelo script 1.
 sudo sed -i '$a WIRELESS_REGDOM="BR"' /etc/conf.d/wireless-regdom
+
+# Arquivos com as flags para o Chromium e para o Microsoft Edge
+cp ./flags/chromium-flags.conf $HOME/.config/
+cp ./flags/microsoft-edge-stable-flags.conf $HOME/.config/
+
+# Arquivo com as flags para o Obsidian
+cp ./flags/user-flags.conf $HOME/.config/obsidian/
 
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
