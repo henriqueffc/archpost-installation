@@ -58,6 +58,7 @@ flatpak install flathub it.mijorus.smile -y
 flatpak install flathub it.mijorus.collector -y
 flatpak install flathub info.febvre.Komikku -y
 flatpak install flathub de.haeckerfelix.Fragments -y
+flatpak install flathub app.drey.KeyRack -y
 
 # Flathub Remote-Beta
 echo -e "$AZUL
