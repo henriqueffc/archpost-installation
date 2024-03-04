@@ -309,15 +309,17 @@ placa dedicada.
 
 **Vulkan**
 
-Na opção "avançado", configure a variável de ambiente para o Vulkan. Nome da
-variável `VK_DRIVER_FILES` - Valor `/usr/share/vulkan/icd.d/nvidia_icd.json`
+Na opção "avançado", configure as variáveis de ambiente para o Vulkan. Ex.: nome
+da variável `VK_DRIVER_FILES` - Valor `/usr/share/vulkan/icd.d/nvidia_icd.json`
+Veja os restantes das variáveis no item Steam / DXVK - Vulkan - Nvidia.
 
 **OpenGL**
 
 Para jogos OpenGL use as seguintes variáveis: 1ª nome da variável
 `SDL_DYNAMIC_API` valor `/usr/lib64/libSDL2-2.0.so` 2ª nome da variável
 `__EGL_VENDOR_LIBRARY_FILENAMES` valor
-`/usr/share/glvnd/egl_vendor.d/10_nvidia.json`
+`/usr/share/glvnd/egl_vendor.d/10_nvidia.json` 3ª variável
+`__GL_MaxFramesAllowed` valor `1`
 <br><br>
 
 ### 16 - Intel SSD 660p - [Solidigm™ Storage Tool (SST)](https://www.solidigm.com/content/solidigm/us/en/support-page/drivers-downloads/ka-00085.html)
