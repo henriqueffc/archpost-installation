@@ -92,7 +92,7 @@ sed -i 's/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -z --threads=0 -)/g' /etc/ma
 # Intel - i915 / HOOKS / mkinitcpio.conf
 cp /etc/mkinitcpio.conf /etc/mkinitcpio.conf.bak
 sed -i 's/MODULES=.*/MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)/g' /etc/mkinitcpio.conf
-sed -i 's/HOOKS=.*/HOOKS=(systemd autodetect microcode modconf kms block keyboard sd-vconsole filesystems fsck)/g' /etc/mkinitcpio.conf
+sed -i 's/HOOKS=.*/HOOKS=(systemd autodetect microcode modconf kms keyboard sd-vconsole block filesystems fsck)/g' /etc/mkinitcpio.conf
 sed -i 's/#MODULES_DECOMPRESS="yes"/MODULES_DECOMPRESS="yes"/g' /etc/mkinitcpio.conf
 mkinitcpio -P
 
