@@ -16,6 +16,7 @@ blas64-openblas
 bluez-obex
 bluez-utils
 breeze
+breeze5
 bat
 bat-extras
 btop
