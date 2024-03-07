@@ -194,7 +194,7 @@ funcione instale a atualização para o Xpad disponível no site
 ### 11 - Distrobox
 
 Caso use alguma distro pelo Distrobox configure o atalho do desktop. Executar
-usando o bash, com zsh ocorrem alguns problemas.
+usando o bash, com zsh ocorrem alguns problemas, mas se o container for criado com uma home própria, o funcionamento do shell zsh será normal.
 
 Exemplo com o Ubuntu:
 
