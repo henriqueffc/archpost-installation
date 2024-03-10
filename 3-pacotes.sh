@@ -39,9 +39,8 @@ sudo systemctl enable fstrim.timer
 echo -e "$AZUL \t fstrim.timer habilitado $FIM"
 sudo systemctl enable systemd-boot-update
 echo -e "$AZUL \t systemd-boot-update habilitado $FIM"
-sudo systemctl enable bluetooth.service
-systemctl enable --user obex.service
-echo -e "$AZUL \t bluetooth.service e obex.service habilitados $FIM"
+sudo systemctl enable thermald.service
+echo -e "$AZUL \t thermald habilitado $FIM"
 sudo systemctl enable --now firewalld.service
 echo -e "$AZUL \t firewalld.service habilitado $FIM"
 sudo systemctl start pkgstats.timer
@@ -77,11 +76,6 @@ sudo sed -i '$ a min_freq="1800MHz"' /etc/default/cpupower
 sudo sed -i '$ a max_freq="4600MHz"' /etc/default/cpupower
 sudo systemctl enable cpupower.service
 echo -e "$AZUL \t CPU Power e x86_energy_perf_policy habilitados $FIM"
-
-# throttled
-sudo sed -i 's|Sysfs_Power_Path.*|Sysfs_Power_Path: /sys/class/power_supply/AD*/online|g' /etc/throttled.conf
-sudo systemctl enable throttled.service
-echo -e "$AZUL \t CPU throttled habilitado $FIM"
 
 # tealdeer (implementação do tldr)
 tldr --update
