@@ -59,8 +59,8 @@ echo '__EGL_VENDOR_LIBRARY_FILENAMES=/usr/share/glvnd/egl_vendor.d/50_mesa.json:
 echo 'ELECTRON_OZONE_PLATFORM_HINT=wayland' >>/etc/environment
 echo 'MUTTER_ALLOW_HYBRID_GPUS=1' >>/etc/environment
 
-# PC speaker - turn off beep shutdown
-echo 'blacklist pcspkr' >/etc/modprobe.d/nobeep.conf
+# PC speaker - turn off beep shutdown e desabilitar o Bluetooth
+echo -e 'blacklist pcspkr\nblacklist btusb' >/etc/modprobe.d/blacklist.conf
 
 # Linux-firmware e wireless-regdb
 pacman -Syu linux-firmware linux-firmware-whence wireless-regdb --needed --noconfirm
