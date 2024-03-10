@@ -161,7 +161,7 @@ tesseract-data-eng
 tesseract-data-por
 texinfo
 thefuck
-throttled
+thermald
 thunderbird
 thunderbird-i18n-pt-br
 thunderbird-dark-reader
