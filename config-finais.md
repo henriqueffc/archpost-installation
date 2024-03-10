@@ -194,7 +194,8 @@ funcione instale a atualização para o Xpad disponível no site
 ### 11 - Distrobox
 
 Caso use alguma distro pelo Distrobox configure o atalho do desktop. Executar
-usando o bash, com zsh ocorrem alguns problemas, mas se o container for criado com uma home própria, o funcionamento do shell zsh será normal.
+usando o bash, com zsh ocorrem alguns problemas, mas se o container for criado
+com uma home própria, o funcionamento do shell zsh será normal.
 
 Exemplo com o Ubuntu:
 
@@ -418,3 +419,26 @@ Value = `/usr/share/vulkan/icd.d/nvidia_icd.json` e Key =
 `__EGL_VENDOR_LIBRARY_FILENAMES` Value =
 `/usr/share/glvnd/egl_vendor.d/10_nvidia.json` Isso fará com que o aplicativo
 funcione com a placa dedicada.
+<br><br>
+
+#### 19 - Bluetooth
+
+O módulo para o bluetooth está desabilitado. Caso queira usá-lo, faça o
+seguinte:
+
+`sudo modprobe btusb`
+
+`sudo systemctl start bluetooth.service`
+
+O obex é necessário para transferência de arquivos entre os dispositivos.
+`systemctl start --user obex.service`
+
+Esse processo habilita somente para a sessão em uso. Para habilitar
+permanentemente é preciso retirar o `blacklist btusb` do arquivo
+`blacklist.conf` que está em `/etc/modprobe.d/` e habilitar os serviços com o
+systemctl substituindo `start` por `enable`. Caso o bluetooth não funcione após
+os procedimentos acima, execute
+`sudo rfkill unblock bluetooth && sudo systemctl restart bluetooth`. Os pacotes
+necessários para o funcionamento do bluetooth já foram instalados no sistema e
+as configurações para os recursos experimentais do bluetooth foram executadas no
+script número 3.
