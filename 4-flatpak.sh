@@ -25,9 +25,7 @@ flatpak install flathub com.vysp3r.ProtonPlus -y
 flatpak install flathub io.gitlab.adhami3310.Converter -y
 flatpak install flathub org.gtkhash.gtkhash -y
 flatpak install flathub com.github.tchx84.Flatseal -y
-flatpak install flathub com.discordapp.Discord -y
 flatpak install flathub com.github.jeromerobert.pdfarranger -y
-flatpak install flathub com.skype.Client -y
 flatpak install flathub com.github.unrud.VideoDownloader -y
 flatpak install flathub fr.romainvigier.MetadataCleaner -y
 flatpak install flathub org.gnome.gitlab.YaLTeR.VideoTrimmer -y
@@ -36,7 +34,6 @@ flatpak install flathub com.github.wwmm.easyeffects -y
 flatpak install flathub com.mattjakeman.ExtensionManager -y
 flatpak install flathub org.gtk.Gtk3theme.Adwaita-dark -y
 flatpak install flathub com.github.huluti.Curtail -y
-flatpak install flathub com.usebottles.bottles -y
 flatpak install flathub io.github.nokse22.teleprompter -y
 flatpak install flathub io.podman_desktop.PodmanDesktop -y
 flatpak install flathub com.github.PintaProject.Pinta -y
@@ -57,7 +54,6 @@ flatpak install flathub io.github.fabrialberio.pinapp -y
 flatpak install flathub it.mijorus.smile -y
 flatpak install flathub it.mijorus.collector -y
 flatpak install flathub info.febvre.Komikku -y
-flatpak install flathub de.haeckerfelix.Fragments -y
 flatpak install flathub app.drey.KeyRack -y
 
 # Flathub Remote-Beta

@@ -176,13 +176,7 @@ comando é o seguinte:
 `chattr -F /caminho/para/a/pasta`
 <br><br>
 
-### 9 - Firefox
-
-Copie o arquivo `user.js` da pasta firefox para o seu profile do navegador em
-`~/.mozilla/firefox/pasta_do_profile`.
-<br><br>
-
-### 10 - Xpad
+### 9 - Xpad
 
 O controle Multilaser JS091 (Shanwan Controler) está funcionando corretamente
 como Microsoft Corp. Xbox360 Controller (verifique com `lsusb`). Caso não
@@ -191,7 +185,7 @@ funcione instale a atualização para o Xpad disponível no site
 `game-devices-udev` <https://codeberg.org/fabiscafe/game-devices-udev>
 <br><br>
 
-### 11 - Distrobox
+### 10 - Distrobox
 
 Caso use alguma distro pelo Distrobox configure o atalho do desktop. Executar
 usando o bash, com zsh ocorrem alguns problemas, mas se o container for criado
@@ -233,12 +227,12 @@ Caso queira inicializar usando o Wezterm o comando é o seguinte:
 Atalho : Shift + Ctrl + D
 <br><br>
 
-### 12 - Rclone
+### 11 - Rclone
 
 Configurar o remote no rclone e fazer o scprit de sincronização.
 <br><br>
 
-### 13 - Conservation mode - Ideapad S145
+### 12 - Conservation mode - Ideapad S145
 
 Modo de conservação da bateria. Se for habilitado manterá a carga máxima da
 bateria em 60%. Verifique se o módulo do kernel ideapad_laptop está carregado
@@ -262,7 +256,7 @@ Para desabilitar
 `echo 0 > /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode`
 <br><br>
 
-### 14 - Steam
+### 13 - Steam
 
 Opções de inicialização para os jogos na Steam usando a placa dedicada Nvidia.
 
@@ -303,7 +297,7 @@ Aumente a quantidade de cores para pré-compilar os shaders.
 `echo "unShaderBackgroundProcessingThreads 6" >> ~/.steam/steam/steam_dev.cfg`
 <br><br>
 
-### 15 - Heroic Games Launcher
+### 14 - Heroic Games Launcher
 
 Nas configurações do jogo, na opção "outros", habilite o MangoHud e o uso da
 placa dedicada.
@@ -323,7 +317,7 @@ Para jogos OpenGL use as seguintes variáveis: 1ª nome da variável
 `__GL_MaxFramesAllowed` valor `1`
 <br><br>
 
-### 16 - Intel SSD 660p - [Solidigm™ Storage Tool (SST)](https://www.solidigm.com/content/solidigm/us/en/support-page/drivers-downloads/ka-00085.html)
+### 15 - Intel SSD 660p - [Solidigm™ Storage Tool (SST)](https://www.solidigm.com/content/solidigm/us/en/support-page/drivers-downloads/ka-00085.html)
 
 Para liberar o cache do disco NVMe instale o programa
 [solidigm-sst-storage-tool-cli](https://aur.archlinux.org/packages/solidigm-sst-storage-tool-cli)
@@ -383,7 +377,7 @@ para jogos, VMs e outros dados não cruciais. Caso queira ver todas as
 propriedades do disco o comando é `sudo sst show -all -ssd PHNH************`.
 <br><br>
 
-#### 17 - Fallback
+#### 16 - Fallback
 
 Caso a imagem para o kernel fallback esteja sendo gerada pelo mkinitcpio, faça o
 seguinte:
@@ -409,7 +403,7 @@ Regenere o initramfs:
 `sudo mkinitcpio -P`
 <br><br>
 
-#### 18 - Upscayl
+#### 17 - Upscayl
 
 Faça o download do appimage na página do
 [github](https://github.com/upscayl/upscayl). Use o app flatpak Gear Lever para
@@ -421,7 +415,7 @@ Value = `/usr/share/vulkan/icd.d/nvidia_icd.json` e Key =
 funcione com a placa dedicada.
 <br><br>
 
-#### 19 - Bluetooth
+#### 18 - Bluetooth
 
 O módulo para o bluetooth está desabilitado. Caso queira usá-lo, faça o
 seguinte:

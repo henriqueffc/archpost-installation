@@ -48,8 +48,6 @@ expac
 fastfetch
 fd
 ffmpegthumbnailer
-firefox
-firefox-i18n-pt-br
 firewalld
 flatpak
 fwupd
@@ -126,7 +124,6 @@ pandoc-cli
 papirus-icon-theme
 pkgstats
 python-pipx
-polari
 procs
 progress
 python-nautilus
