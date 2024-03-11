@@ -80,7 +80,7 @@ hexyl = hexdump
 bandwhich = nethogs (alias rede)
 lnav = Log file navigator
 glow = visualizador de markdown (glow -p)
-zoxide = A smarter cd command (z /caminho/da/pasta - z pasta)
+zoxide = A smarter cd command
 yazi = file manager
 xwininfo = pode ser usado para verificar se o aplicativo está rodando em Wayland ou XWayland
 
@@ -146,7 +146,6 @@ dirty
 progress
 scanports
 turbo
-z
 
 
 
@@ -326,6 +325,8 @@ Alt + Print = Faz a captura de uma janela salvando na parta imagens e disponibil
 
 #### Microsoft Edge ####
 
+Ctrl + Q = paleta de comandos
+
 Ctrl + A = selecionar tudo
 
 Ctrl + K = abrir uma consulta de pesquisa na barra de endereços
@@ -379,44 +380,6 @@ F5 = Recarregar a página atual
 Shift + F5 = Recarregar a guia atual, ignorando o conteúdo em cache
 
 F9 = Entrar ou sair da Leitura Avançada
-
-
-
-
-#### FIREFOX ####
-
-Ctrl + Shift + U = abre a extensão Bitwarden no Firefox.
-Ctrl + Shit + 1 ou 2 ou 3 = abrir diferentes containers
-
-Pode-se configurar atalhos para as páginas salvas nos Favoritos do Firefox.
-
-É possível configurar também a pesquisa em páginas (%s) com atalhos. Salva a página como favorita, substitui o final do endereço do resultado da pesquisa com %s e cria um atalho para a página. Ao digitar o atalho na barra de endereço concatenasse com o termo de pesquisa.
-
-* + espaço = pesquisa os favoritos na barra de endereços do Firefox
-Ctrl + Alt + R (Toggle Reader Mode)  
-Botão do meio do mouse clicando no link = abre o link em nova aba
-Ctrl + B (Bookmarks sidebar)  
-Ctrl + L = foco na barra de ferramentas
-Alt + seta direita (volta na página anterior)
-Alt + seta esquerda (volta para a página posterior)
-Ctrl + T (nova aba)
-Ctrl + N (nova janela)
-Ctrl + Shift + P (nova janela privativa)
-Ctrl + W (fecha a aba)
-Ctrl + Q (fecha o aplicativo)
-CRTL + Page Up ou Page Down = muda de aba
-Ctrl + Tab = muda para a próxima aba
-Ctrl + Shift + T (Undo fechar aba)
-Ctrl + Shift + N (Undo fechar janela)
-Mute/ Unmute (Ctrl + M)
-CTRL + Scroll do mouse = zoom in / zoom out
-Ctrl + Shift + Y (Downloads)
-Ctrl + Shift + A (Add-ons)
-F11 (tela cheia)
-F12 (Console de depuração)
-CTRL + = (zoom in)
-CTRL + - (zoom out - não é o sinal de menos, é o sinal que está junto do _)
-CTRL + Shift + V = colar sem formatação.
 
 
 
