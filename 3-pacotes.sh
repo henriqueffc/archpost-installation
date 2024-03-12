@@ -195,9 +195,6 @@ gsettings set org.gnome.desktop.session idle-delay "0"
 # Abrir os aplicativos centralizados na tela
 gsettings set org.gnome.mutter center-new-windows true
 
-# Bluetooth no menu aparece também estando desligado
-gsettings set org.gnome.shell had-bluetooth-devices-setup true
-
 # Desabilitar os cantos ativos
 gsettings set org.gnome.desktop.interface enable-hot-corners false
 
@@ -213,11 +210,7 @@ gsettings set org.gnome.desktop.search-providers disabled "['org.gnome.Contacts.
 # Ordem dos resultados da pesquisa realizada no overview
 gsettings set org.gnome.desktop.search-providers sort-order "['org.gnome.Calculator.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Settings.desktop']"
 
-# Tamanho da fonte do sistema
-gsettings set org.gnome.desktop.interface font-name "NotoSans Nerd Font 12"
-gsettings set org.gnome.desktop.interface document-font-name "NotoSans Nerd Font 12"
-gsettings set org.gnome.desktop.interface monospace-font-name "NotoSansM Nerd Font 11"
-gsettings set org.gnome.desktop.wm.preferences titlebar-font "NotoSansM Nerd Font Bold 12"
+# fonte antialising
 gsettings set org.gnome.desktop.interface font-antialiasing rgba
 
 # Acessibilidade
@@ -299,9 +292,6 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "[
 # wezterm
 mv ./wezterm/.wezterm.lua $HOME
 
-# Vagrant
-vagrant plugin install vagrant-libvirt
-
 # Mlocate
 sudo pacman -S mlocate --needed --noconfirm
 sudo updatedb
@@ -330,10 +320,6 @@ sudo systemctl enable clamav-freshclam-once.timer
 mkdir -p $HOME/.config/mpv/
 cp ./mpv/mpv.conf $HOME/.config/mpv/
 
-# Heroic Games Launcher - Wayland
-cp /usr/share/applications/heroic.desktop ~/.local/share/applications/
-sed -i 's|Exec=.*|Exec=/opt/Heroic/heroic --ozone-platform-hint=auto %U|g' ~/.local/share/applications/heroic.desktop
-
 # Fastfetch
 mkdir -p $HOME/.config/fastfetch/
 cp ./fastfetch/config.jsonc $HOME/.config/fastfetch/
@@ -346,6 +332,7 @@ cp ./flags/chromium-flags.conf $HOME/.config/
 cp ./flags/microsoft-edge-stable-flags.conf $HOME/.config/
 
 # Arquivo com as flags para o Obsidian
+mkdir -p $HOME/.config/obsidian/
 cp ./flags/user-flags.conf $HOME/.config/obsidian/
 
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
