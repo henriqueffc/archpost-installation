@@ -18,7 +18,7 @@ echo -e "$AZUL
 $FIM"
 
 # YAY
-sudo pacman -S --needed git base-devel go wget
+sudo pacman -Syu --needed git base-devel go wget
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si

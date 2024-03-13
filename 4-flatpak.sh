@@ -17,7 +17,7 @@ echo -e "$AZUL
 -------------------------------------------------------------------------
 $FIM"
 
-sudo pacman -S flatpak --needed --noconfirm
+sudo pacman -Syu flatpak --needed --noconfirm
 
 # Flatpak Aplicativos
 flatpak install flathub org.gimp.GIMP -y
