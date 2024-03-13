@@ -20,6 +20,7 @@ breeze5
 bat
 bat-extras
 btop
+btrfs-progs
 cabextract
 calibre
 ccze
@@ -37,6 +38,7 @@ devtools
 dialog
 discount
 djvulibre
+dosfstools
 duf
 e2fsprogs
 ebook-tools
@@ -71,6 +73,7 @@ gnome-terminal
 gnome-themes-extra
 gnome-tweaks
 goverlay
+gvfs-google
 gparted
 gsmartcontrol
 gst-plugin-libcamera
