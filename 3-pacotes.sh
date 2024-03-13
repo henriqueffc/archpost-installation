@@ -18,7 +18,7 @@ echo -e "$AZUL
 $FIM"
 
 # Pacotes
-sudo pacman --needed -S - <./pacotes/pkg.txt
+sudo pacman --needed -Syu - <./pacotes/pkg.txt
 
 # Fontes
 sudo pacman --needed -S - <./pacotes/fontes.txt
@@ -280,8 +280,6 @@ gsettings set org.gnome.TextEditor style-variant "dark"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Shift><Super>2']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 "['<Shift><Super>3']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 "['<Shift><Super>4']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-5 "['<Shift><Super>5']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-6 "['<Shift><Super>6']"
 
 # atalho personalizado para lançar o Terminal - Super + T
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name "Terminal"
@@ -334,5 +332,8 @@ cp ./flags/microsoft-edge-stable-flags.conf $HOME/.config/
 # Arquivo com as flags para o Obsidian
 mkdir -p $HOME/.config/obsidian/
 cp ./flags/user-flags.conf $HOME/.config/obsidian/
+
+# Sincronizando a databse para a pesquisa de pacotes
+sudo pacman -Fy
 
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
