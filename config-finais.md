@@ -2,7 +2,7 @@
 
 ### 1 - SSD
 
-Habilite o cache de escrita e o APM com o valor de 254 no programa Discos.
+Habilite o cache de escrita no programa Discos.
 <br><br>
 
 ### 2 - Tema
@@ -295,6 +295,12 @@ Goverlay. Se possível, desabilito o VSync nas configurações dos jogos.
 Aumente a quantidade de cores para pré-compilar os shaders.
 
 `echo "unShaderBackgroundProcessingThreads 6" >> ~/.steam/steam/steam_dev.cfg`
+
+**Problemas com a transmissão ao vivo na Steam**
+
+Execute no terminal (com a Steam fechada)
+
+`steam-runtime steam://unlockh264/`
 <br><br>
 
 ### 14 - Heroic Games Launcher
