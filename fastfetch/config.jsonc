@@ -76,7 +76,7 @@
     {
       "type": "cpu",
       "temp": true,
-      "key": "╭─",
+      "key": "╭─",
       "keyColor": "red"
     },
     {
