@@ -109,6 +109,7 @@ else
             cat ./zsh/extract.txt >>~/.zshrc
             cat ./zsh/command-not-found.txt >>~/.zshrc
             cat ./zsh/rga-fzf.txt >>~/.zshrc
+            echo 'export GPG_TTY=$TTY' >>~/.zshrc
             echo 'eval "$(zoxide init --cmd cd zsh)"' >>~/.zshrc
             sed -i 's|# export PATH=$HOME/bin:/usr/local/bin:$PATH|export PATH=$HOME/bin:$HOME/.local/bin:$PATH|g' ~/.zshrc
             echo -e "$AZUL Instalação concluída. Caso considere necessário para uma melhor visualização dos caracteres substitua a fonte do terminal pela fonte JetBrainsMonoNL Nerd Font. Reinicie o terminal para configurar o Powerlevel10K. $FIM"
