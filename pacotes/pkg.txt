@@ -62,6 +62,7 @@ ghex
 gimagereader-gtk
 git
 glew
+glfw
 glow
 ghostwriter
 gnome-epub-thumbnailer
