@@ -49,6 +49,8 @@ sudo systemctl enable pacman-filesdb-refresh.timer
 echo -e "$AZUL \t pacman-filesdb-refresh habilitado $FIM"
 systemctl enable --user syncthing.service
 echo -e "$AZUL \t syncthing habilitado $FIM"
+systemctl enable --user gcr-ssh-agent.socket
+echo -e "$AZUL \t GCR ssh-agent wrapper habilitado $FIM"
 
 # Bluetooth
 sudo sed -i 's/#Experimental =.*/Experimental = true/g' /etc/bluetooth/main.conf
@@ -154,9 +156,9 @@ echo -e '\nif [ -d "$HOME/.local/bin" ] ; then\nPATH="$HOME/.local/bin:$PATH"\nf
 mv ./bin/* $HOME/bin
 chmod +x $HOME/bin/*
 
-echo -e "$AZUL Alterando o tema, os ícones e os atalhos do sistema em 1 $FIM" && sleep 1
-echo -e "$AZUL Alterando o tema, os ícones e os atalhos do sistema em 2 $FIM" && sleep 1
-echo -e "$AZUL Alterando o tema, os ícones e os atalhos do sistema em 3 $FIM" && sleep 1
+echo -e "$AZUL Alterando o tema e os atalhos do sistema em 1 $FIM" && sleep 1
+echo -e "$AZUL Alterando o tema e os atalhos do sistema em 2 $FIM" && sleep 1
+echo -e "$AZUL Alterando o tema e os atalhos do sistema em 3 $FIM" && sleep 1
 
 # Tema do sistema
 gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
@@ -333,7 +335,7 @@ cp ./flags/microsoft-edge-stable-flags.conf $HOME/.config/
 mkdir -p $HOME/.config/obsidian/
 cp ./flags/user-flags.conf $HOME/.config/obsidian/
 
-# Sincronizando a databse para a pesquisa de pacotes
+# Sincronizando a database para a pesquisa de pacotes
 sudo pacman -Fy
 
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
