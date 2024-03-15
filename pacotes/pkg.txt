@@ -65,6 +65,7 @@ glew
 glfw
 glow
 ghostwriter
+ghostscript
 gnome-epub-thumbnailer
 gnome-firmware
 gnome-appfolders-manager
@@ -81,6 +82,7 @@ gst-plugin-libcamera
 hexyl
 hwloc
 i7z
+imagemagick
 iptables-nft
 intel-gpu-tools
 intel-ucode
@@ -96,8 +98,12 @@ lib32-mangohud
 libappindicator-gtk3
 libcamera-tools
 libgtop
+libheif
+libopenraw
+libraw
 libreoffice-fresh
 libreoffice-fresh-pt-br
+libwmf
 libzip
 lm_sensors
 lshw
@@ -130,6 +136,8 @@ pkgstats
 python-pipx
 procs
 progress
+poppler
+poppler-data
 python-nautilus
 qt5ct
 qt6ct
