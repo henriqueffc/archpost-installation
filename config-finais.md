@@ -442,3 +442,45 @@ os procedimentos acima, execute
 necessários para o funcionamento do bluetooth já foram instalados no sistema e
 as configurações para os recursos experimentais do bluetooth foram executadas no
 script número 3.
+<br><br>
+
+#### 19 - Geoclue
+
+No arquivo do configuração abaixo deixe `enable=true` somente na opção
+`[static-source]`
+
+`sudo nano /etc/geoclue/geoclue.conf`
+
+Construa o arquivo para o Geoclue estático
+
+`sudo nano /etc/geolocation`
+
+Exemplo de conteúdo para o arquivo `gelocation`. Verifique a latitude e a
+longitude usando o Google Maps. Coloque 1.0 na altura e 20.00 no radius. Remova
+os comentários.
+
+```
+# Example static location file for a machine inside Statue of Liberty torch
+40.6893129   # latitude
+-74.0445531  # longitude
+96           # altitude
+1.83         # accuracy radius (the diameter of the torch is 12 feet)
+```
+
+Execute: `sudo chown geoclue /etc/geolocation` e
+`sudo chmod 600 /etc/geolocation`
+
+Reinicie o serviço `sudo systemctl restart geoclue.service`
+
+Verifique o status do serviço `sudo systemctl status geoclue.service`
+
+Verifique o funcionamento do Geoclue estático com o comando
+`/usr/lib/geoclue-2.0/demos/where-am-i` e no programa GNOME Maps.
+
+Se quiser desabilitar o Geoclue use os seguintes comandos:
+
+`gsettings set org.gnome.system.location enabled false` ou
+
+`sudo systemctl mask geoclue.service`
+
+Manual do [Geoclue](https://man.archlinux.org/man/extra/geoclue/geoclue.5.en)
