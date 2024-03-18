@@ -446,7 +446,9 @@ script número 3.
 
 #### 19 - Geoclue
 
-No arquivo do configuração abaixo deixe `enable=true` somente na opção
+**Geoclue estático**
+
+No arquivo de configuração abaixo deixe `enable=true` somente na opção
 `[static-source]`
 
 `sudo nano /etc/geoclue/geoclue.conf`
@@ -476,6 +478,8 @@ Verifique o status do serviço `sudo systemctl status geoclue.service`
 
 Verifique o funcionamento do Geoclue estático com o comando
 `/usr/lib/geoclue-2.0/demos/where-am-i` e no programa GNOME Maps.
+
+**Desabilitar o serviço**
 
 Se quiser desabilitar o Geoclue use os seguintes comandos:
 
