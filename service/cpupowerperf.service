@@ -3,7 +3,7 @@ Description=CPU Power
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/x86_energy_perf_policy -a balance-performance --hwp-min 18 --hwp-max 46 --hwp-enable --turbo-enable 1
+ExecStart=/usr/bin/x86_energy_perf_policy -a balance-performance --hwp-min 20 --hwp-max 46 --hwp-enable --turbo-enable 1
 ExecStart=/usr/bin/bash -c '/usr/bin/echo 1 > /sys/devices/system/cpu/intel_pstate/hwp_dynamic_boost'
 
 [Install]

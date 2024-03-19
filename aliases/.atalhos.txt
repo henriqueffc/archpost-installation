@@ -126,7 +126,6 @@ xll
 xla
 xltree
 bat
-nvme
 cpu-performance
 cpu-powersave
 cpu-info

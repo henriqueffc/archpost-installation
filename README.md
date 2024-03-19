@@ -22,10 +22,10 @@ pipewire, wireplumber, repositório multilib habilitado (ativado por intermédio
 do archinstall), Nvidia com driver proprietário, shell Zsh com Oh My Zsh e
 powerlevel10k, Wezterm terminal, AUR helper Yay, Flatpak, Podman, Distrobox,
 Apparmor, firewalld, libvirt, Vagrant, asdf, intel_pstate scaling driver,
-cpupower, thermald e x86_energy_perf_policy para gerenciamento de frequências da
-CPU e do perfil de energia (uso o notebook ligado na tomada), firmware para o
-áudio da Sound Open Firmware, equalização paramétrica para o Headset HyperX
-Cloud Stinger, Helix Editor e GNOME (Wayland). O bluetooth está desabilitado. As
+thermald e x86_energy_perf_policy para gerenciamento de frequências da CPU e do
+perfil de energia (uso o notebook ligado na tomada), firmware para o áudio da
+Sound Open Firmware, equalização paramétrica para o Headset HyperX Cloud
+Stinger, Helix Editor e GNOME (Wayland). O bluetooth está desabilitado. As
 configurações dos scripts são concebidas nessa base.
 
 Os scripts deverão ser executados após a inicialização do sistema no ambiente
