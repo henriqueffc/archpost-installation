@@ -148,7 +148,6 @@ rebuild-detector
 reflector
 ripgrep
 ripgrep-all
-rkhunter
 rmlint
 rsync
 rustscan

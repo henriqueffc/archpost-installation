@@ -41,7 +41,7 @@ Ex.:
 
 ### 4 - SSH
 
-Configurar rkhunter, Fail2ban - porta SSH e o SSH.
+Configurar o Fail2ban - porta SSH e o SSH.
 <br><br>
 
 ### 5 - NVMe
