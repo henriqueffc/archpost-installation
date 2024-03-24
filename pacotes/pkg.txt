@@ -76,6 +76,7 @@ gnome-themes-extra
 gnome-tweaks
 goverlay
 gvfs-google
+gvfs-onedrive
 gparted
 gsmartcontrol
 gst-plugin-libcamera
