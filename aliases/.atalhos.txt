@@ -49,7 +49,8 @@ extract = extrair arquivos compactados. Ex.: extract nome_do_arquivo.zip
 archnews
 erros
 iommu
-
+fshare
+myman
 
 
 
@@ -83,6 +84,29 @@ glow = visualizador de markdown (glow -p)
 zoxide = A smarter cd command
 yazi = file manager
 xwininfo = pode ser usado para verificar se o aplicativo está rodando em Wayland ou XWayland
+arch-audit = mostra os pacotes com possíveis problemas de segurança
+ccze = cores para logs (ex. | ccze -m ansi)
+hexyl = colored command-line hex viewer
+clamscan (clamav) = antivírus
+cmatrix = proteção de tela
+fastfetch = neofetch
+expac = extrair informações da database do pacman
+fzf = command-line fuzzy finder
+inxi (inxi -Fv8) = informações sobre o sistema
+lshw = informações sobre o hardware
+lurk = alternativa ao strace
+wormhole (magic-wormhole) = securely transfer data between computers
+nmap = varredura de rede
+nvme (sudo nvme smart-log /dev/nvme0) = informações sobre o ssd nvme
+rclone = sync files com serviços cloud
+rsync = A fast and versatile file copying tool for remote and local files
+rmlint = ferramenta para remover arquivos duplicados e outras coisas
+rustscan = a modern port scanner (alias scanports)
+tailspin = a log file highlighter
+weechat = IRC
+yt-dlp = a youtube-dl fork with additional features and fixes
+mpv = player de mídia
+pandoc = conversion between documentation formats
 
 
 
