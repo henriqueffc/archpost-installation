@@ -69,6 +69,9 @@ pacman -Syu linux-firmware linux-firmware-whence wireless-regdb --needed --nocon
 pacman -S nano --needed --noconfirm
 cp /etc/nanorc /etc/nanorc.bak
 sed -i 's/# set linenumbers/\set linenumbers/' /etc/nanorc
+sed -i 's/# set mouse/\set mouse/' /etc/nanorc
+sed -i 's/# set minibar/\set minibar/' /etc/nanorc
+sed -i 's/# set indicator/\set indicator/' /etc/nanorc
 sed -i 's/# set speller "aspell -x -c"/\set speller "aspell -x -c"/' /etc/nanorc
 linenumber=$(cat /etc/nanorc | grep -n '*.nanorc' | gawk '{print $1}' FS=":")
 sed -i "${linenumber}s/..//" /etc/nanorc
