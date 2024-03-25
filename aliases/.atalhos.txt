@@ -202,6 +202,24 @@ CTRL + D = fecha painel e aba
 CTRL + SHIFT + L = debug mode
 Ctrl + Z coloca em segundo plano alguma tarefa ou programa que você está usando no terminal. Para voltar ao programa digite "fg".
 wezterm imgcat /path/to/image.png = Para vizualizar imagens.
+tab+tab (ex.: escreva update tab+tab) Abre as opções para o comando e você poderá escolher qual deseja. Tab mostra as opções e outro tb no ZSH permite escolher na lista.
+Ctrl + Shift + T (nova aba)
+Ctrl + Shift + + W (fecha a aba)
+Crtl + PageUp ou PageDown (navega entre as abas)
+Ctrl + D (o mesmo que escrever exit para sair de uma sessão ou para fechar o terminal)
+Ctrl + A (ir para o começo da linha)
+Ctrl + E (ir para o fim da linha)
+Ctrl + X + E (transfere o digitado para o editor de texto padrão)
+Ctrl + U (apaga o digitado anterior ao atalho)
+Ctrl + Y (undo)
+Ctrl + K (apaga tudo depois do cursor)
+Ctrl + C (cancela a operação que está em execução)
+Ctrl + R (busca comandos dados - pesquisa - zsh)
+Ctrl + L (clear)
+SHIFT+CTRL+C (copia no terminal)
+SHIFT+CTRL+V (cola no terminal)
+CTRL + + (zoom in)
+CTRL + - (zoom out)
 
 
 
@@ -256,31 +274,6 @@ fd  --type f --hidden --exclude .git | fzf (pesquisa com o fd. padrão para o fz
 find * -type f | fzf (pesquisa com o find)
 cat nome_do_arquivo | fzf (pesquisa no conteúdo do arquivo)
 rga-fzf argumento (pesquisa pela string em vários formatos de arquivo na pasta e nas subpastas)
-
-
-
-
-#### TERMINAL GNOME ####
-
-tab+tab (ex.: escreva update tab+tab) Abre as opções para o comando e você poderá escolher qual deseja. Tab mostra as opções e outro tb no ZSH permite escolher na lista.
-Ctrl + Shift + T (nova aba)
-Ctrl + Shift + + W (fecha a aba)
-Crtl + PageUp ou PageDown (navega entre as abas)
-Ctrl + D (o mesmo que escrever exit para sair de uma sessão ou para fechar o terminal)
-Ctrl + A (ir para o começo da linha)
-Ctrl + E (ir para o fim da linha)
-Ctrl + X + E (transfere o digitado para o editor de texto padrão)
-Ctrl + U (apaga o digitado anterior ao atalho)
-Ctrl + Y (undo)
-Ctrl + K (apaga tudo depois do cursor)
-Ctrl + C (cancela a operação que está em execução)
-Ctrl + R (busca comandos dados - pesquisa - zsh)
-Ctrl + L (clear)
-SHIFT+CTRL+C (copia no terminal)
-SHIFT+CTRL+V (cola no terminal)
-CTRL + + (zoom in)
-CTRL + - (zoom out)
-
 
 
 
