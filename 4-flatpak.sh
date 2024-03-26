@@ -35,7 +35,6 @@ flatpak install flathub com.mattjakeman.ExtensionManager -y
 flatpak install flathub org.gtk.Gtk3theme.Adwaita-dark -y
 flatpak install flathub com.github.huluti.Curtail -y
 flatpak install flathub io.github.nokse22.teleprompter -y
-flatpak install flathub io.podman_desktop.PodmanDesktop -y
 flatpak install flathub com.github.PintaProject.Pinta -y
 flatpak install flathub com.dropbox.Client -y
 flatpak install flathub com.github.dynobo.normcap -y
