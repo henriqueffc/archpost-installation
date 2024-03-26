@@ -4,6 +4,7 @@ dnsmasq
 edk2-ovmf
 iptables-nft
 libvirt
+lvm2
 openbsd-netcat
 qemu-full
 qemu-emulators-full

@@ -21,12 +21,12 @@ Eu instalo o sistema em UEFI, com systemd-boot, sistema de arquivos EXT4, ZRAM,
 pipewire, wireplumber, repositório multilib habilitado (ativado por intermédio
 do archinstall), Nvidia com driver proprietário, shell Zsh com Oh My Zsh e
 powerlevel10k, Wezterm terminal, AUR helper Yay, Flatpak, Podman, Distrobox,
-Apparmor, firewalld, libvirt, Vagrant, asdf, intel_pstate scaling driver,
-thermald e x86_energy_perf_policy para gerenciamento de frequências da CPU e do
-perfil de energia (uso o notebook ligado na tomada), firmware para o áudio da
-Sound Open Firmware, equalização paramétrica para o Headset HyperX Cloud
-Stinger, Helix Editor e GNOME (Wayland). O bluetooth está desabilitado. As
-configurações dos scripts são concebidas nessa base.
+Apparmor, firewalld, libvirt, Incus, asdf, intel_pstate scaling driver, thermald
+e x86_energy_perf_policy para gerenciamento de frequências da CPU e do perfil de
+energia (uso o notebook ligado na tomada), firmware para o áudio da Sound Open
+Firmware, equalização paramétrica para o Headset HyperX Cloud Stinger, Helix
+Editor e GNOME (Wayland). O bluetooth está desabilitado. As configurações dos
+scripts são concebidas nessa base.
 
 Os scripts deverão ser executados após a inicialização do sistema no ambiente
 gráfico.
@@ -55,7 +55,7 @@ Ordem de uso dos scripts:
 - 5-yay.sh
 - 6-grid.sh
 - 7-zsh-ohmyzsh.sh
-- 8-podman-distrobox.sh
+- 8-podman-distrobox-incus.sh
 - 9-helix.sh
 
 Recomendo reinicializar o sistema após a execução de cada script.
