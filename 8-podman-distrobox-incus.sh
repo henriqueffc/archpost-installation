@@ -45,15 +45,11 @@ sudo pacman -S distrobox
 
 echo -e "$AZUL
 -------------------------------------------------------------------------
-	        Instalando o Podman Desktop e o Pods
+	        	Instalando o Podman Desktop
 -------------------------------------------------------------------------
 $FIM"
 
 flatpak install flathub io.podman_desktop.PodmanDesktop -y
-flatpak install flathub com.github.marhkb.Pods -y
-
-# É necessário habilitar o podman.service para o funcionamento do Pods
-systemctl --user enable --now podman.service
 
 echo -e "$AZUL
 -------------------------------------------------------------------------
