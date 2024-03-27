@@ -7,6 +7,7 @@ archlinux-wallpaper
 aspell
 aspell-en
 aspell-pt
+audacity
 base-devel
 bash-completion
 bandwhich
@@ -69,8 +70,6 @@ ghostscript
 gnome-epub-thumbnailer
 gnome-firmware
 gnome-appfolders-manager
-gnome-nettool
-gnome-sound-recorder
 gnome-terminal
 gnome-themes-extra
 gnome-tweaks
@@ -90,7 +89,6 @@ intel-ucode
 inxi
 jre-openjdk
 kdegraphics-mobipocket
-kdenlive
 kdiskmark
 keepassxc
 lnav
@@ -156,6 +154,8 @@ rhythmbox
 s-tui
 sd
 seahorse
+shotcut
+swh-plugins
 syncthing
 sysfsutils
 sysprof
