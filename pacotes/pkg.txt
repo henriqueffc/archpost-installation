@@ -25,7 +25,6 @@ btrfs-progs
 cabextract
 calibre
 ccze
-celluloid
 chromium
 clamav
 cmatrix
@@ -150,7 +149,6 @@ ripgrep-all
 rmlint
 rsync
 rustscan
-rhythmbox
 s-tui
 sd
 seahorse

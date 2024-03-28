@@ -27,17 +27,20 @@ gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folder
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Nvidia/ apps "['nvidia-settings.desktop', 'nvtop.desktop']"
 
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Multimídia/ name "Multimídia"
-gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Multimídia/ apps "['org.gnome.gitlab.YaLTeR.VideoTrimmer.desktop', 'io.github.celluloid_player.Celluloid.desktop', 'com.github.PintaProject.Pinta.desktop', 'org.shotcut.Shotcut.desktop', 'audacity.desktop', 'com.obsproject.Studio.desktop', 'com.belmoussaoui.Obfuscate.desktop', 'fr.handbrake.ghb.desktop', 'com.github.unrud.VideoDownloader.desktop', 'fr.romainvigier.MetadataCleaner.desktop', 'com.github.wwmm.easyeffects.desktop', 'com.github.huluti.Curtail.desktop', 'mpv.desktop', 'org.pipewire.Helvum.desktop', 'vlc.desktop', 'io.gitlab.adhami3310.Converter.desktop', 'org.gimp.GIMP.desktop', 'soundconverter.desktop']"
+gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Multimídia/ apps "['org.gnome.gitlab.YaLTeR.VideoTrimmer.desktop', 'com.github.PintaProject.Pinta.desktop', 'org.shotcut.Shotcut.desktop', 'audacity.desktop', 'com.obsproject.Studio.desktop', 'com.belmoussaoui.Obfuscate.desktop', 'fr.handbrake.ghb.desktop', 'com.github.unrud.VideoDownloader.desktop', 'fr.romainvigier.MetadataCleaner.desktop', 'com.github.wwmm.easyeffects.desktop', 'com.github.huluti.Curtail.desktop', 'mpv.desktop', 'org.pipewire.Helvum.desktop', 'vlc.desktop', 'io.gitlab.adhami3310.Converter.desktop', 'org.gimp.GIMP.desktop', 'soundconverter.desktop']"
 
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Utilities/ apps "['gtk-lshw.desktop', 'yazi.desktop', 'gsmartcontrol.desktop', 'kdiskmark.desktop', 'btop.desktop', 'htop.desktop', 'bssh.desktop', 'bvnc.desktop', 'avahi-discover.desktop', 'qvidcap.desktop', 'vim.desktop', 'qv4l2.desktop', 'remote-viewer.desktop', 'assistant.desktop', 'designer.desktop', 'lstopo.desktop', 'qdbusviewer.desktop', 'electron28.desktop', 'linguist.desktop']"
 
 gsettings set org.gnome.desktop.app-folders folder-children "['Utilities', 'YaST', 'Office', 'Programas', 'Jogos', 'Nvidia', 'Development', 'GNOME', 'Internet', 'Multimídia']"
 
 # Dock
-gsettings set org.gnome.shell favorite-apps "['org.wezfurlong.wezterm.desktop', 'org.mozilla.Thunderbird.desktop', 'microsoft-edge.desktop', 'obsidian.desktop', 'org.gnome.Rhythmbox3.desktop', 'org.gnome.Nautilus.desktop']"
+gsettings set org.gnome.shell favorite-apps "['org.wezfurlong.wezterm.desktop', 'org.mozilla.Thunderbird.desktop', 'microsoft-edge.desktop', 'obsidian.desktop', 'org.gnome.Podcasts.desktop', 'de.haeckerfelix.Shortwave.desktop', 'org.gnome.Nautilus.desktop']"
+
+# Posição no GRID
+gsettings set org.gnome.shell app-picker-layout "[{'GNOME': <{'position': <0>}>, 'Utilities': <{'position': <1>}>, 'Programas': <{'position': <2>}>, 'Jogos': <{'position': <3>}>, 'Office': <{'position': <4>}>, 'Multimídia': <{'position': <5>}>, 'Internet': <{'position': <6>}>, 'Nvidia': <{'position': <7>}>, 'Development': <{'position': <8>}>, 'virt-manager.desktop': <{'position': <9>}>, 'org.gnome.clocks.desktop': <{'position': <10>}>, 'org.gnome.Settings.desktop': <{'position': <11>}>, 'org.gnome.SystemMonitor.desktop': <{'position': <12>}>, 'org.gnome.Calculator.desktop': <{'position': <13>}>, 'org.gnome.TextEditor.desktop': <{'position': <14>}>, 'it.mijorus.collector.desktop': <{'position': <15>}>, 'it.mijorus.smile.desktop': <{'position': <16>}>, 'org.cryptomator.Cryptomator.desktop': <{'position': <17>}>, 'org.keepassxc.KeePassXC.desktop': <{'position': <18>}>, 'com.belmoussaoui.Authenticator.desktop': <{'position': <19>}>, 'com.dropbox.Client.desktop': <{'position': <20>}>, 'helix.desktop': <{'position': <21>}>, 'org.gnome.Software.desktop': <{'position': <22>}>}]"
 
 # Nautilus Bookmarks
 mkdir ~/ToDo/
 mkdir ~/Documentos/Projetos
 echo "file:///home/$USER/Documentos/Projetos 🎒 Projetos" >>~/.config/gtk-3.0/bookmarks
-echo "file:///home/$USER/ToDo 🗒 ToDo" >>~/.config/gtk-3.0/bookmarks
+echo "file:///home/$USER/ToDo 📋 ToDo" >>~/.config/gtk-3.0/bookmarks
