@@ -57,6 +57,8 @@ flatpak install flathub app.drey.KeyRack -y
 flatpak install flathub com.belmoussaoui.Authenticator -y
 flatpak install flathub de.haeckerfelix.Shortwave -y
 flatpak install flathub org.gnome.Podcasts -y
+flatpak install flathub org.gnome.gitlab.somas.Apostrophe -y
+flatpak install org.gnome.gitlab.somas.Apostrophe.Plugin.TexLive -y
 
 # Flathub Remote-Beta
 echo -e "$AZUL

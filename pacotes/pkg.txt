@@ -64,7 +64,6 @@ git
 glew
 glfw
 glow
-ghostwriter
 ghostscript
 gnome-epub-thumbnailer
 gnome-firmware
