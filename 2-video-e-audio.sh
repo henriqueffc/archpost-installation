@@ -11,9 +11,8 @@ AZUL='\e[1;34m'
 VERDE='\e[1;32m'
 FIM='\e[0m'
 
-# Grupos
-sudo usermod -aG brlapi "$USERNAME"
-sudo usermod -aG wheel "$USERNAME"
+# Add user nos grupos brlapi e wheel
+sudo usermod -aG brlapi,wheel "$USERNAME"
 
 echo -e "$AZUL
 -------------------------------------------------------------------------
