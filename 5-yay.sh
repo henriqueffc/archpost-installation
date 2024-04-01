@@ -39,8 +39,8 @@ yay -S - <./pacotes/aur.txt
 echo 'source /opt/asdf-vm/asdf.sh' >>$HOME/.bashrc
 echo -e 'python system\njava system\nnodejs system\nrust system' >>$HOME/.tool-versions
 
-# Heroic Games Launcher - Wayland
+# Heroic Games Launcher
 cp /usr/share/applications/heroic.desktop ~/.local/share/applications/
-sed -i 's|Exec=.*|Exec=/opt/Heroic/heroic --ozone-platform-hint=auto %U|g' ~/.local/share/applications/heroic.desktop
+sed -i 's|Exec=.*|Exec=/opt/Heroic/heroic --enable-features=CanvasOopRasterization --enable-zero-copy --force_low_power_gpu --disable-gpu-driver-bug-workarounds %U|g' ~/.local/share/applications/heroic.desktop
 
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
