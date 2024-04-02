@@ -47,11 +47,11 @@ Configurar o Fail2ban - porta SSH e o SSH.
 ### 5 - NVMe
 
 Altere a identificação do ponto de montagem, flags (coloque
-defaults,noatime,x-gvfs-show,commit=60,barrier=0) e o tipo de sistema de
+`defaults,noatime,x-gvfs-show,commit=60,barrier=0`) e o tipo de sistema de
 arquivos (auto -> ext4) da partição do NVMe no aplicativo Discos. Lembrando que
 essa configuração é para a partição do NVMe em que ficam instalados os jogos,
 VMs e outros dados. Não é configuração a ser aplicada para a partição do
-sistema, boot ou a para a home.
+sistema, do boot ou a home.
 <br><br>
 
 ### 6 - Nautilus
