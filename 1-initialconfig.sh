@@ -40,7 +40,6 @@ echo 'VDPAU_DRIVER=va_gl' >>/etc/environment
 echo 'QT_QPA_PLATFORM="wayland;xcb"' >>/etc/environment
 echo 'QT_QPA_PLATFORMTHEME=qt6ct' >>/etc/environment
 echo 'GDK_BACKEND="wayland,x11"' >>/etc/environment
-echo 'VAGRANT_DEFAULT_PROVIDER=libvirt' >>/etc/environment
 echo 'SDL_VIDEODRIVER="wayland,x11"' >>/etc/environment
 echo 'SDL_AUDIODRIVER=pipewire' >>/etc/environment
 echo 'CLUTTER_BACKEND=wayland' >>/etc/environment
