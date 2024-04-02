@@ -87,7 +87,7 @@ echo -e "$AZUL
 $FIM"
 
 # Inserir o usuário nos grupos libvirt kvm lp gamemode audio video
-sudo usermod -aG libvirt,kvm,lp,gamemode,audio,video "$USERNAME"
+sudo usermod -aG libvirt,kvm,lp,input,gamemode,audio,video "$USERNAME"
 
 # Virt-manager
 sudo cp /etc/libvirt/qemu.conf /etc/libvirt/qemu.conf.bak
