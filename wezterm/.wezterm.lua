@@ -41,7 +41,7 @@ config.initial_cols = 100
 config.initial_rows = 25
 
 for _, gpu in ipairs(wezterm.gui.enumerate_gpus()) do
-  if gpu.backend == 'Vulkan' and gpu.device_type == 'IntegratedGpu' then
+  if gpu.backend == 'Gl' and gpu.device_type == 'IntegratedGpu' then
     config.webgpu_preferred_adapter = gpu
     config.front_end = 'WebGpu'
     break
