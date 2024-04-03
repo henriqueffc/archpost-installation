@@ -59,6 +59,7 @@ flatpak install flathub de.haeckerfelix.Shortwave -y
 flatpak install flathub org.gnome.Podcasts -y
 flatpak install flathub org.gnome.gitlab.somas.Apostrophe -y
 flatpak install flathub org.gnome.gitlab.somas.Apostrophe.Plugin.TexLive -y
+flatpak install flathub app.drey.Damask -y
 
 # Flathub Remote-Beta
 echo -e "$AZUL
