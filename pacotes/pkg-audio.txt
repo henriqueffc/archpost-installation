@@ -1,4 +1,3 @@
-vlc
 a52dec
 faac
 faad2
