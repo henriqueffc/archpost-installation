@@ -31,7 +31,6 @@ coreutils
 cpio
 cpupower
 curl
-d-feet
 dconf-editor
 devtools
 dialog
