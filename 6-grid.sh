@@ -21,7 +21,7 @@ gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folder
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Internet/ apps "['weechat.desktop', 'chromium.desktop']"
 
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Development/ name "Development"
-gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Development/ apps "['io.podman_desktop.PodmanDesktop.desktop', 'me.iepure.devtoolbox.desktop']"
+gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Development/ apps "['io.podman_desktop.PodmanDesktop.desktop', 'io.github.dvlv.boxbuddyrs.desktop', 'me.iepure.devtoolbox.desktop']"
 
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Nvidia/ name "Nvidia"
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Nvidia/ apps "['nvidia-settings.desktop', 'nvtop.desktop']"
