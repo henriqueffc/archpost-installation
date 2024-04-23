@@ -40,10 +40,8 @@ echo 'VDPAU_DRIVER=va_gl' >>/etc/environment
 echo 'QT_QPA_PLATFORM="wayland;xcb"' >>/etc/environment
 echo 'QT_QPA_PLATFORMTHEME=qt6ct' >>/etc/environment
 echo 'GDK_BACKEND="wayland,x11"' >>/etc/environment
-echo 'SDL_VIDEODRIVER="wayland,x11"' >>/etc/environment
 echo 'SDL_AUDIODRIVER=pipewire' >>/etc/environment
 echo 'CLUTTER_BACKEND=wayland' >>/etc/environment
-echo 'CLUTTER_DEFAULT_FPS=60' >>/etc/environment
 echo 'PROTON_ENABLE_NVAPI=1' >>/etc/environment
 echo '__GL_SHADER_DISK_CACHE=1' >>/etc/environment
 echo '__GL_SHADER_DISK_CACHE_SKIP_CLEANUP=1' >>/etc/environment
@@ -53,8 +51,6 @@ echo 'FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border"' >>/etc/environm
 echo 'FZF_DEFAULT_COMMAND="fd --type f --hidden --exclude .git"' >>/etc/environment
 echo 'GST_PLUGIN_FEATURE_RANK=vah264dec:MAX,vah265dec:MAX,vavp9dec:MAX,vavp8dec:MAX,vampeg2dec:MAX,av1dec:NONE' >>/etc/environment
 echo 'ANV_VIDEO_DECODE=1' >>/etc/environment
-echo 'VK_DRIVER_FILES=/usr/share/vulkan/icd.d/intel_icd.x86_64.json' >>/etc/environment
-echo '__EGL_VENDOR_LIBRARY_FILENAMES=/usr/share/glvnd/egl_vendor.d/50_mesa.json:/usr/share/glvnd/egl_vendor.d/10_nvidia.json' >>/etc/environment
 echo 'ELECTRON_OZONE_PLATFORM_HINT=wayland' >>/etc/environment
 echo 'MUTTER_ALLOW_HYBRID_GPUS=1' >>/etc/environment
 
@@ -93,7 +89,8 @@ sed -i 's/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -z --threads=0 -)/g' /etc/ma
 
 # HOOKS / mkinitcpio.conf
 cp /etc/mkinitcpio.conf /etc/mkinitcpio.conf.bak
-sed -i 's/HOOKS=.*/HOOKS=(systemd autodetect microcode modconf kms keyboard sd-vconsole block filesystems fsck)/g' /etc/mkinitcpio.conf
+sed -i 's/MODULES=.*/MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm i915)/g' /etc/mkinitcpio.conf
+sed -i 's/HOOKS=.*/HOOKS=(systemd autodetect microcode modconf keyboard sd-vconsole block filesystems fsck)/g' /etc/mkinitcpio.conf
 echo 'MODULES_DECOMPRESS="yes"' >>/etc/mkinitcpio.conf
 mkinitcpio -P
 
