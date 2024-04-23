@@ -287,7 +287,7 @@ Se o jogo apresentar o erro
 `gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded` (execute a Steam
 pelo terminal para verificar), use os parâmetros
 `SDL_VIDEODRIVER=x11 LD_PRELOAD="libpthread.so.0 libGL.so.1" __GL_THREADED_OPTIMIZATIONS=1 __GL_MaxFramesAllowed=1 mangohud --dlsym prime-run %command%`.
-Caso ele não funcione faça um teste usando os parêmetros
+Caso ele não funcione faça um teste usando os parâmetros
 `LD_PRELOAD=~/.local/share/Steam/ubuntu12_64/gameoverlayrenderer.so __GL_THREADED_OPTIMIZATIONS=1 __GL_MaxFramesAllowed=1 mangohud --dlsym prime-run %command%`
 Esse erro não costuma impedir a abertura do jogo ou interferir na jogabilidade.
 
@@ -296,6 +296,11 @@ O prime-run no Arch Linux faz o mesmo que
 
 Se porventura o Mangohud não inicializar, use o parâmetro
 `LD_PRELOAD=/usr/lib/mangohud/libMangoHud.so:/usr/lib32/mangohud/libMangoHud.so`
+
+**SOM**
+
+Na eventualizade de o som não funcionar, tente executar os jogos com o parâmetro
+`SDL_AUDIODRIVER=alsa`
 
 **DXVK - Vulkan - Nvidia**
 
