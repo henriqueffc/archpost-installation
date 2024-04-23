@@ -299,7 +299,7 @@ Se porventura o Mangohud não inicializar, use o parâmetro
 
 **SOM**
 
-Na eventualizade de o som não funcionar, tente executar os jogos com o parâmetro
+Na eventualidade de o som não funcionar, tente executar os jogos com o parâmetro
 `SDL_AUDIODRIVER=alsa`
 
 **DXVK - Vulkan - Nvidia**
@@ -437,10 +437,11 @@ Regenere o initramfs:
 #### 17 - Upscayl
 
 Faça o download do appimage na página do
-[github](https://github.com/upscayl/upscayl). Use o app flatpak Gear Lever para
-configurar o appimage. Após selecionar para colocar o app no grid, coloque como
-variáveis de ambiente (última opção da tela) o seguinte: Key = `VK_DRIVER_FILES`
-Value = `/usr/share/vulkan/icd.d/nvidia_icd.json` e Key =
+[github](https://github.com/upscayl/upscayl). Se o app não funcionar com a placa
+dedicada out of the box, use o app flatpak Gear Lever para configurar o
+appimage. Após selecionar para colocar o app no grid, coloque como variáveis de
+ambiente (última opção da tela) o seguinte: Key = `VK_DRIVER_FILES` Value =
+`/usr/share/vulkan/icd.d/nvidia_icd.json` e Key =
 `__EGL_VENDOR_LIBRARY_FILENAMES` Value =
 `/usr/share/glvnd/egl_vendor.d/10_nvidia.json` Isso fará com que o aplicativo
 funcione com a placa dedicada.
