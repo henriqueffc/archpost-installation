@@ -270,23 +270,36 @@ Opções de inicialização para os jogos na Steam usando a placa dedicada Nvidi
 
 **OpenGL + Nvidia**
 
-`LD_PRELOAD=/usr/lib/mangohud/libMangoHud.so:/usr/lib32/mangohud/libMangoHud.so __EGL_VENDOR_LIBRARY_FILENAMES=/usr/share/glvnd/egl_vendor.d/10_nvidia.json __GL_MaxFramesAllowed=1 SDL_DYNAMIC_API=/usr/lib64/libSDL2-2.0.so mangohud --dlsym prime-run %command%`
+`SDL_VIDEODRIVER=x11 __GL_THREADED_OPTIMIZATIONS=1 __GL_MaxFramesAllowed=1 mangohud --dlsym prime-run %command%`
 
 É possível utilizar o parâmetro `__GL_THREADED_OPTIMIZATIONS=1`, mas é preciso
 efetuar testes. Tem jogos que não funcionam com ele.
 
+Poder ser que o jogo não precise da variável `SDL_VIDEODRIVER=x11`.
+
 O parâmetro `__GL_SYNC_TO_VBLANK=0` pode ajudar em jogos que estejam muito
 lentos, mas o uso da GPU sobe consideravelmente.
 
-Caso o `SDL_DYNAMIC_API=/usr/lib64/libSDL2-2.0.so` não funcione, substitua por
-`SDL_VIDEODRIVER=X11`
+Caso o jogo necessite da variável `SDL_VIDEODRIVER=X11` e ela não funcione,
+substitua por `SDL_DYNAMIC_API=/usr/lib64/libSDL2-2.0.so`
+
+Se o jogo apresentar o erro
+`gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded` (execute a Steam
+pelo terminal para verificar), use os parâmetros
+`SDL_VIDEODRIVER=x11 LD_PRELOAD="libpthread.so.0 libGL.so.1" __GL_THREADED_OPTIMIZATIONS=1 __GL_MaxFramesAllowed=1 mangohud --dlsym prime-run %command%`.
+Caso ele não funcione faça um teste usando os parêmetros
+`LD_PRELOAD=~/.local/share/Steam/ubuntu12_64/gameoverlayrenderer.so __GL_THREADED_OPTIMIZATIONS=1 __GL_MaxFramesAllowed=1 mangohud --dlsym prime-run %command%`
+Esse erro não costuma impedir a abertura do jogo ou interferir na jogabilidade.
 
 O prime-run no Arch Linux faz o mesmo que
 `__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRARY_NAME=nvidia`
 
+Se porventura o Mangohud não inicializar, use o parâmetro
+`LD_PRELOAD=/usr/lib/mangohud/libMangoHud.so:/usr/lib32/mangohud/libMangoHud.so`
+
 **DXVK - Vulkan - Nvidia**
 
-`VK_DRIVER_FILES=/usr/share/vulkan/icd.d/nvidia_icd.json STAGING_WRITECOPY=1 STAGING_SHARED_MEMORY=1 __GL_MaxFramesAllowed=1 PROTON_NO_ESYNC=1 PROTON_NO_FSYNC=1 mangohud prime-run %command%`
+`STAGING_WRITECOPY=1 STAGING_SHARED_MEMORY=1 __GL_MaxFramesAllowed=1 PROTON_NO_ESYNC=1 PROTON_NO_FSYNC=1 mangohud prime-run %command%`
 
 **Gamemode**
 
@@ -319,16 +332,15 @@ placa dedicada.
 **Vulkan**
 
 Na opção "avançado", configure as variáveis de ambiente para o Vulkan. Ex.: nome
-da variável `VK_DRIVER_FILES` - Valor `/usr/share/vulkan/icd.d/nvidia_icd.json`
-Veja os restantes das variáveis no item Steam / DXVK - Vulkan - Nvidia.
+da variável `STAGING_WRITECOPY` - Valor `1` Veja os restantes das variáveis no
+item Steam / DXVK - Vulkan - Nvidia.
 
 **OpenGL**
 
 Para jogos OpenGL use as seguintes variáveis: 1ª nome da variável
-`SDL_DYNAMIC_API` valor `/usr/lib64/libSDL2-2.0.so` 2ª nome da variável
-`__EGL_VENDOR_LIBRARY_FILENAMES` valor
-`/usr/share/glvnd/egl_vendor.d/10_nvidia.json` 3ª variável
-`__GL_MaxFramesAllowed` valor `1`
+`SDL_VIDEODRIVER` valor `x11` 2ª variável `__GL_MaxFramesAllowed` valor `1`.
+Veja mais variáveis no item Steam / OpenGL + Nvidia.
+
 <br><br>
 
 ### 15 - Intel SSD 660p - [Solidigm™ Storage Tool (SST)](https://www.solidigm.com/content/solidigm/us/en/support-page/drivers-downloads/ka-00085.html)
