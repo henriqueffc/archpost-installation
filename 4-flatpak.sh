@@ -61,6 +61,7 @@ flatpak install flathub org.gnome.gitlab.somas.Apostrophe -y
 flatpak install flathub org.gnome.gitlab.somas.Apostrophe.Plugin.TexLive -y
 flatpak install flathub app.drey.Damask -y
 flatpak install flathub io.github.dvlv.boxbuddyrs -y
+flatpak install flathub org.gnome.Fractal -y
 
 # Flathub Remote-Beta
 echo -e "$AZUL
