@@ -168,6 +168,7 @@ gsettings set org.gnome.settings-daemon.plugins.power power-button-action intera
 # Nautilus
 gsettings set org.gnome.nautilus.icon-view captions "['size', 'detailed_type', 'none']"
 gsettings set org.gtk.gtk4.Settings.FileChooser sort-directories-first true
+gsettings set org.gnome.nautilus.preferences show-image-thumbnails "always"
 
 # File-chooser
 gsettings set org.gtk.Settings.FileChooser sort-directories-first true
