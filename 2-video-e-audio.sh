@@ -16,8 +16,8 @@ sudo usermod -aG brlapi,wheel "$USERNAME"
 
 echo -e "$AZUL
 -------------------------------------------------------------------------
-  Instalando os pacotes para Intel, áudio e pipewire/wireplumber. 
-  Digite S (SIM) para todas as requisições feitas pelo sistema 
+  Instalando os pacotes para Intel, Nvidia, áudio e pipewire/wireplumber. 
+  Digite s (SIM) para todas as requisições feitas pelo sistema 
   para as instalações desses pacotes.
 -------------------------------------------------------------------------
 $FIM" && sleep 3

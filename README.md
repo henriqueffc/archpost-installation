@@ -18,11 +18,12 @@ máquina. Notebook Lenovo S145, Intel Core i7-8565U, 20GB de RAM, SSD 240GB, SSD
 joystick Multilaser Js091 e headset HyperX Cloud Stinger.
 
 Eu instalo o sistema em UEFI, com systemd-boot, sistema de arquivos EXT4, ZRAM,
-pipewire, wireplumber, repositório multilib habilitado (ativado por intermédio
-do archinstall), Nvidia com driver proprietário, shell Zsh com Oh My Zsh e
-powerlevel10k, Wezterm terminal, AUR helper Yay, Flatpak, Podman, Distrobox,
-Apparmor, firewalld, libvirt, Incus, asdf, intel_pstate scaling driver, thermald
-e x86_energy_perf_policy para gerenciamento de frequências da CPU e do perfil de
+kernel stable, pipewire, wireplumber, repositório multilib habilitado (ativado
+por intermédio do archinstall), Nvidia com o driver proprietário para o kernel
+stable (não é o pacote dkms), shell Zsh com Oh My Zsh e powerlevel10k, Wezterm
+terminal, AUR helper Yay, Flatpak, Podman, Distrobox, Apparmor, firewalld,
+libvirt, Incus, asdf, intel_pstate scaling driver, thermald e
+x86_energy_perf_policy para gerenciamento de frequências da CPU e do perfil de
 energia (uso o notebook ligado na tomada), firmware para o áudio da Sound Open
 Firmware, equalização paramétrica para o Headset HyperX Cloud Stinger, Helix
 Editor e GNOME (Wayland). O bluetooth está desabilitado. As configurações dos
