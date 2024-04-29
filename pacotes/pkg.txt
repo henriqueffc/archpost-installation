@@ -143,6 +143,10 @@ rsync
 rustscan
 s-tui
 sd
+sdl12-compat
+sdl2_image
+sdl2_mixer
+sdl2_ttf
 seahorse
 shotcut
 swh-plugins
