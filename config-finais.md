@@ -270,25 +270,23 @@ Opções de inicialização para os jogos na Steam usando a placa dedicada Nvidi
 
 **OpenGL + Nvidia**
 
-`SDL_VIDEODRIVER=x11 __GL_THREADED_OPTIMIZATIONS=1 __GL_MaxFramesAllowed=1 mangohud --dlsym prime-run %command%`
+`SDL_VIDEODRIVER=x11 __GL_MaxFramesAllowed=1 mangohud --dlsym prime-run %command%`
 
 É possível utilizar o parâmetro `__GL_THREADED_OPTIMIZATIONS=1`, mas é preciso
 efetuar testes. Tem jogos que não funcionam com ele.
 
-Poder ser que o jogo não precise da variável `SDL_VIDEODRIVER=x11`.
-
 O parâmetro `__GL_SYNC_TO_VBLANK=0` pode ajudar em jogos que estejam muito
 lentos, mas o uso da GPU sobe consideravelmente.
 
-Caso o jogo necessite da variável `SDL_VIDEODRIVER=X11` e ela não funcione,
-substitua por `SDL_DYNAMIC_API=/usr/lib64/libSDL2-2.0.so`
+Caso a variável `SDL_VIDEODRIVER=X11` não funcione, substitua por
+`SDL_DYNAMIC_API=/usr/lib64/libSDL2-2.0.so`
 
 Se o jogo apresentar o erro
 `gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded` (execute a Steam
 pelo terminal para verificar), use os parâmetros
-`SDL_VIDEODRIVER=x11 LD_PRELOAD="libpthread.so.0 libGL.so.1" __GL_THREADED_OPTIMIZATIONS=1 __GL_MaxFramesAllowed=1 mangohud --dlsym prime-run %command%`.
+`SDL_VIDEODRIVER=x11 LD_PRELOAD="libpthread.so.0 libGL.so.1" __GL_MaxFramesAllowed=1 mangohud --dlsym prime-run %command%`.
 Caso ele não funcione faça um teste usando os parâmetros
-`LD_PRELOAD=~/.local/share/Steam/ubuntu12_64/gameoverlayrenderer.so __GL_THREADED_OPTIMIZATIONS=1 __GL_MaxFramesAllowed=1 mangohud --dlsym prime-run %command%`
+`LD_PRELOAD=~/.local/share/Steam/ubuntu12_64/gameoverlayrenderer.so __GL_MaxFramesAllowed=1 mangohud --dlsym prime-run %command%`
 Esse erro não costuma impedir a abertura do jogo ou interferir na jogabilidade.
 
 O prime-run no Arch Linux faz o mesmo que
@@ -304,7 +302,7 @@ Na eventualidade de o som não funcionar, tente executar os jogos com o parâmet
 
 **DXVK - Vulkan - Nvidia**
 
-`STAGING_WRITECOPY=1 STAGING_SHARED_MEMORY=1 __GL_MaxFramesAllowed=1 PROTON_NO_ESYNC=1 PROTON_NO_FSYNC=1 mangohud prime-run %command%`
+`STAGING_WRITECOPY=1 STAGING_SHARED_MEMORY=1 PROTON_NO_ESYNC=1 PROTON_NO_FSYNC=1 mangohud prime-run %command%`
 
 **Gamemode**
 
