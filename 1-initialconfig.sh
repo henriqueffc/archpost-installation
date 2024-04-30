@@ -46,13 +46,11 @@ echo 'PROTON_ENABLE_NVAPI=1' >>/etc/environment
 echo '__GL_SHADER_DISK_CACHE=1' >>/etc/environment
 echo '__GL_SHADER_DISK_CACHE_SKIP_CLEANUP=1' >>/etc/environment
 echo '__GL_ExperimentalPerfStrategy=1' >>/etc/environment
-echo 'mesa_glthread=true' >>/etc/environment
 echo 'FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border"' >>/etc/environment
 echo 'FZF_DEFAULT_COMMAND="fd --type f --hidden --exclude .git"' >>/etc/environment
 echo 'GST_PLUGIN_FEATURE_RANK=vah264dec:MAX,vah265dec:MAX,vavp9dec:MAX,vavp8dec:MAX,vampeg2dec:MAX,av1dec:NONE' >>/etc/environment
 echo 'ANV_VIDEO_DECODE=1' >>/etc/environment
 echo 'ELECTRON_OZONE_PLATFORM_HINT=wayland' >>/etc/environment
-echo 'MUTTER_ALLOW_HYBRID_GPUS=1' >>/etc/environment
 echo '_JAVA_AWT_WM_NONREPARENTING=1' >>/etc/environment
 
 # PC speaker - turn off beep shutdown e desabilitar o Bluetooth
@@ -90,8 +88,7 @@ sed -i 's/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -z --threads=0 -)/g' /etc/ma
 
 # HOOKS / mkinitcpio.conf
 cp /etc/mkinitcpio.conf /etc/mkinitcpio.conf.bak
-sed -i 's/MODULES=.*/MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm i915)/g' /etc/mkinitcpio.conf
-sed -i 's/HOOKS=.*/HOOKS=(systemd autodetect microcode modconf keyboard sd-vconsole block filesystems fsck)/g' /etc/mkinitcpio.conf
+sed -i 's/HOOKS=.*/HOOKS=(systemd autodetect microcode modconf kms keyboard sd-vconsole block filesystems fsck)/g' /etc/mkinitcpio.conf
 echo 'MODULES_DECOMPRESS="yes"' >>/etc/mkinitcpio.conf
 mkinitcpio -P
 
