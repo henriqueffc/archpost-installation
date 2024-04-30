@@ -270,7 +270,7 @@ Opções de inicialização para os jogos na Steam usando a placa dedicada Nvidi
 
 **OpenGL + Nvidia**
 
-`SDL_VIDEODRIVER=x11 __GL_MaxFramesAllowed=1 mangohud --dlsym prime-run %command%`
+`__GL_MaxFramesAllowed=1 mangohud --dlsym prime-run %command%`
 
 É possível utilizar o parâmetro `__GL_THREADED_OPTIMIZATIONS=1`, mas é preciso
 efetuar testes. Tem jogos que não funcionam com ele.
@@ -278,13 +278,13 @@ efetuar testes. Tem jogos que não funcionam com ele.
 O parâmetro `__GL_SYNC_TO_VBLANK=0` pode ajudar em jogos que estejam muito
 lentos, mas o uso da GPU sobe consideravelmente.
 
-Caso a variável `SDL_VIDEODRIVER=X11` não funcione, substitua por
-`SDL_DYNAMIC_API=/usr/lib64/libSDL2-2.0.so`
+Caso o jogo não inicie use a variável `SDL_VIDEODRIVER=X11`. Se ela não
+funcionar, substitua por `SDL_DYNAMIC_API=/usr/lib64/libSDL2-2.0.so`
 
 Se o jogo apresentar o erro
 `gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded` (execute a Steam
 pelo terminal para verificar), use os parâmetros
-`SDL_VIDEODRIVER=x11 LD_PRELOAD="libpthread.so.0 libGL.so.1" __GL_MaxFramesAllowed=1 mangohud --dlsym prime-run %command%`.
+`LD_PRELOAD="libpthread.so.0 libGL.so.1" __GL_MaxFramesAllowed=1 mangohud --dlsym prime-run %command%`.
 Caso ele não funcione faça um teste usando os parâmetros
 `LD_PRELOAD=~/.local/share/Steam/ubuntu12_64/gameoverlayrenderer.so __GL_MaxFramesAllowed=1 mangohud --dlsym prime-run %command%`
 Esse erro não costuma impedir a abertura do jogo ou interferir na jogabilidade.
@@ -340,9 +340,9 @@ item Steam / DXVK - Vulkan - Nvidia.
 
 **OpenGL**
 
-Para jogos OpenGL use as seguintes variáveis: 1ª nome da variável
-`SDL_VIDEODRIVER` valor `x11` 2ª variável `__GL_MaxFramesAllowed` valor `1`.
-Veja mais variáveis no item Steam / OpenGL + Nvidia.
+Para jogos OpenGL use a seguinte variável: nome da variável
+`__GL_MaxFramesAllowed` valor `1`. Veja mais variáveis no item Steam / OpenGL +
+Nvidia.
 
 <br><br>
 
