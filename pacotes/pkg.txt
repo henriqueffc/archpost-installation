@@ -91,6 +91,7 @@ libcamera-tools
 libgtop
 libheif
 libopenraw
+libotr
 libraw
 libreoffice-fresh
 libreoffice-fresh-pt-br
