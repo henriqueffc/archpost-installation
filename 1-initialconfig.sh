@@ -88,7 +88,8 @@ sed -i 's/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -z --threads=0 -)/g' /etc/ma
 
 # HOOKS / mkinitcpio.conf
 cp /etc/mkinitcpio.conf /etc/mkinitcpio.conf.bak
-sed -i 's/HOOKS=.*/HOOKS=(systemd autodetect microcode modconf kms keyboard sd-vconsole block filesystems fsck)/g' /etc/mkinitcpio.conf
+sed -i 's/MODULES=.*/MODULES=(i915)/g' /etc/mkinitcpio.conf
+sed -i 's/HOOKS=.*/HOOKS=(systemd autodetect microcode modconf keyboard sd-vconsole block filesystems fsck)/g' /etc/mkinitcpio.conf
 echo 'MODULES_DECOMPRESS="yes"' >>/etc/mkinitcpio.conf
 mkinitcpio -P
 
