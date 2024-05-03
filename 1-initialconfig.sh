@@ -52,6 +52,7 @@ echo 'GST_PLUGIN_FEATURE_RANK=vah264dec:MAX,vah265dec:MAX,vavp9dec:MAX,vavp8dec:
 echo 'ANV_VIDEO_DECODE=1' >>/etc/environment
 echo 'ELECTRON_OZONE_PLATFORM_HINT=wayland' >>/etc/environment
 echo '_JAVA_AWT_WM_NONREPARENTING=1' >>/etc/environment
+echo 'GSK_RENDERER=vulkan' >>/etc/environment
 
 # PC speaker - turn off beep shutdown e desabilitar o Bluetooth
 echo -e 'blacklist pcspkr\nblacklist btusb' >/etc/modprobe.d/blacklist.conf
