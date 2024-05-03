@@ -51,6 +51,8 @@ systemctl enable --user syncthing.service
 echo -e "$AZUL \t syncthing habilitado $FIM"
 systemctl enable --user gcr-ssh-agent.socket
 echo -e "$AZUL \t GCR ssh-agent wrapper habilitado $FIM"
+sudo systemctl enable --now nvidia-persistenced.service
+echo -e "$AZUL \t nvidia-persistenced.service habilitado $FIM"
 
 # Bluetooth
 sudo sed -i 's/#Experimental =.*/Experimental = true/g' /etc/bluetooth/main.conf
