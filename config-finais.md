@@ -447,21 +447,7 @@ funcione com a placa dedicada.
 
 #### 18 - Bluetooth
 
-O módulo para o bluetooth está desabilitado. Caso queira usá-lo, faça o
-seguinte:
-
-`sudo modprobe btusb`
-
-`sudo systemctl start bluetooth.service`
-
-O obex é necessário para transferência de arquivos entre os dispositivos.
-`systemctl start --user obex.service`
-
-Esse processo habilita somente para a sessão em uso. Para habilitar
-permanentemente é preciso retirar o `blacklist btusb` do arquivo
-`blacklist.conf` que está em `/etc/modprobe.d/` e habilitar os serviços com o
-systemctl substituindo `start` por `enable`. Caso o bluetooth não funcione após
-os procedimentos acima, execute
+Caso o bluetooth não esteja funcionando, execute
 `sudo rfkill unblock bluetooth && sudo systemctl restart bluetooth`. Os pacotes
 necessários para o funcionamento do bluetooth já foram instalados no sistema e
 as configurações para os recursos experimentais do bluetooth foram executadas no

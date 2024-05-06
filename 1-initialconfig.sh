@@ -55,7 +55,7 @@ echo '_JAVA_AWT_WM_NONREPARENTING=1' >>/etc/environment
 echo 'GSK_RENDERER=vulkan' >>/etc/environment
 
 # PC speaker - turn off beep shutdown e desabilitar o Bluetooth
-echo -e 'blacklist pcspkr\nblacklist btusb' >/etc/modprobe.d/blacklist.conf
+echo -e 'blacklist pcspkr' >/etc/modprobe.d/blacklist.conf
 
 # Linux-firmware e wireless-regdb
 pacman -Syu linux-firmware linux-firmware-whence wireless-regdb --needed --noconfirm

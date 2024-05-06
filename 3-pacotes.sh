@@ -53,6 +53,9 @@ systemctl enable --user gcr-ssh-agent.socket
 echo -e "$AZUL \t GCR ssh-agent wrapper habilitado $FIM"
 sudo systemctl enable --now nvidia-persistenced.service
 echo -e "$AZUL \t nvidia-persistenced.service habilitado $FIM"
+sudo systemctl enable bluetooth.service
+systemctl enable --user obex.service
+echo -e "$AZUL \t bluetooth.service e obex.service habilitados $FIM"
 
 # Bluetooth
 sudo sed -i 's/#Experimental =.*/Experimental = true/g' /etc/bluetooth/main.conf
