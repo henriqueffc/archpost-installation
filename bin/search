@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+pacman -Slq | fzf --preview "pacman -Si {} && echo 'Requerido por:' && expac -S '%N' {}" --keep-right --preview-window='nohidden:wrap',up,60% --height 90%
