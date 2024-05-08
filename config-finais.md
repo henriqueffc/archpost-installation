@@ -11,10 +11,10 @@ Configure o tema dos programas que usam QT através dos aplicativos _Qt5
 Settings_ e _Qt6 Settings_
 
 Escolha o estilo breeze, paleta personalizada darker e tema de ícones breeze
-dark.
+dark. Na aba Fonts selecione a fonte Noto Sans.
 
-Nos programas que usam QT e permitem configurar a aparência (kdenlive, okular,
-vlc, keepassxc, etc.) escolha o tema breeze dark ou escuro.
+Nos programas que usam QT e permitem configurar a aparência (keepassxc, etc.)
+escolha o tema breeze dark ou escuro.
 
 Execute os seguintes comandos para unificar os temas dos flatpaks instalados no
 sistema.
@@ -457,6 +457,8 @@ script número 3.
 #### 19 - Geoclue
 
 **Geoclue estático**
+
+Se preferir usar o geoclue estático, faça as configurações abaixo.
 
 No arquivo de configuração abaixo deixe `enable=true` somente na opção
 `[static-source]`
