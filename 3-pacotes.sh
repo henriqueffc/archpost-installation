@@ -212,9 +212,6 @@ gsettings set org.gnome.desktop.search-providers disabled "['org.gnome.Contacts.
 # Ordem dos resultados da pesquisa realizada no overview
 gsettings set org.gnome.desktop.search-providers sort-order "['org.gnome.Calculator.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Settings.desktop']"
 
-# fonte antialising
-gsettings set org.gnome.desktop.interface font-antialiasing rgba
-
 # Acessibilidade
 gsettings set org.gnome.desktop.a11y.magnifier mag-factor "1.25"
 gsettings set org.gnome.desktop.a11y.magnifier mouse-tracking push
@@ -311,6 +308,12 @@ gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profi
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ visible-name 'Padrão'
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ default-size-columns '106'
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ default-size-rows '26'
+
+# fonte do sistema
+gsettings set org.gnome.desktop.interface font-name "Noto Sans 11"
+gsettings set org.gnome.desktop.interface document-font-name "Noto Sans 11"
+gsettings set org.gnome.desktop.interface monospace-font-name "Noto Sans Mono 10"
+gsettings set org.gnome.desktop.interface font-antialiasing rgba
 
 # Clamav
 sudo freshclam
