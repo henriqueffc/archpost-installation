@@ -37,7 +37,6 @@ dialog
 dosfstools
 duf
 e2fsprogs
-eog-plugins
 espeak-ng
 eza
 exfatprogs
@@ -45,6 +44,7 @@ expac
 fastfetch
 fd
 ffmpegthumbnailer
+file-roller
 firewalld
 flatpak
 fwupd
@@ -98,6 +98,7 @@ libreoffice-fresh-pt-br
 libwmf
 libzip
 lm_sensors
+lrzip
 lshw
 lurk
 lynx
