@@ -34,7 +34,7 @@ config.check_for_updates = false
 
 config.tab_bar_at_bottom = true
 
-adjust_window_size_when_changing_font_size = false
+config.adjust_window_size_when_changing_font_size = false
 
 config.initial_cols = 122
 
