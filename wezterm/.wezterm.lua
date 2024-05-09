@@ -40,7 +40,7 @@ config.initial_cols = 122
 
 config.initial_rows = 25
 
-xcursor_theme = 'Adwaita'
+config.xcursor_theme = 'Adwaita'
 
 for _, gpu in ipairs(wezterm.gui.enumerate_gpus()) do
   if gpu.backend == 'Vulkan' and gpu.device_type == 'DiscreteGpu' then
