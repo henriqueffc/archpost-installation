@@ -37,3 +37,4 @@ alias turbo="sudo turbostat --quiet --interval 1 --cpu 0-7 --show 'PkgWatt','Bus
 alias firefoxbox="podman run --rm -it --shm-size=512m -p 6901:6901 -e VNC_PW=passwd docker.io/kasmweb/firefox:1.15.0"
 alias torbrowserbox="podman run --rm -it --shm-size=512m -p 6901:6901 -e VNC_PW=passwd docker.io/kasmweb/tor-browser:1.15.0"
 alias hist="history | fzf"
+alias nvidia="watch -n 0.5 nvidia-smi"
