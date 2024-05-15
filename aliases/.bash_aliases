@@ -38,3 +38,6 @@ alias firefoxbox="podman run --rm -it --shm-size=512m -p 6901:6901 -e VNC_PW=pas
 alias torbrowserbox="podman run --rm -it --shm-size=512m -p 6901:6901 -e VNC_PW=passwd docker.io/kasmweb/tor-browser:1.15.0"
 alias hist="history | fzf"
 alias nvidia="watch -n 0.5 nvidia-smi"
+function flatrun() {
+    flatpak run "$(flatpak list --columns=application | grep -F -i "$1")" "${@:2}"
+}
