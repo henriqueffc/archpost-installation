@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+echo "Digite o nome do pacote (pesquisa feita nos pacotes instalados no sistema): "
+
+read -r resposta
+
+if [[ -n $(pacman -Qql "$resposta" | grep -Fe .service -e .socket) ]]; then
+    pacman -Qql "$resposta" | grep -Fe .service -e .socket
+else
+    echo "O pacote não possui .service ou .socket"
+fi
