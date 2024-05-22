@@ -26,7 +26,7 @@ flatpak install flathub io.gitlab.adhami3310.Converter -y
 flatpak install flathub org.gtkhash.gtkhash -y
 flatpak install flathub com.github.tchx84.Flatseal -y
 flatpak install flathub com.github.jeromerobert.pdfarranger -y
-flatpak install flathub com.github.unrud.VideoDownloader -y
+flatpak install flathub org.nickvision.tubeconverter -y
 flatpak install flathub fr.romainvigier.MetadataCleaner -y
 flatpak install flathub org.gnome.gitlab.YaLTeR.VideoTrimmer -y
 flatpak install flathub com.belmoussaoui.Obfuscate -y
@@ -62,6 +62,7 @@ flatpak install flathub org.gnome.gitlab.somas.Apostrophe.Plugin.TexLive -y
 flatpak install flathub app.drey.Damask -y
 flatpak install flathub io.github.dvlv.boxbuddyrs -y
 flatpak install flathub org.gnome.Fractal -y
+flatpak install flathub garden.jamie.Morphosis -y
 
 # Flathub Remote-Beta
 echo -e "$AZUL
@@ -80,3 +81,13 @@ echo -e "$AZUL
 $FIM"
 
 flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
+
+# Configurações do tema e das variáveis para alguns aplicativos
+echo -e "$AZUL Configurando o tema globalmente e as variáveis de alguns aplicativos flatpaks $FIM"
+
+flatpak override --user --env=GSK_RENDERER=ngl org.gnome.gitlab.somas.Apostrophe
+flatpak override --user --env=GSK_RENDERER=ngl com.github.johnfactotum.Foliate
+flatpak override --user --socket=wayland io.podman_desktop.PodmanDesktop
+flatpak override --user --filesystem=home io.github.dvlv.boxbuddyrs
+sudo flatpak override --filesystem=xdg-config/gtk-4.0
+sudo flatpak override --filesystem=xdg-config/gtk-3.0
