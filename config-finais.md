@@ -15,16 +15,6 @@ dark. Na aba Fonts selecione a fonte Noto Sans.
 
 Nos programas que usam QT e permitem configurar a aparência (keepassxc, etc.)
 escolha o tema breeze dark ou escuro.
-
-Execute os seguintes comandos para unificar os temas dos flatpaks instalados no
-sistema.
-
-O sufixo :ro (ex.: xdg-config/gtk-4:ro) indica read-only. Ele é opcional e
-preferi não usá-lo.
-
-`sudo flatpak override --filesystem=xdg-config/gtk-4.0`
-
-`sudo flatpak override --filesystem=xdg-config/gtk-3.0`
 <br><br>
 
 ### 3 - ImageMagick
@@ -500,3 +490,12 @@ Se quiser desabilitar o Geoclue use os seguintes comandos:
 `sudo systemctl mask geoclue.service`
 
 Manual do [Geoclue](https://man.archlinux.org/man/extra/geoclue/geoclue.5.en)
+<br><br>
+
+### 20 - Falha na renderização de alguns aplicativos
+
+Se alguns aplicativos não funcionarem adequadamente, utilize a variável
+`GSK_RENDERER=ngl`. Foi preciso configurar essa variável para os aplicativos
+flatpak Foliate e Apostrophe funcionarem corretamente (script 4). Nas
+configurações de cada aplicativo no app Flatseal, é possível configurar essa
+variável em Environment.
