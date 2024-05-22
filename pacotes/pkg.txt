@@ -23,6 +23,7 @@ bat-extras
 btop
 btrfs-progs
 cabextract
+caligula
 ccze
 chromium
 clamav
@@ -83,6 +84,7 @@ inxi
 jre-openjdk
 kdiskmark
 keepassxc
+kmon
 lnav
 lib32-gamemode
 lib32-mangohud
@@ -119,6 +121,7 @@ nvme-cli
 obsidian
 obs-studio
 openssh
+perl-image-exiftool
 p7zip
 pacman-contrib
 pacmanlogviewer
