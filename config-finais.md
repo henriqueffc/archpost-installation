@@ -497,5 +497,103 @@ Manual do [Geoclue](https://man.archlinux.org/man/extra/geoclue/geoclue.5.en)
 Se alguns aplicativos não funcionarem adequadamente, utilize a variável
 `GSK_RENDERER=ngl`. Foi preciso configurar essa variável para os aplicativos
 flatpak Foliate e Apostrophe funcionarem corretamente (script 4). Nas
-configurações de cada aplicativo no app Flatseal, é possível configurar essa
+configurações de cada aplicativo no app Flatseal é possível configurar essa
 variável em Environment.
+<br><br>
+
+### 21 - Piper
+
+Se optar por alterar a vozes usadas no speech-dispatcher para as
+disponibilizadas pelo projeto [Piper](https://github.com/rhasspy/piper), faça os
+procedimentos abaixo.
+
+Efetue o [download](https://github.com/rhasspy/piper/releases) do último binário
+(piper_linux_x86_64.tar.gz) para sistemas Linux disponibilizado no site do
+projeto no Github.
+
+Descompacte o arquivo `tar -xf piper_linux_x86_64.tar.gz` no seu diretório
+$HOME. Crie o diretório voices no diretório descompactado.
+`mkdir -p ~/piper/voices`
+
+Crie o arquivo urls.txt e insira o seguinte conteúdo:
+
+```
+https://huggingface.co/rhasspy/piper-voices/resolve/v1.0.0/pt/pt_BR/faber/medium/pt_BR-faber-medium.onnx.json
+https://huggingface.co/rhasspy/piper-voices/resolve/v1.0.0/pt/pt_BR/faber/medium/pt_BR-faber-medium.onnx
+https://huggingface.co/rhasspy/piper-voices/resolve/v1.0.0/en/en_US/ryan/medium/en_US-ryan-medium.onnx.json
+https://huggingface.co/rhasspy/piper-voices/resolve/v1.0.0/en/en_US/ryan/medium/en_US-ryan-medium.onnx
+```
+
+O site [huggingface.co](https://huggingface.co/rhasspy/piper-voices/tree/main)
+disponibiliza outras vozes.
+
+Para download utilize o comando
+`wget --directory-prefix ~/piper/voices --input-file urls.txt`
+
+Configure o módulo piper no speech-dispatcher.
+
+`mkdir -p ~/.config/speech-dispatcher/modules`
+
+`nano ~/.config/speech-dispatcher/modules/piper.conf`
+
+Insira o conteúdo abaixo.
+
+```
+GenericExecuteSynth "if command -v sox > /dev/null; then\
+        PROCESS=\'sox -r 22050 -c 1 -b 16 -e signed-integer -t raw - -t wav - tempo $RATE pitch $PITCH norm\'; OUTPUT=\'$PLAY_COMMAND\';\
+    elif command -v paplay > /dev/null; then\
+        PROCESS=\'cat\'; OUTPUT=\'$PLAY_COMMAND --raw --channels 1 --rate 22050\';\
+    else\
+        PROCESS=\'cat\'; OUTPUT=\'aplay -t raw -c 1 -r 22050 -f S16_LE\';\
+    fi;\
+    echo \'$DATA\' | ~/piper/piper --model ~/piper/voices/pt_BR-faber-medium.onnx --output_raw | $PROCESS | $OUTPUT;"
+GenericRateAdd 2
+GenericPitchAdd 1
+GenericVolumeAdd 1
+GenericRateMultiply 1
+GenericPitchMultiply 1000
+AddVoice "pt-BR" "male1" "pt_BF-faber-medium"
+AddVoice "en-US" "male1" "en_US-ryan-medium"
+```
+
+Crie o arquivo speechd.conf
+
+`nano ~/.config/speech-dispatcher/speechd.conf`
+
+Insira o conteúdo abaixo.
+
+```
+## Fonte: /etc/speech-dispatcher/speechd.conf
+##
+AddModule "piper" "sd_generic" "piper.conf"
+DefaultVoiceType  "male1"
+#DefaultLanguage   pt-BR
+DefaultModule   piper
+LogLevel  3
+LogDir  "default"
+DefaultVolume 100
+SymbolsPreproc "char"
+SymbolsPreprocFile "gender-neutral.dic"
+SymbolsPreprocFile "font-variants.dic"
+SymbolsPreprocFile "symbols.dic"
+SymbolsPreprocFile "emojis.dic"
+SymbolsPreprocFile "orca.dic"
+SymbolsPreprocFile "orca-chars.dic"
+Include "clients/*.conf"
+```
+
+As configurações anteriores ajustam o speech-dispatcher para o idioma pt-BR.
+Para alterar para o inglês ou voltar para o pt-BR, use os seguintes alias:
+
+```
+alias piper-pt="sed -i 's/en_US-ryan-medium.onnx/pt_BR-faber-medium.onnx/g' ~/.config/speech-dispatcher/modules/piper.conf"
+alias piper-en="sed -i 's/pt_BR-faber-medium.onnx/en_US-ryan-medium.onnx/g' ~/.config/speech-dispatcher/modules/piper.conf"
+```
+
+Para testar o funcionamento use o comando spd-say ou habilite o Screen Reader
+nas configurações de acessibilidade do GNOME.
+
+```
+spd-say "oi como você está?"
+spd-say "You’re playing a dangerous game Carl"
+```
