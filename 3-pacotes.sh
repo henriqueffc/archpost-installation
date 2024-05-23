@@ -60,6 +60,7 @@ echo -e "$AZUL \t bluetooth.service e obex.service habilitados $FIM"
 # Bluetooth
 sudo sed -i 's/#Experimental =.*/Experimental = true/g' /etc/bluetooth/main.conf
 sudo sed -i 's/#KernelExperimental =.*/KernelExperimental = true/g' /etc/bluetooth/main.conf
+sudo sed -i 's/#Testing =.*/Testing = true/g' /etc/bluetooth/main.conf
 
 # Offpowersave
 sudo mv ./powersave/default-wifi-powersave-on.conf /etc/NetworkManager/conf.d
