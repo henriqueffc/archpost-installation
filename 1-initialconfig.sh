@@ -53,6 +53,7 @@ echo 'ANV_VIDEO_DECODE=1' >>/etc/environment
 echo 'ELECTRON_OZONE_PLATFORM_HINT=wayland' >>/etc/environment
 echo '_JAVA_AWT_WM_NONREPARENTING=1' >>/etc/environment
 echo 'GSK_RENDERER=vulkan' >>/etc/environment
+echo 'XCURSOR_THEME="Adwaita"' >>/etc/environment
 
 # PC speaker - turn off beep shutdown e desabilitar o Bluetooth
 echo -e 'blacklist pcspkr' >/etc/modprobe.d/blacklist.conf
