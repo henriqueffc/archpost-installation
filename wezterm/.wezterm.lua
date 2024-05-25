@@ -40,7 +40,7 @@ config.initial_cols = 122
 
 config.initial_rows = 25
 
-config.xcursor_theme = 'Adwaita'
+config.xcursor_theme = "Adwaita"
 
 config.hide_mouse_cursor_when_typing = false
 
