@@ -119,7 +119,7 @@ sudo fc-cache -fv
 
 # Alias
 mv ./aliases/.bash_aliases ~/
-mv ./aliases/.atalhos.txt ~/
+mv ./aliases/.atalhos.md ~/
 
 # Modelos de arquivos para o Files
 touch $HOME/Modelos/novo.txt
