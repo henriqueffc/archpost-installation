@@ -331,9 +331,8 @@ cp ./fastfetch/config.jsonc $HOME/.config/fastfetch/
 # wireless-regdb - instalado pelo script 1.
 sudo sed -i '$a WIRELESS_REGDOM="BR"' /etc/conf.d/wireless-regdom
 
-# Arquivos com as flags para o Chromium e para o Microsoft Edge
+# Arquivo com as flags para o Chromium
 cp ./flags/chromium-flags.conf $HOME/.config/
-cp ./flags/microsoft-edge-stable-flags.conf $HOME/.config/
 
 # Arquivo com as flags para o Obsidian
 mkdir -p $HOME/.config/obsidian/
