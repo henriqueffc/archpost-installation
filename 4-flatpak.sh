@@ -91,3 +91,14 @@ flatpak override --user --socket=wayland io.podman_desktop.PodmanDesktop
 flatpak override --user --filesystem=home io.github.dvlv.boxbuddyrs
 sudo flatpak override --filesystem=xdg-config/gtk-4.0
 sudo flatpak override --filesystem=xdg-config/gtk-3.0
+
+# Gnome Web - Flatpak
+echo -e "$AZUL
+-------------------------------------------------------------------------
+           Trocando o Gnome Web para a versão em flatpak
+-------------------------------------------------------------------------
+$FIM"
+
+sudo pacman -R epiphany --noconfirm
+flatpak install flathub org.gnome.Epiphany -y
+flatpak override --user --env=GSK_RENDERER=ngl org.gnome.Epiphany
