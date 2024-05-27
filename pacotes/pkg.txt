@@ -63,6 +63,7 @@ glew
 glfw
 glow
 ghostscript
+gnome-boxes
 gnome-epub-thumbnailer
 gnome-firmware
 gnome-appfolders-manager
