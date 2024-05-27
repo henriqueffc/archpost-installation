@@ -598,7 +598,7 @@ spd-say "oi como você está?"
 spd-say "You’re playing a dangerous game Carl"
 ```
 
-<br><br>
+<br>
 
 ### 22 - Firefox
 
