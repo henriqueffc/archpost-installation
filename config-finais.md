@@ -600,16 +600,30 @@ spd-say "You’re playing a dangerous game Carl"
 
 <br>
 
-### 22 - Firefox
+### 22 - Firefox e Thunderbird
 
-Em `about:config` altere os seguintes parâmetros.
+Altere os seguintes parâmetros nas configurações avançadas.
 
-`gfx.webrender.all` = true `widget.gtk.rounded-bottom-corners.enabled` = true
-`widget.use-xdg-desktop-portal.file-picker` = 1 `image.jxl.enabled` = true
-`media.peerconnection.video.vp9_preferred` = true `media.av1.enabled` = false
-`media.gpu-process-decoder` = true `media.webrtc.camera.allow-pipewire` = true
-`general.smoothScroll.msdPhysics.enabled` = true
-`mousewheel.default.delta_multiplier_x` = 70
-`mousewheel.default.delta_multiplier_y` = 70
-`mousewheel.default.delta_multiplier_z` = 70 `mousewheel.min_line_scroll_amount`
-= 3
+| Configuração                              | Valor | Firefox | Thunderbird |
+| ----------------------------------------- | ----- | ------- | ----------- |
+| general.smoothScroll                      | true  | X       | X           |
+| general.smoothScroll.msdPhysics.enabled   | true  | X       | X           |
+| gfx.webrender.all                         | true  | X       | X           |
+| gfx.webrender.compositor                  | true  | X       | X           |
+| gfx.webrender.precache-shaders            | true  | X       | X           |
+| image.decode-immediately.enabled          | true  | X       | X           |
+| image.jxl.enabled                         | true  | X       | X           |
+| layout.frame_rate                         | 60    | X       | X           |
+| media.av1.enabled                         | false | X       | X           |
+| media.eme.enabled                         | true  | X       |             |
+| media.gmp.decoder.multithreaded           | true  | X       |             |
+| media.gpu-process-decoder                 | true  | X       |             |
+| media.peerconnection.video.vp9_preferred  | true  | X       |             |
+| media.webrtc.camera.allow-pipewire        | true  | X       |             |
+| mousewheel.default.delta_multiplier_x     | 70    | X       | X           |
+| mousewheel.default.delta_multiplier_y     | 70    | X       | X           |
+| mousewheel.default.delta_multiplier_z     | 70    | X       | X           |
+| mousewheel.min_line_scroll_amount         | 3     | X       | X           |
+| widget.gtk.global-menu.wayland.enabled    | true  | X       |             |
+| widget.gtk.rounded-bottom-corners.enabled | true  | X       |             |
+| widget.use-xdg-desktop-portal.file-picker | 1     | X       | X           |
