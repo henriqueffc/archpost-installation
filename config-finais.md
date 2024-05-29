@@ -607,4 +607,9 @@ Em `about:config` altere os seguintes parâmetros.
 `gfx.webrender.all` = true `widget.gtk.rounded-bottom-corners.enabled` = true
 `widget.use-xdg-desktop-portal.file-picker` = 1 `image.jxl.enabled` = true
 `media.peerconnection.video.vp9_preferred` = true `media.av1.enabled` = false
-`media.gpu-process-decoder` = true
+`media.gpu-process-decoder` = true `media.webrtc.camera.allow-pipewire` = true
+`general.smoothScroll.msdPhysics.enabled` = true
+`mousewheel.default.delta_multiplier_x` = 70
+`mousewheel.default.delta_multiplier_y` = 70
+`mousewheel.default.delta_multiplier_z` = 70 `mousewheel.min_line_scroll_amount`
+= 3
