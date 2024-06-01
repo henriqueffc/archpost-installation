@@ -50,8 +50,6 @@ flatpak install flathub fr.handbrake.ghb.Plugin.IntelMediaSDK -y
 flatpak install flathub app.drey.Dialect -y
 flatpak install flathub org.cryptomator.Cryptomator -y
 flatpak install flathub io.github.fabrialberio.pinapp -y
-flatpak install flathub it.mijorus.smile -y
-flatpak install flathub it.mijorus.collector -y
 flatpak install flathub info.febvre.Komikku -y
 flatpak install flathub app.drey.KeyRack -y
 flatpak install flathub com.belmoussaoui.Authenticator -y
@@ -59,7 +57,6 @@ flatpak install flathub de.haeckerfelix.Shortwave -y
 flatpak install flathub org.gnome.Podcasts -y
 flatpak install flathub org.gnome.gitlab.somas.Apostrophe -y
 flatpak install flathub org.gnome.gitlab.somas.Apostrophe.Plugin.TexLive -y
-flatpak install flathub app.drey.Damask -y
 flatpak install flathub io.github.dvlv.boxbuddyrs -y
 flatpak install flathub org.gnome.Fractal -y
 flatpak install flathub garden.jamie.Morphosis -y
