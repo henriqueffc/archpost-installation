@@ -71,6 +71,11 @@ gnome-terminal
 gnome-themes-extra
 gnome-tweaks
 goverlay
+gvfs-afc
+gvfs-gphoto2
+gvfs-mtp
+gvfs-nfs
+gvfs-smb
 gvfs-google
 gvfs-onedrive
 gparted
