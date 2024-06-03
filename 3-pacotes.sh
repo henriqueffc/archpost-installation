@@ -267,6 +267,10 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys control-center "['<Su
 # abrir o cliente de email
 gsettings set org.gnome.settings-daemon.plugins.media-keys email "['<Super>e']"
 
+# super + tab = muda de aplicativos / alt + tab = muda de janela
+gsettings set org.gnome.desktop.wm.keybindings switch-applications "['<Super>Tab']"
+gsettings set org.gnome.desktop.wm.keybindings switch-windows "['<Alt>Tab']"
+
 # Configurações para o Text editor
 gsettings set org.gnome.TextEditor highlight-current-line true
 gsettings set org.gnome.TextEditor restore-session false
