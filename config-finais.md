@@ -624,6 +624,4 @@ Altere os seguintes parâmetros nas configurações avançadas.
 | mousewheel.default.delta_multiplier_y     | 70    | X       | X           |
 | mousewheel.default.delta_multiplier_z     | 70    | X       | X           |
 | mousewheel.min_line_scroll_amount         | 3     | X       | X           |
-| widget.gtk.global-menu.wayland.enabled    | true  | X       |             |
-| widget.gtk.rounded-bottom-corners.enabled | true  | X       |             |
 | widget.use-xdg-desktop-portal.file-picker | 1     | X       | X           |
