@@ -48,7 +48,7 @@ fi
 
 if test -f "/home/$USER/.zshrc.pre-oh-my-zsh"; then
 
-    echo -e "$AZUL Oh my zsh já está instalado. Continuando a instalação (plugins e Powerlevel10K). $FIM" && sleep 2
+    echo -e "$AZUL Oh my zsh já está instalado. Continuando a instalação. $FIM" && sleep 2
 
 else
     while :; do
@@ -78,13 +78,13 @@ else
 
 fi
 
-if test -f "/home/$USER/.p10k.zsh"; then
+if test -f "/home/$USER/.zshrc.bak"; then
 
-    echo -e "$AZUL Os plugins e o Powerlevel10K estão instalados. Fim da instalação. $FIM" && sleep 2
+    echo -e "$AZUL Os plugins estão instalados. Fim da instalação. $FIM" && sleep 2
 else
 
     while :; do
-        echo -ne "$VERDE Você quer instalar os plugins e o Powerlevel10k? Será habilitado também no .zshrc os aliases criados no arquivo ~/.bash_aliases. Plugins que serão instalados: zsh-autosuggestions, zsh-syntax-highlighting, zsh-completions, colored-man-pages, command-not-found, universalarchive, thefuck, copyfile, copybuffer, dirhistory, web-search e copypath. Será instalado também o tema de cores para Zsh Drácula. $FIM $LVERDE (S) sim / (N) não $FIM"
+        echo -ne "$VERDE Você quer instalar os plugins? Será habilitado também no .zshrc os aliases criados no arquivo ~/.bash_aliases. Plugins que serão instalados: zsh-autosuggestions, zsh-syntax-highlighting, zsh-completions, colored-man-pages, command-not-found, universalarchive, thefuck, copyfile, copybuffer, dirhistory, web-search e copypath. Será instalado também o tema de cores para Zsh Drácula. $FIM $LVERDE (S) sim / (N) não $FIM"
         read -r resposta
         case "$resposta" in
         s | S | "")
@@ -97,7 +97,6 @@ else
             git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
             cp ~/.zshrc ~/.zshrc.bak
             sed -i 's/plugins=(git)/\plugins=(git zsh-autosuggestions zsh-syntax-highlighting colored-man-pages universalarchive thefuck copyfile copybuffer dirhistory web-search copypath)/' ~/.zshrc
-            sed -i 's|robbyrussell|powerlevel10k/powerlevel10k|' ~/.zshrc
             sed -i '2 r./zsh/dracula.txt' ~/.zshrc
             linenumber=$(grep -nr 'source' ~/.zshrc | gawk '{print $1}' FS=":")
             linenumber=$((linenumber - 1))
@@ -105,14 +104,13 @@ else
             echo 'source ~/.bash_aliases' >>~/.zshrc
             echo 'source /opt/asdf-vm/asdf.sh' >>~/.zshrc
             echo "export EDITOR='nano'" >>~/.zshrc
-            git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
             cat ./zsh/extract.txt >>~/.zshrc
             cat ./zsh/command-not-found.txt >>~/.zshrc
             cat ./zsh/rga-fzf.txt >>~/.zshrc
             echo 'export GPG_TTY=$TTY' >>~/.zshrc
             echo 'eval "$(zoxide init --cmd cd zsh)"' >>~/.zshrc
             sed -i 's|# export PATH=$HOME/bin:/usr/local/bin:$PATH|export PATH=$HOME/bin:$HOME/.local/bin:$PATH|g' ~/.zshrc
-            echo -e "$AZUL Instalação concluída. Caso considere necessário para uma melhor visualização dos caracteres substitua a fonte do terminal pela fonte JetBrainsMonoNL Nerd Font. Reinicie o terminal para configurar o Powerlevel10K. $FIM"
+            echo -e "$AZUL Instalação concluída. Reinicie o terminal. $FIM"
             break
             ;;
         n | N)
