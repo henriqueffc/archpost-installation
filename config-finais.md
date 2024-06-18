@@ -1,11 +1,6 @@
 # Configurações necessárias após as execuções dos scripts
 
-### 1 - SSD
-
-Habilite o cache de escrita no programa Discos.
-<br><br>
-
-### 2 - Tema
+### 1 - Tema
 
 Configure o tema dos programas que usam QT através dos aplicativos _Qt5
 Settings_ e _Qt6 Settings_
@@ -17,26 +12,14 @@ Nos programas que usam QT e permitem configurar a aparência (keepassxc, etc.)
 escolha o tema breeze dark ou escuro.
 <br><br>
 
-### 3 - ImageMagick
-
-Verifique o policy.xml do ImageMagick.
-
-`sudo nano /etc/ImageMagick-7/policy.xml`
-
-Comente as linhas `<policy domain= com <!-- (início) e --> (final da linha)`.
-Ex.:
-
-`<!-- <policy domain="module" rights="none" pattern="{PS,PDF,XPS}" /> -->`
-<br><br>
-
-### 4 - SSH
+### 2 - SSH
 
 Configurar o Fail2ban - porta SSH e o SSH.
 <br><br>
 
-### 5 - NVMe
+### 3 - NVMe
 
-Altere a identificação do ponto de montagem, flags (coloque
+Não altere a identificação do ponto de montagem. Mude as flags (coloque
 `defaults,noatime,x-gvfs-show,commit=60,barrier=0`) e o tipo de sistema de
 arquivos (auto -> ext4) da partição do NVMe no aplicativo Discos. Lembrando que
 essa configuração é para a partição do NVMe em que ficam instalados os jogos,
@@ -44,12 +27,12 @@ VMs e outros dados. Não é configuração a ser aplicada para a partição do
 sistema, do boot ou a home.
 <br><br>
 
-### 6 - Nautilus
+### 4 - Nautilus
 
 Atalhos no Nautilus (File). A fonte que contém os símbolos foi instalada pelo
 script número 3.
 
-`echo "file:///mnt/nvme0n1p1 🖴  NVME" >> ~/.config/gtk-3.0/bookmarks`
+`echo "file:///mnt/ponto_de_montagem 🖴  NVME" >> ~/.config/gtk-3.0/bookmarks`
 
 `echo "file:///home/$USER/Dropbox 📤 Dropbox" >> ~/.config/gtk-3.0/bookmarks`
 
@@ -58,15 +41,15 @@ script número 3.
 `echo "file:///home/$USER/Sync 📲 Sync" >>~/.config/gtk-3.0/bookmarks`
 <br><br>
 
-### 7 - Fstab
+### 5 - Fstab
 
-Acrescente nos parâmetros das partições ext4 e montadas pelo sistema no boot as
-seguintes especificações `commit=60` e `barrier=0`.
+Acrescente nos parâmetros das partições **ext4** e montadas pelo sistema no boot
+as seguintes especificações `commit=60` e `barrier=0`.
 
 `sudo nano /etc/fstab`
 <br><br>
 
-### 8 - Ext4
+### 6 - Ext4
 
 Habilite o
 [fast commit](https://wiki.archlinux.org/title/Ext4#Enabling_fast_commit_in_existing_filesystems)
@@ -174,7 +157,7 @@ comando é o seguinte:
 `chattr -F /caminho/para/a/pasta`
 <br><br>
 
-### 9 - Xpad
+### 7 - Xpad
 
 O controle Multilaser JS091 (Shanwan Controler) está funcionando corretamente
 como Microsoft Corp. Xbox360 Controller (verifique com `lsusb`). Caso não
@@ -183,7 +166,7 @@ funcione instale a atualização para o Xpad disponível no site
 `game-devices-udev` <https://codeberg.org/fabiscafe/game-devices-udev>
 <br><br>
 
-### 10 - Distrobox
+### 8 - Distrobox
 
 Caso use alguma distro pelo Distrobox configure o atalho do desktop. Executar
 usando o bash, com zsh ocorrem alguns problemas, mas se o container for criado
@@ -225,15 +208,15 @@ Caso queira inicializar usando o Wezterm o comando é o seguinte:
 Atalho : Shift + Ctrl + D
 <br><br>
 
-### 11 - Rclone
+### 9 - Rclone
 
 Configurar o remote no rclone e fazer o scprit de sincronização.
 <br><br>
 
-### 12 - Conservation mode - Ideapad S145
+### 10 - Conservation mode - Lenovo Loq 15IRH8
 
 Modo de conservação da bateria. Se for habilitado manterá a carga máxima da
-bateria em 60%. Verifique se o módulo do kernel ideapad_laptop está carregado
+bateria em 80%. Verifique se o módulo do kernel ideapad_laptop está carregado
 com o comando `lsmod | grep ideapad`. Se não estiver os comandos indicados a
 seguir não irão funcionar. Apure o valor presente no sistema com o seguinte
 comando:
@@ -254,7 +237,7 @@ Para desabilitar
 `echo 0 > /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode`
 <br><br>
 
-### 13 - Steam
+### 11 - Steam
 
 Opções de inicialização para os jogos na Steam usando a placa dedicada Nvidia.
 
@@ -294,6 +277,8 @@ Na eventualidade de o som não funcionar, tente executar os jogos com o parâmet
 
 `STAGING_WRITECOPY=1 STAGING_SHARED_MEMORY=1 PROTON_NO_ESYNC=1 PROTON_NO_FSYNC=1 mangohud prime-run %command%`
 
+O parâmetro `VKD3D_CONFIG=dxr11,dxr` habilita o raytracing.
+
 **Gamemode**
 
 Para executar o Gamemode acrescente `gamemoderun` nas opções de inicialização
@@ -308,7 +293,7 @@ Goverlay. Se possível, desabilito o VSync nas configurações dos jogos.
 
 Aumente a quantidade de cores para pré-compilar os shaders.
 
-`echo "unShaderBackgroundProcessingThreads 6" >> ~/.steam/steam/steam_dev.cfg`
+`echo "unShaderBackgroundProcessingThreads 10" >> ~/.steam/steam/steam_dev.cfg`
 
 **Problemas com a transmissão ao vivo na Steam**
 
@@ -317,7 +302,7 @@ Execute no terminal (com a Steam fechada)
 `steam-runtime steam://unlockh264/`
 <br><br>
 
-### 14 - Heroic Games Launcher
+### 12 - Heroic Games Launcher
 
 Nas configurações do jogo, na opção "outros", habilite o MangoHud e o uso da
 placa dedicada.
@@ -336,67 +321,7 @@ Nvidia.
 
 <br><br>
 
-### 15 - Intel SSD 660p - [Solidigm™ Storage Tool (SST)](https://www.solidigm.com/content/solidigm/us/en/support-page/drivers-downloads/ka-00085.html)
-
-Para liberar o cache do disco NVMe instale o programa
-[solidigm-sst-storage-tool-cli](https://aur.archlinux.org/packages/solidigm-sst-storage-tool-cli)
-(AUR).
-
-O ID do disco é apresentado com o comando `sudo sst show -ssd`
-
-Ex.:
-
-```
-- PHNH************ -
-
-Capacity : 512.11 GB (512,110,190,592 bytes)
-DevicePath : /dev/nvme0n1
-DeviceStatus : Healthy
-Firmware : L02C
-FirmwareUpdateAvailable : No known update for SSD. 
-If an update is expected, please contact your SSD Vendor 
-representative about firmware update for this drive.
-Index : 0
-MaximumLBA : 1000215215
-ModelNumber : INTEL SSDPEKNW512G8L
-ProductFamily : Intel SSD 660p Series
-SMARTEnabled : True
-SectorDataSize : 512
-SerialNumber : PHNH************
-```
-
-As informações sobre o uso do cache são mostradas com o comando
-`sudo sst show -ssd PHNH************ -performancebooster`
-
-Ex.:
-
-```
-- Force Flush Info PHNH************ -
-
-Percent SLC Buffer Available : 32
-Percent Completion of SLC Buffer Eviction : 0
-Time elapsed to complete SLC Buffer Flush (milliseconds) : 0
-Total Number of Host Initialize : 37
-Total Number of Host Cancel : 0
-Total Number of Drive Initialize/Cancel : 0
-```
-
-No exemplo acima o NVMe está com 32% do cache disponível. Para liberar o cache
-execute o comando `sudo sst start -ssd PHNH************ -performancebooster` Não
-é mostrado o comando em execução. Depois de alguns minutos verifique o fim do
-processo com o comando
-`sudo sst show -ssd PHNH************ -performancebooster`. A linha
-`Percent Completion of SLC Buffer Eviction` apresentará o valor de 100% quando a
-execução do processo acabar. Infelizmente, por problemas com esse NVMe, tenho
-que fazer esse procedimento semanalmente e não posso usar o disco até a sua
-capacidade máxima. Se o disco ficar com a capacidade máxima preenchida ou
-próximo a isso, ele irá travar em algum momento e corromper os dados. Se não
-liberar o cache o desempenho degrada com o passar do tempo. Uso o disco NVMe
-para jogos, VMs e outros dados não cruciais. Caso queira ver todas as
-propriedades do disco o comando é `sudo sst show -all -ssd PHNH************`.
-<br><br>
-
-#### 16 - Fallback
+#### 13 - Fallback
 
 Caso a imagem para o kernel fallback esteja sendo gerada pelo mkinitcpio, faça o
 seguinte:
@@ -422,7 +347,7 @@ Regenere o initramfs:
 `sudo mkinitcpio -P`
 <br><br>
 
-#### 17 - Upscayl
+#### 14 - Upscayl
 
 Faça o download do appimage na página do
 [github](https://github.com/upscayl/upscayl). Se o app não funcionar com a placa
@@ -435,7 +360,7 @@ ambiente (última opção da tela) o seguinte: Key = `VK_DRIVER_FILES` Value =
 funcione com a placa dedicada.
 <br><br>
 
-#### 18 - Bluetooth
+#### 15 - Bluetooth
 
 Caso o bluetooth não esteja funcionando, execute
 `sudo rfkill unblock bluetooth && sudo systemctl restart bluetooth`. Os pacotes
@@ -444,7 +369,7 @@ as configurações para os recursos experimentais do bluetooth foram executadas 
 script número 3.
 <br><br>
 
-#### 19 - Geoclue
+#### 16 - Geoclue
 
 **Geoclue estático**
 
@@ -492,7 +417,7 @@ Se quiser desabilitar o Geoclue use os seguintes comandos:
 Manual do [Geoclue](https://man.archlinux.org/man/extra/geoclue/geoclue.5.en)
 <br><br>
 
-### 20 - Falha na renderização de alguns aplicativos
+### 17 - Falha na renderização de alguns aplicativos
 
 Se alguns aplicativos não funcionarem adequadamente, utilize a variável
 `GSK_RENDERER=ngl`. Foi preciso configurar essa variável para os aplicativos
@@ -501,7 +426,7 @@ configurações de cada aplicativo no app Flatseal é possível configurar essa
 variável em Environment.
 <br><br>
 
-### 21 - Piper
+### 18 - Piper
 
 Se optar por alterar a vozes usadas no speech-dispatcher para as
 disponibilizadas pelo projeto [Piper](https://github.com/rhasspy/piper), faça os
@@ -600,7 +525,7 @@ spd-say "You’re playing a dangerous game Carl"
 
 <br>
 
-### 22 - Firefox e Thunderbird
+### 19 - Firefox e Thunderbird
 
 Altere os seguintes parâmetros nas configurações avançadas.
 
@@ -614,11 +539,9 @@ Altere os seguintes parâmetros nas configurações avançadas.
 | image.decode-immediately.enabled          | true  | X       | X           |
 | image.jxl.enabled                         | true  | X       | X           |
 | layout.frame_rate                         | 60    | X       | X           |
-| media.av1.enabled                         | false | X       | X           |
 | media.eme.enabled                         | true  | X       |             |
 | media.gmp.decoder.multithreaded           | true  | X       |             |
 | media.gpu-process-decoder                 | true  | X       |             |
-| media.peerconnection.video.vp9_preferred  | true  | X       |             |
 | media.webrtc.camera.allow-pipewire        | true  | X       |             |
 | mousewheel.default.delta_multiplier_x     | 70    | X       | X           |
 | mousewheel.default.delta_multiplier_y     | 70    | X       | X           |
