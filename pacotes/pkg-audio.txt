@@ -10,7 +10,6 @@ gst-plugins-good
 gst-plugins-ugly
 gst-plugin-qsv
 gst-plugin-va
-gst-plugin-msdk
 gstreamer
 jasper
 lame
