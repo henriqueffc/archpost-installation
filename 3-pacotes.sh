@@ -53,6 +53,8 @@ systemctl enable --user gcr-ssh-agent.socket
 echo -e "$AZUL \t GCR ssh-agent wrapper habilitado $FIM"
 sudo systemctl enable --now nvidia-persistenced.service
 echo -e "$AZUL \t nvidia-persistenced.service habilitado $FIM"
+sudo systemctl enable nvidia-powerd.service
+echo -e "$AZUL \t nvidia-powerd.service habilitado $FIM"
 sudo systemctl enable bluetooth.service
 systemctl enable --user obex.service
 echo -e "$AZUL \t bluetooth.service e obex.service habilitados $FIM"
@@ -106,9 +108,9 @@ sudo sed -i 's|#unix_sock_group = "libvirt"|unix_sock_group = "libvirt"|g' /etc/
 
 # Appimage
 aria2c -d ~/Downloads -i ./urls/urls.txt
-mkdir /home/$USER/Applications
-mv ~/Downloads/*.AppImage /home/$USER/Applications
-chmod +x /home/$USER/Applications/*.AppImage
+mkdir /home/$USER/AppImages
+mv ~/Downloads/*.AppImage /home/$USER/AppImages
+chmod +x /home/$USER/AppImages/*.AppImage
 
 # Fontes
 sudo mkdir -p /usr/local/share/fonts
@@ -226,7 +228,7 @@ gsettings set org.gnome.desktop.privacy remove-old-trash-files true
 gsettings set org.gnome.desktop.privacy old-files-age "3"
 
 # Mutter
-#gsettings set org.gnome.mutter experimental-features '["kms-modifiers"]'
+gsettings set org.gnome.mutter experimental-features '["kms-modifiers"]'
 
 # Desabilitar a suspensão do notebook quando a tela do dispositivo é fechada.
 sudo sed -i 's/#HandleLidSwitch=suspend/HandleLidSwitch=ignore/' /etc/systemd/logind.conf
