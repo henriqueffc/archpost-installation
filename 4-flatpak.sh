@@ -60,6 +60,7 @@ flatpak install flathub org.gnome.gitlab.somas.Apostrophe.Plugin.TexLive -y
 flatpak install flathub io.github.dvlv.boxbuddyrs -y
 flatpak install flathub org.gnome.Fractal -y
 flatpak install flathub garden.jamie.Morphosis -y
+flatpak install flathub org.telegram.desktop -y
 
 # Flathub Remote-Beta
 echo -e "$AZUL
