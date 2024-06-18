@@ -15,8 +15,8 @@ alias xll="eza -lag --icons --color=always --header --group-directories-first --
 alias xla="eza -las age --icons --color=always --group-directories-first"
 alias xltree="eza -la --icons --color=always --group-directories-first --octal-permissions --header --tree"
 alias bat="bat --theme=Dracula"
-alias cpu-performance="sudo cpupower frequency-set --governor performance && sudo x86_energy_perf_policy -a performance --hwp-min 20 --hwp-max 46"
-alias cpu-powersave="sudo cpupower frequency-set --governor powersave && sudo x86_energy_perf_policy -a balance-performance --hwp-min 20 --hwp-max 46"
+alias cpu-performance="sudo cpupower frequency-set --governor performance && sudo x86_energy_perf_policy -a performance --hwp-min 20"
+alias cpu-powersave="sudo cpupower frequency-set --governor powersave && sudo x86_energy_perf_policy -a balance-performance --hwp-min 20"
 alias cpu-info="grep 'cpu MHz' /proc/cpuinfo && cpupower frequency-info && sudo x86_energy_perf_policy && cat /sys/devices/system/cpu/intel_pstate/*"
 alias intel-freq="sudo i7z"
 alias intel-video="sudo intel_gpu_top"
@@ -41,3 +41,4 @@ alias nvidia="watch -n 0.5 nvidia-smi"
 function flatrun() {
     flatpak run "$(flatpak list --columns=application | grep -F -i "$1")" "${@:2}"
 }
+alias sudo="run0 --background= "
