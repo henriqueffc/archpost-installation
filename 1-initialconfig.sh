@@ -36,13 +36,14 @@ sed -i 's/#ParallelDownloads = 5/\ParallelDownloads = 5/' /etc/pacman.conf
 cp /etc/environment /etc/environment.bak
 echo 'MOZ_ENABLE_WAYLAND=1' >>/etc/environment
 echo 'EGL_PLATFORM=wayland' >>/etc/environment
-echo 'VDPAU_DRIVER=va_gl' >>/etc/environment
+echo 'VDPAU_DRIVER=nvidia' >>/etc/environment
 echo 'QT_QPA_PLATFORM="wayland;xcb"' >>/etc/environment
 echo 'QT_QPA_PLATFORMTHEME=qt6ct' >>/etc/environment
 echo 'GDK_BACKEND="wayland,x11"' >>/etc/environment
 echo 'SDL_AUDIODRIVER=pipewire' >>/etc/environment
 echo 'CLUTTER_BACKEND=wayland' >>/etc/environment
 echo 'PROTON_ENABLE_NVAPI=1' >>/etc/environment
+echo 'PROTON_ENABLE_NGX_UPDATER=1' >>/etc/environment
 echo '__GL_SHADER_DISK_CACHE=1' >>/etc/environment
 echo '__GL_SHADER_DISK_CACHE_SKIP_CLEANUP=1' >>/etc/environment
 echo '__GL_ExperimentalPerfStrategy=1' >>/etc/environment
@@ -89,7 +90,7 @@ sed -i 's/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -z --threads=0 -)/g' /etc/ma
 
 # HOOKS / mkinitcpio.conf
 cp /etc/mkinitcpio.conf /etc/mkinitcpio.conf.bak
-sed -i 's/MODULES=.*/MODULES=(i915)/g' /etc/mkinitcpio.conf
+sed -i 's/MODULES=.*/MODULES=(i915 nvidia nvidia_modeset nvidia_uvm nvidia_drm)/g' /etc/mkinitcpio.conf
 sed -i 's/HOOKS=.*/HOOKS=(systemd autodetect microcode modconf keyboard sd-vconsole block filesystems fsck)/g' /etc/mkinitcpio.conf
 echo 'MODULES_DECOMPRESS="yes"' >>/etc/mkinitcpio.conf
 mkinitcpio -P
