@@ -13,9 +13,9 @@ usando o script de instalação
 após essa data.
 
 Os scripts foram concebidos **especificamente** para a configuração da minha
-máquina. Notebook Lenovo S145, Intel Core i7-8565U, 20GB de RAM, SSD 240GB, SSD
-512GB M.2 NVMe, NVIDIA GeForce MX110, teclado Logitech K120, mouse Logitech M90,
-joystick Multilaser Js091 e headset HyperX Cloud Stinger.
+máquina. Notebook Lenovo LOQ 15IRH8, Intel Core i5-12450H, 16GB de RAM, 2 X
+512GB SSD M.2, NVIDIA GeForce RTX 3050 6GB GDDR6, teclado Logitech K120, mouse
+Logitech M90, joystick Multilaser Js091 e headset HyperX Cloud Stinger.
 
 Eu instalo o sistema em UEFI, com systemd-boot, sistema de arquivos EXT4, ZRAM,
 kernel stable, pipewire, wireplumber, repositório multilib habilitado (ativado
