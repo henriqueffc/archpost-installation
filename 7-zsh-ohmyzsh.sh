@@ -109,7 +109,7 @@ else
             cat ./zsh/rga-fzf.txt >>~/.zshrc
             echo 'export GPG_TTY=$TTY' >>~/.zshrc
             echo 'eval "$(zoxide init --cmd cd zsh)"' >>~/.zshrc
-            sed -i 's|# export PATH=$HOME/bin:/usr/local/bin:$PATH|export PATH=$HOME/bin:$HOME/.local/bin:$PATH|g' ~/.zshrc
+            sed -i 's|# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH|export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH|g' ~/.zshrc
             echo -e "$AZUL Instalação concluída. Reinicie o terminal. $FIM"
             break
             ;;
