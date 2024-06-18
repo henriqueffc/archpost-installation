@@ -3,7 +3,8 @@ intel-compute-runtime
 intel-gmmlib
 intel-graphics-compiler
 intel-media-driver
-intel-media-sdk
+vpl-gpu-rt
+libvpl-tools
 lib32-libva
 lib32-libvdpau
 lib32-mesa
@@ -15,7 +16,6 @@ lib32-vulkan-intel
 libva
 libva-utils
 libvdpau
-libvdpau-va-gl
 mesa
 mesa-utils
 nvidia
