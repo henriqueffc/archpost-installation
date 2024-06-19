@@ -11,11 +11,7 @@ AZUL='\e[1;34m'
 FIM='\e[0m'
 
 # Instalação dos aplicativos flatpaks
-echo -e "$AZUL
--------------------------------------------------------------------------
-                   Instalando os aplicativos Flatpaks
--------------------------------------------------------------------------
-$FIM"
+echo -e "$AZUL Instalando os aplicativos Flatpaks $FIM"
 
 sudo pacman -Syu flatpak --needed --noconfirm
 
@@ -63,20 +59,12 @@ flatpak install flathub garden.jamie.Morphosis -y
 flatpak install flathub org.telegram.desktop -y
 
 # Flathub Remote-Beta
-echo -e "$AZUL
--------------------------------------------------------------------------
-                 Adicionando o remote flathub-beta
--------------------------------------------------------------------------
-$FIM"
+echo -e "$AZUL Adicionando o remote flathub-beta $FIM"
 
 flatpak remote-add --if-not-exists flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
 
 # GNOME Nightly remote
-echo -e "$AZUL
--------------------------------------------------------------------------
-                 Adicionando o remote gnome-nightly
--------------------------------------------------------------------------
-$FIM"
+echo -e "$AZUL Adicionando o remote gnome-nightly $FIM"
 
 flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
 
@@ -85,17 +73,12 @@ echo -e "$AZUL Configurando o tema globalmente e as variáveis de alguns aplicat
 
 flatpak override --user --env=GSK_RENDERER=ngl org.gnome.gitlab.somas.Apostrophe
 flatpak override --user --env=GSK_RENDERER=ngl com.github.johnfactotum.Foliate
-flatpak override --user --socket=wayland io.podman_desktop.PodmanDesktop
 flatpak override --user --filesystem=home io.github.dvlv.boxbuddyrs
 sudo flatpak override --filesystem=xdg-config/gtk-4.0
 sudo flatpak override --filesystem=xdg-config/gtk-3.0
 
 # Gnome Web - Flatpak
-echo -e "$AZUL
--------------------------------------------------------------------------
-           Trocando o Gnome Web para a versão em flatpak
--------------------------------------------------------------------------
-$FIM"
+echo -e "$AZUL Trocando o Gnome Web para a versão em flatpak $FIM"
 
 sudo pacman -R epiphany --noconfirm
 flatpak install flathub org.gnome.Epiphany -y
