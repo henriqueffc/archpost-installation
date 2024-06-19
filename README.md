@@ -9,7 +9,7 @@ usando o script de instalação
 [archinstall](https://github.com/archlinux/archinstall) fornecido pela
 [ISO](https://archlinux.org/download/) oficial.
 
-**Último teste dos scripts: 12 de março de 2024** / Os scripts foram alterados
+**Último teste dos scripts: 19 de junho de 2024** / Os scripts foram alterados
 após essa data.
 
 Os scripts foram concebidos **especificamente** para a configuração da minha
