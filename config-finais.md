@@ -299,7 +299,7 @@ Aumente a quantidade de cores para pré-compilar os shaders.
 
 Execute no terminal (com a Steam fechada)
 
-`steam-runtime steam://unlockh264/`
+`steam-runtime steam://unlockh264/` ou `steam steam://unlockh264/`
 <br><br>
 
 ### 12 - Heroic Games Launcher
@@ -417,13 +417,26 @@ Se quiser desabilitar o Geoclue use os seguintes comandos:
 Manual do [Geoclue](https://man.archlinux.org/man/extra/geoclue/geoclue.5.en)
 <br><br>
 
-### 17 - Falha na renderização de alguns aplicativos
+### 17 - Aplicativos
+
+#### Falhas na renderização
 
 Se alguns aplicativos não funcionarem adequadamente, utilize a variável
 `GSK_RENDERER=ngl`. Foi preciso configurar essa variável para os aplicativos
 flatpak Foliate e Apostrophe funcionarem corretamente (script 4). Nas
 configurações de cada aplicativo no app Flatseal é possível configurar essa
 variável em Environment.
+
+#### Início no startup
+
+Habilite a inicialização do Dropbox junto com o sistema. Use o app Ajustes e
+faça a configuração em Aplicativos de inicialização.
+
+#### Segundo plano
+
+Desabilite o funcionamento dos aplicativos Podman Desktop e Gnome Web em segundo
+plano. Pode ser feito pelo Flatseal ou pelas configurações do Gnome
+(Aplicativos).
 <br><br>
 
 ### 18 - Piper
