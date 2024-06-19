@@ -269,6 +269,9 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys control-center "['<Su
 # abrir o cliente de email
 gsettings set org.gnome.settings-daemon.plugins.media-keys email "['<Super>e']"
 
+# Mostrar relógio UTC no painel de notificações
+gsettings set org.gnome.clocks world-clocks "[{'location': <(uint32 2, <('Coordinated Universal Time (UTC)', '@UTC', false, @a(dd) [], @a(dd) [])>)>}]"
+
 # super + tab = muda de aplicativos / alt + tab = muda de janela
 gsettings set org.gnome.desktop.wm.keybindings switch-applications "['<Super>Tab']"
 gsettings set org.gnome.desktop.wm.keybindings switch-windows "['<Alt>Tab']"
