@@ -50,6 +50,7 @@ echo -e "$AZUL
 $FIM"
 
 flatpak install flathub io.podman_desktop.PodmanDesktop -y
+flatpak override --user --socket=wayland io.podman_desktop.PodmanDesktop
 
 echo -e "$AZUL
 -------------------------------------------------------------------------
