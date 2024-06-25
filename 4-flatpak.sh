@@ -57,6 +57,9 @@ flatpak install flathub io.github.dvlv.boxbuddyrs -y
 flatpak install flathub org.gnome.Fractal -y
 flatpak install flathub garden.jamie.Morphosis -y
 flatpak install flathub org.telegram.desktop -y
+flatpak install flathub org.gajim.Gajim -y
+flatpak install flathub org.gajim.Gajim.Plugin.openpgp -y
+flatpak install flathub dev.geopjr.Tuba -y
 
 # Flathub Remote-Beta
 echo -e "$AZUL Adicionando o remote flathub-beta $FIM"

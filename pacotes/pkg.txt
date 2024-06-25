@@ -184,6 +184,7 @@ thunderbird-i18n-pt-br
 thunderbird-dark-reader
 trash-cli
 translate-shell
+tuba
 turbostat
 usbutils
 unace
