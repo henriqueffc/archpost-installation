@@ -74,8 +74,6 @@ flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome
 # Configurações do tema e das variáveis para alguns aplicativos
 echo -e "$AZUL Configurando o tema globalmente e as variáveis de alguns aplicativos flatpaks $FIM"
 
-flatpak override --user --env=GSK_RENDERER=ngl org.gnome.gitlab.somas.Apostrophe
-flatpak override --user --env=GSK_RENDERER=ngl com.github.johnfactotum.Foliate
 flatpak override --user --filesystem=home io.github.dvlv.boxbuddyrs
 sudo flatpak override --filesystem=xdg-config/gtk-4.0
 sudo flatpak override --filesystem=xdg-config/gtk-3.0
