@@ -81,7 +81,7 @@
     },
     {
       "type": "gpu",
-      "driverSpecific": true,
+      "driverSpecific": false,
       "key": "├─󰾲",
       "keyColor": "red"
     },
