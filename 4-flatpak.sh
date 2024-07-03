@@ -83,4 +83,3 @@ echo -e "$AZUL Trocando o Gnome Web para a versão em flatpak $FIM"
 
 sudo pacman -R epiphany --noconfirm
 flatpak install flathub org.gnome.Epiphany -y
-flatpak override --user --env=GSK_RENDERER=ngl org.gnome.Epiphany

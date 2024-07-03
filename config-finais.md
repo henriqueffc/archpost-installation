@@ -318,7 +318,6 @@ item Steam / DXVK - Vulkan - Nvidia.
 Para jogos OpenGL use a seguinte variável: nome da variável
 `__GL_MaxFramesAllowed` valor `1`. Veja mais variáveis no item Steam / OpenGL +
 Nvidia.
-
 <br><br>
 
 #### 13 - Fallback
@@ -422,10 +421,8 @@ Manual do [Geoclue](https://man.archlinux.org/man/extra/geoclue/geoclue.5.en)
 #### Falhas na renderização
 
 Se alguns aplicativos não funcionarem adequadamente, utilize a variável
-`GSK_RENDERER=ngl`. Foi preciso configurar essa variável para os aplicativos
-flatpak Foliate e Apostrophe funcionarem corretamente (script 4). Nas
-configurações de cada aplicativo no app Flatseal é possível configurar essa
-variável em Environment.
+`GSK_RENDERER=gl`. Nas configurações de cada aplicativo no app Flatseal é
+possível configurar essa variável em Environment.
 
 #### Início no startup
 
