@@ -94,8 +94,15 @@ echo -e "$AZUL
 -------------------------------------------------------------------------
 $FIM"
 
-# Inserir o usuário nos grupos libvirt kvm lp gamemode audio video
-sudo usermod -aG libvirt,kvm,lp,input,gamemode,audio,video "$USERNAME"
+# Inserir o usuário nos grupos libvirt kvm gamemode
+sudo usermod -aG libvirt,kvm,gamemode "$USERNAME"
+
+# Wireplumber
+## Necessário para resolver o problema de acesso a webcam.
+## https://gitlab.freedesktop.org/pipewire/pipewire/-/issues/3960#note_2373850
+mkdir -p /home/$USER/.config/systemd/user/wireplumber.service.d/
+echo -e "[Service]\nExecStartPre=/bin/sleep 5" >>override.conf
+mv override.conf /home/$USER/.config/systemd/user/wireplumber.service.d/
 
 # Virt-manager
 sudo cp /etc/libvirt/qemu.conf /etc/libvirt/qemu.conf.bak
