@@ -49,7 +49,7 @@ echo '__GL_SHADER_DISK_CACHE_SKIP_CLEANUP=1' >>/etc/environment
 echo '__GL_ExperimentalPerfStrategy=1' >>/etc/environment
 echo 'FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border"' >>/etc/environment
 echo 'FZF_DEFAULT_COMMAND="fd --type f --hidden --exclude .git"' >>/etc/environment
-echo 'GST_PLUGIN_FEATURE_RANK=vah264dec:MAX,vah265dec:MAX,vavp9dec:MAX,vavp8dec:MAX,vampeg2dec:MAX,av1dec:MAX' >>/etc/environment
+echo 'GST_PLUGIN_FEATURE_RANK=vah264dec:MAX,vah265dec:MAX,vavp9dec:MAX,vavp8dec:MAX,vampeg2dec:MAX,vajpegdec:MAX,vaav1dec:MAX' >>/etc/environment
 echo 'ANV_VIDEO_DECODE=1' >>/etc/environment
 echo 'ELECTRON_OZONE_PLATFORM_HINT=wayland' >>/etc/environment
 echo 'XCURSOR_THEME="Adwaita"' >>/etc/environment
