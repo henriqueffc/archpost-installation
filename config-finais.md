@@ -275,7 +275,7 @@ Na eventualidade de o som não funcionar, tente executar os jogos com o parâmet
 
 **DXVK - Vulkan - Nvidia**
 
-`STAGING_WRITECOPY=1 STAGING_SHARED_MEMORY=1 PROTON_NO_ESYNC=1 PROTON_NO_FSYNC=1 mangohud prime-run %command%`
+`STAGING_WRITECOPY=1 STAGING_SHARED_MEMORY=1 mangohud prime-run %command%`
 
 O parâmetro `VKD3D_CONFIG=dxr11,dxr` habilita o raytracing.
 
@@ -421,8 +421,8 @@ Manual do [Geoclue](https://man.archlinux.org/man/extra/geoclue/geoclue.5.en)
 #### Falhas na renderização
 
 Se alguns aplicativos não funcionarem adequadamente, utilize a variável
-`GSK_RENDERER=gl`. Nas configurações de cada aplicativo no app Flatseal é
-possível configurar essa variável em Environment.
+`GSK_RENDERER=gl`. Caso o app seja um flatpak suas configurações podem ser
+alteradas no app Flatseal, mudando a variável em Environment.
 
 #### Início no startup
 
