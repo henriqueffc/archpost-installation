@@ -420,7 +420,7 @@ Manual do [Geoclue](https://man.archlinux.org/man/extra/geoclue/geoclue.5.en)
 
 #### Falhas na renderização
 
-Se alguns aplicativos não funcionarem adequadamente, utilize a variável
+Se algum aplicativo GTK não funcionar adequadamente, utilize a variável
 `GSK_RENDERER=gl`. Caso o app seja um flatpak suas configurações podem ser
 alteradas no app Flatseal, mudando a variável em Environment.
 
