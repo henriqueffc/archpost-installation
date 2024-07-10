@@ -431,8 +431,8 @@ faça a configuração em Aplicativos de inicialização.
 
 #### Segundo plano
 
-Desabilite o funcionamento dos aplicativos Podman Desktop e Gnome Web em segundo
-plano. Pode ser feito pelo Flatseal ou pelas configurações do Gnome
+Desabilite o funcionamento dos aplicativos Podman Desktop, Discord e Gnome Web
+em segundo plano. Pode ser feito pelo Flatseal ou pelas configurações do Gnome
 (Aplicativos).
 <br><br>
 

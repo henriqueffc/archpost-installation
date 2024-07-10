@@ -60,6 +60,7 @@ flatpak install flathub org.telegram.desktop -y
 flatpak install flathub org.gajim.Gajim -y
 flatpak install flathub org.gajim.Gajim.Plugin.openpgp -y
 flatpak install flathub dev.geopjr.Tuba -y
+flatpak install flathub com.discordapp.Discord -y
 
 # Flathub Remote-Beta
 echo -e "$AZUL Adicionando o remote flathub-beta $FIM"
@@ -75,6 +76,7 @@ flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome
 echo -e "$AZUL Configurando o tema globalmente e as variáveis de alguns aplicativos flatpaks $FIM"
 
 flatpak override --user --filesystem=home io.github.dvlv.boxbuddyrs
+flatpak override --user --socket=wayland com.discordapp.Discord
 sudo flatpak override --filesystem=xdg-config/gtk-4.0
 sudo flatpak override --filesystem=xdg-config/gtk-3.0
 
