@@ -38,7 +38,7 @@ config.adjust_window_size_when_changing_font_size = false
 
 config.initial_cols = 122
 
-config.initial_rows = 25
+config.initial_rows = 26
 
 config.xcursor_theme = "Adwaita"
 
