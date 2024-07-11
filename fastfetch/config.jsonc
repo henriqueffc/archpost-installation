@@ -69,7 +69,12 @@
     },
     {
       "type": "terminal",
-      "key": "╰─",
+      "key": "├─",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "terminalfont",
+      "key": "╰─",
       "keyColor": "yellow"
     },
     "break",
