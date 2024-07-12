@@ -558,3 +558,15 @@ Altere os seguintes parâmetros nas configurações avançadas.
 | mousewheel.default.delta_multiplier_z     | 70    | X       | X           |
 | mousewheel.min_line_scroll_amount         | 3     | X       | X           |
 | widget.use-xdg-desktop-portal.file-picker | 1     | X       | X           |
+
+<br>
+
+### 20 - Newsflash
+
+Caso o Newsflash não tenha conexão com a rede, faça o seguinte:
+
+`nano ~/.var/app/io.gitlab.news_flash.NewsFlash/config/news-flash/newsflash_gtk.json`
+
+Substitua a linha `"ping_url": "http://exemple.com/"` por
+`"ping_url": "http://192.168.0.1/"`. O endereço 192.168.0.1 é o gateway.
+Verifique qual é o gateway da sua rede.

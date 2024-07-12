@@ -153,7 +153,6 @@ ripgrep
 ripgrep-all
 rmlint
 rsync
-rssguard
 rustscan
 s-tui
 sd
