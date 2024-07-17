@@ -44,12 +44,4 @@ config.xcursor_theme = "Adwaita"
 
 config.hide_mouse_cursor_when_typing = false
 
-for _, gpu in ipairs(wezterm.gui.enumerate_gpus()) do
-  if gpu.backend == 'Vulkan' and gpu.device_type == 'DiscreteGpu' then
-    config.webgpu_preferred_adapter = gpu
-    config.front_end = 'WebGpu'
-    break
-  end
-end
-
 return config
