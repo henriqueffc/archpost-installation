@@ -57,8 +57,8 @@ echo 'XCURSOR_THEME="Adwaita"' >>/etc/environment
 # PC speaker - turn off beep shutdown
 echo -e 'blacklist pcspkr' >/etc/modprobe.d/blacklist.conf
 
-# Linux-firmware e wireless-regdb
-pacman -Syu linux-firmware linux-firmware-whence wireless-regdb --needed --noconfirm
+# Linux-firmware, wireless-regdb e headers para o kernel stable e lts
+pacman -Syu linux-firmware linux-firmware-whence linux-headers linux-lts-headers wireless-regdb --needed --noconfirm
 
 # NANO - Line number e syntax-highlighting
 pacman -S nano --needed --noconfirm
