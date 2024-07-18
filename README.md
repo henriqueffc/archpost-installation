@@ -18,11 +18,12 @@ máquina. Notebook Lenovo LOQ 15IRH8, Intel Core i5-12450H, 16GB de RAM, 2 X
 Logitech M90, joystick Multilaser Js091 e headset HyperX Cloud Stinger.
 
 Eu instalo o sistema em UEFI, com systemd-boot, sistema de arquivos EXT4, ZRAM,
-kernel stable, pipewire, wireplumber, repositório multilib habilitado (ativado
-por intermédio do archinstall), Nvidia com o driver proprietário para o kernel
-stable (não é o pacote dkms), shell Zsh com Oh My Zsh, Wezterm terminal, AUR
-helper Yay, Flatpak, Podman, Distrobox, Apparmor, firewalld, libvirt, Incus,
-asdf, intel_pstate scaling driver, thermald e x86_energy_perf_policy para
+kernel stable e kernel lts (seleciono ambos durante a instalação via
+archinstall), pipewire, wireplumber, repositório multilib habilitado (ativado
+por intermédio do archinstall), Nvidia GPU com o driver Nvidia open kernel
+module (versão dkms), shell Zsh com Oh My Zsh, Wezterm terminal, AUR helper Yay,
+Flatpak, Podman, Distrobox, Apparmor, firewalld, libvirt, Incus, asdf,
+intel_pstate scaling driver, thermald e x86_energy_perf_policy para
 gerenciamento de frequências da CPU e do perfil de energia (uso o notebook
 ligado na tomada), equalização paramétrica para o Headset HyperX Cloud Stinger,
 Helix Editor e GNOME (Wayland). As configurações dos scripts são concebidas
