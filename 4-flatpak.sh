@@ -62,6 +62,9 @@ flatpak install flathub org.gajim.Gajim.Plugin.openpgp -y
 flatpak install flathub dev.geopjr.Tuba -y
 flatpak install flathub com.discordapp.Discord -y
 flatpak install flathub io.gitlab.news_flash.NewsFlash -y
+flatpak install flathub com.obsproject.Studio -y
+flatpak install flathub com.obsproject.Studio.Plugin.Gstreamer -y
+flatpak install flathub com.obsproject.Studio.Plugin.GStreamerVaapi -y
 
 # Flathub Remote-Beta
 echo -e "$AZUL Adicionando o remote flathub-beta $FIM"

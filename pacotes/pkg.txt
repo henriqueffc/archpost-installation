@@ -127,7 +127,6 @@ nmap
 ntfs-3g
 nvme-cli
 obsidian
-obs-studio
 openssh
 perl-image-exiftool
 p7zip
