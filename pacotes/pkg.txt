@@ -191,7 +191,6 @@ unzip
 veracrypt
 webp-pixbuf-loader
 weechat
-wezterm
 wine
 wine-gecko
 wine-mono

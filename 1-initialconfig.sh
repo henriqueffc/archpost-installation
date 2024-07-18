@@ -52,7 +52,6 @@ echo 'FZF_DEFAULT_COMMAND="fd --type f --hidden --exclude .git"' >>/etc/environm
 echo 'GST_PLUGIN_FEATURE_RANK=vah264dec:MAX,vah265dec:MAX,vavp9dec:MAX,vavp8dec:MAX,vampeg2dec:MAX,vajpegdec:MAX,vaav1dec:MAX' >>/etc/environment
 echo 'ANV_VIDEO_DECODE=1' >>/etc/environment
 echo 'ELECTRON_OZONE_PLATFORM_HINT=wayland' >>/etc/environment
-echo 'XCURSOR_THEME="Adwaita"' >>/etc/environment
 
 # PC speaker - turn off beep shutdown
 echo -e 'blacklist pcspkr' >/etc/modprobe.d/blacklist.conf

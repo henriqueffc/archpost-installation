@@ -65,6 +65,7 @@ flatpak install flathub io.gitlab.news_flash.NewsFlash -y
 flatpak install flathub com.obsproject.Studio -y
 flatpak install flathub com.obsproject.Studio.Plugin.Gstreamer -y
 flatpak install flathub com.obsproject.Studio.Plugin.GStreamerVaapi -y
+flatpak install flathub app.devsuite.Ptyxis -y
 
 # Flathub Remote-Beta
 echo -e "$AZUL Adicionando o remote flathub-beta $FIM"
