@@ -166,54 +166,12 @@ funcione instale a atualização para o Xpad disponível no site
 `game-devices-udev` <https://codeberg.org/fabiscafe/game-devices-udev>
 <br><br>
 
-### 8 - Distrobox
-
-Caso use alguma distro pelo Distrobox configure o atalho do desktop. Executar
-usando o bash, com zsh ocorrem alguns problemas, mas se o container for criado
-com uma home própria, o funcionamento do shell zsh será normal.
-
-Exemplo com o Ubuntu:
-
-`nano ~/.local/share/applications/ubuntu.desktop`
-
-`Exec=/usr/bin/distrobox enter --name ubuntu -- bash -l` ou se quiser lançar com
-o Wezterm:
-
-`Exec=/usr/bin/wezterm -e --always-new-process distrobox-enter -n ubuntu -- bash -l`
-
-Se usar o Wezterm para lançar a partir do .desktop modifique a opção Terminal no
-arquivo .desktop para false - `Terminal=false`
-
-Caso queira criar um atalho de teclado para lançar o Distrobox usando o terminal
-do Gnome (se for o Wezterm é preciso configurar o comando para o atalho de
-teclado - veja após a descrição para o terminal do Gnome), faça o seguinte:
-
-Acesse o menu de Preferências do terminal do Gnome e crie um novo perfil com o
-nome ubuntu (p.ex) e, na opção Comando personalizado (marque a opção Executar um
-comando personalizado ...), coloque `distrobox enter --name ubuntu -- bash -l` .
-O restante fica no padrão. Mude as cores do perfil para especificar a diferença
-de uso do terminal (padrão ou Distrobox).
-
-Nas configurações do sistema acesse Teclado - Atalhos de teclado.
-
-Crie um atalho personalizado.
-
-Nome : terminal ubuntu
-
-Comando : `gnome-terminal --profile=ubuntu`
-
-Caso queira inicializar usando o Wezterm o comando é o seguinte:
-`wezterm -e --always-new-process distrobox-enter -n ubuntu -- bash -l`
-
-Atalho : Shift + Ctrl + D
-<br><br>
-
-### 9 - Rclone
+### 8 - Rclone
 
 Configurar o remote no rclone e fazer o scprit de sincronização.
 <br><br>
 
-### 10 - Conservation mode - Lenovo Loq 15IRH8
+### 9 - Conservation mode - Lenovo Loq 15IRH8
 
 Modo de conservação da bateria. Se for habilitado manterá a carga máxima da
 bateria em 80%. Verifique se o módulo do kernel ideapad_laptop está carregado
@@ -237,7 +195,7 @@ Para desabilitar
 `echo 0 > /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode`
 <br><br>
 
-### 11 - Steam
+### 10 - Steam
 
 Opções de inicialização para os jogos na Steam usando a placa dedicada Nvidia.
 
@@ -302,7 +260,7 @@ Execute no terminal (com a Steam fechada)
 `steam-runtime steam://unlockh264/` ou `steam steam://unlockh264/`
 <br><br>
 
-### 12 - Heroic Games Launcher
+### 11 - Heroic Games Launcher
 
 Nas configurações do jogo, na opção "outros", habilite o MangoHud e o uso da
 placa dedicada.
@@ -320,7 +278,7 @@ Para jogos OpenGL use a seguinte variável: nome da variável
 Nvidia.
 <br><br>
 
-#### 13 - Fallback
+#### 12 - Fallback
 
 Caso a imagem para o kernel fallback esteja sendo gerada pelo mkinitcpio, faça o
 seguinte:
@@ -346,7 +304,7 @@ Regenere o initramfs:
 `sudo mkinitcpio -P`
 <br><br>
 
-#### 14 - Upscayl
+#### 13 - Upscayl
 
 Faça o download do appimage na página do
 [github](https://github.com/upscayl/upscayl). Se o app não funcionar com a placa
@@ -359,7 +317,7 @@ ambiente (última opção da tela) o seguinte: Key = `VK_DRIVER_FILES` Value =
 funcione com a placa dedicada.
 <br><br>
 
-#### 15 - Bluetooth
+#### 14 - Bluetooth
 
 Caso o bluetooth não esteja funcionando, execute
 `sudo rfkill unblock bluetooth && sudo systemctl restart bluetooth`. Os pacotes
@@ -368,7 +326,7 @@ as configurações para os recursos experimentais do bluetooth foram executadas 
 script número 3.
 <br><br>
 
-#### 16 - Geoclue
+#### 15 - Geoclue
 
 **Geoclue estático**
 
@@ -416,7 +374,7 @@ Se quiser desabilitar o Geoclue use os seguintes comandos:
 Manual do [Geoclue](https://man.archlinux.org/man/extra/geoclue/geoclue.5.en)
 <br><br>
 
-### 17 - Aplicativos
+### 16 - Aplicativos
 
 #### Falhas na renderização
 
@@ -436,7 +394,7 @@ em segundo plano. Pode ser feito pelo Flatseal ou pelas configurações do Gnome
 (Aplicativos).
 <br><br>
 
-### 18 - Piper
+### 17 - Piper
 
 Se optar por alterar a vozes usadas no speech-dispatcher para as
 disponibilizadas pelo projeto [Piper](https://github.com/rhasspy/piper), faça os
@@ -535,7 +493,7 @@ spd-say "You’re playing a dangerous game Carl"
 
 <br>
 
-### 19 - Firefox e Thunderbird
+### 18 - Firefox e Thunderbird
 
 Altere os seguintes parâmetros nas configurações avançadas.
 
@@ -561,7 +519,7 @@ Altere os seguintes parâmetros nas configurações avançadas.
 
 <br>
 
-### 20 - Newsflash
+### 19 - Newsflash
 
 Caso o Newsflash não tenha conexão com a rede, faça o seguinte:
 
