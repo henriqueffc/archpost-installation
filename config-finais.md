@@ -278,7 +278,7 @@ Para jogos OpenGL use a seguinte variável: nome da variável
 Nvidia.
 <br><br>
 
-#### 12 - Fallback
+### 12 - Fallback
 
 Caso a imagem para o kernel fallback esteja sendo gerada pelo mkinitcpio, faça o
 seguinte:
@@ -304,7 +304,7 @@ Regenere o initramfs:
 `sudo mkinitcpio -P`
 <br><br>
 
-#### 13 - Upscayl
+### 13 - Upscayl
 
 Faça o download do appimage na página do
 [github](https://github.com/upscayl/upscayl). Se o app não funcionar com a placa
@@ -317,7 +317,7 @@ ambiente (última opção da tela) o seguinte: Key = `VK_DRIVER_FILES` Value =
 funcione com a placa dedicada.
 <br><br>
 
-#### 14 - Bluetooth
+### 14 - Bluetooth
 
 Caso o bluetooth não esteja funcionando, execute
 `sudo rfkill unblock bluetooth && sudo systemctl restart bluetooth`. Os pacotes
@@ -326,7 +326,7 @@ as configurações para os recursos experimentais do bluetooth foram executadas 
 script número 3.
 <br><br>
 
-#### 15 - Geoclue
+### 15 - Geoclue
 
 **Geoclue estático**
 
