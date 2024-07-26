@@ -131,7 +131,6 @@ openssh
 perl-image-exiftool
 p7zip
 pacman-contrib
-pacmanlogviewer
 pandoc-cli
 papirus-icon-theme
 pkgstats
@@ -165,7 +164,6 @@ swh-plugins
 syncthing
 sysfsutils
 sysprof
-soundconverter
 steam
 strace
 scrcpy
