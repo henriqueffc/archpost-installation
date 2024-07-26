@@ -389,9 +389,9 @@ faça a configuração em Aplicativos de inicialização.
 
 #### Segundo plano
 
-Desabilite o funcionamento dos aplicativos Podman Desktop, Discord e Gnome Web
-em segundo plano. Pode ser feito pelo Flatseal ou pelas configurações do Gnome
-(Aplicativos).
+Desabilite o funcionamento dos aplicativos Podman Desktop, Gajim, Apostrophe,
+Discord e Gnome Web em segundo plano. Pode ser feito pelo Flatseal ou pelas
+configurações do Gnome (Aplicativos).
 <br><br>
 
 ### 17 - Piper
@@ -521,10 +521,25 @@ Altere os seguintes parâmetros nas configurações avançadas.
 
 ### 19 - Newsflash
 
-Caso o Newsflash não tenha conexão com a rede, faça o seguinte:
+Caso a versão em flatpak do app Newsflash não tenha conexão com a rede, faça o
+seguinte:
 
 `nano ~/.var/app/io.gitlab.news_flash.NewsFlash/config/news-flash/newsflash_gtk.json`
 
 Substitua a linha `"ping_url": "http://exemple.com/"` por
 `"ping_url": "http://192.168.0.1/"`. O endereço 192.168.0.1 é o gateway.
 Verifique qual é o gateway da sua rede.
+<br>
+
+### 20 - Ordem do boot
+
+Verifique o ID do kernel com o comando `bootctl list`. Selecione o kernel que
+você deseja para a inicialização do sistema com o comando
+`sudo bootctl set-default ID_do_kernel` Faça o update do
+[systemd-boot](https://wiki.archlinux.org/title/Systemd-boot) com o comando
+`sudo bootctl update`. Para alterar o tempo de exibição ou esconder a tela de
+apresentação das opções de inicialização do sistema edite o arquivo
+`loader.conf` em `/boot/loader/loader.conf`. Na opção `timeout` defina o tempo
+desejado (em segundos) da exibição ou coloque 0 para esconder as opções de
+inicialização. Para acessar a tela, caso opte por escondê-la, após ligar o
+notebook pressione a barra de espaço do teclado.
