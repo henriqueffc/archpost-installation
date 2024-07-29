@@ -135,6 +135,7 @@ pandoc-cli
 papirus-icon-theme
 pkgstats
 python-pipx
+presenterm
 procs
 progress
 poppler
