@@ -37,8 +37,6 @@ script número 3.
 `echo "file:///home/$USER/Dropbox 📤 Dropbox" >> ~/.config/gtk-3.0/bookmarks`
 
 `echo "file:///home/$USER/.var/app/org.gnome.Podcasts/data/gnome-podcasts/Downloads 📻 Podcast" >>~/.config/gtk-3.0/bookmarks`
-
-`echo "file:///home/$USER/Sync 📲 Sync" >>~/.config/gtk-3.0/bookmarks`
 <br><br>
 
 ### 5 - Fstab

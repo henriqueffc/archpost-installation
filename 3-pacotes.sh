@@ -47,8 +47,6 @@ sudo systemctl start pkgstats.timer
 echo -e "$AZUL \t pkgstats.timer habilitado $FIM"
 sudo systemctl enable pacman-filesdb-refresh.timer
 echo -e "$AZUL \t pacman-filesdb-refresh habilitado $FIM"
-systemctl enable --user syncthing.service
-echo -e "$AZUL \t syncthing habilitado $FIM"
 systemctl enable --user gcr-ssh-agent.socket
 echo -e "$AZUL \t GCR ssh-agent wrapper habilitado $FIM"
 sudo systemctl enable --now nvidia-persistenced.service

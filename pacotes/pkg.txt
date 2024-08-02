@@ -123,6 +123,7 @@ nautilus-image-converter
 nano
 ncdu
 nethogs
+nextcloud-client
 nmap
 ntfs-3g
 nvme-cli
@@ -135,6 +136,7 @@ pandoc-cli
 papirus-icon-theme
 pkgstats
 python-pipx
+python-nautilus
 presenterm
 procs
 progress
@@ -162,7 +164,6 @@ sdl2_ttf
 seahorse
 shotcut
 swh-plugins
-syncthing
 sysfsutils
 sysprof
 steam
