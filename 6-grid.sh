@@ -38,9 +38,3 @@ gsettings set org.gnome.shell favorite-apps "['app.devsuite.Ptyxis.desktop', 'or
 
 # Posição no GRID
 gsettings set org.gnome.shell app-picker-layout "[{'GNOME': <{'position': <0>}>, 'Utilities': <{'position': <1>}>, 'Programas': <{'position': <2>}>, 'Jogos': <{'position': <3>}>, 'Office': <{'position': <4>}>, 'Multimídia': <{'position': <5>}>, 'Internet': <{'position': <6>}>, 'Nvidia': <{'position': <7>}>, 'Development': <{'position': <8>}>, 'virt-manager.desktop': <{'position': <9>}>, 'org.keepassxc.KeePassXC.desktop': <{'position': <10>}>, 'org.cryptomator.Cryptomator.desktop': <{'position': <11>}>, 'com.belmoussaoui.Authenticator.desktop': <{'position': <12>}>, 'org.gnome.clocks.desktop': <{'position': <13>}>, 'org.gnome.Calculator.desktop': <{'position': <14>}>, 'org.gnome.SystemMonitor.desktop': <{'position': <15>}>, 'org.gnome.Characters.desktop': <{'position': <16>}>, 'org.gnome.Settings.desktop': <{'position': <17>}>, 'org.gnome.TextEditor.desktop': <{'position': <18>}>, 'org.gnome.Software.desktop': <{'position': <19>}>, 'com.nextcloud.desktopclient.nextcloud.desktop': <{'position': <20>}>, 'helix.desktop': <{'position': <21>}>}]"
-
-# Nautilus Bookmarks
-mkdir ~/ToDo/
-mkdir ~/Documentos/Projetos
-echo "file:///home/$USER/Documentos/Projetos 🎒 Projetos" >>~/.config/gtk-3.0/bookmarks
-echo "file:///home/$USER/ToDo 📋 ToDo" >>~/.config/gtk-3.0/bookmarks
