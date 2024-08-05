@@ -18,12 +18,10 @@ escolha o tema breeze dark ou escuro.
 Uso a extensão System Monitor habilitada. Para ativar/desativar a extensão uso o
 [Gerenciador de extensões](https://flathub.org/pt-BR/apps/com.mattjakeman.ExtensionManager)
 (instalado com o script 4).
-<br><br>
 
 ### 2 - SSH
 
 Configurar o Fail2ban - porta SSH e o SSH.
-<br><br>
 
 ### 3 - NVMe
 
@@ -33,7 +31,6 @@ arquivos (auto -> ext4) da partição do NVMe no aplicativo Discos. Lembrando qu
 essa configuração é para a partição do NVMe em que ficam instalados os jogos,
 VMs e outros dados. Não é configuração a ser aplicada para a partição do
 sistema, do boot ou a home.
-<br><br>
 
 ### 4 - Nautilus
 
@@ -47,7 +44,6 @@ script número 3.
 `echo "file:///home/$USER/.var/app/org.gnome.Podcasts/data/gnome-podcasts/Downloads 📻 Podcast" >>~/.config/gtk-3.0/bookmarks`
 
 `mkdir ~/Documentos/Projetos && echo "file:///home/$USER/Documentos/Projetos 🎒 Projetos" >>~/.config/gtk-3.0/bookmarks`
-<br><br>
 
 ### 5 - Fstab
 
@@ -55,7 +51,6 @@ Acrescente nos parâmetros das partições **ext4** e montadas pelo sistema no b
 as seguintes especificações `commit=60` e `barrier=0`.
 
 `sudo nano /etc/fstab`
-<br><br>
 
 ### 6 - Ext4
 
@@ -163,7 +158,6 @@ Para retirar o casefold da pasta é preciso que o diretório esteja vazio. O
 comando é o seguinte:
 
 `chattr -F /caminho/para/a/pasta`
-<br><br>
 
 ### 7 - Xpad
 
@@ -172,12 +166,10 @@ como Microsoft Corp. Xbox360 Controller (verifique com `lsusb`). Caso não
 funcione instale a atualização para o Xpad disponível no site
 <https://github.com/paroj/xpad> ou utilize o pacote disponível no AUR
 `game-devices-udev` <https://codeberg.org/fabiscafe/game-devices-udev>
-<br><br>
 
 ### 8 - Rclone
 
 Configurar o remote no rclone e fazer o scprit de sincronização.
-<br><br>
 
 ### 9 - Conservation mode - Lenovo Loq 15IRH8
 
@@ -201,7 +193,6 @@ Para Habilitar
 Para desabilitar
 
 `echo 0 > /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode`
-<br><br>
 
 ### 10 - Steam
 
@@ -266,7 +257,6 @@ Aumente a quantidade de cores para pré-compilar os shaders.
 Execute no terminal (com a Steam fechada)
 
 `steam-runtime steam://unlockh264/` ou `steam steam://unlockh264/`
-<br><br>
 
 ### 11 - Heroic Games Launcher
 
@@ -284,7 +274,6 @@ item Steam / DXVK - Vulkan - Nvidia.
 Para jogos OpenGL use a seguinte variável: nome da variável
 `__GL_MaxFramesAllowed` valor `1`. Veja mais variáveis no item Steam / OpenGL +
 Nvidia.
-<br><br>
 
 ### 12 - Fallback
 
@@ -310,7 +299,6 @@ fallback. Os arquivos possuem fallback no nome. Fique atento a esse detalhe.
 Regenere o initramfs:
 
 `sudo mkinitcpio -P`
-<br><br>
 
 ### 13 - Upscayl
 
@@ -323,7 +311,6 @@ ambiente (última opção da tela) o seguinte: Key = `VK_DRIVER_FILES` Value =
 `__EGL_VENDOR_LIBRARY_FILENAMES` Value =
 `/usr/share/glvnd/egl_vendor.d/10_nvidia.json` Isso fará com que o aplicativo
 funcione com a placa dedicada.
-<br><br>
 
 ### 14 - Bluetooth
 
@@ -332,7 +319,6 @@ Caso o bluetooth não esteja funcionando, execute
 necessários para o funcionamento do bluetooth já foram instalados no sistema e
 as configurações para os recursos experimentais do bluetooth foram executadas no
 script número 3.
-<br><br>
 
 ### 15 - Geoclue
 
@@ -380,7 +366,6 @@ Se quiser desabilitar o Geoclue use os seguintes comandos:
 `sudo systemctl mask geoclue.service`
 
 Manual do [Geoclue](https://man.archlinux.org/man/extra/geoclue/geoclue.5.en)
-<br><br>
 
 ### 16 - Aplicativos
 
@@ -400,7 +385,6 @@ faça a configuração em Aplicativos de inicialização.
 Desabilite o funcionamento dos aplicativos Podman Desktop, Gajim, Apostrophe,
 Discord e Gnome Web em segundo plano. Pode ser feito pelo Flatseal ou pelas
 configurações do Gnome (Aplicativos).
-<br><br>
 
 ### 17 - Piper
 
@@ -499,8 +483,6 @@ spd-say "oi como você está?"
 spd-say "You’re playing a dangerous game Carl"
 ```
 
-<br>
-
 ### 18 - Firefox e Thunderbird
 
 Altere os seguintes parâmetros nas configurações avançadas.
@@ -524,8 +506,7 @@ Altere os seguintes parâmetros nas configurações avançadas.
 | mousewheel.default.delta_multiplier_z     | 70    | X       | X           |
 | mousewheel.min_line_scroll_amount         | 3     | X       | X           |
 | widget.use-xdg-desktop-portal.file-picker | 1     | X       | X           |
-
-<br>
+| extensions.pocket.enabled                 | false | X       |             |
 
 ### 19 - Newsflash
 
@@ -537,7 +518,6 @@ seguinte:
 Substitua a linha `"ping_url": "http://exemple.com/"` por
 `"ping_url": "http://192.168.0.1/"`. O endereço 192.168.0.1 é o gateway.
 Verifique qual é o gateway da sua rede.
-<br>
 
 ### 20 - Ordem do boot
 
