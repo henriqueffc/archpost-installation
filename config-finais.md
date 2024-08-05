@@ -1,6 +1,8 @@
 # Configurações necessárias após as execuções dos scripts
 
-### 1 - Tema
+### 1 - Tema e extensões
+
+**Tema**
 
 Configure o tema dos programas que usam QT através dos aplicativos _Qt5
 Settings_ e _Qt6 Settings_
@@ -10,6 +12,12 @@ dark. Na aba Fonts selecione a fonte Inter Variable (tamanho 11).
 
 Nos programas que usam QT e permitem configurar a aparência (keepassxc, etc.)
 escolha o tema breeze dark ou escuro.
+
+**Extensões**
+
+Uso a extensão System Monitor habilitada. Para ativar/desativar a extensão uso o
+[Gerenciador de extensões](https://flathub.org/pt-BR/apps/com.mattjakeman.ExtensionManager)
+(instalado com o script 4).
 <br><br>
 
 ### 2 - SSH
@@ -376,18 +384,18 @@ Manual do [Geoclue](https://man.archlinux.org/man/extra/geoclue/geoclue.5.en)
 
 ### 16 - Aplicativos
 
-#### Falhas na renderização
+**Falhas na renderização**
 
 Se algum aplicativo GTK não funcionar adequadamente, utilize a variável
 `GSK_RENDERER=gl`. Caso o app seja um flatpak suas configurações podem ser
 alteradas no app Flatseal, mudando a variável em Environment.
 
-#### Início no startup
+**Início no startup**
 
 Habilite a inicialização do Dropbox junto com o sistema. Use o app Ajustes e
 faça a configuração em Aplicativos de inicialização.
 
-#### Segundo plano
+**Segundo plano**
 
 Desabilite o funcionamento dos aplicativos Podman Desktop, Gajim, Apostrophe,
 Discord e Gnome Web em segundo plano. Pode ser feito pelo Flatseal ou pelas
