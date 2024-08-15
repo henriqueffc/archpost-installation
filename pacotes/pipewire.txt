@@ -6,4 +6,5 @@ pipewire-alsa
 pipewire-jack
 pipewire-pulse
 pipewire-v4l2
+pipewire-libcamera
 wireplumber
