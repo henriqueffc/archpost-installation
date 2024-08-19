@@ -101,6 +101,9 @@ sudo usermod -aG libvirt,kvm,gamemode "$USERNAME"
 mkdir -p /home/$USER/.config/systemd/user/wireplumber.service.d/
 echo -e "[Service]\nExecStartPre=/bin/sleep 5" >>override.conf
 mv override.conf /home/$USER/.config/systemd/user/wireplumber.service.d/
+## configurando o libcamera para ser o default no Wireplumber
+mkdir -p ~/.config/wireplumber/wireplumber.conf.d/
+mv ./pipewire/disable-v4l2.conf ~/.config/wireplumber/wireplumber.conf.d/
 
 # Virt-manager
 sudo cp /etc/libvirt/qemu.conf /etc/libvirt/qemu.conf.bak
@@ -133,7 +136,7 @@ touch $HOME/Modelos/novo.txt
 
 # Equalização paramétrica para o Headset HyperX Cloud Stinger
 mkdir -p ~/.config/pipewire/pipewire.conf.d
-mv ./pipewire/*.conf ~/.config/pipewire/pipewire.conf.d/
+mv ./pipewire/sink-eq6.conf ~/.config/pipewire/pipewire.conf.d/
 
 # Desabilitar o coredump
 sudo mkdir /etc/systemd/coredump.conf.d/
