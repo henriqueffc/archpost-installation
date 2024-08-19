@@ -489,6 +489,7 @@ Altere os seguintes parâmetros nas configurações avançadas.
 
 | Configuração                              | Valor | Firefox | Thunderbird |
 | ----------------------------------------- | ----- | ------- | ----------- |
+| extensions.pocket.enable                  | false | X       |             |
 | general.smoothScroll                      | true  | X       | X           |
 | general.smoothScroll.msdPhysics.enabled   | true  | X       | X           |
 | gfx.webrender.all                         | true  | X       | X           |
@@ -506,7 +507,6 @@ Altere os seguintes parâmetros nas configurações avançadas.
 | mousewheel.default.delta_multiplier_z     | 70    | X       | X           |
 | mousewheel.min_line_scroll_amount         | 3     | X       | X           |
 | widget.use-xdg-desktop-portal.file-picker | 1     | X       | X           |
-| extensions.pocket.enabled                 | false | X       |             |
 
 ### 19 - Newsflash
 
