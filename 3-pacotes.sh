@@ -298,10 +298,11 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Shift><
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 "['<Shift><Super>3']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 "['<Shift><Super>4']"
 
-# Mlocate
-sudo pacman -S mlocate --needed --noconfirm
+# Plocate
+sudo pacman -S plocate --needed --noconfirm
 sudo updatedb
-echo -e "$AZUL \t Mlocate habilitado $FIM"
+sudo systemctl enable --now plocate-updatedb.timer
+echo -e "$AZUL \t Plocate habilitado $FIM"
 
 # Pacman hooks
 sudo mkdir /etc/pacman.d/hooks
