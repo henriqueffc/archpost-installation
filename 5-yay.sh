@@ -43,4 +43,7 @@ echo -e 'python system\njava system\nnodejs system\nrust system' >>$HOME/.tool-v
 cp /usr/share/applications/heroic.desktop ~/.local/share/applications/
 sed -i 's|Exec=.*|Exec=/opt/Heroic/heroic --enable-features=CanvasOopRasterization --enable-zero-copy --force_low_power_gpu --disable-gpu-driver-bug-workarounds %U|g' ~/.local/share/applications/heroic.desktop
 
+# Ananicy-cpp
+sudo systemctl enable --now ananicy-cpp.service
+
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"

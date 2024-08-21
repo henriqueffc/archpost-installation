@@ -3,3 +3,5 @@ downgrade
 gpu-screen-recorder-git
 heroic-games-launcher-bin
 ttf-noto-emoji-monochrome
+ananicy-cpp
+cachyos-ananicy-rules-git
