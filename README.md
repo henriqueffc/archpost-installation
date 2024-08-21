@@ -25,9 +25,9 @@ module (versão dkms), shell Zsh com Oh My Zsh, Ptyxis terminal, AUR helper Yay,
 Flatpak, Podman, Distrobox, Apparmor, firewalld, libvirt, Incus, asdf,
 intel_pstate scaling driver, thermald e x86_energy_perf_policy para
 gerenciamento de frequências da CPU e do perfil de energia (uso o notebook
-ligado na tomada), equalização paramétrica para o Headset HyperX Cloud Stinger,
-Helix Editor e GNOME (Wayland). As configurações dos scripts são concebidas
-nessa base.
+ligado na tomada), ananicy-cpp, equalização paramétrica para o Headset HyperX
+Cloud Stinger, Helix Editor e GNOME (Wayland). As configurações dos scripts são
+concebidas nessa base.
 
 Os scripts deverão ser executados após a inicialização do sistema no ambiente
 gráfico.
