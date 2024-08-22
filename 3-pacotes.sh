@@ -92,7 +92,7 @@ echo -e "$AZUL
 -------------------------------------------------------------------------
 $FIM"
 
-# Inserir o usuário nos grupos libvirt kvm gamemode
+# Inserir o usuário nos grupos libvirt kvm
 sudo usermod -aG libvirt,kvm "$USERNAME"
 
 # Wireplumber
