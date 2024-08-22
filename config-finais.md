@@ -238,19 +238,21 @@ O parâmetro `VKD3D_CONFIG=dxr11,dxr` habilita o raytracing.
 
 **Gamemode**
 
-Para executar o Gamemode acrescente `gamemoderun` nas opções de inicialização
-dos jogos na Steam.
+Não uso o gamemode. O funcionamento do gamemode conflita com o ananicy-cpp.
 
 **FPS**
 
 Uso o Mangohud para controlar o fps. Faço a configuração desse recurso pelo
-Goverlay. Se possível, desabilito o VSync nas configurações dos jogos.
+Goverlay.
 
 **Shaders**
 
 Aumente a quantidade de cores para pré-compilar os shaders.
 
 `echo "unShaderBackgroundProcessingThreads 10" >> ~/.steam/steam/steam_dev.cfg`
+
+Habilite o download prévio dos sombreadores nas configurações da Steam
+(Configurações - Download - Sombreadores).
 
 **Problemas com a transmissão ao vivo na Steam**
 
