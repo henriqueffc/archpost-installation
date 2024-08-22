@@ -93,7 +93,7 @@ echo -e "$AZUL
 $FIM"
 
 # Inserir o usuário nos grupos libvirt kvm gamemode
-sudo usermod -aG libvirt,kvm,gamemode "$USERNAME"
+sudo usermod -aG libvirt,kvm "$USERNAME"
 
 # Wireplumber
 ## Necessário para resolver o problema de acesso a webcam.
