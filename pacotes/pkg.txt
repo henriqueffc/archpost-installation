@@ -105,6 +105,7 @@ libraw
 libreoffice-fresh
 libreoffice-fresh-pt-br
 libwmf
+libultrahdr
 libzip
 lm_sensors
 lrzip
