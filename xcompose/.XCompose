@@ -1,0 +1,9 @@
+# corrige o erro ao se usar a tecla del em apps gtk4
+# https://bbs.archlinux.org/viewtopic.php?id=298417
+# Importa regras padrão do arquivo de sistema do Compose:
+
+<Multi_key> <dead_hamza> <space>  : "ء"  Arabic_hamza # ARABIC LETTER HAMZA
+<Multi_key> <dead_hamza> <dead_hamza>  : "ء"  Arabic_hamza # ARABIC LETTER HAMZA
+<Multi_key> <dead_hamza> <Arabic_alef>  : "أ"  Arabic_hamzaonalef # ARABIC LETTER ALEF WITH HAMZA ABOVE
+<Multi_key> <dead_hamza> <Arabic_waw>  : "ؤ"  Arabic_hamzaonwaw # ARABIC LETTER WAW WITH HAMZA ABOVE
+<Multi_key> <dead_hamza> <Arabic_yeh>  : "ئ"  Arabic_hamzaonyeh # ARABIC LETTER YEH WITH HAMZA ABOVE
