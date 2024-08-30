@@ -35,13 +35,8 @@ sed -i 's/#ParallelDownloads = 5/\ParallelDownloads = 5/' /etc/pacman.conf
 # Environment
 cp /etc/environment /etc/environment.bak
 echo 'MOZ_ENABLE_WAYLAND=1' >>/etc/environment
-echo 'EGL_PLATFORM=wayland' >>/etc/environment
-echo 'VDPAU_DRIVER=nvidia' >>/etc/environment
 echo 'QT_QPA_PLATFORM="wayland;xcb"' >>/etc/environment
 echo 'QT_QPA_PLATFORMTHEME=qt6ct' >>/etc/environment
-echo 'GDK_BACKEND="wayland,x11"' >>/etc/environment
-echo 'SDL_AUDIODRIVER=pipewire' >>/etc/environment
-echo 'CLUTTER_BACKEND=wayland' >>/etc/environment
 echo 'PROTON_ENABLE_NVAPI=1' >>/etc/environment
 echo 'PROTON_ENABLE_NGX_UPDATER=1' >>/etc/environment
 echo '__GL_SHADER_DISK_CACHE=1' >>/etc/environment
@@ -49,7 +44,6 @@ echo '__GL_SHADER_DISK_CACHE_SKIP_CLEANUP=1' >>/etc/environment
 echo '__GL_ExperimentalPerfStrategy=1' >>/etc/environment
 echo 'FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border"' >>/etc/environment
 echo 'FZF_DEFAULT_COMMAND="fd --type f --hidden --exclude .git"' >>/etc/environment
-echo 'GST_PLUGIN_FEATURE_RANK=vah264dec:MAX,vah265dec:MAX,vavp9dec:MAX,vavp8dec:MAX,vampeg2dec:MAX,vajpegdec:MAX,vaav1dec:MAX' >>/etc/environment
 echo 'ANV_VIDEO_DECODE=1' >>/etc/environment
 echo 'ELECTRON_OZONE_PLATFORM_HINT=wayland' >>/etc/environment
 
