@@ -90,9 +90,11 @@ intel-gpu-tools
 intel-ucode
 inxi
 jre-openjdk
+kdenlive
 kdiskmark
 keepassxc
 kmon
+ladspa
 lnav
 lib32-mangohud
 libappindicator-gtk3
@@ -128,6 +130,7 @@ nmap
 ntfs-3g
 nvme-cli
 obsidian
+opencv
 openssh
 perl-image-exiftool
 p7zip
@@ -146,6 +149,7 @@ python-nautilus
 qt5ct
 qt6ct
 qt5-wayland
+qt6-imageformats
 qt6-wayland
 rclone
 rebuild-detector
@@ -162,8 +166,6 @@ sdl2_image
 sdl2_mixer
 sdl2_ttf
 seahorse
-shotcut
-swh-plugins
 sysfsutils
 sysprof
 steam
