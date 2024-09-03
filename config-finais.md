@@ -302,19 +302,7 @@ Regenere o initramfs:
 
 `sudo mkinitcpio -P`
 
-### 13 - Upscayl
-
-Faça o download do appimage na página do
-[github](https://github.com/upscayl/upscayl). Se o app não funcionar com a placa
-dedicada out of the box, use o app flatpak Gear Lever para configurar o
-appimage. Após selecionar para colocar o app no grid, coloque como variáveis de
-ambiente (última opção da tela) o seguinte: Key = `VK_DRIVER_FILES` Value =
-`/usr/share/vulkan/icd.d/nvidia_icd.json` e Key =
-`__EGL_VENDOR_LIBRARY_FILENAMES` Value =
-`/usr/share/glvnd/egl_vendor.d/10_nvidia.json` Isso fará com que o aplicativo
-funcione com a placa dedicada.
-
-### 14 - Bluetooth
+### 13 - Bluetooth
 
 Caso o bluetooth não esteja funcionando, execute
 `sudo rfkill unblock bluetooth && sudo systemctl restart bluetooth`. Os pacotes
@@ -322,7 +310,7 @@ necessários para o funcionamento do bluetooth já foram instalados no sistema e
 as configurações para os recursos experimentais do bluetooth foram executadas no
 script número 3.
 
-### 15 - Geoclue
+### 14 - Geoclue
 
 **Geoclue estático**
 
@@ -369,7 +357,7 @@ Se quiser desabilitar o Geoclue use os seguintes comandos:
 
 Manual do [Geoclue](https://man.archlinux.org/man/extra/geoclue/geoclue.5.en)
 
-### 16 - Aplicativos
+### 15 - Aplicativos
 
 **Falhas na renderização**
 
@@ -388,7 +376,7 @@ Desabilite o funcionamento dos aplicativos Podman Desktop, Gajim, Apostrophe,
 Discord e Gnome Web em segundo plano. Pode ser feito pelo Flatseal ou pelas
 configurações do Gnome (Aplicativos).
 
-### 17 - Piper
+### 16 - Piper
 
 Se optar por alterar a vozes usadas no speech-dispatcher para as
 disponibilizadas pelo projeto [Piper](https://github.com/rhasspy/piper), faça os
@@ -485,7 +473,7 @@ spd-say "oi como você está?"
 spd-say "You’re playing a dangerous game Carl"
 ```
 
-### 18 - Firefox e Thunderbird
+### 17 - Firefox e Thunderbird
 
 Altere os seguintes parâmetros nas configurações avançadas.
 
@@ -510,7 +498,7 @@ Altere os seguintes parâmetros nas configurações avançadas.
 | mousewheel.min_line_scroll_amount         | 3     | X       | X           |
 | widget.use-xdg-desktop-portal.file-picker | 1     | X       | X           |
 
-### 19 - Newsflash
+### 18 - Newsflash
 
 Caso a versão em flatpak do app Newsflash não tenha conexão com a rede, faça o
 seguinte:
@@ -521,7 +509,7 @@ Substitua a linha `"ping_url": "http://exemple.com/"` por
 `"ping_url": "http://192.168.0.1/"`. O endereço 192.168.0.1 é o gateway.
 Verifique qual é o gateway da sua rede.
 
-### 20 - Ordem do boot
+### 19 - Ordem do boot
 
 Verifique o ID do kernel com o comando `bootctl list`. Selecione o kernel que
 você deseja para a inicialização do sistema com o comando
