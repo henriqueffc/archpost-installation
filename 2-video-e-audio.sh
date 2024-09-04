@@ -52,6 +52,5 @@ sudo sed -i '$ { s/^.*$/& quiet loglevel=3 systemd.show_status=auto rd.udev.log_
 
 # O zswap.enabled=0 é configurado pelo archinstall, por isso não está definido nas opções acima.
 # O scaling driver intel_pstate está definido como ativo. https://www.kernel.org/doc/html/latest/admin-guide/pm/intel_pstate.html / https://wiki.archlinux.org/title/CPU_frequency_scaling
-# O meu notebook suporta o Sound Open Firmware, em razão disso o parâmetro snd_intel_dspcfg.dsp_driver=3 foi definido para o kernel. O pacote necessário para o firmware (sof-firmware) está na lista de pacotes para o Pipewire.
 
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
