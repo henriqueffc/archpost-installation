@@ -294,7 +294,7 @@ gsettings set org.gnome.TextEditor highlight-current-line true
 gsettings set org.gnome.TextEditor restore-session false
 gsettings set org.gnome.TextEditor show-line-numbers true
 gsettings set org.gnome.TextEditor use-system-font false
-gsettings set org.gnome.TextEditor custom-font "JetBrainsMonoNL Nerd Font 14"
+gsettings set org.gnome.TextEditor custom-font "JetBrainsMonoNL Nerd Font Mono 14"
 gsettings set org.gnome.TextEditor style-scheme "classic-dark"
 gsettings set org.gnome.TextEditor style-variant "dark"
 
@@ -319,14 +319,15 @@ sudo sensors-detect
 # Fonte do GNOME terminal
 font=$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d "'")
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ use-system-font false
-gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ font 'JetBrainsMonoNL Nerd Font 14'
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ font 'JetBrainsMonoNL Nerd Font Mono 14'
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ visible-name 'Padrão'
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ default-size-columns '106'
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ default-size-rows '26'
 
 # fonte do sistema
-gsettings set org.gnome.desktop.interface font-name "Inter Variable 11"
-gsettings set org.gnome.desktop.interface document-font-name "Inter Variable 11"
+gsettings set org.gnome.desktop.interface font-name "Noto Sans 11"
+gsettings set org.gnome.desktop.interface document-font-name "Noto Sans 11"
+gsettings set org.gnome.desktop.interface monospace-font-name "JetBrainsMonoNL Nerd Font Mono 10"
 gsettings set org.gnome.desktop.interface font-antialiasing rgba
 
 # Clamav
