@@ -477,26 +477,31 @@ spd-say "You’re playing a dangerous game Carl"
 
 Altere os seguintes parâmetros nas configurações avançadas.
 
-| Configuração                              | Valor | Firefox | Thunderbird |
-| ----------------------------------------- | ----- | ------- | ----------- |
-| extensions.pocket.enable                  | false | X       |             |
-| general.smoothScroll                      | true  | X       | X           |
-| general.smoothScroll.msdPhysics.enabled   | true  | X       | X           |
-| gfx.webrender.all                         | true  | X       | X           |
-| gfx.webrender.compositor                  | true  | X       | X           |
-| gfx.webrender.precache-shaders            | true  | X       | X           |
-| image.decode-immediately.enabled          | true  | X       | X           |
-| image.jxl.enabled                         | true  | X       | X           |
-| layout.frame_rate                         | 60    | X       | X           |
-| media.eme.enabled                         | true  | X       |             |
-| media.gmp.decoder.multithreaded           | true  | X       |             |
-| media.gpu-process-decoder                 | true  | X       |             |
-| media.webrtc.camera.allow-pipewire        | true  | X       |             |
-| mousewheel.default.delta_multiplier_x     | 70    | X       | X           |
-| mousewheel.default.delta_multiplier_y     | 70    | X       | X           |
-| mousewheel.default.delta_multiplier_z     | 70    | X       | X           |
-| mousewheel.min_line_scroll_amount         | 3     | X       | X           |
-| widget.use-xdg-desktop-portal.file-picker | 1     | X       | X           |
+| Configuração                                          | Valor | Firefox | Thunderbird |
+| ----------------------------------------------------- | ----- | ------- | ----------- |
+| browser.ml.chat.enabled                               | true  | X       |             |
+| browser.urlbar.scotchBonnet.enableOverride            | true  | X       |             |
+| browser.newtabpage.activity-stream.system.showWeather | true  | X       |             |
+| extensions.pocket.enable                              | false | X       |             |
+| general.smoothScroll                                  | true  | X       | X           |
+| general.smoothScroll.msdPhysics.enabled               | true  | X       | X           |
+| gfx.webrender.all                                     | true  | X       | X           |
+| gfx.webrender.compositor                              | true  | X       | X           |
+| gfx.webrender.precache-shaders                        | true  | X       | X           |
+| image.decode-immediately.enabled                      | true  | X       | X           |
+| image.jxl.enabled                                     | true  | X       | X           |
+| layout.frame_rate                                     | 60    | X       | X           |
+| media.eme.enabled                                     | true  | X       |             |
+| media.gmp.decoder.multithreaded                       | true  | X       |             |
+| media.gpu-process-decoder                             | true  | X       |             |
+| media.webrtc.camera.allow-pipewire                    | true  | X       |             |
+| mousewheel.default.delta_multiplier_x                 | 70    | X       | X           |
+| mousewheel.default.delta_multiplier_y                 | 70    | X       | X           |
+| mousewheel.default.delta_multiplier_z                 | 70    | X       | X           |
+| mousewheel.min_line_scroll_amount                     | 3     | X       | X           |
+| sidebar.revamp                                        | true  | X       |             |
+| sidebar.verticalTabs                                  | true  | X       |             |
+| widget.use-xdg-desktop-portal.file-picker             | 1     | X       | X           |
 
 ### 18 - Newsflash
 
