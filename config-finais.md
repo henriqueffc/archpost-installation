@@ -492,6 +492,7 @@ Altere os seguintes parâmetros nas configurações avançadas.
 | image.jxl.enabled                                     | true  | X       | X           |
 | layout.frame_rate                                     | 60    | X       | X           |
 | media.eme.enabled                                     | true  | X       |             |
+| media.ffmpeg.vaapi.enabled                            | true  | X       |             |
 | media.gmp.decoder.multithreaded                       | true  | X       |             |
 | media.gpu-process-decoder                             | true  | X       |             |
 | media.webrtc.camera.allow-pipewire                    | true  | X       |             |
