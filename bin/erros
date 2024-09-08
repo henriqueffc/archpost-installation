@@ -1,21 +1,21 @@
 #!/usr/bin/env bash
 
 systemctlerrors() {
-	printf "\nSystemctl failed:\n"
-	systemctl --failed
+    printf "\nSystemctl failed:\n"
+    systemctl --failed
 }
 
 # usando ripgrep (rg) e não o grep.
 
 booterrors() {
-	printf "\nEmergency level:\n"
-	journalctl -b -p emerg | rg -v "Journal begins" | ccze -m ansi
-	printf "\n\nAlert level:\n"
-	journalctl -b -p alert | rg -v "Journal begins" | ccze -m ansi
-	printf "\n\nCritical level:\n"
-	journalctl -b -p crit | rg -v "Journal begins" | ccze -m ansi
-	printf "\nError level:\n"
-	journalctl -b -p err | rg -v "Journal begins" | ccze -m ansi
+    printf "\nEmergency level:\n"
+    journalctl -b -p emerg | rg -v "Journal begins" | tspin --print --words-red Failed,failed,error,Error --words-green Missing,missing --words-yellow kernel,Kernel
+    printf "\n\nAlert level:\n"
+    journalctl -b -p alert | rg -v "Journal begins" | tspin --print --words-red Failed,failed,error,Error --words-green Missing,missing --words-yellow kernel,Kernel
+    printf "\n\nCritical level:\n"
+    journalctl -b -p crit | rg -v "Journal begins" | tspin --print --words-red Failed,failed,error,Error --words-green Missing,missing --words-yellow kernel,Kernel
+    printf "\nError level:\n"
+    journalctl -b -p err | rg -v "Journal begins" | tspin --print --words-red Failed,failed,error,Error --words-green Missing,missing --words-yellow kernel,Kernel
 }
 
 systemctlerrors
