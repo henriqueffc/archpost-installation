@@ -119,6 +119,7 @@ magic-wormhole
 man-pages
 man-pages-pt_br
 meld
+movit
 mpv
 nautilus-image-converter
 nano
@@ -157,6 +158,7 @@ ripgrep
 ripgrep-all
 rmlint
 rsync
+rtaudio
 rustscan
 s-tui
 sd
