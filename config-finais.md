@@ -89,17 +89,17 @@ o metadata_csum_seed e o orphan_file habilitados.
 Exemplo com as flags habilitadas:
 
 ```
-Filesystem features: has_journal ext_attr resize_inode dir_index fast_commit
-orphan_file filetype needs_recovery extent 64bit flex_bg metadata_csum_seed sparse_super large_file huge_file
-dir_nlink extra_isize metadata_csum
+Filesystem features: has_journal ext_attr resize_inode dir_index fast_commit orphan_file 
+filetype needs_recovery extent 64bit flex_bg metadata_csum_seed sparse_super large_file 
+huge_file dir_nlink extra_isize metadata_csum orphan_present
 ```
 
 Caso alguma das flags mencionadas acima não estejam na saída do comando, faça o
 seguinte:
 
 Verifique se o [módulo](https://wiki.archlinux.org/title/Kernel_module)
-crc32c_intel está ativo (o i7-8565U possui a flag SSE 4.2 e pode operar com esse
-módulo):
+`crc32c_intel` está ativo (o i5-12450H possui a flag SSE 4.2 e pode operar com
+esse módulo):
 
 `lsmod | grep crc32c`
 
@@ -116,11 +116,13 @@ obrigatório)
 o 64bit não estiver disponível na lista)
 
 `sudo tune2fs -O metadata_csum /dev/caminho_da_partição` (habilitando o metadata
-checksums - somente se o metadata_csum não estiver disponível na lista)
+checksums - execute somente se o metadata_csum não estiver disponível na lista)
 
-`sudo tune2fs -O metadata_csum_seed /dev/caminho_da_partição`
+`sudo tune2fs -O metadata_csum_seed /dev/caminho_da_partição` (execute somente
+se o metadata_csum_seed não estiver disponível na lista)
 
-`sudo tune2fs -O orphan_file /dev/caminho_da_partição`
+`sudo tune2fs -O orphan_file /dev/caminho_da_partição` (execute somente se o
+orphan_file não estiver disponível na lista)
 
 Verifique a lista novamente usando
 `sudo dumpe2fs -h /dev/camimho_da_partição | grep features`
