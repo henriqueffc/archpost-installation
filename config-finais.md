@@ -125,40 +125,6 @@ checksums - somente se o metadata_csum não estiver disponível na lista)
 Verifique a lista novamente usando
 `sudo dumpe2fs -h /dev/camimho_da_partição | grep features`
 
-É possível habilitar o
-[casefold](https://wiki.archlinux.org/title/Ext4#Enabling_case-insensitive_mode)
-para case-insensitive mode. Lembrando que essa configuração não é aplicada
-globalmente, necessitando que seja habilitada localmente na pasta desejada. Use
-se tiver erros com jogos que precisem do wine e essa configuração seja indicada
-em tutoriais para a solução do problema.
-
-Verifique se o kernel possui o suporte para o casefold:
-
-`cat /sys/fs/ext4/features/casefold`
-
-Se suportar, habilite a flag com o comando abaixo:
-
-`sudo tune2fs -O casefold /dev/caminho_da_partição`
-
-Para habilitar o casefold em uma pasta, ela precisa estar vazia:
-
-`chattr +F /caminho/para/a/pasta`
-
-Para verificar se funcionou execute:
-
-`lsattr /caminho/para/a/pasta`
-
-```
-----------------F--- /pasta
-```
-
-A letra F indica que a pasta está com o casefold habilitado.
-
-Para retirar o casefold da pasta é preciso que o diretório esteja vazio. O
-comando é o seguinte:
-
-`chattr -F /caminho/para/a/pasta`
-
 ### 7 - Xpad
 
 O controle Multilaser JS091 (Shanwan Controler) está funcionando corretamente
