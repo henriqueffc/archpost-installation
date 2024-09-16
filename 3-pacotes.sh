@@ -56,6 +56,8 @@ echo -e "$AZUL \t nvidia-powerd.service habilitado $FIM"
 sudo systemctl enable bluetooth.service
 systemctl enable --user obex.service
 echo -e "$AZUL \t bluetooth.service e obex.service habilitados $FIM"
+sudo systemctl enable --now systemd-oomd.service
+echo -e "$AZUL \t systemd-oomd.service habilitado $FIM"
 
 # Bluetooth
 sudo sed -i 's/#Experimental =.*/Experimental = true/g' /etc/bluetooth/main.conf
