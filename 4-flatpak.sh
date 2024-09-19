@@ -85,9 +85,3 @@ flatpak override --user --filesystem=home io.github.dvlv.boxbuddyrs
 flatpak override --user --socket=wayland com.discordapp.Discord
 sudo flatpak override --filesystem=xdg-config/gtk-4.0
 sudo flatpak override --filesystem=xdg-config/gtk-3.0
-
-# Gnome Web - Flatpak
-echo -e "$AZUL Trocando o Gnome Web para a versão em flatpak $FIM"
-
-sudo pacman -R epiphany --noconfirm
-flatpak install flathub org.gnome.Epiphany -y
