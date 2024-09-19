@@ -82,11 +82,6 @@ sudo mv ./service/cpupowerperf.service /etc/systemd/system
 sudo systemctl enable cpupowerperf.service
 echo -e "$AZUL \t x86_energy_perf_policy habilitado $FIM"
 
-# XCompose
-## corrige o erro ao se usar a tecla del em apps gtk4
-## https://bbs.archlinux.org/viewtopic.php?id=298417
-mv ./xcompose/.XCompose $HOME
-
 # tealdeer (implementação do tldr)
 tldr --update
 tldr --seed-config
