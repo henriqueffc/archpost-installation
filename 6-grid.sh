@@ -21,13 +21,13 @@ gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folder
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Internet/ apps "['weechat.desktop', 'org.gajim.Gajim.desktop', 'chromium.desktop']"
 
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Development/ name "Development"
-gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Development/ apps "['io.podman_desktop.PodmanDesktop.desktop', 'io.github.dvlv.boxbuddyrs.desktop', 'me.iepure.devtoolbox.desktop']"
+gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Development/ apps "['io.github.dvlv.boxbuddyrs.desktop', 'me.iepure.devtoolbox.desktop']"
 
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Nvidia/ name "Nvidia"
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Nvidia/ apps "['nvidia-settings.desktop', 'nvtop.desktop']"
 
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Multimídia/ name "Multimídia"
-gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Multimídia/ apps "['org.gnome.gitlab.YaLTeR.VideoTrimmer.desktop', 'com.github.PintaProject.Pinta.desktop', 'org.kde.kdenlive.desktop', 'org.upscayl.Upscayl.desktop', 'audacity.desktop', 'com.obsproject.Studio.desktop', 'com.belmoussaoui.Obfuscate.desktop', 'fr.handbrake.ghb.desktop', 'org.nickvision.tubeconverter.desktop', 'fr.romainvigier.MetadataCleaner.desktop', 'com.github.wwmm.easyeffects.desktop', 'com.github.huluti.Curtail.desktop', 'mpv.desktop', 'org.pipewire.Helvum.desktop', 'io.gitlab.adhami3310.Converter.desktop', 'org.gimp.GIMP.desktop']"
+gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Multimídia/ apps "['org.gnome.gitlab.YaLTeR.VideoTrimmer.desktop', 'com.github.PintaProject.Pinta.desktop', 'org.kde.kdenlive.desktop', 'audacity.desktop', 'com.obsproject.Studio.desktop', 'com.belmoussaoui.Obfuscate.desktop', 'fr.handbrake.ghb.desktop', 'org.nickvision.tubeconverter.desktop', 'fr.romainvigier.MetadataCleaner.desktop', 'com.github.wwmm.easyeffects.desktop', 'com.github.huluti.Curtail.desktop', 'mpv.desktop', 'org.pipewire.Helvum.desktop', 'io.gitlab.adhami3310.Converter.desktop', 'org.gimp.GIMP.desktop']"
 
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Utilities/ apps "['gtk-lshw.desktop', 'io.github.ronniedroid.concessio.desktop', 'yazi.desktop', 'com.dropbox.Client.desktop', 'gsmartcontrol.desktop', 'kdiskmark.desktop', 'btop.desktop', 'htop.desktop', 'bssh.desktop', 'bvnc.desktop', 'avahi-discover.desktop', 'qvidcap.desktop', 'vim.desktop', 'qv4l2.desktop', 'remote-viewer.desktop', 'assistant.desktop', 'designer.desktop', 'lstopo.desktop', 'qdbusviewer.desktop', 'electron30.desktop', 'linguist.desktop']"
 

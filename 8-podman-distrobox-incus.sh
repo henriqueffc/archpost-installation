@@ -45,12 +45,12 @@ sudo pacman -S distrobox
 
 echo -e "$AZUL
 -------------------------------------------------------------------------
-	        	Instalando o Podman Desktop
+	        	Instalando o Pods
 -------------------------------------------------------------------------
 $FIM"
 
-flatpak install flathub io.podman_desktop.PodmanDesktop -y
-flatpak override --user --socket=wayland io.podman_desktop.PodmanDesktop
+flatpak install flathub com.github.marhkb.Pods -y
+systemctl --user enable --now podman.service
 
 echo -e "$AZUL
 -------------------------------------------------------------------------
