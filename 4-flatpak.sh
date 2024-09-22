@@ -66,6 +66,7 @@ flatpak install flathub com.obsproject.Studio.Plugin.Gstreamer -y
 flatpak install flathub com.obsproject.Studio.Plugin.GStreamerVaapi -y
 flatpak install flathub app.devsuite.Ptyxis -y
 flatpak install flathub io.github.ronniedroid.concessio -y
+flatpak install flathub org.upscayl.Upscayl -y
 
 # Flathub Remote-Beta
 echo -e "$AZUL Adicionando o remote flathub-beta $FIM"
@@ -84,4 +85,4 @@ flatpak override --user --filesystem=home io.github.dvlv.boxbuddyrs
 flatpak override --user --socket=wayland com.discordapp.Discord
 sudo flatpak override --filesystem=xdg-config/gtk-4.0
 sudo flatpak override --filesystem=xdg-config/gtk-3.0
-sudo flatpak override --env=VK_DRIVER_FILES=/usr/share/vulkan/icd.d/nvidia_icd.json
+sudo flatpak override --env=GSK_RENDERER=ngl

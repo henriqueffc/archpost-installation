@@ -330,9 +330,9 @@ Manual do [Geoclue](https://man.archlinux.org/man/extra/geoclue/geoclue.5.en)
 **Falhas na renderização**
 
 Se algum aplicativo GTK não funcionar adequadamente, utilize a variável
-`GSK_RENDERER=gl`. Caso o app seja um flatpak suas configurações podem ser
+`GSK_RENDERER=ngl`. Caso o app seja um flatpak suas configurações podem ser
 alteradas no app Flatseal, mudando a variável em Environment. No script número 4
-foi configurada a variável de ambiente para acesso ao Vulkan para apps flatpaks.
+foi configurada a variável de ambiente `GSK_RENDERER=ngl` para os apps flatpaks.
 Alguns aplicativos que foram atualizados para Application Platform version 47
 não estão inicializando sem essa variável. Confira as variáveis do sistema para
 flatpaks com o comando `cat /var/lib/flatpak/overrides/global` Para retirar
@@ -347,9 +347,9 @@ faça a configuração em Aplicativos de inicialização.
 
 **Segundo plano**
 
-Desabilite o funcionamento dos aplicativos Gajim, Apostrophe, Discord e Gnome
-Web em segundo plano. Pode ser feito pelo Flatseal ou pelas configurações do
-Gnome (Aplicativos).
+Desabilite o funcionamento dos aplicativos Gajim, Apostrophe e Discord em
+segundo plano. Pode ser feito pelo Flatseal ou pelas configurações do Gnome
+(Aplicativos).
 
 ### 16 - Piper
 
@@ -505,11 +505,12 @@ notebook pressione a barra de espaço do teclado.
 
 ### 20 - Upscayl
 
-Faça o download do appimage na página do
-[github](https://github.com/upscayl/upscayl). Se o app não funcionar com a placa
-dedicada out of the box, use o app flatpak Gear Lever para configurar o
-appimage. Após selecionar para colocar o app no grid, coloque como variáveis de
-ambiente (última opção da tela) o seguinte: Key = `VK_DRIVER_FILES` Value =
+Caso queira utilizar a versão em Appimage efetue o download na página do
+[github](https://github.com/upscayl/upscayl). A versão em flatpak foi instalada
+pelo script número 4. Se o app não funcionar com a placa dedicada out of the
+box, use o app flatpak Gear Lever para configurar o appimage. Após selecionar
+para colocar o app no grid, coloque como variáveis de ambiente (última opção da
+tela) o seguinte: Key = `VK_DRIVER_FILES` Value =
 `/usr/share/vulkan/icd.d/nvidia_icd.json` e Key =
 `__EGL_VENDOR_LIBRARY_FILENAMES` Value =
 `/usr/share/glvnd/egl_vendor.d/10_nvidia.json` Isso fará com que o aplicativo
