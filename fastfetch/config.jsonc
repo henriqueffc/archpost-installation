@@ -75,15 +75,16 @@
     "break",
     {
       "type": "cpu",
-      "temp": true,
       "key": "╭─",
-      "keyColor": "red"
+      "keyColor": "red",
+      "temp": true
     },
     {
       "type": "gpu",
       "driverSpecific": false,
       "key": "├─󰾲",
-      "keyColor": "red"
+      "keyColor": "red",
+      "temp": true
     },
     {
       "type": "memory",
