@@ -182,7 +182,7 @@ level = 1
 #
 # You can also set family on root to overwrite all fonts
 [fonts]
-family = "JetBrainsMonoNL Nerd Font Mono"
+family = "JetBrainsMonoNL Nerd Font"
 #
 # You can also specify extra fonts to load
 # [fonts]
@@ -354,4 +354,3 @@ tabs = '#101216'
 # [developer]
 # log-level = "OFF"
 # enable-log-file = false
-
