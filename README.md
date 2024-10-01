@@ -21,7 +21,7 @@ Eu instalo o sistema em UEFI, com systemd-boot, sistema de arquivos EXT4, ZRAM,
 kernel stable e kernel lts (seleciono ambos durante a instalação via
 archinstall), pipewire, wireplumber, repositório multilib habilitado (ativado
 por intermédio do archinstall), Nvidia GPU com o driver Nvidia open kernel
-module (versão dkms), shell Zsh com Oh My Zsh, Ptyxis terminal, AUR helper Yay,
+module (versão dkms), shell Zsh com Oh My Zsh, Rio terminal, AUR helper Yay,
 Flatpak, Podman, Distrobox, Apparmor, firewalld, libvirt, Incus, asdf,
 intel_pstate scaling driver, thermald e x86_energy_perf_policy para
 gerenciamento de frequências da CPU e do perfil de energia (uso o notebook
