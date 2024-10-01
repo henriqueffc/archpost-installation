@@ -156,6 +156,7 @@ rebuild-detector
 reflector
 ripgrep
 ripgrep-all
+rio
 rmlint
 rsync
 rtaudio
@@ -192,6 +193,8 @@ unarchiver
 unrar
 unzip
 veracrypt
+vivaldi
+vivaldi-ffmpeg-codecs
 webp-pixbuf-loader
 weechat
 wine

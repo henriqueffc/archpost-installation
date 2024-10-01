@@ -342,8 +342,9 @@ cp ./fastfetch/config.jsonc $HOME/.config/fastfetch/
 # wireless-regdb - instalado pelo script 1.
 sudo sed -i '$a WIRELESS_REGDOM="BR"' /etc/conf.d/wireless-regdom
 
-# Arquivo com as flags para o Chromium
+# Arquivos com as flags para o Chromium e Vivaldi
 cp ./flags/chromium-flags.conf $HOME/.config/
+cp ./flags/vivaldi-stable.conf $HOME/.config/
 
 # Arquivo com as flags para o Obsidian
 mkdir -p $HOME/.config/obsidian/
@@ -351,5 +352,12 @@ cp ./flags/user-flags.conf $HOME/.config/obsidian/
 
 # Sincronizando a database para a pesquisa de pacotes
 sudo pacman -Fy
+
+# Yazi plugin
+ya pack -a yazi-rs/plugins:max-preview
+
+# Rio Termninal
+mkdir -p $HOME/.config/rio
+mv ./rio/config.toml ~/.config/rio/
 
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
