@@ -19,7 +19,6 @@ sudo pacman -Syu flatpak --needed --noconfirm
 flatpak install flathub org.gimp.GIMP -y
 flatpak install flathub com.vysp3r.ProtonPlus -y
 flatpak install flathub io.gitlab.adhami3310.Converter -y
-flatpak install flathub org.gtkhash.gtkhash -y
 flatpak install flathub com.github.tchx84.Flatseal -y
 flatpak install flathub com.github.jeromerobert.pdfarranger -y
 flatpak install flathub org.nickvision.tubeconverter -y
@@ -64,9 +63,9 @@ flatpak install flathub io.gitlab.news_flash.NewsFlash -y
 flatpak install flathub com.obsproject.Studio -y
 flatpak install flathub com.obsproject.Studio.Plugin.Gstreamer -y
 flatpak install flathub com.obsproject.Studio.Plugin.GStreamerVaapi -y
-flatpak install flathub app.devsuite.Ptyxis -y
 flatpak install flathub io.github.ronniedroid.concessio -y
 flatpak install flathub org.upscayl.Upscayl -y
+flatpak install flathub dev.geopjr.Collision -y
 
 # Flathub Remote-Beta
 echo -e "$AZUL Adicionando o remote flathub-beta $FIM"
