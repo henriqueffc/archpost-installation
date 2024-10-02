@@ -76,15 +76,13 @@
     {
       "type": "cpu",
       "key": "╭─",
-      "keyColor": "red",
-      "temp": true
+      "keyColor": "red"
     },
     {
       "type": "gpu",
       "driverSpecific": false,
       "key": "├─󰾲",
-      "keyColor": "red",
-      "temp": true
+      "keyColor": "red"
     },
     {
       "type": "memory",
