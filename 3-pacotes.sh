@@ -313,20 +313,6 @@ sudo cp ./hooks/*.hook /etc/pacman.d/hooks/
 # Sensors
 sudo sensors-detect
 
-# Fonte do GNOME terminal
-font=$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d "'")
-gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ use-system-font false
-gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ font 'JetBrainsMonoNL Nerd Font 14'
-gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ visible-name 'Padrão'
-gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ default-size-columns '106'
-gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ default-size-rows '26'
-
-# fonte do sistema
-gsettings set org.gnome.desktop.interface font-name "Noto Sans 11"
-gsettings set org.gnome.desktop.interface document-font-name "Noto Sans 11"
-gsettings set org.gnome.desktop.interface monospace-font-name "JetBrainsMonoNL Nerd Font 10"
-gsettings set org.gnome.desktop.interface font-antialiasing rgba
-
 # Clamav
 sudo freshclam
 sudo systemctl enable clamav-freshclam-once.timer
@@ -359,5 +345,19 @@ ya pack -a yazi-rs/plugins:max-preview
 # Rio Termninal
 mkdir -p $HOME/.config/rio
 mv ./rio/config.toml ~/.config/rio/
+
+# Fonte do GNOME terminal
+font=$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d "'")
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ use-system-font false
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ font 'JetBrainsMonoNL Nerd Font 14'
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ visible-name 'Padrão'
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ default-size-columns '106'
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ default-size-rows '26'
+
+# fonte do sistema
+gsettings set org.gnome.desktop.interface font-name "Noto Sans 11"
+gsettings set org.gnome.desktop.interface document-font-name "Noto Sans 11"
+gsettings set org.gnome.desktop.interface monospace-font-name "JetBrainsMonoNL Nerd Font 10"
+gsettings set org.gnome.desktop.interface font-antialiasing rgba
 
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
