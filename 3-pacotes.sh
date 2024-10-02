@@ -342,9 +342,10 @@ sudo pacman -Fy
 # Yazi plugin
 ya pack -a yazi-rs/plugins:max-preview
 
-# Rio Termninal
-mkdir -p $HOME/.config/rio
-mv ./rio/config.toml ~/.config/rio/
+# Tabby Terminal
+pkgver=1.0.215
+wget -O tabby.pacman https://github.com/Eugeny/tabby/releases/download/v${pkgver}/tabby-${pkgver}-linux-x64.pacman
+sudo pacman -U tabby.pacman --noconfirm
 
 # Fonte do GNOME terminal
 font=$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d "'")

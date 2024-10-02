@@ -156,7 +156,6 @@ rebuild-detector
 reflector
 ripgrep
 ripgrep-all
-rio
 rmlint
 rsync
 rtaudio
