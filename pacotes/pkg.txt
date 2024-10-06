@@ -96,7 +96,6 @@ kmon
 ladspa
 lnav
 lib32-mangohud
-libappindicator-gtk3
 libcamera-tools
 libgtop
 libheif
@@ -145,7 +144,6 @@ procs
 progress
 poppler
 poppler-data
-python-nautilus
 qt5ct
 qt6ct
 qt5-wayland

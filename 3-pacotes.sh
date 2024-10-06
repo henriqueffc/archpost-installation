@@ -361,4 +361,8 @@ gsettings set org.gnome.desktop.interface document-font-name "Noto Sans 11"
 gsettings set org.gnome.desktop.interface monospace-font-name "JetBrainsMonoNL Nerd Font 10"
 gsettings set org.gnome.desktop.interface font-antialiasing rgba
 
+# Habilitando as extensões
+gnome-extensions enable system-monitor@gnome-shell-extensions.gcampax.github.com
+gnome-extensions enable $(gnome-extensions list | grep -m 1 appindicatorsupport)
+
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
