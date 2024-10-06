@@ -15,9 +15,13 @@ escolha o tema breeze dark ou escuro.
 
 **Extensões**
 
-Uso a extensão System Monitor habilitada. Para ativar/desativar a extensão uso o
+Uso as extensões System Monitor e AppIndicator/KStatusNotifierItem habilitadas.
+Para ativar/desativar as extensões use o
 [Gerenciador de extensões](https://flathub.org/pt-BR/apps/com.mattjakeman.ExtensionManager)
-(instalado com o script 4).
+(instalado com o script 4). A extensão AppIndicator/KStatusNotifierItem foi
+intalada com o pacote
+[gnome-shell-extension-appindicator](https://archlinux.org/packages/extra/any/gnome-shell-extension-appindicator/)
+(instalada com o script 2).
 
 ### 2 - SSH
 
