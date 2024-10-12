@@ -5,3 +5,4 @@ heroic-games-launcher-bin
 ttf-noto-emoji-monochrome
 ananicy-cpp
 cachyos-ananicy-rules-git
+nautilus-open-any-terminal
