@@ -63,4 +63,20 @@ sudo systemctl enable --now incus.socket
 sudo usermod -aG incus-admin "$USERNAME"
 sudo usermod -v 1000000-1000999999 -w 1000000-1000999999 root
 
+echo -e "$AZUL
+-------------------------------------------------------------------------
+                         Instalando o Podlet
+-------------------------------------------------------------------------
+$FIM"
+
+# Configurações para a pasta ~/bin (criação da pasta e path no .bashrc) foram feitas no script nº 3.
+# Coloquei o comando mkdir como um lembrete e para evitar algum erro caso a pasta não tenha sido criada anteriormente.
+mkdir -p $HOME/bin
+pkgver=0.3.0
+wget https://github.com/containers/podlet/releases/download/v${pkgver}/podlet-x86_64-unknown-linux-gnu.tar.xz
+tar -xf podlet-x86_64-unknown-linux-gnu.tar.xz
+mv ./podlet-x86_64-unknown-linux-gnu/podlet ~/bin
+rm podlet-x86_64-unknown-linux-gnu.tar.xz
+rm -rf podlet-x86_64-unknown-linux-gnu
+
 printf "%s $VERDE Fim da instalação! $FIM \n"
