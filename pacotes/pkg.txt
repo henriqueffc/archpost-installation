@@ -117,6 +117,7 @@ mangohud
 magic-wormhole
 man-pages
 man-pages-pt_br
+mediainfo
 meld
 micro
 movit
