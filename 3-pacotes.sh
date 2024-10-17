@@ -339,7 +339,8 @@ cp ./flags/user-flags.conf $HOME/.config/obsidian/
 # Sincronizando a database para a pesquisa de pacotes
 sudo pacman -Fy
 
-# Yazi plugin
+# Yazi config e plugin
+cp ./yazi/yazi.toml $HOME/.config/yazi/
 ya pack -a yazi-rs/plugins:max-preview
 
 # Tabby Terminal
