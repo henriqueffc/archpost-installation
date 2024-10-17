@@ -66,6 +66,8 @@ flatpak install flathub com.obsproject.Studio.Plugin.GStreamerVaapi -y
 flatpak install flathub io.github.ronniedroid.concessio -y
 flatpak install flathub org.upscayl.Upscayl -y
 flatpak install flathub dev.geopjr.Collision -y
+flatpak install flathub org.gnome.Papers -y
+flatpak install flathub nl.emphisia.icon -y
 
 # Flathub Remote-Beta
 echo -e "$AZUL Adicionando o remote flathub-beta $FIM"
