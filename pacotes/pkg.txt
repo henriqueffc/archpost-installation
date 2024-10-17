@@ -118,6 +118,7 @@ magic-wormhole
 man-pages
 man-pages-pt_br
 meld
+micro
 movit
 mpv
 nautilus-image-converter

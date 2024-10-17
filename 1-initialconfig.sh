@@ -17,7 +17,7 @@ echo -e "127.0.0.1\tlocalhost\n::1\t\tlocalhost\n127.0.1.1\t$line.localdomain\t$
 # Visudo
 cp /etc/sudoers /etc/sudoers.bak
 sed -i '/# %wheel ALL=(ALL:ALL) ALL/c\%wheel ALL=(ALL:ALL) ALL' /etc/sudoers
-echo -e "# Defaults specification\nDefaults editor=/usr/bin/nano" >>/etc/sudoers
+echo -e "# Defaults specification\nDefaults editor=/usr/bin/micro" >>/etc/sudoers
 echo -e "# Enable insults\nDefaults insults" >>/etc/sudoers
 
 # Caso queira o vim ao invés do nano, comente (#) a linha acima e descomente a linha abaixo.
@@ -56,8 +56,8 @@ echo 'GSK_RENDERER=vulkan' >>/etc/environment
 # PC speaker - turn off beep shutdown
 echo -e 'blacklist pcspkr' >/etc/modprobe.d/blacklist.conf
 
-# Linux-firmware, wireless-regdb e headers para o kernel stable e lts
-pacman -Syu linux-firmware linux-firmware-whence linux-headers linux-lts-headers wireless-regdb --needed --noconfirm
+# Micro, Linux-firmware, wireless-regdb e headers para o kernel stable e lts
+pacman -Syu micro linux-firmware linux-firmware-whence linux-headers linux-lts-headers wireless-regdb --needed --noconfirm
 
 # NANO - Line number e syntax-highlighting
 pacman -S nano --needed --noconfirm

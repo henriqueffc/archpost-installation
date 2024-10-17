@@ -42,3 +42,4 @@ function flatrun() {
     flatpak run "$(flatpak list --columns=application | grep -F -i "$1")" "${@:2}"
 }
 alias sudo="run0 --background= "
+alias nano="micro"
