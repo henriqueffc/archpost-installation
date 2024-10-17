@@ -117,10 +117,10 @@ sudo sed -i 's|#unix_sock_rw_perms = "0770"|unix_sock_rw_perms = "0770"|g' /etc/
 sudo sed -i 's|#unix_sock_group = "libvirt"|unix_sock_group = "libvirt"|g' /etc/libvirt/libvirtd.conf
 
 # Appimage
-aria2c -d ~/Downloads -i ./urls/urls.txt
+#aria2c -d ~/Downloads -i ./urls/urls.txt
 mkdir /home/$USER/AppImages
-mv ~/Downloads/*.AppImage /home/$USER/AppImages
-chmod +x /home/$USER/AppImages/*.AppImage
+#mv ~/Downloads/*.AppImage /home/$USER/AppImages
+#chmod +x /home/$USER/AppImages/*.AppImage
 
 # Fontes
 sudo mkdir -p /usr/local/share/fonts
