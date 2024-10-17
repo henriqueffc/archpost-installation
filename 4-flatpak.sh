@@ -22,7 +22,6 @@ flatpak install flathub io.gitlab.adhami3310.Converter -y
 flatpak install flathub com.github.tchx84.Flatseal -y
 flatpak install flathub com.github.jeromerobert.pdfarranger -y
 flatpak install flathub org.nickvision.tubeconverter -y
-flatpak install flathub fr.romainvigier.MetadataCleaner -y
 flatpak install flathub org.gnome.gitlab.YaLTeR.VideoTrimmer -y
 flatpak install flathub com.belmoussaoui.Obfuscate -y
 flatpak install flathub com.github.wwmm.easyeffects -y
@@ -68,6 +67,7 @@ flatpak install flathub org.upscayl.Upscayl -y
 flatpak install flathub dev.geopjr.Collision -y
 flatpak install flathub org.gnome.Papers -y
 flatpak install flathub nl.emphisia.icon -y
+flatpak install flathub io.gitlab.adhami3310.Impression -y
 
 # Flathub Remote-Beta
 echo -e "$AZUL Adicionando o remote flathub-beta $FIM"
