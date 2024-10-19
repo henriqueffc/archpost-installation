@@ -340,7 +340,9 @@ cp ./flags/user-flags.conf $HOME/.config/obsidian/
 sudo pacman -Fy
 
 # Yazi config e plugin
+mkdir -p $HOME/.config/yazi/plugins/
 cp ./yazi/yazi.toml $HOME/.config/yazi/
+cp ./yazi/keymap.toml $HOME/.config/yazi/
 ya pack -a yazi-rs/plugins:max-preview
 
 # Tabby Terminal
