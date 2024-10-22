@@ -51,7 +51,7 @@ sudo pacman -S gnome-shell-extension-appindicator --needed --noconfirm
 
 # Parâmetros do boot
 cp /boot/loader/entries/*.conf ~/
-sudo sed -i '$ { s/^.*$/& quiet loglevel=3 systemd.show_status=auto rd.udev.log_level=3 modprobe.blacklist=iTCO_wdt nowatchdog intel_pstate=active intel_iommu=on iommu=pt nvidia_drm.modeset=1 nvidia_drm.fbdev=1 nvidia.NVreg_UsePageAttributeTable=1 nvidia.NVreg_EnableResizableBar=1 i915.enable_fbc=0 i915.enable_psr=0 i915.enable_dc=0 snd_intel_dspcfg.dsp_driver=3 transparent_hugepage=madvise audit=1 audit_backlog_limit=800 lsm=landlock,lockdown,yama,integrity,apparmor,bpf/ }' /boot/loader/entries/*.conf
+sudo sed -i '$ { s/^.*$/& quiet loglevel=3 systemd.show_status=auto rd.udev.log_level=3 modprobe.blacklist=iTCO_wdt nowatchdog intel_pstate=active intel_iommu=on iommu=pt nvidia_drm.modeset=1 nvidia_drm.fbdev=1 nvidia.NVreg_UsePageAttributeTable=1 nvidia.NVreg_EnableResizableBar=1 i915.enable_fbc=0 i915.enable_psr=0 i915.enable_dc=0 snd_intel_dspcfg.dsp_driver=3 transparent_hugepage=madvise audit=1 audit_backlog_limit=1200 lsm=landlock,lockdown,yama,integrity,apparmor,bpf/ }' /boot/loader/entries/*.conf
 
 # O zswap.enabled=0 é configurado pelo archinstall, por isso não está definido nas opções acima.
 # O notebook suporta o Sound Open Firmware, em razão disso o parâmetro snd_intel_dspcfg.dsp_driver=3 foi definido para o kernel. O pacote necessário para o firmware (sof-firmware) está na lista de pacotes para o Pipewire.
