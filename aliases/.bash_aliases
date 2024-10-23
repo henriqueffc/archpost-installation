@@ -43,3 +43,6 @@ function flatrun() {
 }
 alias sudo="run0 --background= "
 alias nano="micro"
+alias hist-pacotes="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
+alias fixpacman="sudo rm /var/lib/pacman/db.lck"
+alias tb="nc termbin.com 9999"
