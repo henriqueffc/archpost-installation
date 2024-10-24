@@ -1,6 +1,7 @@
 alacarte
 alsa-plugins
 alsa-utils
+ananicy-cpp
 aria2
 arch-audit
 archlinux-wallpaper
