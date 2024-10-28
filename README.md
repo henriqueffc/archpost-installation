@@ -17,18 +17,18 @@ máquina. Notebook Lenovo LOQ 15IRH8, Intel Core i5-12450H, 16GB de RAM, 2 X
 512GB SSD M.2, NVIDIA GeForce RTX 3050 6GB GDDR6, teclado Logitech K120, mouse
 Logitech M90, joystick Multilaser Js091 e headset HyperX Cloud Stinger.
 
-Eu instalo o sistema em UEFI, com systemd-boot, sistema de arquivos EXT4, ZRAM,
-kernel stable e kernel lts (seleciono ambos durante a instalação via
-archinstall), pipewire, wireplumber, repositório multilib habilitado (ativado
-por intermédio do archinstall), Nvidia GPU com o driver Nvidia open kernel
-module (versão dkms), shell Zsh com Oh My Zsh, Tabby terminal, AUR helper Yay,
-Flatpak, Podman, Distrobox, Apparmor, firewalld, libvirt, Incus, asdf,
-intel_pstate scaling driver, thermald e x86_energy_perf_policy para
-gerenciamento de frequências da CPU e do perfil de energia (uso o notebook
-ligado na tomada), ananicy-cpp, firmware para o áudio da Sound Open Firmware,
-equalização paramétrica para o Headset HyperX Cloud Stinger, Helix Editor,
-Zotero e GNOME (Wayland). As configurações dos scripts são concebidas nessa
-base.
+Eu instalo o sistema em UEFI, com o secure boot desabilitado, com systemd-boot,
+sistema de arquivos EXT4, ZRAM, kernel stable e kernel lts (seleciono ambos
+durante a instalação via archinstall), pipewire, wireplumber, repositório
+multilib habilitado (ativado por intermédio do archinstall), Nvidia GPU com o
+driver Nvidia open kernel module (versão dkms), shell Zsh com Oh My Zsh, Tabby
+terminal, AUR helper Yay, Flatpak, Podman, Distrobox, Apparmor, firewalld,
+libvirt, Incus, asdf, intel_pstate scaling driver, thermald e
+x86_energy_perf_policy para gerenciamento de frequências da CPU e do perfil de
+energia (uso o notebook ligado na tomada), ananicy-cpp, firmware para o áudio da
+Sound Open Firmware, equalização paramétrica para o Headset HyperX Cloud
+Stinger, Helix Editor, Zotero e GNOME (Wayland). As configurações dos scripts
+são concebidas nessa base.
 
 Os scripts deverão ser executados após a inicialização do sistema no ambiente
 gráfico.
