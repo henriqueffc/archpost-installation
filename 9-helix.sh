@@ -10,7 +10,7 @@ sudo pacman -Syu helix clang shellcheck prettier pyright shfmt bash-language-ser
 
 # Paths
 cp $HOME/.zshrc $HOME/.zshrc.bak1
-#echo 'export PATH="$HOME/.local/bin:$PATH"' >>$HOME/.zshrc ## configurado no script nº 8
+#echo 'export PATH="$HOME/.local/bin:$PATH"' >>$HOME/.zshrc ## configurado no script n.º 8
 echo 'export npm_config_prefix="$HOME/.local"' >>$HOME/.zshrc
 echo 'export PATH="$HOME/.cargo/bin:$PATH"' >>$HOME/.zshrc
 echo 'export PATH="$PATH:$(go env GOBIN):$(go env GOPATH)/bin"' >>$HOME/.zshrc

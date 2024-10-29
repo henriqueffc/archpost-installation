@@ -69,7 +69,7 @@ echo -e "$AZUL
 -------------------------------------------------------------------------
 $FIM"
 
-# Configurações para a pasta ~/bin (criação da pasta e path no .bashrc) foram feitas no script nº 3.
+# Configurações para a pasta ~/bin (criação da pasta e path no .bashrc) foram feitas no script n.º 3.
 # Coloquei o comando mkdir como um lembrete e para evitar algum erro caso a pasta não tenha sido criada anteriormente.
 mkdir -p $HOME/bin
 pkgver=0.3.0
