@@ -15,13 +15,16 @@ escolha o tema breeze dark ou escuro.
 
 **Extensões**
 
-Uso as extensões System Monitor e AppIndicator/KStatusNotifierItem habilitadas.
-Para ativar/desativar as extensões use o
+Uso as extensões System Monitor, Blur my Shell, Wallpaper Slideshow e
+AppIndicator/KStatusNotifierItem habilitadas. Para acessar as configurações das
+extensões use o
 [Gerenciador de extensões](https://flathub.org/pt-BR/apps/com.mattjakeman.ExtensionManager)
-(instalado com o script 4). A extensão AppIndicator/KStatusNotifierItem foi
+(instalado com o script n.° 4). A extensão AppIndicator/KStatusNotifierItem foi
 intalada com o pacote
 [gnome-shell-extension-appindicator](https://archlinux.org/packages/extra/any/gnome-shell-extension-appindicator/)
-(instalada com o script 2).
+(instalada com o script n.° 2 e habiliatda com o script n.° 3). O restante das
+extensões foram instaladas e habilitadas no script n.° 3. Na extensão Wallpaper
+Slideshow é preciso configurar a pasta que contém as imagens para o wallpaper.
 
 ### 2 - SSH
 
@@ -280,7 +283,7 @@ Caso o bluetooth não esteja funcionando, execute
 `sudo rfkill unblock bluetooth && sudo systemctl restart bluetooth`. Os pacotes
 necessários para o funcionamento do bluetooth já foram instalados no sistema e
 as configurações para os recursos experimentais do bluetooth foram executadas no
-script número 3.
+script número n.° 3.
 
 ### 14 - Geoclue
 
@@ -335,14 +338,14 @@ Manual do [Geoclue](https://man.archlinux.org/man/extra/geoclue/geoclue.5.en)
 
 Se algum aplicativo GTK não funcionar adequadamente, utilize a variável
 `GSK_RENDERER=ngl`. Caso o app seja um flatpak suas configurações podem ser
-alteradas no app Flatseal, mudando a variável em Environment. No script número 4
-foi configurada a variável de ambiente `GSK_RENDERER=ngl` para os apps flatpaks.
-Alguns aplicativos que foram atualizados para Application Platform version 47
-não estão inicializando sem essa variável. Confira as variáveis do sistema para
-flatpaks com o comando `cat /var/lib/flatpak/overrides/global` Para retirar
-essas variáveis apague a entrada no arquivo `/var/lib/flatpak/overrides/global`.
-As variáveis configuradas por aplicativo flatpak estão localizadas em
-`~/.local/share/flatpak/overrides`
+alteradas no app Flatseal, mudando a variável em Environment. No script número
+n.° 4 foi configurada a variável de ambiente `GSK_RENDERER=ngl` para os apps
+flatpaks. Alguns aplicativos que foram atualizados para Application Platform
+version 47 não estão inicializando sem essa variável. Confira as variáveis do
+sistema para flatpaks com o comando `cat /var/lib/flatpak/overrides/global` Para
+retirar essas variáveis apague a entrada no arquivo
+`/var/lib/flatpak/overrides/global`. As variáveis configuradas por aplicativo
+flatpak estão localizadas em `~/.local/share/flatpak/overrides`
 
 **Início no startup**
 
@@ -511,7 +514,7 @@ notebook pressione a barra de espaço do teclado.
 
 Caso queira utilizar a versão em Appimage efetue o download na página do
 [github](https://github.com/upscayl/upscayl). A versão em flatpak foi instalada
-pelo script número 4. Se o app não funcionar com a placa dedicada out of the
+pelo script número n.° 4. Se o app não funcionar com a placa dedicada out of the
 box, use o app flatpak Gear Lever para configurar o appimage. Após selecionar
 para colocar o app no grid, coloque como variáveis de ambiente (última opção da
 tela) o seguinte: Key = `VK_DRIVER_FILES` Value =
@@ -519,3 +522,16 @@ tela) o seguinte: Key = `VK_DRIVER_FILES` Value =
 `__EGL_VENDOR_LIBRARY_FILENAMES` Value =
 `/usr/share/glvnd/egl_vendor.d/10_nvidia.json` Isso fará com que o aplicativo
 funcione com a placa dedicada.
+
+### 21 - Zotero
+
+Faça o download do arquivo xpi das seguintes extensões:
+
+- [better notes](https://github.com/windingwind/zotero-better-notes)
+- [OCR](https://github.com/UB-Mannheim/zotero-ocr)
+
+Para a extensão OCR funcionar é necessária a instalação dos pacotes poppler,
+poppler-data, tesseract, tesseract-data-eng e tesseract-data-por. Esses pacotes
+foram instalados pelo script n.º 3. Nas configurações da extensão no Zotero
+configure a localização para o tesseract `/usr/bin/tesseract` e para o pdftoppm
+`/usr/bin/pdftoppm`.
