@@ -22,7 +22,7 @@ extensões use o
 (instalado com o script n.° 4). A extensão AppIndicator/KStatusNotifierItem foi
 intalada com o pacote
 [gnome-shell-extension-appindicator](https://archlinux.org/packages/extra/any/gnome-shell-extension-appindicator/)
-(instalada com o script n.° 2 e habiliatda com o script n.° 3). O restante das
+(instalada com o script n.° 2 e habilitada com o script n.° 3). O restante das
 extensões foram instaladas e habilitadas no script n.° 3. Na extensão Wallpaper
 Slideshow é preciso configurar a pasta que contém as imagens para o wallpaper.
 
