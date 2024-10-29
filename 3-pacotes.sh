@@ -325,7 +325,7 @@ cp ./mpv/mpv.conf $HOME/.config/mpv/
 mkdir -p $HOME/.config/fastfetch/
 cp ./fastfetch/config.jsonc $HOME/.config/fastfetch/
 
-# wireless-regdb - instalado pelo script 1.
+# wireless-regdb - instalado pelo script n.° 1.
 sudo sed -i '$a WIRELESS_REGDOM="BR"' /etc/conf.d/wireless-regdom
 
 # Arquivos com as flags para o Chromium e Vivaldi
@@ -350,6 +350,49 @@ pkgver=1.0.215
 wget -O tabby.pacman https://github.com/Eugeny/tabby/releases/download/v${pkgver}/tabby-${pkgver}-linux-x64.pacman
 sudo pacman -U tabby.pacman --noconfirm
 
+# Comando necessário para o funcionamento do pipx
+# Essa alteração no PATH foi realizada anteriormente no script
+# Mas para funcionar nesse momento da instalação é preciso exportar o PATH, pois o terminal não foi reinicializado.
+export PATH=$PATH:$HOME/.local/bin
+
+# Criação da pasta para os wallpapers
+mkdir -p $HOME/Imagens/wallpapers
+
+# Instalação do gnome-extensions-cli usando o pipx
+# O pipx foi instalado anteriormente por esse script
+pipx install gnome-extensions-cli --system-site-packages
+
+# Instalação das extensões Blur my Shell e Wallpaper Slideshow
+gext install azwallpaper@azwallpaper.gitlab.com
+gext install blur-my-shell@aunetx
+
+# Inserção dos schemas das extensões (Blur e Wallpaper) na pasta do sistema
+# Isso possibilita a configuração pela linha de comando ou pelo editor Dconf
+sudo cp ~/.local/share/gnome-shell/extensions/blur-my-shell\@aunetx/schemas/org.gnome.shell.extensions.blur-my-shell.gschema.xml /usr/share/glib-2.0/schemas/
+sudo cp ~/.local/share/gnome-shell/extensions/azwallpaper\@azwallpaper.gitlab.com/schemas/org.gnome.shell.extensions.azwallpaper.gschema.xml /usr/share/glib-2.0/schemas/
+sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
+
+# Configurações para a extensão system-monitor
+gsettings set org.gnome.shell.extensions.system-monitor show-download false
+gsettings set org.gnome.shell.extensions.system-monitor show-upload false
+
+# Configurações para a extensão Blur my shell
+gsettings set org.gnome.shell.extensions.blur-my-shell.panel blur false
+gsettings set org.gnome.shell.extensions.blur-my-shell.appfolder blur false
+gsettings set org.gnome.shell.extensions.blur-my-shell.dash-to-dock blur false
+gsettings set org.gnome.shell.extensions.blur-my-shell.coverflow-alt-tab blur false
+gsettings set org.gnome.shell.extensions.blur-my-shell.lockscreen blur false
+gsettings set org.gnome.shell.extensions.blur-my-shell.screenshot blur false
+gsettings set org.gnome.shell.extensions.blur-my-shell.window-list blur false
+
+# Configuração para o tempo máximo de exibição do Wallpaper
+gsettings set org.gnome.shell.extensions.azwallpaper slideshow-slide-duration '(0,30,0)'
+
+# Habilitando as extensões Appindicator e System-monitor
+# A extensão appindicator foi instalada no script n.° 2.
+gnome-extensions enable system-monitor@gnome-shell-extensions.gcampax.github.com
+gnome-extensions enable $(gnome-extensions list | grep -m 1 appindicatorsupport)
+
 # Fonte do GNOME terminal
 font=$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d "'")
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ use-system-font false
@@ -363,9 +406,5 @@ gsettings set org.gnome.desktop.interface font-name "Noto Sans 11"
 gsettings set org.gnome.desktop.interface document-font-name "Noto Sans 11"
 gsettings set org.gnome.desktop.interface monospace-font-name "JetBrainsMonoNL Nerd Font 10"
 gsettings set org.gnome.desktop.interface font-antialiasing rgba
-
-# Habilitando as extensões
-gnome-extensions enable system-monitor@gnome-shell-extensions.gcampax.github.com
-gnome-extensions enable $(gnome-extensions list | grep -m 1 appindicatorsupport)
 
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
