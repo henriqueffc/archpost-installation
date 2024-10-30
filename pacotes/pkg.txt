@@ -216,6 +216,7 @@ xorg-xwininfo
 xournalpp
 yazi
 yt-dlp
+zellij
 zenity
 zip
 zoxide
