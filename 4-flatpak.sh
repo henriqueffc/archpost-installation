@@ -86,4 +86,3 @@ flatpak override --user --filesystem=home io.github.dvlv.boxbuddyrs
 flatpak override --user --socket=wayland com.discordapp.Discord
 sudo flatpak override --filesystem=xdg-config/gtk-4.0
 sudo flatpak override --filesystem=xdg-config/gtk-3.0
-sudo flatpak override --env=GSK_RENDERER=ngl
