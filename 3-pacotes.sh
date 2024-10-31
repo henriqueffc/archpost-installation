@@ -393,6 +393,24 @@ gsettings set org.gnome.shell.extensions.azwallpaper slideshow-slide-duration '(
 gnome-extensions enable system-monitor@gnome-shell-extensions.gcampax.github.com
 gnome-extensions enable $(gnome-extensions list | grep -m 1 appindicatorsupport)
 
+# Flameshot
+# https://github.com/flameshot-org/flameshot/issues/3326#issuecomment-1788440850
+# https://flameshot.org/docs/guide/wayland-help/
+sudo tee /usr/local/bin/flameshot-print >/dev/null <<'EOF'
+#!/bin/bash
+flameshot gui
+
+EOF
+
+sudo chmod a+x /usr/local/bin/flameshot-print
+
+# Atalho de teclado para o flameshot (Print) e alteração do atalho de teclado para o gnome screenshot (Ctrl + Alt + p)
+gsettings set org.gnome.shell.keybindings show-screenshot-ui "['<Control><Alt>p']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name "flameshot"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command "flameshot-print"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding "Print"
+gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']"
+
 # Fonte do GNOME terminal
 font=$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d "'")
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ use-system-font false
