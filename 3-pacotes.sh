@@ -359,9 +359,10 @@ mkdir -p $HOME/Imagens/wallpapers
 # O pipx foi instalado anteriormente por esse script
 pipx install gnome-extensions-cli --system-site-packages
 
-# Instalação das extensões Blur my Shell e Wallpaper Slideshow
+# Instalação das extensões Blur my Shell, GSConnect e Wallpaper Slideshow
 gext install azwallpaper@azwallpaper.gitlab.com
 gext install blur-my-shell@aunetx
+gext install gsconnect@andyholmes.github.io
 
 # Inserção dos schemas das extensões (Blur e Wallpaper) na pasta do sistema
 # Isso possibilita a configuração pela linha de comando ou pelo editor Dconf
@@ -381,6 +382,10 @@ gsettings set org.gnome.shell.extensions.blur-my-shell.coverflow-alt-tab blur fa
 gsettings set org.gnome.shell.extensions.blur-my-shell.lockscreen blur false
 gsettings set org.gnome.shell.extensions.blur-my-shell.screenshot blur false
 gsettings set org.gnome.shell.extensions.blur-my-shell.window-list blur false
+
+# Configuração para a extensão GSConnect
+# Adição do serviço no firewalld
+sudo firewall-cmd --permanent --zone=public --add-service=kdeconnect
 
 # Configuração para o tempo máximo de exibição do Wallpaper
 gsettings set org.gnome.shell.extensions.azwallpaper slideshow-slide-duration '(0,30,0)'
