@@ -143,6 +143,7 @@ papirus-icon-theme
 pkgstats
 python-pipx
 python-nautilus
+python-pyqt6
 presenterm
 procs
 progress
