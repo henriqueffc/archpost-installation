@@ -395,6 +395,9 @@ gsettings set org.gnome.shell.extensions.azwallpaper slideshow-slide-duration '(
 gnome-extensions enable system-monitor@gnome-shell-extensions.gcampax.github.com
 gnome-extensions enable $(gnome-extensions list | grep -m 1 appindicatorsupport)
 
+# Desabilitabdo o suporte ao legacy tray icons support na Appindicator
+gsettings set org.gnome.shell.extensions.appindicator legacy-tray-enabled false
+
 # Flameshot
 # https://github.com/flameshot-org/flameshot/issues/3326#issuecomment-1788440850
 # https://flameshot.org/docs/guide/wayland-help/
