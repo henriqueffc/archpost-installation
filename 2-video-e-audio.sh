@@ -32,7 +32,7 @@ sudo pacman --needed -S - <./pacotes/pipewire.txt
 sudo pacman --needed -S - <./pacotes/pkg-audio.txt
 
 # Apparmor
-sudo pacman -S apparmor python-notify2 python-psutil audit --needed --noconfirm
+sudo pacman -S apparmor ruby perl python-notify2 python-psutil audit --needed --noconfirm
 sudo systemctl enable apparmor.service
 sudo systemctl enable auditd.service
 sudo cp /etc/audit/auditd.conf /etc/audit/auditd.conf.bak
