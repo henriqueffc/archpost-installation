@@ -98,6 +98,7 @@ kmon
 ladspa
 lnav
 lib32-mangohud
+libayatana-appindicator
 libcamera-tools
 libgtop
 libheif
