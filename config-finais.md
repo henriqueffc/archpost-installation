@@ -207,7 +207,7 @@ Na eventualidade de o som não funcionar, tente executar os jogos com o parâmet
 
 **DXVK - Vulkan - Nvidia**
 
-`STAGING_WRITECOPY=1 STAGING_SHARED_MEMORY=1 mangohud prime-run %command%`
+`VK_DRIVER_FILES=/usr/share/vulkan/icd.d/nvidia_icd.json STAGING_WRITECOPY=1 STAGING_SHARED_MEMORY=1 mangohud prime-run %command%`
 
 O parâmetro `VKD3D_CONFIG=dxr11,dxr` habilita o raytracing.
 
@@ -243,8 +243,8 @@ placa dedicada.
 **Vulkan**
 
 Na opção "avançado", configure as variáveis de ambiente para o Vulkan. Ex.: nome
-da variável `STAGING_WRITECOPY` - Valor `1` Veja os restantes das variáveis no
-item Steam / DXVK - Vulkan - Nvidia.
+da variável `VK_DRIVER_FILES` - Valor `/usr/share/vulkan/icd.d/nvidia_icd.json`
+Veja os restantes das variáveis no item Steam / DXVK - Vulkan - Nvidia.
 
 **OpenGL**
 
