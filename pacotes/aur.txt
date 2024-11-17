@@ -1,6 +1,6 @@
 asdf-vm
 downgrade
-gpu-screen-recorder-git
+gpu-screen-recorder
 heroic-games-launcher-bin
 ttf-noto-emoji-monochrome
 cachyos-ananicy-rules-git
