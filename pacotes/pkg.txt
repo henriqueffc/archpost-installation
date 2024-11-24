@@ -127,6 +127,7 @@ micro
 movit
 mpv
 nautilus-image-converter
+nautilus-python
 nano
 ncdu
 nethogs
@@ -145,7 +146,6 @@ papirus-icon-theme
 pkgstats
 perl
 python-pipx
-python-nautilus
 python-pyqt6
 presenterm
 procs
