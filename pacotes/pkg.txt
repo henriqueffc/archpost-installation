@@ -4,6 +4,7 @@ alsa-utils
 ananicy-cpp
 aria2
 arch-audit
+arch-wiki-docs
 archlinux-wallpaper
 aspell
 aspell-en
@@ -203,6 +204,7 @@ vivaldi
 vivaldi-ffmpeg-codecs
 webp-pixbuf-loader
 weechat
+wikiman
 wine
 wine-gecko
 wine-mono

@@ -409,6 +409,14 @@ EOF
 
 sudo chmod a+x /usr/local/bin/flameshot-print
 
+# mostrar imagens usando o w3m
+mkdir -p $HOME/.w3m/
+tee $HOME/.w3m/config >/dev/null <<'EOF'
+inline_img_protocol 3
+imgdisplay iterm2
+
+EOF
+
 # Atalho de teclado para o flameshot (Print) e alteração do atalho de teclado para o gnome screenshot (Ctrl + Alt + p)
 gsettings set org.gnome.shell.keybindings show-screenshot-ui "['<Control><Alt>p']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name "flameshot"
