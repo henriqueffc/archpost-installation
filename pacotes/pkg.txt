@@ -143,6 +143,7 @@ perl-image-exiftool
 p7zip
 pacman-contrib
 pandoc-cli
+papers
 papirus-icon-theme
 pkgstats
 perl
