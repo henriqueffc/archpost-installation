@@ -164,7 +164,6 @@ rebuild-detector
 reflector
 ripgrep
 ripgrep-all
-rmlint
 rsync
 rtaudio
 ruby
