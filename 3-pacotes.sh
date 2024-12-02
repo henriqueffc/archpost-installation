@@ -387,6 +387,11 @@ gsettings set org.gnome.shell.extensions.blur-my-shell.window-list blur false
 # Adição do serviço no firewalld
 sudo firewall-cmd --permanent --zone=public --add-service=kdeconnect
 
+# Configuração do firewalld para conexão dos navegadores com o Chromecast
+sudo firewall-cmd --permanent --new-service=chromecast
+sudo firewall-cmd --permanent --service=chromecast --add-port=8008-8009/tcp --add-port=32768-61000/udp
+sudo firewall-cmd --reload
+
 # Configuração para o tempo máximo de exibição do Wallpaper
 gsettings set org.gnome.shell.extensions.azwallpaper slideshow-slide-duration '(0,30,0)'
 
