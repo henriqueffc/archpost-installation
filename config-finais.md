@@ -465,7 +465,6 @@ Altere os seguintes parâmetros nas configurações avançadas.
 | browser.urlbar.scotchBonnet.enableOverride            | true  | X       |             |
 | browser.newtabpage.activity-stream.system.showWeather | true  | X       |             |
 | browser.tabs.groups.enabled                           | true  | X       |             |
-| extensions.pocket.enable                              | false | X       |             |
 | general.smoothScroll                                  | true  | X       | X           |
 | general.smoothScroll.msdPhysics.enabled               | true  | X       | X           |
 | gfx.webrender.all                                     | true  | X       | X           |
