@@ -200,8 +200,6 @@ unarchiver
 unrar
 unzip
 veracrypt
-vivaldi
-vivaldi-ffmpeg-codecs
 webp-pixbuf-loader
 weechat
 wikiman
