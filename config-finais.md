@@ -468,6 +468,7 @@ Altere os seguintes parâmetros nas configurações avançadas.
 | browser.newtabpage.activity-stream.system.showWeather | true    | X       |             |
 | browser.tabs.groups.enabled                           | true    | X       |             |
 | browser.urlbar.scotchBonnet.enableOverride            | true    | X       |             |
+| dom.enable_web_task_scheduling                        | true    | X       |             |
 | general.smoothScroll                                  | true    | X       | X           |
 | general.smoothScroll.msdPhysics.enabled               | true    | X       | X           |
 | gfx.canvas.remote                                     | true    | X       | X           |
