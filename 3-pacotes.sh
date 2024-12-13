@@ -105,7 +105,7 @@ echo -e "[Service]\nExecStartPre=/bin/sleep 5" >>override.conf
 mv override.conf /home/$USER/.config/systemd/user/wireplumber.service.d/
 ## configurando o libcamera para ser o default no Wireplumber
 mkdir -p ~/.config/wireplumber/wireplumber.conf.d/
-mv ./pipewire/disable-v4l2.conf ~/.config/wireplumber/wireplumber.conf.d/
+mv ./pipewire/99-libcamera.conf ~/.config/wireplumber/wireplumber.conf.d/
 
 # Virt-manager
 sudo cp /etc/libvirt/qemu.conf /etc/libvirt/qemu.conf.bak
