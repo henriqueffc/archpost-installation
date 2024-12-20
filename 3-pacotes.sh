@@ -223,7 +223,7 @@ gsettings set org.gnome.desktop.peripherals.keyboard numlock-state true
 gsettings set org.gnome.desktop.search-providers disabled "['org.gnome.Contacts.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Characters.desktop', 'org.gnome.Weather.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Epiphany.desktop', 'org.gnome.Software.desktop', 'org.gnome.Boxes.desktop']"
 
 # Ordem dos resultados da pesquisa realizada no overview
-gsettings set org.gnome.desktop.search-providers sort-order "['firefox.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Settings.desktop', 'org.gnome.Epiphany.desktop', 'org.gnome.Boxes.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Characters.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Software.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Weather.desktop']"
+gsettings set org.gnome.desktop.search-providers sort-order "['org.gnome.Calculator.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Settings.desktop', 'org.gnome.Epiphany.desktop', 'org.gnome.Boxes.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Characters.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Software.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Weather.desktop']"
 
 # Acessibilidade
 gsettings set org.gnome.desktop.a11y.magnifier mag-factor "1.25"
@@ -328,9 +328,10 @@ cp ./fastfetch/config.jsonc $HOME/.config/fastfetch/
 # wireless-regdb - instalado pelo script n.° 1.
 sudo sed -i '$a WIRELESS_REGDOM="BR"' /etc/conf.d/wireless-regdom
 
-# Arquivos com as flags para o Chromium e Electron
+# Arquivos com as flags para o Chromium, Edge e Electron
 cp ./flags/chromium-flags.conf $HOME/.config/
 cp ./flags/electron-flags.conf $HOME/.config/
+cp ./flags/microsoft-edge-stable-flags.conf $HOME/.config/
 
 # Sincronizando a database para a pesquisa de pacotes
 sudo pacman -Fy

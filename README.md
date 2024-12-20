@@ -60,7 +60,6 @@ Ordem de uso dos scripts:
 - 8-podman-distrobox-incus.sh
 - 9-helix.sh
 - 10-zotero.sh
-- 11-firefox-nightly.sh (opcional)
 
 Recomendo reinicializar o sistema após a execução de cada script.
 

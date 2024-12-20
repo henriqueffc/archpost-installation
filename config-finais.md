@@ -455,46 +455,7 @@ spd-say "oi como você está?"
 spd-say "You’re playing a dangerous game Carl"
 ```
 
-### 17 - Firefox e Thunderbird
-
-Altere os seguintes parâmetros nas configurações avançadas.
-
-| Configuração                                          | Valor   | Firefox | Thunderbird |
-| ----------------------------------------------------- | ------- | ------- | ----------- |
-| browser.cache.disk.enable                             | false   | X       |             |
-| browser.cache.memory.capacity                         | 1048576 | X       |             |
-| browser.cache.memory.enable                           | true    | X       |             |
-| browser.ml.chat.enabled                               | true    | X       |             |
-| browser.newtabpage.activity-stream.system.showWeather | true    | X       |             |
-| browser.tabs.groups.enabled                           | true    | X       |             |
-| browser.urlbar.scotchBonnet.enableOverride            | true    | X       |             |
-| dom.enable_web_task_scheduling                        | true    | X       |             |
-| general.smoothScroll                                  | true    | X       | X           |
-| general.smoothScroll.msdPhysics.enabled               | true    | X       | X           |
-| gfx.canvas.remote                                     | true    | X       | X           |
-| gfx.webrender.all                                     | true    | X       | X           |
-| gfx.webrender.compositor                              | true    | X       | X           |
-| gfx.webrender.compositor.force-enabled                | true    | X       |             |
-| gfx.webrender.precache-shaders                        | true    | X       | X           |
-| image.decode-immediately.enabled                      | true    | X       | X           |
-| image.jxl.enabled                                     | true    | X       | X           |
-| layout.frame_rate                                     | 60      | X       | X           |
-| media.eme.enabled                                     | true    | X       |             |
-| media.ffmpeg.vaapi.enabled                            | true    | X       |             |
-| media.gmp.decoder.multithreaded                       | true    | X       |             |
-| media.gpu-process-decoder                             | true    | X       |             |
-| media.webrtc.camera.allow-pipewire                    | true    | X       |             |
-| mousewheel.default.delta_multiplier_x                 | 70      | X       | X           |
-| mousewheel.default.delta_multiplier_y                 | 70      | X       | X           |
-| mousewheel.default.delta_multiplier_z                 | 70      | X       | X           |
-| mousewheel.min_line_scroll_amount                     | 3       | X       | X           |
-| sidebar.revamp                                        | true    | X       |             |
-| sidebar.verticalTabs                                  | true    | X       |             |
-| widget.dmabuf-textures.enabled (Firefox Nightly)      | true    |         |             |
-| widget.gtk.rounded-bottom-corners.enabled             | true    | X       | X           |
-| widget.use-xdg-desktop-portal.file-picker             | 1       | X       | X           |
-
-### 18 - Newsflash
+### 17 - Newsflash
 
 Caso a versão em flatpak do app Newsflash não tenha conexão com a rede, faça o
 seguinte:
@@ -505,7 +466,7 @@ Substitua a linha `"ping_url": "http://exemple.com/"` por
 `"ping_url": "http://192.168.0.1/"`. O endereço 192.168.0.1 é o gateway.
 Verifique qual é o gateway da sua rede.
 
-### 19 - Ordem do boot
+### 18 - Ordem do boot
 
 Verifique o ID do kernel com o comando `bootctl list`. Selecione o kernel que
 você deseja para a inicialização do sistema com o comando
@@ -518,7 +479,7 @@ desejado (em segundos) da exibição ou coloque 0 para esconder as opções de
 inicialização. Para acessar a tela, caso opte por escondê-la, após ligar o
 notebook pressione a barra de espaço do teclado.
 
-### 20 - Upscayl
+### 19 - Upscayl
 
 Caso queira utilizar a versão em Appimage efetue o download na página do
 [github](https://github.com/upscayl/upscayl). A versão em flatpak foi instalada
@@ -531,7 +492,7 @@ tela) o seguinte: Key = `VK_DRIVER_FILES` Value =
 `/usr/share/glvnd/egl_vendor.d/10_nvidia.json` Isso fará com que o aplicativo
 funcione com a placa dedicada.
 
-### 21 - Zotero
+### 20 - Zotero
 
 Faça o download do arquivo xpi das seguintes extensões:
 

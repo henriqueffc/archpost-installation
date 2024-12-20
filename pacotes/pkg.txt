@@ -48,8 +48,6 @@ fastfetch
 fd
 ffmpegthumbnailer
 file-roller
-firefox
-firefox-i18n-pt-br
 firewalld
 flameshot
 flatpak
