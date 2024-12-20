@@ -47,7 +47,6 @@ flatpak install flathub info.febvre.Komikku -y
 flatpak install flathub app.drey.KeyRack -y
 flatpak install flathub com.belmoussaoui.Authenticator -y
 flatpak install flathub de.haeckerfelix.Shortwave -y
-flatpak install flathub org.gnome.Podcasts -y
 flatpak install flathub org.gnome.gitlab.somas.Apostrophe -y
 flatpak install flathub org.gnome.gitlab.somas.Apostrophe.Plugin.TexLive -y
 flatpak install flathub io.github.dvlv.boxbuddyrs -y
