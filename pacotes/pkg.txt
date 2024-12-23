@@ -138,7 +138,7 @@ obsidian
 opencv
 openssh
 perl-image-exiftool
-p7zip
+7zip
 pacman-contrib
 pandoc-cli
 papers
