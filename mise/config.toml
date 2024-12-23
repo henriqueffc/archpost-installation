@@ -1,0 +1,8 @@
+[tools]
+java = "system"
+node = "system"
+python = "system"
+rust = "system"
+
+[settings]
+disable_tools = []

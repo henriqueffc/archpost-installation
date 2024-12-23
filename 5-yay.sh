@@ -35,9 +35,9 @@ yay -Y --gendb
 yay -Y --devel --save
 yay -S - <./pacotes/aur.txt
 
-# asdf-vm
-echo 'source /opt/asdf-vm/asdf.sh' >>$HOME/.bashrc
-echo -e 'python system\njava system\nnodejs system\nrust system' >>$HOME/.tool-versions
+# mise
+mkdir -p $HOME/.config/mise/
+mv ./mise/config.toml $HOME/.config/mise/
 
 # Heroic Games Launcher
 cp /usr/share/applications/heroic.desktop ~/.local/share/applications/
@@ -47,6 +47,6 @@ sed -i 's|Exec=.*|Exec=/opt/Heroic/heroic --enable-features=CanvasOopRasterizati
 sudo systemctl enable --now ananicy-cpp.service
 
 # nautilus-open-any-terminal
-gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal tabby
+gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal rio
 
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"

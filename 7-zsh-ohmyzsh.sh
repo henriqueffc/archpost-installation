@@ -102,7 +102,7 @@ else
             linenumber=$((linenumber - 1))
             sed -i "${linenumber}i fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src" ~/.zshrc
             echo 'source ~/.bash_aliases' >>~/.zshrc
-            echo 'source /opt/asdf-vm/asdf.sh' >>~/.zshrc
+            echo 'eval "$(mise activate zsh)"' >>~/.zshrc
             echo "export EDITOR='nano'" >>~/.zshrc
             cat ./zsh/extract.txt >>~/.zshrc
             cat ./zsh/command-not-found.txt >>~/.zshrc
