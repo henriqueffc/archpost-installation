@@ -342,10 +342,9 @@ cp ./yazi/yazi.toml $HOME/.config/yazi/
 cp ./yazi/keymap.toml $HOME/.config/yazi/
 ya pack -a yazi-rs/plugins:max-preview
 
-# Tabby Terminal
-pkgver=1.0.215
-wget -O tabby.pacman https://github.com/Eugeny/tabby/releases/download/v${pkgver}/tabby-${pkgver}-linux-x64.pacman
-sudo pacman -U tabby.pacman --noconfirm
+# Rio Terminal
+mkdir -p $HOME/.config/rio/
+cp ./rio/config.toml $HOME/.config/rio/
 
 # Comando necessário para o funcionamento do pipx
 # Essa alteração no PATH foi realizada anteriormente no script
