@@ -47,6 +47,6 @@ sed -i 's|Exec=.*|Exec=/opt/Heroic/heroic --enable-features=CanvasOopRasterizati
 sudo systemctl enable --now ananicy-cpp.service
 
 # nautilus-open-any-terminal
-gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal rio
+gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal ghostty
 
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"

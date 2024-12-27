@@ -63,6 +63,7 @@ glew
 glfw
 glow
 ghostscript
+ghostty
 gnome-boxes
 gnome-epub-thumbnailer
 gnome-firmware
@@ -160,7 +161,6 @@ qt6-wayland
 rclone
 rebuild-detector
 reflector
-rio
 ripgrep
 ripgrep-all
 rsync

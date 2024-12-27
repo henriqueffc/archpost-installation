@@ -342,9 +342,9 @@ cp ./yazi/yazi.toml $HOME/.config/yazi/
 cp ./yazi/keymap.toml $HOME/.config/yazi/
 ya pack -a yazi-rs/plugins:max-preview
 
-# Rio Terminal
-mkdir -p $HOME/.config/rio/
-cp ./rio/config.toml $HOME/.config/rio/
+# Ghostty terminal
+mkdir -p $HOME/.config/ghostty/
+cp ./ghostty/config $HOME/.config/ghostty/
 
 # Comando necessário para o funcionamento do pipx
 # Essa alteração no PATH foi realizada anteriormente no script

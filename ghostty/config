@@ -1,0 +1,10 @@
+font-family = "JetBrainsMonoNL Nerd Font Mono"
+font-size = 14
+theme = Brogrammer
+window-height = 27
+window-width = 110
+resize-overlay = never
+#cursor-style = block
+#cursor-style-blink = true
+#shell-integration-features = no-cursor
+#cursor-color = #47D589
