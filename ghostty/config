@@ -3,6 +3,7 @@ font-size = 14
 theme = Brogrammer
 window-height = 27
 window-width = 110
+window-theme = ghostty
 resize-overlay = never
 #cursor-style = block
 #cursor-style-blink = true
