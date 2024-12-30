@@ -1,3 +1,4 @@
+adw-gtk-theme
 alacarte
 alsa-plugins
 alsa-utils

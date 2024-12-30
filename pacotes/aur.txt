@@ -1,6 +1,7 @@
 downgrade
 microsoft-edge-stable-bin
 mise-bin
+kora-icon-theme
 gpu-screen-recorder
 heroic-games-launcher-bin
 ttf-noto-emoji-monochrome

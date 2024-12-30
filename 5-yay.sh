@@ -50,3 +50,6 @@ sudo systemctl enable --now ananicy-cpp.service
 gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal ghostty
 
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
+
+# Tema dos ícones - Kora
+gsettings set org.gnome.desktop.interface icon-theme "kora"

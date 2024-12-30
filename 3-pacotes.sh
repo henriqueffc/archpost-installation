@@ -175,7 +175,7 @@ echo -e "$AZUL Alterando o tema e os atalhos do sistema em 3 $FIM" && sleep 1
 # Tema do sistema
 gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
 # Tema para os aplicativos legados
-gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
+gsettings set org.gnome.desktop.interface gtk-theme "adw-gtk3-dark"
 
 # Mostrar porcentagem da bateria na top bar
 gsettings set org.gnome.desktop.interface show-battery-percentage true
