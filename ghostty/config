@@ -1,6 +1,7 @@
 font-family = "JetBrainsMonoNL Nerd Font Mono"
 font-size = 14
 theme = Brogrammer
+adw-toolbar-style = flat
 window-height = 27
 window-width = 110
 window-theme = ghostty
