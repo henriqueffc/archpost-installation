@@ -27,7 +27,7 @@ if [[ $UNPRIVILEGED == 1 ]]; then
     sudo usermod --add-subuids 100000-165535 --add-subgids 100000-165535 "$USERNAME"
     sudo podman system migrate
     mkdir $HOME/.config/containers/
-    mv ./podman/registries.conf $HOME/.config/containers/
+    cp ./podman/registries.conf $HOME/.config/containers/
 
 else
     echo -e "$RED O parametro kernel.unprivileged_userns_clone deve estar especificado como 1.

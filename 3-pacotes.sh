@@ -65,7 +65,7 @@ sudo sed -i 's/#KernelExperimental =.*/KernelExperimental = true/g' /etc/bluetoo
 sudo sed -i 's/#Testing =.*/Testing = true/g' /etc/bluetooth/main.conf
 
 # Offpowersave
-sudo mv ./powersave/default-wifi-powersave-on.conf /etc/NetworkManager/conf.d
+sudo cp ./powersave/default-wifi-powersave-on.conf /etc/NetworkManager/conf.d/
 echo -e "$AZUL \t WIFI - Powersave desabilitado $FIM"
 
 # FirewallD - Applet
@@ -73,12 +73,12 @@ cp /etc/xdg/autostart/firewall-applet.desktop ~/.config/autostart
 sed -i '$a Hidden=true' ~/.config/autostart/firewall-applet.desktop
 
 # Intelparanoid.service
-sudo mv ./service/intelparanoid.service /etc/systemd/system
+sudo cp ./service/intelparanoid.service /etc/systemd/system/
 sudo systemctl enable intelparanoid.service
 echo -e "$AZUL \t Intel-Paranoid habilitado $FIM"
 
 # x86_energy_perf_policy
-sudo mv ./service/cpupowerperf.service /etc/systemd/system
+sudo cp ./service/cpupowerperf.service /etc/systemd/system/
 sudo systemctl enable cpupowerperf.service
 echo -e "$AZUL \t x86_energy_perf_policy habilitado $FIM"
 
@@ -105,7 +105,7 @@ echo -e "[Service]\nExecStartPre=/bin/sleep 5" >>override.conf
 mv override.conf /home/$USER/.config/systemd/user/wireplumber.service.d/
 ## configurando o libcamera para ser o default no Wireplumber
 mkdir -p ~/.config/wireplumber/wireplumber.conf.d/
-mv ./pipewire/99-libcamera.conf ~/.config/wireplumber/wireplumber.conf.d/
+cp ./pipewire/99-libcamera.conf ~/.config/wireplumber/wireplumber.conf.d/
 
 # Virt-manager
 sudo cp /etc/libvirt/qemu.conf /etc/libvirt/qemu.conf.bak
@@ -130,19 +130,19 @@ sudo mv ~/Downloads/*.TTF /usr/local/share/fonts
 sudo fc-cache -fv
 
 # Alias
-mv ./aliases/.bash_aliases ~/
-mv ./aliases/.atalhos.md ~/
+cp ./aliases/.bash_aliases ~/
+cp ./aliases/.atalhos.md ~/
 
 # Modelos de arquivos para o Files
 touch $HOME/Modelos/novo.txt
 
 # Equalização paramétrica para o Headset HyperX Cloud Stinger
 mkdir -p ~/.config/pipewire/pipewire.conf.d
-mv ./pipewire/sink-eq6.conf ~/.config/pipewire/pipewire.conf.d/
+cp ./pipewire/sink-eq6.conf ~/.config/pipewire/pipewire.conf.d/
 
 # Desabilitar o coredump
 sudo mkdir /etc/systemd/coredump.conf.d/
-sudo mv ./coredump/custom.conf /etc/systemd/coredump.conf.d/
+sudo cp ./coredump/custom.conf /etc/systemd/coredump.conf.d/
 sudo systemctl daemon-reload
 echo "kernel.core_pattern=/dev/null" >50-coredump.conf
 sudo mv 50-coredump.conf /etc/sysctl.d/
@@ -165,7 +165,7 @@ echo -e '\nif [ -d "$HOME/bin" ] ; then\nPATH="$HOME/bin:$PATH"\nfi' >>~/.bashrc
 echo -e '\nif [ -d "$HOME/.local/bin" ] ; then\nPATH="$HOME/.local/bin:$PATH"\nfi' >>~/.bashrc
 
 # Copiar scripts para a pasta ~/bin
-mv ./bin/* $HOME/bin
+cp ./bin/* $HOME/bin/
 chmod +x $HOME/bin/*
 
 echo -e "$AZUL Alterando o tema e os atalhos do sistema em 1 $FIM" && sleep 1

@@ -37,7 +37,7 @@ yay -S - <./pacotes/aur.txt
 
 # mise
 mkdir -p $HOME/.config/mise/
-mv ./mise/config.toml $HOME/.config/mise/
+cp ./mise/config.toml $HOME/.config/mise/
 
 # Heroic Games Launcher
 cp /usr/share/applications/heroic.desktop ~/.local/share/applications/

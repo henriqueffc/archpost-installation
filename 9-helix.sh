@@ -18,5 +18,5 @@ source $HOME/.zshrc
 
 # Arquivos de configuração
 mkdir -p $HOME/.config/helix
-mv ./helix/config.toml ~/.config/helix/
-mv ./helix/languages.toml ~/.config/helix/
+cp ./helix/config.toml ~/.config/helix/
+cp ./helix/languages.toml ~/.config/helix/

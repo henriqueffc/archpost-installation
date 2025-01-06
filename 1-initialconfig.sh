@@ -71,12 +71,12 @@ linenumber=$(cat /etc/nanorc | grep -n '*.nanorc' | gawk '{print $1}' FS=":")
 sed -i "${linenumber}s/..//" /etc/nanorc
 
 # Configurações para o kernel
-mv ./sysctl/99-sysctl.conf /etc/sysctl.d/
+cp ./sysctl/99-sysctl.conf /etc/sysctl.d/
 
 # udev.rules
 ## Ioschedulers
 ## Reabilitar o Wayland no GDM com o drive proprietário da Nvidia
-mv ./udev/*.rules /etc/udev/rules.d/
+cp ./udev/*.rules /etc/udev/rules.d/
 ln -s /dev/null /etc/udev/rules.d/61-gdm.rules
 
 # Makeflags e compress
