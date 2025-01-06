@@ -177,6 +177,7 @@ sdl2_ttf
 seahorse
 sysfsutils
 sysprof
+systemd-resolvconf
 steam
 strace
 scrcpy

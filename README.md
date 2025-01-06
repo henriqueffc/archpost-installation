@@ -23,7 +23,7 @@ durante a instalação via archinstall), pipewire, wireplumber, repositório
 multilib habilitado (ativado por intermédio do archinstall), Nvidia GPU com o
 driver Nvidia open kernel module (versão dkms), shell Zsh com Oh My Zsh, Ghostty
 terminal, AUR helper Yay, Flatpak, Podman, Distrobox, Apparmor, firewalld,
-libvirt, Incus, mise, intel_pstate scaling driver, thermald e
+systemd-resolved, libvirt, Incus, mise, intel_pstate scaling driver, thermald e
 x86_energy_perf_policy para gerenciamento de frequências da CPU e do perfil de
 energia (uso o notebook ligado na tomada), ananicy-cpp, firmware para o áudio da
 Sound Open Firmware, equalização paramétrica para o Headset HyperX Cloud

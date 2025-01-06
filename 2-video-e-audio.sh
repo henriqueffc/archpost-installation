@@ -43,7 +43,7 @@ sudo sed -i '/#write-cache/c\write-cache' /etc/apparmor/parser.conf
 
 # Fail2ban
 sudo pacman -S fail2ban --needed --noconfirm
-sudo mv ./fail2ban/jail.local /etc/fail2ban
+sudo cp ./fail2ban/jail.local /etc/fail2ban/
 sudo systemctl enable fail2ban.service
 
 # AppIndicator/KStatusNotifierItem support for GNOME Shell
@@ -56,5 +56,13 @@ sudo sed -i '$ { s/^.*$/& quiet loglevel=3 systemd.show_status=auto rd.udev.log_
 # O zswap.enabled=0 é configurado pelo archinstall, por isso não está definido nas opções acima.
 # O notebook suporta o Sound Open Firmware, em razão disso o parâmetro snd_intel_dspcfg.dsp_driver=3 foi definido para o kernel. O pacote necessário para o firmware (sof-firmware) está na lista de pacotes para o Pipewire.
 # O scaling driver intel_pstate está definido como ativo. https://www.kernel.org/doc/html/latest/admin-guide/pm/intel_pstate.html / https://wiki.archlinux.org/title/CPU_frequency_scaling
+
+# Systemd-resolved
+# O pacote systemd-resolvconf será instalado pelo script nº 3
+# Caso opte por não usar o systemd-resolved, retire o pacote systemd-resolvconf da lista de instalação
+# O pacote systemd-resolvconf só deve ser instalado se o systemd-resolved for usado pelo sistema
+sudo cp ./resolved/dns.conf /etc/NetworkManager/conf.d/
+sudo systemctl enable --now systemd-resolved
+sudo systemctl restart NetworkManager.service
 
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
