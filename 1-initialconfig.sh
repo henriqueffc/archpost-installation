@@ -56,8 +56,8 @@ echo 'VK_DRIVER_FILES=/usr/share/vulkan/icd.d/intel_icd.x86_64.json' >>/etc/envi
 # PC speaker - turn off beep shutdown
 echo -e 'blacklist pcspkr' >/etc/modprobe.d/blacklist.conf
 
-# Micro, Linux-firmware, wireless-regdb e headers para o kernel stable e lts
-pacman -Syu micro linux-firmware linux-firmware-whence linux-headers linux-lts-headers wireless-regdb --needed --noconfirm
+# Micro, Linux-firmware, wireless-regdb, iwd e headers para o kernel stable e lts
+pacman -Syu micro linux-firmware linux-firmware-whence linux-headers linux-lts-headers iwd wireless-regdb --needed --noconfirm
 
 # NANO - Line number e syntax-highlighting
 pacman -S nano --needed --noconfirm

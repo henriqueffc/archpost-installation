@@ -64,10 +64,6 @@ sudo sed -i 's/#Experimental =.*/Experimental = true/g' /etc/bluetooth/main.conf
 sudo sed -i 's/#KernelExperimental =.*/KernelExperimental = true/g' /etc/bluetooth/main.conf
 sudo sed -i 's/#Testing =.*/Testing = true/g' /etc/bluetooth/main.conf
 
-# Offpowersave
-sudo cp ./powersave/default-wifi-powersave-on.conf /etc/NetworkManager/conf.d/
-echo -e "$AZUL \t WIFI - Powersave desabilitado $FIM"
-
 # FirewallD - Applet
 cp /etc/xdg/autostart/firewall-applet.desktop ~/.config/autostart
 sed -i '$a Hidden=true' ~/.config/autostart/firewall-applet.desktop

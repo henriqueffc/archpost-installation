@@ -63,6 +63,18 @@ sudo sed -i '$ { s/^.*$/& quiet loglevel=3 systemd.show_status=auto rd.udev.log_
 # O pacote systemd-resolvconf só deve ser instalado se o systemd-resolved for usado pelo sistema
 sudo cp ./resolved/dns.conf /etc/NetworkManager/conf.d/
 sudo systemctl enable --now systemd-resolved
+
+# IWD
+# configuração para o iwd ser o wi-fi backend no NetworkManager
+# https://wiki.archlinux.org/title/NetworkManager#Using_iwd_as_the_Wi-Fi_backend
+sudo cp ./iwd/wifi_backend.conf /etc/NetworkManager/conf.d/
+
+# Reiniciando o NetworkManager para aplicar as mudanças do systemd-resolver e iwd
 sudo systemctl restart NetworkManager.service
 
-printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
+# Avisos para refazer as conexões wi-fi após a configuração do iwd como backend
+printf "%s $AZUL Refaça as suas conexões wi-fi $FIM \n"
+printf "%s $AZUL Faça esse procedimento deletando as Redes Salvas nas configurações do wi-fi no painel de configurações do GNOME $FIM \n"
+printf "%s $AZUL Após deletar as redes conhecidas, configure novamente uma nova conexão wi-fi. $FIM \n"
+
+printf "%s $VERDE Fim! Após efetuar a configuração do wi-fi, reinicie o sistema. $FIM \n"
