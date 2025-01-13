@@ -69,6 +69,7 @@ flatpak install flathub org.upscayl.Upscayl -y
 flatpak install flathub dev.geopjr.Collision -y
 flatpak install flathub nl.emphisia.icon -y
 flatpak install flathub io.gitlab.adhami3310.Impression -y
+flatpak install flathub com.jeffser.Alpaca -y
 
 # Flathub Remote-Beta
 echo -e "$AZUL Adicionando o remote flathub-beta $FIM"
