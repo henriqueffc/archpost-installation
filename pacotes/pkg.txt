@@ -178,6 +178,7 @@ seahorse
 sysfsutils
 sysprof
 systemd-resolvconf
+systemctl-tui
 steam
 strace
 scrcpy
