@@ -547,6 +547,11 @@ configure a localização para o tesseract `/usr/bin/tesseract` e para o pdftopp
 
 ### 21 - Open WebUI
 
+Uso o Open WebUI com o Ollama instalado no sistema. Como uso o Ollama em outros
+programas, preferi fazer esse modo de instalação, sem usar o Open WebUI com o
+Ollama instalado no container. Os pacotes nvidia-container-toolkit e ollama-cuda
+foram instalados pelos scripts números 2 e 3.
+
 Para usar o Open WebUI junto com o Ollama do sistema é preciso acrescentar em
 `/usr/lib/systemd/system/ollama.service`
 
@@ -613,11 +618,6 @@ Restart=always
 [Install]
 WantedBy=multi-user.target default.target
 ```
-
-Uso o Open WebUI com o Ollama instalado no sistema. Como uso o Ollama em outros
-programas, preferi fazer esse modo de instalação, sem usar o Open WebUI com o
-Ollama instalado no container. Os pacotes nvidia-container-toolkit e ollama-cuda
-foram instalados pelos scripts números 2 e 3.
 
 Faça o reload do systemd (usuário)
 
