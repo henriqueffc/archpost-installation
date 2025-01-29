@@ -28,8 +28,8 @@ systemd-resolved, wireless-regdb (WIRELESS_REGDOM="BR"), iwd como wi-fi backend
 x86_energy_perf_policy para gerenciamento de frequências da CPU e do perfil de
 energia (uso o notebook ligado na tomada), ananicy-cpp, firmware para o áudio da
 Sound Open Firmware, equalização paramétrica para o Headset HyperX Cloud
-Stinger, Helix Editor, Zotero e GNOME (Wayland). As configurações dos scripts
-são concebidas nessa base.
+Stinger, Helix Editor, Ollama (CUDA), Zotero e GNOME (Wayland). As configurações
+dos scripts são concebidas nessa base.
 
 Os scripts deverão ser executados após a inicialização do sistema no ambiente
 gráfico.

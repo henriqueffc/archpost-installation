@@ -39,6 +39,8 @@
 [19 - Upscayl](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#19---upscayl)
 |
 [20 - Zotero](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#20---zotero)
+|
+[21 - Open WebUI](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#21---open-webui)
 
 ### 1 - Tema e extensões
 
@@ -542,3 +544,119 @@ poppler-data, tesseract, tesseract-data-eng e tesseract-data-por. Esses pacotes
 foram instalados pelo script n.º 3. Nas configurações da extensão no Zotero
 configure a localização para o tesseract `/usr/bin/tesseract` e para o pdftoppm
 `/usr/bin/pdftoppm`.
+
+### 21 - Open WebUI
+
+Para usar o Open WebUI junto com o Ollama do sistema é preciso acrescentar em
+`/usr/lib/systemd/system/ollama.service`
+
+```
+Environment="OLLAMA_HOST=0.0.0.0:11434"
+```
+
+Faça o reload do systemd
+
+`sudo systemctl daemon-reload`
+
+Reinicie o ollama.service
+
+`sudo systemctl restart ollama.service`
+
+Crie a pasta para o uso do Podman Quadlet
+
+`mkdir -p ~/.config/containers/systemd/`
+
+Acesse a pasta criada e insira os conteúdos abaixo nos seguintes arquivos.
+
+`nano openwebui.container`
+
+```
+[Unit]
+Description=Open-Webui app container
+After=tika.service
+After=podman-user-wait-network-online.service
+
+[Container]
+Image=ghcr.io/open-webui/open-webui:cuda
+ContainerName=open-webui
+AutoUpdate=registry
+PublishPort=3000:8080
+AddHost=host.containers.internal:host-gateway
+AddDevice=nvidia.com/gpu=all
+Network=podman
+Volume=open-webui:/app/backend/data
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=multi-user.target default.target
+```
+
+`nano tika.container`
+
+```
+[Unit]
+Description=Tika container
+After=podman-user-wait-network-online.service
+
+[Container]
+Image=docker.io/apache/tika:latest-full
+ContainerName=tika
+AutoUpdate=registry
+PublishPort=9998:9998
+Network=podman
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=multi-user.target default.target
+```
+
+Uso o Open WebUI com o Ollama instalado no sistema. Como uso o Ollama em outros
+programas, preferi fazer esse modo de instalação, sem usar o Open WebUI com o
+Ollama instalado no container. Os pacotes nvidia-container-toolkit e ollama-cuda
+foram instalados pelos scripts números 2 e 3.
+
+Faça o reload do systemd (usuário)
+
+`systemctl --user daemon-reload`
+
+Inicie os containers
+
+`systemctl --user start tika.service`
+
+`systemctl --user start openwebui.service`
+
+Instale o seguinte modelo de embedding
+
+`ollama pull nomic-embed-text`
+
+Nas configurações do Open WebUI (Painel do Admin - Configurações - Conexões /
+Documentos) mude a URL da API do Ollama, o motor do modelo de embedding
+(Ollama), a URL do modelo de embedding, o nome do modelo de embedding
+(nomic-embed-text), o motor para a extração de conteúdo (Tika) e a URL para a
+extração de conteúdo.
+
+URL da API do Ollama e do modelo de embedding
+
+`http://host.containers.internal:11434`
+
+URL do motor para a extração de conteúdo
+
+`http://host.containers.internal:9998`
+
+![conexões](.github/openwebui/openwebui1.png)
+
+![documentos](.github/openwebui/openwebui2.png)
+
+Endereço para acessar o Open WebUI
+
+`http://localhost:3000/`
+
+É possível instalar e atualizar os modelos usando a interface web do Open WebUI
+ou diretamente pelo terminal usando o Ollama.
+
+Para atualizar a imagem dos containers, execute `podman auto-update`. Para
+excluir as imagens não utilizadas, execute `podman image prune -a`

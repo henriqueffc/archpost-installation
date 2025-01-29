@@ -108,6 +108,7 @@ libotr
 libraw
 libreoffice-fresh
 libreoffice-fresh-pt-br
+libreoffice-extension-texmaths
 libwmf
 libultrahdr
 libzip
@@ -137,6 +138,7 @@ nmap
 ntfs-3g
 nvme-cli
 obsidian
+ollama-cuda
 opencv
 openssh
 perl-image-exiftool
@@ -170,10 +172,13 @@ ruby
 rustscan
 s-tui
 sd
+sdl2-compat
 sdl12-compat
 sdl2_image
 sdl2_mixer
 sdl2_ttf
+signal-desktop
+sndio
 seahorse
 sysfsutils
 sysprof

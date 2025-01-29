@@ -22,6 +22,7 @@ nvidia-open-dkms
 nvidia-prime
 nvidia-settings
 nvidia-utils
+nvidia-container-toolkit
 nvtop
 ocl-icd
 opencl-nvidia
