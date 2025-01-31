@@ -139,7 +139,7 @@ ntfs-3g
 nvme-cli
 obsidian
 ollama-cuda
-opencv
+opencv-cuda
 openssh
 perl-image-exiftool
 7zip
