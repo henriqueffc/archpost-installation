@@ -41,6 +41,8 @@
 [20 - Zotero](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#20---zotero)
 |
 [21 - Open WebUI](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#21---open-webui)
+|
+[22 -Incus](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#22---incus)
 
 ### 1 - Tema e extensões
 
@@ -660,3 +662,31 @@ ou diretamente pelo terminal usando o Ollama.
 
 Para atualizar a imagem dos containers, execute `podman auto-update`. Para
 excluir as imagens não utilizadas, execute `podman image prune -a`
+
+### 22 - Incus
+
+Execute os seguintes comandos para configurar o Incus.
+
+Configuração do profile
+
+`incus admn init`
+
+O Arch Linux não distribui firmware com secure boot assinado pelo OVMF. Para
+iniciar máquinas virtuais, você precisa desativar o secure boot. Inclua a
+configuração no profile padrão.
+[Arch Wiki - Incus](https://wiki.archlinux.org/title/Incus#Starting_a_virtual_machine_fails)
+
+`incus profile set default security.secureboot=false`
+
+Com o uso do firewalld, é necessário desabilitar as regras de firewall incluídas
+no Incus e adicionar as regras para o Incus no firewalld.
+[Incus Firewall](https://linuxcontainers.org/incus/docs/main/howto/network_bridge_firewalld/)
+
+`incus network set incusbr0 ipv4.firewall false`
+
+O nome da interface da rede `incusbr0` é a escolhida por padrão nas
+configurações do profile. Caso altere o nome, substitua no comando.
+
+`sudo firewall-cmd --zone=trusted --change-interface=incusbr0 --permanent`
+
+`sudo firewall-cmd --reload`
