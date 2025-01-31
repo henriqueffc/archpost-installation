@@ -671,9 +671,9 @@ Configuração do profile
 
 `incus admn init`
 
-O Arch Linux não distribui firmware com secure boot assinado pelo OVMF. Para
-iniciar máquinas virtuais, você precisa desativar o secure boot. Inclua a
-configuração no profile padrão.
+O Arch Linux não distribui firmware ovmf com secure boot assinado. Para iniciar
+máquinas virtuais, você precisa desativar o secure boot. Inclua a configuração
+no profile padrão.
 [Arch Wiki - Incus](https://wiki.archlinux.org/title/Incus#Starting_a_virtual_machine_fails)
 
 `incus profile set default security.secureboot=false`
