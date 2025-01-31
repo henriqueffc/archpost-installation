@@ -682,10 +682,10 @@ Com o uso do firewalld, é necessário desabilitar as regras de firewall incluí
 no Incus e adicionar as regras para o Incus no firewalld.
 [Incus Firewall](https://linuxcontainers.org/incus/docs/main/howto/network_bridge_firewalld/)
 
-`incus network set incusbr0 ipv4.firewall false`
-
 O nome da interface da rede `incusbr0` é a escolhida por padrão nas
-configurações do profile. Caso altere o nome, substitua no comando.
+configurações do profile. Caso altere o nome, substitua nos comandos abaixo.
+
+`incus network set incusbr0 ipv4.firewall false`
 
 `sudo firewall-cmd --zone=trusted --change-interface=incusbr0 --permanent`
 
