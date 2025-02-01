@@ -1,7 +1,10 @@
 # https://docs.helix-editor.com/languages.html
+# https://github.com/helix-editor/helix/wiki/Language-Server-Configurations
 # https://github.com/helix-editor/helix/wiki/External-formatter-configuration
-# https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-servers
 #
+[language-server.gopls.config]
+gofumpt = true
+
 [[language]]
 name = "bash"
 indent = { tab-width = 4, unit = "    " }
@@ -11,7 +14,6 @@ auto-format = true
 [[language]]
 name = "go"
 auto-format = true
-formatter = { command = "goimports" }
 
 [[language]]
 name = "toml"
@@ -20,7 +22,8 @@ auto-format = true
 
 [[language]]
 name = "yaml"
-formatter = { command = "prettier", args = ["--parser", "yaml"] }
+file-types = ["yaml", "yml"]
+formatter = { command = "yamlfmt", args = ["-"] }
 auto-format = true
 
 [[language]]
@@ -31,15 +34,12 @@ auto-format = true
 
 [[language]]
 name = "html"
-formatter = { command = 'prettier', args = ["--parser", "html"] }
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "html"] }
+auto-format = true
 
 [[language]]
 name = "css"
-formatter = { command = 'prettier', args = ["--parser", "css"] }
-
-[[language]]
-name = "javascript"
-formatter = { command = 'deno', args = ["fmt", "-", "--ext", "js"] }
+formatter = { command = "deno", args = ["fmt", "-", "--ext", "css"] }
 auto-format = true
 
 [[language]]
@@ -48,8 +48,30 @@ formatter = { command = 'deno', args = ["fmt", "-", "--ext", "json"] }
 auto-format = true
 
 [[language]]
+name = "jsonc"
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "jsonc"] }
+auto-format = true
+
+[[language]]
 name = "markdown"
 formatter = { command = 'deno', args = ["fmt", "-", "--ext", "md"] }
+auto-format = true
+
+[[language]]
+name = "c"
+file-types = ["c", "h"]
+formatter = { command = 'clang-format' }
+auto-format = true
+
+[[language]]
+name = "cpp"
+file-types = ["cpp", "cc", "cxx", "hpp", "hcc", "hxx"]
+formatter = { command = 'clang-format' }
+auto-format = true
+
+[[language]]
+name = "javascript"
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "js"] }
 auto-format = true
 
 [[language]]
@@ -65,4 +87,14 @@ auto-format = true
 [[language]]
 name = "tsx"
 formatter = { command = 'deno', args = ["fmt", "-", "--ext", "tsx"] }
+auto-format = true
+
+[[language]]
+name = "lua"
+formatter = { command = "stylua", args = ["-"] }
+auto-format = true
+
+[[language]]
+name = "xml"
+formatter = { command = "xmllint", args = ["--format", "-"] }
 auto-format = true
