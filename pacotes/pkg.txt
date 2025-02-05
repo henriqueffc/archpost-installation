@@ -47,7 +47,6 @@ exfatprogs
 expac
 fastfetch
 fd
-ffmpegthumbnailer
 file-roller
 firewalld
 flameshot
@@ -70,7 +69,6 @@ gnome-epub-thumbnailer
 gnome-firmware
 gnome-appfolders-manager
 gnome-terminal
-gnome-themes-extra
 gnome-tweaks
 goverlay
 gvfs-afc
@@ -88,7 +86,6 @@ hwloc
 i7z
 imagemagick
 iptables-nft
-intel-gpu-tools
 intel-ucode
 inxi
 jre-openjdk
@@ -163,14 +160,12 @@ qt6-imageformats
 qt6-wayland
 rclone
 rebuild-detector
-reflector
 ripgrep
 ripgrep-all
 rsync
 rtaudio
 ruby
 rustscan
-s-tui
 sd
 sdl2-compat
 sdl12-compat
