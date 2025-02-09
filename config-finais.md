@@ -52,7 +52,7 @@ Configure o tema dos programas que usam QT através dos aplicativos _Qt5
 Settings_ e _Qt6 Settings_
 
 Escolha o estilo breeze, paleta personalizada darker e tema de ícones breeze
-dark. Na aba Fonts selecione a fonte Noto Sans (Regular - tamanho 11).
+dark. Na aba Fonts selecione a fonte Adwaita Sans (Regular - tamanho 11).
 
 Nos programas que usam QT e permitem configurar a aparência (keepassxc, etc.)
 escolha o tema breeze dark ou escuro.
