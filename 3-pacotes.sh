@@ -356,10 +356,9 @@ mkdir -p $HOME/Imagens/wallpapers
 # O pipx foi instalado anteriormente por esse script
 pipx install gnome-extensions-cli --system-site-packages
 
-# Instalação das extensões Blur my Shell, GSConnect e Wallpaper Slideshow
+# Instalação das extensões Blur my Shell e  Wallpaper Slideshow
 gext install azwallpaper@azwallpaper.gitlab.com
 gext install blur-my-shell@aunetx
-gext install gsconnect@andyholmes.github.io
 
 # Inserção dos schemas das extensões (Blur e Wallpaper) na pasta do sistema
 # Isso possibilita a configuração pela linha de comando ou pelo editor Dconf
@@ -379,10 +378,6 @@ gsettings set org.gnome.shell.extensions.blur-my-shell.coverflow-alt-tab blur fa
 gsettings set org.gnome.shell.extensions.blur-my-shell.lockscreen blur false
 gsettings set org.gnome.shell.extensions.blur-my-shell.screenshot blur false
 gsettings set org.gnome.shell.extensions.blur-my-shell.window-list blur false
-
-# Configuração para a extensão GSConnect
-# Adição do serviço no firewalld
-sudo firewall-cmd --permanent --zone=public --add-service=kdeconnect
 
 # Configuração do firewalld para conexão dos navegadores com o Chromecast
 sudo firewall-cmd --permanent --new-service=chromecast
@@ -435,9 +430,9 @@ gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profi
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ default-size-rows '26'
 
 # fonte do sistema
-gsettings set org.gnome.desktop.interface font-name "Noto Sans 11"
-gsettings set org.gnome.desktop.interface document-font-name "Noto Sans 11"
-gsettings set org.gnome.desktop.interface monospace-font-name "JetBrainsMonoNL Nerd Font 10"
+gsettings set org.gnome.desktop.interface font-name "Adwaita Sans 11"
+gsettings set org.gnome.desktop.interface document-font-name "Adwaita Sans 11"
+gsettings set org.gnome.desktop.interface monospace-font-name "Adwaita Mono 10"
 gsettings set org.gnome.desktop.interface font-antialiasing rgba
 
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"

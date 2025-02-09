@@ -1,3 +1,4 @@
+adwaita-fonts
 gnu-free-fonts
 inter-font
 noto-fonts
