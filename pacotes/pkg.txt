@@ -53,6 +53,7 @@ flameshot
 flatpak
 fwupd
 fzf
+gajim
 gawk
 gdb
 gdu
@@ -153,6 +154,7 @@ procs
 progress
 poppler
 poppler-data
+python-gnupg
 qt5ct
 qt6ct
 qt5-wayland
