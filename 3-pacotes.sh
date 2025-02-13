@@ -298,6 +298,10 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Shift><
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 "['<Shift><Super>3']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 "['<Shift><Super>4']"
 
+# Kvantum
+mkdir -p $HOME/.config/Kvantum/
+cp ./kvantum/kvantum.kvconfig $HOME/.config/Kvantum/
+
 # Plocate
 sudo pacman -S plocate --needed --noconfirm
 sudo updatedb

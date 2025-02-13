@@ -94,6 +94,8 @@ kdenlive
 kdiskmark
 keepassxc
 kmon
+kvantum
+kvantum-qt5
 ladspa
 lnav
 lib32-mangohud
@@ -155,8 +157,6 @@ progress
 poppler
 poppler-data
 python-gnupg
-qt5ct
-qt6ct
 qt5-wayland
 qt6-imageformats
 qt6-wayland

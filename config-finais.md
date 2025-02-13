@@ -48,14 +48,8 @@
 
 **Tema**
 
-Configure o tema dos programas que usam QT através dos aplicativos _Qt5
-Settings_ e _Qt6 Settings_
-
-Escolha o estilo breeze, paleta personalizada darker e tema de ícones breeze
-dark. Na aba Fonts selecione a fonte Adwaita Sans (Regular - tamanho 11).
-
-Nos programas que usam QT e permitem configurar a aparência (keepassxc, etc.)
-escolha o tema breeze dark ou escuro.
+Nos programas que usam QT e permitem configurar a aparência (keepassxc,
+kdenlive, etc.) escolha o tema breeze dark ou escuro.
 
 **Extensões**
 
@@ -145,15 +139,6 @@ huge_file dir_nlink extra_isize metadata_csum orphan_present
 
 Caso alguma das flags mencionadas acima não estejam na saída do comando, faça o
 seguinte:
-
-Verifique se o [módulo](https://wiki.archlinux.org/title/Kernel_module)
-`crc32c_intel` está ativo (o i5-12450H possui a flag SSE 4.2 e pode operar com
-esse módulo):
-
-`lsmod | grep crc32c`
-
-Se o módulo não estiver habilitado inclua-o nos
-[módulos do mkinitcpio](https://wiki.archlinux.org/title/Mkinitcpio#MODULES).
 
 A partição objeto do procedimento não pode estar montada para a execução dos
 comandos abaixo.
