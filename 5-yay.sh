@@ -33,6 +33,7 @@ $FIM"
 # Pacotes AUR
 yay -Y --gendb
 yay -Y --devel --save
+sudo pacman -S meson ninja --noconfirm --needed
 yay -S - <./pacotes/aur.txt
 
 # mise
