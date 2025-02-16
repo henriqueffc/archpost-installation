@@ -39,7 +39,6 @@ echo 'EGL_PLATFORM=wayland' >>/etc/environment
 echo 'VDPAU_DRIVER=nvidia' >>/etc/environment
 echo 'QT_QPA_PLATFORM="wayland;xcb"' >>/etc/environment
 echo 'QT_STYLE_OVERRIDE=kvantum' >>/etc/environment
-echo 'GDK_BACKEND="wayland,x11"' >>/etc/environment
 echo 'CLUTTER_BACKEND=wayland' >>/etc/environment
 echo 'PROTON_ENABLE_NVAPI=1' >>/etc/environment
 echo 'PROTON_ENABLE_NGX_UPDATER=1' >>/etc/environment
