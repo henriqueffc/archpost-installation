@@ -53,16 +53,17 @@ kdenlive, etc.) escolha o tema breeze dark ou escuro.
 
 **Extensões**
 
-Uso as extensões System Monitor, Blur my Shell, Wallpaper Slideshow e
-AppIndicator/KStatusNotifierItem habilitadas. Para acessar as configurações das
-extensões use o
+Uso as extensões System Monitor, Blur my Shell, Alphabetical App Grid, Wallpaper
+Slideshow e AppIndicator/KStatusNotifierItem habilitadas. Para acessar as
+configurações das extensões use o
 [Gerenciador de extensões](https://flathub.org/pt-BR/apps/com.mattjakeman.ExtensionManager)
 (instalado com o script n.° 4). A extensão AppIndicator/KStatusNotifierItem foi
 intalada com o pacote
 [gnome-shell-extension-appindicator](https://archlinux.org/packages/extra/any/gnome-shell-extension-appindicator/)
-(instalada com o script n.° 2 e habilitada com o script n.° 3). O restante das
-extensões foram instaladas e habilitadas no script n.° 3. Na extensão Wallpaper
-Slideshow é preciso configurar a pasta que contém as imagens para o wallpaper.
+(instalada com o script n.° 2 e habilitada com o script n.° 3). A extensão
+Alphabetical App Grid foi instalada com o script nº 6. O restante das extensões
+foram instaladas e habilitadas no script n.° 3. Na extensão Wallpaper Slideshow
+é preciso configurar a pasta que contém as imagens para o wallpaper.
 
 ### 2 - SSH
 
@@ -539,10 +540,14 @@ programas, preferi fazer esse modo de instalação, sem usar o Open WebUI com o
 Ollama instalado no container. Os pacotes nvidia-container-toolkit e ollama-cuda
 foram instalados pelos scripts números 2 e 3.
 
-Para usar o Open WebUI junto com o Ollama do sistema é preciso acrescentar em
-`/usr/lib/systemd/system/ollama.service`
+Para usar o Open Webui junto com o Ollama do sistema, é preciso acrescentar o
+parâmetro abaixo no serviço do systemd. A instrução abaixo deve ficar entre
+`### Anything between ...` e `### Edits...`
+
+`sudo systemctl edit ollama.service`
 
 ```
+[Service]
 Environment="OLLAMA_HOST=0.0.0.0:11434"
 ```
 
