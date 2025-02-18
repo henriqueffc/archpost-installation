@@ -348,6 +348,10 @@ ya pack -a yazi-rs/plugins:max-preview
 mkdir -p $HOME/.config/ghostty/
 cp ./ghostty/config $HOME/.config/ghostty/
 
+# mise
+mkdir -p $HOME/.config/mise/
+cp ./mise/config.toml $HOME/.config/mise/
+
 # Comando necessário para o funcionamento do pipx
 # Essa alteração no PATH foi realizada anteriormente no script
 # Mas para funcionar nesse momento da instalação é preciso exportar o PATH, pois o terminal não foi reinicializado.

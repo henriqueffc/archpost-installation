@@ -36,10 +36,6 @@ yay -Y --devel --save
 sudo pacman -S meson ninja --noconfirm --needed
 yay -S - <./pacotes/aur.txt
 
-# mise
-mkdir -p $HOME/.config/mise/
-cp ./mise/config.toml $HOME/.config/mise/
-
 # Heroic Games Launcher
 cp /usr/share/applications/heroic.desktop ~/.local/share/applications/
 sed -i 's|Exec=.*|Exec=/opt/Heroic/heroic --enable-features=CanvasOopRasterization --enable-zero-copy --force_low_power_gpu --disable-gpu-driver-bug-workarounds %U|g' ~/.local/share/applications/heroic.desktop

@@ -126,6 +126,7 @@ man-pages-pt_br
 mediainfo
 meld
 micro
+mise
 movit
 mpv
 nautilus-image-converter
@@ -203,6 +204,7 @@ unace
 unarchiver
 unrar
 unzip
+usage
 veracrypt
 webp-pixbuf-loader
 weechat
