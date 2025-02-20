@@ -342,7 +342,7 @@ sudo pacman -Fy
 mkdir -p $HOME/.config/yazi/plugins/
 cp ./yazi/yazi.toml $HOME/.config/yazi/
 cp ./yazi/keymap.toml $HOME/.config/yazi/
-ya pack -a yazi-rs/plugins:max-preview
+ya pack -a yazi-rs/plugins:toggle-pane
 
 # Ghostty terminal
 mkdir -p $HOME/.config/ghostty/
