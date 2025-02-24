@@ -20,25 +20,25 @@
 |
 [10 - Steam](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#10---steam)
 |
-[11 - Fallback](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#12---fallback)
+[11 - Fallback](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#11---fallback)
 |
-[12 - Bluetooth](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#13---bluetooth)
+[12 - Bluetooth](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#12---bluetooth)
 |
-[13 - Geoclue](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#14---geoclue)
+[13 - Geoclue](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#13---geoclue)
 |
-[14 - Aplicativos](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#15---aplicativos)
+[14 - Aplicativos](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#14---aplicativos)
 |
-[15 - Piper](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#16---piper)
+[15 - Piper](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#15---piper)
 |
-[16 - Newsflash](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#17---newsflash)
+[16 - Newsflash](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#16---newsflash)
 |
-[17 - Ordem do boot](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#18---ordem-do-boot)
+[17 - Ordem do boot](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#17---ordem-do-boot)
 |
-[18 - Upscayl](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#19---upscayl)
+[18 - Upscayl](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#18---upscayl)
 |
-[19 - Zotero](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#20---zotero)
+[19 - Zotero](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#19---zotero)
 |
-[20 -Incus](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#22---incus)
+[20 -Incus](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#20---incus)
 
 ### 1 - Tema e extensões
 
