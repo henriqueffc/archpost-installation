@@ -89,6 +89,7 @@ imagemagick
 iptables-nft
 intel-ucode
 inxi
+innoextract
 jre-openjdk
 kdenlive
 kdiskmark
@@ -98,6 +99,7 @@ kvantum
 kvantum-qt5
 ladspa
 lnav
+lib32-gnutls
 lib32-mangohud
 libayatana-appindicator
 libcamera-tools
@@ -117,6 +119,7 @@ lrzip
 lshw
 lua
 lurk
+lutris
 lynx
 man-db
 mangohud
@@ -200,16 +203,18 @@ trash-cli
 translate-shell
 turbostat
 usbutils
+umu-launcher
 unace
 unarchiver
 unrar
 unzip
 usage
 veracrypt
+vkd3d
 webp-pixbuf-loader
 weechat
 wikiman
-wine
+wine-staging
 wine-gecko
 wine-mono
 winetricks

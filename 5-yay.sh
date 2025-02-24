@@ -36,10 +36,6 @@ yay -Y --devel --save
 sudo pacman -S meson ninja --noconfirm --needed
 yay -S - <./pacotes/aur.txt
 
-# Heroic Games Launcher
-cp /usr/share/applications/heroic.desktop ~/.local/share/applications/
-sed -i 's|Exec=.*|Exec=/opt/Heroic/heroic --enable-features=CanvasOopRasterization --enable-zero-copy --force_low_power_gpu --disable-gpu-driver-bug-workarounds %U|g' ~/.local/share/applications/heroic.desktop
-
 # Habilitando o Ananicy-cpp (instalado pelo script n.° 3) com as regras existentes no pacote cachyos-ananicy-rules-git (AUR)
 sudo systemctl enable --now ananicy-cpp.service
 

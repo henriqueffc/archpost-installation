@@ -20,29 +20,25 @@
 |
 [10 - Steam](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#10---steam)
 |
-[11 - Heroic Games Launcher](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#11---heroic-games-launcher)
+[11 - Fallback](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#12---fallback)
 |
-[12 - Fallback](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#12---fallback)
+[12 - Bluetooth](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#13---bluetooth)
 |
-[13 - Bluetooth](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#13---bluetooth)
+[13 - Geoclue](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#14---geoclue)
 |
-[14 - Geoclue](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#14---geoclue)
+[14 - Aplicativos](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#15---aplicativos)
 |
-[15 - Aplicativos](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#15---aplicativos)
+[15 - Piper](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#16---piper)
 |
-[16 - Piper](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#16---piper)
+[16 - Newsflash](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#17---newsflash)
 |
-[17 - Newsflash](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#17---newsflash)
+[17 - Ordem do boot](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#18---ordem-do-boot)
 |
-[18 - Ordem do boot](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#18---ordem-do-boot)
+[18 - Upscayl](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#19---upscayl)
 |
-[19 - Upscayl](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#19---upscayl)
+[19 - Zotero](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#20---zotero)
 |
-[20 - Zotero](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#20---zotero)
-|
-[21 - Open WebUI](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#21---open-webui)
-|
-[22 -Incus](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#22---incus)
+[20 -Incus](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#22---incus)
 
 ### 1 - Tema e extensões
 
@@ -263,24 +259,7 @@ Execute no terminal (com a Steam fechada)
 
 `steam-runtime steam://unlockh264/` ou `steam steam://unlockh264/`
 
-### 11 - Heroic Games Launcher
-
-Nas configurações do jogo, na opção "outros", habilite o MangoHud e o uso da
-placa dedicada.
-
-**Vulkan**
-
-Na opção "avançado", configure as variáveis de ambiente para o Vulkan. Ex.: nome
-da variável `VK_DRIVER_FILES` - Valor `/usr/share/vulkan/icd.d/nvidia_icd.json`
-Veja os restantes das variáveis no item Steam / DXVK - Vulkan - Nvidia.
-
-**OpenGL**
-
-Para jogos OpenGL use a seguinte variável: nome da variável
-`__GL_MaxFramesAllowed` valor `1`. Veja mais variáveis no item Steam / OpenGL +
-Nvidia.
-
-### 12 - Fallback
+### 11 - Fallback
 
 Caso a imagem para o kernel fallback esteja sendo gerada pelo mkinitcpio, faça o
 seguinte:
@@ -305,7 +284,7 @@ Regenere o initramfs:
 
 `sudo mkinitcpio -P`
 
-### 13 - Bluetooth
+### 12 - Bluetooth
 
 Caso o bluetooth não esteja funcionando, execute
 `sudo rfkill unblock bluetooth && sudo systemctl restart bluetooth`. Os pacotes
@@ -313,7 +292,7 @@ necessários para o funcionamento do bluetooth já foram instalados no sistema e
 as configurações para os recursos experimentais do bluetooth foram executadas no
 script número n.° 3.
 
-### 14 - Geoclue
+### 13 - Geoclue
 
 **Geoclue estático**
 
@@ -360,7 +339,7 @@ Se quiser desabilitar o Geoclue use os seguintes comandos:
 
 Manual do [Geoclue](https://man.archlinux.org/man/extra/geoclue/geoclue.5.en)
 
-### 15 - Aplicativos
+### 14 - Aplicativos
 
 **Falhas na renderização**
 
@@ -386,7 +365,7 @@ Desabilite o funcionamento dos aplicativos Gajim, Apostrophe e Discord em
 segundo plano. Pode ser feito pelo Flatseal ou pelas configurações do Gnome
 (Aplicativos).
 
-### 16 - Piper
+### 15 - Piper
 
 Se optar por alterar a vozes usadas no speech-dispatcher para as
 disponibilizadas pelo projeto [Piper](https://github.com/rhasspy/piper), faça os
@@ -483,7 +462,7 @@ spd-say "oi como você está?"
 spd-say "You’re playing a dangerous game Carl"
 ```
 
-### 17 - Newsflash
+### 16 - Newsflash
 
 Caso a versão em flatpak do app Newsflash não tenha conexão com a rede, faça o
 seguinte:
@@ -494,7 +473,7 @@ Substitua a linha `"ping_url": "http://exemple.com/"` por
 `"ping_url": "http://192.168.0.1/"`. O endereço 192.168.0.1 é o gateway.
 Verifique qual é o gateway da sua rede.
 
-### 18 - Ordem do boot
+### 17 - Ordem do boot
 
 Verifique o ID do kernel com o comando `bootctl list`. Selecione o kernel que
 você deseja para a inicialização do sistema com o comando
@@ -507,7 +486,7 @@ desejado (em segundos) da exibição ou coloque 0 para esconder as opções de
 inicialização. Para acessar a tela, caso opte por escondê-la, após ligar o
 notebook pressione a barra de espaço do teclado.
 
-### 19 - Upscayl
+### 18 - Upscayl
 
 Caso queira utilizar a versão em Appimage efetue o download na página do
 [github](https://github.com/upscayl/upscayl). A versão em flatpak foi instalada
@@ -520,7 +499,7 @@ tela) o seguinte: Key = `VK_DRIVER_FILES` Value =
 `/usr/share/glvnd/egl_vendor.d/10_nvidia.json` Isso fará com que o aplicativo
 funcione com a placa dedicada.
 
-### 20 - Zotero
+### 19 - Zotero
 
 Faça o download do arquivo xpi das seguintes extensões:
 
@@ -533,127 +512,7 @@ foram instalados pelo script n.º 3. Nas configurações da extensão no Zotero
 configure a localização para o tesseract `/usr/bin/tesseract` e para o pdftoppm
 `/usr/bin/pdftoppm`.
 
-### 21 - Open WebUI
-
-Uso o Open WebUI com o Ollama instalado no sistema. Como uso o Ollama em outros
-programas, preferi fazer esse modo de instalação, sem usar o Open WebUI com o
-Ollama instalado no container. Os pacotes nvidia-container-toolkit e ollama-cuda
-foram instalados pelos scripts números 2 e 3.
-
-Para usar o Open Webui junto com o Ollama do sistema, é preciso acrescentar o
-parâmetro abaixo no serviço do systemd. A instrução abaixo deve ficar entre
-`### Anything between ...` e `### Edits...`
-
-`sudo systemctl edit ollama.service`
-
-```
-[Service]
-Environment="OLLAMA_HOST=0.0.0.0:11434"
-```
-
-Faça o reload do systemd
-
-`sudo systemctl daemon-reload`
-
-Reinicie o ollama.service
-
-`sudo systemctl restart ollama.service`
-
-Crie a pasta para o uso do Podman Quadlet
-
-`mkdir -p ~/.config/containers/systemd/`
-
-Acesse a pasta criada e insira os conteúdos abaixo nos seguintes arquivos.
-
-`nano openwebui.container`
-
-```
-[Unit]
-Description=Open-Webui app container
-After=tika.service
-After=podman-user-wait-network-online.service
-
-[Container]
-Image=ghcr.io/open-webui/open-webui:cuda
-ContainerName=open-webui
-AutoUpdate=registry
-PublishPort=3000:8080
-AddHost=host.containers.internal:host-gateway
-AddDevice=nvidia.com/gpu=all
-Network=podman
-Volume=open-webui:/app/backend/data
-
-[Service]
-Restart=always
-
-[Install]
-WantedBy=multi-user.target default.target
-```
-
-`nano tika.container`
-
-```
-[Unit]
-Description=Tika container
-After=podman-user-wait-network-online.service
-
-[Container]
-Image=docker.io/apache/tika:latest-full
-ContainerName=tika
-AutoUpdate=registry
-PublishPort=9998:9998
-Network=podman
-
-[Service]
-Restart=always
-
-[Install]
-WantedBy=multi-user.target default.target
-```
-
-Faça o reload do systemd (usuário)
-
-`systemctl --user daemon-reload`
-
-Inicie os containers
-
-`systemctl --user start tika.service`
-
-`systemctl --user start openwebui.service`
-
-Instale o seguinte modelo de embedding
-
-`ollama pull nomic-embed-text`
-
-Nas configurações do Open WebUI (Painel do Admin - Configurações - Conexões /
-Documentos) mude a URL da API do Ollama, o motor do modelo de embedding
-(Ollama), a URL do modelo de embedding, o nome do modelo de embedding
-(nomic-embed-text), o motor para a extração de conteúdo (Tika) e a URL para a
-extração de conteúdo.
-
-URL da API do Ollama e do modelo de embedding
-
-`http://host.containers.internal:11434`
-
-URL do motor para a extração de conteúdo
-
-`http://host.containers.internal:9998`
-
-![conexões](.github/openwebui/openwebui1.png)
-
-![documentos](.github/openwebui/openwebui2.png)
-
-Endereço para acessar o Open WebUI
-
-`http://localhost:3000/`
-
-É possível instalar e atualizar os modelos usando a interface web do Open WebUI
-ou diretamente pelo terminal usando o Ollama.
-
-Para atualizar a imagem dos containers, execute `podman auto-update`. Para
-excluir as imagens não utilizadas, execute `podman image prune -a`
-
-### 22 - Incus
+### 20 - Incus
 
 Execute os seguintes comandos para configurar o Incus.
 

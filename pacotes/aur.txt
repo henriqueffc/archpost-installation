@@ -2,7 +2,6 @@ downgrade
 microsoft-edge-stable-bin
 kora-icon-theme
 gpu-screen-recorder
-heroic-games-launcher-bin
 ttf-noto-emoji-monochrome
 cachyos-ananicy-rules-git
 nautilus-open-any-terminal
