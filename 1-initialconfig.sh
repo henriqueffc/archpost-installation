@@ -28,8 +28,6 @@ cp /etc/pacman.conf /etc/pacman.conf.bak
 sed -i '/#UseSyslog/c\UseSyslog' /etc/pacman.conf
 sed -i 's/#Color/\Color/' /etc/pacman.conf
 sed -i 's/#VerbosePkgLists/\VerbosePkgLists/' /etc/pacman.conf
-sed -i 's/#ParallelDownloads = 5/\ParallelDownloads = 5/' /etc/pacman.conf
-#sed -i 's/#CheckSpace/\CheckSpace/' /etc/pacman.conf (já é padrão pelo archinstall)
 #sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf (habilito na instalação do sistema pelo archinstall)
 
 # Environment
