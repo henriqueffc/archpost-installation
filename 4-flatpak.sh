@@ -69,6 +69,7 @@ flatpak install flathub nl.emphisia.icon -y
 flatpak install flathub io.gitlab.adhami3310.Impression -y
 flatpak install flathub io.github.giantpinkrobots.varia -y
 flatpak install flathub re.sonny.Eloquent -y
+flatpak install flathub io.github.chidiwilliams.Buzz -y
 
 # Flathub Remote-Beta
 echo -e "$AZUL Adicionando o remote flathub-beta $FIM"
