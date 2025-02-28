@@ -38,6 +38,7 @@ curl
 dconf-editor
 devtools
 dialog
+dino
 dosfstools
 duf
 e2fsprogs
@@ -53,7 +54,6 @@ flameshot
 flatpak
 fwupd
 fzf
-gajim
 gawk
 gdb
 gdu
@@ -160,7 +160,6 @@ procs
 progress
 poppler
 poppler-data
-python-gnupg
 qt5-wayland
 qt6-imageformats
 qt6-wayland
