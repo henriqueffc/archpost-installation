@@ -60,6 +60,8 @@ sudo systemctl enable --now systemd-oomd.service
 echo -e "$AZUL \t systemd-oomd.service habilitado $FIM"
 sudo systemctl enable ollama.service
 echo -e "$AZUL \t ollama.service habilitado $FIM"
+systemctl enable --user speech-dispatcher.socket
+echo -e "$AZUL speech-dispatcher.socket habilitado $FIM"
 
 # Bluetooth
 sudo sed -i 's/#Experimental =.*/Experimental = true/g' /etc/bluetooth/main.conf
