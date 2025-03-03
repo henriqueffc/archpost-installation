@@ -91,7 +91,7 @@ else
             echo -e "$AZUL Começando em 3... $FIM" && sleep 1
             echo -e "$AZUL Começando em 2... $FIM" && sleep 1
             echo -e "$AZUL Começando em 1... $FIM" && sleep 1
-            sudo pacman -Syu gawk thefuck git git-zsh-completion nano xsel zoxide cabextract cpio 7zip unace unzip unrar fzf ripgrep ripgrep-all wl-clipboard man-db man-pages man-pages-pt_br --needed --noconfirm
+            sudo pacman -Syu gawk thefuck git git-zsh-completion nano xsel zoxide cabextract mise cpio 7zip unace unzip unrar fzf ripgrep ripgrep-all wl-clipboard man-db man-pages man-pages-pt_br --needed --noconfirm
             git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
             git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
             git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
@@ -110,6 +110,10 @@ else
             echo 'export GPG_TTY=$TTY' >>~/.zshrc
             echo 'eval "$(zoxide init --cmd cd zsh)"' >>~/.zshrc
             sed -i 's|# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH|export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH|g' ~/.zshrc
+            if command -v oh-my-posh >/dev/null; then
+                echo 'eval "$(oh-my-posh init zsh --config /usr/share/oh-my-posh/themes/gruvbox.omp.json)"' >>~/.zshrc
+                sed -i 's/ZSH_THEME=/#ZSH_THEME=/g' ~/.zshrc
+            fi
             echo -e "$AZUL Instalação concluída. Reinicie o terminal. $FIM"
             break
             ;;

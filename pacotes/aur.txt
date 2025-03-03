@@ -5,3 +5,4 @@ gpu-screen-recorder
 ttf-noto-emoji-monochrome
 cachyos-ananicy-rules-git
 nautilus-open-any-terminal
+oh-my-posh-bin
