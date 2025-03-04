@@ -58,7 +58,7 @@ echo -e "$AZUL
 -------------------------------------------------------------------------
 $FIM"
 
-sudo pacman -S incus cdrtools lvm2 btrfs-progs xdelta3 incus-tools --needed
+sudo pacman -S incus cdrtools lvm2 btrfs-progs xdelta3 incus-ui incus-tools --needed
 sudo systemctl enable --now incus.socket
 sudo usermod -aG incus-admin "$USERNAME"
 sudo usermod -v 1000000-1000999999 -w 1000000-1000999999 root
