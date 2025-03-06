@@ -39,10 +39,7 @@ yay -S - <./pacotes/aur.txt
 # Habilitando o Ananicy-cpp (instalado pelo script n.° 3) com as regras existentes no pacote cachyos-ananicy-rules-git (AUR)
 sudo systemctl enable --now ananicy-cpp.service
 
-# nautilus-open-any-terminal
-gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal ghostty
-
-printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
-
 # Tema dos ícones - Kora
 gsettings set org.gnome.desktop.interface icon-theme "kora"
+
+printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
