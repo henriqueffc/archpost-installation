@@ -39,6 +39,8 @@
 [19 - Zotero](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#19---zotero)
 |
 [20 -Incus](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#20---incus)
+|
+[21 -tmpfiles](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#21---tmpfiles)
 
 ### 1 - Tema e extensões
 
@@ -539,3 +541,36 @@ configurações do profile. Caso altere o nome, substitua nos comandos abaixo.
 `sudo firewall-cmd --zone=trusted --change-interface=incusbr0 --permanent`
 
 `sudo firewall-cmd --reload`
+
+### 21 - tmpfiles
+
+O arquivo de configuração para cada ação deve ser alocado em `/etc/tmpfiles.d/`
+
+Exemplo:
+
+`sudo nano /etc/tmpfiles.d/captura.conf`
+
+o `e` significa que a ação de remoção dos arquivos se dará sobre uma pasta
+existente
+
+Os números `0755` indicam as permissões. Se usar o `e`, coloque as mesmas
+permissões da pasta existente.
+
+`user user` Refere-se ao usuário e ao grupo
+
+`2d` refere-se ao tempo. No caso, remoção dos arquivos criados há dois dias na
+pasta Capturas de tela.
+
+```
+e /home/user/Imagens/'Capturas de tela' 0755 user user 2d
+```
+
+Para pastas criadas pelo serviço, ao invés de usar `e`, usa-se `d`.
+
+Existe a opção de remoção para pasta ou somente para um arquivo específico.
+
+Veja mais opções em `man tmpfiles.d` e `man systemd-tmpfiles`
+
+Depois de concebido o arquivo, execute
+
+`sudo systemd-tmpfiles --create`
