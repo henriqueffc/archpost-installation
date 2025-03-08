@@ -94,16 +94,11 @@ echo -e "$AZUL
 -------------------------------------------------------------------------
 $FIM"
 
-# Inserir o usuário nos grupos libvirt kvm
-sudo usermod -aG libvirt,kvm "$USERNAME"
+# Inserir o usuário nos grupos libvirt, video e kvm
+sudo usermod -aG libvirt,video,kvm "$USERNAME"
 
 # Wireplumber
-## Necessário para resolver o problema de acesso a webcam.
-## https://gitlab.freedesktop.org/pipewire/pipewire/-/issues/3960#note_2373850
-mkdir -p /home/$USER/.config/systemd/user/wireplumber.service.d/
-echo -e "[Service]\nExecStartPre=/bin/sleep 5" >>override.conf
-mv override.conf /home/$USER/.config/systemd/user/wireplumber.service.d/
-## configurando o libcamera para ser o default no Wireplumber
+# configurando o libcamera para ser o default no Wireplumber
 mkdir -p ~/.config/wireplumber/wireplumber.conf.d/
 cp ./pipewire/99-libcamera.conf ~/.config/wireplumber/wireplumber.conf.d/
 
@@ -440,9 +435,6 @@ gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profi
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ default-size-rows '26'
 
 # fonte do sistema
-gsettings set org.gnome.desktop.interface font-name "Adwaita Sans 11"
-gsettings set org.gnome.desktop.interface document-font-name "Adwaita Sans 11"
-gsettings set org.gnome.desktop.interface monospace-font-name "Adwaita Mono 10"
 gsettings set org.gnome.desktop.interface font-antialiasing rgba
 
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
