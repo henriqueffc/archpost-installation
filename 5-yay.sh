@@ -42,4 +42,9 @@ sudo systemctl enable --now ananicy-cpp.service
 # Tema dos ícones - Kora
 gsettings set org.gnome.desktop.interface icon-theme "kora"
 
-printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
+# Albert
+sudo pacman -S libqalculate openbsd-netcat plocate --needed
+cp /usr/share/applications/albert.desktop ~/.config/autostart
+albert </dev/null &>/dev/null &
+
+printf "%s $VERDE Configure o Albert e depois reinicie o sistema. O atalho de teclado para o Albert é Ctrl+espaço $FIM \n"

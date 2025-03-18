@@ -302,7 +302,6 @@ cp ./kvantum/kvantum.kvconfig $HOME/.config/Kvantum/
 # Plocate
 sudo pacman -S plocate --needed --noconfirm
 sudo updatedb
-sudo systemctl enable --now plocate-updatedb.timer
 echo -e "$AZUL \t Plocate habilitado $FIM"
 
 # Pacman hooks
@@ -420,11 +419,17 @@ imgdisplay iterm2
 EOF
 
 # Atalho de teclado para o flameshot (Print) e alteração do atalho de teclado para o gnome screenshot (Ctrl + Alt + p)
+# Atalho de teclado para o Albert (Ctrl + espaço). O Albert será instalado pelo script nº 5
 gsettings set org.gnome.shell.keybindings show-screenshot-ui "['<Control><Alt>p']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name "flameshot"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command "flameshot-print"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding "Print"
-gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']"
+
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ name "albert"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ command 'sh -c "echo -n toggle | nc -U ~/.cache/albert/ipc_socket"'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ binding "<Control>space"
+
+gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']"
 
 # Fonte do GNOME terminal
 font=$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d "'")
