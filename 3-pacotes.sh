@@ -202,8 +202,8 @@ gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-typ
 # Desabilitar o tempo antes da sessão ser considerada ociosa
 gsettings set org.gnome.desktop.session idle-delay "0"
 
-# Abrir os aplicativos centralizados na tela
-gsettings set org.gnome.mutter center-new-windows true
+# Abrir os aplicativos centralizados na tela. É o padrão no GNOME 48
+#gsettings set org.gnome.mutter center-new-windows true
 
 # Desabilitar os cantos ativos
 gsettings set org.gnome.desktop.interface enable-hot-corners false
@@ -214,11 +214,8 @@ gsettings set org.gnome.desktop.peripherals.touchpad click-method areas
 # Numlock
 gsettings set org.gnome.desktop.peripherals.keyboard numlock-state true
 
-# Ao pesquisar no overview não serão exibidos os resultados da pesquisa realizada pelos aplicativos contidos nesta lista
-gsettings set org.gnome.desktop.search-providers disabled "['org.gnome.Contacts.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Characters.desktop', 'org.gnome.Weather.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Epiphany.desktop', 'org.gnome.Software.desktop', 'org.gnome.Boxes.desktop']"
-
-# Ordem dos resultados da pesquisa realizada no overview
-gsettings set org.gnome.desktop.search-providers sort-order "['org.gnome.Calculator.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Settings.desktop', 'org.gnome.Epiphany.desktop', 'org.gnome.Boxes.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Characters.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Software.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Weather.desktop']"
+# Desabilitar os provedores de  pesquisa externos no overview
+gsettings set org.gnome.desktop.search-providers disable-external true
 
 # Acessibilidade
 gsettings set org.gnome.desktop.a11y.magnifier mag-factor "1.25"
