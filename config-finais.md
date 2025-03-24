@@ -233,7 +233,7 @@ Na eventualidade de o som não funcionar, tente executar os jogos com o parâmet
 
 **DXVK - Vulkan - Nvidia**
 
-`VK_DRIVER_FILES=/usr/share/vulkan/icd.d/nvidia_icd.json STAGING_WRITECOPY=1 STAGING_SHARED_MEMORY=1 mangohud prime-run %command%`
+`STAGING_WRITECOPY=1 STAGING_SHARED_MEMORY=1 mangohud prime-run %command%`
 
 O parâmetro `VKD3D_CONFIG=dxr11,dxr` habilita o raytracing.
 

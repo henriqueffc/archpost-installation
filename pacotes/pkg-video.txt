@@ -29,4 +29,5 @@ opencl-nvidia
 vdpauinfo
 vulkan-icd-loader
 vulkan-intel
+vulkan-mesa-layers
 vulkan-tools
