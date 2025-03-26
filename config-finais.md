@@ -590,7 +590,7 @@ Use vinculado com o Ollama (instalado pelo script nº 3).
 Execute o comando abaixo. Depois de `--model` coloque um modelo que esteja
 instalado no Ollama (gemma3:4b é um exemplo).
 
-`sgpt --model gemma3:4b "como saber a versão do shell"`
+`sgpt --model ollama/gemma3:4b "como saber a versão do shell"`
 
 Após executar o comando será requisitada OpenAI API key.
 
