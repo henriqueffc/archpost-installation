@@ -160,6 +160,7 @@ procs
 progress
 poppler
 poppler-data
+qt5-imageformats
 qt5-wayland
 qt6-imageformats
 qt6-wayland
