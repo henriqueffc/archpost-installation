@@ -63,7 +63,7 @@ echo -e "$AZUL speech-dispatcher.socket habilitado $FIM"
 
 # Ollama
 sudo mkdir -p /etc/systemd/system/ollama.service.d/
-sudo mv ./ollama/override.conf /etc/systemd/system/ollama.service.d/
+sudo cp ./ollama/override.conf /etc/systemd/system/ollama.service.d/
 sudo systemctl daemon-reload
 sudo systemctl enable ollama.service
 echo -e "$AZUL \t ollama.service habilitado $FIM"
