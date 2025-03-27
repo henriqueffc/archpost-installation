@@ -58,10 +58,15 @@ systemctl enable --user obex.service
 echo -e "$AZUL \t bluetooth.service e obex.service habilitados $FIM"
 sudo systemctl enable --now systemd-oomd.service
 echo -e "$AZUL \t systemd-oomd.service habilitado $FIM"
-sudo systemctl enable ollama.service
-echo -e "$AZUL \t ollama.service habilitado $FIM"
 systemctl enable --user speech-dispatcher.socket
 echo -e "$AZUL speech-dispatcher.socket habilitado $FIM"
+
+# Ollama
+sudo mkdir -p /etc/systemd/system/ollama.service.d/
+sudo mv ./ollama/override.conf /etc/systemd/system/ollama.service.d/
+sudo systemctl daemon-reload
+sudo systemctl enable ollama.service
+echo -e "$AZUL \t ollama.service habilitado $FIM"
 
 # Bluetooth
 sudo sed -i 's/#Experimental =.*/Experimental = true/g' /etc/bluetooth/main.conf
