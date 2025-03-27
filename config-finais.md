@@ -38,11 +38,13 @@
 |
 [19 - Zotero](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#19---zotero)
 |
-[20 -Incus](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#20---incus)
+[20 - Incus](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#20---incus)
 |
-[21 -tmpfiles](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#21---tmpfiles)
+[21 - tmpfiles](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#21---tmpfiles)
 |
-[22 -sgpt](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#22---sgpt)
+[22 - sgpt](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#22---sgpt)
+|
+[23 - dns](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#23---dns)
 
 ### 1 - Tema e extensões
 
@@ -73,10 +75,11 @@ Configurar o Fail2ban - porta SSH e o SSH.
 
 Não altere a identificação do ponto de montagem. Mude as flags (coloque
 `defaults,noatime,x-gvfs-show,commit=60,barrier=0`) e o tipo de sistema de
-arquivos (auto -> ext4) da partição do NVMe no aplicativo Discos. Lembrando que
-essa configuração é para a partição do NVMe em que ficam instalados os jogos,
-VMs e outros dados. Não é configuração a ser aplicada para a partição do
-sistema, do boot ou a home.
+arquivos (auto -> ext4) da partição do NVMe no aplicativo Discos - Opções
+adicionais de partição - Editar opções de montagem. Lembrando que essa
+configuração é para a partição do NVMe em que ficam instalados os jogos, VMs e
+outros dados. Não é configuração a ser aplicada para a partição do sistema, do
+boot ou a home. ![Screenshot1](.github/screenshots/discos.png)
 
 ### 4 - Nautilus
 
@@ -91,10 +94,14 @@ script número 3.
 
 ### 5 - Fstab
 
-Acrescente nos parâmetros das partições **ext4** e montadas pelo sistema no boot
-as seguintes especificações `commit=60` e `barrier=0`.
+Acrescente nos parâmetros da partição raiz **/** as seguintes especificações
+`commit=60` e `barrier=0`.
 
 `sudo nano /etc/fstab`
+
+```
+/               ext4            rw,noatime,commit=60,barrier=0  0 1
+```
 
 ### 6 - Ext4
 
@@ -118,11 +125,12 @@ Para verificar se a configuração foi habilitada, execute:
 Maximum mount count:      20
 ```
 
-Faça as configurações no fstab disponíveis no link
-<https://wiki.archlinux.org/title/Fsck#fstab_options> para as partições do
-sistema que são montadas no boot e que não sejam a partição root (Ext4) e a
-partição boot. Lembrando que as partições devem ser Ext4. Sem essa configuração
-(0 2) essas partições não serão verificadas pelo tune2fs na inicialização.
+Faça a configuração no fstab para habilitar a checagem do fsck nas partições que
+são montadas na incialização do sistema e que **não** sejam a partição raiz (/)
+e a partição do boot (/boot). Lembrando que as partições **devem** ser Ext4. Sem
+essa configuração para a checagem do fsck na sexta coluna (0 2) essas partições
+não serão verificadas pelo tune2fs na inicialização do sistema. Veja mais em
+<https://wiki.archlinux.org/title/Fsck#fstab_options>
 
 Verifique se as partições Ext4 estão em 64-bit, com o
 [metadata checksums](https://wiki.archlinux.org/title/Ext4#Enabling_metadata_checksums_in_existing_filesystems),
@@ -347,16 +355,14 @@ Manual do [Geoclue](https://man.archlinux.org/man/extra/geoclue/geoclue.5.en)
 
 **Falhas na renderização**
 
-Se algum aplicativo GTK não funcionar adequadamente, utilize a variável
-`GSK_RENDERER=ngl`. Caso o app seja um flatpak suas configurações podem ser
-alteradas no app Flatseal, mudando a variável em Environment. No script número
-n.° 4 foi configurada a variável de ambiente `GSK_RENDERER=ngl` para os apps
-flatpaks. Alguns aplicativos que foram atualizados para Application Platform
-version 47 não estão inicializando sem essa variável. Confira as variáveis do
-sistema para flatpaks com o comando `cat /var/lib/flatpak/overrides/global` Para
-retirar essas variáveis apague a entrada no arquivo
-`/var/lib/flatpak/overrides/global`. As variáveis configuradas por aplicativo
-flatpak estão localizadas em `~/.local/share/flatpak/overrides`
+Se a renderização de um aplicativo GTK não funcionar adequadamente utilizando o
+vulkan, utilize a variável `GSK_RENDERER=ngl`. Caso o app seja um flatpak suas
+configurações podem ser alteradas no app Flatseal, mudando a variável em
+Environment. Confira as variáveis do sistema (globais) para flatpaks com o
+comando `cat /var/lib/flatpak/overrides/global` Para retirar essas variáveis
+apague a entrada no arquivo `/var/lib/flatpak/overrides/global`. As variáveis
+configuradas para um determinado aplicativo flatpak estão localizadas em
+`~/.local/share/flatpak/overrides`
 
 **Início no startup**
 
@@ -365,8 +371,8 @@ faça a configuração em Aplicativos de inicialização.
 
 **Segundo plano**
 
-Desabilite o funcionamento dos aplicativos Gajim, Apostrophe e Discord em
-segundo plano. Pode ser feito pelo Flatseal ou pelas configurações do Gnome
+Desabilite o funcionamento dos aplicativos Apostrophe e Discord em segundo
+plano. Pode ser feito pelo Flatseal ou pelas configurações do Gnome
 (Aplicativos).
 
 ### 15 - Piper
@@ -617,3 +623,42 @@ API_BASE_URL=http://127.0.0.1:11434
 ```
 
 [Fonte - github shell_gpt](https://github.com/TheR1D/shell_gpt/wiki/Ollama)
+
+### 23 - dns
+
+Utilize o dns da quad9 com o DNSOverTLS habilitado.
+
+`sudo nano /etc/systemd/resolved.conf`
+
+Acrescente no final da seção `[Resolve]`
+
+```
+DNS=9.9.9.9#dns.quad9.net  
+DNS=2620:fe::fe#dns.quad9.net  
+DNS=149.112.112.112#dns.quad9.net  
+DNS=2620:fe::9#dns.quad9.net  
+DNSOverTLS=yes
+```
+
+Reinicie o systemd-resolved. A instalação do systemd-resolved e a configuração
+para o NetworkManager foi feita no script nº 2.
+
+`sudo systemctl restart systemd-resolved`
+
+Verifique o funcionamento do systemd-resolved e se a configuração do dns foi
+aplicada.
+
+`resolvectl status`
+
+Teste se o dns da Quad9 está funcionando adequadamente.
+
+`sudo pacman -S bind --needed`
+
+`dig +short txt proto.on.quad9.net`
+
+Se a resposta for `dot.`, _está funcionando_! Se a resposta for `do53-udp.`,
+ainda está usando plaintext. Se não houver resposta, significa que o Quad9 não
+foi configurado adequadamente. Veja mais informações em
+[quad9](https://docs.quad9.net/)
+
+Teste dns usando o browser <https://on.quad9.net/>
