@@ -49,6 +49,8 @@ expac
 fastfetch
 fd
 file-roller
+firejail
+firetools
 firewalld
 flameshot
 flatpak
