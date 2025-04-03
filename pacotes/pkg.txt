@@ -54,6 +54,7 @@ flameshot
 flatpak
 fwupd
 fzf
+gamescope
 gawk
 gdb
 gdu

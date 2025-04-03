@@ -209,6 +209,19 @@ Para desabilitar
 
 Opções de inicialização para os jogos na Steam usando a placa dedicada Nvidia.
 
+**Gamescope + Nvidia**
+
+Se quiser usar o Gamescope, utilize os parâmetros abaixo.
+
+`gamescope -W 1920 -H 1080 -r 60 -f --mangoapp -- prime-run %command%`
+
+O comando acima executa os jogos através do xwayland, com resolução de 1920x1080
+`-W 1920 -H 1080`, limitado a 60 fps `-r 60`, fullscreen `-f`, com o mangohud
+habilitado `--mangoapp`, usando a placa dedicada `prime-run`. Mas se você quiser
+executar os jogos usando o wayland use a flag `--expose-wayland`. Faça testes,
+não são todos os jogos que funcionam com essa flag. Para mais informações acesse
+<https://wiki.archlinux.org/title/Gamescope>
+
 **OpenGL + Nvidia**
 
 `__GL_MaxFramesAllowed=1 mangohud --dlsym prime-run %command%`
