@@ -49,7 +49,6 @@ flatpak install flathub org.cryptomator.Cryptomator -y
 flatpak install flathub info.febvre.Komikku -y
 flatpak install flathub app.drey.KeyRack -y
 flatpak install flathub com.belmoussaoui.Authenticator -y
-flatpak install flathub de.haeckerfelix.Shortwave -y
 flatpak install flathub org.gnome.gitlab.somas.Apostrophe -y
 flatpak install flathub org.gnome.gitlab.somas.Apostrophe.Plugin.TexLive -y
 flatpak install flathub io.github.dvlv.boxbuddyrs -y
@@ -71,6 +70,7 @@ flatpak install flathub io.github.giantpinkrobots.varia -y
 flatpak install flathub re.sonny.Eloquent -y
 flatpak install flathub io.github.chidiwilliams.Buzz -y
 flatpak install flathub com.saivert.pwvucontrol -y
+flatpak install flathub com.github.taiko2k.tauonmb -y
 
 # Flathub Remote-Beta
 echo -e "$AZUL Adicionando o remote flathub-beta $FIM"

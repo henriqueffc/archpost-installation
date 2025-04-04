@@ -34,7 +34,7 @@ gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folder
 gsettings set org.gnome.desktop.app-folders folder-children "['Utilities', 'YaST', 'Office', 'Programas', 'Jogos', 'Nvidia', 'Development', 'GNOME', 'Internet', 'Multimídia']"
 
 # Dock
-gsettings set org.gnome.shell favorite-apps "['com.mitchellh.ghostty.desktop', 'obsidian.desktop', 'microsoft-edge.desktop', 'org.telegram.desktop.desktop', 'org.gnome.Fractal.desktop', 'io.gitlab.news_flash.NewsFlash.desktop', 'dev.geopjr.Tuba.desktop', 'de.haeckerfelix.Shortwave.desktop', 'org.gnome.Nautilus.desktop']"
+gsettings set org.gnome.shell favorite-apps "['com.mitchellh.ghostty.desktop', 'obsidian.desktop', 'microsoft-edge.desktop', 'org.telegram.desktop.desktop', 'org.gnome.Fractal.desktop', 'io.gitlab.news_flash.NewsFlash.desktop', 'dev.geopjr.Tuba.desktop', 'com.github.taiko2k.tauonmb.desktop', 'org.gnome.Nautilus.desktop']"
 
 # Instalação da extensão Alphabetical App Grid
 # O aplicativo gnome-extensions-cli foi instalado pelo script nº 3
