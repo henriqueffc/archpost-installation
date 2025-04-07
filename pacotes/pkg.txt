@@ -88,6 +88,7 @@ gst-plugin-libcamera
 hexyl
 hwloc
 i7z
+ibus-typing-booster
 imagemagick
 iptables-nft
 intel-ucode
