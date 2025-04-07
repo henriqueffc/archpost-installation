@@ -33,7 +33,7 @@ $FIM"
 # Pacotes AUR
 yay -Y --gendb
 yay -Y --devel --save
-sudo pacman -S meson ninja --noconfirm --needed
+sudo pacman -S meson ninja vulkan-headers --noconfirm --needed
 yay -S - <./pacotes/aur.txt
 
 # Habilitando o Ananicy-cpp (instalado pelo script n.° 3) com as regras existentes no pacote cachyos-ananicy-rules-git (AUR)
