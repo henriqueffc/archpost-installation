@@ -49,6 +49,8 @@ expac
 fastfetch
 fd
 file-roller
+firefox
+firefox-i18n-pt-br
 firejail
 firetools
 firewalld
