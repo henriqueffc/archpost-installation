@@ -45,6 +45,8 @@
 [22 - sgpt](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#22---sgpt)
 |
 [23 - dns](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#23---dns)
+|
+[24 - easyeffects](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#24---easyeffects)
 
 ### 1 - Tema e extensões
 
@@ -62,10 +64,11 @@ configurações das extensões use o
 (instalado com o script n.° 4). A extensão AppIndicator/KStatusNotifierItem foi
 intalada com o pacote
 [gnome-shell-extension-appindicator](https://archlinux.org/packages/extra/any/gnome-shell-extension-appindicator/)
-(instalada com o script n.° 2 e habilitada com o script n.° 3). A extensão
-Alphabetical App Grid foi instalada com o script nº 6. O restante das extensões
-foram instaladas e habilitadas no script n.° 3. Na extensão Wallpaper Slideshow
-é preciso configurar a pasta que contém as imagens para o wallpaper.
+(instalada com o script n.° 2 e habilitada com o script n.° 3). As extensões
+Alphabetical App Grid, Blur my Shell e Wallpaper Slideshow foram instaladas
+usando o AUR (script nº 5). As configurações para essas extensões foram feitas
+no script nº 6. Na extensão Wallpaper Slideshow é preciso configurar a pasta que
+contém as imagens para o wallpaper.
 
 ### 2 - SSH
 
@@ -675,3 +678,29 @@ foi configurado adequadamente. Veja mais informações em
 [quad9](https://docs.quad9.net/)
 
 Teste dns usando o browser <https://on.quad9.net/>
+
+### 24 - easyeffects
+
+Configuração do EasyEffects para aplicar a equalização paramétrica para o
+Headset HyperX Cloud Stinger.
+
+Nas preferências do aplicativo habilite a opção "Iniciar o Serviço na
+Inicialização do Sistema"
+
+Faça o download do arquivo `hyperx.json` que está no diretório `easyeffects` do
+repositório.
+
+Na aba "Saídas", clique em "Predefinições" e acesse a opção "Importe uma
+predefinição do armazenamento local".
+
+A predefinição habilita a equalização de áudio aplicando as definições
+disponíveis no repositório
+[AutoEq](https://github.com/jaakkopasanen/AutoEq/blob/master/results/Rtings/over-ear/HyperX%20Cloud%20Stinger/HyperX%20Cloud%20Stinger%20ParametricEQ.txt)
+
+Selecione como dispositivo de saída de som nas configurações do GNOME o
+Headphones. Não selecione o
+[Easy Effects Skin](https://github.com/wwmm/easyeffects?tab=readme-ov-file#warning).
+
+É possível usar a extensão do GNOME
+[EasyEffects Preset Selector](https://extensions.gnome.org/extension/4907/easyeffects-preset-selector/)
+para alternar rapidamente entre as predefinições do EasyEffects.
