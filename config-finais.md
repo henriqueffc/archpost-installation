@@ -687,8 +687,9 @@ Headset HyperX Cloud Stinger.
 Nas preferências do aplicativo habilite a opção "Iniciar o Serviço na
 Inicialização do Sistema"
 
-Faça o download do arquivo `hyperx.json` que está no diretório `easyeffects` do
-repositório.
+Faça o download do arquivo
+[hyperx.json](https://github.com/henriqueffc/archpost-installation/blob/main/easyeffects/hyperx.json)
+que está no diretório `easyeffects` do repositório.
 
 Na aba "Saídas", clique em "Predefinições" e acesse a opção "Importe uma
 predefinição do armazenamento local".
