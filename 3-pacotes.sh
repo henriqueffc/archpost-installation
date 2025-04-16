@@ -136,10 +136,6 @@ cp ./aliases/.atalhos.md ~/
 # Modelos de arquivos para o Files
 touch $HOME/Modelos/novo.txt
 
-# Equalização paramétrica para o Headset HyperX Cloud Stinger
-mkdir -p ~/.config/pipewire/pipewire.conf.d
-cp ./pipewire/sink-eq6.conf ~/.config/pipewire/pipewire.conf.d/
-
 # Desabilitar o coredump
 sudo mkdir /etc/systemd/coredump.conf.d/
 sudo cp ./coredump/custom.conf /etc/systemd/coredump.conf.d/
@@ -297,6 +293,9 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Shift><
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 "['<Shift><Super>3']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 "['<Shift><Super>4']"
 
+# fonte do sistema
+gsettings set org.gnome.desktop.interface font-antialiasing rgba
+
 # Kvantum
 mkdir -p $HOME/.config/Kvantum/
 cp ./kvantum/kvantum.kvconfig $HOME/.config/Kvantum/
@@ -353,48 +352,14 @@ cp ./ghostty/config $HOME/.config/ghostty/
 mkdir -p $HOME/.config/mise/
 cp ./mise/config.toml $HOME/.config/mise/
 
-# Comando necessário para o funcionamento do pipx
-# Essa alteração no PATH foi realizada anteriormente no script
-# Mas para funcionar nesse momento da instalação é preciso exportar o PATH, pois o terminal não foi reinicializado.
-export PATH=$PATH:$HOME/.local/bin
-
-# Criação da pasta para os wallpapers
-mkdir -p $HOME/Imagens/wallpapers
-
-# Instalação do gnome-extensions-cli usando o pipx
-# O pipx foi instalado anteriormente por esse script
-pipx install gnome-extensions-cli --system-site-packages
-
-# Instalação das extensões Blur my Shell e  Wallpaper Slideshow
-gext install azwallpaper@azwallpaper.gitlab.com
-gext install blur-my-shell@aunetx
-
-# Inserção dos schemas das extensões (Blur e Wallpaper) na pasta do sistema
-# Isso possibilita a configuração pela linha de comando ou pelo editor Dconf
-sudo cp ~/.local/share/gnome-shell/extensions/blur-my-shell\@aunetx/schemas/org.gnome.shell.extensions.blur-my-shell.gschema.xml /usr/share/glib-2.0/schemas/
-sudo cp ~/.local/share/gnome-shell/extensions/azwallpaper\@azwallpaper.gitlab.com/schemas/org.gnome.shell.extensions.azwallpaper.gschema.xml /usr/share/glib-2.0/schemas/
-sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
-
-# Configurações para a extensão system-monitor
-gsettings set org.gnome.shell.extensions.system-monitor show-download false
-gsettings set org.gnome.shell.extensions.system-monitor show-upload false
-
-# Configurações para a extensão Blur my shell
-gsettings set org.gnome.shell.extensions.blur-my-shell.panel blur false
-gsettings set org.gnome.shell.extensions.blur-my-shell.appfolder blur false
-gsettings set org.gnome.shell.extensions.blur-my-shell.dash-to-dock blur false
-gsettings set org.gnome.shell.extensions.blur-my-shell.coverflow-alt-tab blur false
-gsettings set org.gnome.shell.extensions.blur-my-shell.lockscreen blur false
-gsettings set org.gnome.shell.extensions.blur-my-shell.screenshot blur false
-gsettings set org.gnome.shell.extensions.blur-my-shell.window-list blur false
-
 # Configuração do firewalld para conexão dos navegadores com o Chromecast
 sudo firewall-cmd --permanent --new-service=chromecast
 sudo firewall-cmd --permanent --service=chromecast --add-port=8008-8009/tcp --add-port=32768-61000/udp
 sudo firewall-cmd --reload
 
-# Configuração para o tempo máximo de exibição do Wallpaper
-gsettings set org.gnome.shell.extensions.azwallpaper slideshow-slide-duration '(0,30,0)'
+# Configurações para a extensão system-monitor
+gsettings set org.gnome.shell.extensions.system-monitor show-download false
+gsettings set org.gnome.shell.extensions.system-monitor show-upload false
 
 # Habilitando as extensões Appindicator e System-monitor
 # A extensão appindicator foi instalada no script n.° 2.
@@ -443,8 +408,5 @@ gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profi
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ visible-name 'Padrão'
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ default-size-columns '106'
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ default-size-rows '26'
-
-# fonte do sistema
-gsettings set org.gnome.desktop.interface font-antialiasing rgba
 
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
