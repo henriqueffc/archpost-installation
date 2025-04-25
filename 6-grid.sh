@@ -34,7 +34,7 @@ gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folder
 gsettings set org.gnome.desktop.app-folders folder-children "['Utilities', 'YaST', 'Office', 'Programas', 'Jogos', 'Nvidia', 'Development', 'GNOME', 'Internet', 'Multimídia']"
 
 # Dock
-gsettings set org.gnome.shell favorite-apps "['com.mitchellh.ghostty.desktop', 'obsidian.desktop', 'microsoft-edge.desktop', 'org.telegram.desktop.desktop', 'org.gnome.Fractal.desktop', 'io.gitlab.news_flash.NewsFlash.desktop', 'com.jeffser.Alpaca.desktop', 'dev.geopjr.Tuba.desktop', 'com.github.taiko2k.tauonmb.desktop', 'org.gnome.Nautilus.desktop']"
+gsettings set org.gnome.shell favorite-apps "['com.mitchellh.ghostty.desktop', 'obsidian.desktop', 'microsoft-edge.desktop', 'org.telegram.desktop.desktop', 'org.gnome.Fractal.desktop', 'io.gitlab.news_flash.NewsFlash.desktop', 'com.jeffser.Alpaca.desktop', 'com.github.taiko2k.tauonmb.desktop', 'org.gnome.Nautilus.desktop']"
 
 # Configurações para as extensões do GNOME instaladas pelo AUR
 sudo cp /usr/share/gnome-shell/extensions/azwallpaper@azwallpaper.gitlab.com/schemas/org.gnome.shell.extensions.azwallpaper.gschema.xml /usr/share/glib-2.0/schemas/

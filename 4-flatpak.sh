@@ -55,7 +55,6 @@ flatpak install flathub io.github.dvlv.boxbuddyrs -y
 flatpak install flathub org.gnome.Fractal -y
 flatpak install flathub garden.jamie.Morphosis -y
 flatpak install flathub org.telegram.desktop -y
-flatpak install flathub dev.geopjr.Tuba -y
 flatpak install flathub com.discordapp.Discord -y
 flatpak install flathub io.gitlab.news_flash.NewsFlash -y
 flatpak install flathub com.obsproject.Studio -y
@@ -67,7 +66,6 @@ flatpak install flathub dev.geopjr.Collision -y
 flatpak install flathub nl.emphisia.icon -y
 flatpak install flathub io.gitlab.adhami3310.Impression -y
 flatpak install flathub io.github.giantpinkrobots.varia -y
-flatpak install flathub re.sonny.Eloquent -y
 flatpak install flathub io.github.chidiwilliams.Buzz -y
 flatpak install flathub com.saivert.pwvucontrol -y
 flatpak install flathub com.github.taiko2k.tauonmb -y
