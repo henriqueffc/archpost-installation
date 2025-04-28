@@ -14,6 +14,7 @@ audacity
 base-devel
 bash-completion
 bandwhich
+bc
 bind
 blas-openblas
 blas64-openblas
@@ -236,6 +237,7 @@ xorg-xdpyinfo
 xorg-xkill
 xorg-xwininfo
 xournalpp
+xterm
 yazi
 yt-dlp
 zellij
