@@ -51,7 +51,7 @@ flatpak install flathub app.drey.KeyRack -y
 flatpak install flathub com.belmoussaoui.Authenticator -y
 flatpak install flathub org.gnome.gitlab.somas.Apostrophe -y
 flatpak install flathub org.gnome.gitlab.somas.Apostrophe.Plugin.TexLive -y
-flatpak install flathub io.github.dvlv.boxbuddyrs -y
+flatpak install flathub com.ranfdev.DistroShelf -y
 flatpak install flathub org.gnome.Fractal -y
 flatpak install flathub garden.jamie.Morphosis -y
 flatpak install flathub org.telegram.desktop -y
@@ -84,7 +84,6 @@ flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome
 # Configurações do tema e das variáveis para alguns aplicativos
 echo -e "$AZUL Configurando o tema globalmente e as variáveis de alguns aplicativos flatpaks $FIM"
 
-flatpak override --user --filesystem=home io.github.dvlv.boxbuddyrs
 flatpak override --user --socket=wayland com.discordapp.Discord
 sudo flatpak override --filesystem=xdg-config/gtk-4.0
 sudo flatpak override --filesystem=xdg-config/gtk-3.0
