@@ -109,6 +109,7 @@ lnav
 lib32-gnutls
 lib32-mangohud
 libayatana-appindicator
+libappindicator-gtk3
 libcamera-tools
 libgtop
 libheif
