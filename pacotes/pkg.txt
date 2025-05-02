@@ -121,6 +121,7 @@ libreoffice-fresh-pt-br
 libreoffice-extension-texmaths
 libwmf
 libultrahdr
+libxml2-legacy
 libzip
 lm_sensors
 lrzip
@@ -161,6 +162,8 @@ papers
 papirus-icon-theme
 pkgstats
 perl
+pyenv
+python-pipenv
 python-pipx
 python-pyqt6
 presenterm
@@ -216,6 +219,7 @@ unarchiver
 unrar
 unzip
 usage
+uv
 veracrypt
 vkd3d
 webp-pixbuf-loader
