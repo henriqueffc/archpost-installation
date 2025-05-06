@@ -642,22 +642,24 @@ API_BASE_URL=http://127.0.0.1:11434
 
 ### 23 - dns
 
+A instalação do
+[systemd-resolved](https://wiki.archlinux.org/title/Systemd-resolved) e a
+configuração para o NetworkManager foi feita no script nº 2.
+
 Utilize o dns da quad9 com o DNSOverTLS habilitado.
 
-`sudo nano /etc/systemd/resolved.conf`
+`sudo mkdir -p /etc/systemd/resolved.conf.d/`
 
-Acrescente no final da seção `[Resolve]`
+`sudo nano /etc/systemd/resolved.conf.d/dns_over_tls.conf`
 
 ```
-DNS=9.9.9.9#dns.quad9.net  
-DNS=2620:fe::fe#dns.quad9.net  
-DNS=149.112.112.112#dns.quad9.net  
-DNS=2620:fe::9#dns.quad9.net  
+[Resolve]
+DNS=9.9.9.9#dns.quad9.net 149.112.112.112#dns.quad9.net 2620:fe::fe#dns.quad9.net 2620:fe::9#dns.quad9.net
 DNSOverTLS=yes
+Domains=~.
 ```
 
-Reinicie o systemd-resolved. A instalação do systemd-resolved e a configuração
-para o NetworkManager foi feita no script nº 2.
+Reinicie o systemd-resolved
 
 `sudo systemctl restart systemd-resolved`
 
