@@ -31,22 +31,8 @@ sed -i 's/#VerbosePkgLists/\VerbosePkgLists/' /etc/pacman.conf
 #sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf (habilito na instalação do sistema pelo archinstall)
 
 # Environment
-cp /etc/environment /etc/environment.bak
-echo 'MOZ_ENABLE_WAYLAND=1' >>/etc/environment
-echo 'EGL_PLATFORM=wayland' >>/etc/environment
-echo 'VDPAU_DRIVER=nvidia' >>/etc/environment
-echo 'QT_QPA_PLATFORM="wayland;xcb"' >>/etc/environment
-echo 'QT_STYLE_OVERRIDE=kvantum' >>/etc/environment
-echo 'CLUTTER_BACKEND=wayland' >>/etc/environment
-echo 'PROTON_ENABLE_NVAPI=1' >>/etc/environment
-echo 'PROTON_ENABLE_NGX_UPDATER=1' >>/etc/environment
-echo '__GL_SHADER_DISK_CACHE=1' >>/etc/environment
-echo '__GL_SHADER_DISK_CACHE_SKIP_CLEANUP=1' >>/etc/environment
-echo '__GL_ExperimentalPerfStrategy=1' >>/etc/environment
-echo 'FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border"' >>/etc/environment
-echo 'FZF_DEFAULT_COMMAND="fd --type f --hidden --exclude .git"' >>/etc/environment
-echo 'ANV_VIDEO_DECODE=1' >>/etc/environment
-echo 'ELECTRON_OZONE_PLATFORM_HINT=wayland' >>/etc/environment
+mkdir -p /etc/environment.d/
+mv ./environment/90-environment.conf /etc/environment.d/
 
 # PC speaker - turn off beep shutdown
 echo -e 'blacklist pcspkr' >/etc/modprobe.d/blacklist.conf
