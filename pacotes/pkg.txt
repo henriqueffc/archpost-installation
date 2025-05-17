@@ -75,7 +75,6 @@ gnome-boxes
 gnome-epub-thumbnailer
 gnome-firmware
 gnome-appfolders-manager
-gnome-terminal
 gnome-tweaks
 goverlay
 gvfs-afc
@@ -189,6 +188,7 @@ sdl12-compat
 sdl2_image
 sdl2_mixer
 sdl2_ttf
+showtime
 signal-desktop
 sndio
 seahorse
