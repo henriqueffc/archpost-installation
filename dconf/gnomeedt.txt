@@ -1,0 +1,8 @@
+[/]
+custom-font='JetBrainsMonoNL Nerd Font 14'
+highlight-current-line=true
+restore-session=false
+show-line-numbers=true
+style-scheme='classic-dark'
+style-variant='dark'
+use-system-font=false

@@ -1,0 +1,22 @@
+[/]
+control-center=['<Super>c']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
+email=['<Super>e']
+home=['<Super>f']
+next=['<Shift>KP_Divide']
+play=['<Shift>KP_Multiply']
+screen-brightness-down=['<Primary>Down']
+screen-brightness-up=['<Primary>Up']
+volume-down=['<Shift>KP_Subtract']
+volume-up=['<Shift>KP_Add']
+www=['<Super>b']
+
+[custom-keybindings/custom0]
+binding='Print'
+command='flameshot-gui'
+name='flameshot'
+
+[custom-keybindings/custom1]
+binding='<Control>space'
+command='sh -c "echo -n toggle | nc -U ~/.cache/albert/ipc_socket"'
+name='albert'

@@ -244,54 +244,33 @@ gsettings set org.gnome.Weather locations "[<(uint32 2, <('Uberlândia', 'SBUL',
 
 # Atalhos do teclado (abnt2 com teclado numérico)
 # abaixar o volume - Shift + - teclado numérico
-gsettings set org.gnome.settings-daemon.plugins.media-keys volume-down "['<Shift>KP_Subtract']"
 # aumentar o volume - Shift + + teclado numérico
-gsettings set org.gnome.settings-daemon.plugins.media-keys volume-up "['<Shift>KP_Add']"
 # reproduzir ou pausar reprodução de mídia - Shift + * teclado numérico
-gsettings set org.gnome.settings-daemon.plugins.media-keys play "['<Shift>KP_Multiply']"
 # mudar para a próxima faixa - Shift + / teclado numérico
-gsettings set org.gnome.settings-daemon.plugins.media-keys next "['<Shift>KP_Divide']"
-
-# abrir navegador - Super + B
-gsettings set org.gnome.settings-daemon.plugins.media-keys www "['<Super>b']"
-
-# abrir o Files na home - Super + F
-gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>f']"
-
-# fechar a janela - Super + Q
-gsettings set org.gnome.desktop.wm.keybindings close "['<Super>q']"
-
+# abrir navegador - Super + b
+# abrir o Files na home - Super + f
 # aumentar o brilho da tela usando o teclado - Crtl + Para cima
-gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-up "['<Primary>Up']"
 # diminuir o brilho da tela usando o teclado - Crtl + Para baixo
-gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-down "['<Primary>Down']"
-
-# abrir o configurações do GNOME
-gsettings set org.gnome.settings-daemon.plugins.media-keys control-center "['<Super>c']"
-
-# abrir o cliente de email
-gsettings set org.gnome.settings-daemon.plugins.media-keys email "['<Super>e']"
+# abrir o configurações do GNOME - Super + c
+# abrir o cliente de email - Super + e
+# Atalho de teclado para o flameshot (Print) e alteração do atalho de teclado para o gnome screenshot (Ctrl + Alt + p)
+# Atalho de teclado para o Albert (Ctrl + espaço). O Albert será instalado pelo script nº 5
+dconf load /org/gnome/settings-daemon/plugins/media-keys/ <./dconf/mediakeys.txt
 
 # Mostrar relógio UTC no painel de notificações
 gsettings set org.gnome.clocks world-clocks "[{'location': <(uint32 2, <('Coordinated Universal Time (UTC)', '@UTC', false, @a(dd) [], @a(dd) [])>)>}]"
 
-# super + tab = muda de aplicativos / alt + tab = muda de janela
-gsettings set org.gnome.desktop.wm.keybindings switch-applications "['<Super>Tab']"
-gsettings set org.gnome.desktop.wm.keybindings switch-windows "['<Alt>Tab']"
-
 # Configurações para o Text editor
-gsettings set org.gnome.TextEditor highlight-current-line true
-gsettings set org.gnome.TextEditor restore-session false
-gsettings set org.gnome.TextEditor show-line-numbers true
-gsettings set org.gnome.TextEditor use-system-font false
-gsettings set org.gnome.TextEditor custom-font "JetBrainsMonoNL Nerd Font 14"
-gsettings set org.gnome.TextEditor style-scheme "classic-dark"
-gsettings set org.gnome.TextEditor style-variant "dark"
+dconf load /org/gnome/TextEditor/ <./dconf/gnomeedt.txt
 
-# mudar diretamente para o workspace desejado (Super + Shift + número de 2 a 6). Para ir para o primeiro workspace use Super + Home e para ir para o último Super + End.
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Shift><Super>2']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 "['<Shift><Super>3']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 "['<Shift><Super>4']"
+# Super + Q = fechar a janela
+# Super + Tab = muda de aplicativos
+# Alt + Tab = muda de janela
+# Super + para cima = Maximizar a janela
+# Super + para baixo = Desfazer a janela maximizada
+# mudar diretamente para o workspace desejado (Super + Shift + número de 2 a 6).
+# Para ir para o primeiro workspace use Super + Home e para ir para o último Super + End.
+dconf load /org/gnome/desktop/wm/keybindings/ <./dconf/keybindings.txt
 
 # fonte do sistema
 gsettings set org.gnome.desktop.interface font-antialiasing rgba
@@ -387,26 +366,5 @@ inline_img_protocol 3
 imgdisplay iterm2
 
 EOF
-
-# Atalho de teclado para o flameshot (Print) e alteração do atalho de teclado para o gnome screenshot (Ctrl + Alt + p)
-# Atalho de teclado para o Albert (Ctrl + espaço). O Albert será instalado pelo script nº 5
-gsettings set org.gnome.shell.keybindings show-screenshot-ui "['<Control><Alt>p']"
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name "flameshot"
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command "flameshot-print"
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding "Print"
-
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ name "albert"
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ command 'sh -c "echo -n toggle | nc -U ~/.cache/albert/ipc_socket"'
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ binding "<Control>space"
-
-gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']"
-
-# Fonte do GNOME terminal
-font=$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d "'")
-gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ use-system-font false
-gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ font 'JetBrainsMonoNL Nerd Font 14'
-gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ visible-name 'Padrão'
-gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ default-size-columns '106'
-gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$font/ default-size-rows '26'
 
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
