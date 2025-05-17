@@ -1,0 +1,3 @@
+[/]
+apps=['nvidia-settings.desktop', 'nvtop.desktop']
+name='Nvidia'

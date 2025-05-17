@@ -1,0 +1,3 @@
+[/]
+apps=['me.iepure.devtoolbox.desktop', 'com.ranfdev.DistroShelf.desktop', 'io.podman_desktop.PodmanDesktop.desktop']
+name='Development'
