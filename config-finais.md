@@ -267,7 +267,7 @@ habilitado `--mangoapp`, usando a placa dedicada `prime-run`. A flag `-e` serve
 apenas para executar o Steam dentro do Gamescope, ou seja,
 `gamescope -e -- steam`. A flag `--expose-wayland` é para aplicativos Wayland
 nativos que não funcionam em xwayland. Para mais informações acesse
-<https://wiki.archlinux.org/title/Gamescope>
+<https://wiki.archlinux.org/title/Gamescope> e
 <https://github.com/ValveSoftware/gamescope/issues/1819#issuecomment-2817280797>
 
 **SOM**
