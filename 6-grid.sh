@@ -47,13 +47,7 @@ mkdir -p $HOME/Imagens/wallpapers
 gsettings set org.gnome.shell.extensions.azwallpaper slideshow-slide-duration '(0,30,0)'
 
 # Configurações para a extensão Blur my shell
-gsettings set org.gnome.shell.extensions.blur-my-shell.panel blur false
-gsettings set org.gnome.shell.extensions.blur-my-shell.appfolder blur false
-gsettings set org.gnome.shell.extensions.blur-my-shell.dash-to-dock blur false
-gsettings set org.gnome.shell.extensions.blur-my-shell.coverflow-alt-tab blur false
-gsettings set org.gnome.shell.extensions.blur-my-shell.lockscreen blur false
-gsettings set org.gnome.shell.extensions.blur-my-shell.screenshot blur false
-gsettings set org.gnome.shell.extensions.blur-my-shell.window-list blur false
+dconf load /org/gnome/shell/extensions/blur-my-shell/ <./dconf/blur.txt
 
 # Configuração para a extensão Alphabetical App Grid
 gsettings set org.gnome.shell.extensions.alphabetical-app-grid folder-order-position 'start'
