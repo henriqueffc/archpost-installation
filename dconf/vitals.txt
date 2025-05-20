@@ -1,0 +1,17 @@
+[/]
+fixed-widths=false
+hide-icons=false
+hide-zeros=false
+hot-sensors=['_memory_usage_', '_memory_swap_usage_', '_processor_usage_', '_gpu#1_utilization_']
+icon-style=0
+include-static-gpu-info=false
+menu-centered=true
+monitor-cmd='flatpak run io.missioncenter.MissionCenter'
+show-fan=false
+show-gpu=true
+show-network=false
+show-storage=false
+show-system=false
+show-voltage=false
+update-time=2
+use-higher-precision=false

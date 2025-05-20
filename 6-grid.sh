@@ -49,6 +49,9 @@ gsettings set org.gnome.shell.extensions.azwallpaper slideshow-slide-duration '(
 # Configurações para a extensão Blur my shell
 dconf load /org/gnome/shell/extensions/blur-my-shell/ <./dconf/blur.txt
 
+# Configurações para a extensão Vitals
+dconf load /org/gnome/shell/extensions/vitals/ <./dconf/vitals.txt
+
 # Configuração para a extensão Alphabetical App Grid
 gsettings set org.gnome.shell.extensions.alphabetical-app-grid folder-order-position 'start'
 
@@ -56,3 +59,4 @@ gsettings set org.gnome.shell.extensions.alphabetical-app-grid folder-order-posi
 gnome-extensions enable AlphabeticalAppGrid@stuarthayhurst
 gnome-extensions enable blur-my-shell@aunetx
 gnome-extensions enable azwallpaper@azwallpaper.gitlab.com
+gnome-extensions enable Vitals@CoreCoding.com

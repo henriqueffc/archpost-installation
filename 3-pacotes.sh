@@ -336,13 +336,8 @@ sudo firewall-cmd --permanent --new-service=chromecast
 sudo firewall-cmd --permanent --service=chromecast --add-port=8008-8009/tcp --add-port=32768-61000/udp
 sudo firewall-cmd --reload
 
-# Configurações para a extensão system-monitor
-gsettings set org.gnome.shell.extensions.system-monitor show-download false
-gsettings set org.gnome.shell.extensions.system-monitor show-upload false
-
-# Habilitando as extensões Appindicator e System-monitor
+# Habilitando a extensão Appindicator
 # A extensão appindicator foi instalada no script n.° 2.
-gnome-extensions enable system-monitor@gnome-shell-extensions.gcampax.github.com
 gnome-extensions enable $(gnome-extensions list | grep -m 1 appindicatorsupport)
 
 # Desabilitabdo o suporte ao legacy tray icons support na Appindicator

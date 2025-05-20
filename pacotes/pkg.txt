@@ -75,6 +75,7 @@ gnome-boxes
 gnome-epub-thumbnailer
 gnome-firmware
 gnome-appfolders-manager
+gnome-shell-extension-vitals
 gnome-tweaks
 goverlay
 gvfs-afc
