@@ -36,7 +36,7 @@ gsettings set org.gnome.desktop.app-folders folder-children "['Utilities', 'Offi
 # Dock
 gsettings set org.gnome.shell favorite-apps "['com.mitchellh.ghostty.desktop', 'obsidian.desktop', 'microsoft-edge.desktop', 'org.telegram.desktop.desktop', 'org.gnome.Fractal.desktop', 'io.gitlab.news_flash.NewsFlash.desktop', 'com.jeffser.Alpaca.desktop', 'com.github.taiko2k.tauonmb.desktop', 'org.gnome.Nautilus.desktop']"
 
-# Configurações para as extensões do GNOME instaladas pelo AUR
+# Configuração para a extensão Wallpaper Slideshow (AUR - instalada pelo script nº 5)
 sudo cp /usr/share/gnome-shell/extensions/azwallpaper@azwallpaper.gitlab.com/schemas/org.gnome.shell.extensions.azwallpaper.gschema.xml /usr/share/glib-2.0/schemas/
 sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
 
@@ -46,13 +46,13 @@ mkdir -p $HOME/Imagens/wallpapers
 # Configuração para o tempo máximo de exibição do Wallpaper
 gsettings set org.gnome.shell.extensions.azwallpaper slideshow-slide-duration '(0,30,0)'
 
-# Configurações para a extensão Blur my shell
+# Configurações para a extensão Blur my shell (AUR - instalada pelo script nº 5)
 dconf load /org/gnome/shell/extensions/blur-my-shell/ <./dconf/blur.txt
 
-# Configurações para a extensão Vitals
+# Configurações para a extensão Vitals (repo oficial - instalada pelo script nº 3)
 dconf load /org/gnome/shell/extensions/vitals/ <./dconf/vitals.txt
 
-# Configuração para a extensão Alphabetical App Grid
+# Configuração para a extensão Alphabetical App Grid (AUR - instalada pelo script nº 5)
 gsettings set org.gnome.shell.extensions.alphabetical-app-grid folder-order-position 'start'
 
 # Habilitando as extensões
