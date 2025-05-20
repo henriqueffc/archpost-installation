@@ -36,16 +36,6 @@ gsettings set org.gnome.desktop.app-folders folder-children "['Utilities', 'Offi
 # Dock
 gsettings set org.gnome.shell favorite-apps "['com.mitchellh.ghostty.desktop', 'obsidian.desktop', 'microsoft-edge.desktop', 'org.telegram.desktop.desktop', 'org.gnome.Fractal.desktop', 'io.gitlab.news_flash.NewsFlash.desktop', 'com.jeffser.Alpaca.desktop', 'com.github.taiko2k.tauonmb.desktop', 'org.gnome.Nautilus.desktop']"
 
-# Configuração para a extensão Wallpaper Slideshow (AUR - instalada pelo script nº 5)
-sudo cp /usr/share/gnome-shell/extensions/azwallpaper@azwallpaper.gitlab.com/schemas/org.gnome.shell.extensions.azwallpaper.gschema.xml /usr/share/glib-2.0/schemas/
-sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
-
-# Criação da pasta para os wallpapers
-mkdir -p $HOME/Imagens/wallpapers
-
-# Configuração para o tempo máximo de exibição do Wallpaper
-gsettings set org.gnome.shell.extensions.azwallpaper slideshow-slide-duration '(0,30,0)'
-
 # Configurações para a extensão Blur my shell (AUR - instalada pelo script nº 5)
 dconf load /org/gnome/shell/extensions/blur-my-shell/ <./dconf/blur.txt
 
@@ -58,5 +48,4 @@ gsettings set org.gnome.shell.extensions.alphabetical-app-grid folder-order-posi
 # Habilitando as extensões
 gnome-extensions enable AlphabeticalAppGrid@stuarthayhurst
 gnome-extensions enable blur-my-shell@aunetx
-gnome-extensions enable azwallpaper@azwallpaper.gitlab.com
 gnome-extensions enable Vitals@CoreCoding.com
