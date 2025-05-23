@@ -70,7 +70,6 @@ flatpak install flathub io.github.chidiwilliams.Buzz -y
 flatpak install flathub com.saivert.pwvucontrol -y
 flatpak install flathub com.github.taiko2k.tauonmb -y
 flatpak install flathub com.jeffser.Alpaca -y
-flatpak install flathub io.github.mrvladus.List -y
 flatpak install flathub io.missioncenter.MissionCenter -y
 
 # Flathub Remote-Beta
