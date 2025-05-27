@@ -61,7 +61,10 @@ sudo sed -i '$ { s/^.*$/& quiet loglevel=3 systemd.show_status=auto rd.udev.log_
 # O pacote systemd-resolvconf será instalado pelo script nº 3
 # Caso opte por não usar o systemd-resolved, retire o pacote systemd-resolvconf da lista de instalação
 # O pacote systemd-resolvconf só deve ser instalado se o systemd-resolved for usado pelo sistema
+# Será desabilitado o manejo do mDNS pelo systemd-resolved. O Avahi será habilitado no script nº 3 para essa função.
 sudo cp ./resolved/dns.conf /etc/NetworkManager/conf.d/
+sudo mkdir -p /etc/systemd/resolved.conf.d/
+sudo cp ./resolved/mdns.conf /etc/systemd/resolved.conf.d/
 sudo systemctl enable --now systemd-resolved
 
 # IWD

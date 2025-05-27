@@ -11,6 +11,7 @@ aspell
 aspell-en
 aspell-pt
 audacity
+avahi
 base-devel
 bash-completion
 bandwhich
@@ -79,12 +80,14 @@ gnome-shell-extension-vitals
 gnome-tweaks
 goverlay
 gvfs-afc
+gvfs-dnssd
 gvfs-gphoto2
 gvfs-mtp
 gvfs-nfs
 gvfs-smb
 gvfs-google
 gvfs-onedrive
+gvfs-wsdd
 gparted
 gsmartcontrol
 gst-plugin-libcamera

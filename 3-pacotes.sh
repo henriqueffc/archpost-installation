@@ -60,6 +60,8 @@ sudo systemctl enable --now systemd-oomd.service
 echo -e "$AZUL \t systemd-oomd.service habilitado $FIM"
 systemctl enable --user speech-dispatcher.socket
 echo -e "$AZUL speech-dispatcher.socket habilitado $FIM"
+sudo systemctl enable --now avahi-daemon.service
+echo -e "$AZUL \t avahi-daemon.service habilitado $FIM"
 
 # Ollama
 sudo mkdir -p /etc/systemd/system/ollama.service.d/
@@ -330,11 +332,6 @@ cp ./ghostty/config $HOME/.config/ghostty/
 # mise
 mkdir -p $HOME/.config/mise/
 cp ./mise/config.toml $HOME/.config/mise/
-
-# Configuração do firewalld para conexão dos navegadores com o Chromecast
-sudo firewall-cmd --permanent --new-service=chromecast
-sudo firewall-cmd --permanent --service=chromecast --add-port=8008-8009/tcp --add-port=32768-61000/udp
-sudo firewall-cmd --reload
 
 # Habilitando a extensão Appindicator
 # A extensão appindicator foi instalada no script n.° 2.
