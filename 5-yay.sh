@@ -34,7 +34,7 @@ $FIM"
 yay -Y --gendb
 yay -Y --devel --save
 sudo pacman -S cmake meson ninja vulkan-headers --noconfirm --needed
-yay -S - <./pacotes/aur.txt
+yay --removemake --answerclean A --noanswerdiff --noansweredit --noconfirm --needed -S - <./pacotes/aur.txt
 
 # Habilitando o Ananicy-cpp (instalado pelo script n.° 3) com as regras existentes no pacote cachyos-ananicy-rules-git (AUR)
 sudo systemctl enable --now ananicy-cpp.service
