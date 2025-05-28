@@ -100,6 +100,7 @@ iptables-nft
 intel-ucode
 inxi
 innoextract
+jq
 jre-openjdk
 kdenlive
 kdiskmark
@@ -237,7 +238,6 @@ wl-clipboard
 wmctrl
 wireless-regdb
 x86_energy_perf_policy
-xsel
 xdg-desktop-portal
 xdg-desktop-portal-gnome
 xdg-desktop-portal-gtk
