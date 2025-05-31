@@ -1,6 +1,6 @@
 [/]
 control-center=['<Super>c']
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
 email=['<Super>e']
 home=['<Super>f']
 next=['<Shift>KP_Divide']
@@ -15,8 +15,3 @@ www=['<Super>b']
 binding='Print'
 command='flameshot-gui'
 name='flameshot'
-
-[custom-keybindings/custom1]
-binding='<Control>space'
-command='sh -c "echo -n toggle | nc -U ~/.cache/albert/ipc_socket"'
-name='albert'

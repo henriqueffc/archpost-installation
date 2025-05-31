@@ -36,6 +36,9 @@ gsettings set org.gnome.desktop.app-folders folder-children "['Utilities', 'Offi
 # Dock
 gsettings set org.gnome.shell favorite-apps "['com.mitchellh.ghostty.desktop', 'obsidian.desktop', 'microsoft-edge.desktop', 'org.telegram.desktop.desktop', 'org.gnome.Fractal.desktop', 'io.gitlab.news_flash.NewsFlash.desktop', 'com.jeffser.Alpaca.desktop', 'com.github.taiko2k.tauonmb.desktop', 'org.gnome.Nautilus.desktop']"
 
+# Search Providers
+dconf load /org/gnome/desktop/search-providers/ <./dconf/search-providers.txt
+
 # Configurações para a extensão Blur my shell (AUR - instalada pelo script nº 5)
 dconf load /org/gnome/shell/extensions/blur-my-shell/ <./dconf/blur.txt
 

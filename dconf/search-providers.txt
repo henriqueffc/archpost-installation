@@ -1,0 +1,4 @@
+[/]
+disable-external=false
+disabled=['org.gnome.Contacts.desktop', 'org.gnome.Boxes.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Characters.desktop', 'firefox.desktop', 'org.gnome.Software.desktop', 'org.gnome.clocks.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Epiphany.desktop', 'org.gnome.Settings.desktop']
+sort-order=['org.gnome.Nautilus.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.Settings.desktop', 'org.gnome.Contacts.desktop', 'com.jeffser.Alpaca.desktop', 'com.belmoussaoui.Authenticator.desktop', 'org.gnome.Boxes.desktop']
