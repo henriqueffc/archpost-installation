@@ -57,18 +57,29 @@ kdenlive, etc.) escolha o tema breeze dark ou escuro.
 
 **Extensões**
 
-Uso as extensões System Monitor, Blur my Shell, Alphabetical App Grid, Wallpaper
-Slideshow e AppIndicator/KStatusNotifierItem habilitadas. Para acessar as
-configurações das extensões use o
+Uso as extensões Vitals, Blur my Shell, Alphabetical App Grid,
+AppIndicator/KStatusNotifierItem, !Bangs Search e GNOME Fuzzy App Search
+habilitadas.
+
+Para acessar as configurações das extensões use o
 [Gerenciador de extensões](https://flathub.org/pt-BR/apps/com.mattjakeman.ExtensionManager)
-(instalado com o script n.° 4). A extensão AppIndicator/KStatusNotifierItem foi
-intalada com o pacote
-[gnome-shell-extension-appindicator](https://archlinux.org/packages/extra/any/gnome-shell-extension-appindicator/)
-(instalada com o script n.° 2 e habilitada com o script n.° 3). As extensões
-Alphabetical App Grid, Blur my Shell e Wallpaper Slideshow foram instaladas
-usando o AUR (script nº 5). As configurações para essas extensões foram feitas
-no script nº 6. Na extensão Wallpaper Slideshow é preciso configurar a pasta que
-contém as imagens para o wallpaper.
+(instalado com o script n.° 4).
+
+A extensão AppIndicator/KStatusNotifierItem foi intalada usando o repositório
+oficial (instalada com o script n.° 2 e habilitada com o script n.° 3).
+
+A extensão Vitals foi instalada usando o repositório oficial (script nº 3). Ela
+foi configurada e habilitada no script nº 6.
+
+As extensões Alphabetical App Grid e Blur my Shell foram instaladas usando o AUR
+(script nº 5). As configurações para essas extensões foram feitas no script
+nº 6.
+
+As extensões GNOME Fuzzy App Search e !Bangs Search foram instaladas usando o
+Gerenciador de extensões. Após instalar a !Bangs Search configure as bangs e
+depois reinicie o sistema. Caso reinicie o sistema sem configurar pelo menos uma
+bang ela apresentará erro após a inicialização. Exemplo de bang: nome= repo url=
+https://archlinux.org/packages/?q={query}
 
 ### 2 - SSH
 
