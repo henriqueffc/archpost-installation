@@ -214,6 +214,7 @@ thefuck
 thermald
 thunderbird
 thunderbird-i18n-pt-br
+tcpdump
 trash-cli
 translate-shell
 turbostat
