@@ -80,5 +80,3 @@ Histórico dos resultados de desempenho do processador usando o Arch Linux -
 ![Tela 3](.github/screenshots/3.png)
 
 ![Tela 4](.github/screenshots/4.png)
-
-![Tela 5](.github/screenshots/5.png)
