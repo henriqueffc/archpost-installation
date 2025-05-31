@@ -5,7 +5,6 @@ gpu-screen-recorder
 ttf-noto-emoji-monochrome
 cachyos-ananicy-rules-git
 oh-my-posh-bin
-albert
 gnome-shell-extension-blur-my-shell
 gnome-shell-extension-alphabetical-grid-extension
 resvg

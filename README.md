@@ -28,8 +28,8 @@ iwd como wi-fi backend (NetworkManager), libvirt, Incus, mise, intel_pstate
 scaling driver, thermald e x86_energy_perf_policy para gerenciamento de
 frequências da CPU e do perfil de energia (uso o notebook ligado na tomada),
 ananicy-cpp, firmware para o áudio da Sound Open Firmware, Helix Editor, Ollama
-(CUDA), Zotero, Albert Launcher e GNOME (Wayland). As configurações dos scripts
-são concebidas nessa base.
+(CUDA), Zotero, GNOME (Wayland). As configurações dos scripts são concebidas
+nessa base.
 
 Os scripts deverão ser executados após a inicialização do sistema no ambiente
 gráfico.
