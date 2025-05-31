@@ -256,7 +256,6 @@ gsettings set org.gnome.Weather locations "[<(uint32 2, <('Uberlândia', 'SBUL',
 # abrir o configurações do GNOME - Super + c
 # abrir o cliente de email - Super + e
 # Atalho de teclado para o flameshot (Print) e alteração do atalho de teclado para o gnome screenshot (Ctrl + Alt + p)
-# Atalho de teclado para o Albert (Ctrl + espaço). O Albert será instalado pelo script nº 5
 dconf load /org/gnome/settings-daemon/plugins/media-keys/ <./dconf/mediakeys.txt
 
 # Mostrar relógio UTC no painel de notificações
@@ -332,6 +331,11 @@ cp ./ghostty/config $HOME/.config/ghostty/
 # mise
 mkdir -p $HOME/.config/mise/
 cp ./mise/config.toml $HOME/.config/mise/
+
+# Habilitando permanentemente os serviços mDNS e o samba-client no Firewalld
+sudo firewall-cmd --zone=public --add-service=mdns --permanent
+sudo firewall-cmd --zone=public --add-service=samba-client --permanent
+sudo firewall-cmd --reload
 
 # Habilitando a extensão Appindicator
 # A extensão appindicator foi instalada no script n.° 2.
