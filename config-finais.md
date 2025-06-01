@@ -76,10 +76,13 @@ As extensões Alphabetical App Grid e Blur my Shell foram instaladas usando o AU
 nº 6.
 
 As extensões GNOME Fuzzy App Search e !Bangs Search foram instaladas usando o
-Gerenciador de extensões. Após instalar a !Bangs Search configure as bangs e
-depois reinicie o sistema. Caso reinicie o sistema sem configurar pelo menos uma
-bang a extensão não será inicializada. Exemplo de bang: key `repo` url
-`https://archlinux.org/packages/?q={query}`
+Gerenciador de extensões. Após instalar a !Bangs Search copie o arquivo do
+diretório desse projeto `bangs/bangs.json` para o diretório `~/.config/` Depois
+reinicie o sistema. Caso reinicie o sistema sem copiar o arquivo ou sem inserir
+pelo menos uma bang nas configurações da extensão, ela não será inicializada (é
+um bug da extensão). Exemplo de bang: key `repo` url
+`https://archlinux.org/packages/?q={query}` No arquivo desse projeto já estão
+listadas todas as bangs que uso com a extensão.
 
 ### 2 - SSH
 
