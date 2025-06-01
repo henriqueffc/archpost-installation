@@ -319,7 +319,9 @@ sudo pacman -Fy
 mkdir -p $HOME/.config/yazi/plugins/
 cp ./yazi/yazi.toml $HOME/.config/yazi/
 cp ./yazi/keymap.toml $HOME/.config/yazi/
-ya pack -a yazi-rs/plugins:toggle-pane
+ya pkg add yazi-rs/plugins:toggle-pane
+ya pkg add yazi-rs/plugins:mount
+ya pkg add yazi-rs/plugins:chmod
 
 # Firejail + AppArmor
 sudo apparmor_parser -r /etc/apparmor.d/firejail-default
