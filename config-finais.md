@@ -78,8 +78,8 @@ nº 6.
 As extensões GNOME Fuzzy App Search e !Bangs Search foram instaladas usando o
 Gerenciador de extensões. Após instalar a !Bangs Search configure as bangs e
 depois reinicie o sistema. Caso reinicie o sistema sem configurar pelo menos uma
-bang ela apresentará erro após a inicialização. Exemplo de bang: nome= repo url=
-https://archlinux.org/packages/?q={query}
+bang a extensão não será inicializada. Exemplo de bang: key `repo` url
+`https://archlinux.org/packages/?q={query}`
 
 ### 2 - SSH
 
