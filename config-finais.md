@@ -710,15 +710,16 @@ Teste dns usando o browser <https://on.quad9.net/>
 
 Teste - DNSSEC
 
-Servidor sem falhas
+`resolvectl query sigok.verteiltesysteme.net`
 
-`dig +dnssec www.archlinux.org`
+Deve retornar o IP e mostrar "authenticated: yes", se o DNSSEC estiver
+habilitado corretamente no sistema.
 
-`dig +dnssec www.cyberciti.biz`
+Domínio com assinatura inválida
 
-Servidor com erros
+`resolvectl query sigfail.verteiltesysteme.net`
 
-`dig +dnssec dnssec-failed.org`
+Deve falhar com erro "DNSSEC validation failed: invalid"
 
 ### 24 - easyeffects
 
