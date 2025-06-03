@@ -672,7 +672,7 @@ A instalação do
 [systemd-resolved](https://wiki.archlinux.org/title/Systemd-resolved) e a
 configuração para o NetworkManager foi feita no script nº 2.
 
-Utilize o dns da quad9 com o DNSOverTLS habilitado.
+Utilize o dns da quad9 com o DNSOverTLS e o DNSSEC habilitados.
 
 `sudo mkdir -p /etc/systemd/resolved.conf.d/`
 
@@ -682,6 +682,7 @@ Utilize o dns da quad9 com o DNSOverTLS habilitado.
 [Resolve]
 DNS=9.9.9.9#dns.quad9.net 149.112.112.112#dns.quad9.net 2620:fe::fe#dns.quad9.net 2620:fe::9#dns.quad9.net
 DNSOverTLS=yes
+DNSSEC=yes
 Domains=~.
 ```
 
@@ -706,6 +707,18 @@ foi configurado adequadamente. Veja mais informações em
 [quad9](https://docs.quad9.net/)
 
 Teste dns usando o browser <https://on.quad9.net/>
+
+Teste - DNSSEC
+
+Servidor sem falhas
+
+`dig +dnssec www.archlinux.org`
+
+`dig +dnssec www.cyberciti.biz`
+
+Servidor com erros
+
+`dig +dnssec dnssec-failed.org`
 
 ### 24 - easyeffects
 
