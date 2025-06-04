@@ -64,9 +64,11 @@ sudo sed -i '$ { s/^.*$/& quiet loglevel=3 systemd.show_status=auto rd.udev.log_
 # Será desabilitado o manejo do mDNS e do LLMNR pelo systemd-resolved.
 # O Avahi será habilitado no script nº 3 para a administração do mDNS.
 # A porta da rede para o mDNS será habilitada no firewalld no script nº 3.
+# Serão habilitados o DNS over TLS, DNSSEC e o o uso da Quad9 como resolvedor de DNS para o systemd-resolved
 sudo cp ./resolved/dns.conf /etc/NetworkManager/conf.d/
 sudo mkdir -p /etc/systemd/resolved.conf.d/
 sudo cp ./resolved/mdns.conf /etc/systemd/resolved.conf.d/
+sudo cp ./resolved/dns_over_tls.conf /etc/systemd/resolved.conf.d/
 sudo systemctl enable --now systemd-resolved
 
 # IWD

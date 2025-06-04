@@ -669,23 +669,8 @@ A instalação do
 [systemd-resolved](https://wiki.archlinux.org/title/Systemd-resolved) e a
 configuração para o NetworkManager foi feita no script nº 2.
 
-Utilize o dns da quad9 com o DNSOverTLS e o DNSSEC habilitados.
-
-`sudo mkdir -p /etc/systemd/resolved.conf.d/`
-
-`sudo nano /etc/systemd/resolved.conf.d/dns_over_tls.conf`
-
-```
-[Resolve]
-DNS=9.9.9.9#dns.quad9.net 149.112.112.112#dns.quad9.net 2620:fe::fe#dns.quad9.net 2620:fe::9#dns.quad9.net
-DNSOverTLS=yes
-DNSSEC=yes
-Domains=~.
-```
-
-Reinicie o systemd-resolved
-
-`sudo systemctl restart systemd-resolved`
+Utilizo pelo systemd-resolved o dns da Quad9 com o DNS over TLS e o DNSSEC
+habilitados. Desabilite o DNS over HTTPS nos navegadores web.
 
 Verifique o funcionamento do systemd-resolved e se a configuração do dns foi
 aplicada.
@@ -702,8 +687,6 @@ Se a resposta for `dot.`, _está funcionando_! Se a resposta for `do53-udp.`,
 ainda está usando plaintext. Se não houver resposta, significa que o Quad9 não
 foi configurado adequadamente. Veja mais informações em
 [quad9](https://docs.quad9.net/)
-
-Teste dns usando o browser <https://on.quad9.net/>
 
 Teste - DNSSEC
 
