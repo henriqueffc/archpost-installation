@@ -7,4 +7,5 @@ cachyos-ananicy-rules-git
 oh-my-posh-bin
 gnome-shell-extension-blur-my-shell
 gnome-shell-extension-alphabetical-grid-extension
+gnome-shell-extension-fuzzy-app-search-git
 resvg

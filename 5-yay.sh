@@ -42,4 +42,9 @@ sudo systemctl enable --now ananicy-cpp.service
 # Tema dos ícones - Kora
 gsettings set org.gnome.desktop.interface icon-theme "kora"
 
+# Instalação da extensão !bangs search usando o gnome-extensions-cli
+printf "%s $AZUL Instalando a extensão Bangs search $FIM \n" && sleep 3
+gext install bangs-search@suvan
+cp ./bangs/bangs.json $HOME/.config/
+
 printf "%s $VERDE Reinicie o sistema. $FIM \n"

@@ -365,4 +365,12 @@ imgdisplay iterm2
 
 EOF
 
+# Comando necessário para o funcionamento do pipx
+# Essa alteração no PATH foi realizada anteriormente no script
+# Mas para funcionar nesse momento da instalação é preciso exportar o PATH,
+# pois o terminal não foi reinicializado.
+export PATH=$PATH:$HOME/.local/bin
+# Instalando o gnome-extensions-cli usando o pipx
+pipx install gnome-extensions-cli --system-site-packages
+
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"

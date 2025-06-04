@@ -71,18 +71,15 @@ oficial (instalada com o script n.° 2 e habilitada com o script n.° 3).
 A extensão Vitals foi instalada usando o repositório oficial (script nº 3). Ela
 foi configurada e habilitada no script nº 6.
 
-As extensões Alphabetical App Grid e Blur my Shell foram instaladas usando o AUR
-(script nº 5). As configurações para essas extensões foram feitas no script
-nº 6.
+As extensões Alphabetical App Grid, GNOME Fuzzy App Search e Blur my Shell foram
+instaladas usando o AUR (script nº 5). As configurações para essas extensões
+foram feitas no script nº 6.
 
-As extensões GNOME Fuzzy App Search e !Bangs Search foram instaladas usando o
-Gerenciador de extensões. Após instalar a !Bangs Search copie o arquivo do
-diretório desse projeto `bangs/bangs.json` para o diretório `~/.config/` Depois
-reinicie o sistema. Caso reinicie o sistema sem copiar o arquivo ou sem inserir
-pelo menos uma bang nas configurações da extensão, ela não será inicializada (é
-um bug da extensão). Exemplo de bang: key `repo` url
-`https://archlinux.org/packages/?q={query}` No arquivo desse projeto já estão
-listadas todas as bangs que uso com a extensão.
+A extensão !Bangs Search foi instalada e configurada usando o
+gnome-extensions-cli no script nº 5. O gnome-extensions-cli foi instalado usando
+o pipx no script n° 3. A extensão foi habilitada no script n° 6. O arquivo
+`./bangs/bangs.json` deste projeto contém as bangs que uso com a extensão e foi
+copiado para o sistema durante a instalação da !Bangs search.
 
 ### 2 - SSH
 

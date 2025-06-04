@@ -52,3 +52,5 @@ gsettings set org.gnome.shell.extensions.alphabetical-app-grid folder-order-posi
 gnome-extensions enable AlphabeticalAppGrid@stuarthayhurst
 gnome-extensions enable blur-my-shell@aunetx
 gnome-extensions enable Vitals@CoreCoding.com
+gnome-extensions enable gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com
+gnome-extensions enable bangs-search@suvan
