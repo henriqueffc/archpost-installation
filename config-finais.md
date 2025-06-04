@@ -75,11 +75,11 @@ As extensões Alphabetical App Grid, GNOME Fuzzy App Search e Blur my Shell fora
 instaladas usando o AUR (script nº 5). As configurações para essas extensões
 foram feitas no script nº 6.
 
-A extensão !Bangs Search foi instalada e configurada usando o
-gnome-extensions-cli no script nº 5. O gnome-extensions-cli foi instalado usando
-o pipx no script n° 3. A extensão foi habilitada no script n° 6. O arquivo
-`./bangs/bangs.json` deste projeto contém as bangs que uso com a extensão e foi
-copiado para o sistema durante a instalação da !Bangs search.
+A extensão !Bangs Search foi configurada e instalada (usando o
+gnome-extensions-cli) no script nº 5. O gnome-extensions-cli foi instalado
+usando o pipx no script n° 3. A extensão foi habilitada no script n° 6. O
+arquivo `./bangs/bangs.json` deste projeto contém as bangs que uso com a
+extensão e foi copiado para o sistema durante a instalação da !Bangs search.
 
 ### 2 - SSH
 
