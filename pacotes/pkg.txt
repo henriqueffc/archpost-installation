@@ -193,6 +193,7 @@ sdl12-compat
 sdl2_image
 sdl2_mixer
 sdl2_ttf
+shortwave
 showtime
 signal-desktop
 sndio
