@@ -55,7 +55,6 @@ flatpak install flathub org.gnome.Fractal -y
 flatpak install flathub garden.jamie.Morphosis -y
 flatpak install flathub org.telegram.desktop -y
 flatpak install flathub com.discordapp.Discord -y
-flatpak install flathub io.gitlab.news_flash.NewsFlash -y
 flatpak install flathub com.obsproject.Studio -y
 flatpak install flathub com.obsproject.Studio.Plugin.Gstreamer -y
 flatpak install flathub com.obsproject.Studio.Plugin.GStreamerVaapi -y

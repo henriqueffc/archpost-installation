@@ -30,23 +30,21 @@
 |
 [15 - Piper](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#15---piper)
 |
-[16 - Newsflash](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#16---newsflash)
+[16 - Ordem do boot](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#16---ordem-do-boot)
 |
-[17 - Ordem do boot](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#17---ordem-do-boot)
+[17 - Upscayl](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#17---upscayl)
 |
-[18 - Upscayl](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#18---upscayl)
+[18 - Zotero](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#18---zotero)
 |
-[19 - Zotero](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#19---zotero)
+[19 - Incus](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#19---incus)
 |
-[20 - Incus](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#20---incus)
+[20 - tmpfiles](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#20---tmpfiles)
 |
-[21 - tmpfiles](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#21---tmpfiles)
+[21 - sgpt](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#21---sgpt)
 |
-[22 - sgpt](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#22---sgpt)
+[22 - dns](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#22---dns)
 |
-[23 - dns](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#23---dns)
-|
-[24 - easyeffects](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#24---easyeffects)
+[23 - easyeffects](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#23---easyeffects)
 
 ### 1 - Tema e extensões
 
@@ -511,18 +509,7 @@ spd-say "oi como você está?"
 spd-say "You’re playing a dangerous game Carl"
 ```
 
-### 16 - Newsflash
-
-Caso a versão em flatpak do app Newsflash não tenha conexão com a rede, faça o
-seguinte:
-
-`nano ~/.var/app/io.gitlab.news_flash.NewsFlash/config/news-flash/newsflash_gtk.json`
-
-Substitua a linha `"ping_url": "http://exemple.com/"` por
-`"ping_url": "http://192.168.0.1/"`. O endereço 192.168.0.1 é o gateway.
-Verifique qual é o gateway da sua rede.
-
-### 17 - Ordem do boot
+### 16 - Ordem do boot
 
 Verifique o ID do kernel com o comando `bootctl list`. Selecione o kernel que
 você deseja para a inicialização do sistema com o comando
@@ -535,7 +522,7 @@ desejado (em segundos) da exibição ou coloque 0 para esconder as opções de
 inicialização. Para acessar a tela, caso opte por escondê-la, após ligar o
 notebook pressione a barra de espaço do teclado.
 
-### 18 - Upscayl
+### 17 - Upscayl
 
 Caso queira utilizar a versão em Appimage efetue o download na página do
 [github](https://github.com/upscayl/upscayl). A versão em flatpak foi instalada
@@ -548,7 +535,7 @@ tela) o seguinte: Key = `VK_DRIVER_FILES` Value =
 `/usr/share/glvnd/egl_vendor.d/10_nvidia.json` Isso fará com que o aplicativo
 funcione com a placa dedicada.
 
-### 19 - Zotero
+### 18 - Zotero
 
 Faça o download do arquivo xpi das seguintes extensões:
 
@@ -561,7 +548,7 @@ foram instalados pelo script n.º 3. Nas configurações da extensão no Zotero
 configure a localização para o tesseract `/usr/bin/tesseract` e para o pdftoppm
 `/usr/bin/pdftoppm`.
 
-### 20 - Incus
+### 19 - Incus
 
 Execute os seguintes comandos para configurar o Incus.
 
@@ -589,7 +576,7 @@ configurações do profile. Caso altere o nome, substitua nos comandos abaixo.
 
 `sudo firewall-cmd --reload`
 
-### 21 - tmpfiles
+### 20 - tmpfiles
 
 O arquivo de configuração para cada ação deve ser alocado em `/etc/tmpfiles.d/`
 
@@ -622,7 +609,7 @@ Depois de concebido o arquivo, execute
 
 `sudo systemd-tmpfiles --create`
 
-### 22 - sgpt
+### 21 - sgpt
 
 **Instalação**
 
@@ -663,7 +650,7 @@ API_BASE_URL=http://127.0.0.1:11434
 
 [Fonte - github shell_gpt](https://github.com/TheR1D/shell_gpt/wiki/Ollama)
 
-### 23 - dns
+### 22 - dns
 
 A instalação do
 [systemd-resolved](https://wiki.archlinux.org/title/Systemd-resolved) e a
@@ -701,7 +688,7 @@ Domínio com assinatura inválida
 
 Deve falhar com erro "DNSSEC validation failed: invalid"
 
-### 24 - easyeffects
+### 23 - easyeffects
 
 Configuração do EasyEffects para aplicar a equalização paramétrica para o
 Headset HyperX Cloud Stinger.
