@@ -742,6 +742,7 @@ Configurações feitas em `about:config`
 | browser.toolbars.bookmarks.visibility                                                                              | always  |
 | browser.urlbar.scotchBonnet.enableOverride                                                                         | true    |
 | dom.enable_web_task_scheduling                                                                                     | true    |
+| dom.ipc.forkserver.enable                                                                                          | true    |
 | dom.security.https_only_mode                                                                                       | true    |
 | extensions.pocket.enabled                                                                                          | false   |
 | general.smoothScroll                                                                                               | true    |
