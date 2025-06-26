@@ -45,6 +45,8 @@
 [22 - dns](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#22---dns)
 |
 [23 - easyeffects](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#23---easyeffects)
+|
+[24 - firefox](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#24---firefox)
 
 ### 1 - Tema e extensões
 
@@ -714,3 +716,65 @@ Headphones. Não selecione o
 É possível usar a extensão do GNOME
 [EasyEffects Preset Selector](https://extensions.gnome.org/extension/4907/easyeffects-preset-selector/)
 para alternar rapidamente entre as predefinições do EasyEffects.
+
+### 24 - firefox
+
+Uso o tema
+[Gnome Adwaita GTK4 Dark](https://addons.mozilla.org/pt-BR/firefox/addon/gnome-adwaita-gtk4-dark/)
+
+Configurações feitas em `about:config`
+
+| Configuração                                                                                                       | Valor   |
+| ------------------------------------------------------------------------------------------------------------------ | ------- |
+| browser.cache.disk.enable                                                                                          | false   |
+| browser.cache.memory.capacity                                                                                      | 1048576 |
+| browser.cache.memory.enable                                                                                        | true    |
+| browser.display.document_color_use                                                                                 | 0       |
+| browser.ml.chat.enabled                                                                                            | true    |
+| browser.ml.linkPreview.enabled                                                                                     | true    |
+| browser.profiles.enabled                                                                                           | true    |
+| browser.theme.native-theme (para o gnome, teste o valor false, mas não precisa com o tema Gnome Adwaita GTK4 Dark) | false   |
+| browser.newtabpage.activity-stream.newtabWallpapers.enabled                                                        | true    |
+| browser.newtabpage.activity-stream.showWeather                                                                     | true    |
+| browser.newtabpage.activity-stream.system.showWeather                                                              | true    |
+| browser.sessionstore.interval                                                                                      | 60000   |
+| browser.tabs.groups.enabled                                                                                        | true    |
+| browser.toolbars.bookmarks.visibility                                                                              | always  |
+| browser.urlbar.scotchBonnet.enableOverride                                                                         | true    |
+| dom.enable_web_task_scheduling                                                                                     | true    |
+| dom.security.https_only_mode                                                                                       | true    |
+| extensions.pocket.enabled                                                                                          | false   |
+| general.smoothScroll                                                                                               | true    |
+| general.smoothScroll.msdPhysics.enabled                                                                            | true    |
+| gfx.canvas.remote                                                                                                  | true    |
+| gfx.canvas.accelerated.cache-size                                                                                  | 512     |
+| image.jxl.enabled (nightly)                                                                                        | true    |
+| dom.webgpu.enabled (nightly)                                                                                       | true    |
+| gfx.webrender.all                                                                                                  | true    |
+| gfx.webrender.compositor                                                                                           | true    |
+| gfx.webrender.compositor.force-enabled                                                                             | true    |
+| gfx.webrender.precache-shaders                                                                                     | true    |
+| gfx.x11-egl.force-disabled                                                                                         | false   |
+| layout.css.prefers-color-scheme.content-override                                                                   | 0       |
+| layout.css.grid-template-masonry-value.enabled                                                                     | true    |
+| layout.frame_rate                                                                                                  | 60      |
+| javascript.options.wasm_branch_hinting                                                                             | true    |
+| javascript.options.wasm_relaxed_simd                                                                               | true    |
+| media.av1.enabled                                                                                                  | true    |
+| media.eme.enabled                                                                                                  | true    |
+| media.gmp.decoder.multithreaded                                                                                    | true    |
+| media.gpu-process-decoder                                                                                          | true    |
+| media.peerconnection.video.vp9_preferred                                                                           | false   |
+| media.webrtc.camera.allow-pipewire                                                                                 | true    |
+| mousewheel.default.delta_multiplier_x                                                                              | 70      |
+| mousewheel.default.delta_multiplier_y                                                                              | 70      |
+| mousewheel.default.delta_multiplier_z                                                                              | 70      |
+| mousewheel.min_line_scroll_amount                                                                                  | 3       |
+| network.trr.mode //habilito o DNS over TLS, DNSSEC e o uso da Quad9 como resolvedor de DNS no systemd-resolved     | 5       |
+| reader.color_scheme                                                                                                | dark    |
+| reader.text_alignment                                                                                              | justify |
+| sidebar.revamp                                                                                                     | true    |
+| sidebar.verticalTabs                                                                                               | true    |
+| widget.gtk.non-native-titlebar-buttons.enabled                                                                     | false   |
+| widget.gtk.rounded-bottom-corners.enabled (não estou usando, bug nos cantos inferiores)                            | true    |
+| widget.use-xdg-desktop-portal.file-picker                                                                          | 1       |

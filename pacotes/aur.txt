@@ -1,5 +1,4 @@
 downgrade
-microsoft-edge-stable-bin
 kora-icon-theme
 gpu-screen-recorder
 ttf-noto-emoji-monochrome

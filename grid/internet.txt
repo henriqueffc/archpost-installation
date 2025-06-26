@@ -1,3 +1,3 @@
 [/]
-apps=['chromium.desktop', 'im.dino.Dino.desktop', 'com.discordapp.Discord.desktop', 'firefox.desktop', 'signal-desktop.desktop', 'org.mozilla.Thunderbird.desktop', 'weechat.desktop']
+apps=['chromium.desktop', 'im.dino.Dino.desktop', 'com.discordapp.Discord.desktop', 'signal-desktop.desktop', 'org.mozilla.Thunderbird.desktop', 'weechat.desktop']
 name='Internet'

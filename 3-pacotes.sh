@@ -307,10 +307,9 @@ cp ./fastfetch/config.jsonc $HOME/.config/fastfetch/
 # wireless-regdb - instalado pelo script n.° 1.
 sudo sed -i '$a WIRELESS_REGDOM="BR"' /etc/conf.d/wireless-regdom
 
-# Arquivos com as flags para o Chromium, Edge e Electron
+# Arquivos com as flags para o Chromium e Electron
 cp ./flags/chromium-flags.conf $HOME/.config/
 cp ./flags/electron-flags.conf $HOME/.config/
-cp ./flags/microsoft-edge-stable-flags.conf $HOME/.config/
 
 # Sincronizando a database para a pesquisa de pacotes
 sudo pacman -Fy
