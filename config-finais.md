@@ -727,7 +727,8 @@ Configurações feitas em `about:config`
 | Configuração                                                                                                       | Valor   |
 | ------------------------------------------------------------------------------------------------------------------ | ------- |
 | browser.cache.disk.enable                                                                                          | false   |
-| browser.cache.memory.capacity                                                                                      | 1048576 |
+| browser.cache.memory.capacity (131072 = 128 MB)                                                                    | 131072  |
+| browser.cache.memory.max_entry_size (20480 = 20 MB)                                                                | 20480   |
 | browser.cache.memory.enable                                                                                        | true    |
 | browser.display.document_color_use                                                                                 | 0       |
 | browser.ml.chat.enabled                                                                                            | true    |
@@ -751,6 +752,7 @@ Configurações feitas em `about:config`
 | gfx.canvas.accelerated.cache-size                                                                                  | 512     |
 | image.jxl.enabled (nightly)                                                                                        | true    |
 | dom.webgpu.enabled (nightly)                                                                                       | true    |
+| gfx.content.skia-font-cache-size                                                                                   | 20      |
 | gfx.webrender.all                                                                                                  | true    |
 | gfx.webrender.compositor                                                                                           | true    |
 | gfx.webrender.compositor.force-enabled                                                                             | true    |
