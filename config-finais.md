@@ -238,7 +238,7 @@ O prime-run no Arch Linux faz o mesmo que
 
 O parâmetro `VKD3D_CONFIG=dxr11,dxr` habilita o raytracing.
 
-O parâmetro 'PROTON_ENABLE_WAYLAND=1' habilita o wine-wayland usando o
+O parâmetro `PROTON_ENABLE_WAYLAND=1` habilita o wine-wayland usando o
 [Proton-CachyOS](https://github.com/CachyOS/proton-cachyos) ou o
 [Proton-ge-custom](https://github.com/GloriousEggroll/proton-ge-custom)
 
