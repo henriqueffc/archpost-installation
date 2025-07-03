@@ -255,7 +255,7 @@ gsettings set org.gnome.Weather locations "[<(uint32 2, <('Uberlândia', 'SBUL',
 # diminuir o brilho da tela usando o teclado - Crtl + Para baixo
 # abrir o configurações do GNOME - Super + c
 # abrir o cliente de email - Super + e
-# Atalho de teclado para o flameshot (Print) e alteração do atalho de teclado para o gnome screenshot (Ctrl + Alt + p)
+# Atalhos de teclado para o Gradia (Ctrl + Print e Ctrl + Shift + Print)
 dconf load /org/gnome/settings-daemon/plugins/media-keys/ <./dconf/mediakeys.txt
 
 # Mostrar relógio UTC no painel de notificações
@@ -344,17 +344,6 @@ gnome-extensions enable $(gnome-extensions list | grep -m 1 appindicatorsupport)
 
 # Desabilitabdo o suporte ao legacy tray icons support na Appindicator
 gsettings set org.gnome.shell.extensions.appindicator legacy-tray-enabled false
-
-# Flameshot
-# https://github.com/flameshot-org/flameshot/issues/3326#issuecomment-1788440850
-# https://flameshot.org/docs/guide/wayland-help/
-sudo tee /usr/local/bin/flameshot-print >/dev/null <<'EOF'
-#!/bin/bash
-flameshot gui
-
-EOF
-
-sudo chmod a+x /usr/local/bin/flameshot-print
 
 # mostrar imagens usando o w3m
 mkdir -p $HOME/.w3m/

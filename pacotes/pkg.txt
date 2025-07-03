@@ -56,7 +56,6 @@ firefox-i18n-pt-br
 firejail
 firetools
 firewalld
-flameshot
 flatpak
 fwupd
 fzf

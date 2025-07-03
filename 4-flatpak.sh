@@ -68,6 +68,7 @@ flatpak install flathub io.github.chidiwilliams.Buzz -y
 flatpak install flathub com.saivert.pwvucontrol -y
 flatpak install flathub com.jeffser.Alpaca -y
 flatpak install flathub io.missioncenter.MissionCenter -y
+flatpak install flathub be.alexandervanhee.gradia -y
 
 # Flathub Remote-Beta
 echo -e "$AZUL Adicionando o remote flathub-beta $FIM"

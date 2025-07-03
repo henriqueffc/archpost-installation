@@ -1,6 +1,6 @@
 [/]
 control-center=['<Super>c']
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/']
 email=['<Super>e']
 home=['<Super>f']
 next=['<Shift>KP_Divide']
@@ -11,7 +11,12 @@ volume-down=['<Shift>KP_Subtract']
 volume-up=['<Shift>KP_Add']
 www=['<Super>b']
 
-[custom-keybindings/custom0]
-binding='Print'
-command='flameshot-gui'
-name='flameshot'
+[custom-keybindings/custom1]
+binding='<Shift><Control>Print'
+command='flatpak run be.alexandervanhee.gradia --screenshot=INTERACTIVE'
+name='gradia-area'
+
+[custom-keybindings/custom2]
+binding='<Control>Print'
+command='flatpak run be.alexandervanhee.gradia --screenshot=FULL'
+name='gradia-full'
