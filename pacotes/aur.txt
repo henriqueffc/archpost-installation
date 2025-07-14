@@ -1,5 +1,4 @@
 downgrade
-kora-icon-theme
 gpu-screen-recorder
 ttf-noto-emoji-monochrome
 cachyos-ananicy-rules-git

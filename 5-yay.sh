@@ -39,9 +39,6 @@ yay --removemake --answerclean A --noanswerdiff --noansweredit --noconfirm --nee
 # Habilitando o Ananicy-cpp (instalado pelo script n.° 3) com as regras existentes no pacote cachyos-ananicy-rules-git (AUR)
 sudo systemctl enable --now ananicy-cpp.service
 
-# Tema dos ícones - Kora
-gsettings set org.gnome.desktop.interface icon-theme "kora"
-
 # Instalação da extensão !bangs search usando o gnome-extensions-cli
 printf "%s $AZUL Instalando a extensão Bangs search $FIM \n" && sleep 3
 gext install bangs-search@suvan
