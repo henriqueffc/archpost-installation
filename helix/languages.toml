@@ -2,8 +2,6 @@
 # https://github.com/helix-editor/helix/wiki/Language-Server-Configurations
 # https://github.com/helix-editor/helix/wiki/External-formatter-configuration
 #
-[language-server.gopls.config]
-gofumpt = true
 
 [[language]]
 name = "bash"
@@ -14,6 +12,7 @@ auto-format = true
 [[language]]
 name = "go"
 auto-format = true
+formatter = { command = "goimports" }
 
 [[language]]
 name = "toml"
@@ -98,4 +97,9 @@ auto-format = true
 [[language]]
 name = "xml"
 formatter = { command = "xmllint", args = ["--format", "-"] }
+auto-format = true
+
+[[language]]
+name = "systemd"
+language-servers = ["systemd-lsp"]
 auto-format = true

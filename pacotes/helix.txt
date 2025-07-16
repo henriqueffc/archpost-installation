@@ -7,6 +7,7 @@ bash-completion
 bash-language-server
 bat
 bat-extras
+cargo-update
 clang
 curl
 deno
