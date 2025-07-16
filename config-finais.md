@@ -63,21 +63,21 @@ habilitadas.
 
 Para acessar as configurações das extensões use o
 [Gerenciador de extensões](https://flathub.org/pt-BR/apps/com.mattjakeman.ExtensionManager)
-(instalado com o script n.° 4).
+(instalado pelo script n.° 4).
 
 A extensão AppIndicator/KStatusNotifierItem foi intalada usando o repositório
-oficial (instalada com o script n.° 2 e habilitada com o script n.° 3).
+oficial (instalada pelo script n.° 2 e habilitada pelo script n.° 3).
 
 A extensão Vitals foi instalada usando o repositório oficial (script nº 3). Ela
-foi configurada e habilitada no script nº 6.
+foi configurada e habilitada pelo script nº 6.
 
 As extensões Alphabetical App Grid, GNOME Fuzzy App Search e Blur my Shell foram
 instaladas usando o AUR (script nº 5). As configurações para essas extensões
-foram feitas no script nº 6.
+foram feitas pelo script nº 6.
 
 A extensão !Bangs Search foi configurada e instalada (usando o
-gnome-extensions-cli) no script nº 5. O gnome-extensions-cli foi instalado
-usando o pipx no script n° 3. A extensão foi habilitada no script n° 6. O
+gnome-extensions-cli) pelo script nº 5. O gnome-extensions-cli foi instalado
+usando o pipx no script n° 3. A extensão foi habilitada pelo script n° 6. O
 arquivo `./bangs/bangs.json` deste projeto contém as bangs que uso com a
 extensão e foi copiado para o sistema durante a instalação da !Bangs search.
 
@@ -240,7 +240,33 @@ O parâmetro `VKD3D_CONFIG=dxr11,dxr` habilita o raytracing.
 
 O parâmetro `PROTON_ENABLE_WAYLAND=1` habilita o wine-wayland usando o
 [Proton-CachyOS](https://github.com/CachyOS/proton-cachyos) ou o
-[Proton-ge-custom](https://github.com/GloriousEggroll/proton-ge-custom)
+[Proton-ge-custom](https://github.com/GloriousEggroll/proton-ge-custom). Utilize
+o app ProtonPlus (instalado pelo script nº 4) para instalar esses protons
+modificados pela comunidade.
+
+**Ntsync**
+
+Para usar o [ntsync](https://wiki.archlinux.org/title/Wine#xSync) com o
+Proton-GE (>=GE-Proton10-9) é preciso habilitar o módulo desse recurso no kernel
+(>=6.15.6-arch1-1).
+
+`sudo nano /etc/modules-load.d/ntsync.conf`
+
+```
+# Automaticaly load ntsync kernel module at every boot
+
+ntsync
+```
+
+Reinicie e sistema e verifique o funcionamento do módulo com os comandos
+`modinfo ntsync` e `ls /dev/ntsync`.
+
+Use o parâmetro `PROTON_USE_NTSYNC=1` para habilitar o ntsync no jogo. Para
+verificar o funcionamento utilize o Goverlay para configurar a opção _Wine Sync_
+no mangohud.
+
+Alguns jogos, principalmente os mais antigos (32 bits), podem precisar do
+parâmetro `PROTON_USE_WOW64=1` ao usar o ntsync.
 
 **OpenGL + Nvidia**
 
