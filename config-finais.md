@@ -735,9 +735,12 @@ que está no diretório `easyeffects` do repositório.
 Na aba "Saídas", clique em "Predefinições" e acesse a opção "Importe uma
 predefinição do armazenamento local".
 
+Depois em "Predefinições" clique em "Carregar" na frente do nome da predefinição
+(hyperx).
+
 A predefinição habilita a equalização de áudio aplicando as definições
 disponíveis no repositório
-[AutoEq](https://github.com/jaakkopasanen/AutoEq/blob/master/results/Rtings/over-ear/HyperX%20Cloud%20Stinger/HyperX%20Cloud%20Stinger%20ParametricEQ.txt)
+[AutoEq](https://github.com/jaakkopasanen/AutoEq/tree/master/results/Rtings/HMS%20II.3%20over-ear/HyperX%20Cloud%20Stinger)
 
 Selecione como dispositivo de saída de som nas configurações do GNOME o
 Headphones. Não selecione o
