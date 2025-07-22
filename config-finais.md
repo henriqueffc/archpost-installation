@@ -58,8 +58,7 @@ kdenlive, etc.) escolha o tema breeze dark ou escuro.
 **Extensões**
 
 Uso as extensões Vitals, Blur my Shell, Alphabetical App Grid,
-AppIndicator/KStatusNotifierItem, !Bangs Search e GNOME Fuzzy App Search
-habilitadas.
+AppIndicator/KStatusNotifierItem e GNOME Fuzzy App Search habilitadas.
 
 Para acessar as configurações das extensões use o
 [Gerenciador de extensões](https://flathub.org/pt-BR/apps/com.mattjakeman.ExtensionManager)
@@ -74,12 +73,6 @@ foi configurada e habilitada pelo script nº 6.
 As extensões Alphabetical App Grid, GNOME Fuzzy App Search e Blur my Shell foram
 instaladas usando o AUR (script nº 5). As configurações para essas extensões
 foram feitas pelo script nº 6.
-
-A extensão !Bangs Search foi configurada e instalada (usando o
-gnome-extensions-cli) pelo script nº 5. O gnome-extensions-cli foi instalado
-usando o pipx no script n° 3. A extensão foi habilitada pelo script n° 6. O
-arquivo `./bangs/bangs.json` deste projeto contém as bangs que uso com a
-extensão e foi copiado para o sistema durante a instalação da !Bangs search.
 
 ### 2 - SSH
 
@@ -258,7 +251,7 @@ kernel (>=6.15.7-arch1-1).
 ntsync
 ```
 
-Reinicie e sistema e verifique o funcionamento do módulo com os comandos
+Reinicie o sistema e verifique o funcionamento do módulo com os comandos
 `modinfo ntsync` e `ls /dev/ntsync`.
 
 O ntsync é ativado por padrão, caso o módulo esteja carregado com o kernel. Não
