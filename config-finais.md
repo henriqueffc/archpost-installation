@@ -57,8 +57,8 @@ kdenlive, etc.) escolha o tema breeze dark ou escuro.
 
 **Extensões**
 
-Uso as extensões Vitals, Blur my Shell, Alphabetical App Grid,
-AppIndicator/KStatusNotifierItem e GNOME Fuzzy App Search habilitadas.
+Uso as extensões Vitals, Alphabetical App Grid e
+AppIndicator/KStatusNotifierItem habilitadas.
 
 Para acessar as configurações das extensões use o
 [Gerenciador de extensões](https://flathub.org/pt-BR/apps/com.mattjakeman.ExtensionManager)
@@ -70,9 +70,8 @@ oficial (instalada pelo script n.° 2 e habilitada pelo script n.° 3).
 A extensão Vitals foi instalada usando o repositório oficial (script nº 3). Ela
 foi configurada e habilitada pelo script nº 6.
 
-As extensões Alphabetical App Grid, GNOME Fuzzy App Search e Blur my Shell foram
-instaladas usando o AUR (script nº 5). As configurações para essas extensões
-foram feitas pelo script nº 6.
+A extensão Alphabetical App Grid foi instalada usando o AUR (script nº 5). A
+configuração para essa extensão foi feita pelo script nº 6.
 
 ### 2 - SSH
 

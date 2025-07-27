@@ -39,9 +39,6 @@ gsettings set org.gnome.shell favorite-apps "['com.mitchellh.ghostty.desktop', '
 # Search Providers
 dconf load /org/gnome/desktop/search-providers/ <./dconf/search-providers.txt
 
-# Configurações para a extensão Blur my shell (AUR - instalada pelo script nº 5)
-dconf load /org/gnome/shell/extensions/blur-my-shell/ <./dconf/blur.txt
-
 # Configurações para a extensão Vitals (repo oficial - instalada pelo script nº 3)
 dconf load /org/gnome/shell/extensions/vitals/ <./dconf/vitals.txt
 
@@ -50,6 +47,4 @@ gsettings set org.gnome.shell.extensions.alphabetical-app-grid folder-order-posi
 
 # Habilitando as extensões
 gnome-extensions enable AlphabeticalAppGrid@stuarthayhurst
-gnome-extensions enable blur-my-shell@aunetx
 gnome-extensions enable Vitals@CoreCoding.com
-gnome-extensions enable gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com
