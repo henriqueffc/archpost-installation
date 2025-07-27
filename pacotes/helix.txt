@@ -44,6 +44,7 @@ python-black
 python-pip
 python-pipenv
 python-pipx
+resvg
 ripgrep
 ripgrep
 ripgrep-all

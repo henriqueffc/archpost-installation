@@ -180,6 +180,7 @@ qt6-imageformats
 qt6-wayland
 rclone
 rebuild-detector
+resvg
 ripgrep
 ripgrep-all
 rsync
