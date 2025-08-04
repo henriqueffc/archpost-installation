@@ -43,3 +43,4 @@ alias hist-pacotes="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200
 alias fixpacman="sudo rm /var/lib/pacman/db.lck"
 alias tb="nc termbin.com 9999"
 alias tcpporta="sudo tcpdump -i any -n -v port "
+alias archwiki="wiki-search-html"

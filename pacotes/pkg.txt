@@ -6,6 +6,7 @@ ananicy-cpp
 aria2
 arch-audit
 arch-wiki-docs
+arch-wiki-lite
 archlinux-wallpaper
 aspell
 aspell-en
