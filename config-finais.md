@@ -798,6 +798,11 @@ Configurações feitas em `about:config`
 | mousewheel.default.delta_multiplier_y                                                                              | 70      |
 | mousewheel.default.delta_multiplier_z                                                                              | 70      |
 | mousewheel.min_line_scroll_amount                                                                                  | 3       |
+| network.dns.disableIPv6 (o provedor não suporta ipv6)                                                              | true    |
+| network.dns.disablePrefetch                                                                                        | true    |
+| network.http.max-connections                                                                                       | 1200    |
+| network.http.max-persistent-connections-per-server                                                                 | 10      |
+| network.prefetch-next                                                                                              | false   |
 | network.trr.mode //habilito o DNS over TLS, DNSSEC e o uso da Quad9 como resolvedor de DNS no systemd-resolved     | 5       |
 | reader.color_scheme                                                                                                | dark    |
 | reader.text_alignment                                                                                              | justify |
