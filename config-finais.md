@@ -808,6 +808,6 @@ Configurações feitas em `about:config`
 | reader.text_alignment                                                                                              | justify |
 | sidebar.revamp                                                                                                     | true    |
 | sidebar.verticalTabs                                                                                               | true    |
-| widget.gtk.non-native-titlebar-buttons.enabled                                                                     | false   |
-| widget.gtk.rounded-bottom-corners.enabled (não estou usando, bug nos cantos inferiores)                            | true    |
+| widget.gtk.non-native-titlebar-buttons.enabled                                                                     | true    |
+| widget.gtk.rounded-bottom-corners.enabled                                                                          | true    |
 | widget.use-xdg-desktop-portal.file-picker                                                                          | 1       |
