@@ -680,8 +680,8 @@ A instalação do
 [systemd-resolved](https://wiki.archlinux.org/title/Systemd-resolved) e a
 configuração para o NetworkManager foi feita no script nº 2.
 
-Utilizo pelo systemd-resolved o dns da Quad9 com o DNS over TLS e o DNSSEC
-habilitados. Desabilite o DNS over HTTPS nos navegadores web.
+Utilizo pelo systemd-resolved o dns da Quad9 com o DNS over TLS habilitado e o
+DNSSEC desabilitado. Desabilite o DNS over HTTPS nos navegadores web.
 
 Verifique o funcionamento do systemd-resolved e se a configuração do dns foi
 aplicada.
@@ -698,19 +698,6 @@ Se a resposta for `dot.`, _está funcionando_! Se a resposta for `do53-udp.`,
 ainda está usando plaintext. Se não houver resposta, significa que o Quad9 não
 foi configurado adequadamente. Veja mais informações em
 [quad9](https://docs.quad9.net/)
-
-Teste - DNSSEC
-
-`resolvectl query sigok.verteiltesysteme.net`
-
-Deve retornar o IP e mostrar "authenticated: yes", se o DNSSEC estiver
-habilitado corretamente no sistema.
-
-Domínio com assinatura inválida
-
-`resolvectl query sigfail.verteiltesysteme.net`
-
-Deve falhar com erro "DNSSEC validation failed: invalid"
 
 ### 23 - easyeffects
 
