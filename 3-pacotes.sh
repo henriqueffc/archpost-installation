@@ -84,10 +84,15 @@ sudo cp ./service/intelparanoid.service /etc/systemd/system/
 sudo systemctl enable intelparanoid.service
 echo -e "$AZUL \t Intel-Paranoid habilitado $FIM"
 
-# x86_energy_perf_policy
-sudo cp ./service/cpupowerperf.service /etc/systemd/system/
-sudo systemctl enable cpupowerperf.service
-echo -e "$AZUL \t x86_energy_perf_policy habilitado $FIM"
+# hwp_dynamic_boost
+sudo cp ./service/hwpdynamicboost.service /etc/systemd/system/
+sudo systemctl enable hwpdynamicboost.service
+echo -e "$AZUL \t hwp_dynamic_boost habilitado $FIM"
+
+# Habilitando o Tuned
+sudo systemctl enable --now tuned
+sudo systemctl enable --now tuned-ppd
+echo -e "$AZUL \t Tuned habilitado $FIM"
 
 # tealdeer (implementação do tldr)
 tldr --update
@@ -352,5 +357,8 @@ inline_img_protocol 3
 imgdisplay iterm2
 
 EOF
+
+# Habilitando o profile throughput-performance no Tuned
+tuned-adm profile throughput-performance
 
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"

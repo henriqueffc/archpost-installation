@@ -25,11 +25,10 @@ driver Nvidia open kernel module (versão dkms), shell Zsh com Oh My Zsh e
 oh-my-posh, Ghostty terminal, AUR helper Yay, Flatpak, Podman, Distrobox,
 Apparmor, firewalld, systemd-resolved, wireless-regdb (WIRELESS_REGDOM="BR"),
 iwd como wi-fi backend (NetworkManager), libvirt, Incus, mise, intel_pstate
-scaling driver, thermald e x86_energy_perf_policy para gerenciamento de
-frequências da CPU e do perfil de energia (uso o notebook ligado na tomada),
-ananicy-cpp, firmware para o áudio da Sound Open Firmware, Helix Editor, Ollama
-(CUDA), Zotero, GNOME (Wayland). As configurações dos scripts são concebidas
-nessa base.
+scaling driver, thermald e o tuned para gerenciamento de frequências da CPU e do
+perfil de energia, ananicy-cpp, firmware para o áudio da Sound Open Firmware,
+Helix Editor, Ollama (CUDA), Zotero, GNOME (Wayland). As configurações dos
+scripts são concebidas nessa base.
 
 Os scripts deverão ser executados após a inicialização do sistema no ambiente
 gráfico.

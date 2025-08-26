@@ -36,7 +36,6 @@ clamav
 cmatrix
 coreutils
 cpio
-cpupower
 curl
 dconf-editor
 devtools
@@ -138,7 +137,6 @@ mangohud
 magic-wormhole
 man-pages
 man-pages-pt_br
-mediainfo
 meld
 micro
 mise
@@ -202,6 +200,7 @@ sysfsutils
 sysprof
 systemd-resolvconf
 systemctl-tui
+systemtap
 steam
 strace
 scrcpy
@@ -219,6 +218,8 @@ thunderbird-i18n-pt-br
 tcpdump
 trash-cli
 translate-shell
+tuned
+tuned-ppd
 turbostat
 usbutils
 umu-launcher
@@ -229,6 +230,7 @@ unzip
 usage
 uv
 veracrypt
+virt-what
 vkd3d
 webp-pixbuf-loader
 weechat
@@ -240,6 +242,7 @@ winetricks
 wl-clipboard
 wmctrl
 wireless-regdb
+wireless_tools
 x86_energy_perf_policy
 xdg-desktop-portal
 xdg-desktop-portal-gnome
