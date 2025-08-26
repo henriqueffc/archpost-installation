@@ -2,7 +2,7 @@
 fixed-widths=false
 hide-icons=false
 hide-zeros=false
-hot-sensors=['_memory_usage_', '_memory_swap_usage_', '_processor_usage_', '_gpu#1_utilization_']
+hot-sensors=['_memory_usage_', '_memory_swap_usage_', '_processor_usage_', '__temperature_avg__', '_gpu#1_utilization_']
 icon-style=1
 include-static-gpu-info=false
 menu-centered=true
