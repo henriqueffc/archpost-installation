@@ -454,8 +454,11 @@ wcurl https://github.com/Elleo/pied/releases/download/v0.3.1/com.mikeasoft.pied.
 
 Instale o app `flatpak install com.mikeasoft.pied.flatpak`
 
-Para usar as vozes no mode de leitura do Firefox, altere em `about:config` o
-parâmetro `narrate.filter-voices` para `false`. Reinicie o Firefox.
+No Firefox, em `about:config`, defina `narrate.filter-voices` como `false` para
+usar as vozes do Piped no modo de leitura. Reinicie o navegador para aplicar a
+mudança.
+
+O ícone do app estará na pasta Utilitários no grid.
 
 ### 16 - Ordem do boot
 
