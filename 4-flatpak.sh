@@ -66,7 +66,6 @@ flatpak install flathub io.gitlab.adhami3310.Impression -y
 flatpak install flathub io.github.giantpinkrobots.varia -y
 flatpak install flathub io.github.chidiwilliams.Buzz -y
 flatpak install flathub com.saivert.pwvucontrol -y
-flatpak install flathub com.jeffser.Alpaca -y
 flatpak install flathub io.missioncenter.MissionCenter -y
 flatpak install flathub be.alexandervanhee.gradia -y
 
