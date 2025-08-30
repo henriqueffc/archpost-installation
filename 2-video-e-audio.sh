@@ -78,8 +78,8 @@ sudo systemctl enable --now systemd-resolved
 # O iwd foi instalado pelo script nº 1
 # configuração para o iwd ser o wi-fi backend no NetworkManager
 # https://wiki.archlinux.org/title/NetworkManager#Using_iwd_as_the_Wi-Fi_backend
-# Configuração para desabilitar o power-saving e o Roaming Scan no iwd
 sudo cp ./iwd/wifi_backend.conf /etc/NetworkManager/conf.d/
+# Configuração para desabilitar o Roaming Scan no iwd
 sudo cp ./iwd/main.conf /etc/iwd/
 
 # Reiniciando o NetworkManager para aplicar as mudanças do systemd-resolver e iwd
