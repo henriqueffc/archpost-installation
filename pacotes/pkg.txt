@@ -206,6 +206,7 @@ steam
 strace
 scrcpy
 solanum
+switcheroo-control
 tailspin
 tealdeer
 tesseract
