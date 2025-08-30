@@ -30,6 +30,12 @@ echo -e "$AZUL
 -------------------------------------------------------------------------
 $FIM"
 
+# Importanto a chave pública do Dropbox
+# Pode evitar erros durante a instalação do Dropbox
+curl -fsSL https://linux.dropbox.com/fedora/rpm-public-key.asc -o dropbox-key.asc
+gpg --import dropbox-key.asc
+rm dropbox-key.asc
+
 # Pacotes AUR
 yay -Y --gendb
 yay -Y --devel --save

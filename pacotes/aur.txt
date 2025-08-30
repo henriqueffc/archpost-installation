@@ -4,3 +4,4 @@ ttf-noto-emoji-monochrome
 cachyos-ananicy-rules-git
 oh-my-posh-bin
 gnome-shell-extension-alphabetical-grid-extension
+dropbox

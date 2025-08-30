@@ -427,8 +427,9 @@ configuradas para um determinado aplicativo flatpak estão localizadas em
 
 **Início no startup**
 
-Habilite a inicialização do Dropbox junto com o sistema. Use o app Ajustes e
-faça a configuração em Aplicativos de inicialização.
+Habilite a inicialização do Dropbox junto com o sistema. Habilite no aplicativo
+do Dropbox ou use o app Ajustes e faça a configuração em Aplicativos de
+inicialização.
 
 **Segundo plano**
 
