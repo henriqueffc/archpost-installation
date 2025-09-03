@@ -160,7 +160,6 @@ perl-image-exiftool
 7zip
 pacman-contrib
 pandoc-cli
-papers
 papirus-icon-theme
 pkgstats
 perl
@@ -193,7 +192,6 @@ sdl2_image
 sdl2_mixer
 sdl2_ttf
 shortwave
-showtime
 signal-desktop
 sndio
 seahorse
