@@ -128,6 +128,7 @@ libzip
 lm_sensors
 lrzip
 lshw
+lsof
 lua
 lurk
 lutris
