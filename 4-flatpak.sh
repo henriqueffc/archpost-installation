@@ -42,7 +42,6 @@ flatpak install flathub com.github.finefindus.eyedropper -y
 flatpak install flathub com.github.johnfactotum.Foliate -y
 flatpak install flathub fr.handbrake.ghb -y
 flatpak install flathub fr.handbrake.ghb.Plugin.IntelMediaSDK -y
-flatpak install flathub app.drey.Dialect -y
 flatpak install flathub org.cryptomator.Cryptomator -y
 flatpak install flathub info.febvre.Komikku -y
 flatpak install flathub app.drey.KeyRack -y
@@ -61,9 +60,6 @@ flatpak install flathub io.github.ronniedroid.concessio -y
 flatpak install flathub org.upscayl.Upscayl -y
 flatpak install flathub dev.geopjr.Collision -y
 flatpak install flathub nl.emphisia.icon -y
-flatpak install flathub io.gitlab.adhami3310.Impression -y
-flatpak install flathub io.github.giantpinkrobots.varia -y
-flatpak install flathub io.github.chidiwilliams.Buzz -y
 flatpak install flathub com.saivert.pwvucontrol -y
 flatpak install flathub io.missioncenter.MissionCenter -y
 flatpak install flathub be.alexandervanhee.gradia -y
