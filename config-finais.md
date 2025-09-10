@@ -567,7 +567,7 @@ Depois de concebido o arquivo, execute
 
 Use vinculado com o Ollama (instalado pelo script nº 3).
 
-`pipx install "shell-gpt[litellm]"`
+`uv tool install "shell-gpt[litellm]"`
 
 **Configuração**
 
