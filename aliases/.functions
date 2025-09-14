@@ -1,0 +1,51 @@
+# converter e comprimir imagens para os formatos jpg, png ou webp
+compress_image() {
+    if [ $# -lt 2 ]; then
+        echo "Uso: compress_image <arquivo> <formato: jpg|png|webp>. Ex.: compress_image foto.png jpg"
+        return 1
+    fi
+
+    local input="$1"
+    local format="$2"
+
+    if [ ! -f "$input" ]; then
+        echo "Erro: arquivo '$input' não encontrado."
+        return 1
+    fi
+
+    local base="${input%.*}"
+    local output="${base}-compress.${format}"
+
+    case "$format" in
+        jpg|jpeg)
+            magick "$input" -quality 95 "$output"
+            ;;
+        png)
+            magick "$input" -strip \
+                -define png:compression-filter=5 \
+                -define png:compression-level=9 \
+                -define png:compression-strategy=1 \
+                -define png:exclude-chunk=all \
+                "$output"
+            ;;
+        webp)
+            magick "$input" -quality 90 "$output"
+            ;;
+        *)
+            echo "Erro: formato inválido. Use 'jpg', 'png' ou 'webp'. Ex.: compress_image foto.png jpg"
+            return 1
+            ;;
+    esac
+
+    echo "Imagem comprimida gerada em: $output"
+}
+
+# Executar app flatpaks sem a necessidade de usar o nome completo
+flatrun() {
+    flatpak run "$(flatpak list --columns=application | grep -F -i "$1")" "${@:2}"
+}
+
+# Converter vídeo para compartilhar nas redes sociais
+convert_video() {
+ffmpeg -i $1 -c:v libx264 -crf 26 -profile:v main -preset slow -pix_fmt yuv420p -c:a aac -ar 44100 -ac 2 ${1%.*}-convert.mp4
+}

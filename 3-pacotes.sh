@@ -138,9 +138,10 @@ sudo mv ~/Downloads/*.ttf /usr/local/share/fonts
 sudo mv ~/Downloads/*.TTF /usr/local/share/fonts
 sudo fc-cache -fv
 
-# Alias
+# Alias, atalhos e functions
 cp ./aliases/.bash_aliases ~/
 cp ./aliases/.atalhos.md ~/
+cp ./aliases/.functions ~/
 
 # Modelos de arquivos para o Files
 touch $HOME/Modelos/novo.txt
@@ -166,6 +167,7 @@ mkdir -p $HOME/.local/bin
 # Variáveis
 cp ~/.bashrc ~/.bashrc.bak
 echo -e '\nsource ~/.bash_aliases' >>~/.bashrc
+echo -e '\nsource ~/.functions' >>~/.bashrc
 echo -e '\nif [ -d "$HOME/bin" ] ; then\nPATH="$HOME/bin:$PATH"\nfi' >>~/.bashrc
 echo -e '\nif [ -d "$HOME/.local/bin" ] ; then\nPATH="$HOME/.local/bin:$PATH"\nfi' >>~/.bashrc
 

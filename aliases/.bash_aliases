@@ -31,9 +31,6 @@ alias mirror="rankmirrors -t /etc/pacman.d/mirrorlist"
 alias turbo="sudo turbostat --quiet --interval 1 --cpu 0-7 --show 'PkgWatt','Busy%','Core','CoreTmp'"
 alias hist="history | fzf"
 alias nvidia="watch -n 0.5 nvidia-smi"
-function flatrun() {
-    flatpak run "$(flatpak list --columns=application | grep -F -i "$1")" "${@:2}"
-}
 alias sudo="run0 --background= "
 alias nano="micro"
 alias hist-pacotes="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
