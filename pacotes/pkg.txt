@@ -249,9 +249,6 @@ xdg-desktop-portal
 xdg-desktop-portal-gnome
 xdg-desktop-portal-gtk
 xdg-utils
-xorg-xdpyinfo
-xorg-xkill
-xorg-xwininfo
 xournalpp
 xterm
 yazi
