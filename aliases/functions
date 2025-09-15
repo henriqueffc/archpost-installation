@@ -49,3 +49,30 @@ flatrun() {
 convert_video() {
 ffmpeg -i $1 -c:v libx264 -crf 26 -profile:v main -preset slow -pix_fmt yuv420p -c:a aac -ar 44100 -ac 2 ${1%.*}-convert.mp4
 }
+
+# Cortar uma parte do vídeo
+corte_video() {
+    if [ $# -lt 3 ]; then
+        echo "Uso: corte_rapido <arquivo> <tempo_inicial> <duracao>"
+        echo "Exemplo: corte_rapido video.mp4 00:00:30 10"
+        return 1
+    fi
+
+    arquivo="$1"
+    inicio="$2"
+    duracao="$3"
+
+    # Nome base do arquivo (sem extensão)
+    nome_base="${arquivo%.*}"
+    extensao="${arquivo##*.}"
+
+    # Gera o nome de saída automaticamente
+    saida="${nome_base}_corte_${inicio//:/-}_dur${duracao}.${extensao}"
+
+    echo "Cortando \"$arquivo\"..."
+    echo "Início: $inicio | Duração: $duracao | Saída: $saida"
+
+    ffmpeg -ss "$inicio" -i "$arquivo" -t "$duracao" -c copy "$saida"
+
+    echo "Corte finalizado!"
+}
