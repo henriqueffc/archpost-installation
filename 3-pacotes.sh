@@ -139,9 +139,9 @@ sudo mv ~/Downloads/*.TTF /usr/local/share/fonts
 sudo fc-cache -fv
 
 # Alias, atalhos e functions
-cp ./aliases/.bash_aliases ~/
-cp ./aliases/.atalhos.md ~/
-cp ./aliases/.functions ~/
+cp ./aliases/bash_aliases ~/.bash_aliases
+cp ./aliases/atalhos.md ~/.atalhos.md
+cp ./aliases/functions ~/.functions
 
 # Modelos de arquivos para o Files
 touch $HOME/Modelos/novo.txt
