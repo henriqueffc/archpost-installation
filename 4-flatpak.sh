@@ -22,8 +22,6 @@ flatpak install flathub io.gitlab.adhami3310.Converter -y
 flatpak install flathub com.github.tchx84.Flatseal -y
 flatpak install flathub com.github.jeromerobert.pdfarranger -y
 flatpak install flathub org.nickvision.tubeconverter -y
-flatpak install flathub io.gitlab.adhami3310.Footage -y
-flatpak install flathub com.belmoussaoui.Obfuscate -y
 flatpak install flathub com.github.wwmm.easyeffects -y
 flatpak install flathub com.mattjakeman.ExtensionManager -y
 flatpak install flathub org.gtk.Gtk3theme.Adwaita-dark -y
