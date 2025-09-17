@@ -4,36 +4,31 @@ Digite `h` para visualizar a ajuda.
 
 # ZSH
 
-## copyfile
+## flatrun
 
-copia o conteúdo do arquivo para o clipboard. comando: `copyfile`
+executar apps flatpaks usando o nome curto. Ex. `flatrun fractal` Com esse alias
+não é preciso usar `flatpak run org.gnome.Fractal`
 
-## copybuffer
+## rga-fzf
 
-Copia o conteúdo da linha do terminal para o clipboard. Atalho: Crtl + O
+pesquisa por termos dentro dos arquivos no diretório
 
-## dirhistory
+### corte_video
 
-navegue pelo histórico de diretórios acessados.
+Cortar uma parte do vídeo. Uso:
+`corte_rapido <arquivo> <tempo_inicial> <duracao>`
+Exemplo:`corte_rapido video.mp4 00:00:30 10`
 
-| descrição                                                 | atalhos     |
-| --------------------------------------------------------- | ----------- |
-| Go to next directory                                      | Alt + Right |
-| Go to previous directory                                  | Alt + Left  |
-| Move into the first child directory by alphabetical order | Alt + Down  |
-| Move into the parent directory                            | Alt + Up    |
+### convert_video
 
-## web-search
+Converter vídeo para compartilhar nas redes sociais
+`convert_video nome_do_arquivo`
 
-comandos: `google texto_da_pesquisa` ou `web_search bing texto_da_pesquisa`
+### compress_image
 
-Abre o browser com a pesquisa do termo no site especificado. Lista com os
-mecanismos de busca:
-https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/web-search
-
-## copypath
-
-copia o pwd para o clipboard. comando: `copypath`
+converter e comprimir imagens para os formatos jpg, png ou webp
+`compress_image <arquivo> <formato: jpg|png|webp>` Ex.:
+`compress_image foto.png jpg`
 
 ## thefuck
 
@@ -153,8 +148,8 @@ extrair arquivos compactados. Ex.: `extract nome_do_arquivo.zip`
 | archwiki     | Pesquisa páginas da Wiki offline. Abre as páginas no browser. Ex.: `archwiki nvidia`                                                                                       |
 | atalhos      | mostra o texto do arquivo .atalhos.md                                                                                                                                      |
 | atualizar    | atualiza o pipx, atualliza os flatpaks e remove as dependências desnecessárias, mostra as notícias do archlinux.org, pacman -Syu e yay -Sua --devel                        |
-| bat          | configuração para o bat usar o tema Drácula                                                                                                                                |
 | boot         | apresenta informações sobre o tempo de inicialização do sistema e os timers em uso pelo systemd                                                                            |
+| cat          | executa o bat no lugar do cat                                                                                                                                              |
 | cpu-info     | mostra as informações da CPU (frequências...)                                                                                                                              |
 | dados        | informações sobre os pacotes do sistema (quantidade, tamanho do cache...)                                                                                                  |
 | dic-en       | corretor ortográfico para arquivos escritos em EN                                                                                                                          |
@@ -162,17 +157,16 @@ extrair arquivos compactados. Ex.: `extract nome_do_arquivo.zip`
 | dirty        | expõe as estatísticas da virtual memory. Uso para acompanhar a transferência de dados para um dispositivo externo, como um USB.                                            |
 | fail2ban     | informações do fail2ban (status, jail...)                                                                                                                                  |
 | fixpacman    | Resolver a falha ao sincronizar todas as bases de dados (não foi possível travar a base de dados) durante a atualização do sistema                                         |
-| flatrun      | executar apps flatpaks usando o nome curto. Ex. `flatrun fractal` Com esse alias não é preciso usar `flatpak run org.gnome.Fractal`                                        |
 | hist         | acessar o histórico dos comandos usados no terminal                                                                                                                        |
 | hist-pacotes | Visualizar pacotes instalados recentemente                                                                                                                                 |
 | instalar     | instala pacotes                                                                                                                                                            |
 | limpar       | limpa o cache em ~/.cache (apaga arquivos com data maior que um ano), limpa o cache do pacman (mantém uma versão anterior a atual dos pacotes) e exclui os pacotes órfãos. |
+| man          | executa o batman no lugar do man                                                                                                                                           |
 | mirror       | verifica qual o mirror mais veloz                                                                                                                                          |
 | mpvnovideo   | apenas reproduzir o áudio dos vídeos usando o mpv                                                                                                                          |
 | nano         | executa o micro no lugar do nano                                                                                                                                           |
 | neo          | fastfetch                                                                                                                                                                  |
 | nvidia       | acompanhar o uso da GPU                                                                                                                                                    |
-| omzsh        | atualiza o oh-my-zsh e os seus plugins                                                                                                                                     |
 | pacman.log   | exibe o log do pacman                                                                                                                                                      |
 | tb           | Pastebin (termbin.com) - `cat arquivo.txt \| tb`                                                                                                                           |
 | progress     | disponibiliza o progresso de algum comando. `cp origem destino \| progress`                                                                                                |
@@ -261,13 +255,6 @@ Para maiores detalhes, use `sgpt --help`
 | quando clicado em uma palavra selecionada no terminal, ele automaticamente a copia para a linha de comando                                                                                                                                     | Scroll do mouse                              |
 | volta a janela ao tamanho original                                                                                                                                                                                                             | Super + Seta para baixo                      |
 
-# BRILHO
-
-| Descrição         | Atalho            |
-| ----------------- | ----------------- |
-| Aumentar o Brilho | Crtl + para cima  |
-| Diminuir o Brilho | Crtl + para baixo |
-
 # fzf - exemplos
 
 `fd  --type f --hidden --exclude .git | fzf` Pesquisa com o fd. padrão para o
@@ -280,28 +267,30 @@ fzf configurado no /etc/environment. basta digitar fzf no promt.
 `rga-fzf argumento` Pesquisa pela string em vários formatos de arquivo na pasta
 e nas subpastas.
 
-# TERMINAL GNOME
+# TERMINAL
 
-| Descrição                                                                                                                                                        | Atalhos                   |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| Abre as opções para o comando e você poderá escolher qual deseja. Tab mostra as opções e outro tb no ZSH permite escolher na lista (ex.: escreva update tab+tab) | tab+tab                   |
-| apaga o digitado anterior ao atalho                                                                                                                              | Ctrl + U                  |
-| apaga tudo depois do cursor                                                                                                                                      | Ctrl + K                  |
-| busca comandos dados - pesquisa - zsh                                                                                                                            | Ctrl + R                  |
-| cancela a operação que está em execução                                                                                                                          | Ctrl + C                  |
-| clear                                                                                                                                                            | Ctrl + L                  |
-| cola no terminal                                                                                                                                                 | SHIFT+CTRL+V              |
-| copia no terminal                                                                                                                                                | SHIFT+CTRL+C              |
-| fecha a aba                                                                                                                                                      | Ctrl + Shift + W          |
-| ir para o começo da linha                                                                                                                                        | Ctrl + A                  |
-| ir para o fim da linha                                                                                                                                           | Ctrl + E                  |
-| navega entre as abas                                                                                                                                             | Crtl + PageUp ou PageDown |
-| nova aba                                                                                                                                                         | Ctrl + Shift + T          |
-| o mesmo que escrever exit para sair de uma sessão ou para fechar o terminal                                                                                      | Ctrl + D                  |
-| transfere o digitado para o editor de texto padrão                                                                                                               | Ctrl + X + E              |
-| undo                                                                                                                                                             | Ctrl + Y                  |
-| zoom in                                                                                                                                                          | CTRL + +                  |
-| zoom out                                                                                                                                                         | CTRL + -                  |
+| Descrição                                                                                                                    | Atalhos                   |
+| ---------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| Abre as opções para o comando e você poderá escolher qual deseja - zsh com o plugin zsh-completions (ex.: pacman -<Tab+Tab>) | tab+tab                   |
+| apaga o digitado anterior ao atalho                                                                                          | Ctrl + U                  |
+| apaga tudo depois do cursor                                                                                                  | Ctrl + K                  |
+| busca comandos dados - pesquisa - zsh                                                                                        | Ctrl + R                  |
+| cancela a operação que está em execução                                                                                      | Ctrl + C                  |
+| clear                                                                                                                        | Ctrl + L                  |
+| cola no terminal                                                                                                             | SHIFT+CTRL+V              |
+| copia no terminal                                                                                                            | SHIFT+CTRL+C              |
+| Edita o comando anterior no editor de texto e depois o executa                                                               | digite fc                 |
+| fecha a aba                                                                                                                  | Ctrl + Shift + W          |
+| ir para o começo da linha                                                                                                    | Ctrl + A                  |
+| ir para o fim da linha                                                                                                       | Ctrl + E                  |
+| navega entre as abas                                                                                                         | Crtl + PageUp ou PageDown |
+| Navegar entre os diretórios anteriormante abertos - zsh com grml-zsh-config                                                  | cd -<Tab>                 |
+| nova aba                                                                                                                     | Ctrl + Shift + T          |
+| novo painel horizontal (Ghostty)                                                                                             | Ctrl + Shift + E          |
+| novo painel vertical (Ghostty)                                                                                               | Ctrl + Shift + O          |
+| o mesmo que escrever exit para sair de uma sessão ou para fechar o terminal                                                  | Ctrl + D                  |
+| zoom in                                                                                                                      | CTRL + +                  |
+| zoom out                                                                                                                     | CTRL + -                  |
 
 # translate-shell
 
@@ -309,6 +298,16 @@ e nas subpastas.
 ex.:trans "Creeps in this petty pace from day to day"
 `trans :abreviação_do_idioma palavra_ou_"frase"` Traduz para um idioma
 específico. ex.: trans :it home
+
+# Micro Editor
+
+| Descrição | Atalho   |
+| --------- | -------- |
+| Cortar    | Ctrl + K |
+| Pesquisar | Ctrl + F |
+| Salvar    | Ctrl + S |
+| Sair      | Ctrl + Q |
+| Undo      | Ctrl + Z |
 
 # NANO
 
