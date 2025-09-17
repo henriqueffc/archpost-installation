@@ -284,7 +284,7 @@ e nas subpastas.
 | ir para o começo da linha                                                                                                    | Ctrl + A                  |
 | ir para o fim da linha                                                                                                       | Ctrl + E                  |
 | navega entre as abas                                                                                                         | Crtl + PageUp ou PageDown |
-| Navegar entre os diretórios anteriormante abertos - zsh com grml-zsh-config                                                  | cd -<Tab>                 |
+| Navegar entre os diretórios anteriormante abertos - zsh com grml-zsh-config                                                  | cd -<Tab+Tab>             |
 | nova aba                                                                                                                     | Ctrl + Shift + T          |
 | novo painel horizontal (Ghostty)                                                                                             | Ctrl + Shift + E          |
 | novo painel vertical (Ghostty)                                                                                               | Ctrl + Shift + O          |
