@@ -695,7 +695,6 @@ Configurações feitas em `about:config`
 | gfx.content.skia-font-cache-size                                                                                   | 20      |
 | gfx.webrender.all                                                                                                  | true    |
 | gfx.webrender.compositor                                                                                           | true    |
-| gfx.webrender.compositor.force-enabled                                                                             | true    |
 | gfx.webrender.precache-shaders                                                                                     | true    |
 | gfx.x11-egl.force-disabled                                                                                         | true    |
 | layout.css.prefers-color-scheme.content-override                                                                   | 0       |
