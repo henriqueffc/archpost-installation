@@ -1,7 +1,15 @@
+## Inclusão no PATH das pastas ~/bin, ~/.local/bin e /usr/local/bin
+if [ -d "$HOME/bin" ] ; then
+PATH="$HOME/bin:$PATH"
+fi
+
+if [ -d "$HOME/.local/bin" ] ; then
+PATH="$HOME/.local/bin:$PATH"
+fi
 ###
 ### Dracula Theme (for zsh-syntax-highlighting)
 #
-# https://github.com/zenorocha/dracula-theme
+# https://github.com/dracula/zsh-syntax-highlighting/
 #
 # Copyright 2021, All rights reserved
 #
@@ -91,3 +99,16 @@ ZSH_HIGHLIGHT_STYLES[default]='fg=#F8F8F2'
 ZSH_HIGHLIGHT_STYLES[cursor]='standout'
 ###
 ###
+source ~/.bash_aliases
+source ~/.functions
+export EDITOR='nano'
+export GPG_TTY=$TTY
+export npm_config_prefix="$HOME/.local"
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$PATH:$(go env GOBIN):$(go env GOPATH)/bin"
+export OLLAMA_API_BASE="http://127.0.0.1:11434"
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+eval "$(thefuck --alias)"
+eval "$(zoxide init --cmd cd zsh)"
+eval "$(mise activate zsh)"

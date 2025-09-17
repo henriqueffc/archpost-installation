@@ -21,7 +21,7 @@ Eu instalo o sistema em UEFI, com o secure boot desabilitado, com systemd-boot,
 sistema de arquivos EXT4, ZRAM, kernel stable e kernel lts (seleciono ambos
 durante a instalação via archinstall), pipewire, wireplumber, repositório
 multilib habilitado (ativado por intermédio do archinstall), Nvidia GPU com o
-driver Nvidia open kernel module (versão dkms), shell Zsh com Oh My Zsh e
+driver Nvidia open kernel module (versão dkms), shell Zsh com grml-zsh-config e
 oh-my-posh, Ghostty terminal, AUR helper Yay, Flatpak, Podman, Distrobox,
 Apparmor, firewalld, systemd-resolved, wireless-regdb (WIRELESS_REGDOM="BR"),
 iwd como wi-fi backend (NetworkManager), libvirt, Incus, mise, intel_pstate
@@ -56,7 +56,7 @@ Ordem de uso dos scripts:
 - 4-flatpak.sh
 - 5-yay.sh
 - 6-grid.sh
-- 7-zsh-ohmyzsh.sh
+- 7-zsh.sh
 - 8-podman-distrobox-incus.sh
 - 9-helix.sh
 - 10-zotero.sh
