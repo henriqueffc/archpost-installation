@@ -154,7 +154,6 @@ ntfs-3g
 nvme-cli
 obsidian
 ollama-cuda
-onnxruntime-cpu
 opencv-cuda
 openssh
 perl-image-exiftool
