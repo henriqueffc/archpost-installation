@@ -1,7 +1,8 @@
 font-family = "JetBrainsMonoNL Nerd Font"
 font-size = 14
 theme = Brogrammer
-adw-toolbar-style = flat
+gtk-toolbar-style = flat
+maximize
 window-height = 27
 window-width = 114
 window-theme = ghostty
