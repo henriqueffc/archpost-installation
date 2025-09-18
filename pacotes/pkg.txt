@@ -77,6 +77,7 @@ gnome-firmware
 gnome-appfolders-manager
 gnome-shell-extension-vitals
 gnome-tweaks
+go
 goverlay
 gvfs-afc
 gvfs-dnssd
@@ -150,6 +151,8 @@ ncdu
 nethogs
 nextcloud-client
 nmap
+nodejs
+npm
 ntfs-3g
 nvme-cli
 obsidian
@@ -184,6 +187,7 @@ ripgrep-all
 rsync
 rtaudio
 ruby
+rust
 rustscan
 sd
 sdl2-compat

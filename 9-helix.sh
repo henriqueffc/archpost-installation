@@ -9,12 +9,13 @@
 sudo pacman --needed -Syu - <./pacotes/helix.txt
 
 # Paths
-cp $HOME/.zshrc $HOME/.zshrc.bak1
-#echo 'export PATH="$HOME/.local/bin:$PATH"' >>$HOME/.zshrc ## configurado no script n.º 8
-echo 'export npm_config_prefix="$HOME/.local"' >>$HOME/.zshrc
-echo 'export PATH="$HOME/.cargo/bin:$PATH"' >>$HOME/.zshrc
-echo 'export PATH="$PATH:$(go env GOBIN):$(go env GOPATH)/bin"' >>$HOME/.zshrc
-source $HOME/.zshrc
+# configurados pelo script nº 7
+#cp $HOME/.zshrc.local $HOME/.zshrc.local.bak1
+#echo 'export PATH="$HOME/.local/bin:$PATH"' >>$HOME/.zshrc.local
+#echo 'export npm_config_prefix="$HOME/.local"' >>$HOME/.zshrc.local
+#echo 'export PATH="$HOME/.cargo/bin:$PATH"' >>$HOME/.zshrc.local
+#echo 'export PATH="$PATH:$(go env GOBIN):$(go env GOPATH)/bin"' >>$HOME/.zshrc.local
+#source $HOME/.zshrc.local
 
 # Systemd-lsp
 # https://github.com/JFryy/systemd-lsp
