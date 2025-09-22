@@ -20,6 +20,7 @@ ttf-nerd-fonts-symbols-mono
 unace
 unrar
 unzip
+usage
 wl-clipboard
 zoxide
 zsh-autosuggestions
