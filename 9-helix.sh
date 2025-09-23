@@ -5,6 +5,10 @@
 # AVISO: Execute o script por sua conta e risco.
 # License: MIT License
 
+# Cores dos avisos
+AZUL='\e[1;34m'
+FIM='\e[0m'
+
 # Instalação
 sudo pacman --needed -Syu - <./pacotes/helix.txt
 
@@ -26,3 +30,12 @@ chmod +x ~/.cargo/bin/systemd-lsp
 mkdir -p $HOME/.config/helix
 cp ./helix/config.toml ~/.config/helix/
 cp ./helix/languages.toml ~/.config/helix/
+
+# mise
+mkdir -p $HOME/.config/mise/
+cp ./mise/config.toml $HOME/.config/mise/
+if test -f "/home/$USER/.zshrc.local"; then
+    echo 'eval "$(mise activate zsh)"' >>~/.zshrc.local
+else
+    echo -e "$AZUL zsh e grml-zsh-config não estão instalados. Verifique a instalação do mise.$FIM"
+fi

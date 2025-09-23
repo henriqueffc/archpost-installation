@@ -141,7 +141,6 @@ man-pages
 man-pages-pt_br
 meld
 micro
-mise
 movit
 mpv
 nautilus-image-converter
@@ -232,7 +231,6 @@ unace
 unarchiver
 unrar
 unzip
-usage
 uv
 veracrypt
 virt-what

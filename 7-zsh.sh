@@ -43,7 +43,7 @@ else
 
 fi
 
-sudo pacman --needed -S - <./zsh/pacotes.txt
+sudo pacman --needed -S - <./pacotes/zsh.txt
 
 cp ./zsh/zshrc.local ~/.zshrc.local
 

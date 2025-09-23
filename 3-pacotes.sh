@@ -338,10 +338,6 @@ sudo apparmor_parser -r /etc/apparmor.d/firejail-default
 mkdir -p $HOME/.config/ghostty/
 cp ./ghostty/config $HOME/.config/ghostty/
 
-# mise
-mkdir -p $HOME/.config/mise/
-cp ./mise/config.toml $HOME/.config/mise/
-
 # Habilitando permanentemente os serviços mDNS e o samba-client no Firewalld
 sudo firewall-cmd --zone=public --add-service=mdns --permanent
 sudo firewall-cmd --zone=public --add-service=samba-client --permanent
