@@ -13,7 +13,7 @@ RED='\e[1;31m'
 LVERDE='\e[0;92m'
 FIM='\e[0m'
 
-# if ls -a "$HOME" | grep -oq .zshrc; then
+# Instalando o zsh
 if test -f "/home/$USER/.zshrc"; then
     echo -e "$AZUL Zsh está habilitado. Continuando a instalação. $FIM" && sleep 2
 else
@@ -43,16 +43,20 @@ else
 
 fi
 
+# instalando os pacotes necessários para o zsh, o grml-zsh-config e as funções
 sudo pacman --needed -S - <./pacotes/zsh.txt
 
+# copiando o arquivo de configuração do zsh requerido pelo grml-zsh-config
 cp ./zsh/zshrc.local ~/.zshrc.local
 
+# copiando o arquivo para as funções no zsh
 if test -f "/home/$USER/.functions"; then
     echo -e "$AZUL Arquivo .functions já está no diretório home. Continuando a instalação. $FIM"
 else
     cp ./aliases/functions ~/.functions
 fi
 
+# instalando o zsh-completions e configurando o alias para ele
 mkdir -p ~/.zsh_plugins
 git clone https://github.com/zsh-users/zsh-completions.git ~/.zsh_plugins/zsh-completions
 if test -f "/home/$USER/.zsh_plugins/zsh-completions/zsh-completions.plugin.zsh"; then
@@ -60,7 +64,7 @@ if test -f "/home/$USER/.zsh_plugins/zsh-completions/zsh-completions.plugin.zsh"
     echo 'fpath=(~/.zsh_plugins/zsh-completions/src $fpath)' >>~/.zshrc.local
 fi
 
-# oh-my-posh é instalado pelo script nº 5
+# habilitando o oh-my-posh. ele é instalado pelo script nº 5
 if command -v oh-my-posh >/dev/null; then
     echo 'eval "$(oh-my-posh init zsh --config /usr/share/oh-my-posh/themes/gruvbox.omp.json)"' >>~/.zshrc.local
 fi
