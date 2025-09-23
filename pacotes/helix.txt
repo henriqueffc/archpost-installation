@@ -13,7 +13,6 @@ curl
 deno
 eza
 fd
-fd
 ffmpeg
 fzf
 gawk
@@ -46,7 +45,6 @@ python-pip
 python-pipenv
 python-pipx
 resvg
-ripgrep
 ripgrep
 ripgrep-all
 rust
