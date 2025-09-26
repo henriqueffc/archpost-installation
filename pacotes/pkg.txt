@@ -93,7 +93,6 @@ gsmartcontrol
 gst-plugin-libcamera
 hexyl
 hwloc
-ibus-typing-booster
 imagemagick
 iptables-nft
 intel-ucode

@@ -260,8 +260,6 @@ gsettings set org.gnome.Weather locations "[<(uint32 2, <('Uberlândia', 'SBUL',
 # mudar para a próxima faixa - Shift + / teclado numérico
 # abrir navegador - Super + b
 # abrir o Files na home - Super + f
-# aumentar o brilho da tela usando o teclado - Crtl + Para cima
-# diminuir o brilho da tela usando o teclado - Crtl + Para baixo
 # abrir o configurações do GNOME - Super + c
 # abrir o cliente de email - Super + e
 # Atalhos de teclado para o Gradia (Ctrl + Print e Ctrl + Shift + Print)
