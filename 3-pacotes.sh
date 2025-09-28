@@ -193,13 +193,9 @@ gsettings set org.gnome.settings-daemon.plugins.power power-button-action intera
 # Nautilus
 gsettings set org.gnome.nautilus.icon-view captions "['size', 'detailed_type', 'none']"
 gsettings set org.gtk.gtk4.Settings.FileChooser sort-directories-first true
-gsettings set org.gnome.nautilus.preferences show-image-thumbnails "always"
 
 # File-chooser
 gsettings set org.gtk.Settings.FileChooser sort-directories-first true
-
-# Tecla de composição para caracteres especiais (Scroll Lock - https://en.wikipedia.org/wiki/Compose_key#Common_compose_combinations)
-gsettings set org.gnome.desktop.input-sources xkb-options "['terminate:ctrl_alt_bksp', 'lv3:ralt_switch', 'compose:sclk']"
 
 # Desabilitar as animações do Gnome
 gsettings set org.gnome.desktop.interface enable-animations false
@@ -225,9 +221,6 @@ gsettings set org.gnome.desktop.peripherals.touchpad click-method areas
 
 # Numlock
 gsettings set org.gnome.desktop.peripherals.keyboard numlock-state true
-
-# Desabilitar os provedores de  pesquisa externos no overview
-gsettings set org.gnome.desktop.search-providers disable-external true
 
 # Acessibilidade
 gsettings set org.gnome.desktop.a11y.magnifier mag-factor "1.25"
