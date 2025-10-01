@@ -23,7 +23,6 @@ flatpak install flathub com.github.tchx84.Flatseal -y
 flatpak install flathub com.github.jeromerobert.pdfarranger -y
 flatpak install flathub org.nickvision.tubeconverter -y
 flatpak install flathub com.github.wwmm.easyeffects -y
-flatpak install flathub com.mattjakeman.ExtensionManager -y
 flatpak install flathub org.gtk.Gtk3theme.Adwaita-dark -y
 flatpak install flathub org.gtk.Gtk3theme.adw-gtk3 -y
 flatpak install flathub org.gtk.Gtk3theme.adw-gtk3-dark -y
