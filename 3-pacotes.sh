@@ -349,6 +349,10 @@ imgdisplay iterm2
 
 EOF
 
+# habilitando o terminal Ghostty para iniciar junto com o sistema
+# https://ghostty.org/docs/linux/systemd
+systemctl enable --user app-com.mitchellh.ghostty.service
+
 # Habilitando o profile throughput-performance no Tuned
 tuned-adm profile throughput-performance
 
