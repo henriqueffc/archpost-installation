@@ -76,6 +76,7 @@ gnome-browser-connector
 gnome-epub-thumbnailer
 gnome-firmware
 gnome-appfolders-manager
+gnome-shell-extensions
 gnome-shell-extension-vitals
 gnome-tweaks
 go
