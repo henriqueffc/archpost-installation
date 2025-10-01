@@ -57,12 +57,14 @@ kdenlive, etc.) escolha o tema breeze dark ou escuro.
 
 **Extensões**
 
-Uso as extensões Vitals, Alphabetical App Grid e
-AppIndicator/KStatusNotifierItem habilitadas.
+Uso as extensões [Vitals](https://extensions.gnome.org/extension/1460/vitals/),
+[Alphabetical App Grid](https://extensions.gnome.org/extension/4269/alphabetical-app-grid/),
+[AppIndicator/KStatusNotifierItem habilitadas](https://extensions.gnome.org/extension/615/appindicator-support/),
+[DeskChanger](https://extensions.gnome.org/extension/1131/desk-changer/) e
+[Overview Background](https://extensions.gnome.org/extension/5856/overview-background/).
 
-Para acessar as configurações das extensões use o
-[Gerenciador de extensões](https://flathub.org/pt-BR/apps/com.mattjakeman.ExtensionManager)
-(instalado pelo script n.° 4).
+Para acessar as configurações das extensões use o programa Extensões que é
+instalado com o GNOME.
 
 A extensão AppIndicator/KStatusNotifierItem foi intalada usando o repositório
 oficial (instalada pelo script n.° 2 e habilitada pelo script n.° 3).
@@ -72,6 +74,15 @@ foi configurada e habilitada pelo script nº 6.
 
 A extensão Alphabetical App Grid foi instalada usando o AUR (script nº 5). A
 configuração para essa extensão foi feita pelo script nº 6.
+
+As extensões DeskChanger e Overview Background foram instaladas pela página
+[https://extensions.gnome.org/](https://extensions.gnome.org/). O pacote
+necessário para essa funcionalidade
+([gnome-browser-connector](https://archlinux.org/packages/extra/any/gnome-browser-connector/))
+foi instalado pelo script nº 3. Para instalar as extensões pelo navegador é
+preciso habilitar a extensão "Integração com o Gnome Shell"
+([Firefox](https://addons.mozilla.org/firefox/addon/gnome-shell-integration/) /
+[Chromium](https://chromewebstore.google.com/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep)).
 
 ### 2 - SSH
 
@@ -629,33 +640,49 @@ foi configurado adequadamente. Veja mais informações em
 
 ### 23 - easyeffects
 
-Configuração do EasyEffects para aplicar a equalização paramétrica para o
-Headset HyperX Cloud Stinger.
+Configuração do EasyEffects para aplicar os presets para o headset
+([Easyeffect-Presets](https://github.com/Digitalone1/EasyEffects-Presets)) e
+para o earbuds bluetooth
+([AAAAAAAaaaaa](https://github.com/servimo/AAAAAAAaaaaa)).
 
-Nas preferências do aplicativo habilite a opção "Iniciar o Serviço na
-Inicialização do Sistema"
+Inicialize o EasyEffects e nas preferências do aplicativo habilite a opção
+"Iniciar o Serviço na Inicialização do Sistema" e desmarque a opção "Desligar ao
+fechar a janela".
 
-Faça o download do arquivo
-[hyperx.json](https://github.com/henriqueffc/archpost-installation/blob/main/easyeffects/hyperx.json)
-que está no diretório `easyeffects` do repositório.
+Execute os comandos abaixo.
 
-Na aba "Saídas", clique em "Predefinições" e acesse a opção "Importe uma
-predefinição do armazenamento local".
+```
+wget -P ~/.var/app/com.github.wwmm.easyeffects/config/easyeffects/output https://raw.githubusercontent.com/servimo/AAAAAAAaaaaa/refs/heads/main/AAAAAAAaaaaa.json https://raw.githubusercontent.com/Digitalone1/EasyEffects-Presets/refs/heads/master/LoudnessCrystalEqualizer.json
+wget -P ~/.var/app/com.github.wwmm.easyeffects/config/easyeffects/irs 'https://github.com/servimo/AAAAAAAaaaaa/raw/refs/heads/main/Accudio%20((48kHz%20Z.E.))%20Earpods%20HIFI.irs'
+```
 
-Depois em "Predefinições" clique em "Carregar" na frente do nome da predefinição
-(hyperx).
+Outra opção para inserção dos arquivos no Easyeffects seria fazer o download dos
+arquivos no repositório do Github dos projetos e, na aba "Saídas", clicar em
+"Predefinições" e acessar a opção "Importe uma predefinição do armazenamento
+local".
 
-A predefinição habilita a equalização de áudio aplicando as definições
-disponíveis no repositório
-[AutoEq](https://github.com/jaakkopasanen/AutoEq/tree/master/results/Rtings/HMS%20II.3%20over-ear/HyperX%20Cloud%20Stinger)
+Depois do download dos presets, acesse "Predefinições" e clique na opção
+"Carregar" que está na frente do nome da predefinição correspondente ao
+dispositivo usado no momento (LoudnessCrystalEqualizer - headset /
+AAAAAAAaaaaa - earbuds).
 
 Selecione como dispositivo de saída de som nas configurações do GNOME o
-Headphones. Não selecione o
+headphone ou o earbuds. Não selecione o
 [Easy Effects Skin](https://github.com/wwmm/easyeffects?tab=readme-ov-file#warning).
 
-É possível usar a extensão do GNOME
+Para alterar o preset automaticamente ao escolher determinado dispositivo no
+sistema, selecione na aba "Pipewire" a opção "Carregamento Automático das
+Definições". Vincule a predefinição desejada a determinado dispositivo.
+
+É possível também usar a extensão do GNOME
 [EasyEffects Preset Selector](https://extensions.gnome.org/extension/4907/easyeffects-preset-selector/)
 para alternar rapidamente entre as predefinições do EasyEffects.
+
+O preset
+[Microphone Preset: Noise Reduction + NPR Masculine Voice](https://gist.github.com/jtrv/47542c8be6345951802eebcf9dc7da31)
+pode ser usado para cancelamento de ruído e para outras melhorias no áudio ao se
+usar o microfone. Essa predefinição deve ser alocada na aba "Entrada" ou no
+diretório `~/.var/app/com.github.wwmm.easyeffects/config/easyeffects/input`
 
 ### 24 - firefox
 
