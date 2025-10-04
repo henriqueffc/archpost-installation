@@ -29,7 +29,6 @@ flatpak install flathub org.gtk.Gtk3theme.adw-gtk3-dark -y
 flatpak install flathub com.github.huluti.Curtail -y
 flatpak install flathub io.github.nokse22.teleprompter -y
 flatpak install flathub com.github.PintaProject.Pinta -y
-flatpak install flathub com.github.dynobo.normcap -y
 flatpak install flathub it.mijorus.gearlever -y
 flatpak install flathub me.iepure.devtoolbox -y
 flatpak install flathub com.github.ADBeveridge.Raider -y
@@ -54,7 +53,7 @@ flatpak install flathub com.obsproject.Studio -y
 flatpak install flathub com.obsproject.Studio.Plugin.Gstreamer -y
 flatpak install flathub com.obsproject.Studio.Plugin.GStreamerVaapi -y
 flatpak install flathub io.github.ronniedroid.concessio -y
-flatpak install flathub org.upscayl.Upscayl -y
+flatpak install flathub io.gitlab.theevilskeleton.Upscaler -y
 flatpak install flathub dev.geopjr.Collision -y
 flatpak install flathub nl.emphisia.icon -y
 flatpak install flathub com.saivert.pwvucontrol -y

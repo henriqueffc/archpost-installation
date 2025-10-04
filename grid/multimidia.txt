@@ -1,3 +1,3 @@
 [/]
-apps=['audacity.desktop', 'com.github.huluti.Curtail.desktop', 'com.github.wwmm.easyeffects.desktop', 'fr.handbrake.ghb.desktop', 'org.kde.kdenlive.desktop', 'mpv.desktop', 'com.obsproject.Studio.desktop', 'org.nickvision.tubeconverter.desktop', 'com.github.PintaProject.Pinta.desktop', 'org.gimp.GIMP.desktop', 'com.saivert.pwvucontrol.desktop', 'io.gitlab.adhami3310.Converter.desktop', 'org.upscayl.Upscayl.desktop']
+apps=['io.gitlab.theevilskeleton.Upscaler.desktop', 'audacity.desktop', 'com.github.huluti.Curtail.desktop', 'com.github.wwmm.easyeffects.desktop', 'ente.desktop', 'fr.handbrake.ghb.desktop', 'org.kde.kdenlive.desktop', 'mpv.desktop', 'com.obsproject.Studio.desktop', 'org.nickvision.tubeconverter.desktop', 'com.github.PintaProject.Pinta.desktop', 'org.gimp.GIMP.desktop', 'com.saivert.pwvucontrol.desktop', 'io.gitlab.adhami3310.Converter.desktop']
 name='Multimídia'
