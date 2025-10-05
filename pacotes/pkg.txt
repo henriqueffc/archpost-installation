@@ -96,7 +96,7 @@ gst-plugin-libcamera
 hexyl
 hwloc
 imagemagick
-iptables-nft
+iptables
 intel-ucode
 inxi
 innoextract
