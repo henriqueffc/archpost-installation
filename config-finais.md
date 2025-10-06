@@ -47,6 +47,8 @@
 [23 - easyeffects](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#23---easyeffects)
 |
 [24 - firefox](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#24---firefox)
+|
+[25 - igpu](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#25---igpu)
 
 ### 1 - Tema e extensões
 
@@ -251,25 +253,21 @@ modificados pela comunidade.
 
 Para usar o [ntsync](https://wiki.archlinux.org/title/Wine#xSync) com o
 Proton-GE (>=GE-Proton10-10) é preciso habilitar o módulo desse recurso no
-kernel (>=6.15.7-arch1-1).
+kernel (>=6.15.7-arch1-1). No Arch Linux não é preciso habilitar o módulo ntsync
+se você instala as versões presentes no repositório da distro do wine ou
+wine-staging. Esses pacotes habilitam o módulo ntsync por padrão no sistema a
+partir da versão 10.16-1.
 
-`sudo nano /etc/modules-load.d/ntsync.conf`
-
-```
-# Automaticaly load ntsync kernel module at every boot
-
-ntsync
-```
-
-Reinicie o sistema e verifique o funcionamento do módulo com os comandos
-`modinfo ntsync` e `ls /dev/ntsync`.
+Verifique o funcionamento do módulo com os comandos `modinfo ntsync` e
+`ls /dev/ntsync`.
 
 O ntsync é ativado por padrão, caso o módulo esteja carregado com o kernel. Não
 é mais necessário o parâmetro `PROTON_USE_NTSYNC=1` para habilitar o ntsync no
 jogo. Para verificar o funcionamento utilize o Goverlay para configurar a opção
-_Wine Sync_ no mangohud. Não é mais preciso utilizar o parâmetro
-`PROTON_USE_WOW64=1` para jogos mais antigos (32 bits) ao usar o ntsync com o
-Proton-GE. Esse parâmetro é habilitado por padrão.
+_Wine Sync_ no mangohud ou utilize o comando no terminal `lsof /dev/ntsync` ao
+executar um jogo. Não é mais preciso utilizar o parâmetro `PROTON_USE_WOW64=1`
+para jogos mais antigos (32 bits) ao usar o ntsync com o Proton-GE. Esse
+parâmetro é habilitado por padrão.
 
 **OpenGL + Nvidia**
 
@@ -752,3 +750,39 @@ Configurações feitas em `about:config`
 | widget.gtk.non-native-titlebar-buttons.enabled                                                                     | true    |
 | widget.gtk.rounded-bottom-corners.enabled                                                                          | true    |
 | widget.use-xdg-desktop-portal.file-picker                                                                          | 1       |
+
+### 25 - igpu
+
+#### Intel Xe
+
+Para habilitar o driver Intel Xe no lugar do i915, faça as configurações
+recomendadas na página da Wiki
+[Intel graphics](https://wiki.archlinux.org/title/Intel_graphics#Testing_the_new_experimental_Xe_driver).
+Lembrando que é possível essa alteração para kernels acima do 6.17 (maior
+estabilidade do módulo Xe) e para iGPUs Intel Tiger Lake e gerações posteriores.
+
+No arquivo de configuração do boot do kernel do sistema que está no diretório
+`/boot/loader/entries/`, adicione as seguintes linhas abaixo. Perceba que o PCI
+ID do exemplo abaixo é 46a3.
+
+```
+i915.force_probe=!46a3 xe.force_probe=46a3 xe.enable_fbc=0 xe.enable_psr=0 xe.enable_dc=0
+```
+
+Os parâmetros `xe.enable*` substituem os parâmetros `i915.enable*` configurados
+pelo script nº 2.
+
+Caso deseje verificar as opções disponíveis para o módulo Intel Xe execute
+`sudo modinfo -p xe`.
+
+Verifique se os parâmetros repassados para o kernel foram habilitados no módulo
+com o comando `sudo systool -m xe -av`.
+
+Para habilitar o `dev.xe.observation_paranoid` (equivalente ao
+`dev.i915.perf_stream_paranoid` configurado pelo script nº 3), substitua o
+conteúdo do arquivo `/etc/sysctl.d/99-intelparanoid.conf` por
+`dev.xe.observation_paranoid = 0`. Esse parâmetro é acionado quando a CPU está
+em modo **performance**. Para verificar o funcionamento, utilize os seguintes
+comandos. `sysctl -n dev.xe.observation_paranoid` (tem que retornar o valor 0) e
+`vulkaninfo | grep performance` (apresenta algumas extensões caso o parâmetro
+esteja habilitado).
