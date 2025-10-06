@@ -28,7 +28,10 @@ cp /etc/pacman.conf /etc/pacman.conf.bak
 sed -i '/#UseSyslog/c\UseSyslog' /etc/pacman.conf
 sed -i 's/#Color/\Color/' /etc/pacman.conf
 sed -i 's/#VerbosePkgLists/\VerbosePkgLists/' /etc/pacman.conf
-#sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf (habilito na instalação do sistema pelo archinstall)
+if [ ! -f /var/lib/pacman/sync/multilib.db ]; then
+    sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
+    pacman -Sy
+fi
 
 # Environment
 mkdir -p /etc/environment.d/
