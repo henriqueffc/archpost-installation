@@ -60,12 +60,15 @@ cp ./sysctl/99-sysctl.conf /etc/sysctl.d/
 cp ./udev/*.rules /etc/udev/rules.d/
 ln -s /dev/null /etc/udev/rules.d/61-gdm.rules
 
-# Makeflags e compress
+# Makeflags
 cp /etc/makepkg.conf /etc/makepkg.conf.bak
 nv=$(nproc --ignore=2)
 sed -i "s/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j$nv\"/g" /etc/makepkg.conf
 sed -i 's/-march=x86-64 -mtune=generic/-march=native/g' /etc/makepkg.conf
-sed -i 's/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -z --threads=0 -)/g' /etc/makepkg.conf
+
+# RUSTFLAGS
+cp /etc/makepkg.conf.d/rust.conf /etc/makepkg.conf.d/rust.conf.bak
+sed -i 's/-C force-frame-pointers=yes/-C force-frame-pointers=yes -C target-cpu=native/g' /etc/makepkg.conf.d/rust.conf
 
 # HOOKS / mkinitcpio.conf
 cp /etc/mkinitcpio.conf /etc/mkinitcpio.conf.bak
