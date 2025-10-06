@@ -263,11 +263,11 @@ Verifique o funcionamento do módulo com os comandos `modinfo ntsync` e
 
 O ntsync é ativado por padrão, caso o módulo esteja carregado com o kernel. Não
 é mais necessário o parâmetro `PROTON_USE_NTSYNC=1` para habilitar o ntsync no
-jogo. Para verificar o funcionamento utilize o Goverlay para configurar a opção
-_Wine Sync_ no mangohud ou utilize o comando no terminal `lsof /dev/ntsync` ao
-executar um jogo. Não é mais preciso utilizar o parâmetro `PROTON_USE_WOW64=1`
-para jogos mais antigos (32 bits) ao usar o ntsync com o Proton-GE. Esse
-parâmetro é habilitado por padrão.
+jogo, caso use o Proton-GE. Para verificar o funcionamento utilize o Goverlay
+para configurar a opção _Wine Sync_ no mangohud ou utilize o comando no terminal
+`lsof /dev/ntsync` ao executar um jogo. Não é mais preciso utilizar o parâmetro
+`PROTON_USE_WOW64=1` para jogos mais antigos (32 bits) ao usar o ntsync com o
+Proton-GE. Esse parâmetro é habilitado por padrão.
 
 **OpenGL + Nvidia**
 
