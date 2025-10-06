@@ -143,6 +143,13 @@ cp ./aliases/functions ~/.functions
 
 # Modelos de arquivos para o Files
 touch $HOME/Modelos/novo.txt
+touch $HOME/Modelos/novo.md
+echo '# t1' >>$HOME/Modelos/novo.md
+touch $HOME/Modelos/novo
+touch $HOME/Modelos/script.sh
+echo '#!/usr/bin/env bash' >>$HOME/Modelos/script.sh
+touch $HOME/Modelos/novo.odt
+echo 'texto' >>$HOME/Modelos/novo.odt
 
 # Desabilitar o coredump
 sudo mkdir /etc/systemd/coredump.conf.d/
