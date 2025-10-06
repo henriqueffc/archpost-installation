@@ -101,7 +101,7 @@ ZSH_HIGHLIGHT_STYLES[cursor]='standout'
 ###
 source ~/.bash_aliases
 source ~/.functions
-export EDITOR='nano'
+export EDITOR='micro'
 export GPG_TTY=$TTY
 export npm_config_prefix="$HOME/.local"
 export PATH="$HOME/.cargo/bin:$PATH"

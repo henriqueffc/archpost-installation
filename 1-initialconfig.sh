@@ -14,13 +14,15 @@ cp /etc/hosts /etc/hosts.bak
 line=$(cat /etc/hostname)
 echo -e "127.0.1.1\t$line.localdomain\t$line" >>/etc/hosts
 
+# Micro, nano, vim, Linux-firmware, wireless-regdb, iwd e headers para o kernel stable e lts
+pacman -Syu micro nano vim linux-firmware linux-firmware-whence linux linux-headers linux-lts linux-lts-headers iwd wireless-regdb --needed --noconfirm
+
 # Visudo
 cp /etc/sudoers /etc/sudoers.bak
 sed -i '/# %wheel ALL=(ALL:ALL) ALL/c\%wheel ALL=(ALL:ALL) ALL' /etc/sudoers
-echo -e "# Defaults specification\nDefaults editor=/usr/bin/micro" >>/etc/sudoers
 echo -e "# Enable insults\nDefaults insults" >>/etc/sudoers
-
-# Caso queira o vim ao invés do nano, comente (#) a linha acima e descomente a linha abaixo.
+echo -e "# Defaults specification\nDefaults editor=/usr/bin/micro" >>/etc/sudoers
+# Caso queira o vim ao invés do micro, comente (#) a linha acima e descomente a linha abaixo.
 # echo 'Defaults editor=/usr/bin/vim' >>/etc/sudoers
 
 # Pacman.conf
@@ -39,20 +41,6 @@ mv ./environment/90-environment.conf /etc/environment.d/
 
 # PC speaker - turn off beep shutdown
 echo -e 'blacklist pcspkr' >/etc/modprobe.d/blacklist.conf
-
-# Micro, Linux-firmware, wireless-regdb, iwd e headers para o kernel stable e lts
-pacman -Syu micro linux-firmware linux-firmware-whence linux-headers linux-lts-headers iwd wireless-regdb --needed --noconfirm
-
-# NANO - Line number e syntax-highlighting
-pacman -S nano --needed --noconfirm
-cp /etc/nanorc /etc/nanorc.bak
-sed -i 's/# set linenumbers/\set linenumbers/' /etc/nanorc
-sed -i 's/# set mouse/\set mouse/' /etc/nanorc
-sed -i 's/# set minibar/\set minibar/' /etc/nanorc
-sed -i 's/# set indicator/\set indicator/' /etc/nanorc
-sed -i 's/# set speller "aspell -x -c"/\set speller "aspell -x -c"/' /etc/nanorc
-linenumber=$(cat /etc/nanorc | grep -n '*.nanorc' | gawk '{print $1}' FS=":")
-sed -i "${linenumber}s/..//" /etc/nanorc
 
 # Configurações para o kernel
 cp ./sysctl/99-sysctl.conf /etc/sysctl.d/
