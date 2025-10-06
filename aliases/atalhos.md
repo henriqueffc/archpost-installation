@@ -104,6 +104,7 @@ extrair arquivos compactados. Ex.: `extract nome_do_arquivo.zip`
 | glow                                  | visualizador de markdown (`glow -p`)                                               |
 | hexyl                                 | colored command-line hex viewer. similar ao hexdump                                |
 | inxi (inxi -Fv8)                      | informações sobre o sistema                                                        |
+| isd                                   | systemd TUI                                                                        |
 | kmon                                  | Linux Kernel Manager and Activity Monitor                                          |
 | lnav                                  | Log file navigator                                                                 |
 | lshw                                  | informações sobre o hardware                                                       |
@@ -124,7 +125,6 @@ extrair arquivos compactados. Ex.: `extract nome_do_arquivo.zip`
 | rustscan                              | a modern port scanner (alias scanports)                                            |
 | silicon                               | render your source code into a beautiful image (`silicon main.rs -o main.png`)     |
 | sd                                    | similar ao sed                                                                     |
-| systemctl-tui                         | A fast, simple TUI for interacting with systemd services and their logs            |
 | tailspin (tspin)                      | a log file highlighte                                                              |
 | tcpdump                               | para analizar os pacotes de rede em uma porta específica                           |
 | tldr                                  | apresenta informações sobre diversos comandos no terminal                          |
