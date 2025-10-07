@@ -59,6 +59,7 @@ flatpak install flathub nl.emphisia.icon -y
 flatpak install flathub com.saivert.pwvucontrol -y
 flatpak install flathub io.missioncenter.MissionCenter -y
 flatpak install flathub be.alexandervanhee.gradia -y
+flatpak install flathub io.github.mrvladus.List -y
 
 # Flathub Remote-Beta
 echo -e "$AZUL Adicionando o remote flathub-beta $FIM"
