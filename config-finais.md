@@ -204,10 +204,12 @@ Configurar o remote no rclone e fazer o scprit de sincronização.
 ### 9 - Conservation mode - Lenovo Loq 15IRH8
 
 Modo de conservação da bateria. Se for habilitado manterá a carga máxima da
-bateria em 80%. Verifique se o módulo do kernel ideapad_laptop está carregado
-com o comando `lsmod | grep ideapad`. Se não estiver os comandos indicados a
-seguir não irão funcionar. Apure o valor presente no sistema com o seguinte
-comando:
+bateria em 80%. No painel de configuração do GNOME, na opção "Energia", em
+"Carregamento da bateria", é possível habilitar o modo de conservação da
+bateria. Para fazer isso manualmente, verifique se o módulo do kernel
+`ideapad_laptop` está carregado com o comando `lsmod | grep ideapad`. Se o
+módulo não estiver carregado, os comandos indicados a seguir não funcionarão.
+Apure o valor presente no sistema com o seguinte comando:
 
 `cat /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode`
 
