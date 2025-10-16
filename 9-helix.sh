@@ -21,11 +21,6 @@ sudo pacman --needed -Syu - <./pacotes/helix.txt
 #echo 'export PATH="$PATH:$(go env GOBIN):$(go env GOPATH)/bin"' >>$HOME/.zshrc.local
 #source $HOME/.zshrc.local
 
-# Systemd-lsp
-# https://github.com/JFryy/systemd-lsp
-wget -O ~/.cargo/bin/systemd-lsp -c "https://github.com/JFryy/systemd-lsp/releases/download/v2025.07.14/systemd-lsp-x86_64-unknown-linux-gnu"
-chmod +x ~/.cargo/bin/systemd-lsp
-
 # Arquivos de configuração
 mkdir -p $HOME/.config/helix
 cp ./helix/config.toml ~/.config/helix/
@@ -39,3 +34,8 @@ if test -f "/home/$USER/.zshrc.local"; then
 else
     echo -e "$AZUL zsh e grml-zsh-config não estão instalados. Verifique a instalação do mise.$FIM"
 fi
+
+# Systemd-lsp
+# https://github.com/JFryy/systemd-lsp
+# Instalado pelo script nº 5 - pacote AUR
+yay -S systemd-lsp --needed
