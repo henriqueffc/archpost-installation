@@ -4,5 +4,6 @@ gpu-screen-recorder
 ttf-noto-emoji-monochrome
 cachyos-ananicy-rules-git
 oh-my-posh-bin
+gnome-shell-extension-auto-accent-color
 gnome-shell-extension-alphabetical-grid-extension
 dropbox

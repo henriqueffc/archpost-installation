@@ -62,7 +62,9 @@ kdenlive, etc.) escolha o tema breeze dark ou escuro.
 Uso as extensões [Vitals](https://extensions.gnome.org/extension/1460/vitals/),
 [Alphabetical App Grid](https://extensions.gnome.org/extension/4269/alphabetical-app-grid/),
 [AppIndicator/KStatusNotifierItem habilitadas](https://extensions.gnome.org/extension/615/appindicator-support/),
-[DeskChanger](https://extensions.gnome.org/extension/1131/desk-changer/) e
+[DeskChanger](https://extensions.gnome.org/extension/1131/desk-changer/),
+[Auto Accent Colour](https://extensions.gnome.org/extension/7502/auto-accent-colour/)
+e
 [Overview Background](https://extensions.gnome.org/extension/5856/overview-background/).
 
 Para acessar as configurações das extensões use o programa Extensões que é
@@ -76,6 +78,9 @@ foi configurada e habilitada pelo script nº 6.
 
 A extensão Alphabetical App Grid foi instalada usando o AUR (script nº 5). A
 configuração para essa extensão foi feita pelo script nº 6.
+
+A extensão Auto Accent Colour foi instalada usando o AUR (pelo script nº 5) e
+habilitada pelo script nº 6.
 
 As extensões DeskChanger e Overview Background foram instaladas pela página
 [https://extensions.gnome.org/](https://extensions.gnome.org/). O pacote
