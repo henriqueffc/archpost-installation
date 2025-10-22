@@ -79,8 +79,7 @@ extrair arquivos compactados. Ex.: `extract nome_do_arquivo.zip`
 
 | comando                               | descrição                                                                          |
 | ------------------------------------- | ---------------------------------------------------------------------------------- |
-| arch-audit                            | A utility like pkg-audit for Arch Linux                                            |
-| arch-audit                            | mostra os pacotes com possíveis problemas de segurança                             |
+| arch-audit                            | mostra os pacotes com possíveis riscos de segurança no sistema                     |
 | aria2c                                | similar ao curl/wget                                                               |
 | bandwhich                             | similar ao nethogs (alias rede)                                                    |
 | bat                                   | similar ao cat                                                                     |
