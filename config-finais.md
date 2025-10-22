@@ -629,24 +629,16 @@ A instalação do
 [systemd-resolved](https://wiki.archlinux.org/title/Systemd-resolved) e a
 configuração para o NetworkManager foi feita no script nº 2.
 
-Utilizo pelo systemd-resolved o dns da Quad9 com o DNS over TLS habilitado e o
-DNSSEC desabilitado. Desabilite o DNS over HTTPS nos navegadores web.
+Utilizo pelo systemd-resolved o dns da Cloudflare com o DNS over TLS habilitado
+e o DNSSEC desabilitado. Desabilite o DNS over HTTPS nos navegadores web.
 
 Verifique o funcionamento do systemd-resolved e se a configuração do dns foi
 aplicada.
 
 `resolvectl status`
 
-Teste se o dns da Quad9 está funcionando adequadamente.
-
-`sudo pacman -S bind --needed`
-
-`dig +short txt proto.on.quad9.net`
-
-Se a resposta for `dot.`, _está funcionando_! Se a resposta for `do53-udp.`,
-ainda está usando plaintext. Se não houver resposta, significa que o Quad9 não
-foi configurado adequadamente. Veja mais informações em
-[quad9](https://docs.quad9.net/)
+Verificar se DoT está funcionando
+`resolvectl query --type=TXT whoami.ds.akahelp.net`
 
 ### 23 - easyeffects
 
@@ -701,67 +693,67 @@ Uso o tema
 
 Configurações feitas em `about:config`
 
-| Configuração                                                                                                       | Valor   |
-| ------------------------------------------------------------------------------------------------------------------ | ------- |
-| browser.cache.disk.enable                                                                                          | false   |
-| browser.cache.memory.capacity (131072 = 128 MB)                                                                    | 131072  |
-| browser.cache.memory.max_entry_size (20480 = 20 MB)                                                                | 20480   |
-| browser.cache.memory.enable                                                                                        | true    |
-| browser.display.document_color_use                                                                                 | 0       |
-| browser.ml.chat.enabled                                                                                            | true    |
-| browser.ml.linkPreview.enabled                                                                                     | true    |
-| browser.profiles.enabled                                                                                           | true    |
-| browser.theme.native-theme (para o gnome, teste o valor false, mas não precisa com o tema Gnome Adwaita GTK4 Dark) | false   |
-| browser.newtabpage.activity-stream.newtabWallpapers.enabled                                                        | true    |
-| browser.newtabpage.activity-stream.showWeather                                                                     | true    |
-| browser.newtabpage.activity-stream.system.showWeather                                                              | true    |
-| browser.sessionstore.interval                                                                                      | 60000   |
-| browser.tabs.groups.enabled                                                                                        | true    |
-| browser.toolbars.bookmarks.visibility                                                                              | always  |
-| browser.urlbar.scotchBonnet.enableOverride                                                                         | true    |
-| dom.enable_web_task_scheduling                                                                                     | true    |
-| dom.ipc.forkserver.enable                                                                                          | true    |
-| dom.security.https_only_mode                                                                                       | true    |
-| extensions.pocket.enabled                                                                                          | false   |
-| general.smoothScroll                                                                                               | true    |
-| general.smoothScroll.msdPhysics.enabled                                                                            | true    |
-| gfx.canvas.remote                                                                                                  | true    |
-| gfx.canvas.accelerated.cache-size                                                                                  | 512     |
-| image.jxl.enabled (nightly)                                                                                        | true    |
-| dom.webgpu.enabled (nightly)                                                                                       | true    |
-| gfx.content.skia-font-cache-size                                                                                   | 20      |
-| gfx.webrender.all                                                                                                  | true    |
-| gfx.webrender.compositor                                                                                           | true    |
-| gfx.webrender.precache-shaders                                                                                     | true    |
-| gfx.x11-egl.force-disabled                                                                                         | true    |
-| layout.css.prefers-color-scheme.content-override                                                                   | 0       |
-| layout.css.grid-template-masonry-value.enabled                                                                     | true    |
-| layout.frame_rate                                                                                                  | 60      |
-| javascript.options.wasm_branch_hinting                                                                             | true    |
-| javascript.options.wasm_relaxed_simd                                                                               | true    |
-| media.av1.enabled                                                                                                  | true    |
-| media.eme.enabled                                                                                                  | true    |
-| media.gmp.decoder.multithreaded                                                                                    | true    |
-| media.gpu-process-decoder                                                                                          | true    |
-| media.peerconnection.video.vp9_preferred                                                                           | false   |
-| media.webrtc.camera.allow-pipewire                                                                                 | true    |
-| mousewheel.default.delta_multiplier_x                                                                              | 70      |
-| mousewheel.default.delta_multiplier_y                                                                              | 70      |
-| mousewheel.default.delta_multiplier_z                                                                              | 70      |
-| mousewheel.min_line_scroll_amount                                                                                  | 3       |
-| network.dns.disableIPv6 (o provedor não suporta ipv6)                                                              | true    |
-| network.dns.disablePrefetch                                                                                        | true    |
-| network.http.max-connections                                                                                       | 1200    |
-| network.http.max-persistent-connections-per-server                                                                 | 10      |
-| network.prefetch-next                                                                                              | false   |
-| network.trr.mode //habilito o DNS over TLS, DNSSEC e o uso da Quad9 como resolvedor de DNS no systemd-resolved     | 5       |
-| reader.color_scheme                                                                                                | dark    |
-| reader.text_alignment                                                                                              | justify |
-| sidebar.revamp                                                                                                     | true    |
-| sidebar.verticalTabs                                                                                               | true    |
-| widget.gtk.non-native-titlebar-buttons.enabled                                                                     | true    |
-| widget.gtk.rounded-bottom-corners.enabled                                                                          | true    |
-| widget.use-xdg-desktop-portal.file-picker                                                                          | 1       |
+| Configuração                                                                                                        | Valor   |
+| ------------------------------------------------------------------------------------------------------------------- | ------- |
+| browser.cache.disk.enable                                                                                           | false   |
+| browser.cache.memory.capacity (131072 = 128 MB)                                                                     | 131072  |
+| browser.cache.memory.max_entry_size (20480 = 20 MB)                                                                 | 20480   |
+| browser.cache.memory.enable                                                                                         | true    |
+| browser.display.document_color_use                                                                                  | 0       |
+| browser.ml.chat.enabled                                                                                             | true    |
+| browser.ml.linkPreview.enabled                                                                                      | true    |
+| browser.profiles.enabled                                                                                            | true    |
+| browser.theme.native-theme (para o gnome, teste o valor false, mas não precisa com o tema Gnome Adwaita GTK4 Dark)  | false   |
+| browser.newtabpage.activity-stream.newtabWallpapers.enabled                                                         | true    |
+| browser.newtabpage.activity-stream.showWeather                                                                      | true    |
+| browser.newtabpage.activity-stream.system.showWeather                                                               | true    |
+| browser.sessionstore.interval                                                                                       | 60000   |
+| browser.tabs.groups.enabled                                                                                         | true    |
+| browser.toolbars.bookmarks.visibility                                                                               | always  |
+| browser.urlbar.scotchBonnet.enableOverride                                                                          | true    |
+| dom.enable_web_task_scheduling                                                                                      | true    |
+| dom.ipc.forkserver.enable                                                                                           | true    |
+| dom.security.https_only_mode                                                                                        | true    |
+| extensions.pocket.enabled                                                                                           | false   |
+| general.smoothScroll                                                                                                | true    |
+| general.smoothScroll.msdPhysics.enabled                                                                             | true    |
+| gfx.canvas.remote                                                                                                   | true    |
+| gfx.canvas.accelerated.cache-size                                                                                   | 512     |
+| image.jxl.enabled (nightly)                                                                                         | true    |
+| dom.webgpu.enabled (nightly)                                                                                        | true    |
+| gfx.content.skia-font-cache-size                                                                                    | 20      |
+| gfx.webrender.all                                                                                                   | true    |
+| gfx.webrender.compositor                                                                                            | true    |
+| gfx.webrender.precache-shaders                                                                                      | true    |
+| gfx.x11-egl.force-disabled                                                                                          | true    |
+| layout.css.prefers-color-scheme.content-override                                                                    | 0       |
+| layout.css.grid-template-masonry-value.enabled                                                                      | true    |
+| layout.frame_rate                                                                                                   | 60      |
+| javascript.options.wasm_branch_hinting                                                                              | true    |
+| javascript.options.wasm_relaxed_simd                                                                                | true    |
+| media.av1.enabled                                                                                                   | true    |
+| media.eme.enabled                                                                                                   | true    |
+| media.gmp.decoder.multithreaded                                                                                     | true    |
+| media.gpu-process-decoder                                                                                           | true    |
+| media.peerconnection.video.vp9_preferred                                                                            | false   |
+| media.webrtc.camera.allow-pipewire                                                                                  | true    |
+| mousewheel.default.delta_multiplier_x                                                                               | 70      |
+| mousewheel.default.delta_multiplier_y                                                                               | 70      |
+| mousewheel.default.delta_multiplier_z                                                                               | 70      |
+| mousewheel.min_line_scroll_amount                                                                                   | 3       |
+| network.dns.disableIPv6 (o provedor não suporta ipv6)                                                               | true    |
+| network.dns.disablePrefetch                                                                                         | true    |
+| network.http.max-connections                                                                                        | 1200    |
+| network.http.max-persistent-connections-per-server                                                                  | 10      |
+| network.prefetch-next                                                                                               | false   |
+| network.trr.mode //habilito o DNS over TLS, DNSSEC e o uso da Cloudflare como resolvedor de DNS no systemd-resolved | 5       |
+| reader.color_scheme                                                                                                 | dark    |
+| reader.text_alignment                                                                                               | justify |
+| sidebar.revamp                                                                                                      | true    |
+| sidebar.verticalTabs                                                                                                | true    |
+| widget.gtk.non-native-titlebar-buttons.enabled                                                                      | true    |
+| widget.gtk.rounded-bottom-corners.enabled                                                                           | true    |
+| widget.use-xdg-desktop-portal.file-picker                                                                           | 1       |
 
 ### 25 - igpu
 
