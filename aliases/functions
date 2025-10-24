@@ -233,3 +233,11 @@ function command_not_found_handler {
     fi
     return 127
 }
+
+#### Função histórico de comandos com o fzf ####
+hist() {
+  local cmd=$(cat ~/.zsh_history | cut -d';' -f2- | fzf)
+  if [[ -n $cmd ]]; then
+    print -z "$cmd"
+  fi
+}

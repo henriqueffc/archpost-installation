@@ -2,7 +2,7 @@
 
 Digite `h` para visualizar a ajuda.
 
-# ZSH
+# ZSH - funções (~/.functions)
 
 ## flatrun
 
@@ -61,6 +61,10 @@ interação) Atalho: esc + esc (seleciona a primeira opção)
 ## extract
 
 extrair arquivos compactados. Ex.: `extract nome_do_arquivo.zip`
+
+## hist
+
+acessar o histórico dos comandos usados no terminal
 
 # SCRIPTS
 
@@ -156,7 +160,6 @@ extrair arquivos compactados. Ex.: `extract nome_do_arquivo.zip`
 | dirty        | expõe as estatísticas da virtual memory. Uso para acompanhar a transferência de dados para um dispositivo externo, como um USB.                                            |
 | fail2ban     | informações do fail2ban (status, jail...)                                                                                                                                  |
 | fixpacman    | Resolver a falha ao sincronizar todas as bases de dados (não foi possível travar a base de dados) durante a atualização do sistema                                         |
-| hist         | acessar o histórico dos comandos usados no terminal                                                                                                                        |
 | hist-pacotes | Visualizar pacotes instalados recentemente                                                                                                                                 |
 | instalar     | instala pacotes                                                                                                                                                            |
 | limpar       | limpa o cache em ~/.cache (apaga arquivos com data maior que um ano), limpa o cache do pacman (mantém uma versão anterior a atual dos pacotes) e exclui os pacotes órfãos. |
