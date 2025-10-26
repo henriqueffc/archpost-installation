@@ -374,12 +374,17 @@ presente no sistema
 
 `pacman -Si pacote` mostra informações sobre o pacote
 
+`pacman -Sg nome_do_grupo` lista quais pacotes estão no grupo
+
 `pacman -Qi pacote` mostra informações do pacote instalado no sistema
 
 `pacman -Qii pacote` mostra as informações do pacote e os arquivos de
 configuração com ou sem modificação
 
 `pacman -Ql pacote` lista os arquivos instalados pelo pacote
+
+`pacman -Qdt` lista todos os pacotes não são mais necessários como dependências
+(órfãos)
 
 `pacman -Fl pacote` lista os arquivos que serão instalados no sistema por um
 pacote
