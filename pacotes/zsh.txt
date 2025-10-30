@@ -31,4 +31,5 @@ wl-clipboard
 zip
 zoxide
 zsh-autosuggestions
+zsh-completions
 zsh-syntax-highlighting

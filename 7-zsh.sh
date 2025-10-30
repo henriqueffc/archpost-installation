@@ -56,14 +56,6 @@ else
     cp ./aliases/functions ~/.functions
 fi
 
-# instalando o zsh-completions e configurando o alias para ele
-mkdir -p ~/.zsh_plugins
-git clone https://github.com/zsh-users/zsh-completions.git ~/.zsh_plugins/zsh-completions
-if test -f "/home/$USER/.zsh_plugins/zsh-completions/zsh-completions.plugin.zsh"; then
-    echo 'alias zsh_plugins="git -C $HOME/.zsh_plugins/zsh-completions pull && rm -f ~/.zcompdump; compinit"' >>~/.bash_aliases
-    echo 'fpath=(~/.zsh_plugins/zsh-completions/src $fpath)' >>~/.zshrc.local
-fi
-
 # habilitando o oh-my-posh. ele é instalado pelo script nº 5
 if command -v oh-my-posh >/dev/null; then
     echo 'eval "$(oh-my-posh init zsh --config /usr/share/oh-my-posh/themes/gruvbox.omp.json)"' >>~/.zshrc.local
