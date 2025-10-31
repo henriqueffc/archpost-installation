@@ -2,6 +2,7 @@ clinfo
 intel-compute-runtime
 intel-gmmlib
 intel-graphics-compiler
+intel-gpu-tools
 intel-media-driver
 vpl-gpu-rt
 libvpl-tools

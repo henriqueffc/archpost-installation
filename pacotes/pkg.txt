@@ -62,6 +62,7 @@ gamescope
 gawk
 gdb
 gdu
+gemini-cli
 ghex
 gimagereader-gtk
 git
@@ -206,6 +207,7 @@ systemd-resolvconf
 systemtap
 steam
 strace
+s-tui
 scrcpy
 solanum
 switcheroo-control

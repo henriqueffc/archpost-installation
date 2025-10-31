@@ -108,8 +108,10 @@ acessar o histórico dos comandos usados no terminal
 | fuck                                  | corrects your previous console command                                             |
 | fzf                                   | command-line fuzzy finder                                                          |
 | gdu                                   | similar ao ncdu / du                                                               |
+| gemini-cli                            | Gemini IA no terminal                                                              |
 | glow                                  | visualizador de markdown (`glow -p`)                                               |
 | hexyl                                 | colored command-line hex viewer. similar ao hexdump                                |
+| intel_gpu_top e gputop                | Ferramenta de testes da iGPU Intel                                                 |
 | inxi (inxi -Fv8)                      | informações sobre o sistema                                                        |
 | isd                                   | systemd TUI                                                                        |
 | kmon                                  | Linux Kernel Manager and Activity Monitor                                          |
@@ -132,6 +134,7 @@ acessar o histórico dos comandos usados no terminal
 | rustscan                              | a modern port scanner (alias scanports)                                            |
 | silicon                               | render your source code into a beautiful image (`silicon main.rs -o main.png`)     |
 | sd                                    | similar ao sed                                                                     |
+| s-tui                                 | Ferramenta para stress e monitoramento da CPU                                      |
 | tailspin (tspin)                      | a log file highlighte                                                              |
 | tcpdump                               | para analizar os pacotes de rede em uma porta específica                           |
 | tldr                                  | apresenta informações sobre diversos comandos no terminal                          |
