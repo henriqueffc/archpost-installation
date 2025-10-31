@@ -62,6 +62,8 @@ flatpak install flathub be.alexandervanhee.gradia -y
 flatpak install flathub io.github.flattool.Ignition -y
 flatpak install flathub io.github.fabrialberio.pinapp -y
 flatpak install flathub io.github.vmkspv.lenspect -y
+flatpak install flathub io.gitlab.news_flash.NewsFlash -y
+flatpak install flathub org.gnome.Podcasts -y
 
 # Flathub Remote-Beta
 echo -e "$AZUL Adicionando o remote flathub-beta $FIM"
