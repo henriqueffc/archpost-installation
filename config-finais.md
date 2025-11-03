@@ -755,6 +755,28 @@ Configurações feitas em `about:config`
 | widget.gtk.rounded-bottom-corners.enabled                                                                           | true    |
 | widget.use-xdg-desktop-portal.file-picker                                                                           | 1       |
 
+**Firefox Nightly**
+
+Caso opte por usar a versão de desenvolvimento do Firefox.
+
+Acrescente no **final** do arquivo `/etc/pacman.conf`
+
+```
+[heftig]
+SigLevel = Optional
+Server = https://pkgbuild.com/~heftig/repo/$arch
+```
+
+Depois execute os comandos `sudo pacman -Syu` e `sudo pacman -S firefox-nightly`
+
+Esse repositório é mantido pelo mantenedor do Arch Linux "Heftig" (Jan Alexander
+Steffens).
+
+Fontes:
+[Arch Wiki](https://wiki.archlinux.org/title/Unofficial_user_repositories#heftig),
+[Arch Forum](https://bbs.archlinux.org/viewtopic.php?id=117157),
+[Repositório](https://pkgbuild.com/~heftig/packages/)
+
 ### 25 - igpu
 
 #### Intel Xe
