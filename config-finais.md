@@ -32,23 +32,21 @@
 |
 [16 - Ordem do boot](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#16---ordem-do-boot)
 |
-[17 - Upscayl](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#17---upscayl)
+[17 - Zotero](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#17---zotero)
 |
-[18 - Zotero](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#18---zotero)
+[18 - Incus](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#18---incus)
 |
-[19 - Incus](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#19---incus)
+[19 - tmpfiles](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#19---tmpfiles)
 |
-[20 - tmpfiles](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#20---tmpfiles)
+[20 - sgpt](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#20---sgpt)
 |
-[21 - sgpt](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#21---sgpt)
+[21 - dns](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#21---dns)
 |
-[22 - dns](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#22---dns)
+[22 - easyeffects](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#22---easyeffects)
 |
-[23 - easyeffects](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#23---easyeffects)
+[23 - firefox](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#23---firefox)
 |
-[24 - firefox](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#24---firefox)
-|
-[25 - igpu](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#25---igpu)
+[24 - igpu](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#24---igpu)
 
 ### 1 - Tema e extensões
 
@@ -495,20 +493,7 @@ desejado (em segundos) da exibição ou coloque 0 para esconder as opções de
 inicialização. Para acessar a tela, caso opte por escondê-la, após ligar o
 notebook pressione a barra de espaço do teclado.
 
-### 17 - Upscayl
-
-Caso queira utilizar a versão em Appimage efetue o download na página do
-[github](https://github.com/upscayl/upscayl). A versão em flatpak foi instalada
-pelo script número n.° 4. Se o app não funcionar com a placa dedicada out of the
-box, use o app flatpak Gear Lever para configurar o appimage. Após selecionar
-para colocar o app no grid, coloque como variáveis de ambiente (última opção da
-tela) o seguinte: Key = `VK_DRIVER_FILES` Value =
-`/usr/share/vulkan/icd.d/nvidia_icd.json` e Key =
-`__EGL_VENDOR_LIBRARY_FILENAMES` Value =
-`/usr/share/glvnd/egl_vendor.d/10_nvidia.json` Isso fará com que o aplicativo
-funcione com a placa dedicada.
-
-### 18 - Zotero
+### 17 - Zotero
 
 Faça o download do arquivo xpi das seguintes extensões:
 
@@ -521,7 +506,7 @@ foram instalados pelo script n.º 3. Nas configurações da extensão no Zotero
 configure a localização para o tesseract `/usr/bin/tesseract` e para o pdftoppm
 `/usr/bin/pdftoppm`.
 
-### 19 - Incus
+### 18 - Incus
 
 Execute os seguintes comandos para configurar o Incus.
 
@@ -549,7 +534,7 @@ configurações do profile. Caso altere o nome, substitua nos comandos abaixo.
 
 `sudo firewall-cmd --reload`
 
-### 20 - tmpfiles
+### 19 - tmpfiles
 
 O arquivo de configuração para cada ação deve ser alocado em `/etc/tmpfiles.d/`
 
@@ -582,7 +567,7 @@ Depois de concebido o arquivo, execute
 
 `sudo systemd-tmpfiles --create`
 
-### 21 - sgpt
+### 20 - sgpt
 
 **Instalação**
 
@@ -623,7 +608,7 @@ API_BASE_URL=http://127.0.0.1:11434
 
 [Fonte - github shell_gpt](https://github.com/TheR1D/shell_gpt/wiki/Ollama)
 
-### 22 - dns
+### 21 - dns
 
 A instalação do
 [systemd-resolved](https://wiki.archlinux.org/title/Systemd-resolved) e a
@@ -640,7 +625,7 @@ aplicada.
 Verificar se DoT está funcionando
 `resolvectl query --type=TXT whoami.ds.akahelp.net`
 
-### 23 - easyeffects
+### 22 - easyeffects
 
 Configuração do EasyEffects para aplicar os presets para o headset
 ([Easyeffect-Presets](https://github.com/Digitalone1/EasyEffects-Presets)) e
@@ -686,7 +671,7 @@ pode ser usado para cancelamento de ruído e para outras melhorias no áudio ao 
 usar o microfone. Essa predefinição deve ser alocada na aba "Entrada" ou no
 diretório `~/.var/app/com.github.wwmm.easyeffects/config/easyeffects/input`
 
-### 24 - firefox
+### 23 - firefox
 
 Uso o tema
 [Gnome Adwaita GTK4 Dark](https://addons.mozilla.org/pt-BR/firefox/addon/gnome-adwaita-gtk4-dark/)
@@ -777,7 +762,7 @@ Fontes:
 [Arch Forum](https://bbs.archlinux.org/viewtopic.php?id=117157),
 [Repositório](https://pkgbuild.com/~heftig/packages/)
 
-### 25 - igpu
+### 24 - igpu
 
 #### Intel Xe
 
