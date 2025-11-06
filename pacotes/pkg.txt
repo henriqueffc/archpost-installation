@@ -105,7 +105,6 @@ jq
 jre-openjdk
 kdenlive
 kdiskmark
-keepassxc
 kmon
 kvantum
 kvantum-qt5

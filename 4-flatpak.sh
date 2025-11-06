@@ -41,7 +41,6 @@ flatpak install flathub fr.handbrake.ghb.Plugin.IntelMediaSDK -y
 flatpak install flathub org.cryptomator.Cryptomator -y
 flatpak install flathub info.febvre.Komikku -y
 flatpak install flathub app.drey.KeyRack -y
-flatpak install flathub com.belmoussaoui.Authenticator -y
 flatpak install flathub org.gnome.gitlab.somas.Apostrophe -y
 flatpak install flathub org.gnome.gitlab.somas.Apostrophe.Plugin.TexLive -y
 flatpak install flathub com.ranfdev.DistroShelf -y
@@ -52,7 +51,6 @@ flatpak install flathub com.discordapp.Discord -y
 flatpak install flathub com.obsproject.Studio -y
 flatpak install flathub com.obsproject.Studio.Plugin.Gstreamer -y
 flatpak install flathub com.obsproject.Studio.Plugin.GStreamerVaapi -y
-flatpak install flathub io.github.ronniedroid.concessio -y
 flatpak install flathub io.gitlab.theevilskeleton.Upscaler -y
 flatpak install flathub dev.geopjr.Collision -y
 flatpak install flathub nl.emphisia.icon -y
@@ -64,6 +62,11 @@ flatpak install flathub io.github.fabrialberio.pinapp -y
 flatpak install flathub io.github.vmkspv.lenspect -y
 flatpak install flathub io.gitlab.news_flash.NewsFlash -y
 flatpak install flathub org.gnome.Podcasts -y
+flatpak install flathub com.bitwarden.desktop -y
+flatpak install flathub io.ente.photos -y
+flatpak install flathub io.ente.auth -y
+flatpak install flathub io.github.wartybix.Constrict -y
+flatpak install flathub org.gnome.gitlab.YaLTeR.VideoTrimmer -y
 
 # Flathub Remote-Beta
 echo -e "$AZUL Adicionando o remote flathub-beta $FIM"
