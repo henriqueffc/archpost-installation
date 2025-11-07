@@ -293,9 +293,9 @@ lentos, mas o uso da GPU sobe consideravelmente.
 Caso o jogo não inicie use a variável `SDL_VIDEODRIVER=X11`. Isso pode ocorrer
 devido a variável de ambiente `SDL_VIDEODRIVER="wayland,x11,windows"` presente
 em `/etc/environment.d/90-environment.conf`. O mesmo vale para jogos executados
-usando o Lutris (ex. Huntdown). No Lutris configure a variável de ambiente nas
-opções de configuração do jogo, "Opções de sistema", "Execução do jogo -
-variável de ambiente". Se ela não funcionar, substitua por
+usando o Heroic Games Launcher (ex. Huntdown). Na Heroic configure a variável de
+ambiente nas opções de configuração do jogo, "Advanced", "Environment
+Variables". Se ela não funcionar, substitua por
 `SDL_DYNAMIC_API=/usr/lib64/libSDL2-2.0.so`
 
 Se o jogo apresentar o erro

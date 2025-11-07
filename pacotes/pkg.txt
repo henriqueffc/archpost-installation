@@ -99,7 +99,6 @@ imagemagick
 iptables
 intel-ucode
 inxi
-innoextract
 isd
 jq
 jre-openjdk
@@ -110,7 +109,6 @@ kvantum
 kvantum-qt5
 ladspa
 lnav
-lib32-gnutls
 lib32-mangohud
 libayatana-appindicator
 libappindicator
@@ -133,7 +131,6 @@ lshw
 lsof
 lua
 lurk
-lutris
 lynx
 man-db
 mangohud
@@ -235,7 +232,6 @@ unzip
 uv
 veracrypt
 virt-what
-vkd3d
 webp-pixbuf-loader
 weechat
 wikiman
