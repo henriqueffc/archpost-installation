@@ -60,7 +60,7 @@ kdenlive, etc.) escolha o tema breeze dark ou escuro.
 Uso as extensões [Vitals](https://extensions.gnome.org/extension/1460/vitals/),
 [Alphabetical App Grid](https://extensions.gnome.org/extension/4269/alphabetical-app-grid/),
 [AppIndicator/KStatusNotifierItem habilitadas](https://extensions.gnome.org/extension/615/appindicator-support/),
-[DeskChanger](https://extensions.gnome.org/extension/1131/desk-changer/),
+[Wallpaper Slideshow](https://extensions.gnome.org/extension/6281/wallpaper-slideshow/),
 [Auto Accent Colour](https://extensions.gnome.org/extension/7502/auto-accent-colour/)
 e
 [Overview Background](https://extensions.gnome.org/extension/5856/overview-background/).
@@ -80,11 +80,14 @@ configuração para essa extensão foi feita pelo script nº 6.
 A extensão Auto Accent Colour foi instalada usando o AUR (pelo script nº 5) e
 habilitada pelo script nº 6.
 
-As extensões DeskChanger e Overview Background foram instaladas pela página
+A extensão Wallpaper Slideshow foi instalada usando o AUR (pelo script nº 5) e
+habilitada pelo script nº 6.
+
+A extensão Overview Background foi instalada pela página
 [https://extensions.gnome.org/](https://extensions.gnome.org/). O pacote
 necessário para essa funcionalidade
 ([gnome-browser-connector](https://archlinux.org/packages/extra/any/gnome-browser-connector/))
-foi instalado pelo script nº 3. Para instalar as extensões pelo navegador é
+foi instalado pelo script nº 3. Para instalar a extensão pelo navegador é
 preciso habilitar a extensão "Integração com o Gnome Shell"
 ([Firefox](https://addons.mozilla.org/firefox/addon/gnome-shell-integration/) /
 [Chromium](https://chromewebstore.google.com/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep)).
