@@ -109,7 +109,7 @@ acessar o histórico dos comandos usados no terminal
 | fzf                                   | command-line fuzzy finder                                                          |
 | gdu                                   | similar ao ncdu / du                                                               |
 | gemini-cli                            | Gemini IA no terminal                                                              |
-| glow                                  | visualizador de markdown (`glow -p`)                                               |
+| glow                                  | visualizador de markdown (`glow -t`)                                               |
 | hexyl                                 | colored command-line hex viewer. similar ao hexdump                                |
 | intel_gpu_top e gputop                | Ferramenta de testes da iGPU Intel                                                 |
 | inxi (inxi -Fv8)                      | informações sobre o sistema                                                        |
@@ -153,47 +153,47 @@ acessar o histórico dos comandos usados no terminal
 
 # ALIAS
 
-| Alias        | descrição                                                                                                                                                                  |
-| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| archwiki     | Pesquisa páginas da Wiki offline. Abre as páginas no browser. Ex.: `archwiki nvidia`                                                                                       |
-| atalhos      | mostra o texto do arquivo .atalhos.md                                                                                                                                      |
-| atualizar    | atualiza o pipx, atualliza os flatpaks e remove as dependências desnecessárias, mostra as notícias do archlinux.org, pacman -Syu e yay -Sua --devel                        |
-| boot         | apresenta informações sobre o tempo de inicialização do sistema e os timers em uso pelo systemd                                                                            |
-| cat          | executa o bat no lugar do cat                                                                                                                                              |
-| cpu-info     | mostra as informações da CPU (frequências...)                                                                                                                              |
-| dados        | informações sobre os pacotes do sistema (quantidade, tamanho do cache...)                                                                                                  |
-| dic-en       | corretor ortográfico para arquivos escritos em EN                                                                                                                          |
-| dic-pt       | corretor ortográfico para arquivos escritos em pt_BR / comando nome_do_arquivo                                                                                             |
-| dirty        | expõe as estatísticas da virtual memory. Uso para acompanhar a transferência de dados para um dispositivo externo, como um USB.                                            |
-| fail2ban     | informações do fail2ban (status, jail...)                                                                                                                                  |
-| fixpacman    | Resolver a falha ao sincronizar todas as bases de dados (não foi possível travar a base de dados) durante a atualização do sistema                                         |
-| hist-pacotes | Visualizar pacotes instalados recentemente                                                                                                                                 |
-| instalar     | instala pacotes                                                                                                                                                            |
-| limpar       | limpa o cache em ~/.cache (apaga arquivos com data maior que um ano), limpa o cache do pacman (mantém uma versão anterior a atual dos pacotes) e exclui os pacotes órfãos. |
-| man          | executa o batman no lugar do man                                                                                                                                           |
-| mirror       | verifica qual o mirror mais veloz                                                                                                                                          |
-| mpvnovideo   | apenas reproduzir o áudio dos vídeos usando o mpv                                                                                                                          |
-| nano         | executa o micro no lugar do nano                                                                                                                                           |
-| neo          | fastfetch                                                                                                                                                                  |
-| nvidia       | acompanhar o uso da GPU                                                                                                                                                    |
-| pacman.log   | exibe o log do pacman                                                                                                                                                      |
-| tb           | Pastebin (termbin.com) - `cat arquivo.txt \| tb`                                                                                                                           |
-| progress     | disponibiliza o progresso de algum comando. `cp origem destino \| progress`                                                                                                |
-| ram          | acompanha o consumo da ram                                                                                                                                                 |
-| rede         | usa o nethogs para monitorar a rede                                                                                                                                        |
-| rede2        | usa o bandwhich para monitorar a rede                                                                                                                                      |
-| remover      | remove pacotes                                                                                                                                                             |
-| report-audit | informações do audit                                                                                                                                                       |
-| scanports    | escaneia as portas da rede abertas                                                                                                                                         |
-| size         | apresenta o tamanho das pastas em ordem crescente                                                                                                                          |
-| tcpporta     | executa o tcpdump na porta de rede solicitada pelo usuário                                                                                                                 |
-| turbo        | comando turbostat. exibe a temperatura dos núcleos da CPU, sua percentagem de uso e os watts consumido pela CPU.                                                           |
-| xla          | o mesmo que o xll, mas alterando a ordem de apresentação, a saber, do modificado recentemente para o mais antigo.                                                          |
-| xll          | apresenta o conteúdo do diretório, em ordem alfabética, disponibilizando mais informações (permissão, data da modificação, user/group...)                                  |
-| xls          | lista o conteúdo do diretório                                                                                                                                              |
-| xltree       | lista todos os arquivos e subpastas do diretório em formato de árvore                                                                                                      |
-| yaycache     | limpa o cache o yay (aur)                                                                                                                                                  |
-| sudo         | executa o run0 (systemd)                                                                                                                                                   |
+| Alias        | descrição                                                                                                                                 |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| archwiki     | Pesquisa páginas da Wiki offline. Abre as páginas no browser. Ex.: `archwiki nvidia`                                                      |
+| atalhos      | mostra o texto do arquivo .atalhos.md                                                                                                     |
+| atualizar    | atualiza os pacotes e os aplicativos do sistema.                                                                                          |
+| boot         | apresenta informações sobre o tempo de inicialização do sistema e os timers em uso pelo systemd                                           |
+| cat          | executa o bat no lugar do cat                                                                                                             |
+| cpu-info     | mostra as informações da CPU (frequências...)                                                                                             |
+| dados        | informações sobre os pacotes do sistema (quantidade, tamanho do cache...)                                                                 |
+| dic-en       | corretor ortográfico para arquivos escritos em EN                                                                                         |
+| dic-pt       | corretor ortográfico para arquivos escritos em pt_BR / comando nome_do_arquivo                                                            |
+| dirty        | expõe as estatísticas da virtual memory para acompanhar a transferência de dados para um dispositivo externo, como um USB.                |
+| fail2ban     | informações do fail2ban (status, jail...)                                                                                                 |
+| fixpacman    | Resolver a falha ao sincronizar todas as bases de dados (não foi possível travar a base de dados) durante a atualização do sistema        |
+| hist-pacotes | Visualizar pacotes instalados recentemente                                                                                                |
+| instalar     | instala pacotes                                                                                                                           |
+| limpar       | limpa o cache em ~/.cache, limpa o cache do pacman e exclui os pacotes órfãos.                                                            |
+| man          | executa o batman no lugar do man                                                                                                          |
+| mirror       | verifica qual o mirror mais veloz                                                                                                         |
+| mpvnovideo   | apenas reproduzir o áudio dos vídeos usando o mpv                                                                                         |
+| nano         | executa o micro no lugar do nano                                                                                                          |
+| neo          | fastfetch                                                                                                                                 |
+| nvidia       | acompanhar o uso da GPU                                                                                                                   |
+| pacman.log   | exibe o log do pacman                                                                                                                     |
+| tb           | Pastebin (termbin.com) - `cat arquivo.txt \| tb`                                                                                          |
+| progress     | disponibiliza o progresso de algum comando. `cp origem destino \| progress`                                                               |
+| ram          | acompanha o consumo da ram                                                                                                                |
+| rede         | usa o nethogs para monitorar a rede                                                                                                       |
+| rede2        | usa o bandwhich para monitorar a rede                                                                                                     |
+| remover      | remove pacotes                                                                                                                            |
+| report-audit | informações do audit                                                                                                                      |
+| scanports    | escaneia as portas da rede abertas                                                                                                        |
+| size         | apresenta o tamanho das pastas em ordem crescente                                                                                         |
+| tcpporta     | executa o tcpdump na porta de rede solicitada pelo usuário                                                                                |
+| turbo        | comando turbostat. exibe a temperatura dos núcleos da CPU, sua percentagem de uso e os watts consumido pela CPU.                          |
+| xla          | o mesmo que o xll, mas alterando a ordem de apresentação, a saber, do modificado recentemente para o mais antigo.                         |
+| xll          | apresenta o conteúdo do diretório, em ordem alfabética, disponibilizando mais informações (permissão, data da modificação, user/group...) |
+| xls          | lista o conteúdo do diretório                                                                                                             |
+| xltree       | lista todos os arquivos e subpastas do diretório em formato de árvore                                                                     |
+| yaycache     | limpa o cache o yay (aur)                                                                                                                 |
+| sudo         | executa o run0 (systemd)                                                                                                                  |
 
 # Wl-clipboard
 
@@ -233,36 +233,37 @@ Para maiores detalhes, use `sgpt --help`
 
 # GNOME
 
-| Descrição                                                                                                                                                                                                                                      | Atalho                                       |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
-| Abre o grid                                                                                                                                                                                                                                    | Super + A                                    |
-| Amplificador (acessibilidade)                                                                                                                                                                                                                  | Super + Alt + 8                              |
-| Fecha a janela                                                                                                                                                                                                                                 | Super + Q                                    |
-| GTK Inspector tool (faça sobre um aplicativo GTK)                                                                                                                                                                                              | Ctrl + Shift + I                             |
-| Na janela de execução que se abrir, digite a letra **R** e tecle Enter. Isso reinicializará o shell. Se você digitar **lg**, abrirá Looking Glass. Nele você poderá verificar em _Windows_ se as janelas estão rodando no Wayland ou Xwayland. | ALT+ F2                                      |
-| abre o cliente de email                                                                                                                                                                                                                        | Super + E                                    |
-| abre o configurações do GNOME                                                                                                                                                                                                                  | Super + C                                    |
-| abre o painel de notificação                                                                                                                                                                                                                   | Super + V ou Super + M                       |
-| altera o posicionamento da janela selecionada na tela                                                                                                                                                                                          | Super + Setas do teclado                     |
-| alterna entre as janelas abertas de um mesmo aplicativo que está em foco                                                                                                                                                                       | Alt + '                                      |
-| alterna entre os aplicativos. Se tiver mais de uma janela aberta por aplicativo, fixe a seleção sobre o ícone do programa para mostrar as janelas abertas                                                                                      | Alt + Tab                                    |
-| alterna entre os workspaces                                                                                                                                                                                                                    | Super + rolagem com o botão do meio do mouse |
-| foco na notificação                                                                                                                                                                                                                            | Super + N                                    |
-| ir para a última área de trabalho                                                                                                                                                                                                              | Super + End                                  |
-| lança o files                                                                                                                                                                                                                                  | Super + F                                    |
-| lança o navegador                                                                                                                                                                                                                              | Super + B                                    |
-| lança o terminal                                                                                                                                                                                                                               | Super + T                                    |
-| maximizar a janela                                                                                                                                                                                                                             | Super + Seta para cima                       |
-| move a janela                                                                                                                                                                                                                                  | Super + clique do mouse sobre a janela       |
-| move a janela do programa para a última ou para a primeira área de trabalho disponível                                                                                                                                                         | Shift + Super + End                          |
-| move a janela do programa para o espaço de trabalho a direita                                                                                                                                                                                  | Shift + Super + Page Up                      |
-| move a janela do programa para o espaço de trabalho a esquerda                                                                                                                                                                                 | Shift + Super + Page Down                    |
-| move para a primeira área de trabalho                                                                                                                                                                                                          | Shift + Super + Home                         |
-| muda de workspace                                                                                                                                                                                                                              | Super + Page Up ou Page Down                 |
-| muda para a primeira área de trabalho                                                                                                                                                                                                          | Super + Home                                 |
-| muda para o workspace desejado                                                                                                                                                                                                                 | Super + Shift + número de 2 a 6              |
-| quando clicado em uma palavra selecionada no terminal, ele automaticamente a copia para a linha de comando                                                                                                                                     | Scroll do mouse                              |
-| volta a janela ao tamanho original                                                                                                                                                                                                             | Super + Seta para baixo                      |
+| Descrição                                                                                                                | Atalho                                       |
+| ------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------- |
+| Abre o grid                                                                                                              | Super + A                                    |
+| Amplificador (acessibilidade)                                                                                            | Super + Alt + 8                              |
+| Fecha a janela                                                                                                           | Super + Q                                    |
+| GTK Inspector tool (faça sobre um aplicativo GTK)                                                                        | Ctrl + Shift + I                             |
+| Na janela de execução que se abrir, digite a letra **R** e tecle Enter. Isso reinicializará o shell.                     | ALT +F2                                      |
+| Se você digitar **lg**, abrirá Looking Glass. Verifique em _Windows_ se as janelas estão rodando no Wayland ou Xwayland. | ALT+ F2                                      |
+| abre o cliente de email                                                                                                  | Super + E                                    |
+| abre o configurações do GNOME                                                                                            | Super + C                                    |
+| abre o painel de notificação                                                                                             | Super + V ou Super + M                       |
+| altera o posicionamento da janela selecionada na tela                                                                    | Super + Setas do teclado                     |
+| alterna entre as janelas abertas de um mesmo aplicativo que está em foco                                                 | Alt + '                                      |
+| alterna entre os aplicativos.                                                                                            | Alt + Tab                                    |
+| alterna entre os workspaces                                                                                              | Super + rolagem com o botão do meio do mouse |
+| foco na notificação                                                                                                      | Super + N                                    |
+| ir para a última área de trabalho                                                                                        | Super + End                                  |
+| lança o files                                                                                                            | Super + F                                    |
+| lança o navegador                                                                                                        | Super + B                                    |
+| lança o terminal                                                                                                         | Super + T                                    |
+| maximizar a janela                                                                                                       | Super + Seta para cima                       |
+| move a janela                                                                                                            | Super + clique do mouse sobre a janela       |
+| move a janela do programa para a última ou para a primeira área de trabalho disponível                                   | Shift + Super + End                          |
+| move a janela do programa para o espaço de trabalho a direita                                                            | Shift + Super + Page Up                      |
+| move a janela do programa para o espaço de trabalho a esquerda                                                           | Shift + Super + Page Down                    |
+| move para a primeira área de trabalho                                                                                    | Shift + Super + Home                         |
+| muda de workspace                                                                                                        | Super + Page Up ou Page Down                 |
+| muda para a primeira área de trabalho                                                                                    | Super + Home                                 |
+| muda para o workspace desejado                                                                                           | Super + Shift + número de 2 a 6              |
+| quando clicado em uma palavra selecionada no terminal, ele automaticamente a copia para a linha de comando               | Scroll do mouse                              |
+| volta a janela ao tamanho original                                                                                       | Super + Seta para baixo                      |
 
 # fzf - exemplos
 
