@@ -252,6 +252,7 @@ xournalpp
 xterm
 yazi
 yt-dlp
+yt-dlp-ejs
 zellij
 zenity
 zip
