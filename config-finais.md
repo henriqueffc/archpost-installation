@@ -99,7 +99,7 @@ Configurar o Fail2ban - porta SSH e o SSH.
 ### 3 - NVMe
 
 Não altere a identificação do ponto de montagem. Mude as flags (coloque
-`defaults,noatime,x-gvfs-show,commit=60,barrier=0`) e o tipo de sistema de
+`defaults,relatime,x-gvfs-show,commit=60,barrier=0`) e o tipo de sistema de
 arquivos (auto -> ext4) da partição do NVMe no aplicativo Discos - Opções
 adicionais de partição - Editar opções de montagem. Lembrando que essa
 configuração é para a partição do NVMe em que ficam instalados os jogos, VMs e
@@ -125,7 +125,7 @@ Acrescente nos parâmetros da partição raiz **/** as seguintes especificaçõe
 `sudo nano /etc/fstab`
 
 ```
-/               ext4            rw,noatime,commit=60,barrier=0  0 1
+/               ext4            rw,relatime,commit=60,barrier=0  0 1
 ```
 
 ### 6 - Ext4

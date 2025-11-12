@@ -68,8 +68,4 @@ sed -i 's/HOOKS=.*/HOOKS=(systemd autodetect microcode modconf keyboard sd-vcons
 echo 'MODULES_DECOMPRESS="yes"' >>/etc/mkinitcpio.conf
 mkinitcpio -P
 
-# FSTAB
-cp /etc/fstab /etc/fstab.bak
-sed -i 's/relatime/noatime/' /etc/fstab
-
 printf "%s $VERDE Fim! Reinicie com o comando reboot. $FIM \n"
