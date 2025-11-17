@@ -1,6 +1,6 @@
 # https://docs.helix-editor.com/configuration.html
 #
-theme = "ayu_dark"
+theme = "doom_acario_dark"
 
 [editor]
 line-number = "absolute"
