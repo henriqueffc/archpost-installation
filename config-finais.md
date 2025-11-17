@@ -635,44 +635,38 @@ Configuração do EasyEffects para aplicar os presets para o headset
 para o earbuds bluetooth
 ([AAAAAAAaaaaa](https://github.com/servimo/AAAAAAAaaaaa)).
 
-Inicialize o EasyEffects e nas preferências do aplicativo habilite a opção
-"Iniciar o Serviço na Inicialização do Sistema" e desmarque a opção "Desligar ao
-fechar a janela".
+Inicialize o EasyEffects e nas preferências do aplicativo habilite as opções
+"Enable Service Mode" e "Autostart on login".
 
 Execute os comandos abaixo.
 
 ```
-wget -P ~/.var/app/com.github.wwmm.easyeffects/config/easyeffects/output https://raw.githubusercontent.com/servimo/AAAAAAAaaaaa/refs/heads/main/AAAAAAAaaaaa.json https://raw.githubusercontent.com/Digitalone1/EasyEffects-Presets/refs/heads/master/LoudnessCrystalEqualizer.json
-wget -P ~/.var/app/com.github.wwmm.easyeffects/config/easyeffects/irs 'https://github.com/servimo/AAAAAAAaaaaa/raw/refs/heads/main/Accudio%20((48kHz%20Z.E.))%20Earpods%20HIFI.irs'
+wget -P ~/.var/app/com.github.wwmm.easyeffects/data/easyeffects/output https://raw.githubusercontent.com/servimo/AAAAAAAaaaaa/refs/heads/main/AAAAAAAaaaaa.json https://raw.githubusercontent.com/Digitalone1/EasyEffects-Presets/refs/heads/master/LoudnessCrystalEqualizer.json
+wget -P ~/.var/app/com.github.wwmm.easyeffects/data/easyeffects/irs 'https://github.com/servimo/AAAAAAAaaaaa/raw/refs/heads/main/Accudio%20((48kHz%20Z.E.))%20Earpods%20HIFI.irs'
 ```
 
 Outra opção para inserção dos arquivos no Easyeffects seria fazer o download dos
 arquivos no repositório do Github dos projetos e, na aba "Saídas", clicar em
-"Predefinições" e acessar a opção "Importe uma predefinição do armazenamento
-local".
-
-Depois do download dos presets, acesse "Predefinições" e clique na opção
-"Carregar" que está na frente do nome da predefinição correspondente ao
-dispositivo usado no momento (LoudnessCrystalEqualizer - headset /
-AAAAAAAaaaaa - earbuds).
+"Predefinições", "Local" e acessar a opção "Import preset file" em "New preset
+name".
 
 Selecione como dispositivo de saída de som nas configurações do GNOME o
 headphone ou o earbuds. Não selecione o
 [Easy Effects Skin](https://github.com/wwmm/easyeffects?tab=readme-ov-file#warning).
 
 Para alterar o preset automaticamente ao escolher determinado dispositivo no
-sistema, selecione na aba "Pipewire" a opção "Carregamento Automático das
-Definições". Vincule a predefinição desejada a determinado dispositivo.
+sistema, selecione em "Predefinições" a opção "Carregamento Automático". Vincule
+a predefinição desejada a determinado dispositivo.
 
-É possível também usar a extensão do GNOME
-[EasyEffects Preset Selector](https://extensions.gnome.org/extension/4907/easyeffects-preset-selector/)
-para alternar rapidamente entre as predefinições do EasyEffects.
+É possível usar o tray icon do aplicativo para alternar rapidamente entre as
+predefinições do EasyEffects. Habilite a opção "Show the tray icon" em
+"Preferências".
 
 O preset
 [Microphone Preset: Noise Reduction + NPR Masculine Voice](https://gist.github.com/jtrv/47542c8be6345951802eebcf9dc7da31)
 pode ser usado para cancelamento de ruído e para outras melhorias no áudio ao se
 usar o microfone. Essa predefinição deve ser alocada na aba "Entrada" ou no
-diretório `~/.var/app/com.github.wwmm.easyeffects/config/easyeffects/input`
+diretório `~/.var/app/com.github.wwmm.easyeffects/data/easyeffects/input`
 
 ### 23 - firefox
 
