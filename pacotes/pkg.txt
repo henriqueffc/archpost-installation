@@ -123,7 +123,6 @@ libreoffice-fresh-pt-br
 libreoffice-extension-texmaths
 libwmf
 libultrahdr
-libxml2-legacy
 libzip
 lm_sensors
 lrzip
@@ -191,8 +190,6 @@ sd
 sdl2-compat
 sdl12-compat
 sdl2_image
-sdl2_mixer
-sdl2_ttf
 shortwave
 signal-desktop
 sndio
