@@ -272,10 +272,8 @@ dconf load /org/gnome/TextEditor/ <./dconf/gnomeedt.txt
 # Super + Q = fechar a janela
 # Super + Tab = muda de aplicativos
 # Alt + Tab = muda de janela
-# Super + para cima = Maximizar a janela
-# Super + para baixo = Desfazer a janela maximizada
+# Alt + a = always on top
 # mudar diretamente para o workspace desejado (Super + Shift + número de 2 a 6).
-# Para ir para o primeiro workspace use Super + Home e para ir para o último Super + End.
 dconf load /org/gnome/desktop/wm/keybindings/ <./dconf/keybindings.txt
 
 # fonte do sistema
