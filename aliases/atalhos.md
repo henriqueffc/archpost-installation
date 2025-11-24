@@ -235,6 +235,7 @@ Para maiores detalhes, use `sgpt --help`
 
 | Descrição                                                                                                                | Atalho                                       |
 | ------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------- |
+| Always on top                                                                                                            | Alt + a                                      |
 | Abre o grid                                                                                                              | Super + A                                    |
 | Amplificador (acessibilidade)                                                                                            | Super + Alt + 8                              |
 | Fecha a janela                                                                                                           | Super + Q                                    |
