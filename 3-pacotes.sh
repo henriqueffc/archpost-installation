@@ -328,10 +328,6 @@ ya pkg add yazi-rs/plugins:chmod
 # Firejail + AppArmor
 sudo apparmor_parser -r /etc/apparmor.d/firejail-default
 
-# Ghostty terminal
-mkdir -p $HOME/.config/ghostty/
-cp ./ghostty/config $HOME/.config/ghostty/
-
 # Habilitando permanentemente os serviços mDNS e o samba-client no Firewalld
 sudo firewall-cmd --zone=public --add-service=mdns --permanent
 sudo firewall-cmd --zone=public --add-service=samba-client --permanent
@@ -352,11 +348,12 @@ imgdisplay iterm2
 
 EOF
 
-# habilitando o terminal Ghostty para iniciar junto com o sistema
-# https://ghostty.org/docs/linux/systemd
-systemctl enable --user app-com.mitchellh.ghostty.service
+# Mudança na fonte do terminal Ptyxis
+gsettings set org.gnome.Ptyxis use-system-font false
+gsettings set org.gnome.Ptyxis font-name 'JetBrainsMonoNL Nerd Font 14'
+gsettings set org.gnome.Ptyxis restore-session false
 
 # Habilitando o profile throughput-performance no Tuned
-tuned-adm profile throughput-performance
+#tuned-adm profile throughput-performance
 
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"

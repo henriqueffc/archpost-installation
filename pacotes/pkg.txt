@@ -70,7 +70,6 @@ glew
 glfw
 glow
 ghostscript
-ghostty
 gnome-boxes
 gnome-browser-connector
 gnome-epub-thumbnailer
@@ -170,6 +169,7 @@ python-pyqt6
 presenterm
 procs
 progress
+ptyxis
 poppler
 poppler-data
 qt5-imageformats

@@ -297,8 +297,6 @@ e nas subpastas.
 | navega entre as abas                                                                                                         | Crtl + PageUp ou PageDown |
 | Navegar entre os diretórios anteriormante abertos - zsh com grml-zsh-config                                                  | cd -<Tab+Tab>             |
 | nova aba                                                                                                                     | Ctrl + Shift + T          |
-| novo painel horizontal (Ghostty)                                                                                             | Ctrl + Shift + E          |
-| novo painel vertical (Ghostty)                                                                                               | Ctrl + Shift + O          |
 | o mesmo que escrever exit para sair de uma sessão ou para fechar o terminal                                                  | Ctrl + D                  |
 | zoom in                                                                                                                      | CTRL + +                  |
 | zoom out                                                                                                                     | CTRL + -                  |

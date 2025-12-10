@@ -22,7 +22,7 @@ sistema de arquivos EXT4, ZRAM, kernel stable e kernel lts (seleciono ambos
 durante a instalação via archinstall), idioma pt-BR (definido via archinstall),
 pipewire, wireplumber, repositório multilib habilitado, Nvidia GPU com o driver
 Nvidia open kernel module (versão dkms), shell Zsh com grml-zsh-config e
-oh-my-posh, Ghostty terminal, AUR helper Yay, Flatpak, Podman, Distrobox,
+oh-my-posh, Ptyxis terminal, AUR helper Yay, Flatpak, Podman, Distrobox,
 Apparmor, firewalld, systemd-resolved, wireless-regdb (WIRELESS_REGDOM="BR"),
 iwd como wi-fi backend (NetworkManager), libvirt, Incus, mise, intel_pstate
 scaling driver, thermald e o tuned para gerenciamento de frequências da CPU e do
