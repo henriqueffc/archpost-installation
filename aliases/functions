@@ -191,7 +191,6 @@ function extract {
             *.xz)        unxz ./"$n"        ;;
             *.exe)       cabextract ./"$n"  ;;
             *.cpio)      cpio -id < ./"$n"  ;;
-            *.cba|*.ace)      unace x ./"$n"      ;;
             *)
                          echo "extract: '$n' - unknown archive method"
                          return 1

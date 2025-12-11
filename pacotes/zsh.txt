@@ -24,7 +24,6 @@ thefuck
 ttf-jetbrains-mono-nerd
 ttf-nerd-fonts-symbols
 ttf-nerd-fonts-symbols-mono
-unace
 unrar
 unzip
 wl-clipboard

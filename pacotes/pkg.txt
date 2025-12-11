@@ -222,7 +222,6 @@ tuned-ppd
 turbostat
 usbutils
 umu-launcher
-unace
 unarchiver
 unrar
 unzip
