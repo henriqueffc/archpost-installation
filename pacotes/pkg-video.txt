@@ -1,4 +1,5 @@
 clinfo
+egl-wayland2
 intel-compute-runtime
 intel-gmmlib
 intel-graphics-compiler
