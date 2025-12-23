@@ -314,6 +314,9 @@ sudo sed -i '$a WIRELESS_REGDOM="BR"' /etc/conf.d/wireless-regdom
 cp ./flags/chromium-flags.conf $HOME/.config/
 cp ./flags/electron-flags.conf $HOME/.config/
 
+# Arquivo .desktop com a variável Vulkan em Exec= para o Chromium
+cp ./chromium/chromium.desktop $HOME/.local/share/applications/
+
 # Sincronizando a database para a pesquisa de pacotes
 sudo pacman -Fy
 
