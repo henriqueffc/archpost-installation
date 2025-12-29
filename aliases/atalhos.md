@@ -145,7 +145,6 @@ acessar o histórico dos comandos usados no terminal
 | weechat                               | IRC                                                                                |
 | wikiman                               | Offline search engine for manual pages in terminal - w3m (Arch Wiki)               |
 | wormhole                              | (magic-wormhole) = securely transfer data between computers                        |
-| xwininfo                              | pode ser usado para verificar se o aplicativo está rodando em Wayland ou XWayland  |
 | yazi                                  | file manager                                                                       |
 | yt-dlp                                | a youtube-dl fork with additional features and fixes                               |
 | zellij                                | A terminal multiplexer                                                             |
