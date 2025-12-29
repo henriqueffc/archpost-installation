@@ -190,7 +190,6 @@ sd
 sdl2-compat
 sdl12-compat
 sdl2_image
-shortwave
 signal-desktop
 sndio
 seahorse
