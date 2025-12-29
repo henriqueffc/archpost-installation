@@ -27,8 +27,8 @@ Apparmor, firewalld, systemd-resolved, wireless-regdb (WIRELESS_REGDOM="BR"),
 iwd como wi-fi backend (NetworkManager), libvirt, Incus, mise, intel_pstate
 scaling driver, thermald e o tuned para gerenciamento de frequências da CPU e do
 perfil de energia, ananicy-cpp, firmware para o áudio da Sound Open Firmware,
-Helix Editor, Ollama (CUDA), Zotero, GNOME (Wayland). As configurações dos
-scripts são concebidas nessa base.
+Helix Editor, Ollama (CUDA), GNOME (Wayland). As configurações dos scripts são
+concebidas nessa base.
 
 Os scripts deverão ser executados após a inicialização do sistema no ambiente
 gráfico.
@@ -59,7 +59,6 @@ Ordem de uso dos scripts:
 - 7-zsh.sh
 - 8-podman-distrobox-incus.sh
 - 9-helix.sh
-- 10-zotero.sh
 
 Recomendo reinicializar o sistema após a execução de cada script.
 
