@@ -201,7 +201,6 @@ steam
 strace
 s-tui
 scrcpy
-solanum
 switcheroo-control
 tailspin
 tealdeer
