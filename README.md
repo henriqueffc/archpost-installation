@@ -24,10 +24,10 @@ pipewire, wireplumber, repositório multilib habilitado, Nvidia GPU com o driver
 Nvidia open kernel module (versão dkms), shell Zsh com grml-zsh-config e
 oh-my-posh, Ptyxis terminal, AUR helper Yay, Flatpak, Podman, Distrobox,
 Apparmor, firewalld, systemd-resolved, wireless-regdb (WIRELESS_REGDOM="BR"),
-iwd como wi-fi backend (NetworkManager), libvirt, Incus, mise, intel_pstate
-scaling driver, thermald e o tuned para gerenciamento de frequências da CPU e do
-perfil de energia, ananicy-cpp, firmware para o áudio da Sound Open Firmware,
-Helix Editor, Ollama (CUDA), GNOME (Wayland). As configurações dos scripts são
+iwd como wi-fi backend (NetworkManager), qemu, Incus, mise, intel_pstate scaling
+driver, thermald e o tuned para gerenciamento de frequências da CPU e do perfil
+de energia, ananicy-cpp, firmware para o áudio da Sound Open Firmware, Helix
+Editor, Ollama (CUDA), GNOME (Wayland). As configurações dos scripts são
 concebidas nessa base.
 
 Os scripts deverão ser executados após a inicialização do sistema no ambiente

@@ -41,6 +41,8 @@ devtools
 dialog
 dino
 dosfstools
+dmidecode
+dnsmasq
 duf
 e2fsprogs
 espeak-ng
@@ -70,7 +72,6 @@ glew
 glfw
 glow
 ghostscript
-gnome-boxes
 gnome-browser-connector
 gnome-epub-thumbnailer
 gnome-firmware
@@ -129,6 +130,7 @@ lshw
 lsof
 lua
 lurk
+lvm2
 lynx
 man-db
 mangohud

@@ -23,7 +23,7 @@ sudo pacman --needed -Syu - <./pacotes/pkg.txt
 # Fontes
 sudo pacman --needed -S - <./pacotes/fontes.txt
 
-# Virt-Mananger
+# qemu
 sudo pacman --needed -S - <./pacotes/virt.txt
 
 echo -e "$AZUL
@@ -33,8 +33,6 @@ echo -e "$AZUL
 $FIM"
 
 # Habilitar os serviços
-sudo systemctl enable libvirtd
-echo -e "$AZUL \t libvirt habilitado $FIM"
 sudo systemctl enable fstrim.timer
 echo -e "$AZUL \t fstrim.timer habilitado $FIM"
 sudo systemctl enable systemd-boot-update
@@ -106,22 +104,13 @@ echo -e "$AZUL
 -------------------------------------------------------------------------
 $FIM"
 
-# Inserir o usuário nos grupos libvirt, video e kvm
-sudo usermod -aG libvirt,video,kvm "$USERNAME"
+# Inserir o usuário nos grupos video e kvm
+sudo usermod -aG video,kvm "$USERNAME"
 
 # Wireplumber
 # configurando o libcamera para ser o default no Wireplumber
 mkdir -p ~/.config/wireplumber/wireplumber.conf.d/
 cp ./pipewire/99-libcamera.conf ~/.config/wireplumber/wireplumber.conf.d/
-
-# Virt-manager
-sudo cp /etc/libvirt/qemu.conf /etc/libvirt/qemu.conf.bak
-sudo sed -i 's|#user = "libvirt-qemu"|user = "'$USER'"|g' /etc/libvirt/qemu.conf
-sudo sed -i 's|#group = "libvirt-qemu"|group = "'$USER'"|g' /etc/libvirt/qemu.conf
-sudo cp /etc/libvirt/libvirtd.conf /etc/libvirt/libvirtd.conf.bak
-sudo sed -i 's|#unix_sock_ro_perms = "0777"|unix_sock_ro_perms = "0777"|g' /etc/libvirt/libvirtd.conf
-sudo sed -i 's|#unix_sock_rw_perms = "0770"|unix_sock_rw_perms = "0770"|g' /etc/libvirt/libvirtd.conf
-sudo sed -i 's|#unix_sock_group = "libvirt"|unix_sock_group = "libvirt"|g' /etc/libvirt/libvirtd.conf
 
 # Appimage
 #aria2c -d ~/Downloads -i ./urls/urls.txt

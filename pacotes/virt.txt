@@ -1,15 +1,3 @@
 bridge-utils
-dmidecode
-dnsmasq
-edk2-ovmf
-iptables
-libvirt
-lvm2
-openbsd-netcat
 qemu-full
 qemu-emulators-full
-swtpm
-vde2
-virt-manager
-virt-viewer
-spice-gtk
