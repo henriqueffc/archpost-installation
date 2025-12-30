@@ -16,9 +16,7 @@ echo -e "$AZUL Instalando os aplicativos Flatpaks $FIM"
 sudo pacman -Syu flatpak --needed --noconfirm
 
 # Flatpak Aplicativos
-flatpak install flathub org.gimp.GIMP -y
 flatpak install flathub com.vysp3r.ProtonPlus -y
-flatpak install flathub io.gitlab.adhami3310.Converter -y
 flatpak install flathub com.github.tchx84.Flatseal -y
 flatpak install flathub com.github.jeromerobert.pdfarranger -y
 flatpak install flathub org.nickvision.tubeconverter -y
@@ -26,8 +24,6 @@ flatpak install flathub com.github.wwmm.easyeffects -y
 flatpak install flathub org.gtk.Gtk3theme.Adwaita-dark -y
 flatpak install flathub org.gtk.Gtk3theme.adw-gtk3 -y
 flatpak install flathub org.gtk.Gtk3theme.adw-gtk3-dark -y
-flatpak install flathub com.github.huluti.Curtail -y
-flatpak install flathub io.github.nokse22.teleprompter -y
 flatpak install flathub com.github.PintaProject.Pinta -y
 flatpak install flathub it.mijorus.gearlever -y
 flatpak install flathub me.iepure.devtoolbox -y
@@ -36,8 +32,6 @@ flatpak install flathub org.gnome.World.PikaBackup -y
 flatpak install flathub io.github.flattool.Warehouse -y
 flatpak install flathub com.github.finefindus.eyedropper -y
 flatpak install flathub com.github.johnfactotum.Foliate -y
-flatpak install flathub fr.handbrake.ghb -y
-flatpak install flathub fr.handbrake.ghb.Plugin.IntelMediaSDK -y
 flatpak install flathub org.cryptomator.Cryptomator -y
 flatpak install flathub info.febvre.Komikku -y
 flatpak install flathub app.drey.KeyRack -y
@@ -48,11 +42,7 @@ flatpak install flathub org.gnome.Fractal -y
 flatpak install flathub garden.jamie.Morphosis -y
 flatpak install flathub org.telegram.desktop -y
 flatpak install flathub com.discordapp.Discord -y
-flatpak install flathub com.obsproject.Studio -y
-flatpak install flathub com.obsproject.Studio.Plugin.Gstreamer -y
-flatpak install flathub com.obsproject.Studio.Plugin.GStreamerVaapi -y
 flatpak install flathub io.gitlab.theevilskeleton.Upscaler -y
-flatpak install flathub dev.geopjr.Collision -y
 flatpak install flathub nl.emphisia.icon -y
 flatpak install flathub com.saivert.pwvucontrol -y
 flatpak install flathub net.nokyan.Resources -y
@@ -65,8 +55,6 @@ flatpak install flathub org.gnome.Podcasts -y
 flatpak install flathub com.bitwarden.desktop -y
 flatpak install flathub io.ente.photos -y
 flatpak install flathub io.ente.auth -y
-flatpak install flathub io.github.wartybix.Constrict -y
-flatpak install flathub org.gnome.gitlab.YaLTeR.VideoTrimmer -y
 
 # Flathub Remote-Beta
 echo -e "$AZUL Adicionando o remote flathub-beta $FIM"
