@@ -74,20 +74,7 @@ sudo cp ./resolved/dnssec.conf /etc/systemd/resolved.conf.d/
 sudo cp ./resolved/dns_over_tls.conf /etc/systemd/resolved.conf.d/
 sudo systemctl enable --now systemd-resolved
 
-# IWD
-# O iwd foi instalado pelo script nº 1
-# configuração para o iwd ser o wi-fi backend no NetworkManager
-# https://wiki.archlinux.org/title/NetworkManager#Using_iwd_as_the_Wi-Fi_backend
-sudo cp ./iwd/wifi_backend.conf /etc/NetworkManager/conf.d/
-# Configuração para desabilitar o Roaming Scan no iwd
-sudo cp ./iwd/main.conf /etc/iwd/
-
-# Reiniciando o NetworkManager para aplicar as mudanças do systemd-resolver e iwd
+# Reiniciando o NetworkManager para aplicar as mudanças do systemd-resolver
 sudo systemctl restart NetworkManager.service
 
-# Avisos para refazer as conexões wi-fi após a configuração do iwd como backend
-printf "%s $AZUL Refaça as suas conexões wi-fi $FIM \n"
-printf "%s $AZUL Faça esse procedimento deletando as Redes Salvas nas configurações do wi-fi no painel de configurações do GNOME $FIM \n"
-printf "%s $AZUL Após deletar as redes conhecidas, configure novamente uma nova conexão wi-fi. $FIM \n"
-
-printf "%s $VERDE Fim! Após efetuar a configuração do wi-fi, reinicie o sistema. $FIM \n"
+printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"

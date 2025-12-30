@@ -14,8 +14,8 @@ cp /etc/hosts /etc/hosts.bak
 line=$(cat /etc/hostname)
 echo -e "127.0.1.1\t$line.localdomain\t$line" >>/etc/hosts
 
-# Micro, nano, vim, Linux-firmware, wireless-regdb, iwd e headers para o kernel stable e lts
-pacman -Syu micro nano vim linux-firmware linux-firmware-whence linux linux-headers linux-lts linux-lts-headers iwd wireless-regdb --needed --noconfirm
+# Micro, nano, vim, Linux-firmware, wireless-regdb e headers para o kernel stable e lts
+pacman -Syu micro nano vim linux-firmware linux-firmware-whence linux linux-headers linux-lts linux-lts-headers wireless-regdb --needed --noconfirm
 
 # Visudo
 cp /etc/sudoers /etc/sudoers.bak
