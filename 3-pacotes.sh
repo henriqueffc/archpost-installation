@@ -332,14 +332,6 @@ gnome-extensions enable $(gnome-extensions list | grep -m 1 appindicatorsupport)
 # Desabilitabdo o suporte ao legacy tray icons support na Appindicator
 gsettings set org.gnome.shell.extensions.appindicator legacy-tray-enabled false
 
-# mostrar imagens usando o w3m
-mkdir -p $HOME/.w3m/
-tee $HOME/.w3m/config >/dev/null <<'EOF'
-inline_img_protocol 3
-imgdisplay iterm2
-
-EOF
-
 # Mudança na fonte do terminal Ptyxis
 gsettings set org.gnome.Ptyxis use-system-font false
 gsettings set org.gnome.Ptyxis font-name 'JetBrainsMonoNL Nerd Font 14'
