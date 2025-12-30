@@ -74,7 +74,7 @@ sudo cp ./resolved/dnssec.conf /etc/systemd/resolved.conf.d/
 sudo cp ./resolved/dns_over_tls.conf /etc/systemd/resolved.conf.d/
 sudo systemctl enable --now systemd-resolved
 
-# Reiniciando o NetworkManager para aplicar as mudanças do systemd-resolver
+# Reiniciando o NetworkManager para aplicar as mudanças do systemd-resolved
 sudo systemctl restart NetworkManager.service
 
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"

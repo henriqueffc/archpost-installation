@@ -32,7 +32,7 @@ sed -i 's/#Color/\Color/' /etc/pacman.conf
 sed -i 's/#VerbosePkgLists/\VerbosePkgLists/' /etc/pacman.conf
 if [ ! -f /var/lib/pacman/sync/multilib.db ]; then
     sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
-    pacman -Sy
+    pacman -Syu
 fi
 
 # Environment
