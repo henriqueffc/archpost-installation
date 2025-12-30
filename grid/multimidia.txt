@@ -1,3 +1,3 @@
 [/]
-apps=['io.gitlab.theevilskeleton.Upscaler.desktop', 'audacity.desktop', 'com.github.wwmm.easyeffects.desktop', 'io.ente.photos.desktop', 'org.kde.kdenlive.desktop', 'mpv.desktop', 'org.nickvision.tubeconverter.desktop', 'com.github.PintaProject.Pinta.desktop', 'com.saivert.pwvucontrol.desktop']
+apps=['io.gitlab.theevilskeleton.Upscaler.desktop', 'com.github.wwmm.easyeffects.desktop', 'io.ente.photos.desktop', 'mpv.desktop', 'org.nickvision.tubeconverter.desktop', 'com.github.PintaProject.Pinta.desktop', 'com.saivert.pwvucontrol.desktop']
 name='Multimídia'

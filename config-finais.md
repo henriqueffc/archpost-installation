@@ -52,8 +52,8 @@
 
 **Tema**
 
-Nos programas que usam QT e permitem configurar a aparência (keepassxc,
-kdenlive, etc.) escolha o tema breeze dark ou escuro.
+Nos programas que usam QT e permitem configurar a aparência escolha o tema
+breeze dark ou escuro.
 
 **Extensões**
 

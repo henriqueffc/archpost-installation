@@ -10,7 +10,6 @@ archlinux-wallpaper
 aspell
 aspell-en
 aspell-pt
-audacity
 avahi
 base-devel
 bash-completion
@@ -102,7 +101,6 @@ inxi
 isd
 jq
 jre-openjdk
-kdenlive
 kdiskmark
 kmon
 kvantum
@@ -155,7 +153,6 @@ nvme-cli
 obsidian
 ollama-cuda
 onnxruntime-cpu
-opencv-cuda
 openssh
 perl-image-exiftool
 7zip
@@ -176,7 +173,6 @@ poppler
 poppler-data
 qt5-imageformats
 qt5-wayland
-qt6-imageformats
 qt6-wayland
 rclone
 rebuild-detector
@@ -202,7 +198,6 @@ systemtap
 steam
 strace
 s-tui
-scrcpy
 switcheroo-control
 tailspin
 tealdeer
