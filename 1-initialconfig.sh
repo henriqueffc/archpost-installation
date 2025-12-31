@@ -68,4 +68,8 @@ sed -i 's/HOOKS=.*/HOOKS=(systemd autodetect microcode modconf keyboard sd-vcons
 echo 'MODULES_DECOMPRESS="yes"' >>/etc/mkinitcpio.conf
 mkinitcpio -P
 
+# zram
+cp /etc/systemd/zram-generator.conf /etc/systemd/zram-generator.conf.bak
+cp ./zram/zram-generator.conf /etc/systemd/zram-generator.conf
+
 printf "%s $VERDE Fim! Reinicie com o comando reboot. $FIM \n"
