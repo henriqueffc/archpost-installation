@@ -87,11 +87,6 @@ sudo cp ./service/hwpdynamicboost.service /etc/systemd/system/
 sudo systemctl enable hwpdynamicboost.service
 echo -e "$AZUL \t hwp_dynamic_boost habilitado $FIM"
 
-# Habilitando o Tuned
-sudo systemctl enable --now tuned
-sudo systemctl enable --now tuned-ppd
-echo -e "$AZUL \t Tuned habilitado $FIM"
-
 # tealdeer (implementação do tldr)
 tldr --update
 tldr --seed-config
@@ -336,6 +331,24 @@ gsettings set org.gnome.shell.extensions.appindicator legacy-tray-enabled false
 gsettings set org.gnome.Ptyxis use-system-font false
 gsettings set org.gnome.Ptyxis font-name 'JetBrainsMonoNL Nerd Font 14'
 gsettings set org.gnome.Ptyxis restore-session false
+
+# Remoção do power-profiles-daemon caso ele esteja presente no sistema
+echo -e "$AZUL \t Remoção do power-profiles-daemon se ele estiver instalado no sistema $FIM"
+if command -v powerprofilesctl >/dev/null; then
+    echo "Removendo o power-profiles-daemon"
+    sudo systemctl disable --now power-profiles-daemon.service
+    sudo pacman -R power-profiles-daemon --noconfirm
+    echo "Pacote removido com sucesso."
+else
+    echo "O power-profiles-daemon não está instalado no sistema."
+fi
+
+# Instalação e configuração do tuned e tuned-ppd
+echo -e "$AZUL \t Instalando e habilitando o tuned e o tuned-ppd - substitui o power-profiles-daemon $FIM"
+sudo pacman -S tuned tuned-ppd x86_energy_perf_policy systemtap virt-what wireless_tools --needed --noconfirm
+sudo systemctl enable --now tuned
+sudo systemctl enable --now tuned-ppd
+echo "Configuração concluída."
 
 # Habilitando o profile throughput-performance no Tuned
 #tuned-adm profile throughput-performance
