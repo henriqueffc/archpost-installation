@@ -17,17 +17,19 @@ máquina. Notebook Lenovo LOQ 15IRH8, Intel Core i5-12450H, 16GB de RAM, 2 X
 512GB SSD M.2, NVIDIA GeForce RTX 3050 6GB GDDR6, teclado Logitech K120, mouse
 Logitech M90, joystick Multilaser Js091 e headset HyperX Cloud Stinger.
 
-Eu instalo o sistema em UEFI, com o secure boot desabilitado, com systemd-boot,
-sistema de arquivos EXT4, ZRAM, kernel stable e kernel lts (seleciono ambos
-durante a instalação via archinstall), idioma pt-BR (definido via archinstall),
-pipewire, wireplumber, repositório multilib habilitado, Nvidia GPU com o driver
-Nvidia open kernel module (versão dkms), shell Zsh com grml-zsh-config e
-oh-my-posh, Ptyxis terminal, AUR helper Yay, Flatpak, Podman, Distrobox,
-Apparmor, firewalld, systemd-resolved, wireless-regdb (WIRELESS_REGDOM="BR"),
-qemu, Incus, mise, intel_pstate scaling driver, thermald e o tuned para
-gerenciamento de frequências da CPU e do perfil de energia, ananicy-cpp,
-firmware para o áudio da Sound Open Firmware, Helix Editor, Ollama (CUDA), GNOME
-(Wayland). As configurações dos scripts são concebidas nessa base.
+Alguns componentes do sistema descritos a seguir são selecionáveis durante a
+instalação pelo archinstall. Verifique a lista e faça essa seleção. Instalo o
+sistema em UEFI, com o secure boot desabilitado, com systemd-boot, sistema de
+arquivos EXT4, ZRAM, kernel stable e kernel lts, idioma pt-BR, pipewire,
+wireplumber, repositório multilib habilitado, Nvidia GPU com o driver Nvidia
+open kernel module (versão dkms), shell Zsh com grml-zsh-config e oh-my-posh,
+Ptyxis terminal, AUR helper Yay, Flatpak, Podman, Distrobox, Apparmor,
+firewalld, systemd-resolved, NetworkManager, wireless-regdb
+(WIRELESS_REGDOM="BR"), qemu, Incus, mise, intel_pstate scaling driver,
+thermald, tuned e tuned-ppd para gerenciamento de frequências da CPU e do perfil
+de energia, ananicy-cpp, firmware para o áudio da Sound Open Firmware, Helix
+Editor, Ollama (CUDA), GNOME (Wayland). As configurações executadas pelos
+scripts deste repositório são concebidas nessa base.
 
 Os scripts deverão ser executados após a inicialização do sistema no ambiente
 gráfico.
