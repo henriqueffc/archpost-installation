@@ -49,7 +49,6 @@ cp ./sysctl/99-sysctl.conf /etc/sysctl.d/
 ## Ioschedulers
 ## Reabilitar o Wayland no GDM com o drive proprietário da Nvidia
 cp ./udev/*.rules /etc/udev/rules.d/
-ln -s /dev/null /etc/udev/rules.d/61-gdm.rules
 
 # Makeflags
 cp /etc/makepkg.conf /etc/makepkg.conf.bak
