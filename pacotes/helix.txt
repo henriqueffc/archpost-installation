@@ -36,6 +36,7 @@ nodejs
 npm
 openssh
 poppler
+poppler-data
 procs
 pyenv
 pyright
