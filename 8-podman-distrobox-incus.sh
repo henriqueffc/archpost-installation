@@ -18,7 +18,7 @@ echo -e "$AZUL
 -------------------------------------------------------------------------
 $FIM"
 
-sudo pacman -Syu podman podman-compose crun netavark aardvark-dns --needed
+sudo pacman -Syu podman podman-compose crun krun netavark aardvark-dns --needed
 
 UNPRIVILEGED=$(sysctl kernel.unprivileged_userns_clone | grep -o '[[:digit:]]*')
 if [[ $UNPRIVILEGED == 1 ]]; then
