@@ -226,7 +226,7 @@ virt-what
 webp-pixbuf-loader
 weechat
 wikiman
-wine-staging
+wine
 wine-gecko
 wine-mono
 winetricks
