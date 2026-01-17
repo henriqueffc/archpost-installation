@@ -1,13 +1,23 @@
 [[mgr.prepend_keymap]]
-on = "T"
-run = "plugin toggle-pane max-preview"
+on   = "T"
+run  = "plugin toggle-pane max-preview"
 desc = "Maximize or restore the preview pane"
 
 [[mgr.prepend_keymap]]
-on = "M"
+on  = "M"
 run = "plugin mount"
 
 [[mgr.prepend_keymap]]
-on = ["c", "m"]
-run = "plugin chmod"
+on   = ["c", "m"]
+run  = "plugin chmod"
 desc = "Chmod on selected files"
+
+[[mgr.prepend_keymap]]
+on = ["R","b"]
+run = "plugin recycle-bin"
+desc = "Open Recycle Bin menu"
+
+[[mgr.prepend_keymap]]
+on = [ ">", "s" ]
+run  = "plugin what-size"
+desc = "Calc size of selection or cwd"

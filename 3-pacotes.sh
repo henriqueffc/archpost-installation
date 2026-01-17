@@ -310,9 +310,12 @@ sudo pacman -Fy
 mkdir -p $HOME/.config/yazi/plugins/
 cp ./yazi/yazi.toml $HOME/.config/yazi/
 cp ./yazi/keymap.toml $HOME/.config/yazi/
+cp ./yazi/init.lua $HOME/.config/yazi/
 ya pkg add yazi-rs/plugins:toggle-pane
 ya pkg add yazi-rs/plugins:mount
 ya pkg add yazi-rs/plugins:chmod
+ya pkg add uhs-robert/recycle-bin
+ya pkg add pirafrank/what-size
 
 # Firejail + AppArmor
 sudo apparmor_parser -r /etc/apparmor.d/firejail-default
