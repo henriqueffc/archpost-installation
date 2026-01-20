@@ -296,12 +296,8 @@ cp ./fastfetch/config.jsonc $HOME/.config/fastfetch/
 # wireless-regdb - instalado pelo script n.° 1.
 sudo sed -i '$a WIRELESS_REGDOM="BR"' /etc/conf.d/wireless-regdom
 
-# Arquivos com as flags para o Chromium e Electron
-cp ./flags/chromium-flags.conf $HOME/.config/
+# Arquivos com as flags para o Electron
 cp ./flags/electron-flags.conf $HOME/.config/
-
-# Arquivo .desktop com a variável Vulkan em Exec= para o Chromium
-cp ./chromium/chromium.desktop $HOME/.local/share/applications/
 
 # Sincronizando a database para a pesquisa de pacotes
 sudo pacman -Fy

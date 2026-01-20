@@ -10,3 +10,4 @@ gnome-shell-extension-alphabetical-grid-extension
 gnome-shell-extension-wallpaper-slideshow
 zotero-bin
 dropbox
+google-chrome

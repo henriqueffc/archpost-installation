@@ -90,7 +90,7 @@ necessário para essa funcionalidade
 foi instalado pelo script nº 3. Para instalar a extensão pelo navegador é
 preciso habilitar a extensão "Integração com o Gnome Shell"
 ([Firefox](https://addons.mozilla.org/firefox/addon/gnome-shell-integration/) /
-[Chromium](https://chromewebstore.google.com/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep)).
+[Chrome](https://chromewebstore.google.com/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep)).
 
 ### 2 - SSH
 

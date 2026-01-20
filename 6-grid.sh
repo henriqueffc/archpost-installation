@@ -34,7 +34,7 @@ dconf load /org/gnome/desktop/app-folders/folders/Utilities/ <./grid/utilities.t
 gsettings set org.gnome.desktop.app-folders folder-children "['Utilities', 'Office', 'Programas', 'Jogos', 'Nvidia', 'Development', 'GNOME', 'Internet', 'Multimídia']"
 
 # Dock
-gsettings set org.gnome.shell favorite-apps "['org.gnome.Ptyxis.desktop', 'obsidian.desktop', 'chromium.desktop', 'org.telegram.desktop.desktop', 'org.gnome.Fractal.desktop', 'io.gitlab.news_flash.NewsFlash.desktop', 'org.gnome.Podcasts.desktop', 'zotero.desktop', 'org.gnome.Nautilus.desktop']"
+gsettings set org.gnome.shell favorite-apps "['org.gnome.Ptyxis.desktop', 'obsidian.desktop', 'google-chrome.desktop', 'org.telegram.desktop.desktop', 'org.gnome.Fractal.desktop', 'io.gitlab.news_flash.NewsFlash.desktop', 'org.gnome.Podcasts.desktop', 'zotero.desktop', 'org.gnome.Nautilus.desktop']"
 
 # Search Providers
 dconf load /org/gnome/desktop/search-providers/ <./dconf/search-providers.txt

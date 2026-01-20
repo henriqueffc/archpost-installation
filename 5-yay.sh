@@ -45,4 +45,12 @@ yay --removemake --answerclean A --noanswerdiff --noansweredit --noconfirm --nee
 # Habilitando o Ananicy-cpp (instalado pelo script n.° 3) com as regras existentes no pacote cachyos-ananicy-rules-git (AUR)
 sudo systemctl enable --now ananicy-cpp.service
 
+# Arquivos com as flags para o Chrome
+cp ./flags/chrome-flags.conf $HOME/.config/
+
+# Arquivo .desktop com a variável Vulkan em Exec= para o Chrome
+# O arquivo com.google.Chrome.desktop possui NoDisplay=true para evitar duplicidade de ícones no grid de aplicativos
+cp ./chrome/google-chrome.desktop $HOME/.local/share/applications/
+cp ./chrome/com.google.Chrome.desktop $HOME/.local/share/applications/
+
 printf "%s $VERDE Reinicie o sistema. $FIM \n"

@@ -29,7 +29,6 @@ btrfs-progs
 cabextract
 caligula
 chafa
-chromium
 clamav
 cmatrix
 coreutils
