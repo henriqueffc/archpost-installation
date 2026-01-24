@@ -217,6 +217,7 @@ turbostat
 usbutils
 umu-launcher
 unarchiver
+unison
 unrar
 unzip
 uv

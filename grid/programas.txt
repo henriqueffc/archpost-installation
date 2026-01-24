@@ -1,3 +1,3 @@
 [/]
-apps=['com.github.finefindus.eyedropper.desktop', 'com.github.tchx84.Flatseal.desktop', 'com.github.ADBeveridge.Raider.desktop', 'it.mijorus.gearlever.desktop', 'nl.emphisia.icon.desktop', 'io.github.flattool.Ignition.desktop', 'app.drey.KeyRack.desktop', 'org.gnome.World.PikaBackup.desktop', 'io.github.fabrialberio.pinapp.desktop', 'page.tesk.Refine.desktop', 'veracrypt.desktop', 'io.github.flattool.Warehouse.desktop']
+apps=['com.github.finefindus.eyedropper.desktop', 'com.github.tchx84.Flatseal.desktop', 'com.github.ADBeveridge.Raider.desktop', 'unison.desktop', 'it.mijorus.gearlever.desktop', 'nl.emphisia.icon.desktop', 'io.github.flattool.Ignition.desktop', 'app.drey.KeyRack.desktop', 'org.gnome.World.PikaBackup.desktop', 'io.github.fabrialberio.pinapp.desktop', 'page.tesk.Refine.desktop', 'veracrypt.desktop', 'io.github.flattool.Warehouse.desktop']
 name='Programas'
