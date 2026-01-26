@@ -93,6 +93,7 @@ gparted
 gsmartcontrol
 gst-plugin-libcamera
 hexyl
+hwdetect
 hwloc
 imagemagick
 iptables
