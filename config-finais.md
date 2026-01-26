@@ -780,6 +780,10 @@ i915.force_probe=!46a3 xe.force_probe=46a3 xe.enable_fbc=0 xe.enable_psr=0 xe.en
 Os parâmetros `xe.enable*` substituem os parâmetros `i915.enable*` configurados
 pelo script nº 2.
 
+Substitua o módulo `i915` (configurado pelo script nº 2) em
+`/etc/mkinitcpio.conf` pelo módulo `xe`. Execute `sudo mkinitcpio -P` para
+regenerar todos os initramfs. Reinicie o sistema.
+
 Caso deseje verificar as opções disponíveis para o módulo Intel Xe execute
 `sudo modinfo -p xe`.
 
