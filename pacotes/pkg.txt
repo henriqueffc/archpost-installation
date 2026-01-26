@@ -47,6 +47,7 @@ espeak-ng
 eza
 exfatprogs
 expac
+ex-vi-compat
 fastfetch
 fd
 file-roller
