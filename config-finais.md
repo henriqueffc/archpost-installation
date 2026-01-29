@@ -1,54 +1,53 @@
-# Configurações necessárias após as execuções dos scripts
+# Configurações
 
-[1 - Tema e extensões](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#1---tema-e-extens%C3%B5es)
-|
-[2 - SSH](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#2---ssh)
-|
-[3 - NVMe](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#3---nvme)
-|
-[4 - Nautilus](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#4---nautilus)
-|
-[5 - Fstab](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#5---fstab)
-|
-[6 - Ext4](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#6---ext4)
-|
-[7 - Xpad](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#7---xpad)
-|
-[8 - Rclone](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#8---rclone)
-|
-[9 - Conservation mode - Lenovo Loq 15IRH8](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#9---conservation-mode---lenovo-loq-15irh8)
-|
-[10 - Steam](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#10---steam)
-|
-[11 - Fallback](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#11---fallback)
-|
-[12 - Bluetooth](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#12---bluetooth)
-|
-[13 - Geoclue](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#13---geoclue)
-|
-[14 - Aplicativos](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#14---aplicativos)
-|
-[15 - Piper](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#15---piper)
-|
-[16 - Ordem do boot](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#16---ordem-do-boot)
-|
-[17 - Zotero](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#17---zotero)
-|
-[18 - Incus](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#18---incus)
-|
-[19 - tmpfiles](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#19---tmpfiles)
-|
-[20 - sgpt](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#20---sgpt)
-|
-[21 - dns](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#21---dns)
-|
-[22 - easyeffects](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#22---easyeffects)
-|
-[23 - firefox](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#23---firefox)
-|
-[24 - igpu](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#24---igpu)
+Execute as configurações somente após a conclusão de todos os scripts do
+repositório.
 
-### 1 - Tema e extensões
+[Tema e extensões](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#tema-e-extens%C3%B5es)
+|
+[SSH](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#ssh)
+|
+[Nautilus](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#nautilus)
+|
+[Ext4](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#ext4)
+|
+[Xpad](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#xpad)
+|
+[Rclone](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#rclone)
+|
+[Conservation mode - Lenovo Loq 15IRH8](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#conservation-mode---lenovo-loq-15irh8)
+|
+[Steam](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#steam)
+|
+[Fallback](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#fallback)
+|
+[Bluetooth](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#bluetooth)
+|
+[Geoclue](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#geoclue)
+|
+[Aplicativos](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#aplicativos)
+|
+[Piper](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#piper)
+|
+[Ordem do boot](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#ordem-do-boot)
+|
+[Zotero](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#zotero)
+|
+[Incus](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#incus)
+|
+[tmpfiles](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#tmpfiles)
+|
+[sgpt](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#sgpt)
+|
+[dns](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#dns)
+|
+[easyeffects](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#easyeffects)
+|
+[firefox](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#firefox)
+|
+[igpu](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#igpu)
+
+## Tema e extensões
 
 **Tema**
 
@@ -92,21 +91,11 @@ preciso habilitar a extensão "Integração com o Gnome Shell"
 ([Firefox](https://addons.mozilla.org/firefox/addon/gnome-shell-integration/) /
 [Chrome](https://chromewebstore.google.com/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep)).
 
-### 2 - SSH
+## SSH
 
 Configurar o Fail2ban - porta SSH e o SSH.
 
-### 3 - NVMe
-
-Não altere a identificação do ponto de montagem. Mude as flags (coloque
-`defaults,relatime,x-gvfs-show,commit=60,barrier=0`) e o tipo de sistema de
-arquivos (auto -> ext4) da partição do NVMe no aplicativo Discos - Opções
-adicionais de partição - Editar opções de montagem. Lembrando que essa
-configuração é para a partição do NVMe em que ficam instalados os jogos, VMs e
-outros dados. Não é configuração a ser aplicada para a partição do sistema, do
-boot ou a home. ![Screenshot1](.github/screenshots/discos.png)
-
-### 4 - Nautilus
+## Nautilus
 
 Atalhos no Nautilus (File). A fonte que contém os símbolos foi instalada pelo
 script número 3.
@@ -117,18 +106,7 @@ script número 3.
 
 `mkdir ~/Documentos/Projetos && echo "file:///home/$USER/Documentos/Projetos 🎒 Projetos" >>~/.config/gtk-3.0/bookmarks`
 
-### 5 - Fstab
-
-Acrescente nos parâmetros da partição raiz **/** as seguintes especificações
-`commit=60` e `barrier=0`.
-
-`sudo nano /etc/fstab`
-
-```
-/               ext4            rw,relatime,commit=60,barrier=0  0 1
-```
-
-### 6 - Ext4
+## Ext4
 
 Habilite o
 [fast commit](https://wiki.archlinux.org/title/Ext4#Enabling_fast_commit_in_existing_filesystems)
@@ -195,7 +173,7 @@ orphan_file não estiver disponível na lista)
 Verifique a lista novamente usando
 `sudo dumpe2fs -h /dev/camimho_da_partição | grep features`
 
-### 7 - Xpad
+## Xpad
 
 O controle Multilaser JS091 (Shanwan Controler) está funcionando corretamente
 como Microsoft Corp. Xbox360 Controller (verifique com `lsusb`). Caso não
@@ -203,11 +181,11 @@ funcione instale a atualização para o Xpad disponível no site
 <https://github.com/paroj/xpad> ou utilize o pacote disponível no AUR
 `game-devices-udev` <https://codeberg.org/fabiscafe/game-devices-udev>
 
-### 8 - Rclone
+## Rclone
 
 Configurar o remote no rclone e fazer o scprit de sincronização.
 
-### 9 - Conservation mode - Lenovo Loq 15IRH8
+## Conservation mode - Lenovo Loq 15IRH8
 
 Modo de conservação da bateria. Se for habilitado manterá a carga máxima da
 bateria em 80%. No painel de configuração do GNOME, na opção "Energia", em
@@ -232,7 +210,7 @@ Para desabilitar
 
 `echo 0 > /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode`
 
-### 10 - Steam
+## Steam
 
 **Proton**
 
@@ -354,7 +332,7 @@ Execute no terminal (com a Steam fechada)
 
 `steam-runtime steam://unlockh264/` ou `steam steam://unlockh264/`
 
-### 11 - Fallback
+## Fallback
 
 Caso a imagem para o kernel fallback esteja sendo gerada pelo mkinitcpio, faça o
 seguinte:
@@ -379,7 +357,7 @@ Regenere o initramfs:
 
 `sudo mkinitcpio -P`
 
-### 12 - Bluetooth
+## Bluetooth
 
 Caso o bluetooth não esteja funcionando, execute
 `sudo rfkill unblock bluetooth && sudo systemctl restart bluetooth`. Os pacotes
@@ -387,7 +365,7 @@ necessários para o funcionamento do bluetooth já foram instalados no sistema e
 as configurações para os recursos experimentais do bluetooth foram executadas no
 script número n.° 3.
 
-### 13 - Geoclue
+## Geoclue
 
 **Geoclue estático**
 
@@ -434,7 +412,7 @@ Se quiser desabilitar o Geoclue use os seguintes comandos:
 
 Manual do [Geoclue](https://man.archlinux.org/man/extra/geoclue/geoclue.5.en)
 
-### 14 - Aplicativos
+## Aplicativos
 
 **Falhas na renderização**
 
@@ -459,7 +437,7 @@ Desabilite o funcionamento dos aplicativos Apostrophe e Discord em segundo
 plano. Pode ser feito pelo Flatseal ou pelas configurações do Gnome
 (Aplicativos).
 
-### 15 - Piper
+## Piper
 
 [https://github.com/Elleo/pied/](https://github.com/Elleo/pied/)
 
@@ -483,7 +461,7 @@ mudança.
 
 O ícone do app estará na pasta Utilitários no grid.
 
-### 16 - Ordem do boot
+## Ordem do boot
 
 Verifique o ID do kernel com o comando `bootctl list`. Selecione o kernel que
 você deseja para a inicialização do sistema com o comando
@@ -496,7 +474,7 @@ desejado (em segundos) da exibição ou coloque 0 para esconder as opções de
 inicialização. Para acessar a tela, caso opte por escondê-la, após ligar o
 notebook pressione a barra de espaço do teclado.
 
-### 17 - Zotero
+## Zotero
 
 Faça o download do arquivo xpi das seguintes extensões:
 
@@ -509,7 +487,7 @@ foram instalados pelo script n.º 3. Nas configurações da extensão no Zotero
 configure a localização para o tesseract `/usr/bin/tesseract` e para o pdftoppm
 `/usr/bin/pdftoppm`.
 
-### 18 - Incus
+## Incus
 
 Execute os seguintes comandos para configurar o Incus.
 
@@ -537,7 +515,7 @@ configurações do profile. Caso altere o nome, substitua nos comandos abaixo.
 
 `sudo firewall-cmd --reload`
 
-### 19 - tmpfiles
+## tmpfiles
 
 O arquivo de configuração para cada ação deve ser alocado em `/etc/tmpfiles.d/`
 
@@ -570,7 +548,7 @@ Depois de concebido o arquivo, execute
 
 `sudo systemd-tmpfiles --create`
 
-### 20 - sgpt
+## sgpt
 
 **Instalação**
 
@@ -611,7 +589,7 @@ API_BASE_URL=http://127.0.0.1:11434
 
 [Fonte - github shell_gpt](https://github.com/TheR1D/shell_gpt/wiki/Ollama)
 
-### 21 - dns
+## dns
 
 A instalação do
 [systemd-resolved](https://wiki.archlinux.org/title/Systemd-resolved) e a
@@ -628,7 +606,7 @@ aplicada.
 Verificar se DoT está funcionando
 `resolvectl query --type=TXT whoami.ds.akahelp.net`
 
-### 22 - easyeffects
+## easyeffects
 
 Configuração do EasyEffects para aplicar os presets para o headset
 ([Easyeffect-Presets](https://github.com/Digitalone1/EasyEffects-Presets)) e
@@ -668,7 +646,7 @@ pode ser usado para cancelamento de ruído e para outras melhorias no áudio ao 
 usar o microfone. Essa predefinição deve ser alocada na aba "Entrada" ou no
 diretório `~/.var/app/com.github.wwmm.easyeffects/data/easyeffects/input`
 
-### 23 - firefox
+## firefox
 
 Uso o tema
 [Gnome Adwaita GTK4 Dark](https://addons.mozilla.org/pt-BR/firefox/addon/gnome-adwaita-gtk4-dark/)
@@ -759,9 +737,9 @@ Fontes:
 [Arch Forum](https://bbs.archlinux.org/viewtopic.php?id=117157),
 [Repositório](https://pkgbuild.com/~heftig/packages/)
 
-### 24 - igpu
+## igpu
 
-#### Intel Xe
+**Intel Xe**
 
 Para habilitar o driver Intel Xe no lugar do i915, faça as configurações
 recomendadas na página da Wiki
