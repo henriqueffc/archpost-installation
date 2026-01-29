@@ -14,8 +14,8 @@ cp /etc/hosts /etc/hosts.bak
 line=$(cat /etc/hostname)
 echo -e "127.0.1.1\t$line.localdomain\t$line" >>/etc/hosts
 
-# Micro, nano, vim, Linux-firmware, wireless-regdb e headers para o kernel stable e lts
-pacman -Syu micro nano vim linux-firmware linux-firmware-whence linux linux-headers linux-lts linux-lts-headers wireless-regdb --needed --noconfirm
+# Micro, nano, vim, Linux-firmware, lz4, wireless-regdb e headers para o kernel stable e lts
+pacman -Syu micro nano vim linux-firmware linux-firmware-whence linux linux-headers linux-lts linux-lts-headers wireless-regdb lz4 --needed --noconfirm
 
 # Visudo
 cp /etc/sudoers /etc/sudoers.bak
@@ -63,7 +63,8 @@ sed -i 's/-C force-frame-pointers=yes/-C force-frame-pointers=yes -C target-cpu=
 cp /etc/mkinitcpio.conf /etc/mkinitcpio.conf.bak
 sed -i 's/MODULES=.*/MODULES=(i915 nvidia nvidia_modeset nvidia_uvm nvidia_drm)/g' /etc/mkinitcpio.conf
 sed -i 's/HOOKS=.*/HOOKS=(systemd autodetect microcode modconf keyboard sd-vconsole block filesystems fsck)/g' /etc/mkinitcpio.conf
-echo 'MODULES_DECOMPRESS="yes"' >>/etc/mkinitcpio.conf
+sed -i 's/#COMPRESSION="lz4"/COMPRESSION="lz4"/g' /etc/mkinitcpio.conf
+sed -i 's/#MODULES_DECOMPRESS="no"/MODULES_DECOMPRESS="yes"/g' /etc/mkinitcpio.conf
 mkinitcpio -P
 
 # zram
