@@ -9,7 +9,7 @@ usando o script de instalação
 [archinstall](https://github.com/archlinux/archinstall) fornecido pela
 [ISO](https://archlinux.org/download/) oficial.
 
-**Último teste dos scripts: 19 de junho de 2024** / Os scripts foram alterados
+**Último teste dos scripts: 29 de janeiro de 2026** / Os scripts foram alterados
 após essa data.
 
 Os scripts foram concebidos **especificamente** para a configuração da minha
@@ -51,7 +51,7 @@ Para usar os scripts clone o repositório e acesse a pasta:
 Ordem de uso dos scripts:
 
 - 1-initialconfig.sh (esse script deve ser executado com o comando sudo -
-  `sudo ./initialconfig.sh`)
+  `sudo ./1-initialconfig.sh`)
 - 2-video-e-audio.sh
 - 3-pacotes.sh
 - 4-flatpak.sh

@@ -201,9 +201,6 @@ gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-typ
 # Desabilitar o tempo antes da sessão ser considerada ociosa
 gsettings set org.gnome.desktop.session idle-delay "0"
 
-# Abrir os aplicativos centralizados na tela. É o padrão no GNOME 48
-#gsettings set org.gnome.mutter center-new-windows true
-
 # Desabilitar os cantos ativos
 gsettings set org.gnome.desktop.interface enable-hot-corners false
 

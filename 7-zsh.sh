@@ -61,4 +61,4 @@ if command -v oh-my-posh >/dev/null; then
     echo 'eval "$(oh-my-posh init zsh --config /usr/share/oh-my-posh/themes/gruvbox.omp.json)"' >>~/.zshrc.local
 fi
 
-echo -e "$AZUL Instalação concluída. Reinicie o terminal e depois execute zsh_plugins para terminar a configuração do zsh-completions. $FIM"
+echo -e "$AZUL Instalação concluída. Reinicie o terminal. $FIM"
