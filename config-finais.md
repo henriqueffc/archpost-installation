@@ -48,6 +48,8 @@ repositório.
 [igpu](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#igpu)
 |
 [Homebrew](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#Homebrew))
+|
+[boot](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#boot))
 
 ## Tema e extensões
 
@@ -787,3 +789,31 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
 
 Caso tenha problemas com o ruby portable no brew, instale o pacote ruby-irb
 `sudo pacman -S ruby-irb --needed`
+
+## boot
+
+A seguinte [mensagem](https://bbs.archlinux.org/viewtopic.php?id=287695) pode
+aparecer no journalctl `journalctl -b -p err`
+
+```
+Mount point '/efi' which backs the random seed file is world accessible, which is a security hole!
+Random seed file '/efi/loader/random-seed' is world accessible, which is a security hole!
+```
+
+A mensagem refere-se aos parâmetros `fmask=0022` e `dmask=0022`. Eles definem as
+permissões de acesso a partição `/boot`, onde o 0022 garante que o usuário tenha
+as permissões necessárias. Exemplo em `/etc/fstab`:
+
+```
+UUID=0000-0000  /boot  vfat  rw,noatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro  0 2
+```
+
+Para remover a mensagem é preciso restringir o acesso ao root.
+
+Para fazer isso substitua o 0022 para 0077.
+
+Exemplo:
+
+```
+UUID=0000-0000  /boot  vfat  rw,noatime,fmask=0077,dmask=0077,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro  0 2
+```
