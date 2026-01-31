@@ -435,14 +435,12 @@ configuradas para um determinado aplicativo flatpak estão localizadas em
 **Início no startup**
 
 Habilite a inicialização do Dropbox junto com o sistema. Habilite no aplicativo
-do Dropbox ou use o app Ajustes e faça a configuração em Aplicativos de
-inicialização.
+do Dropbox ou use o app Ignição (o app Ajustes funciona também).
 
 **Segundo plano**
 
-Desabilite o funcionamento dos aplicativos Apostrophe e Discord em segundo
-plano. Pode ser feito pelo Flatseal ou pelas configurações do Gnome
-(Aplicativos).
+Desabilite o funcionamento dos aplicativos que não deseja em segundo plano. Pode
+ser feito pelo Flatseal ou pelas configurações do Gnome (Aplicativos).
 
 ## Piper
 
@@ -500,7 +498,7 @@ Execute os seguintes comandos para configurar o Incus.
 
 Configuração do profile
 
-`incus admn init`
+`incus admin init`
 
 O Arch Linux não distribui firmware ovmf com secure boot assinado. Para iniciar
 máquinas virtuais, você precisa desativar o secure boot. Inclua a configuração
