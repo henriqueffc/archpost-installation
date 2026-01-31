@@ -34,7 +34,6 @@ flatpak install flathub com.github.finefindus.eyedropper -y
 flatpak install flathub com.github.johnfactotum.Foliate -y
 flatpak install flathub org.cryptomator.Cryptomator -y
 flatpak install flathub info.febvre.Komikku -y
-flatpak install flathub app.drey.KeyRack -y
 flatpak install flathub org.gnome.gitlab.somas.Apostrophe -y
 flatpak install flathub org.gnome.gitlab.somas.Apostrophe.Plugin.TexLive -y
 flatpak install flathub com.ranfdev.DistroShelf -y
