@@ -118,6 +118,9 @@ para todas as partições Ext4 do sistema.
 
 `sudo tune2fs -O fast_commit /dev/caminho_da_partição`
 
+Para verificar se o fast_commit está em uso, execute (após reboot)
+`sudo cat /proc/fs/ext4/ID_partição/fc_info`
+
 Habilite a checagem do filesystem pelo tune2fs/e2fsck no boot para todas as
 partições Ext4 do sistema (no comando abaixo a verificação está definida para
 ser efetuada depois de 20 montagens da partição)
