@@ -47,9 +47,9 @@ repositório.
 |
 [igpu](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#igpu)
 |
-[Homebrew](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#Homebrew))
+[Homebrew](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#Homebrew)
 |
-[boot](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#boot))
+[boot](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#boot)
 
 ## Tema e extensões
 
@@ -810,7 +810,7 @@ UUID=0000-0000  /boot  vfat  rw,noatime,fmask=0022,dmask=0022,codepage=437,iocha
 
 Para remover a mensagem é preciso restringir o acesso ao root.
 
-Para fazer isso substitua o 0022 para 0077.
+Para fazer isso substitua o 0022 por 0077.
 
 Exemplo:
 
