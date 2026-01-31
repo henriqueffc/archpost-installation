@@ -46,6 +46,8 @@ repositório.
 [firefox](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#firefox)
 |
 [igpu](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#igpu)
+|
+[Homebrew](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#Homebrew))
 
 ## Tema e extensões
 
@@ -760,3 +762,28 @@ em modo **performance**. Para verificar o funcionamento, utilize os seguintes
 comandos. `sysctl -n dev.xe.observation_paranoid` (tem que retornar o valor 0) e
 `vulkaninfo | grep performance` (apresenta algumas extensões caso o parâmetro
 esteja habilitado).
+
+## Homebrew
+
+Utilizo o [Homebrew](https://brew.sh/) para instalar os pacotes
+([podlet](https://formulae.brew.sh/formula/podlet),
+[gollama](https://formulae.brew.sh/formula/gollama) e
+[fabric](https://formulae.brew.sh/formula/fabric-ai))
+
+Para habilitar o Homebrew instale os seguintes pacotes
+`sudo pacman -S base-devel procps-ng curl file git --needed`
+
+Execute o comando abaixo.
+
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Inclua no `~/.zshrc.local`
+
+```
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
+```
+
+Caso tenha problemas com o ruby portable no brew, instale o pacote ruby-irb
+`sudo pacman -S ruby-irb --needed`
