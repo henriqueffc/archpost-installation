@@ -536,11 +536,11 @@ permissões da pasta existente.
 
 `user user` Refere-se ao usuário e ao grupo
 
-`2d` refere-se ao tempo. No caso, remoção dos arquivos criados há dois dias na
-pasta Capturas de tela.
+`2d` refere-se ao tempo. No caso, a remoção dos arquivos criados, acessados ou
+modificados há dois dias na pasta Capturas de tela.
 
 ```
-e /home/user/Imagens/'Capturas de tela' 0755 user user 2d
+e "/home/user/Imagens/Capturas de tela" 0755 user user 2d
 ```
 
 Para pastas criadas pelo serviço, ao invés de usar `e`, usa-se `d`.
@@ -769,9 +769,8 @@ esteja habilitado).
 ## Homebrew
 
 Utilizo o [Homebrew](https://brew.sh/) para instalar os pacotes
-([podlet](https://formulae.brew.sh/formula/podlet),
 [gollama](https://formulae.brew.sh/formula/gollama) e
-[fabric](https://formulae.brew.sh/formula/fabric-ai))
+[fabric](https://formulae.brew.sh/formula/fabric-ai)
 
 Para habilitar o Homebrew instale os seguintes pacotes
 `sudo pacman -S base-devel procps-ng curl file git --needed`
