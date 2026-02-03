@@ -68,20 +68,19 @@ acessar o histórico dos comandos usados no terminal
 
 # SCRIPTS
 
-| script           | descrição                                                                                                  |
-| ---------------- | ---------------------------------------------------------------------------------------------------------- |
-| archnews         | apresenta as notícias disponíveis no site archlinux.org                                                    |
-| aur              | script para verificar se falta alguma dependência para pacotes aur instalados                              |
-| calc_chmod.sh    | calculadora de chmod                                                                                       |
-| erros            | apresenta os erros do sistema usando o systemctl e o journalctl                                            |
-| fshare           | compartilhamento usando o site 0x0.st                                                                      |
-| iommu            | apresenta as informações do iommu                                                                          |
-| myman            | pesquisa de manuais presentes no sistema                                                                   |
-| podlet           | Gere arquivos Podman Quadlet a partir de um comando Podman, arquivo compose ou de outras opções existentes |
-| qemu-snap.sh     | script para gerar snapshots de imagens de VMs no qemu                                                      |
-| search           | pesquisa pacotes nos repositórios e apresenta as suas informações                                          |
-| systemd          | Mostra se o pacote instalado possui .service ou .socket                                                    |
-| update_models.sh | script para fazer atualizar os modelos de LLMs no Ollama                                                   |
+| script           | descrição                                                                     |
+| ---------------- | ----------------------------------------------------------------------------- |
+| archnews         | apresenta as notícias disponíveis no site archlinux.org                       |
+| aur              | script para verificar se falta alguma dependência para pacotes aur instalados |
+| calc_chmod.sh    | calculadora de chmod                                                          |
+| erros            | apresenta os erros do sistema usando o systemctl e o journalctl               |
+| fshare           | compartilhamento usando o site 0x0.st                                         |
+| iommu            | apresenta as informações do iommu                                             |
+| myman            | pesquisa de manuais presentes no sistema                                      |
+| qemu-snap.sh     | script para gerar snapshots de imagens de VMs no qemu                         |
+| search           | pesquisa pacotes nos repositórios e apresenta as suas informações             |
+| systemd          | Mostra se o pacote instalado possui .service ou .socket                       |
+| update_models.sh | script para fazer atualizar os modelos de LLMs no Ollama                      |
 
 # CLI e TUI
 
@@ -125,6 +124,7 @@ acessar o histórico dos comandos usados no terminal
 | nvme (sudo nvme smart-log /dev/nvme0) | informações sobre o ssd nvme                                                       |
 | nvtop                                 | acompanhar o uso da iGPU e da GPU                                                  |
 | pandoc                                | conversion between documentation formats                                           |
+| podlet                                | Cria arquivos Podman Quadlet                                                       |
 | presenterm                            | apresentação de slides usando arquivos markdown                                    |
 | prettybat                             | Pretty-print source code and highlight it with bat                                 |
 | procs                                 | similar ao ps                                                                      |
