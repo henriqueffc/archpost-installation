@@ -223,7 +223,7 @@ gsettings set org.gnome.desktop.privacy remove-old-trash-files true
 gsettings set org.gnome.desktop.privacy old-files-age "3"
 
 # Mutter
-gsettings set org.gnome.mutter experimental-features '["kms-modifiers", "variable-refresh-rate"]'
+gsettings set org.gnome.mutter experimental-features '["kms-modifiers"]'
 
 # Desabilitar a suspensão do notebook quando a tela do dispositivo é fechada.
 sudo sed -i 's/#HandleLidSwitch=suspend/HandleLidSwitch=ignore/' /etc/systemd/logind.conf
