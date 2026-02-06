@@ -1,6 +1,5 @@
 downgrade
 systemd-lsp
-gpu-screen-recorder
 ttf-noto-emoji-monochrome
 cachyos-ananicy-rules-git
 oh-my-posh-bin
