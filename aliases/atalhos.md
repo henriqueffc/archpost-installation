@@ -109,6 +109,7 @@ acessar o histórico dos comandos usados no terminal
 | gdu                                   | similar ao ncdu / du                                                               |
 | gemini-cli                            | Gemini IA no terminal                                                              |
 | glow                                  | visualizador de markdown (`glow -t`)                                               |
+| gpu-screen-recorder                   | screen recorder for Linux                                                          |
 | hexyl                                 | colored command-line hex viewer. similar ao hexdump                                |
 | intel_gpu_top e gputop                | Ferramenta de testes da iGPU Intel                                                 |
 | inxi (inxi -Fv8)                      | informações sobre o sistema                                                        |
