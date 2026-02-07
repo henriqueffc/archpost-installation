@@ -172,7 +172,6 @@ python-pyqt6
 presenterm
 procs
 progress
-ptyxis
 poppler
 poppler-data
 qt5-imageformats
@@ -183,6 +182,7 @@ rebuild-detector
 resvg
 ripgrep
 ripgrep-all
+rio
 rsync
 rtaudio
 ruby

@@ -23,7 +23,7 @@ sistema em UEFI, com o secure boot desabilitado, com systemd-boot, sistema de
 arquivos EXT4, ZRAM (algoritmo lz4), kernel stable e kernel lts, idioma pt-BR,
 pipewire, wireplumber, bluetooth habilitado, repositório multilib habilitado,
 Nvidia GPU com o driver Nvidia open kernel module (versão dkms), shell Zsh com
-grml-zsh-config e oh-my-posh, Ptyxis terminal, AUR helper Yay, Flatpak, Podman,
+grml-zsh-config e oh-my-posh, Rio terminal, AUR helper Yay, Flatpak, Podman,
 Distrobox, Apparmor, firewalld, systemd-resolved, NetworkManager (default
 backend), wireless-regdb (WIRELESS_REGDOM="BR"), qemu, Incus, mise, intel_pstate
 scaling driver, thermald, tuned e tuned-ppd para gerenciamento de frequências da
