@@ -8,5 +8,6 @@ gnome-shell-extension-auto-accent-color
 gnome-shell-extension-alphabetical-grid-extension
 gnome-shell-extension-wallpaper-slideshow
 zotero-bin
+quickemu
 dropbox
 google-chrome

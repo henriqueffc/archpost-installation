@@ -129,6 +129,7 @@ acessar o histórico dos comandos usados no terminal
 | presenterm                            | apresentação de slides usando arquivos markdown                                    |
 | prettybat                             | Pretty-print source code and highlight it with bat                                 |
 | procs                                 | similar ao ps                                                                      |
+| quickemu / quickget                   | criar e executar VMs usando o qemu                                                 |
 | rclone                                | sync files com serviços cloud                                                      |
 | rg                                    | similar ao grep                                                                    |
 | rsync                                 | A fast and versatile file copying tool for remote and local files                  |
