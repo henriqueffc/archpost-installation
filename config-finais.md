@@ -691,7 +691,6 @@ Configurações feitas em `about:config`
 | mousewheel.default.delta_multiplier_x                                                                              | 70      |
 | mousewheel.default.delta_multiplier_y                                                                              | 70      |
 | mousewheel.default.delta_multiplier_z                                                                              | 70      |
-| mousewheel.min_line_scroll_amount                                                                                  | 3       |
 | network.dns.disablePrefetch                                                                                        | true    |
 | network.http.max-connections                                                                                       | 1200    |
 | network.http.max-persistent-connections-per-server                                                                 | 10      |
