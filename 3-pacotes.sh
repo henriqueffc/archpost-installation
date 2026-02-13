@@ -214,10 +214,6 @@ gsettings set org.gnome.desktop.peripherals.keyboard numlock-state true
 gsettings set org.gnome.desktop.a11y.magnifier mag-factor "1.25"
 gsettings set org.gnome.desktop.a11y.magnifier mouse-tracking push
 
-# GNOME Software
-gsettings set org.gnome.software download-updates false
-gsettings set org.gnome.software first-run false
-
 # Privacy
 gsettings set org.gnome.desktop.privacy remove-old-trash-files true
 gsettings set org.gnome.desktop.privacy old-files-age "3"
@@ -350,5 +346,8 @@ echo "Configuração concluída."
 
 # Habilitando o profile throughput-performance no Tuned
 #tuned-adm profile throughput-performance
+
+# Desinstalando a gnome-software. No script nº 4 será instalada a Bazaar.
+sudo pacman -R gnome-software gnome-app-list
 
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"

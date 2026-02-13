@@ -54,20 +54,26 @@ flatpak install flathub org.gnome.Podcasts -y
 flatpak install flathub com.bitwarden.desktop -y
 flatpak install flathub io.ente.photos -y
 flatpak install flathub io.ente.auth -y
+flatpak install flathub io.github.kolunmi.Bazaar -y
 
 # Flathub Remote-Beta
 echo -e "$AZUL Adicionando o remote flathub-beta $FIM"
-
 flatpak remote-add --if-not-exists flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
 
 # GNOME Nightly remote
 echo -e "$AZUL Adicionando o remote gnome-nightly $FIM"
-
 flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
 
-# Configurações do tema e das variáveis para alguns aplicativos
-echo -e "$AZUL Configurando o tema globalmente e as variáveis de alguns aplicativos flatpaks $FIM"
-
+# Configurações do tema,variáveis e permissões para aplicativos flatpaks
+echo -e "$AZUL Alterando variáveis para determinados apps flatpaks $FIM"
 flatpak override --user --socket=wayland com.discordapp.Discord
+
+echo -e "$AZUL Configurando o tema globalmente para os apps flatpaks $FIM"
 sudo flatpak override --filesystem=xdg-config/gtk-4.0
 sudo flatpak override --filesystem=xdg-config/gtk-3.0
+
+echo -e "$AZUL Define como não permitida a execução em segundo plano para determinados apps flatpaks $FIM"
+flatpak permission-set background background io.github.kolunmi.Bazaar no
+flatpak permission-set background background org.telegram.desktop no
+flatpak permission-set background background com.discordapp.Discord no
+flatpak permission-set background background io.gitlab.news_flash.NewsFlash no
