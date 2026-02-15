@@ -28,7 +28,6 @@ cp ./helix/languages.toml ~/.config/helix/
 
 # mise
 mkdir -p $HOME/.config/mise/
-cp ./mise/config.toml $HOME/.config/mise/
 if test -f "/home/$USER/.zshrc.local"; then
     echo 'eval "$(mise activate zsh)"' >>~/.zshrc.local
 else
