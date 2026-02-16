@@ -789,6 +789,9 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
 Caso tenha problemas com o ruby portable no brew, instale o pacote ruby-irb
 `sudo pacman -S ruby-irb --needed`
 
+O [Bold Brew](https://github.com/Valkyrie00/bold-brew) é um bom gerenciador TUI
+para o Homebrew.
+
 ## boot
 
 A seguinte [mensagem](https://bbs.archlinux.org/viewtopic.php?id=287695) pode
