@@ -38,3 +38,6 @@ alias tcpporta="sudo tcpdump -i any -n -v port "
 alias archwiki="wiki-search-html"
 alias man="batman"
 alias google-chrome-stable="VK_DRIVER_FILES=/usr/share/vulkan/icd.d/intel_icd.x86_64.json google-chrome-stable"
+if ! command -v /usr/bin/hx &>/dev/null; then
+    alias hx="helix"
+fi
