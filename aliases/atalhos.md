@@ -168,6 +168,7 @@ acessar o histórico dos comandos usados no terminal
 | dirty        | expõe as estatísticas da virtual memory para acompanhar a transferência de dados para um dispositivo externo, como um USB.                |
 | fail2ban     | informações do fail2ban (status, jail...)                                                                                                 |
 | fixpacman    | Resolver a falha ao sincronizar todas as bases de dados (não foi possível travar a base de dados) durante a atualização do sistema        |
+| hx           | Helix Editor (se o pacote hex não estiver instalado)                                                                                      |
 | hist-pacotes | Visualizar pacotes instalados recentemente                                                                                                |
 | instalar     | instala pacotes                                                                                                                           |
 | limpar       | limpa o cache em ~/.cache, limpa o cache do pacman e exclui os pacotes órfãos.                                                            |
