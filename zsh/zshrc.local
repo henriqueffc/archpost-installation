@@ -1,4 +1,4 @@
-## Inclusão no PATH das pastas ~/bin, ~/.local/bin e /usr/local/bin
+## Inclusão no PATH das pastas ~/bin e ~/.local/bin
 if [ -d "$HOME/bin" ] ; then
 PATH="$HOME/bin:$PATH"
 fi
