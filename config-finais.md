@@ -294,22 +294,6 @@ Esse erro não costuma impedir a abertura do jogo ou interferir na jogabilidade.
 Se porventura o Mangohud não inicializar, use o parâmetro
 `LD_PRELOAD=/usr/lib/mangohud/libMangoHud.so:/usr/lib32/mangohud/libMangoHud.so`
 
-**Gamescope + Nvidia**
-
-Se for usar o Gamescope (instalado pelo script nº3) em vez de DXVK - Vulkan ou
-OpenGL, utilize os parâmetros abaixo.
-
-`gamescope -W 1920 -H 1080 -r 60 -f --mangoapp -- prime-run %command%`
-
-O comando acima executa os jogos através do xwayland, com resolução de 1920x1080
-`-W 1920 -H 1080`, limitado a 60 fps `-r 60`, fullscreen `-f`, com o mangohud
-habilitado `--mangoapp`, usando a placa dedicada `prime-run`. A flag `-e` serve
-apenas para executar o Steam dentro do Gamescope, ou seja,
-`gamescope -e -- steam`. A flag `--expose-wayland` é para aplicativos Wayland
-nativos que não funcionam em xwayland. Para mais informações acesse
-<https://wiki.archlinux.org/title/Gamescope> e
-<https://github.com/ValveSoftware/gamescope/issues/1819#issuecomment-2817280797>
-
 **SOM**
 
 Na eventualidade de o som não funcionar, tente executar os jogos com o parâmetro

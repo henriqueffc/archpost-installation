@@ -61,7 +61,6 @@ firewall-config
 flatpak
 fwupd
 fzf
-gamescope
 gawk
 gdb
 gdu
