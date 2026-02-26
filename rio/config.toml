@@ -166,9 +166,9 @@ decorations = "Disabled"
 #
 # Example:
 [renderer]
-performance = "low"
-backend = "vulkan"
-# disable-unfocused-render = false
+performance = "Low"
+backend = "Vulkan"
+disable-unfocused-render = false
 level = 1
 # filters = []
 
