@@ -321,10 +321,9 @@ gnome-extensions enable $(gnome-extensions list | grep -m 1 appindicatorsupport)
 # Desabilitabdo o suporte ao legacy tray icons support na Appindicator
 gsettings set org.gnome.shell.extensions.appindicator legacy-tray-enabled false
 
-# Configuração e tema para o Rio terminal
-mkdir -p $HOME/.config/rio/themes
-cp ./rio/config.toml $HOME/.config/rio
-cp ./rio/Brogrammer.toml $HOME/.config/rio/themes
+# Configuração para o Foot terminal
+mkdir -p $HOME/.config/foot/
+cp ./foot/foot.ini $HOME/.config/foot
 
 # Remoção do power-profiles-daemon caso ele esteja presente no sistema
 echo -e "$AZUL \t Remoção do power-profiles-daemon se ele estiver instalado no sistema $FIM"

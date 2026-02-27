@@ -59,6 +59,8 @@ firewalld
 firewall-applet
 firewall-config
 flatpak
+foot
+foot-terminfo
 fwupd
 fzf
 gawk
@@ -181,7 +183,6 @@ rebuild-detector
 resvg
 ripgrep
 ripgrep-all
-rio
 rsync
 rtaudio
 ruby

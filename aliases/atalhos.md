@@ -2,6 +2,19 @@
 
 Digite `h` para visualizar a ajuda.
 
+# Foot terminal
+
+## URL
+
+`Shift + Ctrl + O` = aciona o modo URL. Depois veja a indicação da letra na tela
+correspondente a URL e tecle `Shift + a` letra indicada.
+
+## Pesquisa
+
+`Shift + Ctrl + R` = pesquisa
+
+`Ctrl + r ou s` = navega pelos resultados
+
 # ZSH - funções (~/.functions)
 
 ## flatrun
