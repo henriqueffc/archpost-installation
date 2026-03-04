@@ -674,9 +674,7 @@ Configurações feitas em `about:config`
 | media.gmp.decoder.multithreaded                                                                                    | true    |
 | media.gpu-process-decoder                                                                                          | true    |
 | media.webrtc.camera.allow-pipewire                                                                                 | true    |
-| mousewheel.default.delta_multiplier_x                                                                              | 70      |
-| mousewheel.default.delta_multiplier_y                                                                              | 70      |
-| mousewheel.default.delta_multiplier_z                                                                              | 70      |
+| mousewheel.min_line_scroll_amount                                                                                  | 2       |
 | network.dns.disablePrefetch                                                                                        | true    |
 | network.http.max-connections                                                                                       | 1200    |
 | network.http.max-persistent-connections-per-server                                                                 | 10      |
