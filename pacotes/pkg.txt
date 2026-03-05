@@ -90,7 +90,6 @@ gvfs-gphoto2
 gvfs-mtp
 gvfs-nfs
 gvfs-smb
-gvfs-google
 gvfs-onedrive
 gvfs-wsdd
 gparted
