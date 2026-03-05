@@ -102,13 +102,6 @@ $FIM"
 # Inserir o usuário nos grupos video e kvm
 sudo usermod -aG video,kvm "$USERNAME"
 
-# Wireplumber
-# configurando o libcamera para ser o default no Wireplumber
-# desabilitando a suspensão do dispositivo de áudio pelo sistema - powersave
-mkdir -p ~/.config/wireplumber/wireplumber.conf.d/
-cp ./pipewire/99-libcamera.conf ~/.config/wireplumber/wireplumber.conf.d/
-cp ./pipewire/disable-suspension.conf ~/.config/wireplumber/wireplumber.conf.d/
-
 # Appimage
 #aria2c -d ~/Downloads -i ./urls/urls.txt
 mkdir /home/$USER/AppImages

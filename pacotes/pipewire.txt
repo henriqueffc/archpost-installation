@@ -6,5 +6,7 @@ pipewire-jack
 pipewire-pulse
 pipewire-v4l2
 pipewire-libcamera
+pipewire-onnx
+onnxruntime-cpu
 sof-firmware
 wireplumber
