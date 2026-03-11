@@ -1,5 +1,4 @@
 downgrade
-systemd-lsp
 ttf-noto-emoji-monochrome
 cachyos-ananicy-rules-git
 oh-my-posh-bin

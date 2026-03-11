@@ -33,8 +33,3 @@ if test -f "/home/$USER/.zshrc.local"; then
 else
     echo -e "$AZUL zsh e grml-zsh-config não estão instalados. Verifique a instalação do mise.$FIM"
 fi
-
-# Systemd-lsp
-# https://github.com/JFryy/systemd-lsp
-# Instalado pelo script nº 5 - pacote AUR
-yay -S systemd-lsp --needed

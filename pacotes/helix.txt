@@ -56,6 +56,7 @@ shfmt
 silicon
 strace
 stylua
+systemd-lsp
 taplo-cli
 trash-cli
 ttf-jetbrains-mono-nerd
