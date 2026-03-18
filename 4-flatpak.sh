@@ -55,6 +55,7 @@ flatpak install flathub com.bitwarden.desktop -y
 flatpak install flathub io.ente.photos -y
 flatpak install flathub io.ente.auth -y
 flatpak install flathub io.github.kolunmi.Bazaar -y
+flatpak install flathub org.zdoom.UZDoom -y
 
 # Flathub Remote-Beta
 echo -e "$AZUL Adicionando o remote flathub-beta $FIM"
