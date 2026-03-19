@@ -185,10 +185,13 @@ Verifique a lista novamente usando
 ## Xpad
 
 O controle Multilaser JS091 (Shanwan Controler) está funcionando corretamente
-como Microsoft Corp. Xbox360 Controller (verifique com `lsusb`). Caso não
-funcione instale a atualização para o Xpad disponível no site
-<https://github.com/paroj/xpad> ou utilize o pacote disponível no AUR
-`game-devices-udev` <https://codeberg.org/fabiscafe/game-devices-udev>
+como Microsoft Corp. Xbox360 Controller (verifique com `lsusb`). Se aparecer
+ShanWan Controler na saída do `lsusb`, desconecte e reconecte o controle da
+entrada USB. Caso não funcione faça a configuração disponível na wiki
+[Gamepad#ShanWan](https://wiki.archlinux.org/title/Gamepad#ShanWan) ou utilize o
+pacote disponível no AUR `game-devices-udev`
+<https://codeberg.org/fabiscafe/game-devices-udev>. Outra opção é instalar a
+atualização para o Xpad disponível no site <https://github.com/paroj/xpad>.
 
 ## Rclone
 
