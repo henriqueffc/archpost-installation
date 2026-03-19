@@ -174,6 +174,9 @@ gsettings set org.gnome.desktop.interface show-battery-percentage true
 # Comportamento do botão de energia - Desligar
 gsettings set org.gnome.settings-daemon.plugins.power power-button-action interactive
 
+# Primeiro dia da semana. Prefiro visualizar a segunda como o primeiro dia.
+gsettings set org.gnome.desktop.calendar week-start-day "monday"
+
 # Nautilus
 gsettings set org.gnome.nautilus.icon-view captions "['size', 'detailed_type', 'none']"
 gsettings set org.gtk.gtk4.Settings.FileChooser sort-directories-first true
