@@ -232,10 +232,11 @@ gsettings set org.gnome.Weather locations "[<(uint32 2, <('Uberlândia', 'SBUL',
 # reproduzir ou pausar reprodução de mídia - Shift + * teclado numérico
 # mudar para a próxima faixa - Shift + / teclado numérico
 # abrir navegador - Super + b
-# abrir o Files na home - Super + f
 # abrir o configurações do GNOME - Super + c
 # abrir o cliente de email - Super + e
 # Atalhos de teclado para o Gradia (Ctrl + Print e Ctrl + Shift + Print)
+# Atalho de teclado para lançar o terminal foot (Super + t)
+# Atalho de teclado para lançar o yazi (Super + f)
 dconf load /org/gnome/settings-daemon/plugins/media-keys/ <./dconf/mediakeys.txt
 
 # Mostrar relógio UTC no painel de notificações
