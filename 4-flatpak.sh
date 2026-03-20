@@ -56,6 +56,7 @@ flatpak install flathub io.ente.photos -y
 flatpak install flathub io.ente.auth -y
 flatpak install flathub io.github.kolunmi.Bazaar -y
 flatpak install flathub org.zdoom.UZDoom -y
+flatpak install flathub com.github.tenderowl.frog -y
 
 # Flathub Remote-Beta
 echo -e "$AZUL Adicionando o remote flathub-beta $FIM"
