@@ -67,7 +67,6 @@ gawk
 gdb
 gdu
 ghex
-gimagereader-gtk
 git
 glew
 glfw

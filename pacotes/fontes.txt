@@ -5,7 +5,6 @@ noto-fonts-cjk
 noto-fonts-emoji
 terminus-font
 ttf-arphic-uming
-ttf-bitstream-vera
 ttf-croscore
 ttf-dejavu
 ttf-droid
