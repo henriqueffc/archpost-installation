@@ -79,3 +79,4 @@ flatpak permission-set background background io.github.kolunmi.Bazaar no
 flatpak permission-set background background org.telegram.desktop no
 flatpak permission-set background background com.discordapp.Discord no
 flatpak permission-set background background io.gitlab.news_flash.NewsFlash no
+flatpak permission-set background background com.github.finefindus.eyedropper no
