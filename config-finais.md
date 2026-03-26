@@ -712,6 +712,29 @@ Fontes:
 [Arch Forum](https://bbs.archlinux.org/viewtopic.php?id=117157),
 [Repositório](https://pkgbuild.com/~heftig/packages/)
 
+**Usando o Firefox com o Firejail**
+
+Para usar o Firefox (pacote do repositório oficial) **permanentemente** com o
+[Firejail](https://wiki.archlinux.org/title/Firejail) (instalado pelo script nº
+3), execute os comandos abaixo.
+
+Crie o link simbólico para executar o Firefox pelo terminal usando o Firejail
+
+`sudo ln -s /usr/bin/firejail /usr/local/bin/firefox`
+
+ou crie um alias no arquivo `.bash_aliases`
+
+`alias firefox="firejail --apparmor firefox"`
+
+Copie o arquivo .desktop do diretório `firefox-firejail` do repositório para o
+diretório `$HOME/.local/share/applications/`
+
+`cp ./firefox-firejail/firefox.desktop $HOME/.local/share/applications/`
+
+Algumas configurações que foram recomendadas anteriormente para serem feitas no
+`about:config` não funcionam no Firefox inicializado com o Firejail devido o
+sandbox.
+
 ## igpu
 
 **Intel Xe**
