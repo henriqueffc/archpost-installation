@@ -318,6 +318,11 @@ gnome-extensions enable $(gnome-extensions list | grep -m 1 appindicatorsupport)
 # Desabilitabdo o suporte ao legacy tray icons support na Appindicator
 gsettings set org.gnome.shell.extensions.appindicator legacy-tray-enabled false
 
+# Wireplumber
+# desabilitando a suspensão do dispositivo de áudio pelo sistema - powersave
+mkdir -p ~/.config/wireplumber/wireplumber.conf.d/
+cp ./pipewire/disable-suspension.conf ~/.config/wireplumber/wireplumber.conf.d/
+
 # Configuração para o Foot terminal
 mkdir -p $HOME/.config/foot/
 cp ./foot/foot.ini $HOME/.config/foot
