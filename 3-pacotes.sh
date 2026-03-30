@@ -345,10 +345,10 @@ sudo systemctl enable --now tuned
 sudo systemctl enable --now tuned-ppd
 echo "Configuração concluída."
 
-# Habilitando o profile throughput-performance no Tuned
-#tuned-adm profile throughput-performance
-
 # Desinstalando a gnome-software. No script nº 4 será instalada a Bazaar.
 sudo pacman -R gnome-software gnome-app-list
+
+# Habilitando o profile throughput-performance no Tuned
+tuned-adm profile throughput-performance
 
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
