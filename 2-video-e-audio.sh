@@ -49,6 +49,9 @@ sudo systemctl enable fail2ban.service
 # AppIndicator/KStatusNotifierItem support for GNOME Shell
 sudo pacman -S gnome-shell-extension-appindicator --needed --noconfirm
 
+# Improve performance for applications that use tcmalloc - defer+madvise
+sudo cp ./tmpfiles/thp.conf /etc/tmpfiles.d/
+
 # Parâmetros do boot
 # O zswap.enabled=0 é configurado pelo archinstall, por isso não está definido nas opções acima.
 # O notebook suporta o Sound Open Firmware, em razão disso o parâmetro snd_intel_dspcfg.dsp_driver=3 foi definido para o kernel. O pacote necessário para o firmware (sof-firmware) está na lista de pacotes para o Pipewire.
