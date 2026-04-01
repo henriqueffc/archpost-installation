@@ -348,7 +348,12 @@ echo "Configuração concluída."
 # Desinstalando a gnome-software. No script nº 4 será instalada a Bazaar.
 sudo pacman -R gnome-software gnome-app-list
 
-# Habilitando o profile throughput-performance no Tuned
-tuned-adm profile throughput-performance
+# Desabilita o powersave nos perfis do Tuned para o audio
+# Desabilita a configuração do vm.swappiness no perfil throughput-performance
+# A configuração do vm.swappiness é feita pelo arquivo ./sysctl/99-sysctl.conf do projeto
+sudo cp -p -R /usr/lib/tuned/profiles/{balanced,powersave,throughput-performance} /etc/tuned/profiles/
+sudo sed -i 's/vm.swappiness=10/#vm.swappiness=10/g' /etc/tuned/profiles/throughput-performance/tuned.conf
+sudo sed -i '$ a \\n[audio]\ntimeout=0' /etc/tuned/profiles/throughput-performance/tuned.conf
+sudo sed -i 's/timeout=10/timeout=0/g' /etc/tuned/profiles/balanced/tuned.conf
 
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
