@@ -66,7 +66,8 @@ Uso as extensões [Vitals](https://extensions.gnome.org/extension/1460/vitals/),
 [Wallpaper Slideshow](https://extensions.gnome.org/extension/6281/wallpaper-slideshow/),
 [Auto Accent Colour](https://extensions.gnome.org/extension/7502/auto-accent-colour/),
 [Foresight](https://extensions.gnome.org/extension/7901/foresight/),
-[Overview Background](https://extensions.gnome.org/extension/5856/overview-background/)
+[Overview Background](https://extensions.gnome.org/extension/5856/overview-background/),
+[Maximize Window Into New Workspace](https://extensions.gnome.org/extension/8851/maximize-window-into-new-workspace/)
 e
 [Quick Web Search](https://extensions.gnome.org/extension/6051/quick-web-search/).
 
@@ -88,9 +89,10 @@ habilitada pelo script nº 6.
 A extensão Wallpaper Slideshow foi instalada usando o AUR (pelo script nº 5) e
 habilitada pelo script nº 6.
 
-As extensões Foresight, Quick Web Search e Overview Background foram instaladas
-pela página [https://extensions.gnome.org/](https://extensions.gnome.org/). O
-pacote necessário para essa funcionalidade
+As extensões Foresight, Maximize Window Into New Workspace, Quick Web Search e
+Overview Background foram instaladas pela página
+[https://extensions.gnome.org/](https://extensions.gnome.org/). O pacote
+necessário para essa funcionalidade
 ([gnome-browser-connector](https://archlinux.org/packages/extra/any/gnome-browser-connector/))
 foi instalado pelo script nº 3. Para instalar a extensão pelo navegador é
 preciso habilitar a extensão "Integração com o Gnome Shell"
