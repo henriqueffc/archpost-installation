@@ -59,6 +59,7 @@ flatpak install flathub org.zdoom.UZDoom -y
 flatpak install flathub com.github.tenderowl.frog -y
 flatpak install flathub io.github.dimtpap.coppwr -y
 flatpak install flathub io.gitlab.metadatacleaner.metadatacleaner -y
+flatpak install flathub app.drey.Warp -y
 
 # Flathub Remote-Beta
 echo -e "$AZUL Adicionando o remote flathub-beta $FIM"
