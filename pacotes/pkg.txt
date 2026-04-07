@@ -105,8 +105,6 @@ jq
 jre-openjdk
 kdiskmark
 kmon
-kvantum
-kvantum-qt5
 ladspa
 lnav
 lib32-mangohud

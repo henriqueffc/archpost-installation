@@ -255,10 +255,6 @@ dconf load /org/gnome/desktop/wm/keybindings/ <./dconf/keybindings.txt
 # fonte do sistema
 gsettings set org.gnome.desktop.interface font-antialiasing rgba
 
-# Kvantum
-mkdir -p $HOME/.config/Kvantum/
-cp ./kvantum/kvantum.kvconfig $HOME/.config/Kvantum/
-
 # Plocate
 sudo pacman -S plocate --needed --noconfirm
 sudo updatedb
