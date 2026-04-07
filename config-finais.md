@@ -604,28 +604,39 @@ Verificar se DoT está funcionando
 
 ## easyeffects
 
-Configuração do EasyEffects para aplicar os presets para o headset
-([Easyeffect-Presets](https://github.com/Digitalone1/EasyEffects-Presets)) e
-para o earbuds bluetooth
-([AAAAAAAaaaaa](https://github.com/servimo/AAAAAAAaaaaa)).
+**Preset**
+
+Atualmente uso o preset que está no arquivo
+`/easyeffects/LoudnessCrystalEqualizerMod.json` do projeto. Ele é uma
+modificação do preset
+[LoudnessCrystalEqualizer.json](https://github.com/Digitalone1/EasyEffects-Presets/blob/master/LoudnessCrystalEqualizer.json)
+
+Eu substituo o plugin equalizador do preset por outro equalizador, com os
+parâmetros do
+[HyperX Cloud Stinger ParametricEQ.txt](https://github.com/jaakkopasanen/AutoEq/blob/master/results/Rtings/HMS%20II.3%20over-ear/HyperX%20Cloud%20Stinger/HyperX%20Cloud%20Stinger%20ParametricEQ.txt)
+
+Acrescento também o plugin Alimentação Cruzada no
+[final](https://github.com/Digitalone1/EasyEffects-Presets/tree/master#using-headphones)
+da ordem dos plugins.
+
+Se acontecer algum problema de estalidos no som, desative o plugin
+Cristalizador; pode ser ele que esteja sobrecarregando o sistema.
+
+**Configurando o EasyEffects**
 
 Inicialize o EasyEffects e nas preferências do aplicativo habilite as opções
-"Enable Service Mode" e "Autostart on login".
+"Ativar o modo de serviço" e "Iniciar automaticamente ao iniciar sessão" para o
+programa ser executado em segundo plano e ser inicializado no início da sessão.
 
-Execute os comandos abaixo.
+Na aba "Saídas" do EasyEffects, clique em "Predefinições", "Local" e acesse a
+opção "Importar arquivo predefinido" em "Novo nome predefinido". Escolha o
+arquivo `LoudnessCrystalEqualizerMod.json`
 
-```
-wget -P ~/.var/app/com.github.wwmm.easyeffects/data/easyeffects/output https://raw.githubusercontent.com/servimo/AAAAAAAaaaaa/refs/heads/main/AAAAAAAaaaaa.json https://raw.githubusercontent.com/Digitalone1/EasyEffects-Presets/refs/heads/master/LoudnessCrystalEqualizer.json
-wget -P ~/.var/app/com.github.wwmm.easyeffects/data/easyeffects/irs 'https://github.com/servimo/AAAAAAAaaaaa/raw/refs/heads/main/Accudio%20((48kHz%20Z.E.))%20Earpods%20HIFI.irs'
-```
-
-Outra opção para inserção dos arquivos no Easyeffects seria fazer o download dos
-arquivos no repositório do Github dos projetos e, na aba "Saídas", clicar em
-"Predefinições", "Local" e acessar a opção "Import preset file" em "New preset
-name".
+O arquivo é salvo pelo EasyEffect (flatpak) no diretório
+`~/.var/app/com.github.wwmm.easyeffects/data/easyeffects/output`
 
 Selecione como dispositivo de saída de som nas configurações do GNOME o
-headphone ou o earbuds. Não selecione o
+headphone. Não selecione o
 [Easy Effects Skin](https://github.com/wwmm/easyeffects?tab=readme-ov-file#warning).
 
 Para alterar o preset automaticamente ao escolher determinado dispositivo no
@@ -633,7 +644,7 @@ sistema, selecione em "Predefinições" a opção "Carregamento Automático". Vi
 a predefinição desejada a determinado dispositivo.
 
 É possível usar o tray icon do aplicativo para alternar rapidamente entre as
-predefinições do EasyEffects. Habilite a opção "Show the tray icon" em
+predefinições do EasyEffects. Habilite a opção "Mostrar o ícone da badeja" em
 "Preferências".
 
 O preset
