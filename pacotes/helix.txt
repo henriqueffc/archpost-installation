@@ -58,6 +58,7 @@ strace
 stylua
 systemd-lsp
 taplo-cli
+tinymist
 trash-cli
 ttf-jetbrains-mono-nerd
 typescript-language-server

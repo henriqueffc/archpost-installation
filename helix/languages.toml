@@ -103,3 +103,15 @@ auto-format = true
 name = "systemd"
 language-servers = ["systemd-lsp"]
 auto-format = true
+
+[language-server.tinymist]
+command = "tinymist"
+config = { preview.background.enabled = true, preview.background.args = [
+  "--data-plane-host=127.0.0.1:23635",
+  "--invert-colors=never",
+  "--open",
+] }
+
+[[language]]
+name = "typst"
+language-servers = ["tinymist"]
