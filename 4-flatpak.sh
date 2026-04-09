@@ -31,7 +31,7 @@ flatpak install flathub com.github.ADBeveridge.Raider -y
 flatpak install flathub org.gnome.World.PikaBackup -y
 flatpak install flathub io.github.flattool.Warehouse -y
 flatpak install flathub com.github.finefindus.eyedropper -y
-flatpak install flathub com.github.johnfactotum.Foliate -y
+flatpak install flathub com.bilingify.readest -y
 flatpak install flathub org.cryptomator.Cryptomator -y
 flatpak install flathub info.febvre.Komikku -y
 flatpak install flathub org.gnome.gitlab.somas.Apostrophe -y
