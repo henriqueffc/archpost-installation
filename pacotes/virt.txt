@@ -1,3 +1,2 @@
-iproute2
-qemu-full
-qemu-emulators-full
+qemu-desktop
+qemu-base
