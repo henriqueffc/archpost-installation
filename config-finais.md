@@ -673,6 +673,7 @@ Configurações feitas em `about:config`
 | browser.toolbars.bookmarks.visibility                                                                              | always  |
 | dom.security.https_only_mode                                                                                       | true    |
 | general.smoothScroll                                                                                               | true    |
+| general.smoothScroll.mouseWheel.durationMinMS                                                                      | 200     |
 | general.smoothScroll.msdPhysics.enabled                                                                            | true    |
 | gfx.canvas.accelerated.cache-size                                                                                  | 512     |
 | image.jxl.enabled                                                                                                  | true    |
@@ -684,13 +685,12 @@ Configurações feitas em `about:config`
 | gfx.x11-egl.force-disabled                                                                                         | true    |
 | layout.css.prefers-color-scheme.content-override                                                                   | 0       |
 | layout.css.grid-template-masonry-value.enabled                                                                     | true    |
-| layout.frame_rate                                                                                                  | 60      |
 | javascript.options.wasm_branch_hinting                                                                             | true    |
 | media.eme.enabled                                                                                                  | true    |
 | media.gmp.decoder.multithreaded                                                                                    | true    |
 | media.gpu-process-decoder                                                                                          | true    |
 | media.webrtc.camera.allow-pipewire                                                                                 | true    |
-| mousewheel.min_line_scroll_amount                                                                                  | 2       |
+| mousewheel.min_line_scroll_amount                                                                                  | 20      |
 | network.dns.disablePrefetch                                                                                        | true    |
 | network.http.max-connections                                                                                       | 1200    |
 | network.http.max-persistent-connections-per-server                                                                 | 10      |
