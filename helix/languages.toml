@@ -23,7 +23,7 @@ auto-format = true
 name = "yaml"
 file-types = ["yaml", "yml"]
 formatter = { command = "yamlfmt", args = ["-"] }
-language-servers = ["ansible-language-server"]
+language-servers = ["yaml-language-server"]
 auto-format = true
 
 [[language]]

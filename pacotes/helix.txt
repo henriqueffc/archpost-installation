@@ -1,5 +1,4 @@
 7zip
-ansible-language-server
 ansible-lint
 aria2
 base-devel
@@ -72,6 +71,7 @@ wget
 wl-clipboard
 yamlfmt
 yamllint
+yaml-language-server
 yazi
 zsh
 zoxide
