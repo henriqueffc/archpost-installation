@@ -667,6 +667,7 @@ Configurações feitas em `about:config`
 | browser.cache.memory.max_entry_size (20480 = 20 MB)                                                                | 20480   |
 | browser.cache.memory.enable                                                                                        | true    |
 | browser.display.document_color_use                                                                                 | 0       |
+| browser.ipProtection.enabled                                                                                       | true    |
 | browser.profiles.enabled                                                                                           | true    |
 | browser.theme.native-theme (para o gnome, teste o valor false, mas não precisa com o tema Gnome Adwaita GTK4 Dark) | false   |
 | browser.sessionstore.interval                                                                                      | 60000   |
