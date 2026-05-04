@@ -64,12 +64,9 @@ Uso as extensões [Vitals](https://extensions.gnome.org/extension/1460/vitals/),
 [Alphabetical App Grid](https://extensions.gnome.org/extension/4269/alphabetical-app-grid/),
 [AppIndicator/KStatusNotifierItem habilitadas](https://extensions.gnome.org/extension/615/appindicator-support/),
 [Wallpaper Slideshow](https://extensions.gnome.org/extension/6281/wallpaper-slideshow/),
-[Auto Accent Colour](https://extensions.gnome.org/extension/7502/auto-accent-colour/),
-[Foresight](https://extensions.gnome.org/extension/7901/foresight/),
-[Overview Background](https://extensions.gnome.org/extension/5856/overview-background/),
-[Maximize Window Into New Workspace](https://extensions.gnome.org/extension/8851/maximize-window-into-new-workspace/)
+[Auto Accent Colour](https://extensions.gnome.org/extension/7502/auto-accent-colour/)
 e
-[Quick Web Search](https://extensions.gnome.org/extension/6051/quick-web-search/).
+[Maximize Window Into New Workspace](https://extensions.gnome.org/extension/8851/maximize-window-into-new-workspace/).
 
 Para acessar as configurações das extensões use o programa Extensões que é
 instalado com o GNOME.
@@ -89,8 +86,7 @@ habilitada pelo script nº 6.
 A extensão Wallpaper Slideshow foi instalada usando o AUR (pelo script nº 5) e
 habilitada pelo script nº 6.
 
-As extensões Foresight, Maximize Window Into New Workspace, Quick Web Search e
-Overview Background foram instaladas pela página
+A extensão Maximize Window Into New Workspace foi instalada usando o site
 [https://extensions.gnome.org/](https://extensions.gnome.org/). O pacote
 necessário para essa funcionalidade
 ([gnome-browser-connector](https://archlinux.org/packages/extra/any/gnome-browser-connector/))
@@ -726,6 +722,10 @@ Configurações feitas em `about:config`
 | sidebar.verticalTabs                                                                                               | true     |
 | widget.gtk.rounded-bottom-corners.enabled                                                                          | true     |
 | widget.use-xdg-desktop-portal.file-picker                                                                          | 1        |
+| widget.use-xdg-desktop-portal.mime-handler                                                                         | 1        |
+| widget.use-xdg-desktop-portal.settings                                                                             | 1        |
+| widget.use-xdg-desktop-portal.location                                                                             | 1        |
+| widget.use-xdg-desktop-portal.open-uri                                                                             | 1        |
 
 **Firefox Nightly**
 
