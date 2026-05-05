@@ -63,8 +63,7 @@ breeze dark ou escuro.
 Uso as extensões [Vitals](https://extensions.gnome.org/extension/1460/vitals/),
 [Alphabetical App Grid](https://extensions.gnome.org/extension/4269/alphabetical-app-grid/),
 [AppIndicator/KStatusNotifierItem habilitadas](https://extensions.gnome.org/extension/615/appindicator-support/),
-[Wallpaper Slideshow](https://extensions.gnome.org/extension/6281/wallpaper-slideshow/),
-[Auto Accent Colour](https://extensions.gnome.org/extension/7502/auto-accent-colour/)
+[Wallpaper Slideshow](https://extensions.gnome.org/extension/6281/wallpaper-slideshow/)
 e
 [Maximize Window Into New Workspace](https://extensions.gnome.org/extension/8851/maximize-window-into-new-workspace/).
 
@@ -79,9 +78,6 @@ foi configurada e habilitada pelo script nº 6.
 
 A extensão Alphabetical App Grid foi instalada usando o AUR (script nº 5). A
 configuração para essa extensão foi feita pelo script nº 6.
-
-A extensão Auto Accent Colour foi instalada usando o AUR (pelo script nº 5) e
-habilitada pelo script nº 6.
 
 A extensão Wallpaper Slideshow foi instalada usando o AUR (pelo script nº 5) e
 habilitada pelo script nº 6.

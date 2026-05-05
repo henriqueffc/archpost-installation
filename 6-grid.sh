@@ -48,5 +48,4 @@ gsettings set org.gnome.shell.extensions.alphabetical-app-grid folder-order-posi
 # Habilitando as extensões
 gnome-extensions enable AlphabeticalAppGrid@stuarthayhurst
 gnome-extensions enable Vitals@CoreCoding.com
-gnome-extensions enable auto-accent-colour@Wartybix
 gnome-extensions enable azwallpaper@azwallpaper.gitlab.com
