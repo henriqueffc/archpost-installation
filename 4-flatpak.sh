@@ -68,8 +68,7 @@ echo -e "$AZUL Adicionando o remote gnome-nightly $FIM"
 flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
 
 # Configurações do tema,variáveis e permissões para aplicativos flatpaks
-echo -e "$AZUL Alterando variáveis para determinados apps flatpaks $FIM"
-flatpak override --user --socket=wayland com.discordapp.Discord
+#echo -e "$AZUL Alterando variáveis para determinados apps flatpaks $FIM"
 
 echo -e "$AZUL Configurando o tema globalmente para os apps flatpaks $FIM"
 sudo flatpak override --filesystem=xdg-config/gtk-4.0
