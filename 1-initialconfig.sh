@@ -15,7 +15,7 @@ line=$(cat /etc/hostname)
 echo -e "127.0.1.1\t$line.localdomain\t$line" >>/etc/hosts
 
 # Micro, nano, vim, Linux-firmware, lz4, wireless-regdb e headers para o kernel stable e lts
-pacman -Syu micro nano vim linux-firmware linux-firmware-whence linux linux-headers linux-lts linux-lts-headers wireless-regdb lz4 --needed --noconfirm
+pacman -Syu micro nano vim linux-firmware linux-firmware-whence linux linux-headers linux-lts linux-lts-headers scx-tools wireless-regdb lz4 --needed --noconfirm
 
 # Visudo
 cp /etc/sudoers /etc/sudoers.bak
