@@ -26,10 +26,11 @@ Nvidia GPU com o driver Nvidia open kernel module (versão dkms), shell Zsh com
 grml-zsh-config e oh-my-posh, Foot terminal, AUR helper Yay, Flatpak, Podman,
 Distrobox, Apparmor, firewalld, systemd-resolved, NetworkManager (default
 backend), wireless-regdb (WIRELESS_REGDOM="BR"), qemu, Incus, mise, intel_pstate
-scaling driver, thermald, tuned e tuned-ppd para gerenciamento de frequências da
-CPU e do perfil de energia, ananicy-cpp, firmware para o áudio da Sound Open
-Firmware, Helix Editor, Ollama (CUDA), GNOME (Wayland). As configurações
-executadas pelos scripts deste repositório são concebidas nessa base.
+scaling driver, thermald, intel-lpmd, tuned e tuned-ppd para gerenciamento de
+frequências da CPU e do perfil de energia, ananicy-cpp, firmware para o áudio da
+Sound Open Firmware, Helix Editor, Ollama (CUDA), GNOME (Wayland). As
+configurações executadas pelos scripts deste repositório são concebidas nessa
+base.
 
 Os scripts deverão ser executados após a inicialização do sistema no ambiente
 gráfico.
