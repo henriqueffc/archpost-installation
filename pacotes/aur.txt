@@ -8,3 +8,4 @@ gnome-shell-extension-wallpaper-slideshow
 zotero-bin
 quickemu
 dropbox
+hunspell-pt-br
