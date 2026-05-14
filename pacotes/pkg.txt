@@ -94,6 +94,7 @@ gvfs-wsdd
 gsmartcontrol
 gst-plugin-libcamera
 hexyl
+hunspell
 hwdetect
 hwloc
 imagemagick
@@ -120,6 +121,7 @@ libraw
 libreoffice-fresh
 libreoffice-fresh-pt-br
 libreoffice-extension-texmaths
+libmythes
 libwmf
 libultrahdr
 libzip

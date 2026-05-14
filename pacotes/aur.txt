@@ -9,3 +9,4 @@ zotero-bin
 quickemu
 dropbox
 hunspell-pt-br
+mythes-pt-br
