@@ -91,7 +91,6 @@ gvfs-nfs
 gvfs-smb
 gvfs-onedrive
 gvfs-wsdd
-gparted
 gsmartcontrol
 gst-plugin-libcamera
 hexyl
