@@ -102,8 +102,6 @@ script número 3.
 
 `echo "file:///mnt/ponto_de_montagem 🖴  NVME" >> ~/.config/gtk-3.0/bookmarks`
 
-`echo "file:///home/$USER/Dropbox 📤 Dropbox" >> ~/.config/gtk-3.0/bookmarks`
-
 `mkdir ~/Documentos/Projetos && echo "file:///home/$USER/Documentos/Projetos 🎒 Projetos" >>~/.config/gtk-3.0/bookmarks`
 
 ## Ext4
@@ -414,11 +412,6 @@ comando `cat /var/lib/flatpak/overrides/global` Para retirar essas variáveis
 apague a entrada no arquivo `/var/lib/flatpak/overrides/global`. As variáveis
 configuradas para um determinado aplicativo flatpak estão localizadas em
 `~/.local/share/flatpak/overrides`
-
-**Início no startup**
-
-Habilite a inicialização do Dropbox junto com o sistema. Habilite no aplicativo
-do Dropbox ou use o app Ignição (o app Ajustes funciona também).
 
 **Segundo plano**
 

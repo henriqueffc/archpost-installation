@@ -30,16 +30,10 @@ echo -e "$AZUL
 -------------------------------------------------------------------------
 $FIM"
 
-# Importanto a chave pública do Dropbox
-# Pode evitar erros durante a instalação do Dropbox
-curl -fsSL https://linux.dropbox.com/fedora/rpm-public-key.asc -o dropbox-key.asc
-gpg --import dropbox-key.asc
-rm dropbox-key.asc
-
 # Pacotes AUR
 yay -Y --gendb
 yay -Y --devel --save
-sudo pacman -S cmake meson ninja gendesk python-gpgme libappindicator --noconfirm --needed
+sudo pacman -S cmake meson ninja --noconfirm --needed
 yay --removemake --answerclean A --noanswerdiff --noansweredit --noconfirm --needed -S - <./pacotes/aur.txt
 
 # Habilitando o Ananicy-cpp (instalado pelo script n.° 3) com as regras existentes no pacote cachyos-ananicy-rules-git (AUR)

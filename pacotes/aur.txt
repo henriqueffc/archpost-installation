@@ -7,6 +7,5 @@ gnome-shell-extension-alphabetical-grid-extension
 gnome-shell-extension-wallpaper-slideshow
 zotero-bin
 quickemu
-dropbox
 hunspell-pt-br
 mythes-pt-br
