@@ -44,7 +44,6 @@ flatpak install flathub com.discordapp.Discord -y
 flatpak install flathub io.gitlab.theevilskeleton.Upscaler -y
 flatpak install flathub nl.emphisia.icon -y
 flatpak install flathub com.saivert.pwvucontrol -y
-flatpak install flathub net.nokyan.Resources -y
 flatpak install flathub be.alexandervanhee.gradia -y
 flatpak install flathub io.github.flattool.Ignition -y
 flatpak install flathub io.github.fabrialberio.pinapp -y

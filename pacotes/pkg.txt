@@ -178,6 +178,7 @@ qt5-wayland
 qt6-wayland
 rclone
 rebuild-detector
+resources
 resvg
 ripgrep
 ripgrep-all
