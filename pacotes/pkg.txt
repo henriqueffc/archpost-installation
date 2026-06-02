@@ -152,6 +152,7 @@ nmap
 nodejs
 npm
 ntfs-3g
+ntfsprogs
 nvme-cli
 obsidian
 ollama-cuda
