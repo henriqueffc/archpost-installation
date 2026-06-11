@@ -45,7 +45,11 @@ dconf load /org/gnome/shell/extensions/vitals/ <./dconf/vitals.txt
 # Configuração para a extensão Alphabetical App Grid (AUR - instalada pelo script nº 5)
 gsettings set org.gnome.shell.extensions.alphabetical-app-grid folder-order-position 'start'
 
+# Configuração para a extensão Just Perfection
+dconf load /org/gnome/shell/extensions/just-perfection/ <./dconf/justperfection.txt
+
 # Habilitando as extensões
 gnome-extensions enable AlphabeticalAppGrid@stuarthayhurst
 gnome-extensions enable Vitals@CoreCoding.com
 gnome-extensions enable azwallpaper@azwallpaper.gitlab.com
+gnome-extensions enable just-perfection-desktop@just-perfection

@@ -63,9 +63,10 @@ breeze dark ou escuro.
 Uso as extensões [Vitals](https://extensions.gnome.org/extension/1460/vitals/),
 [Alphabetical App Grid](https://extensions.gnome.org/extension/4269/alphabetical-app-grid/),
 [AppIndicator/KStatusNotifierItem habilitadas](https://extensions.gnome.org/extension/615/appindicator-support/),
-[Wallpaper Slideshow](https://extensions.gnome.org/extension/6281/wallpaper-slideshow/)
+[Wallpaper Slideshow](https://extensions.gnome.org/extension/6281/wallpaper-slideshow/),
+[Maximize Window Into New Workspace](https://extensions.gnome.org/extension/8851/maximize-window-into-new-workspace/)
 e
-[Maximize Window Into New Workspace](https://extensions.gnome.org/extension/8851/maximize-window-into-new-workspace/).
+[Just Perfection](https://extensions.gnome.org/extension/3843/just-perfection/).
 
 Para acessar as configurações das extensões use o programa Extensões que é
 instalado com o GNOME.
@@ -79,8 +80,11 @@ foi configurada e habilitada pelo script nº 6.
 A extensão Alphabetical App Grid foi instalada usando o AUR (script nº 5). A
 configuração para essa extensão foi feita pelo script nº 6.
 
-A extensão Wallpaper Slideshow foi instalada usando o AUR (pelo script nº 5) e
+A extensão Wallpaper Slideshow foi instalada usando o AUR (script nº 5) e
 habilitada pelo script nº 6.
+
+A extensão Just Perfection foi instalada usando o AUR (script nº5) e habilitada
+pelo script nº 6.
 
 A extensão Maximize Window Into New Workspace foi instalada usando o site
 [https://extensions.gnome.org/](https://extensions.gnome.org/). O pacote
@@ -90,6 +94,11 @@ foi instalado pelo script nº 3. Para instalar a extensão pelo navegador é
 preciso habilitar a extensão "Integração com o Gnome Shell"
 ([Firefox](https://addons.mozilla.org/firefox/addon/gnome-shell-integration/) /
 [Chrome](https://chromewebstore.google.com/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep)).
+
+Uso a extensão Just Perfection para maximizar as janelas dos aplicativos ao
+executá-los e para desabilitar as animações no shell (desabilito também as
+animações no shell pelo script nº 3). Com a extensão Maximize Window Into New
+Workspace a janela maximizada é movida para um novo workspace.
 
 ## SSH
 

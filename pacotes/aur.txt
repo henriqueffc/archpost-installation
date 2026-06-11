@@ -5,6 +5,7 @@ oh-my-posh-bin
 heroic-games-launcher-bin
 gnome-shell-extension-alphabetical-grid-extension
 gnome-shell-extension-wallpaper-slideshow
+gnome-shell-extension-just-perfection-desktop
 zotero-bin
 quickemu
 hunspell-pt-br
