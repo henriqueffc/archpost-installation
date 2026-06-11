@@ -47,7 +47,6 @@ flatpak install flathub io.github.fabrialberio.pinapp -y
 flatpak install flathub io.github.vmkspv.lenspect -y
 flatpak install flathub io.gitlab.news_flash.NewsFlash -y
 flatpak install flathub com.bitwarden.desktop -y
-flatpak install flathub io.ente.photos -y
 flatpak install flathub io.ente.auth -y
 flatpak install flathub io.github.kolunmi.Bazaar -y
 flatpak install flathub org.zdoom.UZDoom -y
