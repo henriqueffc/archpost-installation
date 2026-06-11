@@ -80,7 +80,6 @@ gnome-shell-extensions
 gnome-shell-extension-vitals
 gnome-tweaks
 go
-goverlay
 gpu-screen-recorder
 gvfs-afc
 gvfs-dnssd
