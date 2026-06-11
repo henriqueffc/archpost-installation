@@ -40,7 +40,6 @@ flatpak install flathub com.ranfdev.DistroShelf -y
 flatpak install flathub org.gnome.Fractal -y
 flatpak install flathub garden.jamie.Morphosis -y
 flatpak install flathub org.telegram.desktop -y
-flatpak install flathub com.discordapp.Discord -y
 flatpak install flathub io.gitlab.theevilskeleton.Upscaler -y
 flatpak install flathub nl.emphisia.icon -y
 flatpak install flathub com.saivert.pwvucontrol -y
@@ -76,6 +75,5 @@ sudo flatpak override --filesystem=xdg-config/gtk-3.0
 echo -e "$AZUL Define como não permitida a execução em segundo plano para determinados apps flatpaks $FIM"
 flatpak permission-set background background io.github.kolunmi.Bazaar no
 flatpak permission-set background background org.telegram.desktop no
-flatpak permission-set background background com.discordapp.Discord no
 flatpak permission-set background background io.gitlab.news_flash.NewsFlash no
 flatpak permission-set background background com.github.finefindus.eyedropper no
