@@ -591,16 +591,16 @@ Verificar se DoT está funcionando
 
 **Preset**
 
-Atualmente uso o preset que está no arquivo
+É possível usar o preset que está no arquivo
 `/easyeffects/LoudnessCrystalEqualizerMod.json` do projeto. Ele é uma
 modificação do preset
 [LoudnessCrystalEqualizer.json](https://github.com/Digitalone1/EasyEffects-Presets/blob/master/LoudnessCrystalEqualizer.json)
 
-Eu substituo o plugin equalizador do preset por outro equalizador, com os
+Substitua o plugin equalizador do preset por outro equalizador, com os
 parâmetros do
 [HyperX Cloud Stinger ParametricEQ.txt](https://github.com/jaakkopasanen/AutoEq/blob/master/results/Rtings/HMS%20II.3%20over-ear/HyperX%20Cloud%20Stinger/HyperX%20Cloud%20Stinger%20ParametricEQ.txt)
 
-Acrescento também o plugin Alimentação Cruzada no
+Acrescente também o plugin Alimentação Cruzada no
 [final](https://github.com/Digitalone1/EasyEffects-Presets/tree/master#using-headphones)
 da ordem dos plugins.
 
