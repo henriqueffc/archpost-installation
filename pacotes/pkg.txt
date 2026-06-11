@@ -105,7 +105,6 @@ inxi
 isd
 jq
 jre-openjdk
-kdiskmark
 kmon
 ladspa
 lnav
