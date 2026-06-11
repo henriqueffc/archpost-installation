@@ -124,7 +124,6 @@ libultrahdr
 libzip
 lm_sensors
 lrzip
-lshw
 lsof
 lua
 lurk
@@ -219,7 +218,6 @@ unison
 unrar
 unzip
 uv
-veracrypt
 virt-what
 webp-pixbuf-loader
 weechat

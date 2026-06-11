@@ -129,7 +129,6 @@ acessar o histórico dos comandos usados no terminal
 | isd                                   | systemd TUI                                                                        |
 | kmon                                  | Linux Kernel Manager and Activity Monitor                                          |
 | lnav                                  | Log file navigator                                                                 |
-| lshw                                  | informações sobre o hardware                                                       |
 | lurk                                  | alternativa ao strace                                                              |
 | lynx                                  | browser                                                                            |
 | micro                                 | editor de texto                                                                    |
