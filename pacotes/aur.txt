@@ -10,3 +10,4 @@ zotero-bin
 quickemu
 hunspell-pt-br
 mythes-pt-br
+hyphen-pt-br
