@@ -61,4 +61,7 @@ if command -v oh-my-posh >/dev/null; then
     echo 'eval "$(oh-my-posh init zsh --config /usr/share/oh-my-posh/themes/gruvbox.omp.json)"' >>~/.zshrc.local
 fi
 
+# compinit
+echo 'autoload -Uz compinit && compinit' >>~/.zshrc.local
+
 echo -e "$AZUL Instalação concluída. Reinicie o terminal. $FIM"

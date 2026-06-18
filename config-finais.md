@@ -826,7 +826,7 @@ Execute o comando abaixo.
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-Inclua no `~/.zshrc.local`
+Inclua antes de `autoload -Uz compinit && compinit` no `~/.zshrc.local`
 
 ```
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
