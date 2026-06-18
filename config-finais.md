@@ -113,6 +113,10 @@ script número 3.
 
 `mkdir ~/Documentos/Projetos && echo "file:///home/$USER/Documentos/Projetos 🎒 Projetos" >>~/.config/gtk-3.0/bookmarks`
 
+É possível retirar a visualização de diretórios no Nautilus sem tornar os
+diretórios ocultos. Crie o arquivo `.hidden`, p. ex. no diretório home, e insira
+os nomes dos diretórios em lista dentro do arquivo.
+
 ## Ext4
 
 Habilite o
