@@ -653,9 +653,6 @@ diretório `~/.var/app/com.github.wwmm.easyeffects/data/easyeffects/input`
 
 ## firefox
 
-Uso o tema
-[Gnome Adwaita GTK4 Dark](https://addons.mozilla.org/pt-BR/firefox/addon/gnome-adwaita-gtk4-dark/)
-
 Configurações feitas em `about:config`
 
 | Configuração                                                                                                       | Valor    |
