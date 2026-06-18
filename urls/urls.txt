@@ -1,1 +1,1 @@
-Era usado no script nº 3 (AppImage), mas não é mais necessário. Optei por não deletar o arquivo caso volte a precisar no futuro.
+https://github.com/cjpais/Handy/releases/download/v0.8.3/Handy_0.8.3_amd64.AppImage

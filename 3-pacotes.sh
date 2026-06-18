@@ -105,10 +105,10 @@ $FIM"
 sudo usermod -aG video,kvm "$USERNAME"
 
 # Appimage
-#aria2c -d ~/Downloads -i ./urls/urls.txt
+aria2c -d ~/Downloads -i ./urls/urls.txt
 mkdir /home/$USER/AppImages
-#mv ~/Downloads/*.AppImage /home/$USER/AppImages
-#chmod +x /home/$USER/AppImages/*.AppImage
+mv ~/Downloads/*.AppImage /home/$USER/AppImages
+chmod +x /home/$USER/AppImages/*.AppImage
 
 # Fontes
 sudo mkdir -p /usr/local/share/fonts
