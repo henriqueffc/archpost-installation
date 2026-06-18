@@ -1,5 +1,4 @@
 downgrade
-ttf-noto-emoji-monochrome
 cachyos-ananicy-rules
 oh-my-posh-bin
 heroic-games-launcher-bin
