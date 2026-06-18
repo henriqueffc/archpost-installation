@@ -1,6 +1,6 @@
 downgrade
 ttf-noto-emoji-monochrome
-cachyos-ananicy-rules-git
+cachyos-ananicy-rules
 oh-my-posh-bin
 heroic-games-launcher-bin
 gnome-shell-extension-alphabetical-grid-extension
