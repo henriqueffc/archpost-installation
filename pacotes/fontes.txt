@@ -20,6 +20,7 @@ ttf-opensans
 ttf-roboto
 ttf-roboto-mono
 ttf-ubuntu-font-family
+woff2-font-awesome
 xorg-fonts-misc
 xorg-fonts-type1
 xorg-fonts-100dpi
