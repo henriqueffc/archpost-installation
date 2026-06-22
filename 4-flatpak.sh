@@ -37,7 +37,6 @@ flatpak install flathub info.febvre.Komikku -y
 flatpak install flathub org.gnome.gitlab.somas.Apostrophe -y
 flatpak install flathub org.gnome.gitlab.somas.Apostrophe.Plugin.TexLive -y
 flatpak install flathub com.ranfdev.DistroShelf -y
-flatpak install flathub garden.jamie.Morphosis -y
 flatpak install flathub io.gitlab.theevilskeleton.Upscaler -y
 flatpak install flathub nl.emphisia.icon -y
 flatpak install flathub com.saivert.pwvucontrol -y
