@@ -13,9 +13,12 @@ usando o script de instalação
 após essa data.
 
 Os scripts foram concebidos **especificamente** para a configuração da minha
-máquina. Notebook Lenovo LOQ 15IRH8, Intel Core i5-12450H, 16GB de RAM, 2 X
-512GB SSD M.2, NVIDIA GeForce RTX 3050 6GB GDDR6, teclado Logitech K120, mouse
-Logitech M90, joystick Multilaser Js091 e headset HyperX Cloud Stinger.
+máquina e para o meu estilo de uso (p. ex. utilizo o notebook ligado na
+energia).
+
+Notebook Lenovo LOQ 15IRH8, Intel Core i5-12450H, 16GB de RAM, 2 X 512GB SSD
+M.2, NVIDIA GeForce RTX 3050 6GB GDDR6, teclado Logitech K120, mouse Logitech
+M90, joystick Multilaser Js091 e headset HyperX Cloud Stinger.
 
 Alguns componentes do sistema descritos a seguir são selecionáveis durante a
 instalação pelo archinstall. Verifique a lista e faça essa seleção. Instalo o
