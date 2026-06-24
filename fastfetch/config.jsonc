@@ -77,7 +77,7 @@
       "type": "cpu",
       "key": "╭─",
       "keyColor": "red",
-	  "format": "{name} @ {freq-max}"
+      "format": "{name} @ {freq-max}"
     },
     {
       "type": "gpu",
@@ -85,11 +85,11 @@
       "key": "├─󰾲",
       "keyColor": "red"
     },
-	{
-	  "type": "disk",
-	  "key": "├─󰋊",
-	  "keyColor": "red"
-	},
+    {
+      "type": "disk",
+      "key": "├─󰋊",
+      "keyColor": "red"
+    },
     {
       "type": "memory",
       "key": "├─󰑭",
