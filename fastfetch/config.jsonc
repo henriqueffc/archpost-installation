@@ -76,7 +76,8 @@
     {
       "type": "cpu",
       "key": "╭─",
-      "keyColor": "red"
+      "keyColor": "red",
+	  "format": "{name} @ {freq-max}"
     },
     {
       "type": "gpu",
@@ -84,6 +85,11 @@
       "key": "├─󰾲",
       "keyColor": "red"
     },
+	{
+	  "type": "disk",
+	  "key": "├─󰋊",
+	  "keyColor": "red"
+	},
     {
       "type": "memory",
       "key": "├─󰑭",
@@ -91,17 +97,7 @@
     },
     {
       "type": "swap",
-      "key": "├─󰿡",
-      "keyColor": "red"
-    },
-    {
-      "type": "disk",
-      "key": "├─󰋊",
-      "keyColor": "red"
-    },
-    {
-      "type": "sound",
-      "key": "╰─",
+      "key": "╰─󰿡",
       "keyColor": "red"
     },
     "break",
