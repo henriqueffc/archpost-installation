@@ -54,6 +54,7 @@ flatpak install flathub io.gitlab.metadatacleaner.metadatacleaner -y
 flatpak install flathub app.drey.Warp -y
 flatpak install flathub io.github.radiolamp.mangojuice -y
 flatpak install flathub io.github.dyegoaurelio.simple-wireplumber-gui -y
+flatpak install flathub org.gnome.Podcasts -y
 
 # Flathub Remote-Beta
 echo -e "$AZUL Adicionando o remote flathub-beta $FIM"
