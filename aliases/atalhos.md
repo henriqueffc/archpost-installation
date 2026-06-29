@@ -128,6 +128,8 @@ acessar o histórico dos comandos usados no terminal
 | inxi (inxi -Fv8)                      | informações sobre o sistema                                                        |
 | isd                                   | systemd TUI                                                                        |
 | kmon                                  | Linux Kernel Manager and Activity Monitor                                          |
+| llama-cli                             | LLM inference in C/C++                                                             |
+| llama-server                          | Server - LLM inference in C/C++                                                    |
 | lnav                                  | Log file navigator                                                                 |
 | lurk                                  | alternativa ao strace                                                              |
 | lynx                                  | browser                                                                            |
@@ -157,6 +159,7 @@ acessar o histórico dos comandos usados no terminal
 | trash-restore                         | restaura arquivo da lixeira                                                        |
 | translate-shell (trans)               | tradução                                                                           |
 | weechat                               | IRC                                                                                |
+| whisper-cli                           | Port of OpenAI's Whisper model in C/C++                                            |
 | wikiman                               | Offline search engine for manual pages in terminal - w3m (Arch Wiki)               |
 | wormhole                              | (magic-wormhole) = securely transfer data between computers                        |
 | yazi                                  | file manager                                                                       |
@@ -208,6 +211,7 @@ acessar o histórico dos comandos usados no terminal
 | xltree       | lista todos os arquivos e subpastas do diretório em formato de árvore                                                                     |
 | yaycache     | limpa o cache o yay (aur)                                                                                                                 |
 | sudo         | executa o run0 (systemd)                                                                                                                  |
+| whisper-cli  | executa o whisper-cli na placa dedicada Nvidia                                                                                            |
 
 # Wl-clipboard
 

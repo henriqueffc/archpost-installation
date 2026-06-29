@@ -222,6 +222,7 @@ uv
 virt-what
 webp-pixbuf-loader
 weechat
+whisper-cpp-vulkan
 wikiman
 wine
 wine-gecko

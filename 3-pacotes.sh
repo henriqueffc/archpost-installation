@@ -105,10 +105,10 @@ $FIM"
 sudo usermod -aG video,kvm "$USERNAME"
 
 # Appimage
-aria2c -d ~/Downloads -i ./urls/urls.txt
+#aria2c -d ~/Downloads -i ./urls/urls.txt
 mkdir /home/$USER/AppImages
-mv ~/Downloads/*.AppImage /home/$USER/AppImages
-chmod +x /home/$USER/AppImages/*.AppImage
+#mv ~/Downloads/*.AppImage /home/$USER/AppImages
+#chmod +x /home/$USER/AppImages/*.AppImage
 
 # Fontes
 sudo mkdir -p /usr/local/share/fonts
@@ -354,5 +354,9 @@ sudo cp -p -R /usr/lib/tuned/profiles/{balanced,powersave,throughput-performance
 sudo sed -i 's/vm.swappiness=10/#vm.swappiness=10/g' /etc/tuned/profiles/throughput-performance/tuned.conf
 sudo sed -i '$ a \\n[audio]\ntimeout=0' /etc/tuned/profiles/throughput-performance/tuned.conf
 sudo sed -i 's/timeout=10/timeout=0/g' /etc/tuned/profiles/balanced/tuned.conf
+
+# Whisper-cpp
+mkdir -vp whisper/models
+wcurl https://raw.githubusercontent.com/ggml-org/whisper.cpp/refs/heads/master/models/download-ggml-model.sh -o ~/whisper/models/download-ggml-model.sh
 
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
