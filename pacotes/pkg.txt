@@ -10,6 +10,7 @@ archlinux-wallpaper
 aspell
 aspell-en
 aspell-pt
+audacity
 avahi
 base-devel
 bash-completion
