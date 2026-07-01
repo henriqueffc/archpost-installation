@@ -23,9 +23,6 @@ sudo pacman -Syu podman podman-compose podlet crun krun netavark aardvark-dns --
 UNPRIVILEGED=$(sysctl kernel.unprivileged_userns_clone | grep -o '[[:digit:]]*')
 if [[ $UNPRIVILEGED == 1 ]]; then
     echo -e "$VERDE sysctl kernel.unprivileged_userns_clone = 1 $FIM"
-    sudo touch /etc/subuid /etc/subgid
-    sudo usermod --add-subuids 100000-165535 --add-subgids 100000-165535 "$USERNAME"
-    sudo podman system migrate
     mkdir $HOME/.config/containers/
     cp ./podman/registries.conf $HOME/.config/containers/
 
