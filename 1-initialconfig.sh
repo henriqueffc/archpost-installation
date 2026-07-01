@@ -28,8 +28,10 @@ echo -e "# Defaults specification\nDefaults editor=/usr/bin/micro" >>/etc/sudoer
 # Pacman.conf
 cp /etc/pacman.conf /etc/pacman.conf.bak
 sed -i '/#UseSyslog/c\UseSyslog' /etc/pacman.conf
-sed -i 's/#Color/\Color/' /etc/pacman.conf
 sed -i 's/#VerbosePkgLists/\VerbosePkgLists/' /etc/pacman.conf
+if command -v grep "#Color" /etc/pacman.conf >/dev/null; then
+    sed -i 's/#Color/\Color/' /etc/pacman.conf
+fi
 if [ ! -f /var/lib/pacman/sync/multilib.db ]; then
     sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
     pacman -Syu
