@@ -77,9 +77,11 @@ gnome-browser-connector
 gnome-epub-thumbnailer
 gnome-firmware
 gnome-appfolders-manager
+gnome-remote-desktop
 gnome-shell-extensions
 gnome-shell-extension-vitals
 gnome-tweaks
+gnome-user-share
 go
 gpu-screen-recorder
 gvfs-afc
@@ -131,6 +133,7 @@ lua
 lurk
 lvm2
 lynx
+malcontent
 man-db
 mangohud
 magic-wormhole
@@ -181,6 +184,7 @@ resources
 resvg
 ripgrep
 ripgrep-all
+rygel
 rsync
 rtaudio
 ruby
