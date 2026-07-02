@@ -55,9 +55,11 @@ Para usar os scripts clone o repositório e acesse a pasta:
 
 Ordem de uso dos scripts:
 
-- 1-initialconfig.sh (esse script deve ser executado com o comando sudo -
-  `sudo ./1-initialconfig.sh`)
-- 2-video-e-audio.sh
+- 1-initialconfig.sh (O script deve ser executado como usuário **root** devido
+  às alterações que serão realizadas no diretório `/boot/loader/entries`. O
+  **archinstall**, a partir da versão 4.4, restringe o acesso à partição EFI por
+  meio de `fmask=0077` e `dmask=0077` no arquivo `fstab`)
+- 2-apparmor-e-systemdresolved.sh
 - 3-pacotes.sh
 - 4-flatpak.sh
 - 5-yay.sh

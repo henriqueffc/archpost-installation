@@ -6,8 +6,25 @@
 # License: MIT License
 
 # Cores dos avisos
+AZUL='\e[1;34m'
 VERDE='\e[1;32m'
 FIM='\e[0m'
+
+# 1. Verifica se é root
+if [ "$EUID" -ne 0 ]; then
+    echo "Erro: Este primeiro script precisa ser executado como root."
+    echo "Por favor, mude para o usuário root usando 'su' e execute o script novamente."
+    echo "Leia o README do projeto para mais detalhes"
+    exit 1
+fi
+
+# 2. Verifica se foi invocado via sudo
+if [ -n "$SUDO_USER" ]; then
+    echo "Erro: Este primeiro script NÃO deve ser executado via 'sudo'."
+    echo "Por favor, mude para o usuário root usando 'su' e execute o script novamente."
+    echo "Leia o README do projeto para mais detalhes"
+    exit 1
+fi
 
 # Localhost
 cp /etc/hosts /etc/hosts.bak
@@ -72,5 +89,31 @@ mkinitcpio -P
 # zram
 cp /etc/systemd/zram-generator.conf /etc/systemd/zram-generator.conf.bak
 cp ./zram/zram-generator.conf /etc/systemd/zram-generator.conf
+
+echo -e "$AZUL
+-------------------------------------------------------------------------
+  Instalando os pacotes para Intel, Nvidia, áudio e pipewire/wireplumber.
+  Digite s (SIM) para todas as requisições feitas pelo sistema
+  para as instalações desses pacotes.
+-------------------------------------------------------------------------
+$FIM" && sleep 3
+
+# Video (Intel e Nvidia)
+pacman --needed -S - <./pacotes/pkg-video.txt
+
+# Pipewire
+pacman --needed -S - <./pacotes/pipewire.txt
+
+# Áudio - Codecs
+pacman --needed -S - <./pacotes/pkg-audio.txt
+
+# Parâmetros do boot
+# O zswap.enabled=0 é configurado pelo archinstall, por isso não está definido nas opções acima.
+# O notebook suporta o Sound Open Firmware, em razão disso o parâmetro snd_intel_dspcfg.dsp_driver=3 foi definido para o kernel. O pacote necessário para o firmware (sof-firmware) está na lista de pacotes para o Pipewire.
+# O scaling driver intel_pstate está definido como ativo. https://www.kernel.org/doc/html/latest/admin-guide/pm/intel_pstate.html / https://wiki.archlinux.org/title/CPU_frequency_scaling
+mkdir -p /etc/entries.kernel/
+cp /boot/loader/entries/*.conf /etc/entries.kernel/
+sed -i '$ { s/^.*$/& quiet loglevel=3 systemd.show_status=auto rd.udev.log_level=3 modprobe.blacklist=iTCO_wdt nowatchdog intel_pstate=active intel_iommu=on iommu=pt nvidia_drm.modeset=1 nvidia_drm.fbdev=1 nvidia.NVreg_EnableResizableBar=1 i915.enable_fbc=0 i915.enable_psr=0 i915.enable_dc=0 snd_intel_dspcfg.dsp_driver=3 transparent_hugepage=madvise pcie_aspm.policy=performance audit=1 audit_backlog_limit=1200 lsm=landlock,lockdown,yama,integrity,apparmor,bpf/ }' /boot/loader/entries/*.conf
+echo -e "$AZUL Os backups das entries dos kernels estão em /etc/entries.kernel/ $FIM"
 
 printf "%s $VERDE Fim! Reinicie com o comando reboot. $FIM \n"
