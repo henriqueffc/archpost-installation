@@ -106,6 +106,8 @@ inxi
 isd
 jq
 jre-openjdk
+kdenlive
+kimageformats
 kmon
 ladspa
 llama-cpp-vulkan
@@ -158,6 +160,7 @@ nvme-cli
 obsidian
 ollama-cuda
 onnxruntime-cpu
+opencv-cuda
 openssh
 perl-image-exiftool
 7zip
@@ -178,6 +181,7 @@ poppler-data
 qt5-imageformats
 qt5-wayland
 qt6-wayland
+qt6-imageformats
 rclone
 rebuild-detector
 resources
