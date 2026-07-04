@@ -1,3 +1,2 @@
 [/]
 animation=0
-window-maximized-on-create=true
