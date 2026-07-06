@@ -674,7 +674,6 @@ Configurações feitas em `about:config`
 | general.smoothScroll.mouseWheel.durationMinMS                                                                      | 350      |
 | gfx.canvas.accelerated.cache-size                                                                                  | 512      |
 | gfx.content.skia-font-cache-size                                                                                   | 20       |
-| gfx.webrender.all                                                                                                  | true     |
 | gfx.webrender.precache-shaders                                                                                     | true     |
 | gfx.webrender.program-binary-disk                                                                                  | true     |
 | gfx.x11-egl.force-disabled                                                                                         | true     |
