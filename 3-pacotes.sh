@@ -339,7 +339,7 @@ fi
 
 # Instalação e configuração do tuned e tuned-ppd
 echo -e "$AZUL \t Instalando e habilitando o tuned e o tuned-ppd - substitui o power-profiles-daemon $FIM"
-sudo pacman -S tuned tuned-ppd x86_energy_perf_policy systemtap virt-what wireless_tools --needed --noconfirm
+sudo pacman -S tuned tuned-ppd x86_energy_perf_policy systemtap virt-what --needed --noconfirm
 sudo systemctl enable --now tuned
 sudo systemctl enable --now tuned-ppd
 echo "Configuração concluída."

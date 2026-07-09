@@ -113,7 +113,6 @@ ladspa
 llama-cpp
 lnav
 lib32-mangohud
-libayatana-appindicator
 libappindicator
 libcamera-tools
 libgtop
@@ -240,7 +239,6 @@ winetricks
 wl-clipboard
 wmctrl
 wireless-regdb
-wireless_tools
 x86_energy_perf_policy
 xdg-desktop-portal
 xdg-desktop-portal-gnome

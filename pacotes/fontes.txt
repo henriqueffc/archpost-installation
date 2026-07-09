@@ -3,7 +3,6 @@ gnu-free-fonts
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
-terminus-font
 ttf-arphic-uming
 ttf-croscore
 ttf-dejavu
