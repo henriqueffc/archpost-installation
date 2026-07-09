@@ -31,15 +31,15 @@ cp /etc/hosts /etc/hosts.bak
 line=$(cat /etc/hostname)
 echo -e "127.0.1.1\t$line.localdomain\t$line" >>/etc/hosts
 
-# Micro, nano, vim, Linux-firmware, lz4, wireless-regdb e headers para o kernel stable e lts
-pacman -Syu micro nano vim linux-firmware linux-firmware-whence linux linux-headers linux-lts linux-lts-headers linux-zen linux-zen-headers scx-tools wireless-regdb lz4 --needed --noconfirm
+# Micro, helix, nano, vim, Linux-firmware, lz4, wireless-regdb e headers para o kernel stable e lts
+pacman -Syu micro nano helix vim linux-firmware linux-firmware-whence linux linux-headers linux-lts linux-lts-headers linux-zen linux-zen-headers scx-tools wireless-regdb lz4 --needed --noconfirm
 
 # Visudo
 cp /etc/sudoers /etc/sudoers.bak
 sed -i '/# %wheel ALL=(ALL:ALL) ALL/c\%wheel ALL=(ALL:ALL) ALL' /etc/sudoers
 echo -e "# Enable insults\nDefaults insults" >>/etc/sudoers
-echo -e "# Defaults specification\nDefaults editor=/usr/bin/micro" >>/etc/sudoers
-# Caso queira o vim ao invés do micro, comente (#) a linha acima e descomente a linha abaixo.
+echo -e "# Defaults specification\nDefaults editor=/usr/bin/helix" >>/etc/sudoers
+# Caso queira o vim ao invés do helix, comente (#) a linha acima e descomente a linha abaixo.
 # echo 'Defaults editor=/usr/bin/vim' >>/etc/sudoers
 
 # Pacman.conf

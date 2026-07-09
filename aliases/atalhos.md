@@ -190,7 +190,7 @@ acessar o histórico dos comandos usados no terminal
 | man          | executa o batman no lugar do man                                                                                                          |
 | mirror       | verifica qual o mirror mais veloz                                                                                                         |
 | mpvnovideo   | apenas reproduzir o áudio dos vídeos usando o mpv                                                                                         |
-| nano         | executa o micro no lugar do nano                                                                                                          |
+| nano         | executa o helix no lugar do nano                                                                                                          |
 | neo          | fastfetch                                                                                                                                 |
 | nvidia       | acompanhar o uso da GPU                                                                                                                   |
 | pacman.log   | exibe o log do pacman                                                                                                                     |
