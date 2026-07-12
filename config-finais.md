@@ -653,64 +653,65 @@ diretório `~/.var/app/com.github.wwmm.easyeffects/data/easyeffects/input`
 
 Configurações feitas em `about:config`
 
-| Configuração                                                                                                       | Valor    |
-| ------------------------------------------------------------------------------------------------------------------ | -------- |
-| browser.cache.disk.enable                                                                                          | false    |
-| browser.cache.memory.capacity (131072 = 128 MB)                                                                    | 131072   |
-| browser.cache.memory.max_entry_size (20480 = 20 MB)                                                                | 20480    |
-| browser.cache.memory.enable                                                                                        | true     |
-| browser.display.document_color_use                                                                                 | 0        |
-| browser.ipProtection.enabled                                                                                       | true     |
-| browser.profiles.enabled                                                                                           | true     |
-| browser.theme.native-theme (para o gnome, teste o valor false, mas não precisa com o tema Gnome Adwaita GTK4 Dark) | false    |
-| browser.sessionstore.interval                                                                                      | 60000    |
-| browser.toolbars.bookmarks.visibility                                                                              | always   |
-| browser.tabs.unloadOnLowMemory                                                                                     | true     |
-| content.notify.interval                                                                                            | 100000   |
-| dom.security.https_only_mode                                                                                       | true     |
-| dom.webgpu.enabled                                                                                                 | true     |
-| general.smoothScroll                                                                                               | true     |
-| general.smoothScroll.mouseWheel.durationMaxMS                                                                      | 500      |
-| general.smoothScroll.mouseWheel.durationMinMS                                                                      | 350      |
-| gfx.canvas.accelerated.cache-size                                                                                  | 512      |
-| gfx.content.skia-font-cache-size                                                                                   | 20       |
-| gfx.webrender.precache-shaders                                                                                     | true     |
-| gfx.webrender.program-binary-disk                                                                                  | true     |
-| gfx.x11-egl.force-disabled                                                                                         | true     |
-| image.cache.size                                                                                                   | 10485760 |
-| image.jxl.enabled                                                                                                  | true     |
-| image.mem.decode_bytes_at_a_time                                                                                   | 65536    |
-| image.mem.shared.unmap.min_expiration_ms                                                                           | 120000   |
-| javascript.options.baselinejit.threshold                                                                           | 50       |
-| javascript.options.ion.threshold                                                                                   | 500      |
-| javascript.options.wasm_branch_hinting                                                                             | true     |
-| layout.css.prefers-color-scheme.content-override                                                                   | 0        |
-| layout.css.grid-template-masonry-value.enabled                                                                     | true     |
-| media.eme.enabled                                                                                                  | true     |
-| media.gmp.decoder.multithreaded                                                                                    | true     |
-| media.gpu-process-decoder                                                                                          | true     |
-| media.webrtc.camera.allow-pipewire                                                                                 | true     |
-| media.webrtc.hw.h264.enabled                                                                                       | true     |
-| network.dns.disablePrefetch                                                                                        | true     |
-| network.dnsCacheExpiration                                                                                         | 3600     |
-| network.buffer.cache.size                                                                                          | 65535    |
-| network.http.max-connections                                                                                       | 1200     |
-| network.http.max-persistent-connections-per-server                                                                 | 10       |
-| network.http.max-urgent-start-excessive-connections-per-host                                                       | 5        |
-| network.http.pacing.requests.enabled                                                                               | false    |
-| network.prefetch-next                                                                                              | false    |
-| network.ssl_tokens_cache_capacity                                                                                  | 32768    |
-| network.trr.mode //habilito o DNS over TLS. Uso a Cloudflare como resolvedor de DNS no systemd-resolved            | 5        |
-| reader.color_scheme                                                                                                | dark     |
-| reader.text_alignment                                                                                              | justify  |
-| sidebar.revamp                                                                                                     | true     |
-| sidebar.verticalTabs                                                                                               | true     |
-| widget.gtk.rounded-bottom-corners.enabled                                                                          | true     |
-| widget.use-xdg-desktop-portal.file-picker                                                                          | 1        |
-| widget.use-xdg-desktop-portal.mime-handler                                                                         | 1        |
-| widget.use-xdg-desktop-portal.settings                                                                             | 1        |
-| widget.use-xdg-desktop-portal.location                                                                             | 1        |
-| widget.use-xdg-desktop-portal.open-uri                                                                             | 1        |
+| Configuração                                                                                            | Valor    |
+| ------------------------------------------------------------------------------------------------------- | -------- |
+| browser.cache.disk.enable                                                                               | false    |
+| browser.cache.memory.capacity (131072 = 128 MB)                                                         | 131072   |
+| browser.cache.memory.max_entry_size (20480 = 20 MB)                                                     | 20480    |
+| browser.cache.memory.enable                                                                             | true     |
+| browser.display.document_color_use                                                                      | 0        |
+| browser.ipProtection.enabled                                                                            | true     |
+| browser.profiles.enabled                                                                                | true     |
+| browser.theme.native-theme                                                                              | false    |
+| browser.sessionstore.interval                                                                           | 60000    |
+| browser.toolbars.bookmarks.visibility                                                                   | always   |
+| browser.tabs.unloadOnLowMemory                                                                          | true     |
+| content.notify.interval                                                                                 | 100000   |
+| dom.security.https_only_mode                                                                            | true     |
+| dom.webgpu.enabled                                                                                      | true     |
+| general.smoothScroll                                                                                    | true     |
+| general.smoothScroll.mouseWheel.durationMaxMS                                                           | 500      |
+| general.smoothScroll.mouseWheel.durationMinMS                                                           | 350      |
+| general.smoothScroll.msdPhysics.enabled                                                                 | false    |
+| gfx.canvas.accelerated.cache-size                                                                       | 512      |
+| gfx.content.skia-font-cache-size                                                                        | 20       |
+| gfx.webrender.precache-shaders                                                                          | true     |
+| gfx.webrender.program-binary-disk                                                                       | true     |
+| gfx.x11-egl.force-disabled                                                                              | true     |
+| image.cache.size                                                                                        | 10485760 |
+| image.jxl.enabled                                                                                       | true     |
+| image.mem.decode_bytes_at_a_time                                                                        | 65536    |
+| image.mem.shared.unmap.min_expiration_ms                                                                | 120000   |
+| javascript.options.baselinejit.threshold                                                                | 50       |
+| javascript.options.ion.threshold                                                                        | 500      |
+| javascript.options.wasm_branch_hinting                                                                  | true     |
+| layout.css.prefers-color-scheme.content-override                                                        | 0        |
+| layout.css.grid-template-masonry-value.enabled                                                          | true     |
+| media.eme.enabled                                                                                       | true     |
+| media.gmp.decoder.multithreaded                                                                         | true     |
+| media.gpu-process-decoder                                                                               | true     |
+| media.webrtc.camera.allow-pipewire                                                                      | true     |
+| media.webrtc.hw.h264.enabled                                                                            | true     |
+| network.dns.disablePrefetch                                                                             | true     |
+| network.dnsCacheExpiration                                                                              | 3600     |
+| network.buffer.cache.size                                                                               | 65535    |
+| network.http.max-connections                                                                            | 1200     |
+| network.http.max-persistent-connections-per-server                                                      | 10       |
+| network.http.max-urgent-start-excessive-connections-per-host                                            | 5        |
+| network.http.pacing.requests.enabled                                                                    | false    |
+| network.prefetch-next                                                                                   | false    |
+| network.ssl_tokens_cache_capacity                                                                       | 32768    |
+| network.trr.mode //habilito o DNS over TLS. Uso a Cloudflare como resolvedor de DNS no systemd-resolved | 5        |
+| reader.color_scheme                                                                                     | dark     |
+| reader.text_alignment                                                                                   | justify  |
+| sidebar.revamp                                                                                          | true     |
+| sidebar.verticalTabs                                                                                    | true     |
+| widget.gtk.rounded-bottom-corners.enabled                                                               | true     |
+| widget.use-xdg-desktop-portal.file-picker                                                               | 1        |
+| widget.use-xdg-desktop-portal.mime-handler                                                              | 1        |
+| widget.use-xdg-desktop-portal.settings                                                                  | 1        |
+| widget.use-xdg-desktop-portal.location                                                                  | 1        |
+| widget.use-xdg-desktop-portal.open-uri                                                                  | 1        |
 
 **Firefox Nightly**
 
