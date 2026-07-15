@@ -32,4 +32,5 @@ vdpauinfo
 vulkan-icd-loader
 vulkan-intel
 vulkan-mesa-layers
+vulkan-swrast
 vulkan-tools
