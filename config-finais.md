@@ -254,10 +254,11 @@ modificados pela comunidade.
 
 Para usar o [ntsync](https://wiki.archlinux.org/title/Wine#xSync) com o
 Proton-GE (>=GE-Proton10-10) é preciso habilitar o módulo desse recurso no
-kernel (>=6.15.7-arch1-1). No Arch Linux não é preciso habilitar o módulo ntsync
+kernel (>=6.15.7-arch1-1). No Arch Linux o módulo ntsync é habilitado por padrão
 se você instala as versões presentes no repositório da distro do wine ou
-wine-staging. Esses pacotes habilitam o módulo ntsync por padrão no sistema a
-partir da versão 10.16-1.
+wine-staging ou instala o pacote
+[ntsync-autoload](https://archlinux.org/packages/extra/any/ntsync-autoload/). O
+pacote ntsync-autoload é uma dependência opcional para a Steam.
 
 Verifique o funcionamento do módulo com os comandos `modinfo ntsync` e
 `ls /dev/ntsync`.

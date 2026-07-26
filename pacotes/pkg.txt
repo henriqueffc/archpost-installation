@@ -153,6 +153,7 @@ nodejs
 npm
 ntfs-3g
 ntfsprogs
+ntsync-autoload
 nvme-cli
 obsidian
 ollama-cuda
