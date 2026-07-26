@@ -656,6 +656,7 @@ Configurações feitas em `about:config`
 
 | Configuração                                                                                            | Valor    |
 | ------------------------------------------------------------------------------------------------------- | -------- |
+| accessibility.force_disabled                                                                            | 1        |
 | browser.cache.disk.enable                                                                               | false    |
 | browser.cache.memory.capacity (131072 = 128 MB)                                                         | 131072   |
 | browser.cache.memory.max_entry_size (20480 = 20 MB)                                                     | 20480    |
