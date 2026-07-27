@@ -29,6 +29,7 @@ unzip
 wl-clipboard
 zip
 zoxide
+zellij
 zsh-autosuggestions
 zsh-completions
 zsh-syntax-highlighting

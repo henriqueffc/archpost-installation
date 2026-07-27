@@ -61,6 +61,10 @@ if command -v oh-my-posh >/dev/null; then
     echo 'eval "$(oh-my-posh init zsh --config /usr/share/oh-my-posh/themes/gruvbox.omp.json)"' >>~/.zshrc.local
 fi
 
+# Zellij
+mkdir -p $HOME/.config/zellij/plugins
+cp ./zellij/config.kdl $HOME/.config/zellij/
+
 # compinit
 echo 'autoload -Uz compinit && compinit' >>~/.zshrc.local
 
