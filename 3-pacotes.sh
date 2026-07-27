@@ -325,6 +325,8 @@ cp ./pipewire/disable-suspension.conf ~/.config/wireplumber/wireplumber.conf.d/
 # Configuração para o Foot terminal
 mkdir -p $HOME/.config/foot/
 cp ./foot/foot.ini $HOME/.config/foot
+## habilita o server daemon mode
+systemctl --user enable --now foot-server.service
 
 # Remoção do power-profiles-daemon caso ele esteja presente no sistema
 echo -e "$AZUL \t Remoção do power-profiles-daemon se ele estiver instalado no sistema $FIM"
