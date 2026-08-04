@@ -99,6 +99,7 @@ acessar o histórico dos comandos usados no terminal
 
 | comando                               | descrição                                                                          |
 | ------------------------------------- | ---------------------------------------------------------------------------------- |
+| ai-jail                               | Sandbox wrapper for AI coding agents                                               |
 | arch-audit                            | mostra os pacotes com possíveis riscos de segurança no sistema                     |
 | aria2c                                | similar ao curl/wget                                                               |
 | bandwhich                             | similar ao nethogs (alias rede)                                                    |

@@ -10,3 +10,4 @@ quickemu
 hunspell-pt-br
 mythes-pt-br
 hyphen-pt-br
+ai-jail-bin
