@@ -307,6 +307,7 @@ theme "atelier-sulphurpool"
 // Default: "default"
 // 
 // default_layout "compact"
+default_layout "layout-file"
  
 // The folder in which Zellij will look for layouts
 // (Requires restart)

@@ -62,8 +62,9 @@ if command -v oh-my-posh >/dev/null; then
 fi
 
 # Zellij
-mkdir -p $HOME/.config/zellij/plugins
+mkdir -p $HOME/.config/zellij/layouts
 cp ./zellij/config.kdl $HOME/.config/zellij/
+cp ./zellij/layout-file.kdl $HOME/.config/zellij/
 
 # compinit
 echo 'autoload -Uz compinit && compinit' >>~/.zshrc.local

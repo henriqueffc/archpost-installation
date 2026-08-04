@@ -27,6 +27,7 @@ ttf-nerd-fonts-symbols-mono
 unrar
 unzip
 wl-clipboard
+yazi
 zip
 zoxide
 zellij
