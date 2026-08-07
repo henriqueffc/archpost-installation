@@ -6,8 +6,6 @@ gnome-shell-extension-alphabetical-grid-extension
 gnome-shell-extension-wallpaper-slideshow
 gnome-shell-extension-just-perfection-desktop
 zotero-bin
-quickemu
 hunspell-pt-br
 mythes-pt-br
 hyphen-pt-br
-ai-jail-bin
