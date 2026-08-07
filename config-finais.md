@@ -802,9 +802,7 @@ esteja habilitado).
 
 ## Homebrew
 
-Utilizo o [Homebrew](https://brew.sh/) para instalar os pacotes
-[gollama](https://formulae.brew.sh/formula/gollama) e
-[fabric](https://formulae.brew.sh/formula/fabric-ai)
+[https://brew.sh/](https://brew.sh/)
 
 Para habilitar o Homebrew instale os seguintes pacotes
 `sudo pacman -S base-devel procps-ng curl file git --needed`
@@ -815,7 +813,7 @@ Execute o comando abaixo.
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-Inclua antes de `autoload -Uz compinit && compinit` no `~/.zshrc.local`
+Inclua **antes** de `autoload -Uz compinit && compinit` no `~/.zshrc.local`
 
 ```
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
@@ -824,5 +822,36 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
 Caso tenha problemas com o ruby portable no brew, instale o pacote ruby-irb
 `sudo pacman -S ruby-irb --needed`
 
+### Bold Brew
+
 O [Bold Brew](https://github.com/Valkyrie00/bold-brew) é um bom gerenciador TUI
 para o Homebrew.
+
+`brew install bbrew`
+
+### Fabric-ai
+
+[https://github.com/danielmiessler/fabric](https://github.com/danielmiessler/fabric)
+
+`brew install fabric-ai`
+
+`fabric-ai -U`
+
+### ai-jail
+
+[https://github.com/akitaonrails/ai-jail](https://github.com/akitaonrails/ai-jail)
+
+`brew trust --formula akitaonrails/tap/ai-jail`
+
+`brew install ai-jail`
+
+### oh-my-posh
+
+[https://github.com/JanDeDobbeleer/oh-my-posh](https://github.com/JanDeDobbeleer/oh-my-posh)
+
+`brew install oh-my-posh`
+
+No arquivo `~/.zshrc.local`, adicione o seguinte código **após** o comando
+`eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"`
+
+`eval "$(oh-my-posh init zsh --config /home/linuxbrew/.linuxbrew/share/oh-my-posh/themes/gruvbox.omp.json)"`

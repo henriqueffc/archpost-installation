@@ -56,11 +56,6 @@ else
     cp ./aliases/functions ~/.functions
 fi
 
-# habilitando o oh-my-posh. ele é instalado pelo script nº 5
-if command -v oh-my-posh >/dev/null; then
-    echo 'eval "$(oh-my-posh init zsh --config /usr/share/oh-my-posh/themes/gruvbox.omp.json)"' >>~/.zshrc.local
-fi
-
 # Zellij
 mkdir -p $HOME/.config/zellij/layouts
 cp ./zellij/config.kdl $HOME/.config/zellij/

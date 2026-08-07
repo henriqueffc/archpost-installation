@@ -26,16 +26,16 @@ sistema em UEFI, com o secure boot desabilitado, com o inicializador
 systemd-boot, não uso UKI- Unified kernel image, sistema de arquivos EXT4, ZRAM
 (algoritmo lz4), kernel stable, zen kernel e kernel lts, layout do teclado
 br-abnt2, idioma de localização pt_BR.UTF-8, pipewire, wireplumber, bluetooth
-habilitado, repositório multilib habilitado, Nvidia GPU com o driver Nvidia open
-kernel module (versão dkms), shell Zsh com grml-zsh-config e oh-my-posh, Foot
-terminal (server mode), Zellij, AUR helper Yay, Flatpak, Podman, Distrobox,
-Apparmor, firewalld, systemd-resolved, NetworkManager (default backend),
-wireless-regdb (WIRELESS_REGDOM="BR"), qemu, Incus, mise, intel_pstate scaling
-driver, thermald, intel-lpmd, tuned e tuned-ppd para gerenciamento de
-frequências da CPU e do perfil de energia, ananicy-cpp, firmware para o áudio da
-Sound Open Firmware, Helix Editor, Ollama (CUDA), GNOME (Wayland). As
-configurações executadas pelos scripts deste repositório são concebidas nessa
-base.
+habilitado, repositório multilib habilitado, Homebrew, Nvidia GPU com o driver
+Nvidia open kernel module (versão dkms), shell Zsh com grml-zsh-config e
+oh-my-posh, Foot terminal (server mode), Zellij, AUR helper Yay, Flatpak,
+Podman, Distrobox, Apparmor, firewalld, systemd-resolved, NetworkManager
+(default backend), wireless-regdb (WIRELESS_REGDOM="BR"), qemu, Incus, mise,
+intel_pstate scaling driver, thermald, intel-lpmd, tuned e tuned-ppd para
+gerenciamento de frequências da CPU e do perfil de energia, ananicy-cpp,
+firmware para o áudio da Sound Open Firmware, Helix Editor, Ollama (CUDA), GNOME
+(Wayland). As configurações executadas pelos scripts deste repositório são
+concebidas nessa base.
 
 Os scripts deverão ser executados após a inicialização do sistema no ambiente
 gráfico.
