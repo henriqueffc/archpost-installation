@@ -822,14 +822,14 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
 Caso tenha problemas com o ruby portable no brew, instale o pacote ruby-irb
 `sudo pacman -S ruby-irb --needed`
 
-### Bold Brew
+**Bold Brew**
 
 O [Bold Brew](https://github.com/Valkyrie00/bold-brew) é um bom gerenciador TUI
 para o Homebrew.
 
 `brew install bbrew`
 
-### Fabric-ai
+**Fabric-ai**
 
 [https://github.com/danielmiessler/fabric](https://github.com/danielmiessler/fabric)
 
@@ -837,7 +837,7 @@ para o Homebrew.
 
 `fabric-ai -U`
 
-### ai-jail
+**ai-jail**
 
 [https://github.com/akitaonrails/ai-jail](https://github.com/akitaonrails/ai-jail)
 
@@ -845,7 +845,7 @@ para o Homebrew.
 
 `brew install ai-jail`
 
-### oh-my-posh
+**oh-my-posh**
 
 [https://github.com/JanDeDobbeleer/oh-my-posh](https://github.com/JanDeDobbeleer/oh-my-posh)
 
