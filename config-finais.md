@@ -93,10 +93,9 @@ preciso habilitar a extensão "Integração com o Gnome Shell"
 ([Firefox](https://addons.mozilla.org/firefox/addon/gnome-shell-integration/) /
 [Chrome](https://chromewebstore.google.com/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep)).
 
-Uso a extensão Just Perfection para maximizar as janelas dos aplicativos ao
-executá-los e para desabilitar as animações no shell (desabilito também as
-animações no shell pelo script nº 3). Com a extensão Maximize Window Into New
-Workspace a janela maximizada é movida para um novo workspace.
+Uso a extensão Just Perfection para desabilitar as animações no shell
+(desabilito também as animações no shell pelo script nº 3). A extensão Maximize
+Window Into New Workspace move janela maximizada para um novo workspace.
 
 ## SSH
 
