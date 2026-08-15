@@ -109,7 +109,6 @@ kdenlive
 kimageformats
 kmon
 ladspa
-llama-cpp
 lnav
 lib32-mangohud
 libappindicator
@@ -229,7 +228,6 @@ uv
 virt-what
 webp-pixbuf-loader
 weechat
-whisper-cpp
 wikiman
 wine
 wine-gecko

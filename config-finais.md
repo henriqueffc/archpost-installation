@@ -95,7 +95,7 @@ preciso habilitar a extensão "Integração com o Gnome Shell"
 
 Uso a extensão Just Perfection para desabilitar as animações no shell
 (desabilito também as animações no shell pelo script nº 3). A extensão Maximize
-Window Into New Workspace move janela maximizada para um novo workspace.
+Window Into New Workspace move a janela maximizada para um novo workspace.
 
 ## SSH
 

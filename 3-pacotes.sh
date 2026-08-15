@@ -357,8 +357,4 @@ sudo sed -i 's/vm.swappiness=10/#vm.swappiness=10/g' /etc/tuned/profiles/through
 sudo sed -i '$ a \\n[audio]\ntimeout=0' /etc/tuned/profiles/throughput-performance/tuned.conf
 sudo sed -i 's/timeout=10/timeout=0/g' /etc/tuned/profiles/balanced/tuned.conf
 
-# Whisper-cpp
-mkdir -vp whisper/models
-wcurl https://raw.githubusercontent.com/ggml-org/whisper.cpp/refs/heads/master/models/download-ggml-model.sh -o ~/whisper/models/download-ggml-model.sh
-
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
