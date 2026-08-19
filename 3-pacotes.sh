@@ -299,7 +299,6 @@ cp ./yazi/init.lua $HOME/.config/yazi/
 ya pkg add yazi-rs/plugins:toggle-pane
 ya pkg add yazi-rs/plugins:mount
 ya pkg add yazi-rs/plugins:chmod
-ya pkg add uhs-robert/recycle-bin
 ya pkg add pirafrank/what-size
 
 # Firejail + AppArmor
