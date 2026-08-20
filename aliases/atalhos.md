@@ -222,6 +222,15 @@ acessar o histórico dos comandos usados no terminal
 | paste to a file                                                      | `wl-paste > clipboard.txt`                              |
 | replace the current selection with the list of types it's offered in | `wl-paste --list-types \| wl-copy`                      |
 
+# MPV
+
+| Descrição                              | Atalho                                                                                                 |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| aumenta o tamanho da janela duas vezes | Alt + 2                                                                                                |
+| aumenta livremente o tamanho da janela | posicione o cursor do mouse na barra superior da janela. use o botão direito para dimensionar a janela |
+| retomando a reprodução                 | feche a janela com Shift + Q. Depois que abrir novamente voltará no tempo anterior                     |
+| informações da mídia                   | i                                                                                                      |
+
 # sgpt
 
 Executa o prompt em um modelo específico.
