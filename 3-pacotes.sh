@@ -60,8 +60,6 @@ systemctl enable --user speech-dispatcher.socket
 echo -e "$AZUL speech-dispatcher.socket habilitado $FIM"
 sudo systemctl enable --now avahi-daemon.service
 echo -e "$AZUL \t avahi-daemon.service habilitado $FIM"
-sudo systemctl enable switcheroo-control.service
-echo -e "$AZUL \t switcheroo-control.service habilitado $FIM"
 sudo systemctl enable intel_lpmd.service
 echo -e "$AZUL \t intel-lpmd habilitado $FIM"
 

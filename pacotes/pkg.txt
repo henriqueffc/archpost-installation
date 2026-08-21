@@ -201,7 +201,6 @@ systemtap
 steam
 strace
 s-tui
-switcheroo-control
 tailspin
 tealdeer
 tesseract
