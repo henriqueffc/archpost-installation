@@ -346,7 +346,11 @@ sudo systemctl enable --now tuned-ppd
 echo "Configuração concluída."
 
 # Desinstalando a gnome-software. No script nº 4 será instalada a Bazaar.
-sudo pacman -R gnome-software gnome-app-list
+sudo pacman -R gnome-software gnome-app-list --noconfirm
+
+# Desinstalando (uso o MPV) o Showtime e o decibels
+# Densistalando (não uso) gnome-music, gnome web, gnome-maps, gnome-tour, gnome-system-monitor, gnome-contacts e simple-scan
+sudo pacman -R showtime gnome-music epiphany decibels simple-scan gnome-maps gnome-tour gnome-contacts gnome-system-monitor --noconfirm
 
 # Desabilita o powersave nos perfis do Tuned para o audio
 # Desabilita a configuração do vm.swappiness no perfil throughput-performance

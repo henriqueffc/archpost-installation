@@ -196,7 +196,6 @@ signal-desktop
 sndio
 seahorse
 sysfsutils
-sysprof
 systemd-resolvconf
 systemtap
 steam
