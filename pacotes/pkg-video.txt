@@ -8,7 +8,6 @@ intel-media-driver
 vpl-gpu-rt
 libvpl-tools
 lib32-libva
-lib32-libvdpau
 lib32-mesa
 lib32-nvidia-utils
 lib32-ocl-icd
