@@ -357,5 +357,6 @@ sudo cp -p -R /usr/lib/tuned/profiles/{balanced,powersave,throughput-performance
 sudo sed -i 's/vm.swappiness=10/#vm.swappiness=10/g' /etc/tuned/profiles/throughput-performance/tuned.conf
 sudo sed -i '$ a \\n[audio]\ntimeout=0' /etc/tuned/profiles/throughput-performance/tuned.conf
 sudo sed -i 's/timeout=10/timeout=0/g' /etc/tuned/profiles/balanced/tuned.conf
+sudo sed -i 's/energy_perf_bias=normal/energy_perf_bias=balance-performance/g' /etc/tuned/profiles/balanced/tuned.conf
 
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"
