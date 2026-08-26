@@ -353,9 +353,12 @@ sudo pacman -R showtime gnome-music epiphany decibels simple-scan gnome-maps gno
 # Desabilita o powersave nos perfis do Tuned para o audio
 # Desabilita a configuração do vm.swappiness no perfil throughput-performance
 # A configuração do vm.swappiness é feita pelo arquivo ./sysctl/99-sysctl.conf do projeto
+# Estabelece um piso de desempenho na cpu de 46% do máximo de desempenho disponível no perfil balanced. É próximo do clock base da cpu.
+# Configura o perfil de energia para o balance-performance no perfil balanced.
 sudo cp -p -R /usr/lib/tuned/profiles/{balanced,powersave,throughput-performance} /etc/tuned/profiles/
 sudo sed -i 's/vm.swappiness=10/#vm.swappiness=10/g' /etc/tuned/profiles/throughput-performance/tuned.conf
 sudo sed -i '$ a \\n[audio]\ntimeout=0' /etc/tuned/profiles/throughput-performance/tuned.conf
+sudo sed -i '/^\[cpu\]/a min_perf_pct=46' /etc/tuned/profiles/balanced/tuned.conf
 sudo sed -i 's/timeout=10/timeout=0/g' /etc/tuned/profiles/balanced/tuned.conf
 sudo sed -i 's/energy_perf_bias=normal/energy_perf_bias=balance-performance/g' /etc/tuned/profiles/balanced/tuned.conf
 
