@@ -1,5 +1,5 @@
 [/]
 disable-external=false
-disabled=['org.gnome.Calendar.desktop', 'org.gnome.clocks.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Characters.desktop', 'io.github.kolunmi.Bazaar.desktop']
+disabled=['org.gnome.Calendar.desktop', 'org.gnome.clocks.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Characters.desktop', 'org.gnome.Nautilus.desktop', 'io.github.kolunmi.Bazaar.desktop']
 enabled=@as []
 sort-order=['org.gnome.Calculator.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Settings.desktop', 'firefox.desktop', 'io.github.kolunmi.Bazaar.desktop', 'org.gnome.Characters.desktop', 'org.gnome.Calendar.desktop', 'com.github.finefindus.eyedropper.desktop', 'me.iepure.devtoolbox.desktop', 'org.gnome.Weather.desktop', 'org.gnome.clocks.desktop', 'org.gnome.seahorse.Application.desktop']
