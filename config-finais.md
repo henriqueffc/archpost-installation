@@ -37,7 +37,7 @@ repositório.
 |
 [tmpfiles](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#tmpfiles)
 |
-[sgpt](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#sgpt)
+[anythingLLM](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#anythingLLM)
 |
 [dns](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#dns)
 |
@@ -540,46 +540,33 @@ Depois de concebido o arquivo, execute
 
 `sudo systemd-tmpfiles --create`
 
-## sgpt
+## anythingLLM
 
 **Instalação**
 
-Use vinculado com o Ollama (instalado pelo script nº 3).
+Faça o download da versão Appimage no
+[github](https://github.com/Mintplex-Labs/anything-llm/releases) do projeto.
 
-`uv tool install "shell-gpt[litellm]"`
+Utilize o app flatpak
+[Gear Lever](https://flathub.org/pt-BR/apps/it.mijorus.gearlever) para instalar
+o Appimage.
 
-**Configuração**
+**Ícone do aplicativo na dock**
 
-Execute o comando abaixo. Depois de `--model` coloque um modelo que esteja
-instalado no Ollama (gemma3:4b é um exemplo).
-
-`sgpt --model ollama/gemma3:4b "como saber a versão do shell"`
-
-Após executar o comando será requisitada OpenAI API key.
-
-Insira somente letras. Não use números ou caracteres especiais. Ex.:
-jdsnsdjjkajnsjsjjs
-
-Após digitar e teclar enter, possivelmente será apresentado um erro, mas mesmo
-se não acontecer o erro, modifique o arquivo de configuração.
-
-`nano ~/.config/shell_gpt/.sgptrc`
-
-Altere as variáveis abaixo. (lembrando que gema3:4b é um exemplo)
+Caso o ícone esteja aparecendo errado na dock, execute o seguinte.
 
 ```
-DEFAULT_MODEL=ollama/gemma3:4b
-OPENAI_USE_FUNCTIONS=false
-USE_LITELLM=true
+sed -i 's/StartupWMClass=AnythingLLM/StartupWMClass=anythingllm-desktop/g' ~/.local/share/applications/anythingllm.desktop
 ```
 
-Se ainda não funcionar, experimente substituir a variável da URL do Ollama.
+**Update**
 
-```
-API_BASE_URL=http://127.0.0.1:11434
-```
+Configure o [update](https://gearlever.mijorus.it/docs/github-updates/) da
+aplicação pelo Gear Lever
 
-[Fonte - github shell_gpt](https://github.com/TheR1D/shell_gpt/wiki/Ollama)
+Username/Repo:`Mintplex-Labs/anything-llm`
+
+Release file name:`AnythingLLMDesktop.AppImage`
 
 ## dns
 
