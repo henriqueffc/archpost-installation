@@ -44,7 +44,6 @@ flatpak install flathub be.alexandervanhee.gradia -y
 flatpak install flathub io.github.flattool.Ignition -y
 flatpak install flathub io.github.fabrialberio.pinapp -y
 flatpak install flathub io.github.vmkspv.lenspect -y
-flatpak install flathub io.gitlab.news_flash.NewsFlash -y
 flatpak install flathub com.bitwarden.desktop -y
 flatpak install flathub io.ente.auth -y
 flatpak install flathub io.github.kolunmi.Bazaar -y
@@ -73,5 +72,4 @@ sudo flatpak override --filesystem=xdg-config/gtk-3.0
 
 echo -e "$AZUL Define como não permitida a execução em segundo plano para determinados apps flatpaks $FIM"
 flatpak permission-set background background io.github.kolunmi.Bazaar no
-flatpak permission-set background background io.gitlab.news_flash.NewsFlash no
 flatpak permission-set background background com.github.finefindus.eyedropper no
