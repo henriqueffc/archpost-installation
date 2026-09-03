@@ -7,5 +7,4 @@ pipewire-pulse
 pipewire-v4l2
 pipewire-onnx
 onnxruntime-cpu
-sof-firmware
 wireplumber
