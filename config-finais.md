@@ -777,15 +777,6 @@ Caso deseje verificar as opções disponíveis para o módulo Intel Xe execute
 Verifique se os parâmetros repassados para o kernel foram habilitados no módulo
 com o comando `sudo systool -m xe -av`.
 
-Para habilitar o `dev.xe.observation_paranoid` (equivalente ao
-`dev.i915.perf_stream_paranoid` configurado pelo script nº 3), substitua o
-conteúdo do arquivo `/etc/sysctl.d/99-intelparanoid.conf` por
-`dev.xe.observation_paranoid = 0`. Esse parâmetro é acionado quando a CPU está
-em modo **performance**. Para verificar o funcionamento, utilize os seguintes
-comandos. `sysctl -n dev.xe.observation_paranoid` (tem que retornar o valor 0) e
-`vulkaninfo | grep performance` (apresenta algumas extensões caso o parâmetro
-esteja habilitado).
-
 ## Homebrew
 
 [https://brew.sh/](https://brew.sh/)

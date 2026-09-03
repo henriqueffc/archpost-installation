@@ -79,9 +79,6 @@ sudo sed -i 's/#Testing =.*/Testing = true/g' /etc/bluetooth/main.conf
 cp /etc/xdg/autostart/firewall-applet.desktop ~/.config/autostart
 sed -i '$a Hidden=true' ~/.config/autostart/firewall-applet.desktop
 
-# dev.i915.perf_stream_paranoid = 0
-sudo cp ./sysctl/99-intelparanoid.conf /etc/sysctl.d/
-
 # hwp_dynamic_boost
 sudo cp ./service/hwpdynamicboost.service /etc/systemd/system/
 sudo systemctl enable hwpdynamicboost.service
