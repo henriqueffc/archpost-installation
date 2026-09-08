@@ -62,8 +62,8 @@ Uso as extensões [Vitals](https://extensions.gnome.org/extension/1460/vitals/),
 [Alphabetical App Grid](https://extensions.gnome.org/extension/4269/alphabetical-app-grid/),
 [AppIndicator/KStatusNotifierItem habilitadas](https://extensions.gnome.org/extension/615/appindicator-support/),
 [Wallpaper Slideshow](https://extensions.gnome.org/extension/6281/wallpaper-slideshow/),
-[Maximize Window Into New Workspace](https://extensions.gnome.org/extension/8851/maximize-window-into-new-workspace/)
-e
+[Maximize Window Into New Workspace](https://extensions.gnome.org/extension/8851/maximize-window-into-new-workspace/),
+[Gradia Capture](https://github.com/AlexanderVanhee/gradia-capture), e
 [Just Perfection](https://extensions.gnome.org/extension/3843/just-perfection/).
 
 Para acessar as configurações das extensões use o programa Extensões que é
@@ -96,6 +96,11 @@ preciso habilitar a extensão "Integração com o Gnome Shell"
 Uso a extensão Just Perfection para desabilitar as animações no shell
 (desabilito também as animações no shell pelo script nº 3). A extensão Maximize
 Window Into New Workspace move a janela maximizada para um novo workspace.
+
+A extensão Gradia Capture foi instalada pelo script nº 4 e habilitada pelo
+script nº 6. Para a extensão funcionar é necessário que o app flatpak
+[Gradia](https://flathub.org/pt-BR/apps/be.alexandervanhee.gradia) (instalado
+pelo script nº 4) esteja instalado no sistema.
 
 ## SSH
 

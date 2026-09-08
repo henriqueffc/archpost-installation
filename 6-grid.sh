@@ -53,3 +53,4 @@ gnome-extensions enable AlphabeticalAppGrid@stuarthayhurst
 gnome-extensions enable Vitals@CoreCoding.com
 gnome-extensions enable azwallpaper@azwallpaper.gitlab.com
 gnome-extensions enable just-perfection-desktop@just-perfection
+gnome-extensions enable gradia-integration@alexandervanhee.github.io

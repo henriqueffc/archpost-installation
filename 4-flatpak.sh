@@ -72,3 +72,8 @@ sudo flatpak override --filesystem=xdg-config/gtk-3.0
 echo -e "$AZUL Define como não permitida a execução em segundo plano para determinados apps flatpaks $FIM"
 flatpak permission-set background background io.github.kolunmi.Bazaar no
 flatpak permission-set background background com.github.finefindus.eyedropper no
+
+# Instalando a extensão Gradia Capture
+# https://github.com/AlexanderVanhee/gradia-capture
+git clone https://github.com/AlexanderVanhee/gradia-capture.git /tmp/gradia-capture
+/tmp/gradia-capture/build.sh -i
