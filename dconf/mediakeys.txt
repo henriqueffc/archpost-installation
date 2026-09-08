@@ -1,6 +1,6 @@
 [/]
 control-center=['<Super>c']
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/']
 email=['<Super>e']
 next=['<Shift>KP_Divide']
 play=['<Shift>KP_Multiply']
@@ -27,3 +27,8 @@ name='gradia-full'
 binding='<Super>t'
 command='foot'
 name='terminal'
+
+[custom-keybindings/custom4]
+binding='<Control>space'
+command='footclient -o csd.preferred=server -o csd.border-color=24acd4 -o csd.border-width=2 -o csd.size=0 -w 1000x500 -e otter-launcher'
+name='otter-launcher'

@@ -234,6 +234,8 @@ gsettings set org.gnome.Weather locations "[<(uint32 2, <('Uberlândia', 'SBUL',
 # Atalhos de teclado para o Gradia (Ctrl + Print e Ctrl + Shift + Print)
 # Atalho de teclado para lançar o terminal foot (Super + t)
 # Atalho de teclado para lançar o yazi (Super + f)
+# Atalho de teclado para lançar o otter-launcher (Ctrl+Space)
+# para o otter-launcher uso também o footclient
 dconf load /org/gnome/settings-daemon/plugins/media-keys/ <./dconf/mediakeys.txt
 
 # Mostrar relógio UTC no painel de notificações

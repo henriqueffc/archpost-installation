@@ -9,3 +9,4 @@ hunspell-pt-br
 mythes-pt-br
 hyphen-pt-br
 cardwire
+otter-launcher
