@@ -361,4 +361,8 @@ sudo sed -i '/^\[cpu\]/a min_perf_pct=46' /etc/tuned/profiles/balanced/tuned.con
 sudo sed -i 's/timeout=10/timeout=0/g' /etc/tuned/profiles/balanced/tuned.conf
 sudo sed -i 's/energy_perf_bias=normal/energy_perf_bias=balance-performance/g' /etc/tuned/profiles/balanced/tuned.conf
 
+# Rádios - alias radio
+mkdir -p $HOME/Músicas/radios/
+cp ./radios/radios.m3u $HOME/Músicas/radios/
+
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"

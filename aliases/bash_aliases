@@ -1,4 +1,5 @@
 alias mpvnovideo="mpv --vid=no --save-position-on-quit"
+alias radio="echo '\n\033[0;32mF8 mostra a lista das rádios e Shift < ou > muda de rádio\n' && mpv ~/Músicas/radios/radios.m3u"
 alias yaycache="yay -Sc --aur"
 alias rede="sudo nethogs -p"
 alias rede2="sudo bandwhich"

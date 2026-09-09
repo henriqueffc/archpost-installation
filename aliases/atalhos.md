@@ -193,6 +193,7 @@ acessar o histórico dos comandos usados no terminal
 | pacman.log   | exibe o log do pacman                                                                                                                     |
 | tb           | Pastebin (termbin.com) - `cat arquivo.txt \| tb`                                                                                          |
 | progress     | disponibiliza o progresso de algum comando. `cp origem destino \| progress`                                                               |
+| radio        | Reproduz uma lista m3u (diretório ~/Músicas/radio) usando o MPV                                                                           |
 | ram          | acompanha o consumo da ram                                                                                                                |
 | rede         | usa o nethogs para monitorar a rede                                                                                                       |
 | rede2        | usa o bandwhich para monitorar a rede                                                                                                     |

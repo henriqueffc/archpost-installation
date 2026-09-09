@@ -1,0 +1,102 @@
+#EXTINF:1,SomaFM: Groove Salad
+https://ice2.somafm.com/groovesalad-256-mp3
+
+#EXTINF:1,SomaFM: Chillits Radio
+https://ice2.somafm.com/chillits-256-mp3
+
+#EXTINF:1,SomaFM: Bossa Beyond
+https://ice6.somafm.com/bossa-256-mp3
+
+#EXTINF:1,SomaFM: Deep Space One
+https://ice2.somafm.com/deepspaceone-128-mp3
+
+#EXTINF:1,SomaFM: Groove Salad Classic
+https://ice4.somafm.com/gsclassic-128-mp3
+
+#EXTINF:1,SomaFM: Illinois Street Lounge
+https://ice6.somafm.com/illstreet-128-mp3
+
+#EXTINF:1,SomaFM: Indie Pop Rocks!
+https://ice4.somafm.com/indiepop-128-mp3
+
+#EXTINF:1,SomaFM: Heavyweight Reggae
+https://ice6.somafm.com/reggae-256-mp3
+
+#EXTINF:1,SomaFM: Suburbs of Goa
+https://ice6.somafm.com/suburbsofgoa-128-mp3
+
+#EXTINF:1,SomaFM: Synphaera Radio
+https://ice2.somafm.com/synphaera-256-mp3
+
+#EXTINF:1,SomaFM: ThistleRadio
+https://ice4.somafm.com/thistle-128-mp3
+
+#EXTINF:1,SomaFM: Underground 80s
+https://ice2.somafm.com/u80s-256-mp3
+
+#EXTINF:1,SomaFM: Vaporwaves
+https://ice6.somafm.com/vaporwaves-128-mp3
+
+#EXTINF:1,Rádio Universitária Uberlândia 107.5 FM
+https://servidor33.brlogic.com:7006/live
+
+#EXTINF:1,Lofi 24/7
+http://usa9.fastcast4u.com/proxy/jamz?mp=/1
+
+#EXTINF:1,FLUX FM ChillHop – Chill Beats and LoFi HipHop
+http://streams.fluxfm.de/Chillhop/mp3-320
+
+#EXTINF:1,Chillofi radio
+http://streams.dez.ovh:8000/radio.mp3
+
+#EXTINF:1,bigFM LoFi Focus
+https://stream.bigfm.de/lofifocus/mp3-128/radiobrowser
+
+#EXTINF:1,Adroit Jazz Underground
+https://icecast.walmradio.com:8443/jazz
+
+#EXTINF:1,101 SMOOTH JAZZ
+http://jking.cdnstream1.com/b22139_128mp3
+
+#EXTINF:1,Jazz Radio Blues
+http://jazzblues.ice.infomaniak.ch/jazzblues-high.mp3
+
+#EXTINF:1,WDCB 90.9 "Jazz & Blues" Chicago, IL
+http://wdcb-ice.streamguys.org/wdcb128
+
+#EXTINF:1,Classical King FM - Evergreen Channel
+https://classicalking.streamguys1.com/evergreen-aac-128k
+
+#EXTINF:1,Radio da USP
+https://flow.emm.usp.br:8008/radiousp-128.mp3
+
+#EXTINF:1,Radio da UFMG
+https://www3.ufmg.br/streamingradioaovivo/aovivo.mp3
+
+#EXTINF:1,Rádio da UFRGS
+http://radioaovivo.ufrgs.br:8000/stream.mp3
+
+#EXTINF:1,BBC Radio 1Xtra
+http://as-hls-ww-live.akamaized.net/pool_92079267/live/ww/bbc_1xtra/bbc_1xtra.isml/bbc_1xtra-audio%3d128000.norewind.m3u8
+
+#EXTINF:1,BBC Radio 2
+http://as-hls-ww-live.akamaized.net/pool_74208725/live/ww/bbc_radio_two/bbc_radio_two.isml/bbc_radio_two-audio%3d96000.m3u8
+
+#EXTINF:1,BBC Radio 3
+http://as-hls-ww-live.akamaized.net/pool_23461179/live/ww/bbc_radio_three/bbc_radio_three.isml/bbc_radio_three-audio%3d128000.norewind.m3u8
+
+#EXTINF:1,BBC Radio 6 
+http://as-hls-ww-live.akamaized.net/pool_81827798/live/ww/bbc_6music/bbc_6music.isml/bbc_6music-audio%3d320000.norewind.m3u8
+
+#EXTINF:1,CBN Belo Horizonte
+https://playerservices.streamtheworld.com/api/livestream-redirect/CBN_BHAAC.aac
+
+#EXTINF:1,CBN São Paulo
+https://playerservices.streamtheworld.com/api/livestream-redirect/CBN_SPAAC.aac
+
+#EXTINF:1,Rádio Nacional FM
+https://radionacionalfm-stream.ebc.com.br/ebc/radionacionalfm/playlist.m3u8
+
+#EXTINF:1,Rádio MEC FM
+https://radiomecfm-stream.ebc.com.br/ebc/radiomecfm/playlist.m3u8
+
