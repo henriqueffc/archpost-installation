@@ -94,8 +94,9 @@ preciso habilitar a extensão "Integração com o Gnome Shell"
 [Chrome](https://chromewebstore.google.com/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep)).
 
 Uso a extensão Just Perfection para desabilitar as animações no shell
-(desabilito também as animações no shell pelo script nº 3). A extensão Maximize
-Window Into New Workspace move a janela maximizada para um novo workspace.
+(desabilito também as animações no shell pelo script nº 3) e a barra de pesquisa
+no overview. A extensão Maximize Window Into New Workspace move a janela
+maximizada para um novo workspace.
 
 A extensão Gradia Capture foi instalada pelo script nº 4 e habilitada pelo
 script nº 6. Para a extensão funcionar é necessário que o app flatpak

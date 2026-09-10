@@ -1,2 +1,3 @@
 [/]
 animation=0
+search=false
