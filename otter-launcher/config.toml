@@ -143,12 +143,12 @@ cmd = """
 function power {
 if [[ -n $1 ]]; then
 case $1 in
-"logout") session=`loginctl session-status | head -n 1 | awk '{print $1}'`; loginctl terminate-session $session ;;
-"reboot") systemctl reboot ;;
-"shutdown") systemctl poweroff ;;
+"logout") gnome-session-quit --logout ;;
+"reboot") gnome-session-quit --reboot ;;
+"power-off") gnome-session-quit --power-off ;;
 "lock") loginctl lock-session ;;
 esac fi }
-power $(echo -e 'lock\nreboot\nshutdown\nlogout' | fzf --info-command 'printf " power menu ($FZF_POS/$FZF_TOTAL_COUNT)"' --cycle --gutter " " --pointer " ▌" --color "bg+:-1,pointer:1,info:8,separator:8,scrollbar:0" --prompt '  ' | tail -1)
+power $(echo -e 'lock\nreboot\npower-off\nlogout' | fzf --info-command 'printf " power menu ($FZF_POS/$FZF_TOTAL_COUNT)"' --cycle --gutter " " --pointer " ▌" --color "bg+:-1,pointer:1,info:8,separator:8,scrollbar:0" --prompt '  ' | tail -1)
 """
 
 [[modules]]
