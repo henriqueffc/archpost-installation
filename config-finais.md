@@ -521,24 +521,26 @@ Exemplo:
 
 `sudo nano /etc/tmpfiles.d/captura.conf`
 
-o `e` significa que a ação de remoção dos arquivos se dará sobre uma pasta
+o `e` significa que a ação de remoção dos arquivos se dará sobre um diretório
 existente
 
 Os números `0755` indicam as permissões. Se usar o `e`, coloque as mesmas
-permissões da pasta existente.
+permissões do diretório existente.
 
 `user user` Refere-se ao usuário e ao grupo
 
 `2d` refere-se ao tempo. No caso, a remoção dos arquivos criados, acessados ou
-modificados há dois dias na pasta Capturas de tela.
+modificados há dois dias no diretório Capturas de tela e no diretório
+Screenshots.
 
 ```
 e "/home/user/Imagens/Capturas de tela" 0755 user user 2d
+e "/home/user/Imagens/Screenshots" 0755 user user 2d
 ```
 
-Para pastas criadas pelo serviço, ao invés de usar `e`, usa-se `d`.
+Para diretórios criados pelo serviço, ao invés de usar `e`, usa-se `d`.
 
-Existe a opção de remoção para pasta ou somente para um arquivo específico.
+Existe a opção de remoção para diretório ou somente para um arquivo específico.
 
 Veja mais opções em `man tmpfiles.d` e `man systemd-tmpfiles`
 
