@@ -8,4 +8,5 @@ zotero-bin
 hunspell-pt-br
 mythes-pt-br
 hyphen-pt-br
+cardwire-bin
 otter-launcher

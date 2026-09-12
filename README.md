@@ -63,7 +63,7 @@ Ordem de uso dos scripts:
 - 2-apparmor-e-systemdresolved.sh
 - 3-pacotes.sh
 - 4-flatpak.sh
-- 5-yay-e-cardwire.sh
+- 5-yay.sh
 - 6-grid.sh
 - 7-zsh.sh
 - 8-podman-distrobox-incus.sh

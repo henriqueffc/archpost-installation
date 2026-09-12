@@ -45,16 +45,7 @@ mkdir -p $HOME/.config/otter-launcher/
 cp ./otter-launcher/config.toml $HOME/.config/otter-launcher/
 sudo pacman -S bc libnotify yazi fd xdg-utils findutils tuned tuned-ppd foot foot-terminfo ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono --noconfirm --needed
 
-# Adicionando o ogc-arch-repo para a instalação do Cardwire
-# https://github.com/OpenGamingCollective/ogc-arch-packaging
-sudo cp /etc/pacman.conf /etc/pacman.conf.bak2
-echo -e "\n[ogc]" | sudo tee -a /etc/pacman.conf >/dev/null
-echo -e "Server = https://pacman.opengamingcollective.org" | sudo tee -a /etc/pacman.conf >/dev/null
-sudo pacman-key --recv-keys F79100EF8C802DAB81C323BB8EEA5962FE510E19
-sudo pacman-key --lsign-key F79100EF8C802DAB81C323BB8EEA5962FE510E19
-sudo pacman -Syu
-sudo pacman -S cardwire --noconfirm
-## Habilitando o cardwire
+# Habilitando o cardwire
 sudo systemctl enable cardwired --now
 
 printf "%s $VERDE Reinicie o sistema. $FIM \n"
