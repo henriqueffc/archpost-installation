@@ -40,7 +40,7 @@ sudo cp ./tmpfiles/thp.conf /etc/tmpfiles.d/
 # Serão desabilitados o manejo do mDNS e do LLMNR pelo systemd-resolved e o DNSSEC.
 # O Avahi será habilitado no script nº 3 para a administração do mDNS.
 # A porta da rede para o mDNS será habilitada no firewalld no script nº 3.
-# Serão habilitados o DNS over TLS e o uso da Cloudflare como resolvedor de DNS para o systemd-resolved
+# Serão habilitados o DNS over TLS e o uso da Quad9 como resolvedor de DNS para o systemd-resolved
 # https://wiki.archlinux.org/title/Systemd-resolved#DNS
 sudo ln -sf ../run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
 sudo mkdir -p /etc/systemd/resolved.conf.d/
