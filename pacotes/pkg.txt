@@ -99,7 +99,6 @@ hwdetect
 hwloc
 imagemagick
 iptables
-intel-lpmd
 intel-ucode
 inxi
 isd
