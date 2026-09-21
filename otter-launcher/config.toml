@@ -18,10 +18,12 @@
 
 
 [general]
-# module to run when no prefix is matched
+# module to run when no prefix is in use
 default_module = "gg"
-# run with an empty prompt
+# module to run with an empty prompt
 empty_module = "app"
+# module to run when prompting with alt+enter
+alternative_module = ""
 # exec command of your shell, eg. "zsh -c" for zsh; accept wm commands like "hyprctl dispatch exec"
 exec_cmd = "zsh -c"
 # set true to use vi keybinds, false emacs keybinds
@@ -73,7 +75,7 @@ selection_prefix = "  \u001B[31;1m▌ "
 # format prefixes to have a uniformed width
 prefix_padding = 3
 # shown when the default module is in use
-default_module_message = "    \u001B[33msearch\u001B[0m the internet"
+default_module_message = "\u001B[33msearch\u001B[0m the internet"
 # shown when the empty module is in use
 empty_module_message = ""
 # false to list suggestions/hints alphabetically; true to list them as per the configured order in the below [[modules]] section
