@@ -30,5 +30,5 @@ name='terminal'
 
 [custom-keybindings/custom4]
 binding='<Control>space'
-command='footclient -o csd.preferred=server -o csd.border-color=24acd4 -o csd.border-width=2 -o csd.size=0 -w 1000x500 -e otter-launcher'
+command='footclient -o csd.preferred=server -o csd.border-color=24acd4 -o csd.border-width=2 -o csd.size=0 -w 1000x300 -e otter-launcher'
 name='otter-launcher'

@@ -69,7 +69,7 @@ $( \
 # add a line after suggestion list
 footer = ""
 # 0 to disable suggestions and tab completion
-suggestion_lines = 14
+suggestion_lines = 7
 list_prefix = "    "
 selection_prefix = "  \u001B[31;1m▌ "
 # format prefixes to have a uniformed width
