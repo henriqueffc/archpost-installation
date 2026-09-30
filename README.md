@@ -57,8 +57,8 @@ Ordem de uso dos scripts:
 
 - 1-initialconfig.sh (O script deve ser executado como usuário **root** devido
   às alterações que serão realizadas no diretório `/boot/loader/entries`. O
-  **archinstall**, a partir da versão 4.4, restringe o acesso à partição EFI por
-  meio de `fmask=0077` e `dmask=0077` no arquivo `fstab`)
+  **archinstall**, a partir da versão 4.5, restringe o acesso à partição EFI por
+  meio de `fmask=0177` e `dmask=0077` no arquivo `fstab`)
 - 2-apparmor-e-systemdresolved.sh
 - 3-pacotes.sh
 - 4-flatpak.sh
