@@ -360,14 +360,17 @@ pacotes=(
     loupe
 )
 
-mapfile -t instalados < <(pacman -Qq "${pacotes[@]}" 2>/dev/null)
+remover_pacotes_gnome() {
+    mapfile -t instalados < <(pacman -Qq "${pacotes[@]}" 2>/dev/null)
 
-if [ ${#instalados[@]} -eq 0 ]; then
-    exit 0
-fi
+    if [ ${#instalados[@]} -eq 0 ]; then
+        return 0
+    fi
+    echo "Serão removidos do sistema os seguintes pacotes que não uso: ${instalados[*]}"
+    sudo pacman -R --noconfirm "${instalados[@]}"
+}
 
-echo "Serão removidos do sistema os seguintes pacotes que não uso: ${instalados[*]}"
-sudo pacman -R --noconfirm "${instalados[@]}"
+remover_pacotes_gnome
 
 # Desabilita o powersave nos perfis do Tuned para o audio
 # Desabilita a configuração do vm.swappiness no perfil throughput-performance
