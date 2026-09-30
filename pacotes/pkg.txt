@@ -80,6 +80,7 @@ gnome-appfolders-manager
 gnome-remote-desktop
 gnome-shell-extensions
 gnome-shell-extension-vitals
+gthumb
 gnome-tweaks
 gnome-user-share
 go
