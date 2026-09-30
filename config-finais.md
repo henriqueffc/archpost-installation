@@ -48,6 +48,8 @@ repositório.
 [igpu](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#igpu)
 |
 [Homebrew](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#Homebrew)
+|
+[llama-server](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#llama-server)
 
 ## Tema e extensões
 
@@ -845,3 +847,108 @@ No arquivo `~/.zshrc.local`, adicione o seguinte código **após** o comando
 `eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"`
 
 `eval "$(oh-my-posh init zsh --config /home/linuxbrew/.linuxbrew/share/oh-my-posh/themes/gruvbox.omp.json)"`
+
+## llama-server
+
+Caso queira usar o llama-server ao invés do Ollama, desabilite o ollama com
+`systemctl disable --now ollama.service` e depois faça as configurações abaixo.
+O ollama é habilitado pelo script nº 3.
+
+**Instalação**
+
+`sudo pacman -S llama-cpp`
+
+**Modelos**
+
+Exemplo com os seguintes modelos. Faça o download dos modelos.
+
+[nomic](https://huggingface.co/nomic-ai/nomic-embed-text-v2-moe-GGUF)
+
+[gemma4](https://huggingface.co/bartowski/google_gemma-4-E2B-it-GGUF/tree/main)
+
+**Preset com as descrições dos modelos**
+
+Crie o seguinte arquivo no diretório da sua preferência. Para facilitar, use o
+mesmo diretório dos modelos.
+
+`nano models.ini`
+
+```
+version = 1
+
+[gemma]
+model = /home/user/IA/google_gemma-4-E2B-it-Q5_K_M.gguf
+mmproj = /home/user/IA/mmproj-google_gemma-4-E2B-it-bf16.gguf
+ctx-size = 8192
+predict = 4096
+temperature = 1.0
+top-p = 0.95
+top-k = 64
+min-p = 0
+cache-type-k = q8_0
+cache-type-v = q8_0
+n-gpu-layers = 99
+
+[nomic]
+model = /home/user/IA/nomic-embed-text-v2-moe.Q4_K_M.gguf
+embedding = true
+n-gpu-layers = 99
+```
+
+**Serviço do systemd**
+
+Crie o seguinte serviço para o systemd.
+
+```
+# Cria o diretório para units do systemd do usuário
+mkdir -p ~/.config/systemd/user
+```
+
+```
+# arquivo do unit do llama-server
+nano  ~/.config/systemd/user/llama-server.service
+```
+
+```
+[Unit]
+Description=Llama.cpp server
+After=network.target
+
+[Service]
+Type=exec
+ExecStart=/usr/bin/llama-server --models-preset /home/user/IA/models.ini --models-autoload --models-max 2 --sleep-idle-seconds 300 --jinja --tools all --flash-attn on --host 127.0.0.1 --port 9931
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
+```
+
+Como o llama-server está usando `--sleep-idle-seconds 300`, o modelo será
+descarregado da VRAM após cinco minutos, como acontece por padrão no ollama.
+Após uma nova requisição, o `--models-autoload` o servidor carrega
+automaticamente o modelo quando recebe uma requisição. Para as outras
+configurações, verifique o
+[site](https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md)
+do github do projeto.
+
+```
+# Reinicia o daemon do usuário do systemd
+systemctl --user daemon-reload
+```
+
+```
+# Inicie imediatamente a unidade para o usuário e também ative a unidade para iniciar automaticamente na inicialização do sistema.
+systemctl --user enable --now llama-server.service
+```
+
+**API**
+
+O endereço da API do llama-server é `http://127.0.0.1:9931/v1`. Os nomes dos
+modelos são os nomes das seções indicadas no arquivo `models.ini`, como gemma e
+nomic. Você pode verificar com
+`curl -s http://127.0.0.1:9931/v1/models | jq -r '.data[].id'`
+
+**WebUI**
+
+O endereço da WebUI é `http://127.0.0.1:9931/`
