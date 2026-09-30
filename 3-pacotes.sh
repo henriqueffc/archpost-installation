@@ -343,9 +343,31 @@ echo "Configuração concluída."
 # Desinstalando a gnome-software. No script nº 4 será instalada a Bazaar.
 sudo pacman -R gnome-software gnome-app-list --noconfirm
 
-# Desinstalando (uso o MPV) o Showtime e o decibels
-# Densistalando (não uso) gnome-music, gnome web, gnome-maps, gnome-tour, gnome-system-monitor, gnome-contacts e simple-scan
-sudo pacman -R showtime gnome-music epiphany decibels simple-scan gnome-maps gnome-tour gnome-contacts gnome-system-monitor --noconfirm
+# Desinstalando o Showtime e o decibels. Uso o MPV.
+# Desinstalando o loupe. Uso o gThumb.
+# Desinstalando o gnome-system-monitor. Uso o Resources.
+# Densistalando (não uso) gnome-music, gnome web, gnome-maps, gnome-tour, gnome-contacts e simple-scan
+pacotes=(
+    showtime
+    gnome-music
+    epiphany
+    decibels
+    simple-scan
+    gnome-maps
+    gnome-tour
+    gnome-contacts
+    gnome-system-monitor
+    loupe
+)
+
+mapfile -t instalados < <(pacman -Qq "${pacotes[@]}" 2>/dev/null)
+
+if [ ${#instalados[@]} -eq 0 ]; then
+    exit 0
+fi
+
+echo "Serão removidos do sistema os seguintes pacotes que não uso: ${instalados[*]}"
+sudo pacman -R --noconfirm "${instalados[@]}"
 
 # Desabilita o powersave nos perfis do Tuned para o audio
 # Desabilita a configuração do vm.swappiness no perfil throughput-performance
