@@ -582,16 +582,13 @@ A instalação do
 [systemd-resolved](https://wiki.archlinux.org/title/Systemd-resolved) e a
 configuração para o NetworkManager foi feita no script nº 2.
 
-Utilizo pelo systemd-resolved o dns da Quad9 com o DNS over TLS habilitado e o
-DNSSEC desabilitado. Desabilite o DNS over HTTPS nos navegadores web.
+Utilizo pelo systemd-resolved o dns da Quad9 sem o DNS over TLS habilitado e o
+DNSSEC desabilitado. Habilite o DNS over HTTPS nos navegadores web.
 
 Verifique o funcionamento do systemd-resolved e se a configuração do dns foi
 aplicada.
 
 `resolvectl status`
-
-Verificar se DoT está funcionando
-`resolvectl query --type=TXT whoami.ds.akahelp.net`
 
 O site abaixo permite verificar se o browser está usando o dns da Quad9
 
