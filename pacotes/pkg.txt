@@ -34,7 +34,6 @@ clamav
 cmatrix
 coreutils
 cpio
-chromium
 curl
 dconf-editor
 devtools

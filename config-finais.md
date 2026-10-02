@@ -43,8 +43,6 @@ repositório.
 |
 [easyeffects](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#easyeffects)
 |
-[firefox](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#firefox)
-|
 [igpu](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#igpu)
 |
 [Homebrew](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#Homebrew)
@@ -93,7 +91,7 @@ necessário para essa funcionalidade
 foi instalado pelo script nº 3. Para instalar a extensão pelo navegador é
 preciso habilitar a extensão "Integração com o Gnome Shell"
 ([Firefox](https://addons.mozilla.org/firefox/addon/gnome-shell-integration/) /
-[Chrome](https://chromewebstore.google.com/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep)).
+[Brave](https://chromewebstore.google.com/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep)).
 
 Uso a extensão Just Perfection para desabilitar as animações no shell
 (desabilito também as animações no shell pelo script nº 3) e a barra de pesquisa
@@ -650,117 +648,6 @@ pode ser usado para cancelamento de ruído e para outras melhorias no áudio ao 
 usar o microfone. Essa predefinição deve ser alocada na aba "Entrada" ou no
 diretório `~/.var/app/com.github.wwmm.easyeffects/data/easyeffects/input`
 
-## firefox
-
-Configurações feitas em `about:config`
-
-| Configuração                                                                                       | Valor    |
-| -------------------------------------------------------------------------------------------------- | -------- |
-| accessibility.force_disabled                                                                       | 1        |
-| browser.cache.disk.enable                                                                          | false    |
-| browser.cache.memory.capacity (131072 = 128 MB)                                                    | 131072   |
-| browser.cache.memory.max_entry_size (20480 = 20 MB)                                                | 20480    |
-| browser.cache.memory.enable                                                                        | true     |
-| browser.display.document_color_use                                                                 | 0        |
-| browser.ipProtection.enabled                                                                       | true     |
-| browser.profiles.enabled                                                                           | true     |
-| browser.theme.native-theme                                                                         | false    |
-| browser.sessionstore.interval                                                                      | 60000    |
-| browser.toolbars.bookmarks.visibility                                                              | always   |
-| browser.tabs.unloadOnLowMemory                                                                     | true     |
-| content.notify.interval                                                                            | 100000   |
-| dom.security.https_only_mode                                                                       | true     |
-| dom.webgpu.enabled                                                                                 | true     |
-| general.smoothScroll                                                                               | true     |
-| general.smoothScroll.mouseWheel.durationMaxMS                                                      | 500      |
-| general.smoothScroll.mouseWheel.durationMinMS                                                      | 350      |
-| general.smoothScroll.msdPhysics.enabled                                                            | false    |
-| gfx.canvas.accelerated.cache-size                                                                  | 512      |
-| gfx.content.skia-font-cache-size                                                                   | 20       |
-| gfx.webrender.precache-shaders                                                                     | true     |
-| gfx.webrender.program-binary-disk                                                                  | true     |
-| gfx.x11-egl.force-disabled                                                                         | true     |
-| image.cache.size                                                                                   | 10485760 |
-| image.jxl.enabled                                                                                  | true     |
-| image.mem.decode_bytes_at_a_time                                                                   | 65536    |
-| image.mem.shared.unmap.min_expiration_ms                                                           | 120000   |
-| javascript.options.baselinejit.threshold                                                           | 50       |
-| javascript.options.ion.threshold                                                                   | 500      |
-| javascript.options.wasm_branch_hinting                                                             | true     |
-| layout.css.prefers-color-scheme.content-override                                                   | 0        |
-| layout.css.grid-template-masonry-value.enabled                                                     | true     |
-| media.eme.enabled                                                                                  | true     |
-| media.gmp.decoder.multithreaded                                                                    | true     |
-| media.gpu-process-decoder                                                                          | true     |
-| media.webrtc.camera.allow-pipewire                                                                 | true     |
-| media.webrtc.hw.h264.enabled                                                                       | true     |
-| network.dns.disablePrefetch                                                                        | true     |
-| network.dnsCacheExpiration                                                                         | 3600     |
-| network.buffer.cache.size                                                                          | 65535    |
-| network.http.max-connections                                                                       | 1200     |
-| network.http.max-persistent-connections-per-server                                                 | 10       |
-| network.http.max-urgent-start-excessive-connections-per-host                                       | 5        |
-| network.http.pacing.requests.enabled                                                               | false    |
-| network.prefetch-next                                                                              | false    |
-| network.ssl_tokens_cache_capacity                                                                  | 32768    |
-| network.trr.mode //habilito o DNS over TLS. Uso a Quad9 como resolvedor de DNS no systemd-resolved | 5        |
-| reader.color_scheme                                                                                | dark     |
-| reader.text_alignment                                                                              | justify  |
-| sidebar.revamp                                                                                     | true     |
-| sidebar.verticalTabs                                                                               | true     |
-| widget.gtk.rounded-bottom-corners.enabled                                                          | true     |
-| widget.use-xdg-desktop-portal.file-picker                                                          | 1        |
-| widget.use-xdg-desktop-portal.mime-handler                                                         | 1        |
-| widget.use-xdg-desktop-portal.notification                                                         | 1        |
-| widget.use-xdg-desktop-portal.settings                                                             | 1        |
-| widget.use-xdg-desktop-portal.location                                                             | 1        |
-| widget.use-xdg-desktop-portal.open-uri                                                             | 1        |
-
-**Firefox Nightly**
-
-Caso opte por usar a versão de desenvolvimento do Firefox.
-
-Acrescente no **final** do arquivo `/etc/pacman.conf`
-
-```
-[heftig]
-SigLevel = Optional
-Server = https://pkgbuild.com/~heftig/repo/$arch
-```
-
-Depois execute os comandos `sudo pacman -Syu` e `sudo pacman -S firefox-nightly`
-
-Esse repositório é mantido pelo mantenedor do Arch Linux "Heftig" (Jan Alexander
-Steffens).
-
-Fontes:
-[Arch Wiki](https://wiki.archlinux.org/title/Unofficial_user_repositories#heftig),
-[Arch Forum](https://bbs.archlinux.org/viewtopic.php?id=117157),
-[Repositório](https://pkgbuild.com/~heftig/packages/)
-
-**Usando o Firefox com o Firejail**
-
-Para usar o Firefox (pacote do repositório oficial) **permanentemente** com o
-[Firejail](https://wiki.archlinux.org/title/Firejail) (instalado pelo script nº
-3), execute os comandos abaixo.
-
-Crie o link simbólico para executar o Firefox pelo terminal usando o Firejail
-
-`sudo ln -s /usr/bin/firejail /usr/local/bin/firefox`
-
-ou crie um alias no arquivo `.bash_aliases`
-
-`alias firefox="firejail --apparmor firefox"`
-
-Copie o arquivo .desktop do diretório `firefox-firejail` do repositório para o
-diretório `$HOME/.local/share/applications/`
-
-`cp ./firefox-firejail/firefox.desktop $HOME/.local/share/applications/`
-
-Algumas configurações que foram recomendadas anteriormente para serem feitas no
-`about:config` não funcionam no Firefox inicializado com o Firejail devido o
-sandbox.
-
 ## igpu
 
 **Intel Xe**
@@ -926,9 +813,8 @@ WantedBy=default.target
 
 Como o llama-server está usando `--sleep-idle-seconds 300`, o modelo será
 descarregado da VRAM após cinco minutos, como acontece por padrão no ollama.
-Após uma nova requisição, o `--models-autoload` o servidor carrega
-automaticamente o modelo quando recebe uma requisição. Para as outras
-configurações, verifique o
+Após uma nova requisição, o `--models-autoload` carrega automaticamente o modelo
+quando recebe uma requisição. Para as outras configurações, verifique o
 [site](https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md)
 do github do projeto.
 
