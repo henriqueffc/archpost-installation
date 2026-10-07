@@ -27,8 +27,6 @@ repositório.
 |
 [Aplicativos](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#aplicativos)
 |
-[Piper](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#piper)
-|
 [Ordem do boot](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#ordem-do-boot)
 |
 [Zotero](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#zotero)
@@ -429,30 +427,6 @@ configuradas para um determinado aplicativo flatpak estão localizadas em
 
 Desabilite o funcionamento dos aplicativos que não deseja em segundo plano. Pode
 ser feito pelo Flatseal ou pelas configurações do Gnome (Aplicativos).
-
-## Piper
-
-[https://github.com/Elleo/pied/](https://github.com/Elleo/pied/)
-
-`sudo pacman -S curl speech-dispatcher espeak-ng --needed`
-
-Caso os pacotes `speech-dispatcher` e `espeak-ng` forem instalados reinicie o
-sistema.
-
-Baixe o arquivo para a instalação do app Pied em formato flatpak usando o
-comando abaixo. O aplicativo Pied não está disponível no flathub.
-
-```
-wcurl https://github.com/Elleo/pied/releases/download/v0.3.1/com.mikeasoft.pied.flatpak
-```
-
-Instale o app `flatpak install com.mikeasoft.pied.flatpak`
-
-No Firefox, em `about:config`, defina `narrate.filter-voices` como `false` para
-usar as vozes do Piped no modo de leitura. Reinicie o navegador para aplicar a
-mudança.
-
-O ícone do app estará na pasta Utilitários no grid.
 
 ## Ordem do boot
 

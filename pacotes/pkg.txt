@@ -183,6 +183,11 @@ rclone
 rebuild-detector
 resources
 resvg
+rhvoice
+rhvoice-voice-leticia-f123
+rhvoice-language-brazilian-portuguese
+rhvoice-voice-slt
+rhvoice-language-english
 ripgrep
 ripgrep-all
 rygel
