@@ -62,8 +62,8 @@ Uso as extensões [Vitals](https://extensions.gnome.org/extension/1460/vitals/),
 [Alphabetical App Grid](https://extensions.gnome.org/extension/4269/alphabetical-app-grid/),
 [AppIndicator/KStatusNotifierItem habilitadas](https://extensions.gnome.org/extension/615/appindicator-support/),
 [Wallpaper Slideshow](https://extensions.gnome.org/extension/6281/wallpaper-slideshow/),
-[Maximize Window Into New Workspace](https://extensions.gnome.org/extension/8851/maximize-window-into-new-workspace/),
-[Gradia Capture](https://github.com/AlexanderVanhee/gradia-capture), e
+[Maximize Window Into New Workspace](https://extensions.gnome.org/extension/8851/maximize-window-into-new-workspace/)
+e
 [Just Perfection](https://extensions.gnome.org/extension/3843/just-perfection/).
 
 Para acessar as configurações das extensões use o programa Extensões que é
@@ -97,11 +97,6 @@ Uso a extensão Just Perfection para desabilitar as animações no shell
 (desabilito também as animações no shell pelo script nº 3) e a barra de pesquisa
 no overview. A extensão Maximize Window Into New Workspace move a janela
 maximizada para um novo workspace.
-
-A extensão Gradia Capture foi instalada pelo script nº 4 e habilitada pelo
-script nº 6. Para a extensão funcionar é necessário que o app flatpak
-[Gradia](https://flathub.org/pt-BR/apps/be.alexandervanhee.gradia) (instalado
-pelo script nº 4) esteja instalado no sistema.
 
 ## SSH
 
@@ -422,7 +417,7 @@ Manual do [Geoclue](https://man.archlinux.org/man/extra/geoclue/geoclue.5.en)
 **Falhas na renderização**
 
 Se a renderização de um aplicativo GTK não funcionar adequadamente utilizando o
-vulkan, utilize a variável `GSK_RENDERER=ngl`. Caso o app seja um flatpak suas
+vulkan, utilize a variável `GSK_RENDERER=gl`. Caso o app seja um flatpak suas
 configurações podem ser alteradas no app Flatseal, mudando a variável em
 Environment. Confira as variáveis do sistema (globais) para flatpaks com o
 comando `cat /var/lib/flatpak/overrides/global` Para retirar essas variáveis
@@ -519,7 +514,7 @@ O arquivo de configuração para cada ação deve ser alocado em `/etc/tmpfiles.
 
 Exemplo:
 
-`sudo nano /etc/tmpfiles.d/captura.conf`
+`sudo nano /etc/tmpfiles.d/diretorios.conf`
 
 o `e` significa que a ação de remoção dos arquivos se dará sobre um diretório
 existente
@@ -529,13 +524,13 @@ permissões do diretório existente.
 
 `user user` Refere-se ao usuário e ao grupo
 
-`2d` refere-se ao tempo. No caso, a remoção dos arquivos criados, acessados ou
-modificados há dois dias no diretório Capturas de tela e no diretório
-Screenshots.
+`2d` refere-se ao tempo. No caso do exemplo abaixo, a remoção dos arquivos
+criados, acessados ou modificados há dois dias no diretório Capturas de tela e
+no diretório Screenshots.
 
 ```
 e "/home/user/Imagens/Capturas de tela" 0755 user user 2d
-e "/home/user/Imagens/Screenshots" 0755 user user 2d
+d "/home/user/Tmpfiles" 0755 user user 2d
 ```
 
 Para diretórios criados pelo serviço, ao invés de usar `e`, usa-se `d`.
