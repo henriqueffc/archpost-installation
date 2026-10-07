@@ -583,7 +583,9 @@ A instalação do
 configuração para o NetworkManager foi feita no script nº 2.
 
 Utilizo pelo systemd-resolved o dns da Quad9 sem o DNS over TLS habilitado e o
-DNSSEC desabilitado. Habilite o DNS over HTTPS nos navegadores web.
+DNSSEC desabilitado.
+[Habilite](https://quad9.net/pt/service/service-addresses-and-features/#rec) o
+DNS over HTTPS nos navegadores web.
 
 Verifique o funcionamento do systemd-resolved e se a configuração do dns foi
 aplicada.

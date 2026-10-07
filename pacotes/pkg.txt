@@ -78,6 +78,7 @@ gnome-firmware
 gnome-appfolders-manager
 gnome-remote-desktop
 gnome-shell-extensions
+gnome-extensions-app
 gnome-shell-extension-vitals
 gthumb
 gnome-tweaks
