@@ -9,5 +9,4 @@ hunspell-pt-br
 mythes-pt-br
 hyphen-pt-br
 cardwire-bin
-otter-launcher
 brave-origin-bin

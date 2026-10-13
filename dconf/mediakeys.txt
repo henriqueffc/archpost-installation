@@ -1,6 +1,6 @@
 [/]
 control-center=['<Super>c']
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
 email=['<Super>e']
 next=['<Shift>KP_Divide']
 play=['<Shift>KP_Multiply']
@@ -10,7 +10,7 @@ www=['<Super>b']
 
 [custom-keybindings/custom0]
 binding='<Super>f'
-command='foot -e yazi'
+command='footclient -e yazi'
 name='yazi'
 
 [custom-keybindings/custom1]
@@ -19,16 +19,6 @@ command='flatpak run be.alexandervanhee.gradia --screenshot=INTERACTIVE'
 name='gradia-area'
 
 [custom-keybindings/custom2]
-binding='<Control>Print'
-command='flatpak run be.alexandervanhee.gradia --screenshot=FULL'
-name='gradia-full'
-
-[custom-keybindings/custom3]
 binding='<Super>t'
-command='foot'
+command='footclient'
 name='terminal'
-
-[custom-keybindings/custom4]
-binding='<Control>space'
-command='footclient -o csd.preferred=server -o csd.border-color=24acd4 -o csd.border-width=2 -o csd.size=0 -w 1000x300 -e otter-launcher'
-name='otter-launcher'

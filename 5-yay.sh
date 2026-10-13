@@ -39,12 +39,6 @@ yay --removemake --answerclean A --noanswerdiff --noansweredit --noconfirm --nee
 # Habilitando o Ananicy-cpp (instalado pelo script n.° 3) com as regras existentes no pacote cachyos-ananicy-rules-git (AUR)
 sudo systemctl enable --now ananicy-cpp.service
 
-# Configurando o otter-launcher
-# O atalho Ctrl+Space foi configurado no script nº 3
-mkdir -p $HOME/.config/otter-launcher/
-cp ./otter-launcher/config.toml $HOME/.config/otter-launcher/
-sudo pacman -S bc libnotify yazi fd xdg-utils findutils tuned tuned-ppd foot foot-terminfo ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono --noconfirm --needed
-
 # Habilitando o cardwire
 sudo systemctl enable cardwired --now
 
