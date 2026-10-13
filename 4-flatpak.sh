@@ -54,6 +54,7 @@ flatpak install flathub app.drey.Warp -y
 flatpak install flathub io.github.radiolamp.mangojuice -y
 flatpak install flathub org.gnome.Podcasts -y
 flatpak install flathub cx.modal.TestCenter -y
+flatpak install flathub io.github.ronniedroid.concessio -y
 
 # Flathub Remote-Beta
 echo -e "$AZUL Adicionando o remote flathub-beta $FIM"
