@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# Exibe a caixa de entrada do Zenity; sai se o usuário cancelar ou fechar
+termo=$(zenity --entry \
+    --title="Pesquisa na ArchWiki" \
+    --text="Digite o termo de pesquisa:" \
+    --width=400) || exit 0
+
+# Remove espaços em branco excedentes nas pontas e verifica se ficou vazio
+termo=$(echo "$termo" | xargs)
+[ -z "$termo" ] && exit 0
+
+# Codifica o termo com segurança para a URL (espaços viram '+', acentos e símbolos são tratados)
+termo_codificado=$(python3 -c 'import sys, urllib.parse; print(urllib.parse.quote_plus(sys.argv[1]))' "$termo")
+
+# Abre a pesquisa no navegador padrão de forma desacoplada
+setsid -f xdg-open "https://wiki.archlinux.org/index.php?search=${termo_codificado}"

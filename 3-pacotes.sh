@@ -385,4 +385,9 @@ sudo sed -i 's/energy_perf_bias=normal/energy_perf_bias=balance-performance/g' /
 mkdir -p $HOME/Músicas/radios/
 cp ./radios/radios.m3u $HOME/Músicas/radios/
 
+# Arquivos desktop para acesso rápido pelo launcher e para os atalhos de teclado
+mkdir -p $HOME/.local/share/applications/
+cp ./desktop/* $HOME/.local/share/applications/
+sed -i "s/userid/$USERNAME/g" $HOME/.local/share/applications/*.desktop
+
 printf "%s $VERDE Fim! Reinicie o sistema. $FIM \n"

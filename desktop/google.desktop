@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Pesquisa Google
+Type=Application
+Icon=goa-account-google-symbolic
+Exec=/home/userid/bin/google

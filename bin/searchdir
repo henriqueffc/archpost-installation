@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+setsid -f footclient -o csd.preferred=server -o csd.border-color=24acd4 -o csd.border-width=2 -o csd.size=0 -e sh -c "fd -H -I -t d -E .cache . $HOME /mnt 2>/dev/null | fzf --height 90% --info-command 'printf \" directories (\$FZF_POS/\$FZF_TOTAL_COUNT)\"' --cycle --gutter ' ' --pointer ' ▌' --color 'bg+:-1,pointer:1,info:8,separator:8,scrollbar:0' --prompt '  ' | xargs -r -I [] yazi '[]'"

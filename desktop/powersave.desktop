@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=powersave
+Type=Application
+Icon=power-profile-power-saver-symbolic
+Exec=tuned-adm profile powersave

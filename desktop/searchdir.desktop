@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Search directory
+Type=Application
+Icon=folder-saved-search
+Exec=/home/userid/bin/searchdir

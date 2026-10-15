@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Pesquisa ArchWiki
+Type=Application
+Icon=view-paged-rtl-symbolic
+Exec=/home/userid/bin/wiki

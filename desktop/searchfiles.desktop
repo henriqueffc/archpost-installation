@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Search files
+Type=Application
+Icon=org.gnome.Settings-search-symbolic
+Exec=/home/userid/bin/searchfiles
+NoDisplay=false

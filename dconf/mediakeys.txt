@@ -1,6 +1,6 @@
 [/]
 control-center=['<Super>c']
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/']
 email=['<Super>e']
 next=['<Shift>KP_Divide']
 play=['<Shift>KP_Multiply']
@@ -16,9 +16,29 @@ name='yazi'
 [custom-keybindings/custom1]
 binding='<Shift><Control>Print'
 command='flatpak run be.alexandervanhee.gradia --screenshot=INTERACTIVE'
-name='gradia-area'
+name='gradia'
 
 [custom-keybindings/custom2]
+binding='<Shift><Alt>g'
+command='gtk-launch google'
+name='Google'
+
+[custom-keybindings/custom3]
 binding='<Super>t'
 command='footclient'
 name='terminal'
+
+[custom-keybindings/custom4]
+binding='<Shift><Alt>w'
+command='gtk-launch wiki'
+name='ArchWiki'
+
+[custom-keybindings/custom5]
+binding='<Shift><Alt>d'
+command='gtk-launch searchdir'
+name='Pesquisar diretórios'
+
+[custom-keybindings/custom6]
+binding='<Shift><Alt>f'
+command='gtk-launch searchfiles'
+name='Pesquisar arquivos'

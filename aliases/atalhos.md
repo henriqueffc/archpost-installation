@@ -91,7 +91,7 @@ acessar o histórico dos comandos usados no terminal
 | iommu            | apresenta as informações do iommu                                             |
 | myman            | pesquisa de manuais presentes no sistema                                      |
 | qemu-snap.sh     | script para gerar snapshots de imagens de VMs no qemu                         |
-| search           | pesquisa pacotes nos repositórios e apresenta as suas informações             |
+| searchrepo       | pesquisa pacotes nos repositórios e apresenta as suas informações             |
 | systemd          | Mostra se o pacote instalado possui .service ou .socket                       |
 | update_models.sh | script para fazer atualizar os modelos de LLMs no Ollama                      |
 

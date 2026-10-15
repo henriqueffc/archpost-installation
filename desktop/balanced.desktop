@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=balanced
+Type=Application
+Icon=power-profile-balanced-symbolic
+Exec=tuned-adm profile balanced
