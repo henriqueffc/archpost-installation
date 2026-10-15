@@ -33,7 +33,7 @@ $FIM"
 # Pacotes AUR
 yay -Y --gendb
 yay -Y --devel --save
-sudo pacman -S cmake meson ninja rust compiler-rt lld --noconfirm --needed
+sudo pacman -S cmake meson ninja rust icoextract python-vdf --noconfirm --needed
 yay --removemake --answerclean A --noanswerdiff --noansweredit --noconfirm --needed -S - <./pacotes/aur.txt
 
 # Habilitando o Ananicy-cpp (instalado pelo script n.° 3) com as regras existentes no pacote cachyos-ananicy-rules-git (AUR)

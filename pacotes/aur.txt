@@ -1,6 +1,6 @@
 downgrade
 cachyos-ananicy-rules
-heroic-games-launcher-bin
+faugus-launcher
 gnome-shell-extension-alphabetical-grid-extension
 gnome-shell-extension-wallpaper-slideshow
 zotero-bin
