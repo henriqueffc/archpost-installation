@@ -277,8 +277,8 @@ cp ./fastfetch/config.jsonc $HOME/.config/fastfetch/
 # wireless-regdb - instalado pelo script n.° 1.
 sudo sed -i '$a WIRELESS_REGDOM="BR"' /etc/conf.d/wireless-regdom
 
-# Arquivo com as flags para o Electron
-cp ./flags/electron-flags.conf $HOME/.config/
+# Arquivo com as flags para o Electron e para o Brave Origin
+cp ./flags/* $HOME/.config/
 
 # Sincronizando a database para a pesquisa de pacotes
 sudo pacman -Fy
