@@ -728,19 +728,21 @@ version = 1
 model = /home/user/IA/google_gemma-4-E2B-it-Q5_K_M.gguf
 mmproj = /home/user/IA/mmproj-google_gemma-4-E2B-it-bf16.gguf
 ctx-size = 8192
-predict = 4096
+ctx-checkpoints = 8
+cache-ram = 2048
+predict = 2048
+cache-type-k = q8_0
+cache-type-v = q8_0
 temperature = 1.0
 top-p = 0.95
 top-k = 64
 min-p = 0
-cache-type-k = q8_0
-cache-type-v = q8_0
-n-gpu-layers = 99
+n-gpu-layers = all
 
 [nomic]
 model = /home/user/IA/nomic-embed-text-v2-moe.Q4_K_M.gguf
 embedding = true
-n-gpu-layers = 99
+n-gpu-layers = all
 ```
 
 **Serviço do systemd**
