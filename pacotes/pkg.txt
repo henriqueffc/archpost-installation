@@ -44,6 +44,7 @@ dmidecode
 dnsmasq
 duf
 e2fsprogs
+evolution
 espeak-ng
 eza
 exfatprogs
@@ -95,6 +96,7 @@ gvfs-onedrive
 gvfs-wsdd
 gsmartcontrol
 hexyl
+highlight
 hunspell
 hwdetect
 hwloc
@@ -115,7 +117,6 @@ libappindicator
 libgtop
 libheif
 libopenraw
-libotr
 libraw
 libreoffice-fresh
 libreoffice-fresh-pt-br
@@ -214,8 +215,6 @@ tesseract-data-por
 texinfo
 thefuck
 thermald
-thunderbird
-thunderbird-i18n-pt-br
 tcpdump
 trash-cli
 translate-shell

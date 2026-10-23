@@ -355,6 +355,7 @@ pacotes=(
     gnome-contacts
     gnome-system-monitor
     loupe
+    gnome-calendar
 )
 
 remover_pacotes_gnome() {
