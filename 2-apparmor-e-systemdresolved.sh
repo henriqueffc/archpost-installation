@@ -22,11 +22,6 @@ install -Dvm644 ./apparmor/apparmor-notify.desktop -t ~/.config/autostart/
 sudo cp /etc/apparmor/parser.conf /etc/apparmor/parser.conf.bak
 sudo sed -i '/#write-cache/c\write-cache' /etc/apparmor/parser.conf
 
-# Fail2ban
-sudo pacman -S fail2ban --needed --noconfirm
-sudo cp ./fail2ban/jail.local /etc/fail2ban/
-sudo systemctl enable fail2ban.service
-
 # AppIndicator/KStatusNotifierItem support for GNOME Shell
 sudo pacman -S gnome-shell-extension-appindicator --needed --noconfirm
 

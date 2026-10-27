@@ -16,7 +16,6 @@ alias xltree="eza -la --icons --color=always --group-directories-first --octal-p
 alias cat="bat -pp --theme=Dracula"
 alias cpu-info="grep 'cpu MHz' /proc/cpuinfo && sudo x86_energy_perf_policy && cat /sys/devices/system/cpu/intel_pstate/*"
 alias boot="systemd-analyze && systemctl list-timers"
-alias fail2ban="sudo fail2ban-client status && sudo fail2ban-client status sshd"
 alias report-audit="sudo aureport -n"
 alias dic-pt="aspell -x --lang=pt_BR -c"
 alias dic-en="aspell -x --lang=en -c"

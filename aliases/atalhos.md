@@ -178,7 +178,6 @@ acessar o histórico dos comandos usados no terminal
 | dic-en       | corretor ortográfico para arquivos escritos em EN                                                                                         |
 | dic-pt       | corretor ortográfico para arquivos escritos em pt_BR / comando nome_do_arquivo                                                            |
 | dirty        | expõe as estatísticas da virtual memory para acompanhar a transferência de dados para um dispositivo externo, como um USB.                |
-| fail2ban     | informações do fail2ban (status, jail...)                                                                                                 |
 | fixpacman    | Resolver a falha ao sincronizar todas as bases de dados (não foi possível travar a base de dados) durante a atualização do sistema        |
 | hx           | Helix Editor (se o pacote hex não estiver instalado)                                                                                      |
 | hist-pacotes | Visualizar pacotes instalados recentemente                                                                                                |

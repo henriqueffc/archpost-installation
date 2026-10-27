@@ -5,8 +5,6 @@ repositório.
 
 [Tema e extensões](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#tema-e-extens%C3%B5es)
 |
-[SSH](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#ssh)
-|
 [Nautilus](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#nautilus)
 |
 [Ext4](https://github.com/henriqueffc/archpost-installation/blob/main/config-finais.md#ext4)
@@ -88,10 +86,6 @@ preciso habilitar a extensão "Integração com o Gnome Shell"
 [Brave](https://chromewebstore.google.com/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep)).
 A extensão Maximize Window Into New Workspace move a janela maximizada para um
 novo workspace.
-
-## SSH
-
-Configurar o Fail2ban - porta SSH e o SSH.
 
 ## Nautilus
 
