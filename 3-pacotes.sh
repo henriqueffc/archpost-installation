@@ -337,10 +337,8 @@ sudo systemctl enable --now tuned
 sudo systemctl enable --now tuned-ppd
 echo "Configuração concluída."
 
-# Desinstalando a gnome-software. No script nº 4 será instalada a Bazaar.
-sudo pacman -R gnome-software gnome-app-list --noconfirm
-
 # Desinstalando o Showtime e o decibels. Uso o MPV.
+# Desinstalando a gnome-software. No script nº 4 será instalado o Warehouse.
 # Desinstalando o loupe. Uso o gThumb.
 # Desinstalando o gnome-system-monitor. Uso o Resources.
 # Densistalando (não uso) gnome-music, gnome web, gnome-maps, gnome-tour, gnome-contacts e simple-scan
@@ -356,6 +354,8 @@ pacotes=(
     gnome-system-monitor
     loupe
     gnome-calendar
+    gnome-software
+    gnome-app-list
 )
 
 remover_pacotes_gnome() {
