@@ -341,7 +341,8 @@ echo "Configuração concluída."
 # Desinstalando a gnome-software. No script nº 4 será instalado o Warehouse.
 # Desinstalando o loupe. Uso o gThumb.
 # Desinstalando o gnome-system-monitor. Uso o Resources.
-# Densistalando (não uso) gnome-music, gnome web, gnome-maps, gnome-tour, gnome-contacts e simple-scan
+# Desinstalando o gnome-contacts e o gnome-calendar. Uso o Evolution.
+# Densistalando (não uso) gnome-music, gnome web, gnome-maps, gnome-tour e simple-scan.
 pacotes=(
     showtime
     gnome-music
