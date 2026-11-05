@@ -49,3 +49,21 @@ gsettings set org.gnome.shell.extensions.alphabetical-app-grid folder-order-posi
 gnome-extensions enable AlphabeticalAppGrid@stuarthayhurst
 gnome-extensions enable Vitals@CoreCoding.com
 gnome-extensions enable azwallpaper@azwallpaper.gitlab.com
+
+# Definindo os aplicativos padrão em ~/.config/mimeapps.list
+
+cp ~/.config/mimeapps.list ~/.config/mimeapps.list.bak
+
+set_default() { # uso: set_default app.desktop 'regex-dos-tipos'
+    local app=$1 filter=$2
+    grep -h '^MimeType=' /usr/share/applications/"$app" |
+        cut -d= -f2 | tr ';' '\n' | grep -E "$filter" |
+        while read -r t; do xdg-mime default "$app" "$t"; done
+}
+
+xdg-settings set default-web-browser brave-origin.desktop
+xdg-mime default org.gnome.Evolution.desktop x-scheme-handler/mailto text/calendar x-scheme-handler/webcal
+set_default mpv.desktop '^(audio|video)/'
+set_default org.gnome.gthumb.desktop '^image/'
+xdg-mime default org.gnome.TextEditor.desktop text/markdown application/json application/x-shellscript
+xdg-mime default org.gnome.FileRoller.desktop application/zip application/vnd.rar application/x-compressed-tar application/x-xz-compressed-tar
