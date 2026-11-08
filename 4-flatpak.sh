@@ -57,6 +57,7 @@ flatpak install --user flathub org.gnome.Podcasts -y
 flatpak install --user flathub cx.modal.TestCenter -y
 flatpak install --user flathub io.github.ronniedroid.concessio -y
 flatpak install --user flathub org.gnome.Fractal -y
+flatpak install --user flathub io.github.word_sys.word-sys-pdf-editor
 
 # Flathub Remote-Beta
 echo -e "$AZUL Adicionando o remote flathub-beta $FIM"
