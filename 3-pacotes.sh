@@ -388,6 +388,7 @@ mkdir -p $HOME/Músicas/radios/
 cp ./radios/radios.m3u $HOME/Músicas/radios/
 
 # Arquivos desktop para acesso rápido pelo launcher e para os atalhos de teclado
+# os scripts necessários searchfiles, searchdir, google e wiki já foram copiados para o diretório ~/bin anteriormente nesse script
 mkdir -p $HOME/.local/share/applications/
 cp ./desktop/* $HOME/.local/share/applications/
 sed -i "s/userid/$USERNAME/g" $HOME/.local/share/applications/*.desktop

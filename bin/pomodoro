@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+# Uso: pomodoro [foco_min] [pausa_min] [pausa_longa_min]
+foco=${1:-25}
+pausa=${2:-5}
+pausa_longa=${3:-15}
+som="/usr/share/sounds/freedesktop/stereo/complete.oga"
+
+contar() {
+    local seg=$(($1 * 60))
+    while [ $seg -gt 0 ]; do
+        printf "\r%s: %02d:%02d " "$2" $((seg / 60)) $((seg % 60))
+        sleep 1
+        seg=$((seg - 1))
+    done
+    printf "\n"
+}
+
+avisar() {
+    notify-send -u critical "Pomodoro" "$1"
+    paplay "$som" 2>/dev/null &
+}
+
+ciclo=1
+while true; do
+    contar "$foco" "Foco (ciclo $ciclo/4)"
+
+    if [ $((ciclo % 4)) -eq 0 ]; then
+        avisar "Fim do 4º ciclo! Pausa longa de ${pausa_longa} min."
+        contar "$pausa_longa" "Pausa longa"
+        avisar "Pausa longa acabou! Novo conjunto de ciclos."
+        ciclo=1
+    else
+        avisar "Fim do foco! Pausa de ${pausa} min."
+        contar "$pausa" "Pausa"
+        avisar "Pausa acabou! Hora de voltar ao foco."
+        ciclo=$((ciclo + 1))
+    fi
+done

@@ -90,6 +90,7 @@ acessar o histórico dos comandos usados no terminal
 | fshare           | compartilhamento usando o site 0x0.st                                         |
 | iommu            | apresenta as informações do iommu                                             |
 | myman            | pesquisa de manuais presentes no sistema                                      |
+| pomodoro         | pomodoro timer                                                                |
 | qemu-snap.sh     | script para gerar snapshots de imagens de VMs no qemu                         |
 | searchrepo       | pesquisa pacotes nos repositórios e apresenta as suas informações             |
 | systemd          | Mostra se o pacote instalado possui .service ou .socket                       |
