@@ -387,6 +387,10 @@ sudo sed -i 's/energy_perf_bias=normal/energy_perf_bias=balance-performance/g' /
 mkdir -p $HOME/Músicas/radios/
 cp ./radios/radios.m3u $HOME/Músicas/radios/
 
+# configuração para o yt-dlp
+mkdir -p $HOME/.config/yt-dlp/
+cp ./yt-dlp/config $HOME/.config/yt-dlp/
+
 # Arquivos desktop para acesso rápido pelo launcher e para os atalhos de teclado
 # os scripts necessários searchfiles, searchdir, google e wiki já foram copiados para o diretório ~/bin anteriormente nesse script
 mkdir -p $HOME/.local/share/applications/

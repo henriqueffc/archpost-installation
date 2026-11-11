@@ -1,0 +1,31 @@
+# ── Vídeo (padrão) ─────────────────────────────
+# Melhor vídeo + melhor áudio, limitado a 1080p
+-f "bv*+ba/b"
+-S "res:1080"
+--merge-output-format mkv
+
+# Downloads paralelos de fragmentos (com aria2c)
+--downloader aria2c
+--downloader-args "aria2c:--disable-ipv6 -x 8 -s 8 -k 1M"
+
+# Metadados, capítulos, capa e legendas
+--embed-metadata
+--embed-chapters
+--embed-thumbnail
+--embed-subs
+--sub-langs "pt.*,en.*"
+
+# Nome do arquivo
+-o "%(title)s [%(id)s].%(ext)s"
+
+# Não baixar a playlist inteira quando a URL tiver vídeo + playlist
+--no-playlist
+
+# ── Atalho para áudio: yt-dlp --audio URL ──────
+# Prefere o stream Opus nativo (sem reencodar)
+--alias audio "-f 'ba[acodec=opus]/ba' -x --audio-format opus --embed-metadata --embed-thumbnail -o '%(title)s [%(id)s].%(ext)s'"
+
+# ── Opcional ───────────────────────────────────
+# Para conteúdo com restrição de idade ou exclusivo de membros:
+--cookies-from-browser firefox
+

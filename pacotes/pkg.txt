@@ -172,6 +172,7 @@ pyenv
 python-pipenv
 python-pipx
 python-pyqt6
+python-mutagen
 presenterm
 procs
 progress

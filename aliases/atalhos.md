@@ -79,6 +79,29 @@ extrair arquivos compactados. Ex.: `extract nome_do_arquivo.zip`
 
 acessar o histórico dos comandos usados no terminal
 
+# YT-DLP
+
+```
+yt-dlp URL            # faz download de vídeo até 1080p em MKV
+yt-dlp --audio URL    # faz download somente do áudio em Opus
+```
+
+O alias `--audio` sobrescreve o `-f` e o `-o` do padrão que está no arquivo de
+configuração (~/.config/yt-dlp/config), então um não interfere no outro.
+
+A flag `--no-playlist` presente no arquivo de configuração evita baixar
+playlists inteiras sem querer. Para baixar uma playlist de propósito, use
+`yt-dlp --yes-playlist URL`.
+
+Legendas: se o YouTube retornar erro 429 ao baixá-las, o download pode falhar.
+Nesse caso, rode uma vez com `--no-embed-subs`.
+
+Para ver os formatos disponíveis de um vídeo e conferir o que será baixado,
+execute `yt-dlp -F URL`
+
+Para testar sem baixar nada, use `yt-dlp --simulate -v URL`: o `-v` mostra quais
+configs foram carregadas e qual formato seria escolhido.
+
 # SCRIPTS
 
 | script           | descrição                                                                     |
@@ -167,49 +190,48 @@ acessar o histórico dos comandos usados no terminal
 
 # ALIAS
 
-| Alias          | descrição                                                                                                                                 |
-| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| archwiki       | Pesquisa páginas da Wiki offline. Abre as páginas no browser. Ex.: `archwiki nvidia`                                                      |
-| atalhos        | mostra o texto do arquivo .atalhos.md                                                                                                     |
-| atualizar      | atualiza os pacotes e os aplicativos do sistema.                                                                                          |
-| boot           | apresenta informações sobre o tempo de inicialização do sistema e os timers em uso pelo systemd                                           |
-| cat            | executa o bat no lugar do cat                                                                                                             |
-| cpu-info       | mostra as informações da CPU (frequências...)                                                                                             |
-| dados          | informações sobre os pacotes do sistema (quantidade, tamanho do cache...)                                                                 |
-| dic-en         | corretor ortográfico para arquivos escritos em EN                                                                                         |
-| dic-pt         | corretor ortográfico para arquivos escritos em pt_BR / comando nome_do_arquivo                                                            |
-| dirty          | expõe as estatísticas da virtual memory para acompanhar a transferência de dados para um dispositivo externo, como um USB.                |
-| download_media | utiliza o yt-dlp para download de videos. Use a URL.                                                                                      |
-| fixpacman      | Resolver a falha ao sincronizar todas as bases de dados (não foi possível travar a base de dados) durante a atualização do sistema        |
-| hx             | Helix Editor (se o pacote hex não estiver instalado)                                                                                      |
-| hist-pacotes   | Visualizar pacotes instalados recentemente                                                                                                |
-| instalar       | instala pacotes                                                                                                                           |
-| limpar         | limpa o cache em ~/.cache, limpa o cache do pacman e exclui os pacotes órfãos.                                                            |
-| man            | executa o batman no lugar do man                                                                                                          |
-| mirror         | verifica qual o mirror mais veloz                                                                                                         |
-| mpvnovideo     | apenas reproduzir o áudio dos vídeos usando o mpv                                                                                         |
-| nano           | executa o helix no lugar do nano                                                                                                          |
-| neo            | fastfetch                                                                                                                                 |
-| nvidia         | acompanhar o uso da GPU                                                                                                                   |
-| pacman.log     | exibe o log do pacman                                                                                                                     |
-| tb             | Pastebin (termbin.com) - `cat arquivo.txt \| tb`                                                                                          |
-| progress       | disponibiliza o progresso de algum comando. `cp origem destino \| progress`                                                               |
-| radio          | Reproduz uma lista m3u (diretório ~/Músicas/radio) usando o MPV                                                                           |
-| ram            | acompanha o consumo da ram                                                                                                                |
-| rede           | usa o nethogs para monitorar a rede                                                                                                       |
-| rede2          | usa o bandwhich para monitorar a rede                                                                                                     |
-| remover        | remove pacotes                                                                                                                            |
-| report-audit   | informações do audit                                                                                                                      |
-| scanports      | escaneia as portas da rede abertas                                                                                                        |
-| size           | apresenta o tamanho das pastas em ordem crescente                                                                                         |
-| tcpporta       | executa o tcpdump na porta de rede solicitada pelo usuário                                                                                |
-| turbo          | comando turbostat. exibe a temperatura dos núcleos da CPU, sua percentagem de uso e os watts consumido pela CPU.                          |
-| xla            | o mesmo que o xll, mas alterando a ordem de apresentação, a saber, do modificado recentemente para o mais antigo.                         |
-| xll            | apresenta o conteúdo do diretório, em ordem alfabética, disponibilizando mais informações (permissão, data da modificação, user/group...) |
-| xls            | lista o conteúdo do diretório                                                                                                             |
-| xltree         | lista todos os arquivos e subpastas do diretório em formato de árvore                                                                     |
-| yaycache       | limpa o cache o yay (aur)                                                                                                                 |
-| sudo           | executa o run0 (systemd)                                                                                                                  |
+| Alias        | descrição                                                                                                                                 |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| archwiki     | Pesquisa páginas da Wiki offline. Abre as páginas no browser. Ex.: `archwiki nvidia`                                                      |
+| atalhos      | mostra o texto do arquivo .atalhos.md                                                                                                     |
+| atualizar    | atualiza os pacotes e os aplicativos do sistema.                                                                                          |
+| boot         | apresenta informações sobre o tempo de inicialização do sistema e os timers em uso pelo systemd                                           |
+| cat          | executa o bat no lugar do cat                                                                                                             |
+| cpu-info     | mostra as informações da CPU (frequências...)                                                                                             |
+| dados        | informações sobre os pacotes do sistema (quantidade, tamanho do cache...)                                                                 |
+| dic-en       | corretor ortográfico para arquivos escritos em EN                                                                                         |
+| dic-pt       | corretor ortográfico para arquivos escritos em pt_BR / comando nome_do_arquivo                                                            |
+| dirty        | expõe as estatísticas da virtual memory para acompanhar a transferência de dados para um dispositivo externo, como um USB.                |
+| fixpacman    | Resolver a falha ao sincronizar todas as bases de dados (não foi possível travar a base de dados) durante a atualização do sistema        |
+| hx           | Helix Editor (se o pacote hex não estiver instalado)                                                                                      |
+| hist-pacotes | Visualizar pacotes instalados recentemente                                                                                                |
+| instalar     | instala pacotes                                                                                                                           |
+| limpar       | limpa o cache em ~/.cache, limpa o cache do pacman e exclui os pacotes órfãos.                                                            |
+| man          | executa o batman no lugar do man                                                                                                          |
+| mirror       | verifica qual o mirror mais veloz                                                                                                         |
+| mpvnovideo   | apenas reproduzir o áudio dos vídeos usando o mpv                                                                                         |
+| nano         | executa o helix no lugar do nano                                                                                                          |
+| neo          | fastfetch                                                                                                                                 |
+| nvidia       | acompanhar o uso da GPU                                                                                                                   |
+| pacman.log   | exibe o log do pacman                                                                                                                     |
+| tb           | Pastebin (termbin.com) - `cat arquivo.txt \| tb`                                                                                          |
+| progress     | disponibiliza o progresso de algum comando. `cp origem destino \| progress`                                                               |
+| radio        | Reproduz uma lista m3u (diretório ~/Músicas/radio) usando o MPV                                                                           |
+| ram          | acompanha o consumo da ram                                                                                                                |
+| rede         | usa o nethogs para monitorar a rede                                                                                                       |
+| rede2        | usa o bandwhich para monitorar a rede                                                                                                     |
+| remover      | remove pacotes                                                                                                                            |
+| report-audit | informações do audit                                                                                                                      |
+| scanports    | escaneia as portas da rede abertas                                                                                                        |
+| size         | apresenta o tamanho das pastas em ordem crescente                                                                                         |
+| tcpporta     | executa o tcpdump na porta de rede solicitada pelo usuário                                                                                |
+| turbo        | comando turbostat. exibe a temperatura dos núcleos da CPU, sua percentagem de uso e os watts consumido pela CPU.                          |
+| xla          | o mesmo que o xll, mas alterando a ordem de apresentação, a saber, do modificado recentemente para o mais antigo.                         |
+| xll          | apresenta o conteúdo do diretório, em ordem alfabética, disponibilizando mais informações (permissão, data da modificação, user/group...) |
+| xls          | lista o conteúdo do diretório                                                                                                             |
+| xltree       | lista todos os arquivos e subpastas do diretório em formato de árvore                                                                     |
+| yaycache     | limpa o cache o yay (aur)                                                                                                                 |
+| sudo         | executa o run0 (systemd)                                                                                                                  |
 
 # Wl-clipboard
 
